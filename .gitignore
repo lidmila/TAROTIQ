@@ -1,0 +1,22 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+google-services.json
+keystore.properties
+*.jks
+*.keystore
+app/release/
+
+# Firebase Functions
+functions/node_modules/
+functions/lib/
+
+# Claude
+.claude/
