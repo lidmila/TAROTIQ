@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TAROTIQ</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Domů</string>
+    <string name="nav_library">Knihovna</string>
+    <string name="nav_new_reading">Výklad</string>
+    <string name="nav_history">Historie</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Auth -->
+    <string name="auth_login">Přihlásit se</string>
+    <string name="auth_register">Zaregistrovat se</string>
+    <string name="auth_email">E-mail</string>
+    <string name="auth_password">Heslo</string>
+    <string name="auth_passwordless">Přihlášení bez hesla</string>
+    <string name="auth_passwordless_desc">Pošleme vám odkaz na e-mail</string>
+    <string name="auth_google">Pokračovat s Google</string>
+    <string name="auth_logout">Odhlásit se</string>
+    <string name="auth_delete_account">Smazat účet</string>
+    <string name="auth_profile">Profil</string>
+    <string name="auth_email_sent">Odkaz odeslán na váš e-mail</string>
+    <string name="auth_forgot_password">Zapomenuté heslo?</string>
+    <string name="auth_reset_sent">E-mail pro obnovení hesla odeslán</string>
+
+    <!-- Home -->
+    <string name="home_daily_card">Karta dne</string>
+    <string name="home_daily_card_desc">Odkryjte svou denní kartu</string>
+    <string name="home_quick_reading">Rychlý výklad</string>
+    <string name="home_new_reading">Nový výklad</string>
+    <string name="home_streak">Série</string>
+    <string name="home_streak_days">%d dní v řadě</string>
+
+    <!-- Reading Topics -->
+    <string name="topic_love">Láska</string>
+    <string name="topic_career">Kariéra</string>
+    <string name="topic_general">Obecné</string>
+    <string name="topic_yes_no">Ano / Ne</string>
+    <string name="topic_spiritual">Duchovní</string>
+    <string name="topic_select">Vyberte téma výkladu</string>
+
+    <!-- Question -->
+    <string name="question_title">Vaše otázka</string>
+    <string name="question_hint">Hvězdy naslouchají…</string>
+    <string name="question_skip">Přeskočit</string>
+    <string name="question_continue">Pokračovat</string>
+
+    <!-- Spread -->
+    <string name="spread_select">Vyberte rozložení</string>
+    <string name="spread_single">Jedna karta</string>
+    <string name="spread_single_desc">Rychlý vhled</string>
+    <string name="spread_three_card">Tři karty</string>
+    <string name="spread_three_card_desc">Minulost · Přítomnost · Budoucnost</string>
+    <string name="spread_celtic_cross">Keltský kříž</string>
+    <string name="spread_celtic_cross_desc">Hluboký výklad (10 karet)</string>
+    <string name="spread_relationship">Vztahový výklad</string>
+    <string name="spread_relationship_desc">Vy · Partner · Vztah · Výzvy · Budoucnost</string>
+    <string name="spread_cost">%d mince</string>
+    <string name="spread_cost_singular">%d mince</string>
+
+    <!-- Card Drawing -->
+    <string name="drawing_tap_to_reveal">Klepněte na kartu pro odhalení</string>
+    <string name="drawing_card_revealed">Karta odhalena!</string>
+    <string name="drawing_all_revealed">Všechny karty odhaleny</string>
+    <string name="drawing_get_reading">Nechat vyložit</string>
+
+    <!-- Reading -->
+    <string name="reading_interpreting">Madame Stella čte vaše karty…</string>
+    <string name="reading_follow_up">Zeptejte se na více…</string>
+    <string name="reading_follow_up_hint">Chcete se zeptat na něco dalšího?</string>
+    <string name="reading_save">Uložit výklad</string>
+    <string name="reading_share">Sdílet</string>
+    <string name="reading_saved">Výklad uložen</string>
+    <string name="reading_summary">Souhrn výkladu</string>
+    <string name="reading_upright">Vzpřímená</string>
+    <string name="reading_reversed">Převrácená</string>
+
+    <!-- History -->
+    <string name="history_title">Historie výkladů</string>
+    <string name="history_empty">Zatím žádné výklady</string>
+    <string name="history_filter_all">Vše</string>
+
+    <!-- Card Library -->
+    <string name="library_title">Knihovna karet</string>
+    <string name="library_major_arcana">Velká Arkána</string>
+    <string name="library_minor_arcana">Malá Arkána</string>
+    <string name="library_cups">Poháry</string>
+    <string name="library_pentacles">Pentakly</string>
+    <string name="library_swords">Meče</string>
+    <string name="library_wands">Hole</string>
+    <string name="library_all">Vše</string>
+    <string name="library_search">Hledat kartu…</string>
+    <string name="library_upright_keywords">Klíčová slova (vzpřímená)</string>
+    <string name="library_reversed_keywords">Klíčová slova (převrácená)</string>
+    <string name="library_love">Láska</string>
+    <string name="library_career">Kariéra</string>
+    <string name="library_finances">Finance</string>
+    <string name="library_feelings">Pocity</string>
+    <string name="library_actions">Rady</string>
+
+    <!-- Daily Card -->
+    <string name="daily_title">Karta dne</string>
+    <string name="daily_tap_reveal">Klepněte pro odhalení vaší denní karty</string>
+    <string name="daily_already_drawn">Dnes jste již odhalili svou kartu</string>
+
+    <!-- Coins -->
+    <string name="coins_balance">Vaše mince</string>
+    <string name="coins_buy">Koupit mince</string>
+    <string name="coins_pack_5">5 mincí</string>
+    <string name="coins_pack_15">15 mincí</string>
+    <string name="coins_pack_50">50 mincí</string>
+    <string name="coins_most_popular">Nejoblíbenější</string>
+    <string name="coins_best_value">Nejlepší hodnota</string>
+    <string name="coins_not_enough">Nemáte dostatek mincí</string>
+    <string name="coins_free_readings">Zbývá %d bezplatných výkladů</string>
+    <string name="coins_free_reading_used">Použit bezplatný výklad (%d/3)</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profil</string>
+    <string name="profile_zodiac">Znamení zvěrokruhu</string>
+    <string name="profile_achievements">Úspěchy</string>
+    <string name="profile_statistics">Statistiky</string>
+    <string name="profile_total_readings">Celkem výkladů</string>
+    <string name="profile_favorite_card">Nejčastější karta</string>
+    <string name="profile_longest_streak">Nejdelší série</string>
+    <string name="profile_language">Jazyk</string>
+    <string name="profile_notifications">Oznámení</string>
+    <string name="profile_notification_time">Čas připomenutí</string>
+    <string name="profile_about">O aplikaci</string>
+    <string name="profile_legal">Právní informace</string>
+
+    <!-- Info -->
+    <string name="faq_title">Časté dotazy</string>
+    <string name="about_title">O aplikaci TAROTIQ</string>
+    <string name="about_version">Verze %s</string>
+    <string name="contact_title">Kontaktovat podporu</string>
+    <string name="terms_title">Obchodní podmínky</string>
+    <string name="privacy_title">Ochrana osobních údajů</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Denní karta</string>
+    <string name="notification_channel_description">Připomenutí denní tarotové karty</string>
+    <string name="notification_daily_title">Vaše denní karta čeká ✨</string>
+    <string name="notification_daily_text">Odkryjte, co pro vás hvězdy dnes připravily.</string>
+
+    <!-- Zodiac Signs -->
+    <string name="zodiac_aries">Beran</string>
+    <string name="zodiac_taurus">Býk</string>
+    <string name="zodiac_gemini">Blíženci</string>
+    <string name="zodiac_cancer">Rak</string>
+    <string name="zodiac_leo">Lev</string>
+    <string name="zodiac_virgo">Panna</string>
+    <string name="zodiac_libra">Váhy</string>
+    <string name="zodiac_scorpio">Štír</string>
+    <string name="zodiac_sagittarius">Střelec</string>
+    <string name="zodiac_capricorn">Kozoroh</string>
+    <string name="zodiac_aquarius">Vodnář</string>
+    <string name="zodiac_pisces">Ryby</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Zrušit</string>
+    <string name="close">Zavřít</string>
+    <string name="back">Zpět</string>
+    <string name="save">Uložit</string>
+    <string name="delete">Smazat</string>
+    <string name="share">Sdílet</string>
+    <string name="loading">Načítání…</string>
+    <string name="error_generic">Něco se pokazilo. Zkuste to znovu.</string>
+    <string name="error_network">Zkontrolujte připojení k internetu.</string>
+    <string name="offline_banner">Jste offline</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">Vítejte v TAROTIQ</string>
+    <string name="onboarding_welcome_desc">Objevte tajemství tarotu s vaší osobní AI věštkyní</string>
+    <string name="onboarding_zodiac">Vaše znamení</string>
+    <string name="onboarding_zodiac_desc">Vyberte své znamení zvěrokruhu pro personalizované výklady</string>
+    <string name="onboarding_daily">Denní karta</string>
+    <string name="onboarding_daily_desc">Každý den vám odhalíme kartu s poselstvím</string>
+    <string name="onboarding_ready">Jste připraveni</string>
+    <string name="onboarding_ready_desc">3 výklady máte zdarma. Začněte svou cestu!</string>
+    <string name="onboarding_start">Začít</string>
+    <string name="onboarding_next">Další</string>
+    <string name="onboarding_skip">Přeskočit</string>
+
+    <!-- Moon Phases -->
+    <string name="moon_new">Novoluní</string>
+    <string name="moon_waxing_crescent">Dorůstající srpek</string>
+    <string name="moon_first_quarter">První čtvrť</string>
+    <string name="moon_waxing_gibbous">Dorůstající měsíc</string>
+    <string name="moon_full">Úplněk</string>
+    <string name="moon_waning_gibbous">Couvající měsíc</string>
+    <string name="moon_last_quarter">Poslední čtvrť</string>
+    <string name="moon_waning_crescent">Couvající srpek</string>
+
+    <!-- Achievements -->
+    <string name="achievement_first_reading">První výklad</string>
+    <string name="achievement_ten_readings">10 výkladů</string>
+    <string name="achievement_all_spreads">Všechna rozložení</string>
+    <string name="achievement_week_streak">Týdenní série</string>
+    <string name="achievement_month_streak">Měsíční série</string>
+    <string name="achievement_major_arcana">Všechna Velká Arkána</string>
+
+    <!-- FAQ -->
+    <string name="faq_q1">Jak funguje výklad?</string>
+    <string name="faq_a1">Vyberete si téma, volitelně položíte otázku, zvolíte rozložení karet a tahováním odhalíte karty. Naše AI věštkyně Madame Stella pak interpretuje vaše karty v kontextu vaší otázky.</string>
+    <string name="faq_q2">Jsou výklady zdarma?</string>
+    <string name="faq_a2">Dostanete 3 výklady zcela zdarma. Poté si můžete dokoupit balíčky mincí pro další výklady. Denní karta je vždy zdarma.</string>
+    <string name="faq_q3">Jak fungují mince?</string>
+    <string name="faq_a3">Mince používáte k placení za výklady. Různá rozložení stojí různý počet mincí: 1 karta = 1 mince, 3 karty = 2 mince, Keltský kříž = 3 mince.</string>
+    <string name="faq_q4">Je tarot přesný?</string>
+    <string name="faq_a4">Tarot je nástroj pro introspekci a osobní rozvoj. Výklady jsou generovány AI a slouží jako inspirace, nikoli jako definitivní předpovědi budoucnosti.</string>
+    <string name="faq_q5">Mohu se ptát na doplňující otázky?</string>
+    <string name="faq_a5">Ano! Po každém výkladu se můžete Madame Stelly zeptat na cokoliv dalšího ohledně vašich karet — bez dalších nákladů.</string>
+</resources>
