@@ -80,14 +80,11 @@ fun DailyCardScreen(
                         Image(painterResource(R.drawable.card_back), "Card back", contentScale = ContentScale.Crop, modifier = Modifier.fillMaxSize())
                     } else {
                         dailyCard?.let { card ->
-                            val v2Cards = setOf(6, 15, 17, 20, 21)
-                            val resName = if (card.cardId < 22) {
-                                val idx = card.cardId + 1
-                                if (card.cardId in v2Cards) "major_arcana_x22_%02d_v2".format(idx)
-                                else "major_arcana_x22_%02d".format(idx)
-                            }
-                                else { val mi = card.cardId - 22; val suit = when (mi / 14) { 0->"cups"; 1->"pentacles"; 2->"swords"; else->"wands" }
-                                    "card_%02d_%s_x14_minor_arcana".format(mi % 14 + 1, suit) }
+                            val majorNames = listOf("major_the_fool","major_the_magician","major_the_high_priestess","major_the_empress","major_the_emperor","major_the_hierophant","major_the_lovers","major_the_chariot","major_strength","major_the_hermit","major_wheel_of_fortune","major_justice","major_the_hanged_man","major_death","major_temperance","major_the_devil","major_the_tower","major_the_star","major_the_moon","major_the_sun","major_judgement","major_the_world")
+                            val ranks = listOf("ace","two","three","four","five","six","seven","eight","nine","ten","page","knight","queen","king")
+                            val suits = listOf("cups","pentacles","swords","wands")
+                            val resName = if (card.cardId < 22) majorNames[card.cardId]
+                                else { val mi = card.cardId - 22; "minor_${ranks[mi % 14]}_of_${suits[mi / 14]}" }
                             val resId = context.resources.getIdentifier(resName, "drawable", context.packageName)
                             Image(painterResource(if (resId != 0) resId else R.drawable.card_back), "Daily card",
                                 contentScale = ContentScale.Crop,
