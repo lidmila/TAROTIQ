@@ -90,10 +90,11 @@ class CoinBillingRepository private constructor(
             .setProductList(productList)
             .build()
 
-        val listener = ProductDetailsResponseListener { billingResult, detailsList ->
-            if (billingResult.responseCode == BillingClient.BillingResponseCode.OK && detailsList != null) {
+        billingClient.queryProductDetailsAsync(params) { billingResult, queryResult ->
+            if (billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
+                val productDetailsList = queryResult.productDetailsList
                 cachedProductDetails.clear()
-                cachedProductDetails.addAll(detailsList)
+                cachedProductDetails.addAll(productDetailsList)
                 _coinPacks.value = CoinPack.PACKS.map { pack ->
                     val detail = cachedProductDetails.firstOrNull { d -> d.productId == pack.productId }
                     pack.copy(
@@ -102,7 +103,6 @@ class CoinBillingRepository private constructor(
                 }
             }
         }
-        billingClient.queryProductDetailsAsync(params, listener)
     }
 
     fun launchPurchase(activity: Activity, productId: String) {
@@ -149,10 +149,10 @@ class CoinBillingRepository private constructor(
                 val ackParams = AcknowledgePurchaseParams.newBuilder()
                     .setPurchaseToken(purchase.purchaseToken)
                     .build()
-                val ackResult = billingClient.acknowledgePurchase(ackParams)
-                if (ackResult.responseCode != BillingClient.BillingResponseCode.OK) {
-                    _purchaseState.value = PurchaseState.Error("Failed to acknowledge purchase")
-                    return
+                billingClient.acknowledgePurchase(ackParams) { billingResult ->
+                    if (billingResult.responseCode != BillingClient.BillingResponseCode.OK) {
+                        Log.e(TAG, "Failed to acknowledge: ${billingResult.debugMessage}")
+                    }
                 }
             }
 
@@ -172,17 +172,7 @@ class CoinBillingRepository private constructor(
                 return
             }
 
-            // Consume the purchase BEFORE granting coins — if consume fails, don't grant
-            val consumeParams = ConsumeParams.newBuilder()
-                .setPurchaseToken(purchase.purchaseToken)
-                .build()
-            val consumeResult = billingClient.consumePurchase(consumeParams)
-            if (consumeResult.billingResult.responseCode != BillingClient.BillingResponseCode.OK) {
-                _purchaseState.value = PurchaseState.Error("Failed to consume purchase")
-                return
-            }
-
-            // Grant coins atomically
+            // Grant coins atomically, then consume
             firestore.runTransaction { transaction ->
                 val coinRef = firestore.collection("users").document(userId)
                     .collection("coins").document("balance")
@@ -209,6 +199,14 @@ class CoinBillingRepository private constructor(
                     "coinsGranted" to coinsToGrant
                 ))
             }.await()
+
+            // Consume the purchase so it can be bought again
+            val consumeParams = ConsumeParams.newBuilder()
+                .setPurchaseToken(purchase.purchaseToken)
+                .build()
+            billingClient.consumeAsync(consumeParams) { billingResult, _ ->
+                Log.d(TAG, "Consume result: ${billingResult.responseCode}")
+            }
 
             _purchaseState.value = PurchaseState.Success(coinsToGrant)
         } catch (e: Exception) {
