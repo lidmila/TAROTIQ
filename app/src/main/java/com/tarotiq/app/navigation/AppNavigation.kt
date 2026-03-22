@@ -177,6 +177,7 @@ fun AppNavigation(
                 composable(Screen.QuestionInput.route, arguments = listOf(navArgument("topic") { type = NavType.StringType })) { entry ->
                     val topic = entry.arguments?.getString("topic") ?: ""
                     QuestionInputScreen(
+                        topic = topic,
                         onContinue = { question ->
                             readingViewModel.setQuestion(question)
                             navController.navigate(Screen.SpreadSelection.createRoute(topic, question))

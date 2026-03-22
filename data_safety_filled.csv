@@ -8,11 +8,11 @@ PSL_SUPPORTED_ACCOUNT_CREATION_METHODS,PSL_ACM_OAUTH,TRUE,MULTIPLE_CHOICE,Kterou
 PSL_SUPPORTED_ACCOUNT_CREATION_METHODS,PSL_ACM_OTHER,,MULTIPLE_CHOICE,Kterou z následujících metod vytvoření účtu vaše aplikace podporuje? Vyberte všechny platné možnosti / Jiné
 PSL_SUPPORTED_ACCOUNT_CREATION_METHODS,PSL_ACM_NONE,,MULTIPLE_CHOICE,Kterou z následujících metod vytvoření účtu vaše aplikace podporuje? Vyberte všechny platné možnosti / Aplikace uživatelům vytvoření účtu neumožňuje
 PSL_ACM_SPECIFY,,,MAYBE_REQUIRED,"Popište způsob vytváření účtů, který vaše aplikace podporuje"
-PSL_ACCOUNT_DELETION_URL,,,MAYBE_REQUIRED,"Přidejte odkaz, pomocí kterého mohou uživatelé požádat o smazání svého účtu a přidružených dat "
+PSL_ACCOUNT_DELETION_URL,,https://www.codewhiskers.app/smazani-uctu,MAYBE_REQUIRED,"Přidejte odkaz, pomocí kterého mohou uživatelé požádat o smazání svého účtu a přidružených dat "
 PSL_SUPPORT_DATA_DELETION_BY_USER,DATA_DELETION_YES,TRUE,SINGLE_CHOICE,Umožňujete uživatelům požádat o vymazání údajů o nich? / Ano
 PSL_SUPPORT_DATA_DELETION_BY_USER,DATA_DELETION_NO,,SINGLE_CHOICE,Umožňujete uživatelům požádat o vymazání údajů o nich? / Ne
 PSL_SUPPORT_DATA_DELETION_BY_USER,DATA_DELETION_NO_AUTO_DELETED,,SINGLE_CHOICE,"Umožňujete uživatelům požádat o vymazání údajů o nich? / Ne, ale data uživatelů se do 90 dnů automaticky mažou"
-PSL_DATA_DELETION_URL,,,MAYBE_REQUIRED,Adresa URL ke smazání dat
+PSL_DATA_DELETION_URL,,https://www.codewhiskers.app/smazani-uctu,MAYBE_REQUIRED,Adresa URL ke smazání dat
 PSL_DATA_COLLECTION_COMPLIES_FAMILY_POLICY,,,OPTIONAL,"Na tuto otázku odpovězte pouze v případě, že jste uvedli, že cílová věková skupina vaší aplikace zahrnuje děti, nebo jste se přihlásili do programu Pro celou rodinu. Pokud platí některá z výše uvedených skutečností, jste povinni dodržovat zásady služby Google Play pro rodiny (https://support.google.com/googleplay/android-developer/answer/9893335). Chcete o tomto závazku informovat uživatele v sekci Zabezpečení údajů ve svém záznamu v obchodu?"
 PSL_INDEPENDENTLY_VALIDATED,,,OPTIONAL,"Prošla vaše aplikace úspěšně nezávislou kontrolou zabezpečení podle rámce MASA (Mobile Application Security Assessment)? Kladně odpovězte pouze v případě, že je kontrola v dobrém stavu."
 PSL_UPI_BADGE_OPT_IN,,,OPTIONAL,Chcete tento odznak zobrazovat ve svém záznamu v obchodu?
