@@ -242,7 +242,7 @@ fun AppNavigation(
                 }
                 composable(Screen.CardDetail.route, arguments = listOf(navArgument("cardId") { type = NavType.IntType })) { entry ->
                     val cardId = entry.arguments?.getInt("cardId") ?: 0
-                    CardDetailScreen(cardId = cardId, onBack = { navController.popBackStack() })
+                    CardDetailScreen(cardId = cardId, onNavigateBack = { navController.popBackStack() })
                 }
 
                 // History

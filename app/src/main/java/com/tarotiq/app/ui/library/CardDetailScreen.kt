@@ -28,7 +28,7 @@ import com.tarotiq.app.ui.components.AnimatedBackground
 import com.tarotiq.app.ui.components.GlassCard
 import com.tarotiq.app.ui.theme.*
 import com.tarotiq.app.viewmodel.CardLibraryViewModel
-import kotlinx.serialization.json.Json
+import com.google.gson.Gson
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
@@ -237,13 +237,10 @@ fun CardDetailScreen(
                                 divider = {
                                     HorizontalDivider(color = GlassBorder)
                                 },
-                                indicator = { tabPositions ->
-                                    if (selectedTab < tabPositions.size) {
-                                        TabRowDefaults.SecondaryIndicator(
-                                            modifier = Modifier.tabIndicatorOffset(tabPositions[selectedTab]),
-                                            color = GoldSecondary
-                                        )
-                                    }
+                                indicator = {
+                                    TabRowDefaults.SecondaryIndicator(
+                                        color = GoldSecondary
+                                    )
                                 }
                             ) {
                                 tabTitles.forEachIndexed { index, title ->
@@ -410,7 +407,7 @@ private fun getElementColor(element: String): Color {
 
 private fun parseKeywords(json: String): List<String> {
     return try {
-        Json.decodeFromString<List<String>>(json)
+        Gson().fromJson(json, Array<String>::class.java).toList()
     } catch (_: Exception) {
         json.removeSurrounding("[", "]")
             .split(",")

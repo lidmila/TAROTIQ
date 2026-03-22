@@ -9,6 +9,9 @@ import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.tasks.await
+import kotlin.coroutines.resume
+import kotlinx.coroutines.CancellableContinuation
+import kotlinx.coroutines.suspendCancellableCoroutine
 
 class CoinBillingRepository private constructor(
     private val context: Context
@@ -76,11 +79,10 @@ class CoinBillingRepository private constructor(
         })
     }
 
-    private suspend fun queryProducts() {
-        val productIds = CoinPack.PACKS.map { it.productId }
-        val productList = productIds.map {
+    private suspend fun queryProducts() = suspendCancellableCoroutine { cont ->
+        val productList = CoinPack.PACKS.map {
             QueryProductDetailsParams.Product.newBuilder()
-                .setProductId(it)
+                .setProductId(it.productId)
                 .setProductType(BillingClient.ProductType.INAPP)
                 .build()
         }
@@ -88,56 +90,47 @@ class CoinBillingRepository private constructor(
             .setProductList(productList)
             .build()
 
-        val result = billingClient.queryProductDetails(params)
-        if (result.billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
-            val details = result.productDetailsList ?: emptyList()
-            _coinPacks.value = CoinPack.PACKS.map { pack ->
-                val detail = details.find { it.productId == pack.productId }
-                pack.copy(
-                    formattedPrice = detail?.oneTimePurchaseOfferDetails?.formattedPrice ?: ""
-                )
+        billingClient.queryProductDetailsAsync(params) { billingResult, detailsList ->
+            if (billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
+                _coinPacks.value = CoinPack.PACKS.map { pack ->
+                    val detail = detailsList.find { it.productId == pack.productId }
+                    pack.copy(
+                        formattedPrice = detail?.oneTimePurchaseOfferDetails?.formattedPrice ?: ""
+                    )
+                }
             }
+            cont.resume(Unit)
         }
     }
 
     fun launchPurchase(activity: Activity, productId: String) {
-        val detail = billingClient.queryProductDetails(
-            QueryProductDetailsParams.newBuilder()
-                .setProductList(listOf(
-                    QueryProductDetailsParams.Product.newBuilder()
-                        .setProductId(productId)
-                        .setProductType(BillingClient.ProductType.INAPP)
-                        .build()
-                ))
-                .build()
-        )
-        // Use cached product details instead
         scope.launch {
             _purchaseState.value = PurchaseState.Processing
 
+            val productList = listOf(
+                QueryProductDetailsParams.Product.newBuilder()
+                    .setProductId(productId)
+                    .setProductType(BillingClient.ProductType.INAPP)
+                    .build()
+            )
             val params = QueryProductDetailsParams.newBuilder()
-                .setProductList(listOf(
-                    QueryProductDetailsParams.Product.newBuilder()
-                        .setProductId(productId)
-                        .setProductType(BillingClient.ProductType.INAPP)
-                        .build()
-                ))
+                .setProductList(productList)
                 .build()
 
-            val result = billingClient.queryProductDetails(params)
-            val productDetails = result.productDetailsList?.firstOrNull()
-
-            if (productDetails != null) {
-                val flowParams = BillingFlowParams.newBuilder()
-                    .setProductDetailsParamsList(listOf(
-                        BillingFlowParams.ProductDetailsParams.newBuilder()
-                            .setProductDetails(productDetails)
-                            .build()
-                    ))
-                    .build()
-                billingClient.launchBillingFlow(activity, flowParams)
-            } else {
-                _purchaseState.value = PurchaseState.Error("Product not found")
+            billingClient.queryProductDetailsAsync(params) { billingResult, detailsList ->
+                val productDetails = detailsList.firstOrNull()
+                if (productDetails != null) {
+                    val flowParams = BillingFlowParams.newBuilder()
+                        .setProductDetailsParamsList(listOf(
+                            BillingFlowParams.ProductDetailsParams.newBuilder()
+                                .setProductDetails(productDetails)
+                                .build()
+                        ))
+                        .build()
+                    billingClient.launchBillingFlow(activity, flowParams)
+                } else {
+                    _purchaseState.value = PurchaseState.Error("Product not found")
+                }
             }
         }
     }
@@ -164,10 +157,14 @@ class CoinBillingRepository private constructor(
         try {
             // Acknowledge the purchase
             if (!purchase.isAcknowledged) {
-                val ackParams = AcknowledgePurchaseParams.newBuilder()
-                    .setPurchaseToken(purchase.purchaseToken)
-                    .build()
-                val ackResult = billingClient.acknowledgePurchase(ackParams)
+                val ackResult = suspendCancellableCoroutine { cont ->
+                    val ackParams = AcknowledgePurchaseParams.newBuilder()
+                        .setPurchaseToken(purchase.purchaseToken)
+                        .build()
+                    billingClient.acknowledgePurchase(ackParams) { billingResult ->
+                        cont.resume(billingResult)
+                    }
+                }
                 if (ackResult.responseCode != BillingClient.BillingResponseCode.OK) {
                     _purchaseState.value = PurchaseState.Error("Failed to acknowledge purchase")
                     return
@@ -191,11 +188,15 @@ class CoinBillingRepository private constructor(
             }
 
             // Consume the purchase BEFORE granting coins — if consume fails, don't grant
-            val consumeParams = ConsumeParams.newBuilder()
-                .setPurchaseToken(purchase.purchaseToken)
-                .build()
-            val consumeResult = billingClient.consumePurchase(consumeParams)
-            if (consumeResult.billingResult.responseCode != BillingClient.BillingResponseCode.OK) {
+            val consumeResult = suspendCancellableCoroutine { cont ->
+                val consumeParams = ConsumeParams.newBuilder()
+                    .setPurchaseToken(purchase.purchaseToken)
+                    .build()
+                billingClient.consumeAsync(consumeParams) { billingResult, _ ->
+                    cont.resume(billingResult)
+                }
+            }
+            if (consumeResult.responseCode != BillingClient.BillingResponseCode.OK) {
                 _purchaseState.value = PurchaseState.Error("Failed to consume purchase")
                 return
             }

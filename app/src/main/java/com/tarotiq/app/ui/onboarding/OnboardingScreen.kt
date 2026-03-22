@@ -33,6 +33,7 @@ import com.tarotiq.app.R
 import com.tarotiq.app.ui.components.AnimatedBackground
 import com.tarotiq.app.ui.components.GlassCard
 import com.tarotiq.app.ui.theme.*
+import androidx.compose.foundation.ExperimentalFoundationApi
 import kotlinx.coroutines.launch
 
 private data class ZodiacItem(
@@ -56,6 +57,7 @@ private val zodiacSigns = listOf(
     ZodiacItem("pisces", R.string.zodiac_pisces, "\u2653")
 )
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun OnboardingScreen(
     onComplete: (zodiacSign: String?) -> Unit
