@@ -92,8 +92,9 @@ class CoinBillingRepository private constructor(
 
         billingClient.queryProductDetailsAsync(params) { billingResult, detailsList ->
             if (billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
+                val details: List<ProductDetails> = detailsList.orEmpty()
                 _coinPacks.value = CoinPack.PACKS.map { pack ->
-                    val detail = detailsList.find { d -> d.productId == pack.productId }
+                    val detail = details.firstOrNull { d -> d.productId == pack.productId }
                     pack.copy(
                         formattedPrice = detail?.oneTimePurchaseOfferDetails?.formattedPrice ?: ""
                     )
@@ -118,7 +119,7 @@ class CoinBillingRepository private constructor(
                 .build()
 
             billingClient.queryProductDetailsAsync(params) { billingResult, detailsList ->
-                val productDetails = detailsList?.firstOrNull()
+                val productDetails = detailsList.orEmpty().firstOrNull()
                 if (productDetails != null) {
                     val flowParams = BillingFlowParams.newBuilder()
                         .setProductDetailsParamsList(listOf(
