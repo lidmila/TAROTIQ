@@ -80,9 +80,14 @@ fun DailyCardScreen(
                         Image(painterResource(R.drawable.card_back), "Card back", contentScale = ContentScale.Crop, modifier = Modifier.fillMaxSize())
                     } else {
                         dailyCard?.let { card ->
-                            val resName = if (card.cardId < 22) "major_arcana_x22_%02d".format(card.cardId + 1)
+                            val v2Cards = setOf(6, 15, 17, 20, 21)
+                            val resName = if (card.cardId < 22) {
+                                val idx = card.cardId + 1
+                                if (card.cardId in v2Cards) "major_arcana_x22_%02d_v2".format(idx)
+                                else "major_arcana_x22_%02d".format(idx)
+                            }
                                 else { val mi = card.cardId - 22; val suit = when (mi / 14) { 0->"cups"; 1->"pentacles"; 2->"swords"; else->"wands" }
-                                    "%02d_%s_x14_minor_arcana".format(mi % 14 + 1, suit) }
+                                    "card_%02d_%s_x14_minor_arcana".format(mi % 14 + 1, suit) }
                             val resId = context.resources.getIdentifier(resName, "drawable", context.packageName)
                             Image(painterResource(if (resId != 0) resId else R.drawable.card_back), "Daily card",
                                 contentScale = ContentScale.Crop,

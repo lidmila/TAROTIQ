@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">2788944933-4kutd0a6msnm89gcl8a490upg89acfsv.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">2788944933</string>
+    <string name="google_api_key" translatable="false">AIzaSyAX8U8GrmFZp6S2ljdl2Kggec2TeurytVA</string>
+    <string name="google_app_id" translatable="false">1:2788944933:android:0935a655f5d972e44d63cc</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAX8U8GrmFZp6S2ljdl2Kggec2TeurytVA</string>
+    <string name="google_storage_bucket" translatable="false">tarotiq-954df.firebasestorage.app</string>
+    <string name="project_id" translatable="false">tarotiq-954df</string>
+</resources>

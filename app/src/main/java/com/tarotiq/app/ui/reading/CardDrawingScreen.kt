@@ -448,8 +448,14 @@ private fun getCardDrawableResId(context: android.content.Context, cardId: Int):
     // Map cardId (0-77) to drawable resource
     // Major Arcana: 0-21  -> major_arcana_x22_01 .. major_arcana_x22_22
     // Minor Arcana: 22-77 -> suit-based naming (cups, pentacles, swords, wands)
+    // Cards 07,16,18,21,22 (0-indexed: 6,15,17,20,21) have _v2 suffix
+    val v2Cards = setOf(6, 15, 17, 20, 21)
     val resName = when {
-        cardId < 22 -> "major_arcana_x22_%02d".format(cardId + 1)
+        cardId < 22 -> {
+            val idx = cardId + 1
+            if (cardId in v2Cards) "major_arcana_x22_%02d_v2".format(idx)
+            else "major_arcana_x22_%02d".format(idx)
+        }
         else -> {
             val minorIndex = cardId - 22
             val suitIndex = minorIndex / 14
@@ -461,7 +467,7 @@ private fun getCardDrawableResId(context: android.content.Context, cardId: Int):
                 3 -> "wands"
                 else -> "cups"
             }
-            "%02d_%s_x14_minor_arcana".format(cardNumber, suit)
+            "card_%02d_%s_x14_minor_arcana".format(cardNumber, suit)
         }
     }
     val resId = context.resources.getIdentifier(resName, "drawable", context.packageName)
