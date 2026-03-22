@@ -179,6 +179,11 @@
     <string name="retry">Retry</string>
     <string name="no_cards_found">No cards found</string>
 
+    <!-- Rewarded Ads -->
+    <string name="rewarded_ad_title">Watch ad, earn a coin</string>
+    <string name="rewarded_ad_subtitle">%d remaining this week</string>
+    <string name="rewarded_ad_success">+1 coin earned!</string>
+
     <!-- Onboarding -->
     <string name="onboarding_welcome">Welcome to TAROTIQ</string>
     <string name="onboarding_welcome_desc">Discover the secrets of tarot with your personal AI fortune teller</string>

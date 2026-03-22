@@ -53,6 +53,8 @@ class FirebaseFunctionsClient(private val context: Context) {
             }
         )
 
+        Log.d(TAG, "Auth user: ${auth.currentUser?.uid}, email: ${auth.currentUser?.email}")
+
         return try {
             val result = functions.getHttpsCallable("interpretTarotReading")
                 .call(data)

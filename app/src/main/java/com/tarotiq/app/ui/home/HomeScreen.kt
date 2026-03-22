@@ -19,14 +19,21 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.tarotiq.app.R
+import com.tarotiq.app.data.preferences.SettingsManager
 import com.tarotiq.app.ui.components.AnimatedBackground
 import com.tarotiq.app.ui.components.GlassCard
+import com.tarotiq.app.ui.components.RewardedAdManager
 import com.tarotiq.app.ui.theme.*
 import com.tarotiq.app.utils.AstroUtils
 import com.tarotiq.app.viewmodel.HomeViewModel
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
 
 @Composable
 fun HomeScreen(
@@ -301,8 +308,120 @@ fun HomeScreen(
                 )
             }
 
+            // Rewarded Ad Upsell
+            Spacer(modifier = Modifier.height(20.dp))
+            RewardedAdCard()
+
             // Bottom spacing for nav bar
             Spacer(modifier = Modifier.height(100.dp))
+        }
+    }
+}
+
+@Composable
+private fun RewardedAdCard() {
+    val context = LocalContext.current
+    val activity = context as? android.app.Activity
+    val settingsManager = remember { SettingsManager(context) }
+    val rewardedAdManager = remember { RewardedAdManager(context) }
+    val scope = rememberCoroutineScope()
+
+    val adsWatchedThisWeek by settingsManager.rewardedAdsThisWeekFlow.collectAsState(initial = 0)
+    var isLoading by remember { mutableStateOf(false) }
+    var showSuccess by remember { mutableStateOf(false) }
+
+    val maxAdsPerWeek = 5
+    val remaining = maxAdsPerWeek - adsWatchedThisWeek
+
+    LaunchedEffect(Unit) { rewardedAdManager.preload() }
+
+    if (remaining > 0) {
+        GlassCard(
+            onClick = {
+                if (activity != null && !isLoading) {
+                    isLoading = true
+                    rewardedAdManager.show(
+                        activity = activity,
+                        onRewarded = {
+                            scope.launch {
+                                settingsManager.incrementRewardedAdsCount()
+                                // Grant 1 coin in Firestore
+                                val userId = FirebaseAuth.getInstance().currentUser?.uid
+                                if (userId != null) {
+                                    try {
+                                        val db = FirebaseFirestore.getInstance()
+                                        val coinRef = db.collection("users").document(userId)
+                                            .collection("coins").document("balance")
+                                        db.runTransaction { transaction ->
+                                            val doc = transaction.get(coinRef)
+                                            val current = doc.getLong("balance")?.toInt() ?: 0
+                                            transaction.update(coinRef, "balance", current + 1)
+                                        }.await()
+                                    } catch (_: Exception) { }
+                                }
+                                showSuccess = true
+                                isLoading = false
+                            }
+                        },
+                        onDismissed = { isLoading = false }
+                    )
+                }
+            },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Row(
+                modifier = Modifier.padding(16.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(
+                    Icons.Default.PlayCircle,
+                    contentDescription = null,
+                    tint = GoldSecondary,
+                    modifier = Modifier.size(40.dp)
+                )
+                Spacer(modifier = Modifier.width(12.dp))
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = stringResource(R.string.rewarded_ad_title),
+                        style = MaterialTheme.typography.titleSmall,
+                        color = GoldSecondary
+                    )
+                    Text(
+                        text = stringResource(R.string.rewarded_ad_subtitle, remaining),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = TextSecondary
+                    )
+                }
+                if (isLoading) {
+                    CircularProgressIndicator(modifier = Modifier.size(24.dp), color = MysticPrimary)
+                } else {
+                    Surface(
+                        shape = RoundedCornerShape(8.dp),
+                        color = MysticPrimary
+                    ) {
+                        Text(
+                            text = "+1",
+                            style = MaterialTheme.typography.titleMedium,
+                            color = OnPrimary,
+                            modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp)
+                        )
+                    }
+                }
+            }
+        }
+
+        if (showSuccess) {
+            LaunchedEffect(Unit) {
+                kotlinx.coroutines.delay(2000)
+                showSuccess = false
+            }
+            Text(
+                text = stringResource(R.string.rewarded_ad_success),
+                color = SuccessColor,
+                style = MaterialTheme.typography.bodySmall,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.fillMaxWidth().padding(top = 8.dp)
+            )
         }
     }
 }

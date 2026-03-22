@@ -19,9 +19,13 @@ object AdUnitIds {
     private const val PROD_INTERSTITIAL = "ca-app-pub-9561317089977080/8410626313"
     private const val PROD_NATIVE = "ca-app-pub-9561317089977080/2891039313"
 
+    private const val TEST_REWARDED = "ca-app-pub-3940256099942544/5224354917"
+    private const val PROD_REWARDED = "ca-app-pub-9561317089977080/4397170574"
+
     val BANNER: String get() = if (BuildConfig.DEBUG) TEST_BANNER else PROD_BANNER
     val INTERSTITIAL: String get() = if (BuildConfig.DEBUG) TEST_INTERSTITIAL else PROD_INTERSTITIAL
     val NATIVE: String get() = if (BuildConfig.DEBUG) TEST_NATIVE else PROD_NATIVE
+    val REWARDED: String get() = if (BuildConfig.DEBUG) TEST_REWARDED else PROD_REWARDED
 }
 
 @SuppressLint("MissingPermission")

@@ -44,6 +44,8 @@ export const interpretTarotReading = onCall({
   maxInstances: 10,
   memory: "512MiB",
   timeoutSeconds: 90,
+  // Allow unauthenticated invocations so Firebase Auth tokens are passed through
+  invoker: "public",
 }, async (request) => {
   if (!request.auth) throw new HttpsError("unauthenticated", "Must be logged in");
 
@@ -146,7 +148,7 @@ ${cardDescriptions}`;
   }
 });
 
-export const spendCoins = onCall(async (request) => {
+export const spendCoins = onCall({ invoker: "public" }, async (request) => {
   if (!request.auth) throw new HttpsError("unauthenticated", "Must be logged in");
 
   const userId = request.auth.uid;
@@ -199,6 +201,7 @@ export const generateDailyInsight = onCall({
   maxInstances: 5,
   memory: "256MiB",
   timeoutSeconds: 30,
+  invoker: "public",
 }, async (request) => {
   if (!request.auth) throw new HttpsError("unauthenticated", "Must be logged in");
 

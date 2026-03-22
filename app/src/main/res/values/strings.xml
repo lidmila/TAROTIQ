@@ -179,6 +179,11 @@
     <string name="retry">Zkusit znovu</string>
     <string name="no_cards_found">Žádné karty nenalezeny</string>
 
+    <!-- Rewarded Ads -->
+    <string name="rewarded_ad_title">Sledujte reklamu, získejte minci</string>
+    <string name="rewarded_ad_subtitle">Zbývá %d tento týden</string>
+    <string name="rewarded_ad_success">+1 mince připsána!</string>
+
     <!-- Onboarding -->
     <string name="onboarding_welcome">Vítejte v TAROTIQ</string>
     <string name="onboarding_welcome_desc">Objevte tajemství tarotu s vaší osobní AI věštkyní</string>

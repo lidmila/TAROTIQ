@@ -36,6 +36,8 @@ class SettingsManager(private val context: Context) {
         private val KEY_LONGEST_STREAK = intPreferencesKey("longest_streak")
         private val KEY_LAST_ACTIVE_DATE = stringPreferencesKey("last_active_date")
         private val KEY_CACHED_COIN_BALANCE = intPreferencesKey("cached_coin_balance")
+        private val KEY_REWARDED_ADS_THIS_WEEK = intPreferencesKey("rewarded_ads_this_week")
+        private val KEY_REWARDED_ADS_WEEK_START = stringPreferencesKey("rewarded_ads_week_start")
     }
 
     // === Settings Flow ===
@@ -213,6 +215,56 @@ class SettingsManager(private val context: Context) {
         return context.dataStore.data
             .map { it[KEY_CACHED_COIN_BALANCE] ?: 0 }
             .first()
+    }
+
+    // === Rewarded Ads ===
+
+    val rewardedAdsThisWeekFlow: Flow<Int> = context.dataStore.data
+        .map { preferences ->
+            val weekStart = preferences[KEY_REWARDED_ADS_WEEK_START] ?: ""
+            val currentWeekStart = getCurrentWeekStart()
+            if (weekStart == currentWeekStart) {
+                preferences[KEY_REWARDED_ADS_THIS_WEEK] ?: 0
+            } else {
+                0 // New week, reset counter
+            }
+        }
+
+    suspend fun incrementRewardedAdsCount(): Int {
+        var newCount = 0
+        context.dataStore.edit { preferences ->
+            val currentWeekStart = getCurrentWeekStart()
+            val savedWeekStart = preferences[KEY_REWARDED_ADS_WEEK_START] ?: ""
+
+            if (savedWeekStart != currentWeekStart) {
+                // New week - reset
+                preferences[KEY_REWARDED_ADS_WEEK_START] = currentWeekStart
+                preferences[KEY_REWARDED_ADS_THIS_WEEK] = 1
+                newCount = 1
+            } else {
+                val current = preferences[KEY_REWARDED_ADS_THIS_WEEK] ?: 0
+                newCount = current + 1
+                preferences[KEY_REWARDED_ADS_THIS_WEEK] = newCount
+            }
+        }
+        return newCount
+    }
+
+    suspend fun getRewardedAdsThisWeek(): Int {
+        return context.dataStore.data
+            .map { preferences ->
+                val weekStart = preferences[KEY_REWARDED_ADS_WEEK_START] ?: ""
+                if (weekStart == getCurrentWeekStart()) {
+                    preferences[KEY_REWARDED_ADS_THIS_WEEK] ?: 0
+                } else 0
+            }
+            .first()
+    }
+
+    private fun getCurrentWeekStart(): String {
+        val cal = java.util.Calendar.getInstance()
+        cal.set(java.util.Calendar.DAY_OF_WEEK, java.util.Calendar.MONDAY)
+        return "${cal.get(java.util.Calendar.YEAR)}-${cal.get(java.util.Calendar.WEEK_OF_YEAR)}"
     }
 
     // === Clear Settings ===
