@@ -47,26 +47,8 @@ class CoinBillingRepository private constructor(
     private val _purchaseState = MutableStateFlow<PurchaseState>(PurchaseState.Idle)
     val purchaseState: StateFlow<PurchaseState> = _purchaseState.asStateFlow()
 
-    private val _coinBalance = MutableStateFlow(0)
-    val coinBalance: StateFlow<Int> = _coinBalance.asStateFlow()
-
     init {
         connectToBillingService()
-        observeCoinBalance()
-    }
-
-    private fun observeCoinBalance() {
-        val userId = auth.currentUser?.uid ?: return
-        firestore.collection("users").document(userId)
-            .collection("coins").document("balance")
-            .addSnapshotListener { snapshot, error ->
-                if (error != null) {
-                    Log.e(TAG, "Error listening to coin balance", error)
-                    return@addSnapshotListener
-                }
-                val balance = snapshot?.getLong("balance")?.toInt() ?: 0
-                _coinBalance.value = balance
-            }
     }
 
     fun connectToBillingService() {
@@ -208,6 +190,16 @@ class CoinBillingRepository private constructor(
                 return
             }
 
+            // Consume the purchase BEFORE granting coins — if consume fails, don't grant
+            val consumeParams = ConsumeParams.newBuilder()
+                .setPurchaseToken(purchase.purchaseToken)
+                .build()
+            val consumeResult = billingClient.consumePurchase(consumeParams)
+            if (consumeResult.billingResult.responseCode != BillingClient.BillingResponseCode.OK) {
+                _purchaseState.value = PurchaseState.Error("Failed to consume purchase")
+                return
+            }
+
             // Grant coins atomically
             firestore.runTransaction { transaction ->
                 val coinRef = firestore.collection("users").document(userId)
@@ -235,12 +227,6 @@ class CoinBillingRepository private constructor(
                     "coinsGranted" to coinsToGrant
                 ))
             }.await()
-
-            // Consume the purchase so it can be bought again
-            val consumeParams = ConsumeParams.newBuilder()
-                .setPurchaseToken(purchase.purchaseToken)
-                .build()
-            billingClient.consumePurchase(consumeParams)
 
             _purchaseState.value = PurchaseState.Success(coinsToGrant)
         } catch (e: Exception) {

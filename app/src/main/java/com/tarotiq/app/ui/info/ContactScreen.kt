@@ -38,10 +38,10 @@ fun ContactScreen(onBack: () -> Unit) {
             Column(modifier = Modifier.fillMaxSize().padding(padding).padding(24.dp)) {
                 GlassCard(modifier = Modifier.fillMaxWidth()) {
                     Column(modifier = Modifier.padding(16.dp)) {
-                        OutlinedTextField(value = subject, onValueChange = { subject = it }, label = { Text("Subject") },
+                        OutlinedTextField(value = subject, onValueChange = { subject = it }, label = { Text(stringResource(R.string.contact_subject)) },
                             modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(12.dp), singleLine = true)
                         Spacer(modifier = Modifier.height(12.dp))
-                        OutlinedTextField(value = message, onValueChange = { message = it }, label = { Text("Message") },
+                        OutlinedTextField(value = message, onValueChange = { message = it }, label = { Text(stringResource(R.string.contact_message)) },
                             modifier = Modifier.fillMaxWidth().height(200.dp), shape = RoundedCornerShape(12.dp))
                     }
                 }
@@ -62,7 +62,7 @@ fun ContactScreen(onBack: () -> Unit) {
                 ) {
                     Icon(Icons.Default.Send, null)
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("Send")
+                    Text(stringResource(R.string.contact_send))
                 }
             }
         }

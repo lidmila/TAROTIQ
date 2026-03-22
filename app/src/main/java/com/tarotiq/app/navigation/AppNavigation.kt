@@ -154,21 +154,24 @@ fun AppNavigation(
                 composable(Screen.Home.route) {
                     if (!isAuthenticated) { navController.navigate(Screen.Login.route) { popUpTo(0) { inclusive = true } } }
                     else HomeScreen(
-                        onNavigateToDaily = { navController.navigate(Screen.DailyCard.route) },
-                        onNavigateToReading = { spread -> readingViewModel.resetReading(); readingViewModel.setSpread(spread); readingViewModel.setTopic("general")
-                            navController.navigate(Screen.CardDrawing.createRoute("general", spread.key)) },
+                        onNavigateToProfile = { navController.navigate(Screen.Profile.route) },
+                        onNavigateToDailyCard = { navController.navigate(Screen.DailyCard.route) },
                         onNavigateToNewReading = { navController.navigate(Screen.TopicSelection.route) },
-                        onNavigateToShop = { navController.navigate(Screen.CoinShop.route) },
-                        onNavigateToProfile = { navController.navigate(Screen.Profile.route) }
+                        onNavigateToCoinShop = { navController.navigate(Screen.CoinShop.route) },
+                        onNavigateToQuickReading = { spreadType -> readingViewModel.resetReading(); readingViewModel.setSpread(ReadingSpread.fromKey(spreadType)); readingViewModel.setTopic("general")
+                            navController.navigate(Screen.CardDrawing.createRoute("general", spreadType)) }
                     )
                 }
 
                 // Reading flow
                 composable(Screen.TopicSelection.route) {
-                    TopicSelectionScreen(onTopicSelected = { topic ->
-                        readingViewModel.setTopic(topic)
-                        navController.navigate(Screen.QuestionInput.createRoute(topic))
-                    })
+                    TopicSelectionScreen(
+                        onTopicSelected = { topic ->
+                            readingViewModel.setTopic(topic)
+                            navController.navigate(Screen.QuestionInput.createRoute(topic))
+                        },
+                        onBack = { navController.popBackStack() }
+                    )
                 }
 
                 composable(Screen.QuestionInput.route, arguments = listOf(navArgument("topic") { type = NavType.StringType })) { entry ->
@@ -187,10 +190,13 @@ fun AppNavigation(
                     navArgument("question") { type = NavType.StringType; nullable = true; defaultValue = null }
                 )) { entry ->
                     val topic = entry.arguments?.getString("topic") ?: ""
+                    val question = entry.arguments?.getString("question")
                     SpreadSelectionScreen(
-                        onSpreadSelected = { spread ->
-                            readingViewModel.setSpread(spread)
-                            navController.navigate(Screen.CardDrawing.createRoute(topic, spread.key))
+                        topic = topic,
+                        question = question,
+                        onSpreadSelected = { spreadKey ->
+                            readingViewModel.setSpread(ReadingSpread.fromKey(spreadKey))
+                            navController.navigate(Screen.CardDrawing.createRoute(topic, spreadKey))
                         },
                         onBack = { navController.popBackStack() }
                     )
@@ -229,7 +235,10 @@ fun AppNavigation(
 
                 // Library
                 composable(Screen.CardLibrary.route) {
-                    CardLibraryScreen(onCardClick = { cardId -> navController.navigate(Screen.CardDetail.createRoute(cardId)) })
+                    CardLibraryScreen(
+                        onNavigateToCardDetail = { cardId -> navController.navigate(Screen.CardDetail.createRoute(cardId)) },
+                        onNavigateBack = { navController.popBackStack() }
+                    )
                 }
                 composable(Screen.CardDetail.route, arguments = listOf(navArgument("cardId") { type = NavType.IntType })) { entry ->
                     val cardId = entry.arguments?.getInt("cardId") ?: 0

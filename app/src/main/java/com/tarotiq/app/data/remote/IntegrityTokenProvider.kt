@@ -11,7 +11,7 @@ class IntegrityTokenProvider(private val context: Context) {
     companion object {
         private const val TAG = "IntegrityTokenProvider"
         // TODO: Replace with your Google Cloud project number
-        private const val CLOUD_PROJECT_NUMBER = 0L
+        private const val CLOUD_PROJECT_NUMBER = 2788944933L
     }
 
     private var integrityManager: StandardIntegrityManager? = null

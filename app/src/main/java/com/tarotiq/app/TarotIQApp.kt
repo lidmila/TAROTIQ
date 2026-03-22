@@ -4,7 +4,9 @@ import android.app.Application
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
+import com.tarotiq.app.data.local.CardDataInitializer
 import com.tarotiq.app.data.preferences.SettingsManager
+import com.tarotiq.app.utils.DatabaseProvider
 import com.tarotiq.app.utils.LocaleUtils
 import com.tarotiq.app.worker.DailyCardReminderWorker
 import com.tarotiq.app.worker.ReminderScheduler
@@ -60,6 +62,12 @@ class TarotIQApp : Application() {
 
         // Create notification channel
         createNotificationChannel()
+
+        // Initialize card database on first launch
+        applicationScope.launch(Dispatchers.IO) {
+            val db = DatabaseProvider.getDatabase(this@TarotIQApp)
+            CardDataInitializer.initializeCards(db.tarotCardDao())
+        }
 
         // Schedule daily card reminder if enabled
         applicationScope.launch {

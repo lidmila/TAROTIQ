@@ -30,6 +30,7 @@ fun ReadingDetailScreen(
     historyViewModel: ReadingHistoryViewModel = viewModel()
 ) {
     var reading by remember { mutableStateOf<TarotReading?>(null) }
+    var showDeleteDialog by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
     val dateFormat = remember { SimpleDateFormat("dd.MM.yyyy HH:mm", Locale.getDefault()) }
 
@@ -46,10 +47,10 @@ fun ReadingDetailScreen(
                     title = { Text(reading?.topic?.replaceFirstChar { it.uppercase() } ?: "") },
                     navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, null) } },
                     actions = {
-                        reading?.let { r ->
-                            IconButton(onClick = {
-                                scope.launch { historyViewModel.deleteReading(r); onBack() }
-                            }) { Icon(Icons.Default.Delete, null, tint = ErrorColor) }
+                        reading?.let {
+                            IconButton(onClick = { showDeleteDialog = true }) {
+                                Icon(Icons.Default.Delete, null, tint = ErrorColor)
+                            }
                         }
                     },
                     colors = TopAppBarDefaults.topAppBarColors(containerColor = MidnightBg2.copy(alpha = 0.8f))
@@ -78,5 +79,28 @@ fun ReadingDetailScreen(
                 }
             }
         }
+    }
+
+    if (showDeleteDialog) {
+        AlertDialog(
+            onDismissRequest = { showDeleteDialog = false },
+            title = { Text(stringResource(R.string.delete_confirm_title)) },
+            text = { Text(stringResource(R.string.delete_confirm_message)) },
+            confirmButton = {
+                TextButton(onClick = {
+                    reading?.let { r ->
+                        scope.launch { historyViewModel.deleteReading(r); onBack() }
+                    }
+                    showDeleteDialog = false
+                }) {
+                    Text(stringResource(R.string.delete), color = ErrorColor)
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showDeleteDialog = false }) {
+                    Text(stringResource(R.string.cancel))
+                }
+            }
+        )
     }
 }

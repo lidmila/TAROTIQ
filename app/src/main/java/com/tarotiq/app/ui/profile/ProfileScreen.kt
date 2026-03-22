@@ -214,7 +214,7 @@ fun ProfileScreen(
         AlertDialog(
             onDismissRequest = { showDeleteDialog = false },
             title = { Text(stringResource(R.string.auth_delete_account)) },
-            text = { Text("This action cannot be undone.") },
+            text = { Text(stringResource(R.string.delete_confirm_message)) },
             confirmButton = {
                 TextButton(onClick = { authViewModel.deleteAccount { _, _ -> showDeleteDialog = false } }) {
                     Text(stringResource(R.string.delete), color = ErrorColor)

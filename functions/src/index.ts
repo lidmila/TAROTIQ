@@ -49,6 +49,37 @@ export const interpretTarotReading = onCall({
 
   const { topic, question, spreadType, drawnCards, zodiacSign, moonPhase, language, conversationHistory } = request.data;
 
+  // F4: Input validation
+  if (typeof topic !== "string" || topic.length === 0 || topic.length > 200) {
+    throw new HttpsError("invalid-argument", "Topic must be a string between 1 and 200 characters");
+  }
+  if (question !== undefined && question !== null) {
+    if (typeof question !== "string" || question.length > 500) {
+      throw new HttpsError("invalid-argument", "Question must be a string of at most 500 characters");
+    }
+  }
+  if (!Array.isArray(drawnCards) || drawnCards.length === 0 || drawnCards.length > 20) {
+    throw new HttpsError("invalid-argument", "drawnCards must be a non-empty array with at most 20 items");
+  }
+  for (const card of drawnCards as any[]) {
+    if (typeof card.cardId !== "string" && typeof card.cardId !== "number") {
+      throw new HttpsError("invalid-argument", "Each card must have a valid cardId");
+    }
+  }
+
+  // F1: Rate limiting — max 20 readings per day per user
+  const db = admin.firestore();
+  const now = new Date();
+  const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const rateLimitSnapshot = await db.collection("usage_logs")
+    .where("userId", "==", request.auth.uid)
+    .where("action", "==", "tarot_reading")
+    .where("timestamp", ">=", startOfDay)
+    .get();
+  if (rateLimitSnapshot.size >= 20) {
+    throw new HttpsError("resource-exhausted", "Daily reading limit reached. Maximum 20 readings per day.");
+  }
+
   const cardDescriptions = (drawnCards as any[]).map((card: any, i: number) =>
     `${i + 1}. Position: ${card.positionMeaning} | Card ID: ${card.cardId} | ${card.isReversed ? "REVERSED" : "UPRIGHT"}`
   ).join("\n");
@@ -91,11 +122,15 @@ ${cardDescriptions}`;
       }),
     });
 
+    if (!response.ok) {
+      console.error("OpenAI API error:", response.status, response.statusText);
+      throw new HttpsError("internal", "AI service returned an error");
+    }
+
     const data = await response.json() as any;
     const interpretation = data.choices?.[0]?.message?.content || "The cards remain silent...";
 
     // Log usage
-    const db = admin.firestore();
     await db.collection("usage_logs").add({
       userId: request.auth.uid,
       action: "tarot_reading",
@@ -134,7 +169,7 @@ export const spendCoins = onCall(async (request) => {
       transaction.update(coinRef, {
         freeReadingsUsed: (data.freeReadingsUsed || 0) + 1,
       });
-      return { freeTierUsed: true, freeReadingsRemaining: 2 - (data.freeReadingsUsed || 0) };
+      return { freeTierUsed: true, freeReadingsRemaining: 3 - ((data.freeReadingsUsed || 0) + 1) };
     }
 
     // Check coin balance

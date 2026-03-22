@@ -32,7 +32,7 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
     companion object {
         private const val TAG = "AuthViewModel"
         // TODO: Replace with your Google Web Client ID from Firebase Console
-        private const val WEB_CLIENT_ID = "YOUR_WEB_CLIENT_ID.apps.googleusercontent.com"
+        private const val WEB_CLIENT_ID = "2788944933-4kutd0a6msnm89gcl8a490upg89acfsv.apps.googleusercontent.com"
     }
 
     private val auth = FirebaseAuth.getInstance()
@@ -50,10 +50,15 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun loginWithEmail(email: String, password: String) {
+        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            _authState.value = _authState.value.copy(error = "Invalid email format")
+            return
+        }
         viewModelScope.launch {
             _authState.value = _authState.value.copy(isLoading = true, error = null)
             try {
                 auth.signInWithEmailAndPassword(email, password).await()
+                _authState.value = _authState.value.copy(isLoading = false)
             } catch (e: Exception) {
                 _authState.value = _authState.value.copy(error = e.message, isLoading = false)
             }
@@ -61,10 +66,19 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun registerWithEmail(email: String, password: String) {
+        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            _authState.value = _authState.value.copy(error = "Invalid email format")
+            return
+        }
+        if (password.length < 6) {
+            _authState.value = _authState.value.copy(error = "Password must be at least 6 characters")
+            return
+        }
         viewModelScope.launch {
             _authState.value = _authState.value.copy(isLoading = true, error = null)
             try {
                 auth.createUserWithEmailAndPassword(email, password).await()
+                _authState.value = _authState.value.copy(isLoading = false)
             } catch (e: Exception) {
                 _authState.value = _authState.value.copy(error = e.message, isLoading = false)
             }
@@ -107,6 +121,7 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
                 if (auth.isSignInWithEmailLink(link)) {
                     auth.signInWithEmailLink(email, link).await()
                 }
+                _authState.value = _authState.value.copy(isLoading = false)
             } catch (e: Exception) {
                 _authState.value = _authState.value.copy(error = e.message, isLoading = false)
             }

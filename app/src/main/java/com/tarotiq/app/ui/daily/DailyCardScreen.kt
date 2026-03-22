@@ -105,7 +105,7 @@ fun DailyCardScreen(
                 dailyCard?.let { card ->
                     Spacer(modifier = Modifier.height(16.dp))
                     TextButton(onClick = { onCardDetail(card.cardId) }) {
-                        Text("View card details", color = MysticLight)
+                        Text(stringResource(R.string.daily_view_details), color = MysticLight)
                     }
                 }
             }

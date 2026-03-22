@@ -41,6 +41,7 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     init {
         viewModelScope.launch {
+            coinRepo.initializeCoinDocument()
             coinRepo.startListening()
             gamificationRepo.updateStreak()
             checkDailyCard()

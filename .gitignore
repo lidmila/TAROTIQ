@@ -20,3 +20,4 @@ functions/lib/
 
 # Claude
 .claude/
+firebase-debug.log

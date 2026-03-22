@@ -103,6 +103,7 @@
     <string name="daily_title">Karta dne</string>
     <string name="daily_tap_reveal">Klepněte pro odhalení vaší denní karty</string>
     <string name="daily_already_drawn">Dnes jste již odhalili svou kartu</string>
+    <string name="daily_view_details">Zobrazit detail karty</string>
 
     <!-- Coins -->
     <string name="coins_balance">Vaše mince</string>
@@ -135,6 +136,9 @@
     <string name="about_title">O aplikaci TAROTIQ</string>
     <string name="about_version">Verze %s</string>
     <string name="contact_title">Kontaktovat podporu</string>
+    <string name="contact_send">Odeslat</string>
+    <string name="contact_subject">Předmět</string>
+    <string name="contact_message">Zpráva</string>
     <string name="terms_title">Obchodní podmínky</string>
     <string name="privacy_title">Ochrana osobních údajů</string>
 
@@ -170,6 +174,10 @@
     <string name="error_generic">Něco se pokazilo. Zkuste to znovu.</string>
     <string name="error_network">Zkontrolujte připojení k internetu.</string>
     <string name="offline_banner">Jste offline</string>
+    <string name="delete_confirm_title">Smazat výklad?</string>
+    <string name="delete_confirm_message">Tuto akci nelze vrátit zpět.</string>
+    <string name="retry">Zkusit znovu</string>
+    <string name="no_cards_found">Žádné karty nenalezeny</string>
 
     <!-- Onboarding -->
     <string name="onboarding_welcome">Vítejte v TAROTIQ</string>

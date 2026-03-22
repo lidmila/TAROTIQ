@@ -343,3 +343,201 @@
 [debug] [2026-03-21T22:20:06.390Z] <<< [apiv2][status] GET https://artifactregistry.googleapis.com/v1/projects/tarotiq-954df/locations/us-central1/repositories/gcf-artifacts 200
 [debug] [2026-03-21T22:20:06.390Z] <<< [apiv2][body] GET https://artifactregistry.googleapis.com/v1/projects/tarotiq-954df/locations/us-central1/repositories/gcf-artifacts {"name":"projects/tarotiq-954df/locations/us-central1/repositories/gcf-artifacts","format":"DOCKER","description":"This repository is created and used by Cloud Functions for storing function docker images.","labels":{"goog-managed-by":"cloudfunctions"},"createTime":"2026-03-21T22:19:27.118754Z","updateTime":"2026-03-21T22:19:27.118754Z","mode":"STANDARD_REPOSITORY","vulnerabilityScanningConfig":{"lastEnableTime":"2026-03-21T22:19:18.721441962Z","enablementState":"SCANNING_DISABLED","enablementStateReason":"API containerscanning.googleapis.com is not enabled."},"satisfiesPzi":true,"registryUri":"us-central1-docker.pkg.dev/tarotiq-954df/gcf-artifacts"}
 [warn] !  functions: No cleanup policy detected for repositories in us-central1. This may result in a small monthly bill as container images accumulate over time. 
+[info] i  functions: Configuring cleanup policy for repository in us-central1. Images older than 1 days will be automatically deleted. 
+[debug] [2026-03-21T22:20:48.666Z] Setting up artifact cleanup policy for region us-central1
+[debug] [2026-03-21T22:20:48.666Z] Checked if tokens are valid: true, expires at: 1774134931221
+[debug] [2026-03-21T22:20:48.666Z] Checked if tokens are valid: true, expires at: 1774134931221
+[debug] [2026-03-21T22:20:48.666Z] >>> [apiv2][query] PATCH https://artifactregistry.googleapis.com/v1/projects/tarotiq-954df/locations/us-central1/repositories/gcf-artifacts updateMask=name%2CcleanupPolicies%2CcleanupPolicyDryRun%2Clabels
+[debug] [2026-03-21T22:20:48.666Z] >>> [apiv2][body] PATCH https://artifactregistry.googleapis.com/v1/projects/tarotiq-954df/locations/us-central1/repositories/gcf-artifacts {"name":"projects/tarotiq-954df/locations/us-central1/repositories/gcf-artifacts","cleanupPolicies":{"firebase-functions-cleanup":{"id":"firebase-functions-cleanup","condition":{"tagState":"ANY","olderThan":"86400s"},"action":"DELETE"}},"cleanupPolicyDryRun":false,"labels":{"goog-managed-by":"cloudfunctions"}}
+[debug] [2026-03-21T22:20:49.132Z] <<< [apiv2][status] PATCH https://artifactregistry.googleapis.com/v1/projects/tarotiq-954df/locations/us-central1/repositories/gcf-artifacts 200
+[debug] [2026-03-21T22:20:49.132Z] <<< [apiv2][body] PATCH https://artifactregistry.googleapis.com/v1/projects/tarotiq-954df/locations/us-central1/repositories/gcf-artifacts {"name":"projects/tarotiq-954df/locations/us-central1/repositories/gcf-artifacts","format":"DOCKER","description":"This repository is created and used by Cloud Functions for storing function docker images.","labels":{"goog-managed-by":"cloudfunctions"},"createTime":"2026-03-21T22:19:27.118754Z","updateTime":"2026-03-21T22:20:50.187443Z","mode":"STANDARD_REPOSITORY","cleanupPolicies":{"firebase-functions-cleanup":{"id":"firebase-functions-cleanup","action":"DELETE","condition":{"tagState":"ANY","olderThan":"86400s"}}},"vulnerabilityScanningConfig":{"lastEnableTime":"2026-03-21T22:19:18.721441962Z","enablementState":"SCANNING_DISABLED","enablementStateReason":"API containerscanning.googleapis.com is not enabled."},"satisfiesPzi":true}
+[info] i  functions: Configured cleanup policy for repository in us-central1. 
+[debug] [2026-03-21T22:20:49.132Z] Functions deploy failed.
+[debug] [2026-03-21T22:20:49.132Z] {
+  "endpoint": {
+    "id": "generateDailyInsight",
+    "project": "tarotiq-954df",
+    "region": "us-central1",
+    "entryPoint": "generateDailyInsight",
+    "platform": "gcfv2",
+    "runtime": "nodejs20",
+    "callableTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "secretEnvironmentVariables": [
+      {
+        "key": "OPENAI_API_KEY",
+        "secret": "OPENAI_API_KEY",
+        "projectId": "tarotiq-954df",
+        "version": "1"
+      }
+    ],
+    "serviceAccount": null,
+    "ingressSettings": null,
+    "availableMemoryMb": 256,
+    "timeoutSeconds": 30,
+    "maxInstances": 5,
+    "minInstances": null,
+    "concurrency": 80,
+    "vpc": null,
+    "environmentVariables": {
+      "FIREBASE_CONFIG": "{\"projectId\":\"tarotiq-954df\",\"storageBucket\":\"tarotiq-954df.firebasestorage.app\"}",
+      "GCLOUD_PROJECT": "tarotiq-954df",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/tarotiq-954df/locations/us-central1/services/generateDailyInsight"
+    },
+    "codebase": "default",
+    "cpu": 1,
+    "targetedByOnly": false,
+    "hash": "a08591db40b72e9b9ce7c6e898e5b90fa95ec062"
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "context": {
+      "function": "projects/tarotiq-954df/locations/us-central1/functions/generateDailyInsight"
+    },
+    "exit": 1,
+    "message": "Failed to create function projects/tarotiq-954df/locations/us-central1/functions/generateDailyInsight",
+    "original": {
+      "name": "FirebaseError",
+      "children": [],
+      "context": {
+        "body": {
+          "error": {
+            "code": 500,
+            "message": "Could not create Cloud Run service generatedailyinsight. The service has encountered an internal error. Please try again later",
+            "status": "INTERNAL"
+          }
+        },
+        "response": {
+          "statusCode": 500
+        }
+      },
+      "exit": 2,
+      "message": "Request to https://cloudfunctions.googleapis.com/v2/projects/tarotiq-954df/locations/us-central1/functions?functionId=generateDailyInsight had HTTP Error: 500, Could not create Cloud Run service generatedailyinsight. The service has encountered an internal error. Please try again later",
+      "status": 500
+    },
+    "status": 500,
+    "code": 500
+  }
+}
+[debug] [2026-03-21T22:20:49.132Z] {
+  "endpoint": {
+    "id": "spendCoins",
+    "project": "tarotiq-954df",
+    "region": "us-central1",
+    "entryPoint": "spendCoins",
+    "platform": "gcfv2",
+    "runtime": "nodejs20",
+    "callableTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "serviceAccount": null,
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "concurrency": 80,
+    "vpc": null,
+    "environmentVariables": {
+      "FIREBASE_CONFIG": "{\"projectId\":\"tarotiq-954df\",\"storageBucket\":\"tarotiq-954df.firebasestorage.app\"}",
+      "GCLOUD_PROJECT": "tarotiq-954df",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/tarotiq-954df/locations/us-central1/services/spendCoins"
+    },
+    "codebase": "default",
+    "cpu": 1,
+    "targetedByOnly": false,
+    "hash": "bf4e388b536a9e9e6f556475989aa9436ebdb06e"
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "context": {
+      "function": "projects/tarotiq-954df/locations/us-central1/functions/spendCoins"
+    },
+    "exit": 1,
+    "message": "Failed to create function projects/tarotiq-954df/locations/us-central1/functions/spendCoins",
+    "original": {
+      "name": "FirebaseError",
+      "children": [],
+      "context": {
+        "body": {
+          "error": {
+            "code": 500,
+            "message": "Could not create Cloud Run service spendcoins. The service has encountered an internal error. Please try again later",
+            "status": "INTERNAL"
+          }
+        },
+        "response": {
+          "statusCode": 500
+        }
+      },
+      "exit": 2,
+      "message": "Request to https://cloudfunctions.googleapis.com/v2/projects/tarotiq-954df/locations/us-central1/functions?functionId=spendCoins had HTTP Error: 500, Could not create Cloud Run service spendcoins. The service has encountered an internal error. Please try again later",
+      "status": 500
+    },
+    "status": 500,
+    "code": 500
+  }
+}
+[debug] [2026-03-21T22:20:49.133Z] {
+  "endpoint": {
+    "id": "interpretTarotReading",
+    "project": "tarotiq-954df",
+    "region": "us-central1",
+    "entryPoint": "interpretTarotReading",
+    "platform": "gcfv2",
+    "runtime": "nodejs20",
+    "callableTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "secretEnvironmentVariables": [
+      {
+        "key": "OPENAI_API_KEY",
+        "secret": "OPENAI_API_KEY",
+        "projectId": "tarotiq-954df",
+        "version": "1"
+      }
+    ],
+    "serviceAccount": null,
+    "ingressSettings": null,
+    "availableMemoryMb": 512,
+    "timeoutSeconds": 90,
+    "maxInstances": 10,
+    "minInstances": null,
+    "concurrency": 80,
+    "vpc": null,
+    "environmentVariables": {
+      "FIREBASE_CONFIG": "{\"projectId\":\"tarotiq-954df\",\"storageBucket\":\"tarotiq-954df.firebasestorage.app\"}",
+      "GCLOUD_PROJECT": "tarotiq-954df",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/tarotiq-954df/locations/us-central1/services/interpretTarotReading"
+    },
+    "codebase": "default",
+    "cpu": 1,
+    "targetedByOnly": false,
+    "hash": "a08591db40b72e9b9ce7c6e898e5b90fa95ec062"
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "exit": 1,
+    "message": "Build failed with status: FAILURE. Could not build the function due to a missing permission on the build service account. If you didn't revoke that permission explicitly, this could be caused by a change in the organization policies. Please refer to the following documentation for more details and resolution: https://cloud.google.com/functions/docs/troubleshooting#build-service-account\n You can also view the logs at https://console.cloud.google.com/cloud-build/builds;region=us-central1/0eb3d891-d9c8-43d8-9884-19f897a4bda7?project=2788944933.\n",
+    "original": {
+      "code": 3,
+      "message": "Build failed with status: FAILURE. Could not build the function due to a missing permission on the build service account. If you didn't revoke that permission explicitly, this could be caused by a change in the organization policies. Please refer to the following documentation for more details and resolution: https://cloud.google.com/functions/docs/troubleshooting#build-service-account\n You can also view the logs at https://console.cloud.google.com/cloud-build/builds;region=us-central1/0eb3d891-d9c8-43d8-9884-19f897a4bda7?project=2788944933.\n"
+    },
+    "status": 3,
+    "code": 3
+  }
+}
+[error] Error: There was an error deploying functions:
+[error] - Error Failed to create function generateDailyInsight in region us-central1
+[error] - Error Failed to create function spendCoins in region us-central1
+[error] - Error Failed to create function interpretTarotReading in region us-central1
