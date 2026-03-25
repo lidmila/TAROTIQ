@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Major Arcana -->
+    <string name="card_the_fool">Le Mat</string>
+    <string name="card_the_magician">Le Bateleur</string>
+    <string name="card_the_high_priestess">La Papesse</string>
+    <string name="card_the_empress">L\'Impératrice</string>
+    <string name="card_the_emperor">L\'Empereur</string>
+    <string name="card_the_hierophant">Le Pape</string>
+    <string name="card_the_lovers">L\'Amoureux</string>
+    <string name="card_the_chariot">Le Chariot</string>
+    <string name="card_strength">La Force</string>
+    <string name="card_the_hermit">L\'Hermite</string>
+    <string name="card_wheel_of_fortune">La Roue de Fortune</string>
+    <string name="card_justice">La Justice</string>
+    <string name="card_the_hanged_man">Le Pendu</string>
+    <string name="card_death">La Mort</string>
+    <string name="card_temperance">Tempérance</string>
+    <string name="card_the_devil">Le Diable</string>
+    <string name="card_the_tower">La Maison Dieu</string>
+    <string name="card_the_star">L\'Étoile</string>
+    <string name="card_the_moon">La Lune</string>
+    <string name="card_the_sun">Le Soleil</string>
+    <string name="card_judgement">Le Jugement</string>
+    <string name="card_the_world">Le Monde</string>
+
+    <!-- Cups -->
+    <string name="card_ace_of_cups">As de Coupes</string>
+    <string name="card_two_of_cups">Deux de Coupes</string>
+    <string name="card_three_of_cups">Trois de Coupes</string>
+    <string name="card_four_of_cups">Quatre de Coupes</string>
+    <string name="card_five_of_cups">Cinq de Coupes</string>
+    <string name="card_six_of_cups">Six de Coupes</string>
+    <string name="card_seven_of_cups">Sept de Coupes</string>
+    <string name="card_eight_of_cups">Huit de Coupes</string>
+    <string name="card_nine_of_cups">Neuf de Coupes</string>
+    <string name="card_ten_of_cups">Dix de Coupes</string>
+    <string name="card_page_of_cups">Valet de Coupes</string>
+    <string name="card_knight_of_cups">Cavalier de Coupes</string>
+    <string name="card_queen_of_cups">Reine de Coupes</string>
+    <string name="card_king_of_cups">Roi de Coupes</string>
+
+    <!-- Pentacles -->
+    <string name="card_ace_of_pentacles">As de Deniers</string>
+    <string name="card_two_of_pentacles">Deux de Deniers</string>
+    <string name="card_three_of_pentacles">Trois de Deniers</string>
+    <string name="card_four_of_pentacles">Quatre de Deniers</string>
+    <string name="card_five_of_pentacles">Cinq de Deniers</string>
+    <string name="card_six_of_pentacles">Six de Deniers</string>
+    <string name="card_seven_of_pentacles">Sept de Deniers</string>
+    <string name="card_eight_of_pentacles">Huit de Deniers</string>
+    <string name="card_nine_of_pentacles">Neuf de Deniers</string>
+    <string name="card_ten_of_pentacles">Dix de Deniers</string>
+    <string name="card_page_of_pentacles">Valet de Deniers</string>
+    <string name="card_knight_of_pentacles">Cavalier de Deniers</string>
+    <string name="card_queen_of_pentacles">Reine de Deniers</string>
+    <string name="card_king_of_pentacles">Roi de Deniers</string>
+
+    <!-- Swords -->
+    <string name="card_ace_of_swords">As d\'Épées</string>
+    <string name="card_two_of_swords">Deux d\'Épées</string>
+    <string name="card_three_of_swords">Trois d\'Épées</string>
+    <string name="card_four_of_swords">Quatre d\'Épées</string>
+    <string name="card_five_of_swords">Cinq d\'Épées</string>
+    <string name="card_six_of_swords">Six d\'Épées</string>
+    <string name="card_seven_of_swords">Sept d\'Épées</string>
+    <string name="card_eight_of_swords">Huit d\'Épées</string>
+    <string name="card_nine_of_swords">Neuf d\'Épées</string>
+    <string name="card_ten_of_swords">Dix d\'Épées</string>
+    <string name="card_page_of_swords">Valet d\'Épées</string>
+    <string name="card_knight_of_swords">Cavalier d\'Épées</string>
+    <string name="card_queen_of_swords">Reine d\'Épées</string>
+    <string name="card_king_of_swords">Roi d\'Épées</string>
+
+    <!-- Wands -->
+    <string name="card_ace_of_wands">As de Bâtons</string>
+    <string name="card_two_of_wands">Deux de Bâtons</string>
+    <string name="card_three_of_wands">Trois de Bâtons</string>
+    <string name="card_four_of_wands">Quatre de Bâtons</string>
+    <string name="card_five_of_wands">Cinq de Bâtons</string>
+    <string name="card_six_of_wands">Six de Bâtons</string>
+    <string name="card_seven_of_wands">Sept de Bâtons</string>
+    <string name="card_eight_of_wands">Huit de Bâtons</string>
+    <string name="card_nine_of_wands">Neuf de Bâtons</string>
+    <string name="card_ten_of_wands">Dix de Bâtons</string>
+    <string name="card_page_of_wands">Valet de Bâtons</string>
+    <string name="card_knight_of_wands">Cavalier de Bâtons</string>
+    <string name="card_queen_of_wands">Reine de Bâtons</string>
+    <string name="card_king_of_wands">Roi de Bâtons</string>
+</resources>

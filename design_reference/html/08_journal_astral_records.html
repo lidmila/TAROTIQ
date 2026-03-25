@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Celestial Archive - Journal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#6349c0",
+              "on-primary": "#330b91",
+              "surface-tint": "#cbbeff",
+              "surface-container": "#211e28",
+              "secondary-container": "#af8d11",
+              "on-secondary-fixed-variant": "#574500",
+              "surface-container-highest": "#36333e",
+              "on-primary-container": "#927af3",
+              "surface-bright": "#3b3842",
+              "surface-dim": "#14121b",
+              "on-tertiary-container": "#8c8d8d",
+              "on-primary-fixed-variant": "#4a2ea7",
+              "surface-container-high": "#2b2933",
+              "surface-variant": "#36333e",
+              "tertiary": "#c6c6c6",
+              "on-surface-variant": "#cbc4d0",
+              "outline": "#948e99",
+              "on-secondary": "#3c2f00",
+              "on-error": "#690005",
+              "on-secondary-container": "#342800",
+              "inverse-on-surface": "#322f39",
+              "secondary": "#e9c349",
+              "primary": "#cbbeff",
+              "on-tertiary": "#2f3131",
+              "inverse-surface": "#e6e0ee",
+              "secondary-fixed": "#ffe088",
+              "on-background": "#e6e0ee",
+              "error-container": "#93000a",
+              "tertiary-fixed": "#e3e2e2",
+              "on-primary-fixed": "#1e0061",
+              "on-secondary-fixed": "#241a00",
+              "surface-container-low": "#1c1a24",
+              "tertiary-container": "#242626",
+              "on-tertiary-fixed": "#1a1c1c",
+              "primary-fixed": "#e7deff",
+              "secondary-fixed-dim": "#e9c349",
+              "on-tertiary-fixed-variant": "#464747",
+              "primary-fixed-dim": "#cbbeff",
+              "primary-container": "#28007b",
+              "error": "#ffb4ab",
+              "on-error-container": "#ffdad6",
+              "outline-variant": "#49454e",
+              "on-surface": "#e6e0ee",
+              "tertiary-fixed-dim": "#c6c6c6",
+              "surface": "#14121b",
+              "surface-container-lowest": "#0f0d16",
+              "background": "#14121b"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shimmer {
+            background: linear-gradient(120deg, #e9c349 0%, #cbbeff 50%, #e9c349 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 8s linear infinite;
+        }
+        @keyframes shimmer {
+            to { background-position: 200% center; }
+        }
+        .card-glow {
+            box-shadow: 0 0 20px rgba(203, 190, 255, 0.08);
+            border: 1px solid rgba(203, 190, 255, 0.1);
+        }
+        .nebula-gradient {
+            background: radial-gradient(circle at top left, rgba(40, 0, 123, 0.3) 0%, transparent 70%),
+                        radial-gradient(circle at bottom right, rgba(20, 18, 27, 1) 0%, transparent 100%);
+        }
+        .search-integrated {
+            background: rgba(28, 26, 36, 0.4);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(148, 142, 153, 0.1);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+            background-image: 
+                radial-gradient(1px 1px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 40px 70px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 50px 160px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 80px 120px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 110px 40px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 150px 200px, #ffffff, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 200px 200px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30 min-h-screen pb-32 nebula-gradient">
+<!-- TopAppBar -->
+<header class="bg-transparent backdrop-blur-md flex justify-between items-center w-full px-6 py-4 fixed top-0 z-50 border-b border-outline-variant/10">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high border border-outline-variant/20 overflow-hidden ring-1 ring-primary/20">
+<img class="w-full h-full object-cover opacity-80" data-alt="Mystical ethereal user profile portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnubxX899FmJq4lfbtXaZBLAIywMY1whHEe2mNiFdNFDXlMD0rebmcdqJJG0auC0-CRmcRuNVKtTCWt_l6miY8nZa4fJVSkSk_eZhm1F-GfeYGrfxlYO783on7JkcymOsc2fwfQPpoT48QZKOIUvuGNG-eyuPdQ3wwByMDAQZY_8-8RfgYrall0xbuMS8AkZH-BXKGrcH34p-yBKyZFKErOVyqtwk_j5F_MeYI7fuhQ80QiHZLoyXNvhfbS9zjb9HWtvAy0jYzuZo"/>
+</div>
+</div>
+<h1 class="text-2xl font-headline font-light tracking-widest italic text-shimmer">Celestial Archive</h1>
+<button class="text-[#cbbeff] hover:text-[#e9c349] transition-colors duration-300 active:scale-95">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</button>
+</header>
+<main class="pt-24 px-6 max-w-4xl mx-auto">
+<!-- Search Section -->
+<section class="mb-12">
+<div class="relative group">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline group-focus-within:text-secondary transition-colors" data-icon="search">search</span>
+<input class="w-full search-integrated rounded-xl py-4 pl-12 pr-4 text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/20 transition-all font-body tracking-wide placeholder:text-outline/40" placeholder="Search dates, cards, or intentions..." type="text"/>
+</div>
+<div class="flex gap-3 mt-6 overflow-x-auto pb-2 no-scrollbar">
+<span class="px-5 py-2 rounded-full bg-primary/10 text-primary text-xs font-label uppercase tracking-widest border border-primary/20">All Readings</span>
+<span class="px-5 py-2 rounded-full bg-surface-container/30 text-outline text-xs font-label uppercase tracking-widest hover:text-secondary hover:bg-secondary/10 transition-all cursor-pointer border border-outline/10">Daily Draw</span>
+<span class="px-5 py-2 rounded-full bg-surface-container/30 text-outline text-xs font-label uppercase tracking-widest hover:text-secondary hover:bg-secondary/10 transition-all cursor-pointer border border-outline/10">Celtic Cross</span>
+<span class="px-5 py-2 rounded-full bg-surface-container/30 text-outline text-xs font-label uppercase tracking-widest hover:text-secondary hover:bg-secondary/10 transition-all cursor-pointer border border-outline/10">Manifestation</span>
+</div>
+</section>
+<!-- Journal Entries: Asymmetric Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Entry 1: Featured/Large -->
+<div class="md:col-span-12 group cursor-pointer">
+<div class="bg-surface-container-low/40 card-glow rounded-2xl p-8 transition-all duration-500 hover:bg-surface-container-high/60 relative overflow-hidden backdrop-blur-sm">
+<div class="absolute top-0 left-0 w-64 h-64 bg-primary/5 blur-[100px] -translate-x-1/2 -translate-y-1/2"></div>
+<div class="flex flex-col md:flex-row gap-8 relative z-10">
+<div class="flex-1">
+<div class="flex items-center gap-4 mb-4">
+<span class="text-shimmer font-headline italic tracking-wide">October 24, 2023</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant/30"></span>
+<span class="text-xs font-label uppercase tracking-widest text-outline">Full Moon Ritual</span>
+</div>
+<h2 class="text-3xl font-headline text-on-surface mb-5 tracking-tight">The Path of Illumination</h2>
+<p class="text-on-surface-variant line-clamp-2 font-body font-light leading-relaxed mb-8">
+                            The cards spoke of a transition long overdue. The presence of The Moon suggests hidden truths surfacing during this lunar cycle...
+                        </p>
+<div class="flex items-center gap-3 text-secondary text-sm font-label tracking-widest group-hover:gap-5 transition-all">
+<span class="uppercase">View Full Reading</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<div class="flex -space-x-8 md:-space-x-4 self-center md:self-start">
+<div class="w-24 h-40 rounded-lg bg-surface-container-highest border border-outline-variant/20 shadow-2xl rotate-[-6deg] overflow-hidden transform group-hover:rotate-[-12deg] transition-all duration-500 ring-1 ring-white/5">
+<img class="w-full h-full object-cover opacity-60" data-alt="Tarot card showing The High Priestess" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxYLvXvcDOjZgtm48lcaLzZ9sVK_CwVNyaUTpvqg5bRttz5tCTTFJ0M1VD1R3TvQlAjMWde5V8dJj3XhzWX1q1L3tJDlbTNsvmB2wJXjiYLEkIhh0OqIukSfj2rByyRcPKNGeq52u6Wid-BmBLYfJyr-JoNdlBlglwoNLXVhJaCssws7nlsTqkhmTIz9g5Rbls0uZD9oRkpwHUysoiFDzxH31B3pe1GwaWEopIgnBOGigRBIs8vbqn4qUWxHgvzda8ePlar29erWc"/>
+</div>
+<div class="w-24 h-40 rounded-lg bg-surface-container-highest border border-outline-variant/30 shadow-2xl z-10 overflow-hidden transform group-hover:-translate-y-4 transition-all duration-500 ring-1 ring-white/10">
+<img class="w-full h-full object-cover opacity-90" data-alt="Tarot card showing The Moon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWIYos8EXFWOGdPxl_r_w47OO80qjXpDUWPjHFaqDBtfgTPwm-JScTO1xZ-k9oQkFUQTgeKZT5N0Kva0lahsCwU7dsKeFkrL2jNoS1ezf1JkyqGRuMQR3DmsQeqQkJ-Ihq6-HxxgThd6oWy05q1x69neL-rWrDTGMyBNJeTlydq3E98Jc_t706Adg22v2VIkqli6CElsCE0jzC9RaNeGxe4OZm4qdfNpP0g-cFG9wh2v2mJHKAvlfp64zmv8UTLnM1PdwSYsgm0II"/>
+</div>
+<div class="w-24 h-40 rounded-lg bg-surface-container-highest border border-outline-variant/20 shadow-2xl rotate-[6deg] overflow-hidden transform group-hover:rotate-[12deg] transition-all duration-500 ring-1 ring-white/5">
+<img class="w-full h-full object-cover opacity-60" data-alt="Tarot card showing The Star" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoQ4dP27shx62PsE_HUUmpc3M2_N-tlsn92AgQiCPb4uGnloY7X5VMtM0nxesSotInqvPh-PXqjEM_QsLJrleJnwEomkBwXPEOs4LA53NrvJm7sh-2sHOQ1C9CTx0-yhR1SEAyXRwcC1ZgO0vK9F9wynuSXhBj9Lc4YaFaGHDB6yQJuXotEpQZwAPy-O4V-JCCiUUOk_2kDv45ztvGQe1KElyPayijc5AAkR1ZBIinGzRo8fg6E1adro6lF7edRolnt69cvgs0VIs"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Entry 2: Secondary -->
+<div class="md:col-span-7 group cursor-pointer">
+<div class="bg-surface-container-low/40 card-glow rounded-2xl p-6 h-full transition-all duration-500 hover:bg-surface-container-high/60 backdrop-blur-sm">
+<div class="flex items-center justify-between mb-5">
+<span class="text-shimmer text-sm font-headline italic">Oct 21, 2023</span>
+<span class="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-[10px] font-label uppercase tracking-widest border border-secondary/20">Daily Draw</span>
+</div>
+<h3 class="text-xl font-headline text-on-surface mb-4 tracking-wide">Strength in Silence</h3>
+<p class="text-on-surface-variant font-light text-sm mb-6 leading-relaxed">A simple three-card pull for the morning ahead. Focus on the internal roar rather than the external noise.</p>
+<div class="flex gap-3">
+<div class="w-12 h-20 rounded bg-surface-container-highest border border-outline-variant/10 overflow-hidden opacity-40 hover:opacity-100 transition-opacity ring-1 ring-white/5">
+<img class="w-full h-full object-cover" data-alt="Abstract mystical card design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIJ3KChUcII3bIe4cBs5AwwqzFvKXZagXmnS54p0n9Cgsi4aXmOVgz9xT8XOJcDifrW4EB-6dpo6lfa6Pb4kHGPeXIUSeUGTNG1xfHdoeB4DxJBdACPPBbY5LP2wkZneMjja9I0wmo0vLvGQJ_OLP2XfPhRMSUYx4Plh3BQOr5G_fDhwnT1DOWL63fbujhvWFVbOZSNEPnI-PzEG0Mui1xZZmgLsykl_Sd27rLoOzOBktC4uEDcZqgkl6JglHkRUjZPz2n55KExZc"/>
+</div>
+<div class="w-12 h-20 rounded bg-surface-container-highest border border-outline-variant/10 overflow-hidden opacity-40 hover:opacity-100 transition-opacity ring-1 ring-white/5">
+<img class="w-full h-full object-cover" data-alt="Abstract mystical card design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqYetYz7WSgwGJF8Ph8O9WEtjP0rxKCcD3WvcpcQr2NDi4-pT8M5FhzO2JqUDVN5npDT1xVc7vADR4whnjjfLCx7BFEprq4QfhrJagxXY8EwpjE5bEuQi7dW--GSVQwVJLsinI0RfM_D76tW9WyOcCUSFI_Yy5oFyWxb47kpeTdwaxO-7ASXIJ5uLoXoEoFZKTsvnCoI5g28xYLnLiLx-w9uEoujl64p9Kyji2wVSLoW_lr9ifLSMrx8gI046Bo0WCXd4Pg2SEz7A"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Entry 3: Compact -->
+<div class="md:col-span-5 group cursor-pointer">
+<div class="bg-surface-container-low/40 card-glow rounded-2xl p-6 h-full transition-all duration-500 hover:bg-surface-container-high/60 border-t-2 border-primary/30 backdrop-blur-sm">
+<div class="mb-5">
+<span class="text-shimmer text-sm font-headline italic">Oct 19, 2023</span>
+</div>
+<h3 class="text-xl font-headline text-on-surface mb-4 tracking-wide">Financial Clarity</h3>
+<div class="w-full h-32 rounded-xl bg-surface-container-highest mb-5 overflow-hidden ring-1 ring-white/5 shadow-inner">
+<img class="w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-700 hover:scale-110" data-alt="Dark aesthetic tarot reading workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHRaWQL0B2qeOBuiDmpmW5VvbHBo_nj8y6x-SLWp70_UgL4-N9IAZ__-L_7m-uafWveRXCsSsGUsADrXcu2j-b1SLU4xOkUZooQSqXauF90zdYMqXAchdj4HzsYhlyLHQpw6GzYWJwRx2vJOWEONWDlQYldHWfgXXlmDYqCDix5-tuW6qqnygRLYL9xM9HRooXrtNFZvos351Iy8LCXqpM8l_WujUgqwpBkO78HqwcnFDxljcMyumrGx7MY7Pxf9xEcW5ltneUocY"/>
+</div>
+<p class="text-outline font-light text-[10px] uppercase tracking-[0.2em]">2 Cards • Career Focus</p>
+</div>
+</div>
+<!-- Entry 4: Simple List Style -->
+<div class="md:col-span-12">
+<div class="space-y-5">
+<div class="flex items-center justify-between p-6 bg-surface-container-low/40 card-glow rounded-2xl hover:bg-surface-container-high/60 transition-all duration-300 cursor-pointer group backdrop-blur-sm">
+<div class="flex items-center gap-8">
+<div class="text-center min-w-[60px]">
+<p class="text-[10px] font-label uppercase text-outline tracking-widest mb-1">Oct</p>
+<p class="text-2xl font-headline text-shimmer leading-none">15</p>
+</div>
+<div>
+<h4 class="font-headline text-lg group-hover:text-primary transition-colors tracking-wide">The Weaver's Web</h4>
+<p class="text-sm text-on-surface-variant font-light mt-1">Celtic Cross Spread • 10 Cards</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary group-hover:translate-x-1 transition-all" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="flex items-center justify-between p-6 bg-surface-container-low/40 card-glow rounded-2xl hover:bg-surface-container-high/60 transition-all duration-300 cursor-pointer group backdrop-blur-sm">
+<div class="flex items-center gap-8">
+<div class="text-center min-w-[60px]">
+<p class="text-[10px] font-label uppercase text-outline tracking-widest mb-1">Oct</p>
+<p class="text-2xl font-headline text-shimmer leading-none">12</p>
+</div>
+<div>
+<h4 class="font-headline text-lg group-hover:text-primary transition-colors tracking-wide">Shadow Work</h4>
+<p class="text-sm text-on-surface-variant font-light mt-1">Deep Dive • 5 Cards</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary group-hover:translate-x-1 transition-all" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-8 pt-4 bg-surface-dim/80 backdrop-blur-2xl border-t border-white/5 shadow-[0_-8px_32px_rgba(0,0,0,0.5)] rounded-t-[2.5rem]">
+<a class="flex flex-col items-center justify-center text-outline hover:text-primary transition-all group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform" data-icon="auto_mirrored_reveal_auto">rotate_auto</span>
+<span class="font-label text-[10px] uppercase tracking-widest mt-1.5 opacity-60">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline hover:text-primary transition-all group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform" data-icon="grid_view">grid_view</span>
+<span class="font-label text-[10px] uppercase tracking-widest mt-1.5 opacity-60">Spreads</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary font-bold scale-110 relative" href="#">
+<div class="absolute -top-1 w-1 h-1 rounded-full bg-secondary blur-[2px]"></div>
+<span class="material-symbols-outlined" data-icon="history_edu" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+<span class="font-label text-[10px] uppercase tracking-widest mt-1.5">Journal</span>
+</a>
+</nav>
+</body></html>

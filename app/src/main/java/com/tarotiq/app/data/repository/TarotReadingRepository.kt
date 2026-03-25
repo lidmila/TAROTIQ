@@ -32,7 +32,9 @@ class TarotReadingRepository(private val readingDao: ReadingDao) {
             firestore.collection("users").document(userId)
                 .collection("readings").document(reading.id)
                 .set(reading).await()
-        } catch (_: Exception) { }
+        } catch (e: Exception) {
+            android.util.Log.w("Sync", "Firestore sync failed", e)
+        }
     }
 
     suspend fun updateReading(reading: TarotReading) {
@@ -42,7 +44,9 @@ class TarotReadingRepository(private val readingDao: ReadingDao) {
             firestore.collection("users").document(userId)
                 .collection("readings").document(reading.id)
                 .set(reading).await()
-        } catch (_: Exception) { }
+        } catch (e: Exception) {
+            android.util.Log.w("Sync", "Firestore sync failed", e)
+        }
     }
 
     suspend fun deleteReading(reading: TarotReading) {
@@ -52,7 +56,9 @@ class TarotReadingRepository(private val readingDao: ReadingDao) {
             firestore.collection("users").document(userId)
                 .collection("readings").document(reading.id)
                 .delete().await()
-        } catch (_: Exception) { }
+        } catch (e: Exception) {
+            android.util.Log.w("Sync", "Firestore sync failed", e)
+        }
     }
 
     suspend fun getReadingCount(): Int {

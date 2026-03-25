@@ -100,6 +100,10 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation("androidx.compose.animation:animation")
 
+    // Media3 / ExoPlayer for video backgrounds
+    implementation("androidx.media3:media3-exoplayer:1.3.1")
+    implementation("androidx.media3:media3-ui:1.3.1")
+
     // Material Components for XML resources
     implementation("com.google.android.material:material:1.11.0")
 

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Card 0: The Fool -->
+    <string name="card_0_love_up">Nový začátek v lásce; buďte spontánní a otevření nečekaným romantickým setkáním.</string>
+    <string name="card_0_love_rev">Bezohledné romantické volby; vrháte se do vztahu, aniž byste o něm pořádně přemýšleli.</string>
+    <string name="card_0_career_up">Nové kariérní příležitosti vás volají; udělejte odvážný krok směrem k vzrušující cestě.</string>
+    <string name="card_0_career_rev">Špatné plánování v práci; impulzivní rozhodnutí, která mohou ohrozit vaše profesní postavení.</string>
+    <string name="card_0_finances_up">Finanční nové začátky; dobrodružná investice se může vyplatit, pokud k ní přistoupíte moudře.</string>
+    <string name="card_0_finances_rev">Bezstarostné utrácení nebo riskantní finanční sázky, které mohou vést ke ztrátám.</string>
+    <string name="card_0_feelings_up">Pocit vzrušení a bezstarostnosti; srdce vám naplňuje pocit neomezených možností.</string>
+    <string name="card_0_feelings_rev">Úzkost pod maskou bezstarostnosti; strach ze závazku nebo následků.</string>
+    <string name="card_0_actions_up">Skočte do toho a začněte něco nového, aniž byste každý detail příliš promýšleli.</string>
+    <string name="card_0_actions_rev">Zastavte se a naplánujte si vše, než začnete jednat; zkroťte impulzivní chování.</string>
+
+    <!-- Card 1: The Magician -->
+    <string name="card_1_love_up">Máte sílu vytvořit vztah, po jakém toužíte; šarm a sebedůvěra přitahují lásku.</string>
+    <string name="card_1_love_rev">Pozor na manipulaci v romantice; někdo nemusí ukazovat své skutečné záměry.</string>
+    <string name="card_1_career_up">Máte všechny dovednosti potřebné k úspěchu; zaměřte své talenty s jasným záměrem.</string>
+    <string name="card_1_career_rev">Vaše talenty jsou promarňovány nebo zneužívány k oklamání druhých v práci.</string>
+    <string name="card_1_finances_up">Vynalézavost vede k finančnímu zisku; využijte své dovednosti k vytvoření nových zdrojů příjmu.</string>
+    <string name="card_1_finances_rev">Finanční podvody nebo nečestné jednání se obrátí proti vám; vyhněte se zkratkám.</string>
+    <string name="card_1_feelings_up">Pocit síly a sebedůvěry; cítíte, že dokážete dosáhnout čehokoli, na co se zaměříte.</string>
+    <string name="card_1_feelings_rev">Pocit, že jste podvodník; pochybnosti o sobě podkopávají vaše přirozené schopnosti.</string>
+    <string name="card_1_actions_up">Soustřeďte svou energii a jednejte rozhodně, abyste projevili své cíle.</string>
+    <string name="card_1_actions_rev">Přestaňte se snažit ovládat výsledky pomocí manipulace; buďte místo toho autentičtí.</string>
+
+    <!-- Card 2: The High Priestess -->
+    <string name="card_2_love_up">Důvěřujte své intuici ve věcech srdce; pod povrchem se skrývají hlubší city.</string>
+    <string name="card_2_love_rev">Tajemství nebo skryté záměry ve vztahu; někdo zatajuje důležité pocity.</string>
+    <string name="card_2_career_up">Naslouchejte svým instinktům při kariérním rozhodování; odpověď je již ve vás.</string>
+    <string name="card_2_career_rev">Ignorování důležitých informací v práci; kancelářské intriky nebo skryté motivy jsou ve hře.</string>
+    <string name="card_2_finances_up">Skryté finanční příležitosti se mohou odhalit; důvěřujte svým instinktům při investicích.</string>
+    <string name="card_2_finances_rev">Finanční informace jsou utajovány; podívejte se hlouběji, než učiníte finanční rozhodnutí.</string>
+    <string name="card_2_feelings_up">Hluboký pocit vnitřního vědění; cítíte spojení s něčím větším, než jste vy sami.</string>
+    <string name="card_2_feelings_rev">Pocit odpojení od vnitřního hlasu; zmatení zahaluje vaši emocionální krajinu.</string>
+    <string name="card_2_actions_up">Ztište se a naslouchejte své vnitřní moudrosti, než učiníte jakékoli rozhodnutí.</string>
+    <string name="card_2_actions_rev">Přestaňte ignorovat svou intuici; znovu se spojte se svým nitrem skrze reflexi.</string>
+
+    <!-- Card 3: The Empress -->
+    <string name="card_3_love_up">Láska rozkvétá v teple a péči; hluboce smyslné a naplňující spojení.</string>
+    <string name="card_3_love_rev">Dušení partnera přílišnou pozorností; závislost podkopává vztah.</string>
+    <string name="card_3_career_up">Tvůrčí projekty prosperují; pečujte o své nápady a sledujte, jak vyrůstají v něco krásného.</string>
+    <string name="card_3_career_rev">Tvůrčí bloky nebo zanedbávání péče o sebe v práci; vyhoření z přílišného dávání.</string>
+    <string name="card_3_finances_up">Finanční hojnost plyne přirozeně; investice do pohodlí a krásy se vyplácejí.</string>
+    <string name="card_3_finances_rev">Nadměrné utrácení za luxus; finanční nejistota pramenící z nízké sebehodnoty.</string>
+    <string name="card_3_feelings_up">Pocit péče, hojnosti a hlubokého spojení s radostmi života.</string>
+    <string name="card_3_feelings_rev">Pocit emocionálního prázdna nebo nejistoty; potíže s nalezením naplnění.</string>
+    <string name="card_3_actions_up">Pečujte o sebe i o druhé; investujte do krásy, pohodlí a tvůrčího vyjádření.</string>
+    <string name="card_3_actions_rev">Nastavte zdravé hranice; řešte vzorce závislosti a pěstujte soběstačnost.</string>
+
+    <!-- Card 4: The Emperor -->
+    <string name="card_4_love_up">Stabilní a bezpečné partnerství postavené na vzájemném respektu a jasných hranicích.</string>
+    <string name="card_4_love_rev">Kontrolující chování ve vztahu; jeden partner dominuje, zatímco druhý trpí.</string>
+    <string name="card_4_career_up">Silné vůdčí a organizační schopnosti přinášejí profesní úspěch a uznání.</string>
+    <string name="card_4_career_rev">Tyranský šéf nebo rigidní pracoviště potlačuje růst; objevují se mocenské boje.</string>
+    <string name="card_4_finances_up">Disciplinované finanční hospodaření vede k dlouhodobé stabilitě a růstu bohatství.</string>
+    <string name="card_4_finances_rev">Přílišná kontrola financí nebo rigidní rozpočtování, které vytváří zbytečný stres.</string>
+    <string name="card_4_feelings_up">Pocit uzemění, síly a kontroly nad směřováním svého života.</string>
+    <string name="card_4_feelings_rev">Pocit útlaku nebo přílišné rigidity; potíže s potřebou vše kontrolovat.</string>
+    <string name="card_4_actions_up">Vytvořte strukturu a převezměte kontrolu nad svou situací s klidnou autoritou.</string>
+    <string name="card_4_actions_rev">Uvolněte svůj pevný stisk kontroly; dopřejte si flexibilitu a zvažte perspektivy ostatních.</string>
+
+    <!-- Card 5: The Hierophant -->
+    <string name="card_5_love_up">Konvenční, oddaný vztah; manželství nebo tradiční partnerství je příznivé.</string>
+    <string name="card_5_love_rev">Zpochybňování vztahových norem; nekonvenční partnerství nebo odmítání tradice.</string>
+    <string name="card_5_career_up">Následování osvědčených metod přináší úspěch; hledejte vedení od mentora nebo instituce.</string>
+    <string name="card_5_career_rev">Pocit omezení pravidly pracoviště; touha osvobodit se od konvenčních kariérních cest.</string>
+    <string name="card_5_finances_up">Konzervativní finanční strategie se vyplácejí; řiďte se osvědčenými investičními radami.</string>
+    <string name="card_5_finances_rev">Nekonvenční finanční přístupy; odklon od tradičního řízení financí.</string>
+    <string name="card_5_feelings_up">Pocit sounáležitosti v komunitě nebo duchovní tradici; pocit vedení.</string>
+    <string name="card_5_feelings_rev">Pocit dušení pravidly a očekáváními; touha vytvořit si vlastní duchovní cestu.</string>
+    <string name="card_5_actions_up">Hledejte moudrost v zavedených tradicích, u mentorů nebo v duchovních praktikách.</string>
+    <string name="card_5_actions_rev">Zpochybněte pravidla a najděte svou vlastní cestu; nesledujte slepě konvence.</string>
+
+    <!-- Card 6: The Lovers -->
+    <string name="card_6_love_up">Hluboké romantické spojení a energie spřízněných duší; vztah postavený na vzájemné lásce a respektu.</string>
+    <string name="card_6_love_rev">Konflikty ve vztahu a nesouladné hodnoty; obtížná volba mezi dvěma milenci.</string>
+    <string name="card_6_career_up">Kariérní volby se shodují s vašimi hodnotami; partnerství a spolupráce vzkvétají.</string>
+    <string name="card_6_career_rev">Kariérní rozhodnutí vytváří vnitřní konflikt; obchodní partnerství jsou nevyvážená.</string>
+    <string name="card_6_finances_up">Finanční rozhodnutí, která jsou v souladu s vašimi hodnotami, přinášejí trvalé uspokojení.</string>
+    <string name="card_6_finances_rev">Finanční neshody s partnerem; volby, které jsou v rozporu s vašimi zásadami.</string>
+    <string name="card_6_feelings_up">Pocit hlubokého spojení a harmonie s někým nebo něčím, co milujete.</string>
+    <string name="card_6_feelings_rev">Rozpolcenost mezi dvěma možnostmi; vnitřní konflikt ztěžuje nalezení klidu.</string>
+    <string name="card_6_actions_up">Rozhodujte se srdcem v souladu se svými nejhlubšími hodnotami.</string>
+    <string name="card_6_actions_rev">Vyřešte vnitřní konflikty, než učiníte zásadní rozhodnutí; znovu se slaďte se svými hodnotami.</string>
+
+    <!-- Card 7: The Chariot -->
+    <string name="card_7_love_up">Pronásledování lásky s odhodláním; překonávání překážek, abyste byli s tím, koho chcete.</string>
+    <string name="card_7_love_rev">Násilné tlačení vztahu kupředu; nedostatek směru v romantickém snažení.</string>
+    <string name="card_7_career_up">Kariérní momentum je silné; vaše odhodlání a cílevědomost vedou k významným úspěchům.</string>
+    <string name="card_7_career_rev">Pocit ztráty směru v práci; překážky a neúspěchy brzdí váš profesní pokrok.</string>
+    <string name="card_7_finances_up">Finanční vítězství díky disciplinovanému úsilí; zůstaňte zaměření na své finanční cíle.</string>
+    <string name="card_7_finances_rev">Finanční neúspěchy kvůli špatnému plánování nebo roztříštěnému úsilí; přeskupte se a soustřeďte.</string>
+    <string name="card_7_feelings_up">Pocit nezastavitelnosti a odhodlání; silný pocit smyslu vás žene vpřed.</string>
+    <string name="card_7_feelings_rev">Pocit ztráty kontroly nebo porážky; frustrace narůstá, jak se pokrok zastavuje.</string>
+    <string name="card_7_actions_up">Využijte svou vůli a s jistotou vyrazte vstříc svým cílům.</string>
+    <string name="card_7_actions_rev">Zpomalte a znovu získejte kontrolu; přehodnoťte svůj směr, než budete pokračovat vpřed.</string>
+
+    <!-- Card 8: Strength -->
+    <string name="card_8_love_up">Láska postavená na trpělivosti a soucitu; jemná síla prohlubuje citová pouta.</string>
+    <string name="card_8_love_rev">Nejistota a pochybnosti o sobě podkopávají vaše romantické vazby; strach ze zranitelnosti.</string>
+    <string name="card_8_career_up">Tichá sebedůvěra a vytrvalost si získávají respekt; veďte se soucitem, nikoli silou.</string>
+    <string name="card_8_career_rev">Pochybnosti o sobě vás profesně brzdí; můžete se cítit zahlceni pracovními výzvami.</string>
+    <string name="card_8_finances_up">Trpělivé a stálé finanční hospodaření přináší trvalé výsledky; odolte impulzivním rozhodnutím.</string>
+    <string name="card_8_finances_rev">Finanční úzkost podkopává vaši sebedůvěru; emocionální utrácení narušuje vaši stabilitu.</string>
+    <string name="card_8_feelings_up">Pocit odvahy a odolnosti; vnitřní síla vás provádí těžkými časy.</string>
+    <string name="card_8_feelings_rev">Pocit zranitelnosti a nedostatku sebedůvěry; syrové emoce hrozí, že vás zaplaví.</string>
+    <string name="card_8_actions_up">Přistupujte k výzvám s jemným odhodláním a neochvějnou vnitřní odolností.</string>
+    <string name="card_8_actions_rev">Obnovte svou sebedůvěru; řešte nejistoty, než podkopají vaše úsilí.</string>
+
+    <!-- Card 9: The Hermit -->
+    <string name="card_9_love_up">Období reflexe nad tím, co skutečně chcete v lásce; samota přináší jasnost.</string>
+    <string name="card_9_love_rev">Přílišná izolace oddaluje blízké; osamělost se stává dobrovolným vyhnanstvím.</string>
+    <string name="card_9_career_up">Ustupte a zamyslete se nad svou kariérní cestou; vnitřní moudrost vede váš další profesní krok.</string>
+    <string name="card_9_career_rev">Pocit izolace v práci; stahování se od kolegů brzdí váš kariérní růst.</string>
+    <string name="card_9_finances_up">Pečlivá úvaha před finančními rozhodnutími vede k moudrým investicím.</string>
+    <string name="card_9_finances_rev">Vyhýbání se finančním povinnostem stažením se; ignorování peněžních záležitostí je zhoršuje.</string>
+    <string name="card_9_feelings_up">Hluboká potřeba samoty a rozjímání; nalézání klidu v tichém sebepoznání.</string>
+    <string name="card_9_feelings_rev">Pocit bolestného osamění a odloučení; izolace plodí zoufalství místo vhledu.</string>
+    <string name="card_9_actions_up">Stáhněte se od hluku každodenního života a hledejte vnitřní moudrost a jasnost.</string>
+    <string name="card_9_actions_rev">Vraťte se zpět do světa; přílišná izolace se stala kontraproduktivní.</string>
+
+    <!-- Card 10: Wheel of Fortune -->
+    <string name="card_10_love_up">Osudový romantický zlom; osud přináší významné změny do vašeho milostného života.</string>
+    <string name="card_10_love_rev">Vztahové neúspěchy se zdají být předurčené; odolte lpění na cyklu, který vám již neslouží.</string>
+    <string name="card_10_career_up">Šťastný kariérní zlom; buďte připraveni chopit se nečekaných profesních příležitostí.</string>
+    <string name="card_10_career_rev">Nešťastný kariérní vývoj; vnější síly narušují vaše profesní plány.</string>
+    <string name="card_10_finances_up">Pozitivní finanční obrat se blíží; cykly prosperity se obracejí ve váš prospěch.</string>
+    <string name="card_10_finances_rev">Finanční pokles nebo nečekané výdaje; trpělivě přečkejte nepříznivý cyklus.</string>
+    <string name="card_10_feelings_up">Pocit optimismu ohledně změn; pocit, že se osud odvíjí tak, jak má.</string>
+    <string name="card_10_feelings_rev">Pocit vydanosti na milost osudu; frustrace z okolností, které nemůžete ovlivnit.</string>
+    <string name="card_10_actions_up">Přijměte změnu a plujte s proudem; chopte se příležitostí, které vám osud nabízí.</string>
+    <string name="card_10_actions_rev">Vymanit se z negativních cyklů; převezměte odpovědnost místo obviňování osudu.</string>
+
+    <!-- Card 11: Justice -->
+    <string name="card_11_love_up">Spravedlnost a upřímnost posilují váš vztah; vzájemná odpovědnost buduje důvěru.</string>
+    <string name="card_11_love_rev">Nečestnost nebo neférové zacházení ve vztahu; nevyřešené křivdy způsobují zášť.</string>
+    <string name="card_11_career_up">Spravedlivé výsledky v profesních záležitostech; právní rozhodnutí nebo smlouvy dopadnou ve váš prospěch.</string>
+    <string name="card_11_career_rev">Nespravedlnost nebo neférové zacházení na pracovišti; mohou nastat právní komplikace.</string>
+    <string name="card_11_finances_up">Finanční spravedlnost převládá; právní nebo smluvní záležitosti se vyřeší příznivě.</string>
+    <string name="card_11_finances_rev">Nespravedlivé finanční výsledky; spory o peníze nebo nečestné finanční jednání.</string>
+    <string name="card_11_feelings_up">Silný pocit morální jasnosti; pocit, že pravda a spravedlnost zvítězí.</string>
+    <string name="card_11_feelings_rev">Pocit ukřivdění nebo nespravedlivého zacházení; vnitřní konflikt o tom, co je správné a špatné.</string>
+    <string name="card_11_actions_up">Jednejte čestně a buďte sami sobě odpovědní; hledejte pravdu ve všech záležitostech.</string>
+    <string name="card_11_actions_rev">Prozkoumejte své vlastní předsudky; napravte jakoukoli nečestnost nebo nespravedlnost ve svém jednání.</string>
+
+    <!-- Card 12: The Hanged Man -->
+    <string name="card_12_love_up">Vzdejte se kontroly v lásce a podívejte se na svůj vztah ze zcela nové perspektivy.</string>
+    <string name="card_12_love_rev">Odmítání opustit stagnující vztah; hraní si na mučedníka v lásce.</string>
+    <string name="card_12_career_up">Produktivní pauza ve vaší kariéře; krok zpět odhaluje nové profesní poznatky.</string>
+    <string name="card_12_career_rev">Kariérní stagnace z nerozhodnosti; odpor k nutným změnám vás brzdí.</string>
+    <string name="card_12_finances_up">Dočasná finanční oběť vede k větším odměnám; trpělivost je nezbytná.</string>
+    <string name="card_12_finances_rev">Finanční stagnace; odmítání přizpůsobit svou finanční strategii navzdory měnícím se okolnostem.</string>
+    <string name="card_12_feelings_up">Klidné přijetí nejistoty; nalézání míru v odevzdání se tomu, co je.</string>
+    <string name="card_12_feelings_rev">Pocit uvíznutí a frustrace; neschopnost jít vpřed nebo pustit se.</string>
+    <string name="card_12_actions_up">Pusťte kontrolu a dovolte si vidět situaci z jiného úhlu.</string>
+    <string name="card_12_actions_rev">Přestaňte odkládat rozhodnutí; zbavte se potřeby mučednictví a začněte jednat.</string>
+
+    <!-- Card 13: Death -->
+    <string name="card_13_love_up">Zásadní proměna vašeho milostného života; starý vztah končí, aby mohlo začít něco nového.</string>
+    <string name="card_13_love_rev">Lpění na umírajícím vztahu ze strachu; odpor k nevyhnutelným změnám v lásce.</string>
+    <string name="card_13_career_up">Významná kariérní proměna; jedny dveře se zavírají, zatímco se otevírají lepší.</string>
+    <string name="card_13_career_rev">Odpor k nutným kariérním změnám; setrvávání v práci bez budoucnosti ze strachu.</string>
+    <string name="card_13_finances_up">Finanční transformace; staré zdroje příjmů končí, ale nové, lepší se objevují.</string>
+    <string name="card_13_finances_rev">Lpění na zastaralých finančních strategiích; stagnace brání finančnímu růstu.</string>
+    <string name="card_13_feelings_up">Přijetí, že konce jsou nutné pro růst; pocit osvobození z propuštění minulosti.</string>
+    <string name="card_13_feelings_rev">Hluboký strach ze změny; emocionální stagnace z odmítání pustit minulost.</string>
+    <string name="card_13_actions_up">Přijměte konec a věřte, že proměna přinese obnovu.</string>
+    <string name="card_13_actions_rev">Přestaňte se bránit změně; to, čeho se držíte, je již pryč.</string>
+
+    <!-- Card 14: Temperance -->
+    <string name="card_14_love_up">Harmonická a vyvážená láska; trpělivost a kompromis vytvářejí hluboce naplňující vztah.</string>
+    <string name="card_14_love_rev">Nerovnováha ve vztahu; jeden partner dává příliš mnoho, zatímco druhý nadměrně bere.</string>
+    <string name="card_14_career_up">Vyvážený přístup k práci přináší stabilní pokrok; trpělivost přináší profesní odměny.</string>
+    <string name="card_14_career_rev">Nerovnováha mezi prací a životem způsobuje vyhoření; netrpělivost sabotuje dlouhodobé kariérní cíle.</string>
+    <string name="card_14_finances_up">Vyvážené finanční hospodaření a umírněné výdaje vedou k trvalé prosperitě.</string>
+    <string name="card_14_finances_rev">Finanční excesy nebo přílišná šetrnost vytvářejí problémy; najděte zlatou střední cestu.</string>
+    <string name="card_14_feelings_up">Vnitřní klid a emocionální rovnováha; pocit vycentrování a harmonie ve svém nitru.</string>
+    <string name="card_14_feelings_rev">Emocionální turbulence a vnitřní nesoulad; potíže s nalezením rovnováhy.</string>
+    <string name="card_14_actions_up">Hledejte rovnováhu a umírněnost ve všech věcech; cvičte trpělivost při spojování protikladných sil.</string>
+    <string name="card_14_actions_rev">Řešte oblasti excesů; obnovte rovnováhu, než se situace stane neudržitelnou.</string>
+
+    <!-- Card 15: The Devil -->
+    <string name="card_15_love_up">Intenzivní, ale potenciálně toxická vazba; vášeň prostoupená nezdravými vzorci.</string>
+    <string name="card_15_love_rev">Vymanění se z toxického vztahu; znovuzískání vlastní síly a nezávislosti.</string>
+    <string name="card_15_career_up">Pocit uvěznění v duši drtící práci; materialismus nebo ambice vás spoutávají nespokojeností.</string>
+    <string name="card_15_career_rev">Osvobození se od toxického pracoviště; vymanění se ze závislostí spojených s kariérou.</string>
+    <string name="card_15_finances_up">Materialismus a chamtivost ovládají finanční rozhodnutí; hrozí dluhy nebo finanční poddanství.</string>
+    <string name="card_15_finances_rev">Vymanění se z finančního břemene; převzetí kontroly nad dluhy a nezdravými finančními návyky.</string>
+    <string name="card_15_feelings_up">Pocit uvěznění touhami nebo závislostmi; stinné stránky vaší osobnosti vyžadují pozornost.</string>
+    <string name="card_15_feelings_rev">Silný pocit osvobození; konfrontace s vlastními stíny přináší emocionální svobodu.</string>
+    <string name="card_15_actions_up">Prozkoumejte, co vás drží v otroctví; uvědomění je prvním krokem ke svobodě.</string>
+    <string name="card_15_actions_rev">Přetrhejte řetězy, které vás svazují; získejte zpět svou sílu od závislostí nebo toxických vzorců.</string>
+
+    <!-- Card 16: The Tower -->
+    <string name="card_16_love_up">Náhlý otřes rozbíjí iluze v lásce; bolestivá odhalení nakonec přinášejí pravdu.</string>
+    <string name="card_16_love_rev">Vyhýbání se nutnému rozchodu nebo konfrontaci; pravda nakonec stejně vyjde najevo.</string>
+    <string name="card_16_career_up">Náhlý kariérní otřes jako propouštění nebo krach projektu; budujte znovu z trosek.</string>
+    <string name="card_16_career_rev">Tušení blížící se kariérní katastrofy, ale odmítání jednat; odkládání nevyhnutelného.</string>
+    <string name="card_16_finances_up">Náhlý finanční šok nebo ztráta; struktury, na které jste spoléhali, se nečekaně hroutí.</string>
+    <string name="card_16_finances_rev">Těsné vyhnutí se finanční katastrofě; varování, abyste zpevnili své finanční základy.</string>
+    <string name="card_16_feelings_up">Šok a dezorientace; půda se vám propadla pod nohama.</string>
+    <string name="card_16_feelings_rev">Strach z blížícího se otřesu; úzkost z katastrofy, kterou cítíte, ale nemůžete jí zabránit.</string>
+    <string name="card_16_actions_up">Přijměte zkázu a připravte se na přestavbu na silnějším a poctivějším základě.</string>
+    <string name="card_16_actions_rev">Řešte trhliny, než se celá stavba zhroutí; neignorujte varovné signály.</string>
+
+    <!-- Card 17: The Star -->
+    <string name="card_17_love_up">Obnovená naděje a inspirace v lásce; klidné a duchovně naplňující spojení.</string>
+    <string name="card_17_love_rev">Ztráta víry v lásku; zoufalství a beznaděj zhasínají jiskru ve vašem romantickém životě.</string>
+    <string name="card_17_career_up">Inspirovaná vize pro vaši kariéru; obnovená naděje po náročném profesním období.</string>
+    <string name="card_17_career_rev">Kariérní rozčarování; ztráta víry ve svou profesní cestu nebo tvůrčí vizi.</string>
+    <string name="card_17_finances_up">Finanční zotavení a obnovený optimismus; štědrost a víra přitahují hojnost.</string>
+    <string name="card_17_finances_rev">Finanční zoufalství; ztráta naděje ve svou finanční situaci zakaluje úsudek.</string>
+    <string name="card_17_feelings_up">Pocit hluboké naděje a klidu; tiché vnitřní vědění, že vše bude v pořádku.</string>
+    <string name="card_17_feelings_rev">Pocit odpojení od naděje; zoufalství se usazuje tam, kde kdysi sídlila víra.</string>
+    <string name="card_17_actions_up">Držte se naděje a nechte své vnitřní světlo, aby vás vedlo k uzdravení a obnově.</string>
+    <string name="card_17_actions_rev">Znovu se spojte se zdroji inspirace; vyhledejte pomoc k obnovení pocitu naděje.</string>
+
+    <!-- Card 18: The Moon -->
+    <string name="card_18_love_up">Zmatení a iluze zahalují váš milostný život; věci v romantice nejsou takové, jak se zdají.</string>
+    <string name="card_18_love_rev">V lásce se vynořuje jasnost; podvody jsou odhaleny a obavy překonány.</string>
+    <string name="card_18_career_up">Zmatení a nejistota na pracovišti; dejte si pozor na podvody nebo nejasnou komunikaci.</string>
+    <string name="card_18_career_rev">Jasnost se vrací do vaší kariéry; nedorozumění jsou vyřešena a cesta vpřed se vyjasňuje.</string>
+    <string name="card_18_finances_up">Finanční zmatení nebo podvodné obchody; nevěřte všemu, co se jeví jako pravda.</string>
+    <string name="card_18_finances_rev">Finanční jasnost po období zmatku; skryté informace vycházejí na světlo.</string>
+    <string name="card_18_feelings_up">Úzkost a strach vás svírají; vaše podvědomí promítá obavy, které nemusí mít reálný základ.</string>
+    <string name="card_18_feelings_rev">Strachy se rozplývají, jak je pravda odhalena; emocionální jasnost nahrazuje zmatení.</string>
+    <string name="card_18_actions_up">Postupujte opatrně; ne vše je takové, jak se zdá, proto důvěřujte svým hlubším instinktům.</string>
+    <string name="card_18_actions_rev">Postavte se svým strachům čelem; pravda je méně děsivá, než vám napovídá vaše představivost.</string>
+
+    <!-- Card 19: The Sun -->
+    <string name="card_19_love_up">Zářivá radost a štěstí v lásce; váš vztah je požehnán teplem a vitalitou.</string>
+    <string name="card_19_love_rev">Dočasné mraky zastírají radost ve vašem vztahu; štěstí se zdá být na dosah ruky.</string>
+    <string name="card_19_career_up">Kariérní úspěch a uznání jasně září; vaše talenty jsou oceňovány a odměňovány.</string>
+    <string name="card_19_career_rev">Kariérní neúspěchy tlumí vaše nadšení; úspěch je odložen, ale ne odepřen.</string>
+    <string name="card_19_finances_up">Finanční prosperita a hojnost; období úspěchu a oslav ve finanční oblasti.</string>
+    <string name="card_19_finances_rev">Drobné finanční neúspěchy; utrácení v dobrých časech se vám může vymstít.</string>
+    <string name="card_19_feelings_up">Čistá radost a optimismus; pocit zářivé vitality a vděčnosti za požehnání života.</string>
+    <string name="card_19_feelings_rev">Potíže s pocitem skutečného štěstí; něco blokuje vaši schopnost plně si užívat života.</string>
+    <string name="card_19_actions_up">Oslavte své úspěchy a nechte svou pozitivní energii inspirovat ostatní kolem vás.</string>
+    <string name="card_19_actions_rev">Hledejte, co blokuje vaši radost; nedovolte, aby dočasné neúspěchy určovaly váš pohled na svět.</string>
+
+    <!-- Card 20: Judgement -->
+    <string name="card_20_love_up">Hluboké probuzení v lásce; minulé vztahy se uzdravují a vy odpovídáte na vyšší povolání.</string>
+    <string name="card_20_love_rev">Přísné sebesouzení vám brání otevřít srdce; nezpracovaná vina pronásleduje lásku.</string>
+    <string name="card_20_career_up">Kariérní povolání se probouzí ve vašem nitru; je čas odpovědět na svůj skutečný profesní účel.</string>
+    <string name="card_20_career_rev">Odmítání naslouchat svému profesnímu povolání; pochybnosti o sobě brání kariérní proměně.</string>
+    <string name="card_20_finances_up">Finanční zúčtování vede k pozitivnímu znovuzrození; minulé chyby jsou odpuštěny a napraveny.</string>
+    <string name="card_20_finances_rev">Odmítání poučit se z minulých finančních chyb; přísné sebesouzení ohledně peněz.</string>
+    <string name="card_20_feelings_up">Hluboký pocit probuzení a smyslu; pocit povolání k vyšší verzi sebe sama.</string>
+    <string name="card_20_feelings_rev">Ochromení sebekritikou; neschopnost si odpustit a jít dál.</string>
+    <string name="card_20_actions_up">Odpovězte na volání k proměně; upřímně reflektujte a povzneste se ke svému nejvyššímu potenciálu.</string>
+    <string name="card_20_actions_rev">Osvoboďte se od přísného sebesouzení; odpusťte si minulé chyby a dejte si nový začátek.</string>
+
+    <!-- Card 21: The World -->
+    <string name="card_21_love_up">Hluboce naplňující a úplná láska; vztah dosahuje krásného milníku.</string>
+    <string name="card_21_love_rev">Pocit neúplnosti v lásce; vztahu chybí celistvost, po které toužíte.</string>
+    <string name="card_21_career_up">Významný kariérní úspěch a dokončení důležitého projektu; dosáhli jste svého cíle.</string>
+    <string name="card_21_career_rev">Projekt zůstává nedokončen; zkratky brání skutečnému profesnímu naplnění.</string>
+    <string name="card_21_finances_up">Finanční cíle jsou dosaženy; cyklus prosperity dosahuje svého uspokojivého závěru.</string>
+    <string name="card_21_finances_rev">Finanční cíle zůstávají těsně mimo dosah; zpoždění a nedořešené záležitosti brání dokončení.</string>
+    <string name="card_21_feelings_up">Hluboký pocit celistvosti a naplnění; pocit jednoty se světem kolem vás.</string>
+    <string name="card_21_feelings_rev">Pocit neúplnosti navzdory dosažením; něco podstatného stále chybí.</string>
+    <string name="card_21_actions_up">Oslavte své úspěchy a připravte se na další cyklus růstu.</string>
+    <string name="card_21_actions_rev">Dotáhněte nedořešené záležitosti, než se pohnete dál; nezkracujte si cestu k dokončení.</string>
+</resources>

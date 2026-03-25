@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TAROTIQ</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Portal</string>
+    <string name="nav_portal">Portal</string>
+    <string name="nav_library">Bibliothek</string>
+    <string name="nav_new_reading">Orakel</string>
+    <string name="nav_oracle">Orakel</string>
+    <string name="nav_history">Grimoire</string>
+    <string name="nav_grimoire">Grimoire</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Auth -->
+    <string name="auth_login">Anmelden</string>
+    <string name="auth_register">Registrieren</string>
+    <string name="auth_email">E-Mail</string>
+    <string name="auth_password">Passwort</string>
+    <string name="auth_passwordless">Anmeldung ohne Passwort</string>
+    <string name="auth_passwordless_desc">Wir senden Ihnen einen Link per E-Mail</string>
+    <string name="auth_google">Weiter mit Google</string>
+    <string name="auth_logout">Abmelden</string>
+    <string name="auth_delete_account">Konto löschen</string>
+    <string name="auth_profile">Profil</string>
+    <string name="auth_email_sent">Link an Ihre E-Mail gesendet</string>
+    <string name="auth_forgot_password">Passwort vergessen?</string>
+    <string name="auth_reset_sent">Passwort-Reset-E-Mail gesendet</string>
+
+    <!-- Home -->
+    <string name="home_daily_card">Karte des Tages</string>
+    <string name="home_daily_card_desc">Enthüllen Sie Ihre Tageskarte</string>
+    <string name="home_quick_reading">Schnelle Legung</string>
+    <string name="home_new_reading">Neue Legung</string>
+    <string name="home_streak">Serie</string>
+    <string name="home_streak_days">%d Tage hintereinander</string>
+
+    <!-- Reading Topics -->
+    <string name="topic_love">Liebe</string>
+    <string name="topic_career">Karriere</string>
+    <string name="topic_general">Allgemein</string>
+    <string name="topic_yes_no">Ja / Nein</string>
+    <string name="topic_spiritual">Spirituell</string>
+    <string name="topic_select">Wählen Sie ein Legungsthema</string>
+
+    <!-- Question -->
+    <string name="question_title">Ihre Frage</string>
+    <string name="question_hint">Die Sterne hören zu…</string>
+    <string name="question_skip">Überspringen</string>
+    <string name="question_continue">Weiter</string>
+
+    <!-- Spread -->
+    <string name="spread_select">Wählen Sie eine Legung</string>
+    <string name="spread_single">Einzelkarte</string>
+    <string name="spread_single_desc">Schneller Einblick</string>
+    <string name="spread_three_card">Drei Karten</string>
+    <string name="spread_three_card_desc">Vergangenheit · Gegenwart · Zukunft</string>
+    <string name="spread_celtic_cross">Keltisches Kreuz</string>
+    <string name="spread_celtic_cross_desc">Tiefgründige Legung (10 Karten)</string>
+    <string name="spread_relationship">Beziehungslegung</string>
+    <string name="spread_relationship_desc">Sie · Partner · Beziehung · Herausforderungen · Zukunft</string>
+    <string name="spread_cost">%d Münzen</string>
+    <string name="spread_cost_singular">%d Münze</string>
+
+    <!-- Card Drawing -->
+    <string name="drawing_tap_to_reveal">Tippen Sie auf eine Karte zum Enthüllen</string>
+    <string name="drawing_card_revealed">Karte enthüllt!</string>
+    <string name="drawing_all_revealed">Alle Karten enthüllt</string>
+    <string name="drawing_get_reading">Legung erhalten</string>
+    <string name="drawing_confirm_selection">Auswahl bestätigen</string>
+    <string name="drawing_scroll_hint">↓ Scrollen Sie für weitere Karten ↓</string>
+    <string name="spread_pick_cards">Wählen Sie %d Karten für Ihre Legung</string>
+    <string name="drawing_focus_energy">Konzentrieren Sie Ihre Energie auf Ihre Absicht.</string>
+
+    <!-- Reading -->
+    <string name="reading_interpreting">Madame Stella liest Ihre Karten…</string>
+    <string name="reading_follow_up">Mehr fragen…</string>
+    <string name="reading_follow_up_hint">Möchten Sie noch etwas anderes fragen?</string>
+    <string name="reading_save">Legung speichern</string>
+    <string name="reading_share">Teilen</string>
+    <string name="reading_saved">Legung gespeichert</string>
+    <string name="reading_summary">Zusammenfassung der Legung</string>
+    <string name="reading_upright">Aufrecht</string>
+    <string name="reading_reversed">Umgekehrt</string>
+
+    <!-- History -->
+    <string name="history_title">Legungsverlauf</string>
+    <string name="history_empty">Noch keine Legungen</string>
+    <string name="history_filter_all">Alle</string>
+
+    <!-- Card Library -->
+    <string name="library_title">Kartenbibliothek</string>
+    <string name="library_major_arcana">Große Arkana</string>
+    <string name="library_minor_arcana">Kleine Arkana</string>
+    <string name="library_cups">Kelche</string>
+    <string name="library_pentacles">Pentakel</string>
+    <string name="library_swords">Schwerter</string>
+    <string name="library_wands">Stäbe</string>
+    <string name="library_all">Alle</string>
+    <string name="library_search">Karte suchen…</string>
+    <string name="library_upright_keywords">Schlüsselwörter (aufrecht)</string>
+    <string name="library_reversed_keywords">Schlüsselwörter (umgekehrt)</string>
+    <string name="library_love">Liebe</string>
+    <string name="library_career">Karriere</string>
+    <string name="library_finances">Finanzen</string>
+    <string name="library_feelings">Gefühle</string>
+    <string name="library_actions">Ratschläge</string>
+
+    <!-- Daily Card -->
+    <string name="daily_title">Karte des Tages</string>
+    <string name="daily_tap_reveal">Tippen Sie, um Ihre Tageskarte zu enthüllen</string>
+    <string name="daily_already_drawn">Sie haben Ihre Karte heute bereits enthüllt</string>
+    <string name="daily_view_details">Kartendetails ansehen</string>
+
+    <!-- Coins -->
+    <string name="coins_balance">Ihre Münzen</string>
+    <string name="coins_buy">Münzen kaufen</string>
+    <string name="coins_pack_5">5 Münzen</string>
+    <string name="coins_pack_15">15 Münzen</string>
+    <string name="coins_pack_50">50 Münzen</string>
+    <string name="coins_most_popular">Am Beliebtesten</string>
+    <string name="coins_best_value">Bestes Angebot</string>
+    <string name="coins_pack_300">300 Münzen</string>
+    <string name="coins_save">SPARE %d%%</string>
+    <string name="coins_not_enough">Nicht genügend Münzen</string>
+    <string name="coins_free_readings">%d kostenlose Legungen übrig</string>
+    <string name="coins_free_reading_used">Kostenlose Legung verwendet (%d/3)</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profil</string>
+    <string name="profile_zodiac">Sternzeichen</string>
+    <string name="profile_achievements">Erfolge</string>
+    <string name="profile_statistics">Statistiken</string>
+    <string name="profile_total_readings">Legungen insgesamt</string>
+    <string name="profile_favorite_card">Häufigste Karte</string>
+    <string name="profile_longest_streak">Längste Serie</string>
+    <string name="profile_language">Sprache</string>
+    <string name="profile_notifications">Benachrichtigungen</string>
+    <string name="profile_notification_time">Erinnerungszeit</string>
+    <string name="profile_about">Über</string>
+    <string name="profile_legal">Rechtliche Informationen</string>
+    <string name="profile_other_apps">Probieren Sie unsere anderen Apps</string>
+
+    <!-- Info -->
+    <string name="faq_title">FAQ</string>
+    <string name="about_title">Über TAROTIQ</string>
+    <string name="about_version">Version %s</string>
+    <string name="contact_title">Support kontaktieren</string>
+    <string name="contact_send">Senden</string>
+    <string name="contact_subject">Betreff</string>
+    <string name="contact_message">Nachricht</string>
+    <string name="terms_title">Nutzungsbedingungen</string>
+    <string name="privacy_title">Datenschutzrichtlinie</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Karte des Tages</string>
+    <string name="notification_channel_description">Tägliche Tarotkarten-Erinnerung</string>
+    <string name="notification_daily_title">Ihre Tageskarte wartet auf Sie</string>
+    <string name="notification_daily_text">Entdecken Sie, was die Sterne heute für Sie vorbereitet haben.</string>
+
+    <!-- Zodiac Signs -->
+    <string name="zodiac_aries">Widder</string>
+    <string name="zodiac_taurus">Stier</string>
+    <string name="zodiac_gemini">Zwillinge</string>
+    <string name="zodiac_cancer">Krebs</string>
+    <string name="zodiac_leo">Löwe</string>
+    <string name="zodiac_virgo">Jungfrau</string>
+    <string name="zodiac_libra">Waage</string>
+    <string name="zodiac_scorpio">Skorpion</string>
+    <string name="zodiac_sagittarius">Schütze</string>
+    <string name="zodiac_capricorn">Steinbock</string>
+    <string name="zodiac_aquarius">Wassermann</string>
+    <string name="zodiac_pisces">Fische</string>
+
+    <!-- HomeScreen Portal -->
+    <string name="home_celestial_active">HIMMLISCHES PORTAL AKTIV</string>
+    <string name="home_headline_1">Die Sterne flüstern</string>
+    <string name="home_headline_2">Ihr Schicksal heute.</string>
+    <string name="home_welcome_body">Treten Sie durch den Schleier zwischen den Welten. Jede gezogene Karte ist ein Flüstern des Kosmos, ein Schicksalsfaden, nur für Sie gewoben.</string>
+    <string name="home_daily_drawing">TÄGLICHE ZIEHUNG</string>
+    <string name="home_consult_oracle">Das Orakel befragen</string>
+    <string name="home_daily_desc">Empfangen Sie Ihre tägliche Botschaft aus dem arkanen Deck. Eine Karte, im Morgengrauen gezogen, um Ihren Weg zu weisen.</string>
+    <string name="home_awaiting">WARTET AUF\nANRUFUNG</string>
+    <string name="home_reflect">REFLEKTIEREN</string>
+    <string name="home_explore">ERKUNDEN</string>
+    <string name="home_most_insightful">AM AUFSCHLUSSREICHSTEN</string>
+    <string name="home_connection">Verbindung</string>
+    <string name="home_connection_desc">Herz &amp; Seele</string>
+    <string name="home_lunar_phase">MONDPHASE</string>
+    <string name="home_visibility">SICHTBARKEIT</string>
+
+    <!-- ReadingHistoryScreen -->
+    <string name="history_sacred_archive">HEILIGES ARCHIV</string>
+    <string name="history_grimoire_title">Das Grimoire</string>
+    <string name="history_subtitle">Ihre heiligen Legungen, für die Ewigkeit bewahrt</string>
+    <string name="history_search_hint">Im Grimoire suchen…</string>
+    <string name="history_revisit">INTERPRETATION ERNEUT ANSEHEN</string>
+    <string name="history_deepen_search">SUCHE VERTIEFEN</string>
+
+    <!-- ReadingInterpretation errors -->
+    <string name="error_insufficient_coins_title">Nicht genügend Münzen</string>
+    <string name="error_insufficient_coins_desc">Sie haben nicht genügend Münzen für diese Legung. Kaufen Sie Münzen oder schauen Sie eine Werbung, um eine kostenlose Münze zu verdienen.</string>
+    <string name="error_no_internet_title">Keine Verbindung</string>
+    <string name="error_no_internet_desc">Überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.</string>
+    <string name="error_timeout_title">Zeitlimit überschritten</string>
+    <string name="error_timeout_desc">Der Server antwortet nicht. Bitte versuchen Sie es erneut.</string>
+    <string name="error_auth_title">Authentifizierungsfehler</string>
+    <string name="error_auth_desc">Ihre Sitzung ist abgelaufen. Bitte melden Sie sich ab und wieder an.</string>
+    <string name="error_retry">ERNEUT VERSUCHEN</string>
+
+    <!-- ReadingInterpretation -->
+    <string name="reading_oracle_insight">Die Einsicht des Orakels</string>
+    <string name="reading_generated_by_ai">VON KI GENERIERT</string>
+
+    <!-- ReadingDetail -->
+    <string name="reading_cosmic_synthesis">KOSMISCHE SYNTHESE</string>
+
+    <!-- Login -->
+    <string name="auth_subtitle">IHR MYSTISCHER WEGWEISER</string>
+
+    <!-- About -->
+    <string name="about_description">Ihre mystische KI-Tarotleserin.\nEntdecken Sie Einsichten durch die alte Kunst des Tarots, angetrieben von moderner KI.\n\nTAROTIQ verbindet jahrhundertealte Tarotweisheit mit modernster Technologie für personalisierte, interaktive Legungen.</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="close">Schließen</string>
+    <string name="back">Zurück</string>
+    <string name="save">Speichern</string>
+    <string name="delete">Löschen</string>
+    <string name="share">Teilen</string>
+    <string name="loading">Wird geladen…</string>
+    <string name="error_generic">Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.</string>
+    <string name="error_network">Überprüfen Sie Ihre Internetverbindung.</string>
+    <string name="offline_banner">Sie sind offline</string>
+    <string name="delete_confirm_title">Legung löschen?</string>
+    <string name="delete_confirm_message">Diese Aktion kann nicht rückgängig gemacht werden.</string>
+    <string name="retry">Erneut versuchen</string>
+    <string name="no_cards_found">Keine Karten gefunden</string>
+
+    <!-- Rewarded Ads -->
+    <string name="rewarded_ad_title">Werbung ansehen, Münze verdienen</string>
+    <string name="rewarded_ad_subtitle">%d übrig diese Woche</string>
+    <string name="rewarded_ad_success">+1 Münze verdient!</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">Willkommen bei TAROTIQ</string>
+    <string name="onboarding_welcome_desc">Entdecken Sie die Geheimnisse des Tarots mit Ihrer persönlichen KI-Wahrsagerin</string>
+    <string name="onboarding_zodiac">Ihr Sternzeichen</string>
+    <string name="onboarding_zodiac_desc">Wählen Sie Ihr Sternzeichen für personalisierte Legungen</string>
+    <string name="onboarding_daily">Karte des Tages</string>
+    <string name="onboarding_daily_desc">Jeden Tag enthüllen wir eine Karte mit einer Botschaft für Sie</string>
+    <string name="onboarding_ready">Sie sind bereit</string>
+    <string name="onboarding_ready_desc">3 Legungen sind kostenlos. Beginnen Sie Ihre Reise!</string>
+    <string name="onboarding_start">Starten</string>
+    <string name="onboarding_next">Weiter</string>
+    <string name="onboarding_skip">Überspringen</string>
+
+    <!-- Moon Phases -->
+    <string name="moon_new">Neumond</string>
+    <string name="moon_waxing_crescent">Zunehmende Sichel</string>
+    <string name="moon_first_quarter">Erstes Viertel</string>
+    <string name="moon_waxing_gibbous">Zunehmender Mond</string>
+    <string name="moon_full">Vollmond</string>
+    <string name="moon_waning_gibbous">Abnehmender Mond</string>
+    <string name="moon_last_quarter">Letztes Viertel</string>
+    <string name="moon_waning_crescent">Abnehmende Sichel</string>
+
+    <!-- Achievements -->
+    <string name="achievement_first_reading">Erste Legung</string>
+    <string name="achievement_ten_readings">10 Legungen</string>
+    <string name="achievement_all_spreads">Alle Legemuster</string>
+    <string name="achievement_week_streak">Wochenserie</string>
+    <string name="achievement_month_streak">Monatsserie</string>
+    <string name="achievement_major_arcana">Alle Großen Arkana</string>
+
+    <!-- FAQ -->
+    <string name="faq_q1">Wie funktioniert eine Legung?</string>
+    <string name="faq_a1">Wählen Sie ein Thema, stellen Sie optional eine Frage, wählen Sie ein Legemuster und enthüllen Sie Ihre Karten durch Tippen. Unsere KI-Wahrsagerin Madame Stella interpretiert dann Ihre Karten im Kontext Ihrer Frage.</string>
+    <string name="faq_q2">Sind Legungen kostenlos?</string>
+    <string name="faq_a2">Sie erhalten 3 Legungen völlig kostenlos. Danach können Sie Münzpakete für weitere Legungen kaufen. Die Tageskarte ist immer kostenlos.</string>
+    <string name="faq_q3">Wie funktionieren Münzen?</string>
+    <string name="faq_a3">Münzen werden zum Bezahlen von Legungen verwendet. Verschiedene Legemuster kosten unterschiedlich viel: 1 Karte = 1 Münze, 3 Karten = 2 Münzen, Keltisches Kreuz = 3 Münzen.</string>
+    <string name="faq_q4">Ist Tarot zuverlässig?</string>
+    <string name="faq_a4">Tarot ist ein Werkzeug zur Selbstreflexion und persönlichen Weiterentwicklung. Legungen werden von KI generiert und dienen als Inspiration, nicht als endgültige Vorhersagen der Zukunft.</string>
+    <string name="faq_q5">Kann ich Folgefragen stellen?</string>
+    <string name="faq_a5">Ja! Nach jeder Legung können Sie Madame Stella alles über Ihre Karten fragen — ohne zusätzliche Kosten.</string>
+
+    <!-- Other Apps -->
+    <string name="app_kvitta_desc">Intelligente Ausgabenteilung und Schuldenausgleich</string>
+    <string name="app_bettermingle_desc">Verbessern Sie Ihre Dating-Profile mit KI</string>
+    <string name="app_bettershelf_desc">Organisieren Sie Ihre Bibliothek und entdecken Sie neue Bücher</string>
+    <string name="app_dreamwitness_desc">Zeichnen Sie Ihre Träume auf und interpretieren Sie sie</string>
+</resources>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Card 0: The Fool -->
+    <string name="card_0_love_up">Un nuevo comienzo en el amor; abraza la espontaneidad y ábrete a conexiones románticas inesperadas.</string>
+    <string name="card_0_love_rev">Elecciones románticas imprudentes; lanzarse a una relación sin pensarlo bien.</string>
+    <string name="card_0_career_up">Nuevas oportunidades profesionales te llaman; da un salto de fe hacia un camino emocionante.</string>
+    <string name="card_0_career_rev">Mala planificación en el trabajo; decisiones impulsivas que pueden poner en riesgo tu posición profesional.</string>
+    <string name="card_0_finances_up">Comienzos financieros frescos; una inversión aventurera puede dar frutos si se aborda con prudencia.</string>
+    <string name="card_0_finances_rev">Gastos descuidados o apuestas financieras arriesgadas que podrían llevar a pérdidas.</string>
+    <string name="card_0_feelings_up">Te sientes emocionado y despreocupado; una sensación de posibilidades ilimitadas llena tu corazón.</string>
+    <string name="card_0_feelings_rev">Ansiedad detrás de una fachada despreocupada; miedo al compromiso o a las consecuencias.</string>
+    <string name="card_0_actions_up">Da el salto y comienza algo nuevo sin pensar demasiado en cada detalle.</string>
+    <string name="card_0_actions_rev">Haz una pausa y planifica antes de actuar; controla el comportamiento impulsivo.</string>
+
+    <!-- Card 1: The Magician -->
+    <string name="card_1_love_up">Tienes el poder de crear la relación que deseas; el encanto y la confianza atraen el amor.</string>
+    <string name="card_1_love_rev">Cuidado con la manipulación en el romance; alguien puede no estar mostrando sus verdaderas intenciones.</string>
+    <string name="card_1_career_up">Posees todas las habilidades necesarias para triunfar; canaliza tus talentos con intención enfocada.</string>
+    <string name="card_1_career_rev">Los talentos se están desperdiciando o se usan para engañar a otros en el trabajo.</string>
+    <string name="card_1_finances_up">El ingenio conduce a ganancias financieras; usa tus habilidades para crear nuevas fuentes de ingresos.</string>
+    <string name="card_1_finances_rev">Los esquemas financieros o los tratos deshonestos resultarán contraproducentes; evita los atajos.</string>
+    <string name="card_1_feelings_up">Empoderado y seguro; te sientes capaz de lograr cualquier cosa que te propongas.</string>
+    <string name="card_1_feelings_rev">Sentirte como un impostor; la duda sobre ti mismo socava tus habilidades naturales.</string>
+    <string name="card_1_actions_up">Enfoca tu energía y toma acciones decisivas para manifestar tus metas.</string>
+    <string name="card_1_actions_rev">Deja de intentar controlar los resultados mediante la manipulación; sé auténtico en su lugar.</string>
+
+    <!-- Card 2: The High Priestess -->
+    <string name="card_2_love_up">Confía en tu intuición en asuntos del corazón; sentimientos más profundos yacen bajo la superficie.</string>
+    <string name="card_2_love_rev">Secretos o agendas ocultas en una relación; alguien está reteniendo sentimientos importantes.</string>
+    <string name="card_2_career_up">Escucha tus instintos sobre una decisión profesional; la respuesta ya está dentro de ti.</string>
+    <string name="card_2_career_rev">Ignorar información importante en el trabajo; la política de oficina o motivos ocultos están en juego.</string>
+    <string name="card_2_finances_up">Oportunidades financieras ocultas pueden revelarse; confía en tus instintos sobre las inversiones.</string>
+    <string name="card_2_finances_rev">Se está ocultando información financiera; investiga más a fondo antes de tomar decisiones monetarias.</string>
+    <string name="card_2_feelings_up">Un profundo sentido de conocimiento interior; te sientes conectado con algo más grande que tú mismo.</string>
+    <string name="card_2_feelings_rev">Te sientes desconectado de tu voz interior; la confusión nubla tu paisaje emocional.</string>
+    <string name="card_2_actions_up">Quédate quieto y escucha tu sabiduría interior antes de tomar cualquier decisión.</string>
+    <string name="card_2_actions_rev">Deja de ignorar tu intuición; reconéctate con tu ser interior a través de la reflexión.</string>
+
+    <!-- Card 3: The Empress -->
+    <string name="card_3_love_up">El amor florece con calidez y cuidado; una conexión profundamente sensual y satisfactoria.</string>
+    <string name="card_3_love_rev">Asfixiar a la pareja con atención excesiva; la codependencia debilita la relación.</string>
+    <string name="card_3_career_up">Los proyectos creativos prosperan; nutre tus ideas y observa cómo crecen hasta convertirse en algo hermoso.</string>
+    <string name="card_3_career_rev">Bloqueos creativos o descuido del autocuidado en el trabajo; agotamiento por dar demasiado.</string>
+    <string name="card_3_finances_up">La abundancia financiera fluye naturalmente; las inversiones en comodidad y belleza dan frutos.</string>
+    <string name="card_3_finances_rev">Gastar en exceso en lujos; inseguridad financiera derivada de una baja autoestima.</string>
+    <string name="card_3_feelings_up">Te sientes nutritivo, abundante y profundamente conectado con los placeres de la vida.</string>
+    <string name="card_3_feelings_rev">Te sientes emocionalmente vacío o inseguro; luchas por encontrar la plenitud.</string>
+    <string name="card_3_actions_up">Cuida de ti mismo y de los demás; invierte en belleza, comodidad y expresión creativa.</string>
+    <string name="card_3_actions_rev">Establece límites saludables; aborda los patrones codependientes y cultiva la autosuficiencia.</string>
+
+    <!-- Card 4: The Emperor -->
+    <string name="card_4_love_up">Una asociación estable y segura construida sobre el respeto mutuo y límites claros.</string>
+    <string name="card_4_love_rev">Comportamiento controlador en una relación; un miembro de la pareja domina mientras el otro sufre.</string>
+    <string name="card_4_career_up">Un fuerte liderazgo y habilidades organizativas traen éxito profesional y reconocimiento.</string>
+    <string name="card_4_career_rev">Un jefe tiránico o un lugar de trabajo rígido ahoga el crecimiento; surgen luchas de poder.</string>
+    <string name="card_4_finances_up">La gestión financiera disciplinada conduce a la estabilidad a largo plazo y la acumulación de riqueza.</string>
+    <string name="card_4_finances_rev">Control excesivo sobre las finanzas o presupuestos rígidos que crean estrés innecesario.</string>
+    <string name="card_4_feelings_up">Te sientes arraigado, poderoso y en control de la dirección de tu vida.</string>
+    <string name="card_4_feelings_rev">Te sientes oprimido o excesivamente rígido; luchas con la necesidad de controlarlo todo.</string>
+    <string name="card_4_actions_up">Establece estructura y toma las riendas de tu situación con autoridad serena.</string>
+    <string name="card_4_actions_rev">Afloja tu control; permite la flexibilidad y considera las perspectivas de los demás.</string>
+
+    <!-- Card 5: The Hierophant -->
+    <string name="card_5_love_up">Una relación convencional y comprometida; el matrimonio o la unión tradicional se ven favorecidos.</string>
+    <string name="card_5_love_rev">Desafiar las normas de la relación; una pareja no convencional o el rechazo de la tradición.</string>
+    <string name="card_5_career_up">Seguir métodos establecidos trae éxito; busca la guía de un mentor o institución.</string>
+    <string name="card_5_career_rev">Sentirse restringido por las reglas del trabajo; el deseo de liberarse de caminos profesionales convencionales.</string>
+    <string name="card_5_finances_up">Las estrategias financieras conservadoras dan frutos; sigue los consejos de inversión comprobados.</string>
+    <string name="card_5_finances_rev">Enfoques financieros no convencionales; alejarse de la gestión monetaria tradicional.</string>
+    <string name="card_5_feelings_up">Un sentido de pertenencia dentro de una comunidad o tradición espiritual; sentirte guiado.</string>
+    <string name="card_5_feelings_rev">Sentirte sofocado por reglas y expectativas; un deseo de forjar tu propio camino espiritual.</string>
+    <string name="card_5_actions_up">Busca sabiduría en las tradiciones establecidas, los mentores o las prácticas espirituales.</string>
+    <string name="card_5_actions_rev">Cuestiona las reglas y encuentra tu propio camino; no sigas ciegamente las convenciones.</string>
+
+    <!-- Card 6: The Lovers -->
+    <string name="card_6_love_up">Profunda conexión romántica y energía de almas gemelas; una relación basada en amor y respeto mutuos.</string>
+    <string name="card_6_love_rev">Conflictos en la relación y valores desalineados; una elección difícil entre dos amantes.</string>
+    <string name="card_6_career_up">Las decisiones profesionales se alinean con tus valores; las asociaciones y colaboraciones florecen.</string>
+    <string name="card_6_career_rev">Una decisión profesional crea conflicto interno; las asociaciones de negocios están desequilibradas.</string>
+    <string name="card_6_finances_up">Las decisiones financieras que se alinean con tus valores traen satisfacción duradera.</string>
+    <string name="card_6_finances_rev">Desacuerdos financieros con la pareja; elecciones que entran en conflicto con tus principios.</string>
+    <string name="card_6_feelings_up">Te sientes profundamente conectado y en armonía con alguien o algo que amas.</string>
+    <string name="card_6_feelings_rev">Dividido entre dos opciones; el conflicto interno dificulta sentirte en paz.</string>
+    <string name="card_6_actions_up">Toma decisiones desde el corazón que se alineen con tus valores más profundos.</string>
+    <string name="card_6_actions_rev">Resuelve los conflictos internos antes de tomar decisiones importantes; realínea con tus valores.</string>
+
+    <!-- Card 7: The Chariot -->
+    <string name="card_7_love_up">Perseguir el amor con determinación; superar obstáculos para estar con quien deseas.</string>
+    <string name="card_7_love_rev">Forzar una relación agresivamente; falta de dirección en las búsquedas románticas.</string>
+    <string name="card_7_career_up">El impulso profesional es fuerte; tu empuje y determinación conducen a logros significativos.</string>
+    <string name="card_7_career_rev">Sentirse sin dirección en el trabajo; obstáculos y contratiempos detienen tu progreso profesional.</string>
+    <string name="card_7_finances_up">Victoria financiera a través del esfuerzo disciplinado; mantente enfocado en tus metas monetarias.</string>
+    <string name="card_7_finances_rev">Contratiempos financieros por mala planificación o esfuerzos dispersos; reagrúpate y reenfócate.</string>
+    <string name="card_7_feelings_up">Te sientes imparable e impulsado; un poderoso sentido de propósito te impulsa hacia adelante.</string>
+    <string name="card_7_feelings_rev">Te sientes fuera de control o derrotado; la frustración crece mientras el progreso se estanca.</string>
+    <string name="card_7_actions_up">Aprovecha tu fuerza de voluntad y avanza con confianza hacia tus metas.</string>
+    <string name="card_7_actions_rev">Reduce la velocidad y recupera el control; reevalúa tu dirección antes de seguir adelante.</string>
+
+    <!-- Card 8: Strength -->
+    <string name="card_8_love_up">Amor construido sobre la paciencia y la compasión; la fuerza gentil profundiza los lazos emocionales.</string>
+    <string name="card_8_love_rev">La inseguridad y la duda sobre ti mismo socavan tus conexiones románticas; miedo a la vulnerabilidad.</string>
+    <string name="card_8_career_up">La confianza tranquila y la perseverancia ganan respeto; lidera con compasión en lugar de fuerza.</string>
+    <string name="card_8_career_rev">La duda sobre ti mismo te frena profesionalmente; podrías sentirte abrumado por los desafíos laborales.</string>
+    <string name="card_8_finances_up">La gestión financiera paciente y constante produce resultados duraderos; resiste las decisiones impulsivas.</string>
+    <string name="card_8_finances_rev">La ansiedad financiera mina tu confianza; el gasto emocional socava tu estabilidad.</string>
+    <string name="card_8_feelings_up">Te sientes valiente y resiliente; la fuerza interior te sostiene en tiempos difíciles.</string>
+    <string name="card_8_feelings_rev">Te sientes vulnerable y falto de confianza; las emociones crudas amenazan con abrumarte.</string>
+    <string name="card_8_actions_up">Enfrenta los desafíos con determinación gentil y resolución interior inquebrantable.</string>
+    <string name="card_8_actions_rev">Reconstruye tu confianza; aborda las inseguridades antes de que socaven tus esfuerzos.</string>
+
+    <!-- Card 9: The Hermit -->
+    <string name="card_9_love_up">Un período de reflexión sobre lo que realmente deseas en el amor; la soledad trae claridad.</string>
+    <string name="card_9_love_rev">El aislamiento excesivo aleja a los seres queridos; la soledad se convierte en un exilio autoimpuesto.</string>
+    <string name="card_9_career_up">Da un paso atrás y reflexiona sobre tu camino profesional; la sabiduría interior guía tu próximo movimiento.</string>
+    <string name="card_9_career_rev">Sentirte aislado en el trabajo; alejarte de los colegas obstaculiza tu crecimiento profesional.</string>
+    <string name="card_9_finances_up">La reflexión cuidadosa antes de las decisiones financieras conduce a inversiones sabias.</string>
+    <string name="card_9_finances_rev">Evitar las responsabilidades financieras retrayéndote; ignorar los asuntos de dinero los empeora.</string>
+    <string name="card_9_feelings_up">Una profunda necesidad de soledad y contemplación; encontrar la paz en la introspección tranquila.</string>
+    <string name="card_9_feelings_rev">Sentirte dolorosamente solo y desconectado; el aislamiento engendra desesperación en lugar de perspicacia.</string>
+    <string name="card_9_actions_up">Retírate del ruido de la vida diaria para buscar sabiduría interior y claridad.</string>
+    <string name="card_9_actions_rev">Reúnete con el mundo; demasiado aislamiento se ha vuelto contraproducente.</string>
+
+    <!-- Card 10: Wheel of Fortune -->
+    <string name="card_10_love_up">Un punto de inflexión romántico destinado; el destino trae cambios significativos a tu vida amorosa.</string>
+    <string name="card_10_love_rev">Los contratiempos en la relación se sienten predestinados; resiste aferrarte a un ciclo que ya no te sirve.</string>
+    <string name="card_10_career_up">Un punto de inflexión profesional afortunado; estate listo para aprovechar oportunidades inesperadas.</string>
+    <string name="card_10_career_rev">Desarrollos profesionales desafortunados; fuerzas externas interrumpen tus planes profesionales.</string>
+    <string name="card_10_finances_up">Un cambio financiero positivo se acerca; los ciclos de prosperidad giran a tu favor.</string>
+    <string name="card_10_finances_rev">Recesión financiera o gastos inesperados; atraviesa el ciclo desfavorable con paciencia.</string>
+    <string name="card_10_feelings_up">Te sientes optimista ante los cambios; una sensación de que el destino se despliega como debe ser.</string>
+    <string name="card_10_feelings_rev">Sentirte a merced del destino; frustración con circunstancias fuera de tu control.</string>
+    <string name="card_10_actions_up">Acepta el cambio y déjate llevar; aprovecha las oportunidades que el destino presenta.</string>
+    <string name="card_10_actions_rev">Libérate de los ciclos negativos; asume la responsabilidad en lugar de culpar al destino.</string>
+
+    <!-- Card 11: Justice -->
+    <string name="card_11_love_up">La justicia y la honestidad fortalecen tu relación; la responsabilidad mutua construye confianza.</string>
+    <string name="card_11_love_rev">Deshonestidad o trato injusto en una relación; agravios no resueltos causan resentimiento.</string>
+    <string name="card_11_career_up">Resultados justos en asuntos profesionales; las decisiones legales o contratos te favorecen.</string>
+    <string name="card_11_career_rev">Injusticia laboral o trato injusto; pueden surgir complicaciones legales.</string>
+    <string name="card_11_finances_up">La equidad financiera prevalece; los asuntos legales o contractuales se resuelven favorablemente.</string>
+    <string name="card_11_finances_rev">Resultados financieros injustos; disputas por dinero o tratos financieros deshonestos.</string>
+    <string name="card_11_feelings_up">Un fuerte sentido de claridad moral; sientes que la verdad y la justicia prevalecerán.</string>
+    <string name="card_11_feelings_rev">Sentirte agraviado o tratado injustamente; conflicto interno sobre lo correcto y lo incorrecto.</string>
+    <string name="card_11_actions_up">Actúa con integridad y hazte responsable; busca la verdad en todos los asuntos.</string>
+    <string name="card_11_actions_rev">Examina tus propios prejuicios; corrige cualquier deshonestidad o injusticia en tus acciones.</string>
+
+    <!-- Card 12: The Hanged Man -->
+    <string name="card_12_love_up">Entrega el control en el amor y observa tu relación desde una perspectiva completamente nueva.</string>
+    <string name="card_12_love_rev">Negarse a soltar una relación estancada; hacerse el mártir en el amor.</string>
+    <string name="card_12_career_up">Una pausa productiva en tu carrera; dar un paso atrás revela nuevas perspectivas profesionales.</string>
+    <string name="card_12_career_rev">Estancamiento profesional por indecisión; resistir los cambios necesarios te frena.</string>
+    <string name="card_12_finances_up">Un sacrificio financiero temporal conduce a mayores recompensas; la paciencia es esencial.</string>
+    <string name="card_12_finances_rev">Estancamiento financiero; negarse a adaptar tu estrategia monetaria a pesar de las circunstancias cambiantes.</string>
+    <string name="card_12_feelings_up">Una aceptación serena de la incertidumbre; encontrar la paz en rendirse a lo que es.</string>
+    <string name="card_12_feelings_rev">Sentirte atrapado y frustrado; incapaz de avanzar o soltar.</string>
+    <string name="card_12_actions_up">Suelta el control y permítete ver la situación desde un ángulo diferente.</string>
+    <string name="card_12_actions_rev">Deja de retrasar decisiones; libera la necesidad de martirio y toma acción.</string>
+
+    <!-- Card 13: Death -->
+    <string name="card_13_love_up">Una transformación importante en tu vida amorosa; una vieja relación termina para que algo nuevo pueda comenzar.</string>
+    <string name="card_13_love_rev">Aferrarse a una relación moribunda por miedo; resistir los cambios inevitables en el amor.</string>
+    <string name="card_13_career_up">Una transformación profesional significativa; una puerta se cierra mientras otra mejor se abre.</string>
+    <string name="card_13_career_rev">Resistir los cambios profesionales necesarios; quedarse en un trabajo sin futuro por miedo.</string>
+    <string name="card_13_finances_up">Transformación financiera; las fuentes de ingresos antiguas terminan pero surgen nuevas y mejores.</string>
+    <string name="card_13_finances_rev">Aferrarse a estrategias financieras obsoletas; el estancamiento impide el crecimiento financiero.</string>
+    <string name="card_13_feelings_up">Aceptar que los finales son necesarios para el crecimiento; sentirse liberado por la liberación.</string>
+    <string name="card_13_feelings_rev">Miedo profundo al cambio; estancamiento emocional por negarse a soltar el pasado.</string>
+    <string name="card_13_actions_up">Acepta el final y confía en que la transformación traerá renovación.</string>
+    <string name="card_13_actions_rev">Deja de resistirte al cambio; aquello a lo que te aferras ya se ha ido.</string>
+
+    <!-- Card 14: Temperance -->
+    <string name="card_14_love_up">Amor armonioso y equilibrado; la paciencia y el compromiso crean una relación profundamente satisfactoria.</string>
+    <string name="card_14_love_rev">Desequilibrio en la relación; un miembro da demasiado mientras el otro toma en exceso.</string>
+    <string name="card_14_career_up">Un enfoque equilibrado del trabajo trae progreso constante; la paciencia produce recompensas profesionales.</string>
+    <string name="card_14_career_rev">El desequilibrio entre trabajo y vida causa agotamiento; la impaciencia sabotea las metas profesionales a largo plazo.</string>
+    <string name="card_14_finances_up">La gestión financiera equilibrada y el gasto moderado conducen a una prosperidad sostenida.</string>
+    <string name="card_14_finances_rev">El exceso financiero o la frugalidad extrema crean problemas; encuentra el término medio.</string>
+    <string name="card_14_feelings_up">Paz interior y equilibrio emocional; sentirte centrado y en armonía contigo mismo.</string>
+    <string name="card_14_feelings_rev">Turbulencia emocional y discordia interior; luchas por encontrar el equilibrio.</string>
+    <string name="card_14_actions_up">Busca el equilibrio y la moderación en todas las cosas; practica la paciencia mientras armonizas fuerzas opuestas.</string>
+    <string name="card_14_actions_rev">Aborda las áreas de exceso; restaura el equilibrio antes de que la situación sea insostenible.</string>
+
+    <!-- Card 15: The Devil -->
+    <string name="card_15_love_up">Un apego intenso pero potencialmente tóxico; pasión mezclada con patrones poco saludables.</string>
+    <string name="card_15_love_rev">Liberarse de una relación tóxica; recuperar tu poder e independencia.</string>
+    <string name="card_15_career_up">Sentirte atrapado en un trabajo que destruye tu alma; el materialismo o la ambición te encadenan a la insatisfacción.</string>
+    <string name="card_15_career_rev">Liberarte de un ambiente laboral tóxico; romper con adicciones relacionadas con la carrera.</string>
+    <string name="card_15_finances_up">El materialismo y la codicia dominan las decisiones financieras; la deuda o la esclavitud financiera acecha.</string>
+    <string name="card_15_finances_rev">Liberarse de las cargas financieras; tomar el control de la deuda y los hábitos monetarios poco saludables.</string>
+    <string name="card_15_feelings_up">Sentirte atrapado por deseos o adicciones; los aspectos sombríos de ti mismo demandan atención.</string>
+    <string name="card_15_feelings_rev">Un poderoso sentido de liberación; confrontar tus sombras trae libertad emocional.</string>
+    <string name="card_15_actions_up">Examina lo que te mantiene en servidumbre; la conciencia es el primer paso hacia la libertad.</string>
+    <string name="card_15_actions_rev">Rompe las cadenas que te atan; recupera tu poder de las adicciones o patrones tóxicos.</string>
+
+    <!-- Card 16: The Tower -->
+    <string name="card_16_love_up">Un trastorno repentino destroza las ilusiones en el amor; revelaciones dolorosas que finalmente traen la verdad.</string>
+    <string name="card_16_love_rev">Evitar una ruptura o confrontación necesaria; la verdad eventualmente saldrá a la luz.</string>
+    <string name="card_16_career_up">Disrupción profesional repentina como despidos o colapso de un proyecto; reconstruye desde los escombros.</string>
+    <string name="card_16_career_rev">Presentir un desastre profesional inminente pero negarse a actuar; retrasar lo inevitable.</string>
+    <string name="card_16_finances_up">Shock financiero repentino o pérdida; las estructuras en las que confiabas se desmoronan inesperadamente.</string>
+    <string name="card_16_finances_rev">Evitar por poco un desastre financiero; una advertencia para fortalecer tus cimientos financieros.</string>
+    <string name="card_16_feelings_up">Conmoción y desorientación; el suelo ha sido arrancado de debajo de tus pies.</string>
+    <string name="card_16_feelings_rev">Temor ante un trastorno inminente; ansiedad por un desastre que puedes sentir pero no prevenir.</string>
+    <string name="card_16_actions_up">Acepta la destrucción y prepárate para reconstruir sobre una base más fuerte y honesta.</string>
+    <string name="card_16_actions_rev">Atiende las grietas antes de que toda la estructura se derrumbe; no ignores las señales de advertencia.</string>
+
+    <!-- Card 17: The Star -->
+    <string name="card_17_love_up">Esperanza e inspiración renovadas en el amor; una conexión serena y espiritualmente satisfactoria.</string>
+    <string name="card_17_love_rev">Perder la fe en el amor; la desesperación y la desesperanza apagan la chispa de tu vida romántica.</string>
+    <string name="card_17_career_up">Visión inspirada para tu carrera; esperanza renovada después de un período profesional difícil.</string>
+    <string name="card_17_career_rev">Desilusión profesional; perder la fe en tu camino profesional o visión creativa.</string>
+    <string name="card_17_finances_up">Recuperación financiera y optimismo renovado; la generosidad y la fe atraen la abundancia.</string>
+    <string name="card_17_finances_rev">Desesperación financiera; perder la esperanza sobre tu situación monetaria nubla tu juicio.</string>
+    <string name="card_17_feelings_up">Sentirte profundamente esperanzado y en paz; un saber interior tranquilo de que todo estará bien.</string>
+    <string name="card_17_feelings_rev">Sentirte desconectado de la esperanza; la desesperación se instala donde antes residía la fe.</string>
+    <string name="card_17_actions_up">Mantén la esperanza y deja que tu luz interior te guíe hacia la sanación y la renovación.</string>
+    <string name="card_17_actions_rev">Reconéctate con fuentes de inspiración; busca ayuda para restaurar tu sentido de esperanza.</string>
+
+    <!-- Card 18: The Moon -->
+    <string name="card_18_love_up">La confusión y las ilusiones nublan tu vida amorosa; las cosas no son lo que parecen en el romance.</string>
+    <string name="card_18_love_rev">La claridad emerge en el amor; los engaños se revelan y los miedos se superan.</string>
+    <string name="card_18_career_up">Confusión e incertidumbre en el trabajo; cuidado con los engaños o la comunicación poco clara.</string>
+    <string name="card_18_career_rev">La claridad regresa a tu carrera; los malentendidos se resuelven y el camino se aclara.</string>
+    <string name="card_18_finances_up">Confusión financiera o tratos engañosos; no confíes en todo a primera vista.</string>
+    <string name="card_18_finances_rev">Claridad financiera después de un período de confusión; la información oculta sale a la luz.</string>
+    <string name="card_18_feelings_up">La ansiedad y el miedo te atrapan; tu subconsciente proyecta preocupaciones que pueden no estar basadas en la realidad.</string>
+    <string name="card_18_feelings_rev">Los miedos se disuelven cuando la verdad es revelada; la claridad emocional reemplaza la confusión.</string>
+    <string name="card_18_actions_up">Procede con cautela; no todo es lo que parece, así que confía en tus instintos más profundos.</string>
+    <string name="card_18_actions_rev">Enfrenta tus miedos de frente; la verdad es menos aterradora de lo que tu imaginación sugiere.</string>
+
+    <!-- Card 19: The Sun -->
+    <string name="card_19_love_up">Alegría y felicidad radiantes en el amor; tu relación está bendecida con calidez y vitalidad.</string>
+    <string name="card_19_love_rev">Nubes temporales oscurecen la alegría en tu relación; la felicidad parece estar justo fuera de alcance.</string>
+    <string name="card_19_career_up">El éxito profesional y el reconocimiento brillan intensamente; tus talentos son celebrados y recompensados.</string>
+    <string name="card_19_career_rev">Los contratiempos profesionales apagan tu entusiasmo; el éxito se retrasa pero no se niega.</string>
+    <string name="card_19_finances_up">Prosperidad financiera y abundancia; un período de éxito y celebración con el dinero.</string>
+    <string name="card_19_finances_rev">Pequeños contratiempos financieros; el gasto excesivo durante los buenos tiempos puede alcanzarte.</string>
+    <string name="card_19_feelings_up">Pura alegría y optimismo; sentirte radiantemente vivo y agradecido por las bendiciones de la vida.</string>
+    <string name="card_19_feelings_rev">Luchas por sentir felicidad genuina; algo bloquea tu capacidad de disfrutar plenamente la vida.</string>
+    <string name="card_19_actions_up">Celebra tus éxitos y deja que tu energía positiva inspire a los que te rodean.</string>
+    <string name="card_19_actions_rev">Busca lo que bloquea tu alegría; no dejes que los contratiempos temporales definan tu perspectiva.</string>
+
+    <!-- Card 20: Judgement -->
+    <string name="card_20_love_up">Un profundo despertar en el amor; las relaciones pasadas sanan y respondes a un llamado superior.</string>
+    <string name="card_20_love_rev">El juicio severo hacia ti mismo te impide abrir tu corazón; la culpa no procesada persigue al amor.</string>
+    <string name="card_20_career_up">Un llamado profesional despierta dentro de ti; es hora de responder a tu verdadero propósito profesional.</string>
+    <string name="card_20_career_rev">Negarse a escuchar tu vocación profesional; la duda impide la transformación de la carrera.</string>
+    <string name="card_20_finances_up">Un ajuste de cuentas financiero conduce a un renacimiento positivo; los errores del pasado son perdonados y corregidos.</string>
+    <string name="card_20_finances_rev">Negarse a aprender de los errores financieros pasados; juicio severo sobre el dinero.</string>
+    <string name="card_20_feelings_up">Un profundo sentido de despertar y propósito; sentirte llamado a una versión superior de ti mismo.</string>
+    <string name="card_20_feelings_rev">Paralizado por la autocrítica; incapaz de perdonarte y avanzar.</string>
+    <string name="card_20_actions_up">Responde al llamado de la transformación; reflexiona honestamente y elévate a tu máximo potencial.</string>
+    <string name="card_20_actions_rev">Libera el juicio severo hacia ti mismo; perdona tus errores pasados y date un nuevo comienzo.</string>
+
+    <!-- Card 21: The World -->
+    <string name="card_21_love_up">Un amor profundamente satisfactorio y completo; la relación alcanza un hermoso hito.</string>
+    <string name="card_21_love_rev">Sentirte incompleto en el amor; una relación carece de la plenitud que anhelas.</string>
+    <string name="card_21_career_up">Gran logro profesional y finalización de un proyecto significativo; has llegado a la meta.</string>
+    <string name="card_21_career_rev">Un proyecto queda sin terminar; tomar atajos impide la verdadera realización profesional.</string>
+    <string name="card_21_finances_up">Los objetivos financieros se alcanzan; un ciclo de prosperidad llega a su conclusión satisfactoria.</string>
+    <string name="card_21_finances_rev">Los objetivos financieros permanecen justo fuera de alcance; los retrasos y cabos sueltos impiden la finalización.</string>
+    <string name="card_21_feelings_up">Un profundo sentido de plenitud y realización; sentirte en unidad con el mundo que te rodea.</string>
+    <string name="card_21_feelings_rev">Sentirte incompleto a pesar de los logros; algo esencial todavía falta.</string>
+    <string name="card_21_actions_up">Celebra tus logros y prepárate para el próximo ciclo de crecimiento.</string>
+    <string name="card_21_actions_rev">Ata los cabos sueltos antes de seguir adelante; no tomes atajos hacia la finalización.</string>
+</resources>

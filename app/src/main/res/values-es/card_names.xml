@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Major Arcana -->
+    <string name="card_the_fool">El Loco</string>
+    <string name="card_the_magician">El Mago</string>
+    <string name="card_the_high_priestess">La Sacerdotisa</string>
+    <string name="card_the_empress">La Emperatriz</string>
+    <string name="card_the_emperor">El Emperador</string>
+    <string name="card_the_hierophant">El Hierofante</string>
+    <string name="card_the_lovers">Los Enamorados</string>
+    <string name="card_the_chariot">El Carro</string>
+    <string name="card_strength">La Fuerza</string>
+    <string name="card_the_hermit">El Ermitaño</string>
+    <string name="card_wheel_of_fortune">La Rueda de la Fortuna</string>
+    <string name="card_justice">La Justicia</string>
+    <string name="card_the_hanged_man">El Colgado</string>
+    <string name="card_death">La Muerte</string>
+    <string name="card_temperance">La Templanza</string>
+    <string name="card_the_devil">El Diablo</string>
+    <string name="card_the_tower">La Torre</string>
+    <string name="card_the_star">La Estrella</string>
+    <string name="card_the_moon">La Luna</string>
+    <string name="card_the_sun">El Sol</string>
+    <string name="card_judgement">El Juicio</string>
+    <string name="card_the_world">El Mundo</string>
+
+    <!-- Cups -->
+    <string name="card_ace_of_cups">As de Copas</string>
+    <string name="card_two_of_cups">Dos de Copas</string>
+    <string name="card_three_of_cups">Tres de Copas</string>
+    <string name="card_four_of_cups">Cuatro de Copas</string>
+    <string name="card_five_of_cups">Cinco de Copas</string>
+    <string name="card_six_of_cups">Seis de Copas</string>
+    <string name="card_seven_of_cups">Siete de Copas</string>
+    <string name="card_eight_of_cups">Ocho de Copas</string>
+    <string name="card_nine_of_cups">Nueve de Copas</string>
+    <string name="card_ten_of_cups">Diez de Copas</string>
+    <string name="card_page_of_cups">Sota de Copas</string>
+    <string name="card_knight_of_cups">Caballero de Copas</string>
+    <string name="card_queen_of_cups">Reina de Copas</string>
+    <string name="card_king_of_cups">Rey de Copas</string>
+
+    <!-- Pentacles -->
+    <string name="card_ace_of_pentacles">As de Oros</string>
+    <string name="card_two_of_pentacles">Dos de Oros</string>
+    <string name="card_three_of_pentacles">Tres de Oros</string>
+    <string name="card_four_of_pentacles">Cuatro de Oros</string>
+    <string name="card_five_of_pentacles">Cinco de Oros</string>
+    <string name="card_six_of_pentacles">Seis de Oros</string>
+    <string name="card_seven_of_pentacles">Siete de Oros</string>
+    <string name="card_eight_of_pentacles">Ocho de Oros</string>
+    <string name="card_nine_of_pentacles">Nueve de Oros</string>
+    <string name="card_ten_of_pentacles">Diez de Oros</string>
+    <string name="card_page_of_pentacles">Sota de Oros</string>
+    <string name="card_knight_of_pentacles">Caballero de Oros</string>
+    <string name="card_queen_of_pentacles">Reina de Oros</string>
+    <string name="card_king_of_pentacles">Rey de Oros</string>
+
+    <!-- Swords -->
+    <string name="card_ace_of_swords">As de Espadas</string>
+    <string name="card_two_of_swords">Dos de Espadas</string>
+    <string name="card_three_of_swords">Tres de Espadas</string>
+    <string name="card_four_of_swords">Cuatro de Espadas</string>
+    <string name="card_five_of_swords">Cinco de Espadas</string>
+    <string name="card_six_of_swords">Seis de Espadas</string>
+    <string name="card_seven_of_swords">Siete de Espadas</string>
+    <string name="card_eight_of_swords">Ocho de Espadas</string>
+    <string name="card_nine_of_swords">Nueve de Espadas</string>
+    <string name="card_ten_of_swords">Diez de Espadas</string>
+    <string name="card_page_of_swords">Sota de Espadas</string>
+    <string name="card_knight_of_swords">Caballero de Espadas</string>
+    <string name="card_queen_of_swords">Reina de Espadas</string>
+    <string name="card_king_of_swords">Rey de Espadas</string>
+
+    <!-- Wands -->
+    <string name="card_ace_of_wands">As de Bastos</string>
+    <string name="card_two_of_wands">Dos de Bastos</string>
+    <string name="card_three_of_wands">Tres de Bastos</string>
+    <string name="card_four_of_wands">Cuatro de Bastos</string>
+    <string name="card_five_of_wands">Cinco de Bastos</string>
+    <string name="card_six_of_wands">Seis de Bastos</string>
+    <string name="card_seven_of_wands">Siete de Bastos</string>
+    <string name="card_eight_of_wands">Ocho de Bastos</string>
+    <string name="card_nine_of_wands">Nueve de Bastos</string>
+    <string name="card_ten_of_wands">Diez de Bastos</string>
+    <string name="card_page_of_wands">Sota de Bastos</string>
+    <string name="card_knight_of_wands">Caballero de Bastos</string>
+    <string name="card_queen_of_wands">Reina de Bastos</string>
+    <string name="card_king_of_wands">Rey de Bastos</string>
+</resources>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TAROTIQ</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Portal</string>
+    <string name="nav_portal">Portal</string>
+    <string name="nav_library">Biblioteca</string>
+    <string name="nav_new_reading">Oracle</string>
+    <string name="nav_oracle">Oracle</string>
+    <string name="nav_history">Grimoire</string>
+    <string name="nav_grimoire">Grimoire</string>
+    <string name="nav_profile">Perfil</string>
+
+    <!-- Auth -->
+    <string name="auth_login">Iniciar sesión</string>
+    <string name="auth_register">Registrarse</string>
+    <string name="auth_email">Correo electrónico</string>
+    <string name="auth_password">Contraseña</string>
+    <string name="auth_passwordless">Inicio sin contraseña</string>
+    <string name="auth_passwordless_desc">Te enviaremos un enlace por correo electrónico</string>
+    <string name="auth_google">Continuar con Google</string>
+    <string name="auth_logout">Cerrar sesión</string>
+    <string name="auth_delete_account">Eliminar cuenta</string>
+    <string name="auth_profile">Perfil</string>
+    <string name="auth_email_sent">Enlace enviado a tu correo electrónico</string>
+    <string name="auth_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="auth_reset_sent">Correo de restablecimiento enviado</string>
+
+    <!-- Home -->
+    <string name="home_daily_card">Carta del Día</string>
+    <string name="home_daily_card_desc">Revela tu carta diaria</string>
+    <string name="home_quick_reading">Lectura Rápida</string>
+    <string name="home_new_reading">Nueva Lectura</string>
+    <string name="home_streak">Racha</string>
+    <string name="home_streak_days">%d días seguidos</string>
+
+    <!-- Reading Topics -->
+    <string name="topic_love">Amor</string>
+    <string name="topic_career">Carrera</string>
+    <string name="topic_general">General</string>
+    <string name="topic_yes_no">Sí / No</string>
+    <string name="topic_spiritual">Espiritual</string>
+    <string name="topic_select">Elige un tema de lectura</string>
+
+    <!-- Question -->
+    <string name="question_title">Tu Pregunta</string>
+    <string name="question_hint">Las estrellas escuchan…</string>
+    <string name="question_skip">Omitir</string>
+    <string name="question_continue">Continuar</string>
+
+    <!-- Spread -->
+    <string name="spread_select">Elige una tirada</string>
+    <string name="spread_single">Una Carta</string>
+    <string name="spread_single_desc">Visión rápida</string>
+    <string name="spread_three_card">Tres Cartas</string>
+    <string name="spread_three_card_desc">Pasado · Presente · Futuro</string>
+    <string name="spread_celtic_cross">Cruz Celta</string>
+    <string name="spread_celtic_cross_desc">Lectura profunda (10 cartas)</string>
+    <string name="spread_relationship">Tirada de Relación</string>
+    <string name="spread_relationship_desc">Tú · Pareja · Relación · Desafíos · Futuro</string>
+    <string name="spread_cost">%d monedas</string>
+    <string name="spread_cost_singular">%d moneda</string>
+
+    <!-- Card Drawing -->
+    <string name="drawing_tap_to_reveal">Toca una carta para revelarla</string>
+    <string name="drawing_card_revealed">¡Carta revelada!</string>
+    <string name="drawing_all_revealed">Todas las cartas reveladas</string>
+    <string name="drawing_get_reading">Obtener lectura</string>
+    <string name="drawing_confirm_selection">Confirmar selección</string>
+    <string name="drawing_scroll_hint">↓ Desplázate para ver más cartas ↓</string>
+    <string name="spread_pick_cards">Elige %d cartas para tu lectura</string>
+    <string name="drawing_focus_energy">Concentra tu energía en tu intención.</string>
+
+    <!-- Reading -->
+    <string name="reading_interpreting">Madame Stella está leyendo tus cartas…</string>
+    <string name="reading_follow_up">Preguntar más…</string>
+    <string name="reading_follow_up_hint">¿Te gustaría preguntar algo más?</string>
+    <string name="reading_save">Guardar lectura</string>
+    <string name="reading_share">Compartir</string>
+    <string name="reading_saved">Lectura guardada</string>
+    <string name="reading_summary">Resumen de la Lectura</string>
+    <string name="reading_upright">Al derecho</string>
+    <string name="reading_reversed">Invertida</string>
+
+    <!-- History -->
+    <string name="history_title">Historial de Lecturas</string>
+    <string name="history_empty">Aún no hay lecturas</string>
+    <string name="history_filter_all">Todas</string>
+
+    <!-- Card Library -->
+    <string name="library_title">Biblioteca de Cartas</string>
+    <string name="library_major_arcana">Arcanos Mayores</string>
+    <string name="library_minor_arcana">Arcanos Menores</string>
+    <string name="library_cups">Copas</string>
+    <string name="library_pentacles">Oros</string>
+    <string name="library_swords">Espadas</string>
+    <string name="library_wands">Bastos</string>
+    <string name="library_all">Todas</string>
+    <string name="library_search">Buscar carta…</string>
+    <string name="library_upright_keywords">Palabras clave (al derecho)</string>
+    <string name="library_reversed_keywords">Palabras clave (invertida)</string>
+    <string name="library_love">Amor</string>
+    <string name="library_career">Carrera</string>
+    <string name="library_finances">Finanzas</string>
+    <string name="library_feelings">Sentimientos</string>
+    <string name="library_actions">Consejo</string>
+
+    <!-- Daily Card -->
+    <string name="daily_title">Carta del Día</string>
+    <string name="daily_tap_reveal">Toca para revelar tu carta diaria</string>
+    <string name="daily_already_drawn">Ya has revelado tu carta hoy</string>
+    <string name="daily_view_details">Ver detalles de la carta</string>
+
+    <!-- Coins -->
+    <string name="coins_balance">Tus Monedas</string>
+    <string name="coins_buy">Comprar Monedas</string>
+    <string name="coins_pack_5">5 monedas</string>
+    <string name="coins_pack_15">15 monedas</string>
+    <string name="coins_pack_50">50 monedas</string>
+    <string name="coins_pack_300">300 monedas</string>
+    <string name="coins_save">AHORRA %d%%</string>
+    <string name="coins_most_popular">Más Popular</string>
+    <string name="coins_best_value">Mejor Oferta</string>
+    <string name="coins_not_enough">No tienes suficientes monedas</string>
+    <string name="coins_free_readings">%d lecturas gratuitas restantes</string>
+    <string name="coins_free_reading_used">Lectura gratuita utilizada (%d/3)</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Perfil</string>
+    <string name="profile_zodiac">Signo Zodiacal</string>
+    <string name="profile_achievements">Logros</string>
+    <string name="profile_statistics">Estadísticas</string>
+    <string name="profile_total_readings">Lecturas Totales</string>
+    <string name="profile_favorite_card">Carta Más Frecuente</string>
+    <string name="profile_longest_streak">Racha Más Larga</string>
+    <string name="profile_language">Idioma</string>
+    <string name="profile_notifications">Notificaciones</string>
+    <string name="profile_notification_time">Hora del Recordatorio</string>
+    <string name="profile_about">Acerca de</string>
+    <string name="profile_legal">Información Legal</string>
+    <string name="profile_other_apps">Prueba nuestras otras apps</string>
+
+    <!-- Info -->
+    <string name="faq_title">Preguntas Frecuentes</string>
+    <string name="about_title">Acerca de TAROTIQ</string>
+    <string name="about_version">Versión %s</string>
+    <string name="contact_title">Contactar con Soporte</string>
+    <string name="contact_send">Enviar</string>
+    <string name="contact_subject">Asunto</string>
+    <string name="contact_message">Mensaje</string>
+    <string name="terms_title">Términos de Servicio</string>
+    <string name="privacy_title">Política de Privacidad</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Carta del Día</string>
+    <string name="notification_channel_description">Recordatorio diario de carta del tarot</string>
+    <string name="notification_daily_title">Tu carta diaria te espera</string>
+    <string name="notification_daily_text">Descubre lo que las estrellas han preparado para ti hoy.</string>
+
+    <!-- Zodiac Signs -->
+    <string name="zodiac_aries">Aries</string>
+    <string name="zodiac_taurus">Tauro</string>
+    <string name="zodiac_gemini">Géminis</string>
+    <string name="zodiac_cancer">Cáncer</string>
+    <string name="zodiac_leo">Leo</string>
+    <string name="zodiac_virgo">Virgo</string>
+    <string name="zodiac_libra">Libra</string>
+    <string name="zodiac_scorpio">Escorpio</string>
+    <string name="zodiac_sagittarius">Sagitario</string>
+    <string name="zodiac_capricorn">Capricornio</string>
+    <string name="zodiac_aquarius">Acuario</string>
+    <string name="zodiac_pisces">Piscis</string>
+
+    <!-- HomeScreen Portal -->
+    <string name="home_celestial_active">Portal CELESTIAL ACTIVO</string>
+    <string name="home_headline_1">Las estrellas susurran</string>
+    <string name="home_headline_2">tu destino hoy.</string>
+    <string name="home_welcome_body">Atraviesa el velo entre mundos. Cada carta es un susurro del cosmos, un hilo del destino tejido solo para ti.</string>
+    <string name="home_daily_drawing">TIRADA DIARIA</string>
+    <string name="home_consult_oracle">Consultar al Oracle</string>
+    <string name="home_daily_desc">Recibe tu mensaje diario del mazo arcano. Una carta, revelada al amanecer, para guiar tu camino.</string>
+    <string name="home_awaiting">ESPERANDO\nINVOCACIÓN</string>
+    <string name="home_reflect">REFLEXIONAR</string>
+    <string name="home_explore">EXPLORAR</string>
+    <string name="home_most_insightful">MÁS REVELADOR</string>
+    <string name="home_connection">Conexión</string>
+    <string name="home_connection_desc">Corazón y Alma</string>
+    <string name="home_lunar_phase">FASE LUNAR</string>
+    <string name="home_visibility">VISIBILIDAD</string>
+
+    <!-- ReadingHistoryScreen -->
+    <string name="history_sacred_archive">ARCHIVO SAGRADO</string>
+    <string name="history_grimoire_title">El Grimoire</string>
+    <string name="history_subtitle">Tus lecturas sagradas, preservadas para la eternidad</string>
+    <string name="history_search_hint">Buscar en el grimoire…</string>
+    <string name="history_revisit">REVISAR INTERPRETACIÓN</string>
+    <string name="history_deepen_search">PROFUNDIZAR BÚSQUEDA</string>
+
+    <!-- ReadingInterpretation errors -->
+    <string name="error_insufficient_coins_title">Monedas insuficientes</string>
+    <string name="error_insufficient_coins_desc">No tienes suficientes monedas para esta lectura. Compra monedas o mira un anuncio para ganar una moneda gratis.</string>
+    <string name="error_no_internet_title">Sin conexión</string>
+    <string name="error_no_internet_desc">Comprueba tu conexión a internet e inténtalo de nuevo.</string>
+    <string name="error_timeout_title">Tiempo de espera agotado</string>
+    <string name="error_timeout_desc">El servidor no responde. Por favor, inténtalo de nuevo.</string>
+    <string name="error_auth_title">Error de autenticación</string>
+    <string name="error_auth_desc">Tu sesión ha expirado. Por favor, cierra sesión y vuelve a iniciarla.</string>
+    <string name="error_retry">REINTENTAR</string>
+
+    <!-- ReadingInterpretation -->
+    <string name="reading_oracle_insight">La Visión del Oracle</string>
+    <string name="reading_generated_by_ai">GENERADO POR IA</string>
+
+    <!-- ReadingDetail -->
+    <string name="reading_cosmic_synthesis">SÍNTESIS CÓSMICA</string>
+
+    <!-- Login -->
+    <string name="auth_subtitle">TU GUÍA MÍSTICA</string>
+
+    <!-- About -->
+    <string name="about_description">Tu lector místico de tarot con IA.\nDescubre conocimientos a través del arte ancestral del tarot, potenciado por IA moderna.\n\nTAROTIQ combina siglos de sabiduría del tarot con tecnología de vanguardia para ofrecer lecturas personalizadas e interactivas.</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="close">Cerrar</string>
+    <string name="back">Atrás</string>
+    <string name="save">Guardar</string>
+    <string name="delete">Eliminar</string>
+    <string name="share">Compartir</string>
+    <string name="loading">Cargando…</string>
+    <string name="error_generic">Algo salió mal. Por favor, inténtalo de nuevo.</string>
+    <string name="error_network">Comprueba tu conexión a internet.</string>
+    <string name="offline_banner">Estás sin conexión</string>
+    <string name="delete_confirm_title">¿Eliminar lectura?</string>
+    <string name="delete_confirm_message">Esta acción no se puede deshacer.</string>
+    <string name="retry">Reintentar</string>
+    <string name="no_cards_found">No se encontraron cartas</string>
+
+    <!-- Rewarded Ads -->
+    <string name="rewarded_ad_title">Mira un anuncio, gana una moneda</string>
+    <string name="rewarded_ad_subtitle">%d restantes esta semana</string>
+    <string name="rewarded_ad_success">¡+1 moneda ganada!</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">Bienvenido a TAROTIQ</string>
+    <string name="onboarding_welcome_desc">Descubre los secretos del tarot con tu adivina personal de IA</string>
+    <string name="onboarding_zodiac">Tu Signo</string>
+    <string name="onboarding_zodiac_desc">Elige tu signo zodiacal para lecturas personalizadas</string>
+    <string name="onboarding_daily">Carta del Día</string>
+    <string name="onboarding_daily_desc">Cada día revelamos una carta con un mensaje para ti</string>
+    <string name="onboarding_ready">¡Todo listo!</string>
+    <string name="onboarding_ready_desc">3 lecturas son gratuitas. ¡Comienza tu viaje!</string>
+    <string name="onboarding_start">Comenzar</string>
+    <string name="onboarding_next">Siguiente</string>
+    <string name="onboarding_skip">Omitir</string>
+
+    <!-- Moon Phases -->
+    <string name="moon_new">Luna Nueva</string>
+    <string name="moon_waxing_crescent">Luna Creciente</string>
+    <string name="moon_first_quarter">Cuarto Creciente</string>
+    <string name="moon_waxing_gibbous">Gibosa Creciente</string>
+    <string name="moon_full">Luna Llena</string>
+    <string name="moon_waning_gibbous">Gibosa Menguante</string>
+    <string name="moon_last_quarter">Cuarto Menguante</string>
+    <string name="moon_waning_crescent">Luna Menguante</string>
+
+    <!-- Achievements -->
+    <string name="achievement_first_reading">Primera Lectura</string>
+    <string name="achievement_ten_readings">10 Lecturas</string>
+    <string name="achievement_all_spreads">Todas las Tiradas</string>
+    <string name="achievement_week_streak">Racha Semanal</string>
+    <string name="achievement_month_streak">Racha Mensual</string>
+    <string name="achievement_major_arcana">Todos los Arcanos Mayores</string>
+
+    <!-- FAQ -->
+    <string name="faq_q1">¿Cómo funciona una lectura?</string>
+    <string name="faq_a1">Elige un tema, opcionalmente haz una pregunta, selecciona una tirada de cartas y revela tus cartas tocándolas. Nuestra adivina de IA Madame Stella interpretará tus cartas en el contexto de tu pregunta.</string>
+    <string name="faq_q2">¿Las lecturas son gratuitas?</string>
+    <string name="faq_a2">Obtienes 3 lecturas completamente gratis. Después puedes comprar paquetes de monedas para lecturas adicionales. La carta del día siempre es gratuita.</string>
+    <string name="faq_q3">¿Cómo funcionan las monedas?</string>
+    <string name="faq_a3">Las monedas se usan para pagar las lecturas. Diferentes tiradas cuestan diferentes cantidades: 1 carta = 1 moneda, 3 cartas = 2 monedas, Cruz Celta = 3 monedas.</string>
+    <string name="faq_q4">¿Es preciso el tarot?</string>
+    <string name="faq_a4">El tarot es una herramienta de introspección y crecimiento personal. Las lecturas son generadas por IA y sirven como inspiración, no como predicciones definitivas del futuro.</string>
+    <string name="faq_q5">¿Puedo hacer preguntas de seguimiento?</string>
+    <string name="faq_a5">¡Sí! Después de cada lectura, puedes preguntarle a Madame Stella cualquier cosa sobre tus cartas, sin costo adicional.</string>
+
+    <!-- Other Apps -->
+    <string name="app_kvitta_desc">Reparto inteligente de gastos y liquidación de deudas</string>
+    <string name="app_bettermingle_desc">Mejora tus perfiles de citas con IA</string>
+    <string name="app_bettershelf_desc">Organiza tu biblioteca y descubre nuevos libros</string>
+    <string name="app_dreamwitness_desc">Registra e interpreta tus sueños</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Major Arcana -->
+    <string name="card_the_fool">The Fool</string>
+    <string name="card_the_magician">The Magician</string>
+    <string name="card_the_high_priestess">The High Priestess</string>
+    <string name="card_the_empress">The Empress</string>
+    <string name="card_the_emperor">The Emperor</string>
+    <string name="card_the_hierophant">The Hierophant</string>
+    <string name="card_the_lovers">The Lovers</string>
+    <string name="card_the_chariot">The Chariot</string>
+    <string name="card_strength">Strength</string>
+    <string name="card_the_hermit">The Hermit</string>
+    <string name="card_wheel_of_fortune">Wheel of Fortune</string>
+    <string name="card_justice">Justice</string>
+    <string name="card_the_hanged_man">The Hanged Man</string>
+    <string name="card_death">Death</string>
+    <string name="card_temperance">Temperance</string>
+    <string name="card_the_devil">The Devil</string>
+    <string name="card_the_tower">The Tower</string>
+    <string name="card_the_star">The Star</string>
+    <string name="card_the_moon">The Moon</string>
+    <string name="card_the_sun">The Sun</string>
+    <string name="card_judgement">Judgement</string>
+    <string name="card_the_world">The World</string>
+
+    <!-- Cups -->
+    <string name="card_ace_of_cups">Ace of Cups</string>
+    <string name="card_two_of_cups">Two of Cups</string>
+    <string name="card_three_of_cups">Three of Cups</string>
+    <string name="card_four_of_cups">Four of Cups</string>
+    <string name="card_five_of_cups">Five of Cups</string>
+    <string name="card_six_of_cups">Six of Cups</string>
+    <string name="card_seven_of_cups">Seven of Cups</string>
+    <string name="card_eight_of_cups">Eight of Cups</string>
+    <string name="card_nine_of_cups">Nine of Cups</string>
+    <string name="card_ten_of_cups">Ten of Cups</string>
+    <string name="card_page_of_cups">Page of Cups</string>
+    <string name="card_knight_of_cups">Knight of Cups</string>
+    <string name="card_queen_of_cups">Queen of Cups</string>
+    <string name="card_king_of_cups">King of Cups</string>
+
+    <!-- Pentacles -->
+    <string name="card_ace_of_pentacles">Ace of Pentacles</string>
+    <string name="card_two_of_pentacles">Two of Pentacles</string>
+    <string name="card_three_of_pentacles">Three of Pentacles</string>
+    <string name="card_four_of_pentacles">Four of Pentacles</string>
+    <string name="card_five_of_pentacles">Five of Pentacles</string>
+    <string name="card_six_of_pentacles">Six of Pentacles</string>
+    <string name="card_seven_of_pentacles">Seven of Pentacles</string>
+    <string name="card_eight_of_pentacles">Eight of Pentacles</string>
+    <string name="card_nine_of_pentacles">Nine of Pentacles</string>
+    <string name="card_ten_of_pentacles">Ten of Pentacles</string>
+    <string name="card_page_of_pentacles">Page of Pentacles</string>
+    <string name="card_knight_of_pentacles">Knight of Pentacles</string>
+    <string name="card_queen_of_pentacles">Queen of Pentacles</string>
+    <string name="card_king_of_pentacles">King of Pentacles</string>
+
+    <!-- Swords -->
+    <string name="card_ace_of_swords">Ace of Swords</string>
+    <string name="card_two_of_swords">Two of Swords</string>
+    <string name="card_three_of_swords">Three of Swords</string>
+    <string name="card_four_of_swords">Four of Swords</string>
+    <string name="card_five_of_swords">Five of Swords</string>
+    <string name="card_six_of_swords">Six of Swords</string>
+    <string name="card_seven_of_swords">Seven of Swords</string>
+    <string name="card_eight_of_swords">Eight of Swords</string>
+    <string name="card_nine_of_swords">Nine of Swords</string>
+    <string name="card_ten_of_swords">Ten of Swords</string>
+    <string name="card_page_of_swords">Page of Swords</string>
+    <string name="card_knight_of_swords">Knight of Swords</string>
+    <string name="card_queen_of_swords">Queen of Swords</string>
+    <string name="card_king_of_swords">King of Swords</string>
+
+    <!-- Wands -->
+    <string name="card_ace_of_wands">Ace of Wands</string>
+    <string name="card_two_of_wands">Two of Wands</string>
+    <string name="card_three_of_wands">Three of Wands</string>
+    <string name="card_four_of_wands">Four of Wands</string>
+    <string name="card_five_of_wands">Five of Wands</string>
+    <string name="card_six_of_wands">Six of Wands</string>
+    <string name="card_seven_of_wands">Seven of Wands</string>
+    <string name="card_eight_of_wands">Eight of Wands</string>
+    <string name="card_nine_of_wands">Nine of Wands</string>
+    <string name="card_ten_of_wands">Ten of Wands</string>
+    <string name="card_page_of_wands">Page of Wands</string>
+    <string name="card_knight_of_wands">Knight of Wands</string>
+    <string name="card_queen_of_wands">Queen of Wands</string>
+    <string name="card_king_of_wands">King of Wands</string>
+</resources>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TAROTIQ</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Portal</string>
+    <string name="nav_portal">Portal</string>
+    <string name="nav_library">Bibliotheek</string>
+    <string name="nav_new_reading">Orakel</string>
+    <string name="nav_oracle">Orakel</string>
+    <string name="nav_history">Grimoire</string>
+    <string name="nav_grimoire">Grimoire</string>
+    <string name="nav_profile">Profiel</string>
+
+    <!-- Auth -->
+    <string name="auth_login">Inloggen</string>
+    <string name="auth_register">Registreren</string>
+    <string name="auth_email">E-mail</string>
+    <string name="auth_password">Wachtwoord</string>
+    <string name="auth_passwordless">Inloggen zonder wachtwoord</string>
+    <string name="auth_passwordless_desc">We sturen u een link via e-mail</string>
+    <string name="auth_google">Doorgaan met Google</string>
+    <string name="auth_logout">Uitloggen</string>
+    <string name="auth_delete_account">Account verwijderen</string>
+    <string name="auth_profile">Profiel</string>
+    <string name="auth_email_sent">Link verzonden naar uw e-mail</string>
+    <string name="auth_forgot_password">Wachtwoord vergeten?</string>
+    <string name="auth_reset_sent">Wachtwoord reset e-mail verzonden</string>
+
+    <!-- Home -->
+    <string name="home_daily_card">Kaart van de Dag</string>
+    <string name="home_daily_card_desc">Onthul uw dagelijkse kaart</string>
+    <string name="home_quick_reading">Snelle Lezing</string>
+    <string name="home_new_reading">Nieuwe Lezing</string>
+    <string name="home_streak">Reeks</string>
+    <string name="home_streak_days">%d dagen op rij</string>
+
+    <!-- Reading Topics -->
+    <string name="topic_love">Liefde</string>
+    <string name="topic_career">Carrière</string>
+    <string name="topic_general">Algemeen</string>
+    <string name="topic_yes_no">Ja / Nee</string>
+    <string name="topic_spiritual">Spiritueel</string>
+    <string name="topic_select">Kies een lezingsthema</string>
+
+    <!-- Question -->
+    <string name="question_title">Uw Vraag</string>
+    <string name="question_hint">De sterren luisteren…</string>
+    <string name="question_skip">Overslaan</string>
+    <string name="question_continue">Doorgaan</string>
+
+    <!-- Spread -->
+    <string name="spread_select">Kies een legging</string>
+    <string name="spread_single">Enkele Kaart</string>
+    <string name="spread_single_desc">Snel inzicht</string>
+    <string name="spread_three_card">Drie Kaarten</string>
+    <string name="spread_three_card_desc">Verleden · Heden · Toekomst</string>
+    <string name="spread_celtic_cross">Keltisch Kruis</string>
+    <string name="spread_celtic_cross_desc">Diepgaande lezing (10 kaarten)</string>
+    <string name="spread_relationship">Relatielegging</string>
+    <string name="spread_relationship_desc">U · Partner · Relatie · Uitdagingen · Toekomst</string>
+    <string name="spread_cost">%d munten</string>
+    <string name="spread_cost_singular">%d munt</string>
+
+    <!-- Card Drawing -->
+    <string name="drawing_tap_to_reveal">Tik op een kaart om te onthullen</string>
+    <string name="drawing_card_revealed">Kaart onthuld!</string>
+    <string name="drawing_all_revealed">Alle kaarten onthuld</string>
+    <string name="drawing_get_reading">Lezing ontvangen</string>
+    <string name="drawing_confirm_selection">Selectie bevestigen</string>
+    <string name="drawing_scroll_hint">↓ Scroll om meer kaarten te zien ↓</string>
+    <string name="spread_pick_cards">Kies %d kaarten voor uw lezing</string>
+    <string name="drawing_focus_energy">Richt uw energie op uw intentie.</string>
+
+    <!-- Reading -->
+    <string name="reading_interpreting">Madame Stella leest uw kaarten…</string>
+    <string name="reading_follow_up">Meer vragen…</string>
+    <string name="reading_follow_up_hint">Wilt u nog iets anders vragen?</string>
+    <string name="reading_save">Lezing opslaan</string>
+    <string name="reading_share">Delen</string>
+    <string name="reading_saved">Lezing opgeslagen</string>
+    <string name="reading_summary">Samenvatting van de Lezing</string>
+    <string name="reading_upright">Rechtop</string>
+    <string name="reading_reversed">Omgekeerd</string>
+
+    <!-- History -->
+    <string name="history_title">Lezingsgeschiedenis</string>
+    <string name="history_empty">Nog geen lezingen</string>
+    <string name="history_filter_all">Alles</string>
+
+    <!-- Card Library -->
+    <string name="library_title">Kaartenbibliotheek</string>
+    <string name="library_major_arcana">Grote Arcana</string>
+    <string name="library_minor_arcana">Kleine Arcana</string>
+    <string name="library_cups">Bekers</string>
+    <string name="library_pentacles">Pentakels</string>
+    <string name="library_swords">Zwaarden</string>
+    <string name="library_wands">Staven</string>
+    <string name="library_all">Alles</string>
+    <string name="library_search">Kaart zoeken…</string>
+    <string name="library_upright_keywords">Trefwoorden (rechtop)</string>
+    <string name="library_reversed_keywords">Trefwoorden (omgekeerd)</string>
+    <string name="library_love">Liefde</string>
+    <string name="library_career">Carrière</string>
+    <string name="library_finances">Financiën</string>
+    <string name="library_feelings">Gevoelens</string>
+    <string name="library_actions">Advies</string>
+
+    <!-- Daily Card -->
+    <string name="daily_title">Kaart van de Dag</string>
+    <string name="daily_tap_reveal">Tik om uw dagelijkse kaart te onthullen</string>
+    <string name="daily_already_drawn">U heeft uw kaart vandaag al onthuld</string>
+    <string name="daily_view_details">Kaartdetails bekijken</string>
+
+    <!-- Coins -->
+    <string name="coins_balance">Uw Munten</string>
+    <string name="coins_buy">Munten Kopen</string>
+    <string name="coins_pack_5">5 munten</string>
+    <string name="coins_pack_15">15 munten</string>
+    <string name="coins_pack_50">50 munten</string>
+    <string name="coins_most_popular">Populairst</string>
+    <string name="coins_best_value">Beste Waarde</string>
+    <string name="coins_pack_300">300 munten</string>
+    <string name="coins_save">BESPAAR %d%%</string>
+    <string name="coins_not_enough">Niet genoeg munten</string>
+    <string name="coins_free_readings">%d gratis lezingen over</string>
+    <string name="coins_free_reading_used">Gratis lezing gebruikt (%d/3)</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profiel</string>
+    <string name="profile_zodiac">Sterrenbeeld</string>
+    <string name="profile_achievements">Prestaties</string>
+    <string name="profile_statistics">Statistieken</string>
+    <string name="profile_total_readings">Totaal Aantal Lezingen</string>
+    <string name="profile_favorite_card">Meest Frequente Kaart</string>
+    <string name="profile_longest_streak">Langste Reeks</string>
+    <string name="profile_language">Taal</string>
+    <string name="profile_notifications">Meldingen</string>
+    <string name="profile_notification_time">Herinneringstijd</string>
+    <string name="profile_about">Over</string>
+    <string name="profile_legal">Juridische Informatie</string>
+    <string name="profile_other_apps">Probeer onze andere apps</string>
+
+    <!-- Info -->
+    <string name="faq_title">FAQ</string>
+    <string name="about_title">Over TAROTIQ</string>
+    <string name="about_version">Versie %s</string>
+    <string name="contact_title">Contact Opnemen</string>
+    <string name="contact_send">Verzenden</string>
+    <string name="contact_subject">Onderwerp</string>
+    <string name="contact_message">Bericht</string>
+    <string name="terms_title">Gebruiksvoorwaarden</string>
+    <string name="privacy_title">Privacybeleid</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Kaart van de Dag</string>
+    <string name="notification_channel_description">Dagelijkse tarotkaart herinnering</string>
+    <string name="notification_daily_title">Uw dagelijkse kaart wacht op u</string>
+    <string name="notification_daily_text">Ontdek wat de sterren vandaag voor u in petto hebben.</string>
+
+    <!-- Zodiac Signs -->
+    <string name="zodiac_aries">Ram</string>
+    <string name="zodiac_taurus">Stier</string>
+    <string name="zodiac_gemini">Tweelingen</string>
+    <string name="zodiac_cancer">Kreeft</string>
+    <string name="zodiac_leo">Leeuw</string>
+    <string name="zodiac_virgo">Maagd</string>
+    <string name="zodiac_libra">Weegschaal</string>
+    <string name="zodiac_scorpio">Schorpioen</string>
+    <string name="zodiac_sagittarius">Boogschutter</string>
+    <string name="zodiac_capricorn">Steenbok</string>
+    <string name="zodiac_aquarius">Waterman</string>
+    <string name="zodiac_pisces">Vissen</string>
+
+    <!-- HomeScreen Portal -->
+    <string name="home_celestial_active">HEMELS PORTAAL ACTIEF</string>
+    <string name="home_headline_1">De sterren fluisteren</string>
+    <string name="home_headline_2">uw lot vandaag.</string>
+    <string name="home_welcome_body">Stap door de sluier tussen de werelden. Elke getrokken kaart is een fluistering van de kosmos, een draad van het lot geweven alleen voor u.</string>
+    <string name="home_daily_drawing">DAGELIJKSE TREKKING</string>
+    <string name="home_consult_oracle">Raadpleeg het Orakel</string>
+    <string name="home_daily_desc">Ontvang uw dagelijks bericht van het arcane dek. Eén kaart, getrokken bij dageraad, om uw pad te leiden.</string>
+    <string name="home_awaiting">WACHTEND OP\nAANROEPING</string>
+    <string name="home_reflect">REFLECTEREN</string>
+    <string name="home_explore">VERKENNEN</string>
+    <string name="home_most_insightful">MEEST INZICHTELIJK</string>
+    <string name="home_connection">Verbinding</string>
+    <string name="home_connection_desc">Hart &amp; Ziel</string>
+    <string name="home_lunar_phase">MAANFASE</string>
+    <string name="home_visibility">ZICHTBAARHEID</string>
+
+    <!-- ReadingHistoryScreen -->
+    <string name="history_sacred_archive">HEILIG ARCHIEF</string>
+    <string name="history_grimoire_title">Het Grimoire</string>
+    <string name="history_subtitle">Uw heilige lezingen, bewaard voor de eeuwigheid</string>
+    <string name="history_search_hint">Zoeken in het grimoire…</string>
+    <string name="history_revisit">INTERPRETATIE HERZIEN</string>
+    <string name="history_deepen_search">ZOEKEN VERDIEPEN</string>
+
+    <!-- ReadingInterpretation errors -->
+    <string name="error_insufficient_coins_title">Onvoldoende munten</string>
+    <string name="error_insufficient_coins_desc">U heeft niet genoeg munten voor deze lezing. Koop munten of bekijk een advertentie om een gratis munt te verdienen.</string>
+    <string name="error_no_internet_title">Geen verbinding</string>
+    <string name="error_no_internet_desc">Controleer uw internetverbinding en probeer het opnieuw.</string>
+    <string name="error_timeout_title">Time-out</string>
+    <string name="error_timeout_desc">De server reageert niet. Probeer het opnieuw.</string>
+    <string name="error_auth_title">Authenticatiefout</string>
+    <string name="error_auth_desc">Uw sessie is verlopen. Log uit en log opnieuw in.</string>
+    <string name="error_retry">OPNIEUW PROBEREN</string>
+
+    <!-- ReadingInterpretation -->
+    <string name="reading_oracle_insight">Het Inzicht van het Orakel</string>
+    <string name="reading_generated_by_ai">GEGENEREERD DOOR AI</string>
+
+    <!-- ReadingDetail -->
+    <string name="reading_cosmic_synthesis">KOSMISCHE SYNTHESE</string>
+
+    <!-- Login -->
+    <string name="auth_subtitle">UW MYSTIEKE GIDS</string>
+
+    <!-- About -->
+    <string name="about_description">Uw mystieke AI-tarotlezer.\nOntdek inzichten door de oude kunst van tarot, aangedreven door moderne AI.\n\nTAROTIQ combineert eeuwen van tarotwijsheid met geavanceerde technologie voor gepersonaliseerde, interactieve lezingen.</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Annuleren</string>
+    <string name="close">Sluiten</string>
+    <string name="back">Terug</string>
+    <string name="save">Opslaan</string>
+    <string name="delete">Verwijderen</string>
+    <string name="share">Delen</string>
+    <string name="loading">Laden…</string>
+    <string name="error_generic">Er is iets misgegaan. Probeer het opnieuw.</string>
+    <string name="error_network">Controleer uw internetverbinding.</string>
+    <string name="offline_banner">U bent offline</string>
+    <string name="delete_confirm_title">Lezing verwijderen?</string>
+    <string name="delete_confirm_message">Deze actie kan niet ongedaan worden gemaakt.</string>
+    <string name="retry">Opnieuw proberen</string>
+    <string name="no_cards_found">Geen kaarten gevonden</string>
+
+    <!-- Rewarded Ads -->
+    <string name="rewarded_ad_title">Bekijk een advertentie, verdien een munt</string>
+    <string name="rewarded_ad_subtitle">%d resterend deze week</string>
+    <string name="rewarded_ad_success">+1 munt verdiend!</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">Welkom bij TAROTIQ</string>
+    <string name="onboarding_welcome_desc">Ontdek de geheimen van tarot met uw persoonlijke AI-waarzegster</string>
+    <string name="onboarding_zodiac">Uw Sterrenbeeld</string>
+    <string name="onboarding_zodiac_desc">Kies uw sterrenbeeld voor gepersonaliseerde lezingen</string>
+    <string name="onboarding_daily">Kaart van de Dag</string>
+    <string name="onboarding_daily_desc">Elke dag onthullen we een kaart met een boodschap voor u</string>
+    <string name="onboarding_ready">U Bent Klaar</string>
+    <string name="onboarding_ready_desc">3 lezingen zijn gratis. Begin uw reis!</string>
+    <string name="onboarding_start">Starten</string>
+    <string name="onboarding_next">Volgende</string>
+    <string name="onboarding_skip">Overslaan</string>
+
+    <!-- Moon Phases -->
+    <string name="moon_new">Nieuwe Maan</string>
+    <string name="moon_waxing_crescent">Wassende Sikkel</string>
+    <string name="moon_first_quarter">Eerste Kwartier</string>
+    <string name="moon_waxing_gibbous">Wassende Maan</string>
+    <string name="moon_full">Volle Maan</string>
+    <string name="moon_waning_gibbous">Afnemende Maan</string>
+    <string name="moon_last_quarter">Laatste Kwartier</string>
+    <string name="moon_waning_crescent">Afnemende Sikkel</string>
+
+    <!-- Achievements -->
+    <string name="achievement_first_reading">Eerste Lezing</string>
+    <string name="achievement_ten_readings">10 Lezingen</string>
+    <string name="achievement_all_spreads">Alle Leggingen</string>
+    <string name="achievement_week_streak">Weekreeks</string>
+    <string name="achievement_month_streak">Maandreeks</string>
+    <string name="achievement_major_arcana">Alle Grote Arcana</string>
+
+    <!-- FAQ -->
+    <string name="faq_q1">Hoe werkt een lezing?</string>
+    <string name="faq_a1">Kies een thema, stel optioneel een vraag, selecteer een kaartlegging en onthul uw kaarten door erop te tikken. Onze AI-waarzegster Madame Stella interpreteert vervolgens uw kaarten in de context van uw vraag.</string>
+    <string name="faq_q2">Zijn lezingen gratis?</string>
+    <string name="faq_a2">U krijgt 3 lezingen volledig gratis. Daarna kunt u muntpakketten kopen voor extra lezingen. De dagelijkse kaart is altijd gratis.</string>
+    <string name="faq_q3">Hoe werken munten?</string>
+    <string name="faq_a3">Munten worden gebruikt om lezingen te betalen. Verschillende leggingen kosten verschillende bedragen: 1 kaart = 1 munt, 3 kaarten = 2 munten, Keltisch Kruis = 3 munten.</string>
+    <string name="faq_q4">Is tarot betrouwbaar?</string>
+    <string name="faq_a4">Tarot is een hulpmiddel voor zelfreflectie en persoonlijke groei. Lezingen worden gegenereerd door AI en dienen als inspiratie, niet als definitieve voorspellingen van de toekomst.</string>
+    <string name="faq_q5">Kan ik vervolgvragen stellen?</string>
+    <string name="faq_a5">Ja! Na elke lezing kunt u Madame Stella alles vragen over uw kaarten — zonder extra kosten.</string>
+
+    <!-- Other Apps -->
+    <string name="app_kvitta_desc">Slim uitgaven delen en schulden vereffenen</string>
+    <string name="app_bettermingle_desc">Verbeter je datingprofielen met AI</string>
+    <string name="app_bettershelf_desc">Organiseer je bibliotheek en ontdek nieuwe boeken</string>
+    <string name="app_dreamwitness_desc">Leg je dromen vast en interpreteer ze</string>
+</resources>

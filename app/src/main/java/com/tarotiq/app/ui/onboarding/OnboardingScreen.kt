@@ -3,37 +3,36 @@ package com.tarotiq.app.ui.onboarding
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.*
 import androidx.compose.animation.fadeIn
-import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInVertically
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowForward
-import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.graphicsLayer
-import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.tarotiq.app.R
-import com.tarotiq.app.ui.components.AnimatedBackground
-import com.tarotiq.app.ui.components.GlassCard
+import com.tarotiq.app.ui.components.*
 import com.tarotiq.app.ui.theme.*
+import com.tarotiq.app.utils.LocaleUtils
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.ui.platform.LocalContext
 import kotlinx.coroutines.launch
 
 private data class ZodiacItem(
@@ -62,25 +61,31 @@ private val zodiacSigns = listOf(
 fun OnboardingScreen(
     onComplete: (zodiacSign: String?) -> Unit
 ) {
-    val pagerState = rememberPagerState(pageCount = { 4 })
+    val pagerState = rememberPagerState(pageCount = { 5 })
     val scope = rememberCoroutineScope()
     var selectedZodiac by remember { mutableStateOf<String?>(null) }
 
-    // Breathing animation for icons
+    // Breathing animation for symbols
     val infiniteTransition = rememberInfiniteTransition(label = "onboarding_breathe")
     val iconScale by infiniteTransition.animateFloat(
-        initialValue = 0.9f,
-        targetValue = 1.1f,
+        initialValue = 0.92f,
+        targetValue = 1.08f,
         animationSpec = infiniteRepeatable(
-            animation = tween(2500, easing = EaseInOutSine),
+            animation = tween(3000, easing = EaseInOutSine),
             repeatMode = RepeatMode.Reverse
         ),
         label = "icon_scale"
     )
 
     Box(modifier = Modifier.fillMaxSize()) {
-        AnimatedBackground(modifier = Modifier.fillMaxSize())
+        MysticBackground(modifier = Modifier.fillMaxSize())
 
+        var screenVisible by remember { mutableStateOf(false) }
+        LaunchedEffect(Unit) { screenVisible = true }
+        AnimatedVisibility(
+            visible = screenVisible,
+            enter = fadeIn(tween(600)) + slideInVertically(tween(600)) { it / 16 }
+        ) {
         Column(
             modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally
@@ -92,11 +97,14 @@ fun OnboardingScreen(
                     .padding(horizontal = 16.dp, vertical = 8.dp),
                 horizontalArrangement = Arrangement.End
             ) {
-                if (pagerState.currentPage < 3) {
+                if (pagerState.currentPage < 4) {
                     TextButton(onClick = { onComplete(selectedZodiac) }) {
                         Text(
-                            stringResource(R.string.onboarding_skip),
-                            color = TextSecondary
+                            stringResource(R.string.onboarding_skip).uppercase(),
+                            style = MaterialTheme.typography.labelMedium.copy(
+                                fontFamily = SpaceGroteskFamily
+                            ),
+                            color = MoonSilver
                         )
                     }
                 }
@@ -110,39 +118,45 @@ fun OnboardingScreen(
                     .fillMaxWidth()
             ) { page ->
                 when (page) {
-                    0 -> WelcomePage(iconScale)
-                    1 -> ZodiacPage(
+                    0 -> LanguagePage(iconScale)
+                    1 -> WelcomePage(iconScale)
+                    2 -> ZodiacPage(
                         selectedZodiac = selectedZodiac,
                         onZodiacSelected = { selectedZodiac = it }
                     )
-                    2 -> DailyCardPage(iconScale)
-                    3 -> ReadyPage(iconScale)
+                    3 -> DailyCardPage(iconScale)
+                    4 -> ReadyPage(iconScale)
                 }
             }
 
-            // Page indicators
+            // Diamond page indicators
             Row(
                 modifier = Modifier.padding(bottom = 16.dp),
                 horizontalArrangement = Arrangement.Center
             ) {
-                repeat(4) { index ->
+                repeat(5) { index ->
                     val isSelected = pagerState.currentPage == index
                     Box(
                         modifier = Modifier
-                            .padding(horizontal = 4.dp)
-                            .size(if (isSelected) 10.dp else 8.dp)
-                            .clip(CircleShape)
+                            .padding(horizontal = 5.dp)
+                            .size(if (isSelected) 10.dp else 7.dp)
+                            .rotate(45f)
+                            .clip(RoundedCornerShape(1.dp))
                             .background(
-                                if (isSelected) GoldSecondary else TextSecondary.copy(alpha = 0.4f)
+                                if (isSelected) CelestialGold else MoonSilver.copy(alpha = 0.3f)
                             )
                     )
                 }
             }
 
             // Bottom button
-            Button(
+            ArtNouveauButton(
+                text = if (pagerState.currentPage < 4)
+                    stringResource(R.string.onboarding_next)
+                else
+                    stringResource(R.string.onboarding_start),
                 onClick = {
-                    if (pagerState.currentPage < 3) {
+                    if (pagerState.currentPage < 4) {
                         scope.launch { pagerState.animateScrollToPage(pagerState.currentPage + 1) }
                     } else {
                         onComplete(selectedZodiac)
@@ -151,21 +165,82 @@ fun OnboardingScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 32.dp)
-                    .padding(bottom = 32.dp)
-                    .height(56.dp),
-                shape = RoundedCornerShape(16.dp),
-                colors = ButtonDefaults.buttonColors(containerColor = MysticPrimary)
-            ) {
-                Text(
-                    text = if (pagerState.currentPage < 3)
-                        stringResource(R.string.onboarding_next)
-                    else
-                        stringResource(R.string.onboarding_start),
-                    style = MaterialTheme.typography.titleMedium
-                )
-                if (pagerState.currentPage < 3) {
-                    Spacer(modifier = Modifier.width(8.dp))
-                    Icon(Icons.AutoMirrored.Filled.ArrowForward, null, modifier = Modifier.size(20.dp))
+                    .padding(bottom = 32.dp),
+                variant = if (pagerState.currentPage < 4) ButtonVariant.SECONDARY else ButtonVariant.PRIMARY
+            )
+        }
+        }
+    }
+}
+
+@Composable
+private fun LanguagePage(iconScale: Float) {
+    val context = LocalContext.current
+    val languages = remember { LocaleUtils.getAvailableLanguages() }
+    var selectedCode by remember { mutableStateOf(LocaleUtils.getCurrentLanguage(context)) }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(horizontal = 24.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Spacer(modifier = Modifier.height(24.dp))
+
+        Image(
+            painter = painterResource(R.drawable.fortune),
+            contentDescription = null,
+            modifier = Modifier
+                .size(80.dp)
+                .graphicsLayer { scaleX = iconScale; scaleY = iconScale },
+            contentScale = ContentScale.Fit
+        )
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+        Text(
+            text = stringResource(R.string.onboarding_language),
+            style = MaterialTheme.typography.headlineMedium,
+            color = CelestialGold,
+            textAlign = TextAlign.Center
+        )
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+        LazyVerticalGrid(
+            columns = GridCells.Fixed(2),
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(10.dp),
+            verticalArrangement = Arrangement.spacedBy(10.dp),
+            contentPadding = PaddingValues(bottom = 16.dp)
+        ) {
+            items(languages) { (code, name) ->
+                val isSelected = selectedCode == code
+                ArtNouveauFrame(
+                    onClick = {
+                        selectedCode = code
+                        LocaleUtils.saveAndApplyLanguage(context, code)
+                    },
+                    modifier = Modifier.fillMaxWidth(),
+                    frameStyle = if (isSelected) FrameStyle.ORNATE else FrameStyle.SIMPLE,
+                    backgroundColor = if (isSelected) CosmicSurface else GlassBackground
+                ) {
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 14.dp, horizontal = 12.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = name,
+                            style = MaterialTheme.typography.bodyLarge.copy(
+                                fontFamily = SpaceGroteskFamily,
+                                letterSpacing = 0.5.sp
+                            ),
+                            color = if (isSelected) CelestialGold else MoonSilver,
+                            textAlign = TextAlign.Center
+                        )
+                    }
                 }
             }
         }
@@ -181,27 +256,28 @@ private fun WelcomePage(iconScale: Float) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(
-            text = "\u2728",
-            fontSize = 80.sp,
+        SymbolIcon(
+            symbol = Symbol.STAR,
+            size = 100.dp,
+            color = CelestialGold,
             modifier = Modifier.graphicsLayer { scaleX = iconScale; scaleY = iconScale }
         )
 
-        Spacer(modifier = Modifier.height(32.dp))
+        Spacer(modifier = Modifier.height(36.dp))
 
         Text(
             text = stringResource(R.string.onboarding_welcome),
-            style = MaterialTheme.typography.headlineMedium,
-            color = GoldSecondary,
+            style = MaterialTheme.typography.headlineLarge,
+            color = CelestialGold,
             textAlign = TextAlign.Center
         )
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(18.dp))
 
         Text(
             text = stringResource(R.string.onboarding_welcome_desc),
             style = MaterialTheme.typography.bodyLarge,
-            color = TextSecondary,
+            color = MoonSilver,
             textAlign = TextAlign.Center
         )
     }
@@ -222,8 +298,8 @@ private fun ZodiacPage(
 
         Text(
             text = stringResource(R.string.onboarding_zodiac),
-            style = MaterialTheme.typography.headlineSmall,
-            color = GoldSecondary,
+            style = MaterialTheme.typography.headlineMedium,
+            color = CelestialGold,
             textAlign = TextAlign.Center
         )
 
@@ -231,8 +307,8 @@ private fun ZodiacPage(
 
         Text(
             text = stringResource(R.string.onboarding_zodiac_desc),
-            style = MaterialTheme.typography.bodyMedium,
-            color = TextSecondary,
+            style = MaterialTheme.typography.bodyLarge,
+            color = MoonSilver,
             textAlign = TextAlign.Center
         )
 
@@ -247,11 +323,11 @@ private fun ZodiacPage(
         ) {
             items(zodiacSigns) { zodiac ->
                 val isSelected = selectedZodiac == zodiac.key
-                GlassCard(
+                ArtNouveauFrame(
                     onClick = { onZodiacSelected(zodiac.key) },
                     modifier = Modifier.aspectRatio(1f),
-                    borderColor = if (isSelected) GoldSecondary else GlassBorder,
-                    borderWidth = if (isSelected) 2.dp else 1.dp
+                    frameStyle = if (isSelected) FrameStyle.ORNATE else FrameStyle.SIMPLE,
+                    backgroundColor = if (isSelected) CosmicSurface else GlassBackground
                 ) {
                     Column(
                         modifier = Modifier
@@ -260,15 +336,22 @@ private fun ZodiacPage(
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.Center
                     ) {
+                        // Zodiac Unicode symbols (text, not emoji)
                         Text(
                             text = zodiac.symbol,
-                            fontSize = 28.sp
+                            fontFamily = NewsreaderFamily,
+                            fontSize = 32.sp,
+                            fontWeight = FontWeight.Normal,
+                            color = if (isSelected) CelestialGold else MoonSilver
                         )
                         Spacer(modifier = Modifier.height(4.dp))
                         Text(
-                            text = stringResource(zodiac.nameRes),
-                            style = MaterialTheme.typography.labelSmall,
-                            color = if (isSelected) GoldSecondary else TextSecondary,
+                            text = stringResource(zodiac.nameRes).uppercase(),
+                            style = MaterialTheme.typography.labelSmall.copy(
+                                fontFamily = SpaceGroteskFamily,
+                                letterSpacing = 1.sp
+                            ),
+                            color = if (isSelected) CelestialGold else MoonSilver,
                             textAlign = TextAlign.Center
                         )
                     }
@@ -287,27 +370,28 @@ private fun DailyCardPage(iconScale: Float) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(
-            text = "\uD83C\uDCCF",
-            fontSize = 80.sp,
+        SymbolIcon(
+            symbol = Symbol.TAROT_CARD,
+            size = 100.dp,
+            color = CelestialGold,
             modifier = Modifier.graphicsLayer { scaleX = iconScale; scaleY = iconScale }
         )
 
-        Spacer(modifier = Modifier.height(32.dp))
+        Spacer(modifier = Modifier.height(36.dp))
 
         Text(
             text = stringResource(R.string.onboarding_daily),
-            style = MaterialTheme.typography.headlineMedium,
-            color = GoldSecondary,
+            style = MaterialTheme.typography.headlineLarge,
+            color = CelestialGold,
             textAlign = TextAlign.Center
         )
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(18.dp))
 
         Text(
             text = stringResource(R.string.onboarding_daily_desc),
             style = MaterialTheme.typography.bodyLarge,
-            color = TextSecondary,
+            color = MoonSilver,
             textAlign = TextAlign.Center
         )
     }
@@ -322,27 +406,30 @@ private fun ReadyPage(iconScale: Float) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(
-            text = "\uD83D\uDD2E",
-            fontSize = 80.sp,
-            modifier = Modifier.graphicsLayer { scaleX = iconScale; scaleY = iconScale }
+        Image(
+            painter = painterResource(R.drawable.fortune),
+            contentDescription = null,
+            modifier = Modifier
+                .size(100.dp)
+                .graphicsLayer { scaleX = iconScale; scaleY = iconScale },
+            contentScale = ContentScale.Fit
         )
 
-        Spacer(modifier = Modifier.height(32.dp))
+        Spacer(modifier = Modifier.height(36.dp))
 
         Text(
             text = stringResource(R.string.onboarding_ready),
-            style = MaterialTheme.typography.headlineMedium,
-            color = GoldSecondary,
+            style = MaterialTheme.typography.headlineLarge,
+            color = CelestialGold,
             textAlign = TextAlign.Center
         )
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(18.dp))
 
         Text(
             text = stringResource(R.string.onboarding_ready_desc),
             style = MaterialTheme.typography.bodyLarge,
-            color = TextSecondary,
+            color = MoonSilver,
             textAlign = TextAlign.Center
         )
     }

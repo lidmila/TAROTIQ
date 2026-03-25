@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Major Arcana -->
+    <string name="card_the_fool">De Dwaas</string>
+    <string name="card_the_magician">De Magiër</string>
+    <string name="card_the_high_priestess">De Hogepriesteres</string>
+    <string name="card_the_empress">De Keizerin</string>
+    <string name="card_the_emperor">De Keizer</string>
+    <string name="card_the_hierophant">De Hogepriester</string>
+    <string name="card_the_lovers">De Geliefden</string>
+    <string name="card_the_chariot">De Zegewagen</string>
+    <string name="card_strength">Kracht</string>
+    <string name="card_the_hermit">De Kluizenaar</string>
+    <string name="card_wheel_of_fortune">Rad van Fortuin</string>
+    <string name="card_justice">Gerechtigheid</string>
+    <string name="card_the_hanged_man">De Gehangene</string>
+    <string name="card_death">De Dood</string>
+    <string name="card_temperance">Gematigdheid</string>
+    <string name="card_the_devil">De Duivel</string>
+    <string name="card_the_tower">De Toren</string>
+    <string name="card_the_star">De Ster</string>
+    <string name="card_the_moon">De Maan</string>
+    <string name="card_the_sun">De Zon</string>
+    <string name="card_judgement">Het Oordeel</string>
+    <string name="card_the_world">De Wereld</string>
+
+    <!-- Cups -->
+    <string name="card_ace_of_cups">Aas van Bekers</string>
+    <string name="card_two_of_cups">Twee van Bekers</string>
+    <string name="card_three_of_cups">Drie van Bekers</string>
+    <string name="card_four_of_cups">Vier van Bekers</string>
+    <string name="card_five_of_cups">Vijf van Bekers</string>
+    <string name="card_six_of_cups">Zes van Bekers</string>
+    <string name="card_seven_of_cups">Zeven van Bekers</string>
+    <string name="card_eight_of_cups">Acht van Bekers</string>
+    <string name="card_nine_of_cups">Negen van Bekers</string>
+    <string name="card_ten_of_cups">Tien van Bekers</string>
+    <string name="card_page_of_cups">Page van Bekers</string>
+    <string name="card_knight_of_cups">Ridder van Bekers</string>
+    <string name="card_queen_of_cups">Koningin van Bekers</string>
+    <string name="card_king_of_cups">Koning van Bekers</string>
+
+    <!-- Pentacles -->
+    <string name="card_ace_of_pentacles">Aas van Munten</string>
+    <string name="card_two_of_pentacles">Twee van Munten</string>
+    <string name="card_three_of_pentacles">Drie van Munten</string>
+    <string name="card_four_of_pentacles">Vier van Munten</string>
+    <string name="card_five_of_pentacles">Vijf van Munten</string>
+    <string name="card_six_of_pentacles">Zes van Munten</string>
+    <string name="card_seven_of_pentacles">Zeven van Munten</string>
+    <string name="card_eight_of_pentacles">Acht van Munten</string>
+    <string name="card_nine_of_pentacles">Negen van Munten</string>
+    <string name="card_ten_of_pentacles">Tien van Munten</string>
+    <string name="card_page_of_pentacles">Page van Munten</string>
+    <string name="card_knight_of_pentacles">Ridder van Munten</string>
+    <string name="card_queen_of_pentacles">Koningin van Munten</string>
+    <string name="card_king_of_pentacles">Koning van Munten</string>
+
+    <!-- Swords -->
+    <string name="card_ace_of_swords">Aas van Zwaarden</string>
+    <string name="card_two_of_swords">Twee van Zwaarden</string>
+    <string name="card_three_of_swords">Drie van Zwaarden</string>
+    <string name="card_four_of_swords">Vier van Zwaarden</string>
+    <string name="card_five_of_swords">Vijf van Zwaarden</string>
+    <string name="card_six_of_swords">Zes van Zwaarden</string>
+    <string name="card_seven_of_swords">Zeven van Zwaarden</string>
+    <string name="card_eight_of_swords">Acht van Zwaarden</string>
+    <string name="card_nine_of_swords">Negen van Zwaarden</string>
+    <string name="card_ten_of_swords">Tien van Zwaarden</string>
+    <string name="card_page_of_swords">Page van Zwaarden</string>
+    <string name="card_knight_of_swords">Ridder van Zwaarden</string>
+    <string name="card_queen_of_swords">Koningin van Zwaarden</string>
+    <string name="card_king_of_swords">Koning van Zwaarden</string>
+
+    <!-- Wands -->
+    <string name="card_ace_of_wands">Aas van Staven</string>
+    <string name="card_two_of_wands">Twee van Staven</string>
+    <string name="card_three_of_wands">Drie van Staven</string>
+    <string name="card_four_of_wands">Vier van Staven</string>
+    <string name="card_five_of_wands">Vijf van Staven</string>
+    <string name="card_six_of_wands">Zes van Staven</string>
+    <string name="card_seven_of_wands">Zeven van Staven</string>
+    <string name="card_eight_of_wands">Acht van Staven</string>
+    <string name="card_nine_of_wands">Negen van Staven</string>
+    <string name="card_ten_of_wands">Tien van Staven</string>
+    <string name="card_page_of_wands">Page van Staven</string>
+    <string name="card_knight_of_wands">Ridder van Staven</string>
+    <string name="card_queen_of_wands">Koningin van Staven</string>
+    <string name="card_king_of_wands">Koning van Staven</string>
+</resources>

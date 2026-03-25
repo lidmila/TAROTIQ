@@ -35,7 +35,9 @@ class GamificationRepository(
             firestore.collection("users").document(userId)
                 .collection("dailyCards").document(dailyCard.date)
                 .set(dailyCard).await()
-        } catch (_: Exception) { }
+        } catch (e: Exception) {
+            android.util.Log.w("Sync", "Firestore sync failed", e)
+        }
     }
 
     fun getAllDailyCards(): Flow<List<DailyCard>> {

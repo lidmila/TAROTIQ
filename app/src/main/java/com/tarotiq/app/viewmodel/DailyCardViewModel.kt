@@ -50,6 +50,15 @@ class DailyCardViewModel(application: Application) : AndroidViewModel(applicatio
         val userId = auth.currentUser?.uid ?: return
 
         viewModelScope.launch {
+            // Double-check DB in case init hasn't finished yet
+            val existing = gamificationRepo.getTodaysDailyCard()
+            if (existing != null) {
+                _dailyCard.value = existing
+                _hasDrawnToday.value = true
+                _isLoading.value = false
+                return@launch
+            }
+
             _isLoading.value = true
             val today = LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE)
             val (cardId, isReversed) = CardUtils.drawSingleCard()

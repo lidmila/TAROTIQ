@@ -1,0 +1,60 @@
+TAROTIQ — Barevna paleta aplikace
+===================================
+Styl: Warm Esoteric Ritual
+
+POZADI (Sacred Dark — teple hnede tony)
+  VoidBlack         #0C0A08   — nejtmavsi pozadi, teply cerny
+  CosmicDeep        #15110D   — hluboky teply hnedy
+  CosmicMid         #1E1814   — stredni teply hnedy
+  CosmicSurface     #2A2118   — zvyseny povrch, nejsvetlejsi hnedy
+
+PRIMARNI (Antique Gold)
+  AstralPurple      #C4963A   — hlavni zlata (pouziva se pro primary akce)
+  AstralPurpleLight #DDB668   — svetla zlata
+  AstralPurpleDim   #8B6914   — tmava zlata
+  AstralGlow        #E8C84A   — jasna zlata zare
+
+AKCENT (Celestial Gold)
+  CelestialGold     #D4AF37   — klasicka anticka zlata
+  CelestialGoldLight #EDD07A  — svetla zlata
+  CelestialGoldDim  #A08520   — tlumena zlata
+  GoldGlow          #40D4AF37 — zlata s 25% pruhlednosti (glow efekty)
+
+SEKUNDARNI (Bronze / Copper)
+  MysticTeal        #CD7F32   — bronz/med
+  MysticTealDim     #8B5A2B   — tmava med
+
+TEXT (Parchment — teple kremove tony)
+  StarWhite         #F5ECD7   — hlavni text, teply pergamen
+  MoonSilver        #BFAE8E   — sekundarni text, tlumena kremova
+  DimSilver         #8A7A60   — neaktivni/placeholder text
+
+SKLO / FROST (zlate tintovani)
+  GlassWhite        #12FFFFFF — jemny bily overlay (7% pruhlednost)
+  GlassBorder       #25D4AF37 — zlaty border karty (15% pruhlednost)
+  GlassBorderFocus  #50D4AF37 — aktivni zlaty border (31% pruhlednost)
+  GlassBackground   #0CFFFFFF — pozadi karty (5% pruhlednost)
+
+SEMANTICKE BARVY
+  ErrorCrimson      #FF4D6A   — chyba (cervena)
+  SuccessEmerald    #34D399   — uspech (zelena)
+  WarningAmber      #FBBF24   — varovani (zluta)
+  InfoSky           #60A5FA   — informace (modra)
+
+KARTY
+  CardReversed      #FF6B8A   — obracena karta (ruzova)
+  CardUpright       #34D399   — vzprimena karta (zelena)
+
+EFEKTY / GLOW
+  PurpleGlow        #308B5CF6 — fialova zare (19% pruhlednost)
+  TealGlow          #302DD4BF — bronzova zare (19% pruhlednost)
+  GoldShimmer       #30D4AF37 — zlaty trpyt (19% pruhlednost)
+  ScrimDark         #E6050510 — tmave prekryti (90% pruhlednost)
+  ScrimMedium       #99050510 — stredni prekryti (60% pruhlednost)
+
+TEMA TOPICS (vyber tematu)
+  Love              #E8A0A0   — tepla ruzova
+  Career            #D4A853   — teply amber
+  General           #D4AF37   — zlata (CelestialGold)
+  Yes/No            #CD7F32   — med (MysticTeal)
+  Spiritual         #EDD07A   — svetla zlata (CelestialGoldLight)

@@ -4,17 +4,32 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import androidx.compose.animation.*
+import androidx.compose.animation.core.EaseInCubic
+import androidx.compose.animation.core.EaseOutCubic
 import androidx.compose.animation.core.tween
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutVertically
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.outlined.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -41,14 +56,22 @@ import com.tarotiq.app.ui.onboarding.OnboardingScreen
 import com.tarotiq.app.ui.profile.ProfileScreen
 import com.tarotiq.app.ui.reading.*
 import com.tarotiq.app.ui.shop.CoinShopScreen
-import com.tarotiq.app.ui.theme.MidnightBg2
+import com.tarotiq.app.ui.theme.AstralPurple
+import com.tarotiq.app.ui.theme.CelestialGold
+import com.tarotiq.app.ui.theme.CosmicDeep
+import com.tarotiq.app.ui.theme.SpaceGroteskFamily
+import com.tarotiq.app.ui.theme.MoonSilver
+import com.tarotiq.app.ui.theme.VoidBlack
 import com.tarotiq.app.viewmodel.AuthViewModel
 import com.tarotiq.app.viewmodel.ReadingViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+private data class NavItem(val route: String, val icon: ImageVector, val labelRes: Int)
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
+@Suppress("UNUSED_PARAMETER")
 fun AppNavigation(
     authViewModel: AuthViewModel = viewModel(),
     initialRoute: String? = null
@@ -95,34 +118,83 @@ fun AppNavigation(
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
 
-    val bottomNavRoutes = listOf(Screen.Home.route, Screen.CardLibrary.route, Screen.TopicSelection.route, Screen.ReadingHistory.route, Screen.Profile.route)
+    // Stitch design: 4 bottom tabs — Portal, Oracle, Grimoire, Library
+    val bottomNavRoutes = listOf(
+        Screen.Home.route, Screen.TopicSelection.route, Screen.ReadingHistory.route,
+        Screen.CardLibrary.route, Screen.Profile.route
+    )
     val showBottomNav = isAuthenticated && currentRoute in bottomNavRoutes
 
     Box(modifier = Modifier.fillMaxSize()) {
         Scaffold(
             bottomBar = {
                 if (showBottomNav) {
-                    NavigationBar(containerColor = MidnightBg2.copy(alpha = 0.95f), tonalElevation = 0.dp) {
-                        listOf(
-                            Triple(Screen.Home.route, Icons.Default.Home, R.string.nav_home),
-                            Triple(Screen.CardLibrary.route, Icons.Default.MenuBook, R.string.nav_library),
-                            Triple(Screen.TopicSelection.route, Icons.Default.AutoAwesome, R.string.nav_new_reading),
-                            Triple(Screen.ReadingHistory.route, Icons.Default.History, R.string.nav_history),
-                            Triple(Screen.Profile.route, Icons.Default.Person, R.string.nav_profile)
-                        ).forEach { (route, icon, labelRes) ->
-                            NavigationBarItem(
-                                icon = { Icon(icon, null) },
-                                label = { Text(stringResource(labelRes)) },
-                                selected = currentRoute == route,
-                                onClick = {
-                                    if (route == Screen.TopicSelection.route) { trackAction(); readingViewModel.resetReading() }
-                                    navController.navigate(route) {
-                                        popUpTo(Screen.Home.route) { saveState = true }
-                                        launchSingleTop = true
-                                        restoreState = true
-                                    }
-                                }
+                    // Stitch AI bottom nav — 4 tabs, glass style
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .shadow(
+                                elevation = 24.dp,
+                                ambientColor = AstralPurple.copy(alpha = 0.15f),
+                                spotColor = AstralPurple.copy(alpha = 0.08f)
                             )
+                            .background(VoidBlack.copy(alpha = 0.90f))
+                            .navigationBarsPadding()
+                    ) {
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(horizontal = 16.dp, vertical = 12.dp),
+                            horizontalArrangement = Arrangement.SpaceEvenly,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            val navItems = listOf(
+                                NavItem(Screen.Home.route, Icons.Outlined.AutoAwesome, R.string.nav_portal),
+                                NavItem(Screen.TopicSelection.route, Icons.Outlined.AutoFixHigh, R.string.nav_oracle),
+                                NavItem(Screen.ReadingHistory.route, Icons.Outlined.MenuBook, R.string.nav_grimoire),
+                                NavItem(Screen.CardLibrary.route, Icons.Outlined.WbSunny, R.string.nav_library)
+                            )
+                            navItems.forEach { item ->
+                                val isSelected = currentRoute == item.route
+                                Column(
+                                    horizontalAlignment = Alignment.CenterHorizontally,
+                                    modifier = Modifier
+                                        .clickable(
+                                            interactionSource = remember { MutableInteractionSource() },
+                                            indication = null
+                                        ) {
+                                            if (item.route == Screen.TopicSelection.route) {
+                                                trackAction(); readingViewModel.resetReading()
+                                            }
+                                            navController.navigate(item.route) {
+                                                popUpTo(Screen.Home.route) { saveState = true }
+                                                launchSingleTop = true
+                                                restoreState = true
+                                            }
+                                        }
+                                        .graphicsLayer {
+                                            scaleX = if (isSelected) 1.1f else 1f
+                                            scaleY = if (isSelected) 1.1f else 1f
+                                        }
+                                ) {
+                                    val label = stringResource(item.labelRes).uppercase()
+                                    Icon(
+                                        imageVector = item.icon,
+                                        contentDescription = label,
+                                        tint = if (isSelected) AstralPurple else AstralPurple.copy(alpha = 0.4f),
+                                        modifier = Modifier.size(24.dp)
+                                    )
+                                    Spacer(Modifier.height(4.dp))
+                                    Text(
+                                        text = label,
+                                        fontFamily = SpaceGroteskFamily,
+                                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                                        fontSize = 10.sp,
+                                        letterSpacing = 1.5.sp,
+                                        color = if (isSelected) AstralPurple else AstralPurple.copy(alpha = 0.4f)
+                                    )
+                                }
+                            }
                         }
                     }
                 }
@@ -159,12 +231,15 @@ fun AppNavigation(
                         onNavigateToNewReading = { navController.navigate(Screen.TopicSelection.route) },
                         onNavigateToCoinShop = { navController.navigate(Screen.CoinShop.route) },
                         onNavigateToQuickReading = { spreadType -> readingViewModel.resetReading(); readingViewModel.setSpread(ReadingSpread.fromKey(spreadType)); readingViewModel.setTopic("general")
-                            navController.navigate(Screen.CardDrawing.createRoute("general", spreadType)) }
+                            navController.navigate(Screen.CardDrawing.createRoute("general", spreadType)) },
+                        onNavigateToLibrary = { navController.navigate(Screen.CardLibrary.route) }
                     )
                 }
 
                 // Reading flow
                 composable(Screen.TopicSelection.route) {
+                    // Reset state for new reading
+                    LaunchedEffect(Unit) { readingViewModel.resetReading() }
                     TopicSelectionScreen(
                         onTopicSelected = { topic ->
                             readingViewModel.setTopic(topic)
@@ -221,7 +296,22 @@ fun AppNavigation(
                     ReadingInterpretationScreen(
                         onDone = { navController.navigate("reading/summary/temp") },
                         onBack = { navController.popBackStack() },
+                        onBuyExtraCard = { navController.navigate("reading/extra_card_picker") },
                         readingViewModel = readingViewModel
+                    )
+                }
+
+                composable("reading/extra_card_picker") {
+                    val coins by readingViewModel.coinBalance.collectAsState()
+                    ExtraCardPickerScreen(
+                        existingCardIds = readingViewModel.uiState.value.drawnCards.map { it.cardId }.toSet(),
+                        coinBalance = coins.balance,
+                        onCoinSpent = { readingViewModel.spendCoinForExtraCard() },
+                        onCardConfirmed = { cardId ->
+                            readingViewModel.interpretExtraCard(cardId)
+                            navController.popBackStack()
+                        },
+                        onBack = { navController.popBackStack() }
                     )
                 }
 
@@ -241,7 +331,22 @@ fun AppNavigation(
                         onNavigateBack = { navController.popBackStack() }
                     )
                 }
-                composable(Screen.CardDetail.route, arguments = listOf(navArgument("cardId") { type = NavType.IntType })) { entry ->
+                composable(
+                    Screen.CardDetail.route,
+                    arguments = listOf(navArgument("cardId") { type = NavType.IntType }),
+                    enterTransition = {
+                        slideInVertically(tween(500, easing = EaseOutCubic)) { it / 3 } +
+                        fadeIn(tween(400)) +
+                        scaleIn(initialScale = 0.85f, animationSpec = tween(500, easing = EaseOutCubic))
+                    },
+                    exitTransition = { fadeOut(tween(300)) },
+                    popEnterTransition = { fadeIn(tween(300)) },
+                    popExitTransition = {
+                        slideOutVertically(tween(400, easing = EaseInCubic)) { it / 4 } +
+                        fadeOut(tween(300)) +
+                        scaleOut(targetScale = 0.9f, animationSpec = tween(400))
+                    }
+                ) { entry ->
                     val cardId = entry.arguments?.getInt("cardId") ?: 0
                     CardDetailScreen(cardId = cardId, onNavigateBack = { navController.popBackStack() })
                 }

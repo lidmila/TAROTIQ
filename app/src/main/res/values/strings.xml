@@ -3,10 +3,13 @@
     <string name="app_name">TAROTIQ</string>
 
     <!-- Navigation -->
-    <string name="nav_home">Domů</string>
+    <string name="nav_home">Portál</string>
+    <string name="nav_portal">Portál</string>
     <string name="nav_library">Knihovna</string>
-    <string name="nav_new_reading">Výklad</string>
-    <string name="nav_history">Historie</string>
+    <string name="nav_new_reading">Orákulum</string>
+    <string name="nav_oracle">Orákulum</string>
+    <string name="nav_history">Záznamy</string>
+    <string name="nav_grimoire">Záznamy</string>
     <string name="nav_profile">Profil</string>
 
     <!-- Auth -->
@@ -64,6 +67,37 @@
     <string name="drawing_card_revealed">Karta odhalena!</string>
     <string name="drawing_all_revealed">Všechny karty odhaleny</string>
     <string name="drawing_get_reading">Nechat vyložit</string>
+    <string name="drawing_confirm_selection">Potvrdit výběr</string>
+    <string name="drawing_scroll_hint">↓ Posuňte pro zobrazení dalších karet ↓</string>
+    <plurals name="spread_pick_cards">
+        <item quantity="one">Vyberte %d kartu pro svůj výklad</item>
+        <item quantity="few">Vyberte %d karty pro svůj výklad</item>
+        <item quantity="other">Vyberte %d karet pro svůj výklad</item>
+    </plurals>
+    <string name="drawing_focus_energy">Soustřeďte svou energii na svůj záměr.</string>
+    <string name="reading_extra_card_offer">Chcete se dozvědět víc?\nDokupte si další kartu do výkladu.</string>
+    <string name="reading_buy_extra_card">Dokoupit kartu za 1 minci</string>
+    <string name="extra_card_title">Vyberte kartu</string>
+    <string name="extra_card_confirm">Potvrdit výběr</string>
+
+    <!-- Spread Positions -->
+    <string name="position_insight">Vhled</string>
+    <string name="position_past">Minulost</string>
+    <string name="position_present">Přítomnost</string>
+    <string name="position_future">Budoucnost</string>
+    <string name="position_you">Vy</string>
+    <string name="position_partner">Partner</string>
+    <string name="position_relationship">Vztah</string>
+    <string name="position_challenges">Výzvy</string>
+    <string name="position_present_situation">Přítomnost</string>
+    <string name="position_challenge">Výzva</string>
+    <string name="position_conscious">Vědomí</string>
+    <string name="position_subconscious">Podvědomí</string>
+    <string name="position_advice">Rada</string>
+    <string name="position_influences">Vlivy</string>
+    <string name="position_hopes">Naděje a obavy</string>
+    <string name="position_outcome">Výsledek</string>
+    <string name="position_extra">Doplňková karta</string>
 
     <!-- Reading -->
     <string name="reading_interpreting">Madame Stella čte vaše karty…</string>
@@ -72,6 +106,7 @@
     <string name="reading_save">Uložit výklad</string>
     <string name="reading_share">Sdílet</string>
     <string name="reading_saved">Výklad uložen</string>
+    <string name="reading_interpretation_title">Výklad</string>
     <string name="reading_summary">Souhrn výkladu</string>
     <string name="reading_upright">Vzpřímená</string>
     <string name="reading_reversed">Převrácená</string>
@@ -111,6 +146,8 @@
     <string name="coins_pack_5">5 mincí</string>
     <string name="coins_pack_15">15 mincí</string>
     <string name="coins_pack_50">50 mincí</string>
+    <string name="coins_pack_300">300 mincí</string>
+    <string name="coins_save">ÚSPORA %d%%</string>
     <string name="coins_most_popular">Nejoblíbenější</string>
     <string name="coins_best_value">Nejlepší hodnota</string>
     <string name="coins_not_enough">Nemáte dostatek mincí</string>
@@ -130,6 +167,11 @@
     <string name="profile_notification_time">Čas připomenutí</string>
     <string name="profile_about">O aplikaci</string>
     <string name="profile_legal">Právní informace</string>
+    <string name="profile_other_apps">Vyzkoušejte naše další aplikace</string>
+    <string name="app_kvitta_desc">Chytré sdílení výdajů a vyrovnání dluhů</string>
+    <string name="app_bettermingle_desc">Zlepšete své seznamovací profily pomocí AI</string>
+    <string name="app_bettershelf_desc">Organizujte svou knihovnu a objevujte nové knihy</string>
+    <string name="app_dreamwitness_desc">Zaznamenávejte a interpretujte své sny</string>
 
     <!-- Info -->
     <string name="faq_title">Časté dotazy</string>
@@ -149,6 +191,12 @@
     <string name="notification_daily_text">Odkryjte, co pro vás hvězdy dnes připravily.</string>
 
     <!-- Zodiac Signs -->
+    <string name="profile_zodiac_not_set">Nenastaveno</string>
+    <string name="coins_count">%d mincí</string>
+    <string name="element_water">Voda</string>
+    <string name="element_earth">Země</string>
+    <string name="element_air">Vzduch</string>
+    <string name="element_fire">Oheň</string>
     <string name="zodiac_aries">Beran</string>
     <string name="zodiac_taurus">Býk</string>
     <string name="zodiac_gemini">Blíženci</string>
@@ -161,6 +209,55 @@
     <string name="zodiac_capricorn">Kozoroh</string>
     <string name="zodiac_aquarius">Vodnář</string>
     <string name="zodiac_pisces">Ryby</string>
+
+    <!-- HomeScreen Portal -->
+    <string name="home_celestial_active">NEBESKÝ PORTÁL AKTIVNÍ</string>
+    <string name="home_headline_1">Hvězdy šeptají</string>
+    <string name="home_headline_2">tvůj osud dnes.</string>
+    <string name="home_welcome_body">Projděte závojem mezi světy. Každá vytažená karta je šepot z vesmíru, nit osudu utkaná právě pro vás.</string>
+    <string name="home_daily_drawing">DENNÍ TAŽENÍ</string>
+    <string name="home_consult_oracle">Poraďte se s Orákulem</string>
+    <string name="home_daily_desc">Přijměte svou denní zprávu z tajemného balíčku. Jedna karta, tažená za úsvitu, vás provede na cestě.</string>
+    <string name="home_awaiting">ČEKÁ NA\nVYVOLÁNÍ</string>
+    <string name="home_reflect">NAHLÉDNOUT</string>
+    <string name="home_explore">PROZKOUMAT</string>
+    <string name="home_most_insightful">NEJHLUBŠÍ VHLED</string>
+    <string name="home_connection">Propojení</string>
+    <string name="home_connection_desc">Srdce a duše</string>
+    <string name="home_lunar_phase">LUNÁRNÍ FÁZE</string>
+    <string name="home_visibility">VIDITELNOST</string>
+
+    <!-- ReadingHistoryScreen -->
+    <string name="history_sacred_archive">POSVÁTNÝ ARCHIV</string>
+    <string name="history_grimoire_title">Grimoár</string>
+    <string name="history_subtitle">Vaše posvátné výklady, uchované na věčnost</string>
+    <string name="history_search_hint">Prohledat grimoár…</string>
+    <string name="history_revisit">ZNOVU NAHLÉDNOUT</string>
+    <string name="history_deepen_search">PROHLOUBIT HLEDÁNÍ</string>
+
+    <!-- ReadingInterpretation errors -->
+    <string name="error_insufficient_coins_title">Nedostatek mincí</string>
+    <string name="error_insufficient_coins_desc">Nemáte dostatek mincí pro tento výklad. Kupte si mince nebo sledujte reklamu pro získání mince zdarma.</string>
+    <string name="error_no_internet_title">Žádné připojení</string>
+    <string name="error_no_internet_desc">Zkontrolujte připojení k internetu a zkuste to znovu.</string>
+    <string name="error_timeout_title">Časový limit vypršel</string>
+    <string name="error_timeout_desc">Server neodpovídá. Zkuste to prosím znovu.</string>
+    <string name="error_auth_title">Chyba přihlášení</string>
+    <string name="error_auth_desc">Vaše přihlášení vypršelo. Odhlaste se a přihlaste znovu.</string>
+    <string name="error_retry">ZKUSIT ZNOVU</string>
+
+    <!-- ReadingInterpretation -->
+    <string name="reading_oracle_insight">Vhled Orákula</string>
+    <string name="reading_generated_by_ai">GENEROVÁNO AI</string>
+
+    <!-- ReadingDetail -->
+    <string name="reading_cosmic_synthesis">KOSMICKÁ SYNTÉZA</string>
+
+    <!-- Login -->
+    <string name="auth_subtitle">VÁŠ MYSTICKÝ PRŮVODCE</string>
+
+    <!-- About -->
+    <string name="about_description">Váš mystický AI tarot čtenář.\nObjevte vhledy skrze starobylé umění tarotu, poháněné moderní AI.\n\nTAROTIQ kombinuje staletí tarotové moudrosti s nejmodernější technologií pro personalizované, interaktivní výklady.</string>
 
     <!-- General -->
     <string name="ok">OK</string>
@@ -185,6 +282,7 @@
     <string name="rewarded_ad_success">+1 mince připsána!</string>
 
     <!-- Onboarding -->
+    <string name="onboarding_language">Vyberte jazyk</string>
     <string name="onboarding_welcome">Vítejte v TAROTIQ</string>
     <string name="onboarding_welcome_desc">Objevte tajemství tarotu s vaší osobní AI věštkyní</string>
     <string name="onboarding_zodiac">Vaše znamení</string>

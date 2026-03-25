@@ -3,10 +3,13 @@
     <string name="app_name">TAROTIQ</string>
 
     <!-- Navigation -->
-    <string name="nav_home">Home</string>
+    <string name="nav_home">Portal</string>
+    <string name="nav_portal">Portal</string>
     <string name="nav_library">Library</string>
-    <string name="nav_new_reading">Reading</string>
-    <string name="nav_history">History</string>
+    <string name="nav_new_reading">Oracle</string>
+    <string name="nav_oracle">Oracle</string>
+    <string name="nav_history">Grimoire</string>
+    <string name="nav_grimoire">Grimoire</string>
     <string name="nav_profile">Profile</string>
 
     <!-- Auth -->
@@ -64,6 +67,36 @@
     <string name="drawing_card_revealed">Card revealed!</string>
     <string name="drawing_all_revealed">All cards revealed</string>
     <string name="drawing_get_reading">Get reading</string>
+    <string name="drawing_confirm_selection">Confirm selection</string>
+    <string name="drawing_scroll_hint">↓ Scroll to see more cards ↓</string>
+    <plurals name="spread_pick_cards">
+        <item quantity="one">Pick %d card for your reading</item>
+        <item quantity="other">Pick %d cards for your reading</item>
+    </plurals>
+    <string name="drawing_focus_energy">Focus your energy on your intention.</string>
+    <string name="reading_extra_card_offer">Want to learn more?\nAdd an extra card to your reading.</string>
+    <string name="reading_buy_extra_card">Buy a card for 1 coin</string>
+    <string name="extra_card_title">Choose a card</string>
+    <string name="extra_card_confirm">Confirm selection</string>
+
+    <!-- Spread Positions -->
+    <string name="position_insight">Insight</string>
+    <string name="position_past">Past</string>
+    <string name="position_present">Present</string>
+    <string name="position_future">Future</string>
+    <string name="position_you">You</string>
+    <string name="position_partner">Partner</string>
+    <string name="position_relationship">Relationship</string>
+    <string name="position_challenges">Challenges</string>
+    <string name="position_present_situation">Present Situation</string>
+    <string name="position_challenge">Challenge</string>
+    <string name="position_conscious">Conscious</string>
+    <string name="position_subconscious">Subconscious</string>
+    <string name="position_advice">Advice</string>
+    <string name="position_influences">External Influences</string>
+    <string name="position_hopes">Hopes and Fears</string>
+    <string name="position_outcome">Outcome</string>
+    <string name="position_extra">Extra Card</string>
 
     <!-- Reading -->
     <string name="reading_interpreting">Madame Stella is reading your cards\u2026</string>
@@ -72,6 +105,7 @@
     <string name="reading_save">Save reading</string>
     <string name="reading_share">Share</string>
     <string name="reading_saved">Reading saved</string>
+    <string name="reading_interpretation_title">Your Reading</string>
     <string name="reading_summary">Reading Summary</string>
     <string name="reading_upright">Upright</string>
     <string name="reading_reversed">Reversed</string>
@@ -111,6 +145,8 @@
     <string name="coins_pack_5">5 coins</string>
     <string name="coins_pack_15">15 coins</string>
     <string name="coins_pack_50">50 coins</string>
+    <string name="coins_pack_300">300 coins</string>
+    <string name="coins_save">SAVE %d%%</string>
     <string name="coins_most_popular">Most Popular</string>
     <string name="coins_best_value">Best Value</string>
     <string name="coins_not_enough">Not enough coins</string>
@@ -130,6 +166,11 @@
     <string name="profile_notification_time">Reminder Time</string>
     <string name="profile_about">About</string>
     <string name="profile_legal">Legal Information</string>
+    <string name="profile_other_apps">Try our other apps</string>
+    <string name="app_kvitta_desc">Smart expense sharing and debt settlement</string>
+    <string name="app_bettermingle_desc">Improve your dating profiles with AI</string>
+    <string name="app_bettershelf_desc">Organize your library and discover new books</string>
+    <string name="app_dreamwitness_desc">Record and interpret your dreams</string>
 
     <!-- Info -->
     <string name="faq_title">FAQ</string>
@@ -149,6 +190,12 @@
     <string name="notification_daily_text">Discover what the stars have prepared for you today.</string>
 
     <!-- Zodiac Signs -->
+    <string name="profile_zodiac_not_set">Not set</string>
+    <string name="coins_count">%d coins</string>
+    <string name="element_water">Water</string>
+    <string name="element_earth">Earth</string>
+    <string name="element_air">Air</string>
+    <string name="element_fire">Fire</string>
     <string name="zodiac_aries">Aries</string>
     <string name="zodiac_taurus">Taurus</string>
     <string name="zodiac_gemini">Gemini</string>
@@ -161,6 +208,55 @@
     <string name="zodiac_capricorn">Capricorn</string>
     <string name="zodiac_aquarius">Aquarius</string>
     <string name="zodiac_pisces">Pisces</string>
+
+    <!-- HomeScreen Portal -->
+    <string name="home_celestial_active">CELESTIAL PORTAL ACTIVE</string>
+    <string name="home_headline_1">The stars whisper</string>
+    <string name="home_headline_2">your destiny today.</string>
+    <string name="home_welcome_body">Step through the veil between worlds. Each card drawn is a whisper from the cosmos, a thread of fate woven just for you.</string>
+    <string name="home_daily_drawing">DAILY DRAWING</string>
+    <string name="home_consult_oracle">Consult the Oracle</string>
+    <string name="home_daily_desc">Receive your daily message from the arcane deck. One card, drawn at dawn, to guide your path.</string>
+    <string name="home_awaiting">AWAITING\nINVOCATION</string>
+    <string name="home_reflect">REFLECT</string>
+    <string name="home_explore">EXPLORE</string>
+    <string name="home_most_insightful">MOST INSIGHTFUL</string>
+    <string name="home_connection">Connection</string>
+    <string name="home_connection_desc">Heart &amp; Soul</string>
+    <string name="home_lunar_phase">LUNAR PHASE</string>
+    <string name="home_visibility">VISIBILITY</string>
+
+    <!-- ReadingHistoryScreen -->
+    <string name="history_sacred_archive">SACRED ARCHIVE</string>
+    <string name="history_grimoire_title">The Grimoire</string>
+    <string name="history_subtitle">Your sacred readings, preserved for eternity</string>
+    <string name="history_search_hint">Search the grimoire…</string>
+    <string name="history_revisit">REVISIT INTERPRETATION</string>
+    <string name="history_deepen_search">DEEPEN SEARCH</string>
+
+    <!-- ReadingInterpretation errors -->
+    <string name="error_insufficient_coins_title">Insufficient coins</string>
+    <string name="error_insufficient_coins_desc">You don\'t have enough coins for this reading. Buy coins or watch an ad to earn a free coin.</string>
+    <string name="error_no_internet_title">No connection</string>
+    <string name="error_no_internet_desc">Check your internet connection and try again.</string>
+    <string name="error_timeout_title">Request timed out</string>
+    <string name="error_timeout_desc">The server is not responding. Please try again.</string>
+    <string name="error_auth_title">Authentication error</string>
+    <string name="error_auth_desc">Your session has expired. Please log out and log back in.</string>
+    <string name="error_retry">TRY AGAIN</string>
+
+    <!-- ReadingInterpretation -->
+    <string name="reading_oracle_insight">The Oracle\'s Insight</string>
+    <string name="reading_generated_by_ai">GENERATED BY AI</string>
+
+    <!-- ReadingDetail -->
+    <string name="reading_cosmic_synthesis">COSMIC SYNTHESIS</string>
+
+    <!-- Login -->
+    <string name="auth_subtitle">YOUR MYSTICAL GUIDE</string>
+
+    <!-- About -->
+    <string name="about_description">Your mystical AI tarot reader.\nDiscover insights through the ancient art of tarot, powered by modern AI.\n\nTAROTIQ combines centuries of tarot wisdom with cutting-edge technology to offer personalized, interactive readings.</string>
 
     <!-- General -->
     <string name="ok">OK</string>
@@ -185,6 +281,7 @@
     <string name="rewarded_ad_success">+1 coin earned!</string>
 
     <!-- Onboarding -->
+    <string name="onboarding_language">Choose your language</string>
     <string name="onboarding_welcome">Welcome to TAROTIQ</string>
     <string name="onboarding_welcome_desc">Discover the secrets of tarot with your personal AI fortune teller</string>
     <string name="onboarding_zodiac">Your Sign</string>

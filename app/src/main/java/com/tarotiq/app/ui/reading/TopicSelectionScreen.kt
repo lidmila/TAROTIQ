@@ -1,40 +1,50 @@
 package com.tarotiq.app.ui.reading
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.core.*
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.slideInVertically
+import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.tarotiq.app.R
-import com.tarotiq.app.ui.components.AnimatedBackground
-import com.tarotiq.app.ui.components.GlassCard
+import com.tarotiq.app.ui.components.*
 import com.tarotiq.app.ui.theme.*
 
 private data class TopicItem(
     val key: String,
     val nameRes: Int,
-    val icon: ImageVector,
-    val accentColor: Color,
-    val emoji: String
+    val iconRes: Int,
+    val accentColor: Color
 )
 
 private val topics = listOf(
-    TopicItem("love", R.string.topic_love, Icons.Default.Favorite, Color(0xFFE57373), "\u2764\uFE0F"),
-    TopicItem("career", R.string.topic_career, Icons.Default.Work, Color(0xFF64B5F6), "\uD83D\uDCBC"),
-    TopicItem("general", R.string.topic_general, Icons.Default.AutoAwesome, MysticLight, "\u2728"),
-    TopicItem("yes_no", R.string.topic_yes_no, Icons.Default.HelpOutline, GoldSecondary, "\u2753"),
-    TopicItem("spiritual", R.string.topic_spiritual, Icons.Default.SelfImprovement, TealTertiary, "\uD83E\uDDD8")
+    TopicItem("love", R.string.topic_love, R.drawable.love, Color(0xFFE8A0A0)),
+    TopicItem("career", R.string.topic_career, R.drawable.career, CelestialGold),
+    TopicItem("general", R.string.topic_general, R.drawable.obecne, AstralPurple),
+    TopicItem("yes_no", R.string.topic_yes_no, R.drawable.ano_ne, CelestialGoldLight),
+    TopicItem("spiritual", R.string.topic_spiritual, R.drawable.duchovni, AstralPurpleLight)
 )
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -44,8 +54,14 @@ fun TopicSelectionScreen(
     onBack: () -> Unit
 ) {
     Box(modifier = Modifier.fillMaxSize()) {
-        AnimatedBackground(modifier = Modifier.fillMaxSize())
+        MysticBackground(modifier = Modifier.fillMaxSize())
 
+        var screenVisible by remember { mutableStateOf(false) }
+        LaunchedEffect(Unit) { screenVisible = true }
+        AnimatedVisibility(
+            visible = screenVisible,
+            enter = fadeIn(tween(600)) + slideInVertically(tween(600)) { it / 16 }
+        ) {
         Column(
             modifier = Modifier.fillMaxSize()
         ) {
@@ -54,8 +70,11 @@ fun TopicSelectionScreen(
                 title = {
                     Text(
                         text = stringResource(R.string.topic_select),
-                        style = MaterialTheme.typography.titleLarge,
-                        color = TextPrimary
+                        style = MaterialTheme.typography.headlineMedium.copy(
+                            fontFamily = NewsreaderFamily,
+                            fontWeight = FontWeight.Normal
+                        ),
+                        color = StarWhite
                     )
                 },
                 navigationIcon = {
@@ -63,7 +82,7 @@ fun TopicSelectionScreen(
                         Icon(
                             Icons.AutoMirrored.Filled.ArrowBack,
                             contentDescription = stringResource(R.string.back),
-                            tint = TextPrimary
+                            tint = StarWhite
                         )
                     }
                 },
@@ -131,6 +150,7 @@ fun TopicSelectionScreen(
                 Spacer(modifier = Modifier.height(32.dp))
             }
         }
+        }
     }
 }
 
@@ -140,9 +160,16 @@ private fun TopicCard(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    GlassCard(
+    ArtNouveauFrame(
         onClick = onClick,
         modifier = modifier
+            .border(
+                width = 1.dp,
+                color = Color.White.copy(alpha = 0.05f),
+                shape = RoundedCornerShape(16.dp)
+            ),
+        frameStyle = FrameStyle.ORNATE,
+        backgroundColor = CosmicMid.copy(alpha = 0.3f)
     ) {
         Column(
             modifier = Modifier
@@ -150,26 +177,50 @@ private fun TopicCard(
                 .padding(vertical = 28.dp, horizontal = 16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(
-                text = topic.emoji,
-                fontSize = 36.sp
+            val topicTransition = rememberInfiniteTransition(label = "topic_${topic.key}")
+            val topicFloat by topicTransition.animateFloat(
+                initialValue = -3f, targetValue = 3f,
+                animationSpec = infiniteRepeatable(tween(3000, easing = EaseInOutSine), RepeatMode.Reverse),
+                label = "topic_float_${topic.key}"
             )
+            val topicGlow by topicTransition.animateFloat(
+                initialValue = 0.1f, targetValue = 0.35f,
+                animationSpec = infiniteRepeatable(tween(2500, easing = EaseInOutSine), RepeatMode.Reverse),
+                label = "topic_glow_${topic.key}"
+            )
+
+            Box(contentAlignment = Alignment.Center) {
+                // Glow aura
+                Canvas(modifier = Modifier.size(80.dp)) {
+                    drawCircle(
+                        brush = Brush.radialGradient(
+                            colors = listOf(topic.accentColor.copy(alpha = topicGlow), Color.Transparent)
+                        ),
+                        radius = size.minDimension / 2f
+                    )
+                }
+                // Topic icon image with float animation
+                Image(
+                    painter = painterResource(id = topic.iconRes),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(56.dp)
+                        .graphicsLayer { translationY = topicFloat * density },
+                    contentScale = ContentScale.Fit
+                )
+            }
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            Icon(
-                topic.icon,
-                contentDescription = null,
-                tint = topic.accentColor,
-                modifier = Modifier.size(28.dp)
-            )
-
-            Spacer(modifier = Modifier.height(8.dp))
-
             Text(
-                text = stringResource(topic.nameRes),
-                style = MaterialTheme.typography.titleMedium,
-                color = TextPrimary,
+                text = stringResource(topic.nameRes).uppercase(),
+                style = MaterialTheme.typography.labelLarge.copy(
+                    fontFamily = SpaceGroteskFamily,
+                    fontWeight = FontWeight.Medium,
+                    fontSize = 12.sp,
+                    letterSpacing = 2.sp
+                ),
+                color = StarWhite,
                 textAlign = TextAlign.Center
             )
         }

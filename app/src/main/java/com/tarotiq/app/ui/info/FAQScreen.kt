@@ -3,16 +3,18 @@ package com.tarotiq.app.ui.info
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.tarotiq.app.R
-import com.tarotiq.app.ui.components.AnimatedBackground
-import com.tarotiq.app.ui.components.GlassCard
+import com.tarotiq.app.ui.components.*
 import com.tarotiq.app.ui.theme.*
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -24,24 +26,50 @@ fun FAQScreen(onBack: () -> Unit) {
     )
 
     Box(modifier = Modifier.fillMaxSize()) {
-        AnimatedBackground(modifier = Modifier.fillMaxSize())
+        MysticBackground(modifier = Modifier.fillMaxSize())
         Scaffold(
             containerColor = Color.Transparent,
             topBar = {
-                TopAppBar(title = { Text(stringResource(R.string.faq_title)) },
-                    navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, null) } },
-                    colors = TopAppBarDefaults.topAppBarColors(containerColor = MidnightBg2.copy(alpha = 0.8f)))
+                TopAppBar(
+                    title = {
+                        Text(
+                            stringResource(R.string.faq_title),
+                            style = MaterialTheme.typography.headlineSmall,
+                            color = CelestialGold
+                        )
+                    },
+                    navigationIcon = {
+                        IconButton(onClick = onBack) {
+                            Icon(
+                                Icons.AutoMirrored.Filled.ArrowBack,
+                                null,
+                                tint = AstralPurple
+                            )
+                        }
+                    },
+                    colors = TopAppBarDefaults.topAppBarColors(containerColor = CosmicDeep.copy(alpha = 0.85f))
+                )
             }
         ) { padding ->
             Column(modifier = Modifier.fillMaxSize().padding(padding).padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 faqItems.forEach { (qRes, aRes) ->
                     var expanded by remember { mutableStateOf(false) }
-                    GlassCard(onClick = { expanded = !expanded }, modifier = Modifier.fillMaxWidth()) {
+                    GlassCard(
+                        onClick = { expanded = !expanded },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
                         Column(modifier = Modifier.padding(16.dp)) {
-                            Row { Text(stringResource(qRes), style = MaterialTheme.typography.titleSmall, color = GoldSecondary, modifier = Modifier.weight(1f))
-                                Icon(if (expanded) Icons.Default.ExpandLess else Icons.Default.ExpandMore, null, tint = TextSecondary) }
+                            Row {
+                                Text(
+                                    stringResource(qRes),
+                                    style = MaterialTheme.typography.headlineSmall.copy(fontSize = 16.sp),
+                                    color = CelestialGold,
+                                    modifier = Modifier.weight(1f)
+                                )
+                                Icon(if (expanded) Icons.Default.ExpandLess else Icons.Default.ExpandMore, null, tint = MoonSilver)
+                            }
                             AnimatedVisibility(visible = expanded) {
-                                Text(stringResource(aRes), style = MaterialTheme.typography.bodyMedium, color = TextPrimary, modifier = Modifier.padding(top = 8.dp))
+                                Text(stringResource(aRes), style = MaterialTheme.typography.bodyMedium, color = StarWhite.copy(alpha = 0.9f), modifier = Modifier.padding(top = 8.dp))
                             }
                         }
                     }

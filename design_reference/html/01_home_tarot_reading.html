@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Celestial Archive - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-primary": "#6349c0",
+                        "on-primary": "#330b91",
+                        "surface-tint": "#cbbeff",
+                        "surface-container": "#211e28",
+                        "secondary-container": "#af8d11",
+                        "on-secondary-fixed-variant": "#574500",
+                        "surface-container-highest": "#36333e",
+                        "on-primary-container": "#927af3",
+                        "surface-bright": "#3b3842",
+                        "surface-dim": "#14121b",
+                        "on-tertiary-container": "#8c8d8d",
+                        "on-primary-fixed-variant": "#4a2ea7",
+                        "surface-container-high": "#2b2933",
+                        "surface-variant": "#36333e",
+                        "tertiary": "#c6c6c6",
+                        "on-surface-variant": "#cbc4d0",
+                        "outline": "#948e99",
+                        "on-secondary": "#3c2f00",
+                        "on-error": "#690005",
+                        "on-secondary-container": "#342800",
+                        "inverse-on-surface": "#322f39",
+                        "secondary": "#e9c349",
+                        "primary": "#cbbeff",
+                        "on-tertiary": "#2f3131",
+                        "inverse-surface": "#e6e0ee",
+                        "secondary-fixed": "#ffe088",
+                        "on-background": "#e6e0ee",
+                        "error-container": "#93000a",
+                        "tertiary-fixed": "#e3e2e2",
+                        "on-primary-fixed": "#1e0061",
+                        "on-secondary-fixed": "#241a00",
+                        "surface-container-low": "#1c1a24",
+                        "tertiary-container": "#242626",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "primary-fixed": "#e7deff",
+                        "secondary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed-variant": "#464747",
+                        "primary-fixed-dim": "#cbbeff",
+                        "primary-container": "#28007b",
+                        "error": "#ffb4ab",
+                        "on-error-container": "#ffdad6",
+                        "outline-variant": "#49454e",
+                        "on-surface": "#e6e0ee",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "surface": "#14121b",
+                        "surface-container-lowest": "#0f0d16",
+                        "background": "#14121b"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .nebula-gradient {
+            background: linear-gradient(45deg, #28007b 0%, #14121b 100%);
+        }
+        .glass-card {
+            background: rgba(54, 51, 62, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30 selection:text-primary min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#14121b] flex justify-between items-center w-full px-6 py-4 fixed top-0 z-50">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high border border-outline-variant/20 flex items-center justify-center overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Stylized mystical silhouette avatar for user profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbz55eiRgttLu3w5ekX2XdrHCHf-kBdhPTS4enuzYw25YHvLHmnvY_F3l3cAGOK-dugpOy_-9sU1zb7OEswn-K3-RGiN8xdT986AOGRtadkLA-VRuCZIqHa3XSYZLuYeosMS7uZnvFQM18AkQUcnsfE-dt6tcK3WGtFXCRKIBar6teYlvnzRLRnhQNWXSSzS-m51lq8FSRic5NU_pyO9QXwMJXGv_QTU-KtkHDoo8M9zNgm9OGnfG-GIxGlIBezfWZw3XKLLme08A"/>
+</div>
+</div>
+<h1 class="text-2xl font-headline italic text-[#e9c349] tracking-wide">Celestial Archive</h1>
+<button class="text-[#cbbeff] hover:text-[#e9c349] transition-colors duration-300 transform active:scale-95">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</button>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-12">
+<!-- Daily Card Hero -->
+<section class="relative group">
+<div class="absolute -inset-4 nebula-gradient opacity-40 rounded-[2.5rem] blur-3xl -z-10"></div>
+<div class="flex flex-col items-center">
+<span class="font-label text-secondary text-[10px] uppercase tracking-[0.3em] mb-4 opacity-80">Oracle Guidance</span>
+<h2 class="font-headline text-4xl font-light text-center mb-10 ml-8">Your Daily Arcana</h2>
+<!-- Card Interaction Area -->
+<div class="relative w-full aspect-[2/3] max-w-[280px] perspective-1000">
+<div class="w-full h-full rounded-[2rem] border border-secondary/20 bg-surface-container-low flex flex-col items-center justify-center p-8 text-center space-y-6 shadow-[0_0_40px_rgba(233,195,73,0.05)]">
+<div class="w-20 h-20 rounded-full border border-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-5xl" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="space-y-2">
+<p class="font-headline text-2xl text-on-surface">The Star</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Hope, faith, and a sense that you are truly blessed by the universe.</p>
+</div>
+<button class="mt-4 px-8 py-3 bg-gradient-to-r from-primary to-inverse-primary text-on-primary font-label font-bold rounded-full text-xs tracking-widest hover:shadow-[0_0_20px_rgba(203,190,255,0.4)] transition-all">
+                            REFLECT
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Spread Types Bento Grid -->
+<section class="space-y-8">
+<div class="flex justify-between items-end mr-4">
+<h3 class="font-headline text-2xl font-light italic">Sacred Spreads</h3>
+<span class="font-label text-[10px] text-secondary tracking-widest uppercase">Explore All</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Large Featured Spread -->
+<div class="col-span-2 bg-surface-container rounded-xl p-6 flex items-center justify-between border-l-2 border-secondary/30">
+<div class="space-y-2">
+<span class="font-label text-[9px] text-tertiary uppercase tracking-widest">Most Insightful</span>
+<h4 class="font-headline text-xl">The Celtic Cross</h4>
+<p class="font-body text-xs text-on-surface-variant max-w-[200px]">A deep 10-card exploration of your current path and destiny.</p>
+</div>
+<div class="w-16 h-16 flex items-center justify-center text-secondary/40">
+<span class="material-symbols-outlined text-5xl" data-icon="grid_guides">grid_guides</span>
+</div>
+</div>
+<!-- Three Card Spread -->
+<div class="bg-surface-container-high rounded-xl p-5 space-y-4 hover:bg-surface-bright transition-colors cursor-pointer group">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center group-hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="filter_3">filter_3</span>
+</div>
+<div>
+<h4 class="font-headline text-lg">Timeline</h4>
+<p class="font-body text-[11px] text-on-surface-variant">Past, Present, &amp; Future</p>
+</div>
+</div>
+<!-- Relationship Reading -->
+<div class="bg-surface-container-high rounded-xl p-5 space-y-4 hover:bg-surface-bright transition-colors cursor-pointer group">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center group-hover:text-secondary transition-colors">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</div>
+<div>
+<h4 class="font-headline text-lg">Connection</h4>
+<p class="font-body text-[11px] text-on-surface-variant">Heart &amp; Soul alignment</p>
+</div>
+</div>
+<!-- Career Insight -->
+<div class="col-span-2 bg-surface-container-low rounded-xl p-6 flex items-center gap-6 border border-outline-variant/10">
+<div class="w-12 h-12 bg-tertiary-container rounded-full flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+</div>
+<div class="flex-1">
+<h4 class="font-headline text-lg">Career Path</h4>
+<p class="font-body text-xs text-on-surface-variant">Professional growth &amp; hidden opportunities</p>
+</div>
+<span class="material-symbols-outlined text-secondary/60" data-icon="arrow_forward_ios">arrow_forward_ios</span>
+</div>
+</div>
+</section>
+<!-- Cosmic Transit Section -->
+<section class="bg-surface-container-lowest rounded-[2rem] p-8 border border-outline-variant/5">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="nights_stay">nights_stay</span>
+<h3 class="font-headline text-xl italic">Lunar Phase</h3>
+</div>
+<div class="flex justify-between items-center">
+<div class="space-y-1">
+<p class="font-body text-on-surface font-medium">Waxing Gibbous</p>
+<p class="font-body text-[11px] text-on-surface-variant">Illumination and refinement</p>
+</div>
+<div class="text-right">
+<p class="font-headline text-3xl text-secondary">84%</p>
+<p class="font-label text-[9px] uppercase tracking-widest text-on-surface-variant">Visibility</p>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="mt-6 w-full h-[2px] bg-surface-container-highest rounded-full relative overflow-hidden">
+<div class="absolute inset-y-0 left-0 w-[84%] bg-gradient-to-r from-secondary to-primary flex items-center justify-end">
+<div class="w-1 h-1 bg-white rounded-full shadow-[0_0_8px_white]"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#14121b]/60 backdrop-blur-xl rounded-t-[2rem] shadow-[0_-4px_24px_rgba(203,190,255,0.06)]">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center text-[#e9c349] font-bold scale-110" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="auto_mirrored_reveal_auto" style="font-variation-settings: 'FILL' 1;">rotate_auto</span>
+<span class="font-['Manrope'] text-[11px] uppercase tracking-[0.1em]">Home</span>
+</a>
+<!-- Spreads -->
+<a class="flex flex-col items-center justify-center text-[#49454e] opacity-70 hover:opacity-100 hover:text-[#cbbeff] transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="grid_view">grid_view</span>
+<span class="font-['Manrope'] text-[11px] uppercase tracking-[0.1em]">Spreads</span>
+</a>
+<!-- Journal -->
+<a class="flex flex-col items-center justify-center text-[#49454e] opacity-70 hover:opacity-100 hover:text-[#cbbeff] transition-all" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="history_edu">history_edu</span>
+<span class="font-['Manrope'] text-[11px] uppercase tracking-[0.1em]">Journal</span>
+</a>
+</nav>
+</body></html>

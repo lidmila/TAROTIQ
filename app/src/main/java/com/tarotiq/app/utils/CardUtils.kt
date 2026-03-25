@@ -1,5 +1,6 @@
 package com.tarotiq.app.utils
 
+import android.content.Context
 import com.tarotiq.app.domain.model.DrawnCard
 import com.tarotiq.app.domain.model.ReadingSpread
 import kotlin.random.Random
@@ -8,7 +9,7 @@ object CardUtils {
 
     private const val TOTAL_CARDS = 78
 
-    fun drawCards(spread: ReadingSpread, seed: Long = System.currentTimeMillis()): List<DrawnCard> {
+    fun drawCards(spread: ReadingSpread, context: Context, seed: Long = System.currentTimeMillis()): List<DrawnCard> {
         val random = Random(seed)
         val allCardIds = (0 until TOTAL_CARDS).toMutableList()
         allCardIds.shuffle(random)
@@ -18,7 +19,7 @@ object CardUtils {
                 cardId = allCardIds[index],
                 isReversed = random.nextBoolean(),
                 position = position.key,
-                positionMeaning = position.nameEn
+                positionMeaning = context.getString(position.nameResId)
             )
         }
     }

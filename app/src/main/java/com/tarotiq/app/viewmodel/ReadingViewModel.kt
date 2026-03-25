@@ -1,10 +1,12 @@
 package com.tarotiq.app.viewmodel
 
 import android.app.Application
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.firebase.auth.FirebaseAuth
 import com.google.gson.Gson
+import com.tarotiq.app.R
 import com.tarotiq.app.data.preferences.SettingsManager
 import com.tarotiq.app.data.remote.FirebaseFunctionsClient
 import com.tarotiq.app.data.repository.CoinRepository
@@ -25,8 +27,6 @@ data class ReadingUiState(
     val revealedCardIndices: Set<Int> = emptySet(),
     val isInterpreting: Boolean = false,
     val interpretation: String = "",
-    val followUpMessages: List<ChatMessage> = emptyList(),
-    val isFollowUpLoading: Boolean = false,
     val readingId: String? = null,
     val error: String? = null,
     val coinSpent: Boolean = false
@@ -44,6 +44,7 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
 
     private val _uiState = MutableStateFlow(ReadingUiState())
     val uiState: StateFlow<ReadingUiState> = _uiState.asStateFlow()
+    val coinBalance = coinRepo.coinBalance
 
     fun setTopic(topic: String) {
         _uiState.update { it.copy(topic = topic) }
@@ -54,13 +55,41 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
     }
 
     fun setSpread(spread: ReadingSpread) {
-        _uiState.update { it.copy(spread = spread) }
+        _uiState.update { it.copy(
+            spread = spread,
+            drawnCards = emptyList(),
+            revealedCardIndices = emptySet(),
+            interpretation = "",
+            readingId = null,
+            error = null,
+            coinSpent = false
+        ) }
     }
 
     fun drawCards() {
-        val spread = _uiState.value.spread
-        val cards = CardUtils.drawCards(spread)
-        _uiState.update { it.copy(drawnCards = cards, revealedCardIndices = emptySet()) }
+        viewModelScope.launch {
+            val spread = _uiState.value.spread
+            // Spend coins IMMEDIATELY on confirm
+            if (!_uiState.value.coinSpent) {
+                try {
+                    functionsClient.spendCoins(spread.key)
+                    _uiState.update { it.copy(coinSpent = true) }
+                } catch (e: Exception) {
+                    Log.e("ReadingVM", "spendCoins failed: ${e.message}", e)
+                    val msg = e.message ?: ""
+                    val error = when {
+                        msg.contains("Insufficient coins", ignoreCase = true) -> "INSUFFICIENT_COINS"
+                        msg.contains("unauthenticated", ignoreCase = true) -> "NOT_AUTHENTICATED"
+                        else -> msg
+                    }
+                    _uiState.update { it.copy(error = error) }
+                    return@launch
+                }
+            }
+            // Only draw cards after coins are spent
+            val cards = CardUtils.drawCards(spread, getApplication())
+            _uiState.update { it.copy(drawnCards = cards, revealedCardIndices = emptySet()) }
+        }
     }
 
     fun revealCard(index: Int) {
@@ -70,19 +99,15 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
     }
 
     val allCardsRevealed: StateFlow<Boolean> = _uiState.map { state ->
-        state.drawnCards.isNotEmpty() && state.revealedCardIndices.size == state.drawnCards.size
+        val spreadCount = state.spread.cardCount
+        state.drawnCards.size >= spreadCount &&
+            (0 until spreadCount).all { it in state.revealedCardIndices }
     }.stateIn(viewModelScope, SharingStarted.Lazily, false)
 
     fun requestInterpretation() {
         viewModelScope.launch {
             _uiState.update { it.copy(isInterpreting = true, error = null) }
             try {
-                // Spend coins first
-                if (!_uiState.value.coinSpent) {
-                    functionsClient.spendCoins(_uiState.value.spread.key)
-                    _uiState.update { it.copy(coinSpent = true) }
-                }
-
                 val state = _uiState.value
                 val zodiac = settingsManager.zodiacSignFlow.first()
                 val language = LocaleUtils.getCurrentLanguage(getApplication())
@@ -97,8 +122,6 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
                     moonPhase = moonPhase,
                     language = language
                 )
-
-                // Save reading
                 val userId = auth.currentUser?.uid ?: ""
                 val reading = TarotReading(
                     userId = userId,
@@ -118,63 +141,93 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
                     readingId = reading.id
                 )}
             } catch (e: Exception) {
+                Log.e("ReadingVM", "Interpretation failed: ${e.javaClass.simpleName}: ${e.message}", e)
+                val userMessage = when {
+                    e.message?.contains("No internet", ignoreCase = true) == true -> "NO_INTERNET"
+                    e.message?.contains("unauthenticated", ignoreCase = true) == true -> "NOT_AUTHENTICATED"
+                    e.message?.contains("timed out", ignoreCase = true) == true -> "TIMEOUT"
+                    e.message?.contains("INTERNAL", ignoreCase = true) == true -> "SERVER_ERROR"
+                    else -> e.message ?: "UNKNOWN_ERROR"
+                }
                 _uiState.update { it.copy(
                     isInterpreting = false,
-                    error = e.message
+                    error = userMessage
                 )}
             }
         }
     }
 
-    fun sendFollowUp(message: String) {
+    /**
+     * Spend 1 coin for extra card. Suspend — blocks until server confirms.
+     * Call from picker screen BEFORE navigating back.
+     * Returns true on success, false on failure.
+     */
+    suspend fun spendCoinForExtraCard(): Boolean {
+        return try {
+            functionsClient.spendCoins("extra_card")
+            true
+        } catch (e: Exception) {
+            Log.e("ReadingVM", "spendCoinForExtraCard failed: ${e.message}", e)
+            false
+        }
+    }
+
+    /**
+     * Add the extra card and request interpretation.
+     * Call AFTER coins have been spent and navigation returned to interpretation.
+     */
+    fun interpretExtraCard(cardId: Int) {
         viewModelScope.launch {
-            val userMsg = ChatMessage(role = MessageRole.USER, content = message)
-            _uiState.update { it.copy(
-                followUpMessages = it.followUpMessages + userMsg,
-                isFollowUpLoading = true
-            )}
-
+            _uiState.update { it.copy(isInterpreting = true, error = null) }
             try {
+                val app: Application = getApplication()
+                val isReversed = kotlin.random.Random.nextBoolean()
+                val newCard = DrawnCard(
+                    cardId = cardId,
+                    isReversed = isReversed,
+                    position = "extra",
+                    positionMeaning = app.getString(R.string.position_extra)
+                )
+
                 val state = _uiState.value
-                val allMessages = listOf(
+                val updatedCards = state.drawnCards + newCard
+                _uiState.update { it.copy(drawnCards = updatedCards) }
+
+                val language = LocaleUtils.getCurrentLanguage(app)
+                val conversationHistory = listOf(
                     ChatMessage(role = MessageRole.ASSISTANT, content = state.interpretation)
-                ) + state.followUpMessages
+                )
 
-                val zodiac = settingsManager.zodiacSignFlow.first()
-                val language = LocaleUtils.getCurrentLanguage(getApplication())
-
-                val response = functionsClient.interpretTarotReading(
+                val extraInterpretation = functionsClient.interpretTarotReading(
                     topic = state.topic,
                     question = state.question,
                     spreadType = state.spread.key,
-                    drawnCards = state.drawnCards,
-                    zodiacSign = zodiac,
-                    moonPhase = null,
+                    drawnCards = listOf(newCard),
+                    zodiacSign = settingsManager.zodiacSignFlow.first(),
+                    moonPhase = AstroUtils.getCurrentMoonPhase().name,
                     language = language,
-                    conversationHistory = allMessages
+                    conversationHistory = conversationHistory
                 )
 
-                val assistantMsg = ChatMessage(role = MessageRole.ASSISTANT, content = response)
+                val updatedInterpretation = extraInterpretation + "\n\n---\n\n" + state.interpretation
+
                 _uiState.update { it.copy(
-                    followUpMessages = it.followUpMessages + assistantMsg,
-                    isFollowUpLoading = false
+                    interpretation = updatedInterpretation,
+                    isInterpreting = false
                 )}
 
-                // Update saved reading
                 state.readingId?.let { id ->
                     val reading = readingRepo.getReadingById(id)
                     reading?.let {
                         readingRepo.updateReading(it.copy(
-                            followUpMessages = gson.toJson(state.followUpMessages + assistantMsg)
+                            drawnCardsJson = gson.toJson(updatedCards),
+                            aiInterpretation = updatedInterpretation
                         ))
                     }
                 }
             } catch (e: Exception) {
-                val errorMsg = ChatMessage(role = MessageRole.ASSISTANT, content = "Error: ${e.message}", isError = true)
-                _uiState.update { it.copy(
-                    followUpMessages = it.followUpMessages + errorMsg,
-                    isFollowUpLoading = false
-                )}
+                Log.e("ReadingVM", "interpretExtraCard failed: ${e.message}", e)
+                _uiState.update { it.copy(isInterpreting = false, error = e.message) }
             }
         }
     }

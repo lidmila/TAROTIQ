@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Major Arcana -->
+    <string name="card_the_fool">Głupiec</string>
+    <string name="card_the_magician">Mag</string>
+    <string name="card_the_high_priestess">Arcykapłanka</string>
+    <string name="card_the_empress">Cesarzowa</string>
+    <string name="card_the_emperor">Cesarz</string>
+    <string name="card_the_hierophant">Hierofant</string>
+    <string name="card_the_lovers">Kochankowie</string>
+    <string name="card_the_chariot">Rydwan</string>
+    <string name="card_strength">Siła</string>
+    <string name="card_the_hermit">Pustelnik</string>
+    <string name="card_wheel_of_fortune">Koło Fortuny</string>
+    <string name="card_justice">Sprawiedliwość</string>
+    <string name="card_the_hanged_man">Wisielec</string>
+    <string name="card_death">Śmierć</string>
+    <string name="card_temperance">Umiarkowanie</string>
+    <string name="card_the_devil">Diabeł</string>
+    <string name="card_the_tower">Wieża</string>
+    <string name="card_the_star">Gwiazda</string>
+    <string name="card_the_moon">Księżyc</string>
+    <string name="card_the_sun">Słońce</string>
+    <string name="card_judgement">Sąd</string>
+    <string name="card_the_world">Świat</string>
+
+    <!-- Cups -->
+    <string name="card_ace_of_cups">As Kielichów</string>
+    <string name="card_two_of_cups">Dwójka Kielichów</string>
+    <string name="card_three_of_cups">Trójka Kielichów</string>
+    <string name="card_four_of_cups">Czwórka Kielichów</string>
+    <string name="card_five_of_cups">Piątka Kielichów</string>
+    <string name="card_six_of_cups">Szóstka Kielichów</string>
+    <string name="card_seven_of_cups">Siódemka Kielichów</string>
+    <string name="card_eight_of_cups">Ósemka Kielichów</string>
+    <string name="card_nine_of_cups">Dziewiątka Kielichów</string>
+    <string name="card_ten_of_cups">Dziesiątka Kielichów</string>
+    <string name="card_page_of_cups">Paź Kielichów</string>
+    <string name="card_knight_of_cups">Rycerz Kielichów</string>
+    <string name="card_queen_of_cups">Królowa Kielichów</string>
+    <string name="card_king_of_cups">Król Kielichów</string>
+
+    <!-- Pentacles -->
+    <string name="card_ace_of_pentacles">As Pentakli</string>
+    <string name="card_two_of_pentacles">Dwójka Pentakli</string>
+    <string name="card_three_of_pentacles">Trójka Pentakli</string>
+    <string name="card_four_of_pentacles">Czwórka Pentakli</string>
+    <string name="card_five_of_pentacles">Piątka Pentakli</string>
+    <string name="card_six_of_pentacles">Szóstka Pentakli</string>
+    <string name="card_seven_of_pentacles">Siódemka Pentakli</string>
+    <string name="card_eight_of_pentacles">Ósemka Pentakli</string>
+    <string name="card_nine_of_pentacles">Dziewiątka Pentakli</string>
+    <string name="card_ten_of_pentacles">Dziesiątka Pentakli</string>
+    <string name="card_page_of_pentacles">Paź Pentakli</string>
+    <string name="card_knight_of_pentacles">Rycerz Pentakli</string>
+    <string name="card_queen_of_pentacles">Królowa Pentakli</string>
+    <string name="card_king_of_pentacles">Król Pentakli</string>
+
+    <!-- Swords -->
+    <string name="card_ace_of_swords">As Mieczy</string>
+    <string name="card_two_of_swords">Dwójka Mieczy</string>
+    <string name="card_three_of_swords">Trójka Mieczy</string>
+    <string name="card_four_of_swords">Czwórka Mieczy</string>
+    <string name="card_five_of_swords">Piątka Mieczy</string>
+    <string name="card_six_of_swords">Szóstka Mieczy</string>
+    <string name="card_seven_of_swords">Siódemka Mieczy</string>
+    <string name="card_eight_of_swords">Ósemka Mieczy</string>
+    <string name="card_nine_of_swords">Dziewiątka Mieczy</string>
+    <string name="card_ten_of_swords">Dziesiątka Mieczy</string>
+    <string name="card_page_of_swords">Paź Mieczy</string>
+    <string name="card_knight_of_swords">Rycerz Mieczy</string>
+    <string name="card_queen_of_swords">Królowa Mieczy</string>
+    <string name="card_king_of_swords">Król Mieczy</string>
+
+    <!-- Wands -->
+    <string name="card_ace_of_wands">As Różdżek</string>
+    <string name="card_two_of_wands">Dwójka Różdżek</string>
+    <string name="card_three_of_wands">Trójka Różdżek</string>
+    <string name="card_four_of_wands">Czwórka Różdżek</string>
+    <string name="card_five_of_wands">Piątka Różdżek</string>
+    <string name="card_six_of_wands">Szóstka Różdżek</string>
+    <string name="card_seven_of_wands">Siódemka Różdżek</string>
+    <string name="card_eight_of_wands">Ósemka Różdżek</string>
+    <string name="card_nine_of_wands">Dziewiątka Różdżek</string>
+    <string name="card_ten_of_wands">Dziesiątka Różdżek</string>
+    <string name="card_page_of_wands">Paź Różdżek</string>
+    <string name="card_knight_of_wands">Rycerz Różdżek</string>
+    <string name="card_queen_of_wands">Królowa Różdżek</string>
+    <string name="card_king_of_wands">Król Różdżek</string>
+</resources>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Card 0: The Fool -->
+    <string name="card_0_love_up">Een frisse start in de liefde; wees spontaan en sta open voor onverwachte romantische ontmoetingen.</string>
+    <string name="card_0_love_rev">Roekeloze romantische keuzes; je stort je in een relatie zonder er goed over na te denken.</string>
+    <string name="card_0_career_up">Nieuwe carrièrekansen wenken; maak een gedurfde sprong naar een opwindend pad.</string>
+    <string name="card_0_career_rev">Slechte planning op het werk; impulsieve beslissingen die je professionele positie in gevaar kunnen brengen.</string>
+    <string name="card_0_finances_up">Financiële nieuwe start; een avontuurlijke investering kan lonen als je er verstandig mee omgaat.</string>
+    <string name="card_0_finances_rev">Zorgeloos uitgeven of riskante financiële gokken die tot verliezen kunnen leiden.</string>
+    <string name="card_0_feelings_up">Een gevoel van opwinding en zorgeloosheid; een besef van grenzeloze mogelijkheden vult je hart.</string>
+    <string name="card_0_feelings_rev">Angst achter een zorgeloos masker; vrees voor verbintenis of gevolgen.</string>
+    <string name="card_0_actions_up">Maak de sprong en begin iets nieuws zonder elk detail te overdenken.</string>
+    <string name="card_0_actions_rev">Pauzeer en plan voordat je handelt; beteugel impulsief gedrag.</string>
+
+    <!-- Card 1: The Magician -->
+    <string name="card_1_love_up">Je hebt de kracht om de relatie te creëren die je verlangt; charme en zelfvertrouwen trekken liefde aan.</string>
+    <string name="card_1_love_rev">Pas op voor manipulatie in de romantiek; iemand toont mogelijk niet zijn ware bedoelingen.</string>
+    <string name="card_1_career_up">Je bezit alle vaardigheden die nodig zijn om te slagen; kanaliseer je talenten met gerichte intentie.</string>
+    <string name="card_1_career_rev">Je talenten worden verspild of misbruikt om anderen op het werk te misleiden.</string>
+    <string name="card_1_finances_up">Vindingrijkheid leidt tot financieel gewin; gebruik je vaardigheden om nieuwe inkomstenbronnen te creëren.</string>
+    <string name="card_1_finances_rev">Financiële trucs of oneerlijke transacties zullen zich tegen je keren; vermijd sluiproutes.</string>
+    <string name="card_1_feelings_up">Krachtig en zelfverzekerd; je voelt je in staat om alles te bereiken waar je je op richt.</string>
+    <string name="card_1_feelings_rev">Het gevoel een bedrieger te zijn; zelftwijfel ondermijnt je natuurlijke capaciteiten.</string>
+    <string name="card_1_actions_up">Richt je energie en onderneem beslissende actie om je doelen te verwezenlijken.</string>
+    <string name="card_1_actions_rev">Stop met het proberen te controleren van uitkomsten door manipulatie; wees in plaats daarvan authentiek.</string>
+
+    <!-- Card 2: The High Priestess -->
+    <string name="card_2_love_up">Vertrouw op je intuïtie in zaken van het hart; diepere gevoelens liggen onder het oppervlak verborgen.</string>
+    <string name="card_2_love_rev">Geheimen of verborgen bedoelingen in een relatie; iemand houdt belangrijke gevoelens achter.</string>
+    <string name="card_2_career_up">Luister naar je onderbuikgevoel bij een carrièrebeslissing; het antwoord zit al in je.</string>
+    <string name="card_2_career_rev">Belangrijke informatie op het werk negeren; kantoorpolitiek of verborgen motieven zijn in het spel.</string>
+    <string name="card_2_finances_up">Verborgen financiële kansen kunnen zich openbaren; vertrouw op je instinct bij investeringen.</string>
+    <string name="card_2_finances_rev">Financiële informatie wordt achtergehouden; kijk dieper voordat je geldbeslissingen neemt.</string>
+    <string name="card_2_feelings_up">Een diep gevoel van innerlijk weten; je voelt je verbonden met iets groters dan jezelf.</string>
+    <string name="card_2_feelings_rev">Je voelt je losgekoppeld van je innerlijke stem; verwarring vertroebelt je emotionele landschap.</string>
+    <string name="card_2_actions_up">Wees stil en luister naar je innerlijke wijsheid voordat je beslissingen neemt.</string>
+    <string name="card_2_actions_rev">Stop met het negeren van je intuïtie; herverbind met je innerlijk zelf door reflectie.</string>
+
+    <!-- Card 3: The Empress -->
+    <string name="card_3_love_up">Liefde bloeit op met warmte en zorg; een diep sensuele en vervullende verbinding.</string>
+    <string name="card_3_love_rev">Een partner smoren met overdreven aandacht; afhankelijkheid ondermijnt de relatie.</string>
+    <string name="card_3_career_up">Creatieve projecten gedijen; koester je ideeën en zie ze uitgroeien tot iets prachtigs.</string>
+    <string name="card_3_career_rev">Creatieve blokkades of verwaarlozing van zelfzorg op het werk; burn-out door te veel geven.</string>
+    <string name="card_3_finances_up">Financiële overvloed stroomt op natuurlijke wijze; investeringen in comfort en schoonheid werpen vruchten af.</string>
+    <string name="card_3_finances_rev">Overmatig uitgeven aan luxe; financiële onzekerheid voortkomend uit een gebrek aan eigenwaarde.</string>
+    <string name="card_3_feelings_up">Een gevoel van zorgzaamheid, overvloed en diepe verbondenheid met de geneugten van het leven.</string>
+    <string name="card_3_feelings_rev">Een gevoel van emotionele leegte of onzekerheid; moeite om vervulling te vinden.</string>
+    <string name="card_3_actions_up">Zorg voor jezelf en anderen; investeer in schoonheid, comfort en creatieve expressie.</string>
+    <string name="card_3_actions_rev">Stel gezonde grenzen; pak patronen van afhankelijkheid aan en cultiveer zelfredzaamheid.</string>
+
+    <!-- Card 4: The Emperor -->
+    <string name="card_4_love_up">Een stabiel en veilig partnerschap gebouwd op wederzijds respect en duidelijke grenzen.</string>
+    <string name="card_4_love_rev">Controlerend gedrag in een relatie; de ene partner domineert terwijl de andere lijdt.</string>
+    <string name="card_4_career_up">Sterk leiderschap en organisatorische vaardigheden brengen professioneel succes en erkenning.</string>
+    <string name="card_4_career_rev">Een tirannieke baas of rigide werkplek onderdrukt groei; machtsstrijd doemt op.</string>
+    <string name="card_4_finances_up">Gedisciplineerd financieel beheer leidt tot langetermijnstabiliteit en vermogensopbouw.</string>
+    <string name="card_4_finances_rev">Overmatige controle over financiën of rigide budgettering die onnodige stress creëert.</string>
+    <string name="card_4_feelings_up">Een gevoel van geaardheid, kracht en controle over de richting van je leven.</string>
+    <string name="card_4_feelings_rev">Een gevoel van onderdrukking of overmatige rigiditeit; worstelen met de behoefte alles te controleren.</string>
+    <string name="card_4_actions_up">Creëer structuur en neem de leiding over je situatie met kalme autoriteit.</string>
+    <string name="card_4_actions_rev">Versoepel je greep op de controle; sta flexibiliteit toe en overweeg de perspectieven van anderen.</string>
+
+    <!-- Card 5: The Hierophant -->
+    <string name="card_5_love_up">Een conventionele, toegewijde relatie; huwelijk of traditioneel partnerschap wordt begunstigd.</string>
+    <string name="card_5_love_rev">Relatienormen ter discussie stellen; een onconventioneel partnerschap of verwerping van traditie.</string>
+    <string name="card_5_career_up">Het volgen van beproefde methoden brengt succes; zoek begeleiding van een mentor of instelling.</string>
+    <string name="card_5_career_rev">Je beperkt voelen door werkplekregels; het verlangen om los te breken van conventionele carrièrepaden.</string>
+    <string name="card_5_finances_up">Conservatieve financiële strategieën werpen vruchten af; volg beproefde beleggingsadviezen.</string>
+    <string name="card_5_finances_rev">Onconventionele financiële benaderingen; afwijken van traditioneel geldbeheer.</string>
+    <string name="card_5_feelings_up">Een gevoel van verbondenheid binnen een gemeenschap of spirituele traditie; je voelt je geleid.</string>
+    <string name="card_5_feelings_rev">Je verstikt voelen door regels en verwachtingen; een verlangen om je eigen spirituele pad te smeden.</string>
+    <string name="card_5_actions_up">Zoek wijsheid in gevestigde tradities, bij mentoren of in spirituele praktijken.</string>
+    <string name="card_5_actions_rev">Stel de regels ter discussie en vind je eigen weg; volg niet blindelings conventies.</string>
+
+    <!-- Card 6: The Lovers -->
+    <string name="card_6_love_up">Diepe romantische verbinding en zielsverwantenergie; een relatie gebouwd op wederzijdse liefde en respect.</string>
+    <string name="card_6_love_rev">Relatieconflicten en niet-overeenkomende waarden; een moeilijke keuze tussen twee geliefden.</string>
+    <string name="card_6_career_up">Carrièrekeuzes sluiten aan bij je waarden; partnerschappen en samenwerkingen bloeien op.</string>
+    <string name="card_6_career_rev">Een carrièrebeslissing veroorzaakt innerlijk conflict; zakelijke partnerschappen zijn uit balans.</string>
+    <string name="card_6_finances_up">Financiële beslissingen die aansluiten bij je waarden brengen blijvende voldoening.</string>
+    <string name="card_6_finances_rev">Financiële meningsverschillen met een partner; keuzes die in strijd zijn met je principes.</string>
+    <string name="card_6_feelings_up">Een gevoel van diepe verbondenheid en harmonie met iemand of iets waarvan je houdt.</string>
+    <string name="card_6_feelings_rev">Verscheurd tussen twee opties; innerlijk conflict maakt het moeilijk om vrede te vinden.</string>
+    <string name="card_6_actions_up">Maak keuzes vanuit het hart die aansluiten bij je diepste waarden.</string>
+    <string name="card_6_actions_rev">Los innerlijke conflicten op voordat je belangrijke beslissingen neemt; stem je opnieuw af op je waarden.</string>
+
+    <!-- Card 7: The Chariot -->
+    <string name="card_7_love_up">De liefde najagen met vastberadenheid; obstakels overwinnen om bij degene te zijn van wie je houdt.</string>
+    <string name="card_7_love_rev">Een relatie agressief vooruit dwingen; gebrek aan richting in romantische bezigheden.</string>
+    <string name="card_7_career_up">Het carrièremomentum is sterk; je gedrevenheid en vastberadenheid leiden tot aanzienlijke prestaties.</string>
+    <string name="card_7_career_rev">Je richtingloos voelen op het werk; obstakels en tegenslagen remmen je professionele vooruitgang.</string>
+    <string name="card_7_finances_up">Financiële overwinning door gedisciplineerde inspanning; blijf gefocust op je financiële doelen.</string>
+    <string name="card_7_finances_rev">Financiële tegenslagen door slechte planning of verspreide inspanningen; hergroepeer en herfocus.</string>
+    <string name="card_7_feelings_up">Een gevoel van onverslaanbaarheid en gedrevenheid; een krachtig gevoel van doel stuwt je voorwaarts.</string>
+    <string name="card_7_feelings_rev">Een gevoel van controleverlies of verslagenheid; frustratie groeit terwijl de vooruitgang stokt.</string>
+    <string name="card_7_actions_up">Benut je wilskracht en storm met vertrouwen af op je doelen.</string>
+    <string name="card_7_actions_rev">Vertraag en herwin de controle; heroverweeg je richting voordat je verder gaat.</string>
+
+    <!-- Card 8: Strength -->
+    <string name="card_8_love_up">Liefde gebouwd op geduld en medeleven; zachte kracht verdiept emotionele banden.</string>
+    <string name="card_8_love_rev">Onzekerheid en zelftwijfel ondermijnen je romantische connecties; angst voor kwetsbaarheid.</string>
+    <string name="card_8_career_up">Stil zelfvertrouwen en doorzettingsvermogen verdienen respect; leid met medeleven in plaats van met kracht.</string>
+    <string name="card_8_career_rev">Zelftwijfel houdt je professioneel tegen; je kunt je overweldigd voelen door werkuitdagingen.</string>
+    <string name="card_8_finances_up">Geduldig en gestaag financieel beheer levert blijvende resultaten op; weersta impulsieve beslissingen.</string>
+    <string name="card_8_finances_rev">Financiële angst tast je zelfvertrouwen aan; emotioneel uitgeven ondermijnt je stabiliteit.</string>
+    <string name="card_8_feelings_up">Een gevoel van moed en veerkracht; innerlijke kracht draagt je door moeilijke tijden.</string>
+    <string name="card_8_feelings_rev">Je kwetsbaar en onzeker voelen; rauwe emoties dreigen je te overweldigen.</string>
+    <string name="card_8_actions_up">Benader uitdagingen met zachte vastberadenheid en onwrikbare innerlijke veerkracht.</string>
+    <string name="card_8_actions_rev">Herbouw je zelfvertrouwen; pak onzekerheden aan voordat ze je inspanningen ondermijnen.</string>
+
+    <!-- Card 9: The Hermit -->
+    <string name="card_9_love_up">Een periode van bezinning over wat je werkelijk wilt in de liefde; eenzaamheid brengt helderheid.</string>
+    <string name="card_9_love_rev">Overmatig isolement duwt geliefden weg; eenzaamheid wordt een zelfopgelegde ballingschap.</string>
+    <string name="card_9_career_up">Doe een stap terug en reflecteer op je carrièrepad; innerlijke wijsheid begeleidt je volgende professionele zet.</string>
+    <string name="card_9_career_rev">Je geïsoleerd voelen op het werk; je terugtrekken van collega\'s belemmert je carrièregroei.</string>
+    <string name="card_9_finances_up">Zorgvuldige overweging vóór financiële beslissingen leidt tot wijze investeringen.</string>
+    <string name="card_9_finances_rev">Financiële verantwoordelijkheden ontwijken door je terug te trekken; geldzaken negeren maakt ze erger.</string>
+    <string name="card_9_feelings_up">Een diepe behoefte aan eenzaamheid en contemplatie; vrede vinden in stille introspectie.</string>
+    <string name="card_9_feelings_rev">Je pijnlijk alleen en afgesneden voelen; isolement wekt wanhoop in plaats van inzicht.</string>
+    <string name="card_9_actions_up">Trek je terug uit het lawaai van het dagelijks leven om innerlijke wijsheid en helderheid te zoeken.</string>
+    <string name="card_9_actions_rev">Keer terug naar de wereld; te veel isolement is contraproductief geworden.</string>
+
+    <!-- Card 10: Wheel of Fortune -->
+    <string name="card_10_love_up">Een door het lot bepaald romantisch keerpunt; het noodlot brengt ingrijpende veranderingen in je liefdesleven.</string>
+    <string name="card_10_love_rev">Relatietegenslagen voelen als voorbestemd; verzet je tegen het vastklampen aan een cyclus die je niet meer dient.</string>
+    <string name="card_10_career_up">Een fortuinlijk carrièrekeerpunt; wees klaar om onverwachte professionele kansen te grijpen.</string>
+    <string name="card_10_career_rev">Ongelukkige carrièreontwikkelingen; externe krachten verstoren je professionele plannen.</string>
+    <string name="card_10_finances_up">Een positieve financiële verschuiving nadert; cycli van voorspoed keren in je voordeel.</string>
+    <string name="card_10_finances_rev">Financiële neergang of onverwachte uitgaven; zit de ongunstige cyclus geduldig uit.</string>
+    <string name="card_10_feelings_up">Optimistisch over veranderingen; het gevoel dat het lot zich ontvouwt zoals het hoort.</string>
+    <string name="card_10_feelings_rev">Je overgeleverd voelen aan het lot; frustratie over omstandigheden buiten je controle.</string>
+    <string name="card_10_actions_up">Omarm verandering en ga met de stroom mee; grijp de kansen die het lot je biedt.</string>
+    <string name="card_10_actions_rev">Doorbreek negatieve cycli; neem verantwoordelijkheid in plaats van het lot de schuld te geven.</string>
+
+    <!-- Card 11: Justice -->
+    <string name="card_11_love_up">Eerlijkheid en oprechtheid versterken je relatie; wederzijdse verantwoordelijkheid bouwt vertrouwen op.</string>
+    <string name="card_11_love_rev">Oneerlijkheid of oneerlijke behandeling in een relatie; onopgeloste grieven veroorzaken wrok.</string>
+    <string name="card_11_career_up">Eerlijke uitkomsten in professionele zaken; juridische beslissingen of contracten vallen in je voordeel.</string>
+    <string name="card_11_career_rev">Onrechtvaardigheid of oneerlijke behandeling op de werkplek; juridische complicaties kunnen ontstaan.</string>
+    <string name="card_11_finances_up">Financiële rechtvaardigheid zegeviert; juridische of contractuele zaken worden gunstig opgelost.</string>
+    <string name="card_11_finances_rev">Oneerlijke financiële uitkomsten; geschillen over geld of oneerlijke financiële transacties.</string>
+    <string name="card_11_feelings_up">Een sterk gevoel van morele helderheid; het gevoel dat waarheid en rechtvaardigheid zullen zegevieren.</string>
+    <string name="card_11_feelings_rev">Je onrecht aangedaan of oneerlijk behandeld voelen; innerlijk conflict over goed en kwaad.</string>
+    <string name="card_11_actions_up">Handel met integriteit en houd jezelf verantwoordelijk; zoek de waarheid in alle zaken.</string>
+    <string name="card_11_actions_rev">Onderzoek je eigen vooroordelen; corrigeer elke oneerlijkheid of onrechtvaardigheid in je handelen.</string>
+
+    <!-- Card 12: The Hanged Man -->
+    <string name="card_12_love_up">Geef de controle in de liefde over en bekijk je relatie vanuit een volledig nieuw perspectief.</string>
+    <string name="card_12_love_rev">Weigeren om een stagnerende relatie los te laten; de martelaar spelen in de liefde.</string>
+    <string name="card_12_career_up">Een productieve pauze in je carrière; een stap terug onthult nieuwe professionele inzichten.</string>
+    <string name="card_12_career_rev">Carrièrestagnatie door besluiteloosheid; weerstand tegen noodzakelijke veranderingen houdt je tegen.</string>
+    <string name="card_12_finances_up">Een tijdelijk financieel offer leidt tot grotere beloningen; geduld is essentieel.</string>
+    <string name="card_12_finances_rev">Financiële stilstand; weigeren om je geldstrategie aan te passen ondanks veranderende omstandigheden.</string>
+    <string name="card_12_feelings_up">Een kalme acceptatie van onzekerheid; vrede vinden in overgave aan wat is.</string>
+    <string name="card_12_feelings_rev">Je vastzittend en gefrustreerd voelen; niet in staat om vooruit te gaan of los te laten.</string>
+    <string name="card_12_actions_up">Laat de controle los en sta jezelf toe de situatie vanuit een andere hoek te zien.</string>
+    <string name="card_12_actions_rev">Stop met het uitstellen van beslissingen; laat het martelaarschap los en onderneem actie.</string>
+
+    <!-- Card 13: Death -->
+    <string name="card_13_love_up">Een ingrijpende transformatie van je liefdesleven; een oude relatie eindigt zodat iets nieuws kan beginnen.</string>
+    <string name="card_13_love_rev">Vastklampen aan een stervende relatie uit angst; weerstand tegen de onvermijdelijke veranderingen in de liefde.</string>
+    <string name="card_13_career_up">Een belangrijke carrièretransformatie; de ene deur sluit terwijl een betere opengaat.</string>
+    <string name="card_13_career_rev">Weerstand tegen noodzakelijke carrièreveranderingen; blijven in een doodlopende baan uit angst.</string>
+    <string name="card_13_finances_up">Financiële transformatie; oude inkomstenbronnen verdwijnen maar nieuwe, betere ontstaan.</string>
+    <string name="card_13_finances_rev">Vastklampen aan verouderde financiële strategieën; stagnatie belemmert financiële groei.</string>
+    <string name="card_13_feelings_up">Accepteren dat eindes noodzakelijk zijn voor groei; je bevrijd voelen door het loslaten.</string>
+    <string name="card_13_feelings_rev">Diepe angst voor verandering; emotionele stagnatie door weigering het verleden los te laten.</string>
+    <string name="card_13_actions_up">Omarm het einde en vertrouw erop dat transformatie vernieuwing zal brengen.</string>
+    <string name="card_13_actions_rev">Stop met je te verzetten tegen verandering; waar je je aan vastklampt, is al verdwenen.</string>
+
+    <!-- Card 14: Temperance -->
+    <string name="card_14_love_up">Harmonieuze en evenwichtige liefde; geduld en compromis creëren een diep vervullende relatie.</string>
+    <string name="card_14_love_rev">Onevenwichtigheid in de relatie; de ene partner geeft te veel terwijl de andere buitensporig neemt.</string>
+    <string name="card_14_career_up">Een evenwichtige benadering van werk brengt gestage vooruitgang; geduld levert professionele beloningen op.</string>
+    <string name="card_14_career_rev">Onbalans tussen werk en privé veroorzaakt burn-out; ongeduld saboteert langetermijncarrièredoelen.</string>
+    <string name="card_14_finances_up">Evenwichtig financieel beheer en gematigde uitgaven leiden tot duurzame welvaart.</string>
+    <string name="card_14_finances_rev">Financiële buitensporigheid of extreme zuinigheid creëert problemen; zoek de gulden middenweg.</string>
+    <string name="card_14_feelings_up">Innerlijke vrede en emotioneel evenwicht; je gecentreerd en harmonieus voelen van binnen.</string>
+    <string name="card_14_feelings_rev">Emotionele turbulentie en innerlijke onenigheid; moeite om evenwicht te vinden.</string>
+    <string name="card_14_actions_up">Zoek balans en matiging in alle dingen; oefen geduld bij het samenvoegen van tegengestelde krachten.</string>
+    <string name="card_14_actions_rev">Pak gebieden van buitensporigheid aan; herstel het evenwicht voordat de situatie onhoudbaar wordt.</string>
+
+    <!-- Card 15: The Devil -->
+    <string name="card_15_love_up">Een intense maar mogelijk toxische gehechtheid; passie doordrenkt met ongezonde patronen.</string>
+    <string name="card_15_love_rev">Losbreken uit een toxische relatie; je kracht en onafhankelijkheid terugwinnen.</string>
+    <string name="card_15_career_up">Je gevangen voelen in een zielvernietigend werk; materialisme of ambitie ketent je aan ontevredenheid.</string>
+    <string name="card_15_career_rev">Jezelf bevrijden van een toxische werkplek; verslavingen gerelateerd aan je carrière doorbreken.</string>
+    <string name="card_15_finances_up">Materialisme en hebzucht domineren financiële beslissingen; schulden of financiële slavernij dreigt.</string>
+    <string name="card_15_finances_rev">Losbreken van financiële lasten; controle nemen over schulden en ongezonde geldgewoonten.</string>
+    <string name="card_15_feelings_up">Je gevangen voelen door verlangens of verslavingen; schaduwkanten van jezelf eisen aandacht.</string>
+    <string name="card_15_feelings_rev">Een krachtig gevoel van bevrijding; het confronteren van je schaduwen brengt emotionele vrijheid.</string>
+    <string name="card_15_actions_up">Onderzoek wat je in slavernij houdt; bewustwording is de eerste stap naar vrijheid.</string>
+    <string name="card_15_actions_rev">Verbreek de ketenen die je binden; win je kracht terug van verslavingen of toxische patronen.</string>
+
+    <!-- Card 16: The Tower -->
+    <string name="card_16_love_up">Een plotselinge omwenteling verbrijzelt illusies in de liefde; pijnlijke onthullingen brengen uiteindelijk de waarheid.</string>
+    <string name="card_16_love_rev">Een noodzakelijke breuk of confrontatie vermijden; de waarheid zal uiteindelijk toch boven water komen.</string>
+    <string name="card_16_career_up">Plotselinge carrièreverstoring zoals ontslag of het instorten van een project; herbouw vanuit het puin.</string>
+    <string name="card_16_career_rev">Een dreigende carrièreramp voelen maar weigeren te handelen; het onvermijdelijke uitstellen.</string>
+    <string name="card_16_finances_up">Plotselinge financiële schok of verlies; structuren waarop je vertrouwde storten onverwacht in.</string>
+    <string name="card_16_finances_rev">Ternauwernood een financiële ramp ontwijken; een waarschuwing om je financiële fundamenten te versterken.</string>
+    <string name="card_16_feelings_up">Schok en desoriëntatie; de grond is onder je voeten weggetrokken.</string>
+    <string name="card_16_feelings_rev">Angst voor een naderende omwenteling; ongerustheid over een ramp die je voelt maar niet kunt voorkomen.</string>
+    <string name="card_16_actions_up">Accepteer de verwoesting en bereid je voor om te herbouwen op een sterker en eerlijker fundament.</string>
+    <string name="card_16_actions_rev">Pak de scheuren aan voordat het hele bouwwerk instort; negeer de waarschuwingssignalen niet.</string>
+
+    <!-- Card 17: The Star -->
+    <string name="card_17_love_up">Hernieuwde hoop en inspiratie in de liefde; een serene en spiritueel vervullende verbinding.</string>
+    <string name="card_17_love_rev">Het geloof in de liefde verliezen; wanhoop en hopeloosheid doven de vonk in je romantische leven.</string>
+    <string name="card_17_career_up">Geïnspireerde visie voor je carrière; hernieuwde hoop na een moeilijke professionele periode.</string>
+    <string name="card_17_career_rev">Carrièredesillusie; het geloof verliezen in je professionele pad of creatieve visie.</string>
+    <string name="card_17_finances_up">Financieel herstel en hernieuwd optimisme; vrijgevigheid en geloof trekken overvloed aan.</string>
+    <string name="card_17_finances_rev">Financiële wanhoop; hoop verliezen over je geldsituatie vertroebelt je oordeelsvermogen.</string>
+    <string name="card_17_feelings_up">Je diep hoopvol en vredig voelen; een stil innerlijk weten dat alles goed komt.</string>
+    <string name="card_17_feelings_rev">Je afgesneden voelen van hoop; wanhoop nestelt zich waar ooit geloof huisde.</string>
+    <string name="card_17_actions_up">Houd vast aan hoop en laat je innerlijk licht je leiden naar genezing en vernieuwing.</string>
+    <string name="card_17_actions_rev">Herverbind met bronnen van inspiratie; zoek hulp om je gevoel van hoop te herstellen.</string>
+
+    <!-- Card 18: The Moon -->
+    <string name="card_18_love_up">Verwarring en illusies verhullen je liefdesleven; de dingen zijn niet wat ze lijken in de romantiek.</string>
+    <string name="card_18_love_rev">Helderheid ontstaat in de liefde; bedrog wordt onthuld en angsten worden overwonnen.</string>
+    <string name="card_18_career_up">Verwarring en onzekerheid op de werkplek; pas op voor bedrog of onduidelijke communicatie.</string>
+    <string name="card_18_career_rev">Helderheid keert terug in je carrière; misverstanden worden opgelost en het pad vooruit wordt duidelijk.</string>
+    <string name="card_18_finances_up">Financiële verwarring of misleidende deals; vertrouw niet alles wat op het eerste gezicht waar lijkt.</string>
+    <string name="card_18_finances_rev">Financiële helderheid na een periode van verwarring; verborgen informatie komt aan het licht.</string>
+    <string name="card_18_feelings_up">Angst en vrees grijpen je vast; je onderbewustzijn projecteert zorgen die misschien geen basis hebben in de werkelijkheid.</string>
+    <string name="card_18_feelings_rev">Angsten lossen op wanneer de waarheid wordt onthuld; emotionele helderheid vervangt verwarring.</string>
+    <string name="card_18_actions_up">Ga voorzichtig te werk; niet alles is wat het lijkt, vertrouw dus op je diepere instincten.</string>
+    <string name="card_18_actions_rev">Kijk je angsten recht in de ogen; de waarheid is minder beangstigend dan je verbeelding suggereert.</string>
+
+    <!-- Card 19: The Sun -->
+    <string name="card_19_love_up">Stralende vreugde en geluk in de liefde; je relatie is gezegend met warmte en vitaliteit.</string>
+    <string name="card_19_love_rev">Tijdelijke wolken dempen de vreugde in je relatie; geluk lijkt net buiten bereik.</string>
+    <string name="card_19_career_up">Carrièresucces en erkenning schijnen helder; je talenten worden gevierd en beloond.</string>
+    <string name="card_19_career_rev">Carrièretegenslagen temperen je enthousiasme; succes is uitgesteld maar niet ontzegd.</string>
+    <string name="card_19_finances_up">Financiële voorspoed en overvloed; een periode van succes en viering op geldgebied.</string>
+    <string name="card_19_finances_rev">Kleine financiële tegenslagen; te veel uitgeven in goede tijden kan je inhalen.</string>
+    <string name="card_19_feelings_up">Pure vreugde en optimisme; je stralend levend en dankbaar voelen voor de zegeningen van het leven.</string>
+    <string name="card_19_feelings_rev">Moeite om oprecht geluk te voelen; iets blokkeert je vermogen om volop van het leven te genieten.</string>
+    <string name="card_19_actions_up">Vier je successen en laat je positieve energie anderen om je heen inspireren.</string>
+    <string name="card_19_actions_rev">Zoek uit wat je vreugde blokkeert; laat tijdelijke tegenslagen niet je kijk op de wereld bepalen.</string>
+
+    <!-- Card 20: Judgement -->
+    <string name="card_20_love_up">Een diepgaand ontwaken in de liefde; eerdere relaties genezen en je beantwoordt een hogere roeping.</string>
+    <string name="card_20_love_rev">Streng zelfoordeel weerhoudt je ervan je hart te openen; onverwerkte schuld achtervolgt de liefde.</string>
+    <string name="card_20_career_up">Een professionele roeping ontwaakt in je; het is tijd om je ware beroepsdoel te beantwoorden.</string>
+    <string name="card_20_career_rev">Weigeren om naar je professionele roeping te luisteren; zelftwijfel verhindert carrièretransformatie.</string>
+    <string name="card_20_finances_up">Een financiële afrekening leidt tot een positieve wedergeboorte; fouten uit het verleden worden vergeven en gecorrigeerd.</string>
+    <string name="card_20_finances_rev">Weigeren om te leren van financiële fouten uit het verleden; streng zelfoordeel over geld.</string>
+    <string name="card_20_feelings_up">Een diep gevoel van ontwaken en doel; je geroepen voelen tot een hogere versie van jezelf.</string>
+    <string name="card_20_feelings_rev">Verlamd door zelfkritiek; niet in staat jezelf te vergeven en verder te gaan.</string>
+    <string name="card_20_actions_up">Beantwoord de oproep tot transformatie; reflecteer eerlijk en verhef je tot je hoogste potentieel.</string>
+    <string name="card_20_actions_rev">Laat streng zelfoordeel los; vergeef je fouten uit het verleden en gun jezelf een nieuwe start.</string>
+
+    <!-- Card 21: The World -->
+    <string name="card_21_love_up">Een diep vervullende en complete liefde; de relatie bereikt een prachtige mijlpaal.</string>
+    <string name="card_21_love_rev">Een gevoel van onvolledigheid in de liefde; een relatie mist de heelheid waarnaar je verlangt.</string>
+    <string name="card_21_career_up">Grote carrièreprestatie en voltooiing van een belangrijk project; je bent aangekomen op je bestemming.</string>
+    <string name="card_21_career_rev">Een project blijft onafgemaakt; sluiproutes nemen verhindert echte professionele vervulling.</string>
+    <string name="card_21_finances_up">Financiële doelen zijn bereikt; een cyclus van welvaart bereikt zijn bevredigende afsluiting.</string>
+    <string name="card_21_finances_rev">Financiële doelen blijven net buiten bereik; vertragingen en losse eindjes verhinderen voltooiing.</string>
+    <string name="card_21_feelings_up">Een diep gevoel van heelheid en vervulling; je één voelen met de wereld om je heen.</string>
+    <string name="card_21_feelings_rev">Je onvolledig voelen ondanks prestaties; iets wezenlijks ontbreekt nog steeds.</string>
+    <string name="card_21_actions_up">Vier je prestaties en bereid je voor op de volgende cyclus van groei.</string>
+    <string name="card_21_actions_rev">Maak onafgemaakte zaken af voordat je verdergaat; neem geen sluiproutes naar voltooiing.</string>
+</resources>

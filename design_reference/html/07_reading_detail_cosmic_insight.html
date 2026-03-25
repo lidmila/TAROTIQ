@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Celestial Archive - Reading Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#6349c0",
+              "on-primary": "#330b91",
+              "surface-tint": "#cbbeff",
+              "surface-container": "#211e28",
+              "secondary-container": "#af8d11",
+              "on-secondary-fixed-variant": "#574500",
+              "surface-container-highest": "#36333e",
+              "on-primary-container": "#927af3",
+              "surface-bright": "#3b3842",
+              "surface-dim": "#14121b",
+              "on-tertiary-container": "#8c8d8d",
+              "on-primary-fixed-variant": "#4a2ea7",
+              "surface-container-high": "#2b2933",
+              "surface-variant": "#36333e",
+              "tertiary": "#c6c6c6",
+              "on-surface-variant": "#cbc4d0",
+              "outline": "#948e99",
+              "on-secondary": "#3c2f00",
+              "on-error": "#690005",
+              "on-secondary-container": "#342800",
+              "inverse-on-surface": "#322f39",
+              "secondary": "#e9c349",
+              "primary": "#cbbeff",
+              "on-tertiary": "#2f3131",
+              "inverse-surface": "#e6e0ee",
+              "secondary-fixed": "#ffe088",
+              "on-background": "#e6e0ee",
+              "error-container": "#93000a",
+              "tertiary-fixed": "#e3e2e2",
+              "on-primary-fixed": "#1e0061",
+              "on-secondary-fixed": "#241a00",
+              "surface-container-low": "#1c1a24",
+              "tertiary-container": "#242626",
+              "on-tertiary-fixed": "#1a1c1c",
+              "primary-fixed": "#e7deff",
+              "secondary-fixed-dim": "#e9c349",
+              "on-tertiary-fixed-variant": "#464747",
+              "primary-fixed-dim": "#cbbeff",
+              "primary-container": "#28007b",
+              "error": "#ffb4ab",
+              "on-error-container": "#ffdad6",
+              "outline-variant": "#49454e",
+              "on-surface": "#e6e0ee",
+              "tertiary-fixed-dim": "#c6c6c6",
+              "surface": "#14121b",
+              "surface-container-lowest": "#0f0d16",
+              "background": "#14121b"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            animation: {
+              'breathe': 'breathe 4s ease-in-out infinite',
+              'shimmer': 'shimmer 3s linear infinite',
+              'twinkle': 'twinkle 5s ease-in-out infinite',
+            },
+            keyframes: {
+              breathe: {
+                '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 20px rgba(203,190,255,0.2)' },
+                '50%': { transform: 'scale(1.03)', boxShadow: '0 0 35px rgba(203,190,255,0.5)' },
+              },
+              shimmer: {
+                '0%': { backgroundPosition: '-200% center' },
+                '100%': { backgroundPosition: '200% center' },
+              },
+              twinkle: {
+                '0%, 100%': { opacity: 0.3 },
+                '50%': { opacity: 1 },
+              }
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0b090f;
+            color: #e6e0ee;
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background-image: radial-gradient(circle at 50% 50%, #1a1425 0%, #0b090f 100%);
+        }
+        .serif-text {
+            font-family: 'Noto Serif', serif;
+        }
+        .nebula-gradient {
+            background: radial-gradient(circle at center, rgba(99, 73, 192, 0.15) 0%, transparent 70%);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(90deg, #b8860b, #e9c349, #fff7d1, #e9c349, #b8860b);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 6s linear infinite;
+        }
+        .card-glow {
+            box-shadow: 0 0 15px rgba(233, 195, 73, 0.2), inset 0 0 10px rgba(233, 195, 73, 0.1);
+            border: 1px solid rgba(233, 195, 73, 0.3);
+        }
+        .card-glow-intense {
+            box-shadow: 0 0 25px rgba(233, 195, 73, 0.4), inset 0 0 15px rgba(233, 195, 73, 0.2);
+            border: 1px solid rgba(233, 195, 73, 0.5);
+        }
+        .deep-space-bg {
+            background: radial-gradient(circle at top, #1c152e 0%, #0b090f 100%);
+        }
+        .stars-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- Deep Space Background Effect -->
+<div class="stars-container opacity-40">
+<div class="absolute w-1 h-1 bg-white rounded-full top-1/4 left-1/4 animate-twinkle"></div>
+<div class="absolute w-1 h-1 bg-white rounded-full top-1/3 left-2/3 animate-twinkle" style="animation-delay: 1s"></div>
+<div class="absolute w-0.5 h-0.5 bg-primary rounded-full top-2/3 left-1/5 animate-twinkle" style="animation-delay: 2s"></div>
+<div class="absolute w-1 h-1 bg-secondary rounded-full top-3/4 left-3/4 animate-twinkle" style="animation-delay: 3s"></div>
+<div class="absolute w-0.5 h-0.5 bg-white rounded-full top-1/2 left-1/2 animate-twinkle" style="animation-delay: 1.5s"></div>
+</div>
+<!-- Top Navigation -->
+<header class="bg-[#0b090f]/80 backdrop-blur-md flex justify-between items-center w-full px-6 py-4 fixed top-0 z-50">
+<div class="flex items-center gap-4">
+<button class="text-[#cbbeff] scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Noto_Serif'] font-light tracking-wide text-[#cbbeff]">Reading Detail</h1>
+</div>
+<div class="text-2xl font-serif italic gold-gradient-text">Celestial Archive</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#cbbeff] animate-pulse" data-icon="auto_awesome">auto_awesome</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-high border border-outline-variant/20 overflow-hidden ring-1 ring-primary/20">
+<img class="w-full h-full object-cover" data-alt="User spiritual profile avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0B7RW-uk-tOCc9pd4GqfNKzaU224Qubl3jukBv-C4dW6m5amLvrDkbIzCXadiYU9MY_EQFSwUnIiqr9jNSVYgd0s32ZRtCk5aLKdDhEVtT_UBFPHZE9xtYkFpu1q_0yKdbBlZSMbSZ4SMRRb9YBwsl64Qzi5_SjQCHcHFGwosU3zmFjWwOLz9PPyWYf8e7geH4KxjGte5EU_VPabbSK4PjnT_40XDJovAsV_2De33HdNM2QuIASz2QYxAzgRZflpz5aq9JbFvka8"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-4xl mx-auto relative">
+<!-- Card Display Section -->
+<section class="relative py-12 mb-8 overflow-hidden">
+<div class="absolute inset-0 nebula-gradient opacity-40 pointer-events-none rounded-[3rem]"></div>
+<div class="relative z-10 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4">
+<!-- Past Card -->
+<div class="flex flex-col items-center gap-4 group">
+<div class="w-40 h-64 rounded-xl overflow-hidden card-glow transition-all duration-500 group-hover:scale-105 group-hover:card-glow-intense">
+<img class="w-full h-full object-cover" data-alt="Tarot card representing the High Priestess" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLpQWEY3GwXYw_9erbjjJro_HGPx0F1C47L0W3EHVIZi_xn7cY0R_A-zIED1q0I5H_L5gv3SKHWIp357bIqVW7Mazr04CxQ1k0t-8OgaWqhlXsufZeOKStIQ5nm1CO3GD7jSpjJUg40D3q7bpl9BWTOQYxIx92c8o4rbMWooHpmo_m_WX8tdcte-wwjtyv9ZgxAH6XV1GqdGP_-AlPRiNAVsMMWLDa5WphubHAFyBUyf7gh2JtKDNyOXEelCFLaBJow94k1jSECXA"/>
+</div>
+<span class="font-label text-sm uppercase tracking-widest text-secondary/70">Past</span>
+</div>
+<!-- Present Card -->
+<div class="flex flex-col items-center gap-4 group z-20">
+<div class="w-48 h-72 rounded-xl overflow-hidden card-glow-intense transition-all duration-500 group-hover:scale-110 shadow-[0_0_40px_rgba(233,195,73,0.2)]">
+<img class="w-full h-full object-cover" data-alt="Tarot card representing the Tower" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4bVpFjFO1aQCGB6ijorMPdFWHK3fYsWArg_kC5ia1ttkvbLcSlFY2dEuTAR-XRdMrfF2v37-qccZOyPYjsxK2qnCjVWyCeG599vlwY-A03WDejsN1nPbA3XFM04FoWChU7a-uQTPKMydiwfa3br7WDUmQxw1wnDQ-p7m5zk5eq2ggORlLzyktCoYupGBs9nlSAVRG_HW6-EMXldY4vQ0ADAojInSqavaWyYZCNcqgQz0FJhFnw4Oc87FWxFVNdzWmQR1mNB_2qxs"/>
+</div>
+<span class="font-label text-sm uppercase tracking-widest gold-gradient-text font-bold">Present</span>
+</div>
+<!-- Future Card -->
+<div class="flex flex-col items-center gap-4 group">
+<div class="w-40 h-64 rounded-xl overflow-hidden card-glow transition-all duration-500 group-hover:scale-105 group-hover:card-glow-intense">
+<img class="w-full h-full object-cover" data-alt="Tarot card representing the Star" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1XRYOlw7lTOkvHvyB6f37LjPIMRVgnldSUl7dsr9TWmAUnaCDnCgJFmasvIA_h2BOUVqZIzBZQDJ7A7L1QjfZJYUEt_zEGbH6V7U3PtXYqpclu17hdMGqSwlndQhvfHNjWOJluEsOTysR2uyK2Cjj-1eloiyYzRPNwQLlXdxU8otA7TwCOBoRuI3rUu9QNQLEoLhRny5jLZggRebhfzpNlQQFSiYN9FK-6oNuP2HVvfkjj4tXMWLRTgk15Eo_Hpu7E2zil6x396M"/>
+</div>
+<span class="font-label text-sm uppercase tracking-widest text-secondary/70">Future</span>
+</div>
+</div>
+</section>
+<!-- Interpretations -->
+<div class="space-y-12">
+<!-- Past Section -->
+<article class="bg-surface-container-low/40 backdrop-blur-sm p-8 rounded-2xl relative overflow-hidden border border-white/5">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary/20"></div>
+<div class="flex items-start gap-6">
+<div class="hidden sm:block">
+<span class="serif-text text-5xl italic opacity-10 text-secondary">I</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label text-xs font-bold text-secondary uppercase tracking-[0.2em]">The Foundation</span>
+<div class="h-[1px] flex-1 bg-outline-variant/15"></div>
+</div>
+<h2 class="serif-text text-3xl font-light mb-6 gold-gradient-text">Past: The High Priestess</h2>
+<div class="serif-text text-lg leading-relaxed text-on-surface/80 space-y-4">
+<p>You have recently emerged from a period of deep introspection. The High Priestess indicates that your intuition was your primary guide through a phase of hidden truths and spiritual awakening. The silence you maintained allowed you to hear the subtle whispers of the universe.</p>
+<p>This card suggests that the seeds of your current situation were sown in the subconscious realm, where you learned to trust the unseen over the visible world.</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Present Section -->
+<article class="bg-surface-container-low/60 backdrop-blur-md p-8 rounded-2xl relative overflow-hidden border border-secondary/10 shadow-[0_0_30px_rgba(233,195,73,0.05)]">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-secondary to-transparent"></div>
+<div class="flex items-start gap-6">
+<div class="hidden sm:block">
+<span class="serif-text text-5xl italic opacity-10 text-secondary">II</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label text-xs font-bold text-secondary uppercase tracking-[0.2em]">Current Energy</span>
+<div class="h-[1px] flex-1 bg-outline-variant/30"></div>
+</div>
+<h2 class="serif-text text-4xl font-light mb-6 gold-gradient-text tracking-tight">Present: The Tower</h2>
+<div class="serif-text text-lg leading-relaxed text-on-surface/90 space-y-4">
+<p>Current circumstances are characterized by sudden change and the shedding of old structures. While the Tower can feel unsettling, it is a necessary cosmic clearing. The foundations that were no longer serving your highest purpose are being dismantled to make room for absolute truth.</p>
+<p>Embrace the upheaval; it is a profound liberation disguised as chaos. You are being forced to stand in your rawest, most authentic form.</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Future Section -->
+<article class="bg-surface-container-low/40 backdrop-blur-sm p-8 rounded-2xl relative overflow-hidden border border-white/5">
+<div class="absolute top-0 left-0 w-1 h-full bg-secondary/20"></div>
+<div class="flex items-start gap-6">
+<div class="hidden sm:block">
+<span class="serif-text text-5xl italic opacity-10 text-secondary">III</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-label text-xs font-bold text-secondary uppercase tracking-[0.2em]">The Path Ahead</span>
+<div class="h-[1px] flex-1 bg-outline-variant/15"></div>
+</div>
+<h2 class="serif-text text-3xl font-light mb-6 gold-gradient-text">Future: The Star</h2>
+<div class="serif-text text-lg leading-relaxed text-on-surface/80 space-y-4">
+<p>After the storm of the Tower, calm and renewal await. The Star represents a period of hope, healing, and spiritual rejuvenation. You will find yourself guided by a clear sense of purpose and a renewed faith in the universe's plan for you.</p>
+<p>Expect a creative flowering and a deep sense of peace. The universe is pouring its blessings upon you, illuminating your path with gentle, celestial light.</p>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Action Button -->
+<div class="mt-20 flex justify-center pb-12">
+<button class="group relative px-12 py-5 overflow-hidden rounded-full bg-gradient-to-r from-primary via-inverse-primary to-primary bg-[length:200%_auto] text-on-primary animate-breathe transition-all duration-500 hover:scale-105 active:scale-95">
+<div class="relative z-10 flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl" data-icon="history_edu">history_edu</span>
+<span class="font-label font-bold tracking-[0.15em] text-sm uppercase">Save to Journal</span>
+</div>
+<div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</button>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#0b090f]/70 backdrop-blur-2xl rounded-t-[2.5rem] border-t border-white/5">
+<a class="flex flex-col items-center justify-center text-outline/60 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="auto_mirrored_reveal_auto">rotate_auto</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-[0.15em] mt-1 font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-secondary font-bold scale-110 drop-shadow-[0_0_8px_rgba(233,195,73,0.3)]" href="#">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-[0.15em] mt-1">Spreads</span>
+</a>
+<a class="flex flex-col items-center justify-center text-outline/60 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-[0.15em] mt-1 font-semibold">Journal</span>
+</a>
+</nav>
+</body></html>

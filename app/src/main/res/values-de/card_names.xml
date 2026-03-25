@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Major Arcana -->
+    <string name="card_the_fool">Der Narr</string>
+    <string name="card_the_magician">Der Magier</string>
+    <string name="card_the_high_priestess">Die Hohepriesterin</string>
+    <string name="card_the_empress">Die Herrscherin</string>
+    <string name="card_the_emperor">Der Herrscher</string>
+    <string name="card_the_hierophant">Der Hierophant</string>
+    <string name="card_the_lovers">Die Liebenden</string>
+    <string name="card_the_chariot">Der Wagen</string>
+    <string name="card_strength">Die Kraft</string>
+    <string name="card_the_hermit">Der Eremit</string>
+    <string name="card_wheel_of_fortune">Rad des Schicksals</string>
+    <string name="card_justice">Die Gerechtigkeit</string>
+    <string name="card_the_hanged_man">Der Gehängte</string>
+    <string name="card_death">Der Tod</string>
+    <string name="card_temperance">Die Mäßigkeit</string>
+    <string name="card_the_devil">Der Teufel</string>
+    <string name="card_the_tower">Der Turm</string>
+    <string name="card_the_star">Der Stern</string>
+    <string name="card_the_moon">Der Mond</string>
+    <string name="card_the_sun">Die Sonne</string>
+    <string name="card_judgement">Das Gericht</string>
+    <string name="card_the_world">Die Welt</string>
+
+    <!-- Cups -->
+    <string name="card_ace_of_cups">Ass der Kelche</string>
+    <string name="card_two_of_cups">Zwei der Kelche</string>
+    <string name="card_three_of_cups">Drei der Kelche</string>
+    <string name="card_four_of_cups">Vier der Kelche</string>
+    <string name="card_five_of_cups">Fünf der Kelche</string>
+    <string name="card_six_of_cups">Sechs der Kelche</string>
+    <string name="card_seven_of_cups">Sieben der Kelche</string>
+    <string name="card_eight_of_cups">Acht der Kelche</string>
+    <string name="card_nine_of_cups">Neun der Kelche</string>
+    <string name="card_ten_of_cups">Zehn der Kelche</string>
+    <string name="card_page_of_cups">Bube der Kelche</string>
+    <string name="card_knight_of_cups">Ritter der Kelche</string>
+    <string name="card_queen_of_cups">Königin der Kelche</string>
+    <string name="card_king_of_cups">König der Kelche</string>
+
+    <!-- Pentacles -->
+    <string name="card_ace_of_pentacles">Ass der Münzen</string>
+    <string name="card_two_of_pentacles">Zwei der Münzen</string>
+    <string name="card_three_of_pentacles">Drei der Münzen</string>
+    <string name="card_four_of_pentacles">Vier der Münzen</string>
+    <string name="card_five_of_pentacles">Fünf der Münzen</string>
+    <string name="card_six_of_pentacles">Sechs der Münzen</string>
+    <string name="card_seven_of_pentacles">Sieben der Münzen</string>
+    <string name="card_eight_of_pentacles">Acht der Münzen</string>
+    <string name="card_nine_of_pentacles">Neun der Münzen</string>
+    <string name="card_ten_of_pentacles">Zehn der Münzen</string>
+    <string name="card_page_of_pentacles">Bube der Münzen</string>
+    <string name="card_knight_of_pentacles">Ritter der Münzen</string>
+    <string name="card_queen_of_pentacles">Königin der Münzen</string>
+    <string name="card_king_of_pentacles">König der Münzen</string>
+
+    <!-- Swords -->
+    <string name="card_ace_of_swords">Ass der Schwerter</string>
+    <string name="card_two_of_swords">Zwei der Schwerter</string>
+    <string name="card_three_of_swords">Drei der Schwerter</string>
+    <string name="card_four_of_swords">Vier der Schwerter</string>
+    <string name="card_five_of_swords">Fünf der Schwerter</string>
+    <string name="card_six_of_swords">Sechs der Schwerter</string>
+    <string name="card_seven_of_swords">Sieben der Schwerter</string>
+    <string name="card_eight_of_swords">Acht der Schwerter</string>
+    <string name="card_nine_of_swords">Neun der Schwerter</string>
+    <string name="card_ten_of_swords">Zehn der Schwerter</string>
+    <string name="card_page_of_swords">Bube der Schwerter</string>
+    <string name="card_knight_of_swords">Ritter der Schwerter</string>
+    <string name="card_queen_of_swords">Königin der Schwerter</string>
+    <string name="card_king_of_swords">König der Schwerter</string>
+
+    <!-- Wands -->
+    <string name="card_ace_of_wands">Ass der Stäbe</string>
+    <string name="card_two_of_wands">Zwei der Stäbe</string>
+    <string name="card_three_of_wands">Drei der Stäbe</string>
+    <string name="card_four_of_wands">Vier der Stäbe</string>
+    <string name="card_five_of_wands">Fünf der Stäbe</string>
+    <string name="card_six_of_wands">Sechs der Stäbe</string>
+    <string name="card_seven_of_wands">Sieben der Stäbe</string>
+    <string name="card_eight_of_wands">Acht der Stäbe</string>
+    <string name="card_nine_of_wands">Neun der Stäbe</string>
+    <string name="card_ten_of_wands">Zehn der Stäbe</string>
+    <string name="card_page_of_wands">Bube der Stäbe</string>
+    <string name="card_knight_of_wands">Ritter der Stäbe</string>
+    <string name="card_queen_of_wands">Königin der Stäbe</string>
+    <string name="card_king_of_wands">König der Stäbe</string>
+</resources>

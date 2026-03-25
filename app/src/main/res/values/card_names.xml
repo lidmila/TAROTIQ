@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Major Arcana -->
+    <string name="card_the_fool">Blázen</string>
+    <string name="card_the_magician">Mág</string>
+    <string name="card_the_high_priestess">Velekněžka</string>
+    <string name="card_the_empress">Císařovna</string>
+    <string name="card_the_emperor">Císař</string>
+    <string name="card_the_hierophant">Velekněz</string>
+    <string name="card_the_lovers">Milenci</string>
+    <string name="card_the_chariot">Vůz</string>
+    <string name="card_strength">Síla</string>
+    <string name="card_the_hermit">Poustevník</string>
+    <string name="card_wheel_of_fortune">Kolo štěstí</string>
+    <string name="card_justice">Spravedlnost</string>
+    <string name="card_the_hanged_man">Viselec</string>
+    <string name="card_death">Smrt</string>
+    <string name="card_temperance">Mírnost</string>
+    <string name="card_the_devil">Ďábel</string>
+    <string name="card_the_tower">Věž</string>
+    <string name="card_the_star">Hvězda</string>
+    <string name="card_the_moon">Měsíc</string>
+    <string name="card_the_sun">Slunce</string>
+    <string name="card_judgement">Soud</string>
+    <string name="card_the_world">Svět</string>
+
+    <!-- Cups -->
+    <string name="card_ace_of_cups">Eso pohárů</string>
+    <string name="card_two_of_cups">Dvojka pohárů</string>
+    <string name="card_three_of_cups">Trojka pohárů</string>
+    <string name="card_four_of_cups">Čtyřka pohárů</string>
+    <string name="card_five_of_cups">Pětka pohárů</string>
+    <string name="card_six_of_cups">Šestka pohárů</string>
+    <string name="card_seven_of_cups">Sedmička pohárů</string>
+    <string name="card_eight_of_cups">Osmička pohárů</string>
+    <string name="card_nine_of_cups">Devítka pohárů</string>
+    <string name="card_ten_of_cups">Desítka pohárů</string>
+    <string name="card_page_of_cups">Páže pohárů</string>
+    <string name="card_knight_of_cups">Rytíř pohárů</string>
+    <string name="card_queen_of_cups">Královna pohárů</string>
+    <string name="card_king_of_cups">Král pohárů</string>
+
+    <!-- Pentacles -->
+    <string name="card_ace_of_pentacles">Eso pentaklů</string>
+    <string name="card_two_of_pentacles">Dvojka pentaklů</string>
+    <string name="card_three_of_pentacles">Trojka pentaklů</string>
+    <string name="card_four_of_pentacles">Čtyřka pentaklů</string>
+    <string name="card_five_of_pentacles">Pětka pentaklů</string>
+    <string name="card_six_of_pentacles">Šestka pentaklů</string>
+    <string name="card_seven_of_pentacles">Sedmička pentaklů</string>
+    <string name="card_eight_of_pentacles">Osmička pentaklů</string>
+    <string name="card_nine_of_pentacles">Devítka pentaklů</string>
+    <string name="card_ten_of_pentacles">Desítka pentaklů</string>
+    <string name="card_page_of_pentacles">Páže pentaklů</string>
+    <string name="card_knight_of_pentacles">Rytíř pentaklů</string>
+    <string name="card_queen_of_pentacles">Královna pentaklů</string>
+    <string name="card_king_of_pentacles">Král pentaklů</string>
+
+    <!-- Swords -->
+    <string name="card_ace_of_swords">Eso mečů</string>
+    <string name="card_two_of_swords">Dvojka mečů</string>
+    <string name="card_three_of_swords">Trojka mečů</string>
+    <string name="card_four_of_swords">Čtyřka mečů</string>
+    <string name="card_five_of_swords">Pětka mečů</string>
+    <string name="card_six_of_swords">Šestka mečů</string>
+    <string name="card_seven_of_swords">Sedmička mečů</string>
+    <string name="card_eight_of_swords">Osmička mečů</string>
+    <string name="card_nine_of_swords">Devítka mečů</string>
+    <string name="card_ten_of_swords">Desítka mečů</string>
+    <string name="card_page_of_swords">Páže mečů</string>
+    <string name="card_knight_of_swords">Rytíř mečů</string>
+    <string name="card_queen_of_swords">Královna mečů</string>
+    <string name="card_king_of_swords">Král mečů</string>
+
+    <!-- Wands -->
+    <string name="card_ace_of_wands">Eso holí</string>
+    <string name="card_two_of_wands">Dvojka holí</string>
+    <string name="card_three_of_wands">Trojka holí</string>
+    <string name="card_four_of_wands">Čtyřka holí</string>
+    <string name="card_five_of_wands">Pětka holí</string>
+    <string name="card_six_of_wands">Šestka holí</string>
+    <string name="card_seven_of_wands">Sedmička holí</string>
+    <string name="card_eight_of_wands">Osmička holí</string>
+    <string name="card_nine_of_wands">Devítka holí</string>
+    <string name="card_ten_of_wands">Desítka holí</string>
+    <string name="card_page_of_wands">Páže holí</string>
+    <string name="card_knight_of_wands">Rytíř holí</string>
+    <string name="card_queen_of_wands">Královna holí</string>
+    <string name="card_king_of_wands">Král holí</string>
+</resources>

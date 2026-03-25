@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== SWORDS (Meče) ===== -->
+
+    <!-- Card 50: Ace of Swords -->
+    <string name="card_50_love_up">Průlom v porozumění ve vztahu; jasná a upřímná komunikace otevírá nové dveře.</string>
+    <string name="card_50_love_rev">Nedorozumění a zmatek v lásce; tvrdá slova nebo dezinformace poškozují vztah.</string>
+    <string name="card_50_career_up">Skvělý nový nápad nebo mentální průlom v práci; jasnost záměru pohání úspěch.</string>
+    <string name="card_50_career_rev">Zmatek a špatná komunikace v práci; chybný nápad může vést k profesním nezdarům.</string>
+    <string name="card_50_finances_up">Jasné finanční myšlení vede k chytrým rozhodnutím; nová strategie prořezává zmatek.</string>
+    <string name="card_50_finances_rev">Finanční zmatek nebo dezinformace; ukvapená rozhodnutí založená na neúplném porozumění.</string>
+    <string name="card_50_feelings_up">Mentální jasnost a nadšení z průlomu; pravda proniká mlhou.</string>
+    <string name="card_50_feelings_rev">Mentální zmatek a zahlcení; snaha jasně myslet uprostřed chaosu.</string>
+    <string name="card_50_actions_up">Využijte svou mentální jasnost k překonání překážek; mluvte pravdu a sledujte nové myšlenky.</string>
+    <string name="card_50_actions_rev">Hledejte jasnost, než začnete jednat; nepoužívejte svůj intelekt jako zbraň.</string>
+
+    <!-- Card 51: Two of Swords -->
+    <string name="card_51_love_up">Obtížná romantická volba, které se vyhýbáte; emoční pat brání pokroku v lásce.</string>
+    <string name="card_51_love_rev">Konečně se rozhodujete ohledně vztahu; přemíra emocí vás nutí jednat.</string>
+    <string name="card_51_career_up">Kariérní rozhodnutí stojí na mrtvém bodě; odmítání volby mezi dvěma možnostmi paralyzuje pokrok.</string>
+    <string name="card_51_career_rev">Prolamování kariérní nerozhodnosti; zahlcení informacemi ustupuje jasnosti.</string>
+    <string name="card_51_finances_up">Finanční nerozhodnost blokuje váš pokrok; zvažujete dvě možnosti, aniž byste se k jedné zavázali.</string>
+    <string name="card_51_finances_rev">Finanční rozhodnutí je konečně učiněno po období paralýzy; vynořuje se jasnost.</string>
+    <string name="card_51_feelings_up">Pocit uvíznutí mezi dvěma volbami; blokujete své emoce, abyste se vyhnuli těžkému rozhodnutí.</string>
+    <string name="card_51_feelings_rev">Emoční hráz se protrhne; pocity, které jste potlačovali, vyžadují uznání.</string>
+    <string name="card_51_actions_up">Postavte se obtížné volbě, které jste se vyhýbali; další vyhýbání jen odkládá nevyhnutelné.</string>
+    <string name="card_51_actions_rev">Rozhodnutí bylo učiněno nebo bude učiněno za vás; přijměte výsledek a jděte dál.</string>
+
+    <!-- Card 52: Three of Swords -->
+    <string name="card_52_love_up">Zlomené srdce a zrada v lásce; bolestivá pravda rozbíjí iluzi vztahu.</string>
+    <string name="card_52_love_rev">Uzdravování ze zlomeného srdce; začínáte odpouštět a uvolňovat bolest ze zrady.</string>
+    <string name="card_52_career_up">Bolestivá profesní zrada nebo zdrcující kariérní zpráva; smutek nad ztracenou příležitostí.</string>
+    <string name="card_52_career_rev">Zotavování z profesního nezdaru; uzdravování z podrazů na pracovišti a posun dál.</string>
+    <string name="card_52_finances_up">Finanční ztráta, která působí emoční bolest; peněžní zrada zasahuje hluboko.</string>
+    <string name="card_52_finances_rev">Zotavování z finanční ztráty; emoční bolest z peněžních potíží se začíná hojit.</string>
+    <string name="card_52_feelings_up">Hluboký smutek a bolest srdce; bolest ze zrady nebo ztráty vám probodává srdce.</string>
+    <string name="card_52_feelings_rev">Bolest ustupuje; odpuštění a uzdravení postupně nahrazují smutek.</string>
+    <string name="card_52_actions_up">Dovolte si plně truchlit; uznejte bolest místo jejího potlačování.</string>
+    <string name="card_52_actions_rev">Začněte proces uzdravování; odpusťte, co můžete, a uvolněte bolest, která vás drží zpátky.</string>
+
+    <!-- Card 53: Four of Swords -->
+    <string name="card_53_love_up">Nutná pauza ve vašem milostném životě; odpočinek a reflexe posilují vaše emoční rezervy.</string>
+    <string name="card_53_love_rev">Neklid v lásce; odmítání potřebného emočního odpočinku vede k vyhoření.</string>
+    <string name="card_53_career_up">Udělejte si přestávku od pracovního stresu; duševní odpočinek a regenerace jsou nezbytné pro budoucí produktivitu.</string>
+    <string name="card_53_career_rev">Vyhoření z odmítání odpočinku; protlačování se skrz vyčerpání vede ke snižujícím se výsledkům.</string>
+    <string name="card_53_finances_up">Období finančního klidu; žádné velké finanční kroky, jen stabilní zachovávání zdrojů.</string>
+    <string name="card_53_finances_rev">Finanční úzkost brání odpočinku; obavy o peníze vás udržují vzhůru v noci.</string>
+    <string name="card_53_feelings_up">Pocit potřeby hlubokého odpočinku a duševní regenerace; klid přichází skrze samotu.</string>
+    <string name="card_53_feelings_rev">Vyčerpanost a neklid; neschopnost najít klid, který vaše mysl a tělo zoufale potřebují.</string>
+    <string name="card_53_actions_up">Ustupte a odpočiňte si před dalším krokem; regenerace nyní zabrání pozdějšímu zhroucení.</string>
+    <string name="card_53_actions_rev">Odpočívali jste dost nebo odmítáte odpočívat; řešte základní příčinu svého vyčerpání.</string>
+
+    <!-- Card 54: Five of Swords -->
+    <string name="card_54_love_up">Bolestivý konflikt v lásce; vyhrát hádku může znamenat ztrátu vztahu.</string>
+    <string name="card_54_love_rev">Usmíření po konfliktu; oba partneři dělají kompromisy a začínají napravovat škody.</string>
+    <string name="card_54_career_up">Konflikty a mocenské boje na pracovišti; prázdné vítězství, které vás stojí respekt.</string>
+    <string name="card_54_career_rev">Uzavírání míru s profesními rivaly; volba usmíření před pokračujícím bojem.</string>
+    <string name="card_54_finances_up">Finanční spory nebo nečestné jednání; vydělávání peněz na úkor vztahů.</string>
+    <string name="card_54_finances_rev">Řešení finančních sporů; přijetí ztrát a posun dál od peněžních konfliktů.</string>
+    <string name="card_54_feelings_up">Pocit bojovnosti a obranného postoje; bodnutí konfliktu nebo porážky tíží vaši mysl.</string>
+    <string name="card_54_feelings_rev">Uvolnění nepřátelství a zášti; volba míru před pokračující válkou.</string>
+    <string name="card_54_actions_up">Vybírejte si své bitvy moudře; některá vítězství nestojí za cenu, kterou zaplatíte.</string>
+    <string name="card_54_actions_rev">Pusťte potřebu vítězit; hledejte nápravu a řešení namísto odplaty.</string>
+
+    <!-- Card 55: Six of Swords -->
+    <string name="card_55_love_up">Přechod od bouřlivého romantického období ke klidnějším vodám; uzdravení skrze změnu.</string>
+    <string name="card_55_love_rev">Neschopnost nechat bolestivý vztah za sebou; nedořešené emoční záležitosti vás drží zpátky.</string>
+    <string name="card_55_career_up">Kariérní přechod pryč ze stresujícího prostředí; posun k lepším příležitostem.</string>
+    <string name="card_55_career_rev">Uvíznutí v toxickém pracovním prostředí; odpor ke kariérní změně, kterou potřebujete udělat.</string>
+    <string name="card_55_finances_up">Finanční přechod k stabilnějšímu základu; zanechání peněžních problémů za sebou.</string>
+    <string name="card_55_finances_rev">Neschopnost uniknout finančním potížím; odpor k provedení nutných peněžních změn.</string>
+    <string name="card_55_feelings_up">Pocit směsi smutku a naděje, když necháváte minulost za sebou a směřujete k uzdravení.</string>
+    <string name="card_55_feelings_rev">Pocit uvěznění v emočním zmatku; neschopnost najít cestu vpřed.</string>
+    <string name="card_55_actions_up">Přijměte přechod a jděte vpřed; nechte za sebou to bolestivé s grácií.</string>
+    <string name="card_55_actions_rev">Řešte to, co vás drží na místě; vyřešte nedokončené záležitosti, abyste mohli konečně jít dál.</string>
+
+    <!-- Card 56: Seven of Swords -->
+    <string name="card_56_love_up">Podvod nebo zrada v lásce; někdo není ve vztahu zcela upřímný.</string>
+    <string name="card_56_love_rev">Ve vztahu se odhalují tajemství; přiznání pročistí vzduch navzdory počáteční bolesti.</string>
+    <string name="card_56_career_up">Strategické manévrování v práci; někdo může jednat podvodně nebo krást zásluhy.</string>
+    <string name="card_56_career_rev">Podvod na pracovišti je odhalen; pravda vyjde najevo o nečestném profesním chování.</string>
+    <string name="card_56_finances_up">Finanční podvod nebo krádež; mějte se na pozoru před nečestnými obchody a chraňte své zdroje.</string>
+    <string name="card_56_finances_rev">Finanční podvod je odhalen; ukradené prostředky mohou být získány zpět nebo je nečestnost odhalena.</string>
+    <string name="card_56_feelings_up">Pocit podezíravosti nebo lstivosti; nahlodávající tušení, že se děje něco nečestného.</string>
+    <string name="card_56_feelings_rev">Úleva z přiznání; vina se rozpouští, když se přiznáte k minulým podvodům.</string>
+    <string name="card_56_actions_up">Postupujte se strategickou opatrností; buďte si vědomi podvodného chování u sebe i ostatních.</string>
+    <string name="card_56_actions_rev">Přiznejte se k jakýmkoli podvodům; pravda vás osvobodí, i když to bude nepříjemné.</string>
+
+    <!-- Card 57: Eight of Swords -->
+    <string name="card_57_love_up">Pocit uvěznění ve vztahu; vlastní mentální bariéry vám brání vidět možnosti.</string>
+    <string name="card_57_love_rev">Vymanění se ze svazujícího vztahu nebo z omezujících přesvědčení, která vás v lásce uvěznila.</string>
+    <string name="card_57_career_up">Pocit uvíznutí a bezmoci v práci; sebeomezující přesvědčení brzdí váš profesní růst.</string>
+    <string name="card_57_career_rev">Zmocnění se k překonání kariérních omezení; objevování nových možností.</string>
+    <string name="card_57_finances_up">Pocit uvěznění finančními závazky; mentální omezení vám brání vidět řešení.</string>
+    <string name="card_57_finances_rev">Vymanění se z finančních omezení; nové perspektivy odhalují řešení, která jste dříve neviděli.</string>
+    <string name="card_57_feelings_up">Pocit uvěznění, bezmoci a neschopnosti najít východisko ze současné situace.</string>
+    <string name="card_57_feelings_rev">Osvobozující změna perspektivy; uvědomění, že vaše vězení bylo z velké části vlastním dílem.</string>
+    <string name="card_57_actions_up">Prozkoumejte přesvědčení, která vás drží v pasti; bariéry mohou být spíše mentální než skutečné.</string>
+    <string name="card_57_actions_rev">Sundejte si pásku z očí a podívejte se na situaci jasně; máte větší moc, než si myslíte.</string>
+
+    <!-- Card 58: Nine of Swords -->
+    <string name="card_58_love_up">Úzkost a bezesné noci kvůli vztahu; obavy a starosti pohlcují vaše myšlenky.</string>
+    <string name="card_58_love_rev">Začínáte překonávat vztahovou úzkost; vyhledání podpory zmírňuje vaše obavy.</string>
+    <string name="card_58_career_up">Pracovní úzkost vás udržuje vzhůru v noci; stres a starosti ovládají váš profesní život.</string>
+    <string name="card_58_career_rev">Kariérní úzkosti začínají ustupovat; hledání pomoci a podpory snižuje pracovní stres.</string>
+    <string name="card_58_finances_up">Finanční úzkost a bezesné noci; starosti o peníze pohlcují váš klid mysli.</string>
+    <string name="card_58_finances_rev">Finanční obavy začínají ustupovat; vyhledání pomoci přináší úlevu a praktická řešení.</string>
+    <string name="card_58_feelings_up">Zdrcující úzkost a děs; vaše nejhorší obavy se opakují ve vaší mysli dokola.</string>
+    <string name="card_58_feelings_rev">Nejhorší je za námi; naděje nahrazuje zoufalství, jak začínáte zvládat svou úzkost.</string>
+    <string name="card_58_actions_up">Vyhledejte podporu pro svou úzkost; netrpte sami se svými strachy a obavami.</string>
+    <string name="card_58_actions_rev">Obavy ustupují; pokračujte ve vyhledávání pomoci a praktikujte soucit k sobě samým.</string>
+
+    <!-- Card 59: Ten of Swords -->
+    <string name="card_59_love_up">Bolestivý a definitivní konec vztahu; zrada nebo krize přivádí věci k závěru.</string>
+    <string name="card_59_love_rev">Zotavování ze zdrcujícího rozchodu; nejhorší je za námi a uzdravení začalo.</string>
+    <string name="card_59_career_up">Dramatický konec kariéry nebo profesní krize; bylo dosaženo úplného dna.</string>
+    <string name="card_59_career_rev">Profesní zotavení po dosažení dna; pomalé obnovování po kariérní krizi.</string>
+    <string name="card_59_finances_up">Finanční úplné dno; zdrcující peněžní ztráta nebo krize vyžaduje vaši plnou pozornost.</string>
+    <string name="card_59_finances_rev">Finanční zotavení začíná po zdrcující ztrátě; nejhorší už pominulo.</string>
+    <string name="card_59_feelings_up">Pocit naprosté porážky a vyčerpání; tíha mnohonásobných krizí vás drtí.</string>
+    <string name="card_59_feelings_rev">Slunce vychází po nejtemnější noci; vyčerpání ustupuje postupnému zotavení.</string>
+    <string name="card_59_actions_up">Přijměte, že tato kapitola skončila; z úplného dna to může jít jedině nahoru.</string>
+    <string name="card_59_actions_rev">Začněte znovu budovat z trosek; každý konec v sobě nese zárodek nového začátku.</string>
+
+    <!-- Card 60: Page of Swords -->
+    <string name="card_60_love_up">Stimulující intelektuální spojení; otevřená a upřímná komunikace probouzí romantický zájem.</string>
+    <string name="card_60_love_rev">Pomluvy nebo zraňující slova poškozují vztah; komunikace se stává ostrá nebo nečestná.</string>
+    <string name="card_60_career_up">Svěží nápady a intelektuální zvídavost pohánějí kariérní pokrok; buďte bdělí vůči příležitostem.</string>
+    <string name="card_60_career_rev">Pomluvy na pracovišti nebo ukvapená komunikace vytvářejí profesní problémy.</string>
+    <string name="card_60_finances_up">Zkoumání nových finančních příležitostí s intelektuální zvídavostí a mentální pohotovostí.</string>
+    <string name="card_60_finances_rev">Ukvapená finanční rozhodnutí založená na neúplných informacích; nevěřte každému finančnímu tipu.</string>
+    <string name="card_60_feelings_up">Pocit intelektuální stimulace a zvídavosti; touha učit se a objevovat nové pravdy.</string>
+    <string name="card_60_feelings_rev">Pocit cynismu a podezíravosti; ostrá slova maskují nejistotu.</string>
+    <string name="card_60_actions_up">Zůstaňte zvídaví a komunikujte jasně; zkoumejte nové myšlenky s otevřenou, ale obezřetnou myslí.</string>
+    <string name="card_60_actions_rev">Přemýšlejte, než promluvíte; přestaňte pomlouvat a používejte svá slova konstruktivně.</string>
+
+    <!-- Card 61: Knight of Swords -->
+    <string name="card_61_love_up">Pronásledování lásky s intenzitou a odhodláním; rychlé a vášnivé romantické úsilí.</string>
+    <string name="card_61_love_rev">Agresivní nebo bezohledné chování v lásce; netrpělivost vás nutí příliš tlačit.</string>
+    <string name="card_61_career_up">Útok vpřed s ambiciózními kariérními cíli; rychlé a rozhodné profesní jednání.</string>
+    <string name="card_61_career_rev">Bezohledné kariérní kroky bez řádného plánování; agresivita odcizuje kolegy.</string>
+    <string name="card_61_finances_up">Rychlé a rozhodné finanční jednání přináší výsledky; kujte železo, dokud je žhavé.</string>
+    <string name="card_61_finances_rev">Impulzivní finanční rozhodnutí učiněná ve spěchu; bezohledné utrácení nebo investování.</string>
+    <string name="card_61_feelings_up">Pocit hnací síly a mentální ostrosti; naléhavost vás pohání vpřed.</string>
+    <string name="card_61_feelings_rev">Pocit roztěkanosti a agresivity; netrpělivost vás nutí útočit na ostatní.</string>
+    <string name="card_61_actions_up">Jednejte rychle a rozhodně; vaše odhodlání a ambice proříznou překážky.</string>
+    <string name="card_61_actions_rev">Zpomalte, než havarujete; usměrněte svou intenzitu strategičtějším plánováním.</string>
+
+    <!-- Card 62: Queen of Swords -->
+    <string name="card_62_love_up">Jasná a upřímná komunikace v lásce; nezávislý partner, který si cení intelektuálního spojení.</string>
+    <string name="card_62_love_rev">Chladné a kritické chování ve vztahu; hořkost z minulých ran zasahuje hluboko.</string>
+    <string name="card_62_career_up">Ostrý postřeh a jasná komunikace z vás činí efektivního a respektovaného profesionála.</string>
+    <string name="card_62_career_rev">Přehnaně kritické chování v práci; intelektuální chlad vás izoluje od kolegů.</string>
+    <string name="card_62_finances_up">Střízlivá finanční rozhodnutí; pronikání skrze emoční šum k peněžní pravdě.</string>
+    <string name="card_62_finances_rev">Přísný finanční úsudek; přehnaná kritičnost vůči sobě nebo ostatním ohledně peněz.</string>
+    <string name="card_62_feelings_up">Pocit mentální jasnosti a emoční nezávislosti; vaše vnímavá mysl vám dobře slouží.</string>
+    <string name="card_62_feelings_rev">Pocit hořkosti a kritičnosti; minulé rány zatvrdily vaše srdce a naostřily váš jazyk.</string>
+    <string name="card_62_actions_up">Komunikujte s jasností a upřímností; stanovte pevné hranice se soucitem.</string>
+    <string name="card_62_actions_rev">Změkčete své ostré hrany; mít pravdu je méně důležité než být laskavý.</string>
+
+    <!-- Card 63: King of Swords -->
+    <string name="card_63_love_up">Vztah vedený intelektuálním respektem a etickými standardy; upřímnost je prvořadá.</string>
+    <string name="card_63_love_rev">Partner, který využívá intelekt k manipulaci; chladná racionalita nahrazuje emoční vřelost.</string>
+    <string name="card_63_career_up">Intelektuální autorita a etické vedení; vaše jasné myšlení přikazuje profesní respekt.</string>
+    <string name="card_63_career_rev">Zneužívání intelektuální moci v práci; tyranské vedení skrze chladnou racionalitu.</string>
+    <string name="card_63_finances_up">Logické a etické finanční řízení; jasné myšlení vede k rozumným peněžním rozhodnutím.</string>
+    <string name="card_63_finances_rev">Využívání finančních znalostí k manipulaci ostatních; neetické finanční praktiky.</string>
+    <string name="card_63_feelings_up">Pocit intelektuálního mistrovství a etické zakotvenosti; mentální jasnost přináší sebedůvěru.</string>
+    <string name="card_63_feelings_rev">Pocit emoční odtažitosti a intelektuální arogance; logika bez srdce.</string>
+    <string name="card_63_actions_up">Veďte s intelektuální integritou a etickou jasností; nechte pravdu řídit vaše rozhodnutí.</string>
+    <string name="card_63_actions_rev">Zvažte, zda používáte svůj intelekt ke službě pravdě, nebo k ovládání ostatních.</string>
+
+    <!-- ===== WANDS (Hole) ===== -->
+
+    <!-- Card 64: Ace of Wands -->
+    <string name="card_64_love_up">Vášnivá nová romantická jiskra vzplane; vzrušující potenciál pro ohnivé milostné spojení.</string>
+    <string name="card_64_love_rev">Romantická vášeň vyhasíná; zpoždění nebo nedostatek motivace brání vzniku milostného spojení.</string>
+    <string name="card_64_career_up">Inspirativní nový kariérní podnik nebo tvůrčí projekt vás naplňuje nadšenou energií.</string>
+    <string name="card_64_career_rev">Tvůrčí bloky nebo zpoždění brzdí slibnou kariérní příležitost; motivace slábne.</string>
+    <string name="card_64_finances_up">Nová a vzrušující finanční příležitost v souladu s vašimi vášněmi a tvůrčí energií.</string>
+    <string name="card_64_finances_rev">Slibná finanční příležitost je promeškána nebo zpožděna; nedostatek iniciativy vás brzdí.</string>
+    <string name="card_64_feelings_up">Pocit vášnivé inspirace a přetékání tvůrčím potenciálem a nadšením.</string>
+    <string name="card_64_feelings_rev">Pocit tvůrčí blokace a chybějící jiskry inspirace; energie je nízká.</string>
+    <string name="card_64_actions_up">Chopte se jiskry inspirace a přetvořte ji ve vášnivou tvůrčí akci.</string>
+    <string name="card_64_actions_rev">Znovu zažehněte svou vášeň; najděte to, co vás vzrušuje, a odstraňte bloky své tvůrčí energie.</string>
+
+    <!-- Card 65: Two of Wands -->
+    <string name="card_65_love_up">Plánování společné budoucnosti s partnerem; představování si, kam váš milostný příběh povede.</string>
+    <string name="card_65_love_rev">Strach ze závazku nebo neochota plánovat romantickou budoucnost; setrvávání v komfortní zóně.</string>
+    <string name="card_65_career_up">Odvážné plánování vaší kariérní budoucnosti; svět profesních možností se před vámi rozprostírá.</string>
+    <string name="card_65_career_rev">Profesní hraní na jistotu; strach z neznámého brání kariérnímu prozkoumávání.</string>
+    <string name="card_65_finances_up">Finanční plánování a strategické uvažování o budoucím bohatství; zvažování odvážných investic.</string>
+    <string name="card_65_finances_rev">Strach brání finančnímu plánování; setrvávání v bezpečné, ale omezující peněžní komfortní zóně.</string>
+    <string name="card_65_feelings_up">Pocit nadšení z budoucích možností; fáze plánování vás energizuje.</string>
+    <string name="card_65_feelings_rev">Pocit paralyzující nerozhodnosti ohledně budoucnosti; strach převažuje nad vzrušením.</string>
+    <string name="card_65_actions_up">Plánujte odvážně budoucnost; podívejte se za svůj současný obzor a dělejte strategická rozhodnutí.</string>
+    <string name="card_65_actions_rev">Přestaňte hrát na jistotu; strach z neznámého by vám neměl bránit v plánování dopředu.</string>
+
+    <!-- Card 66: Three of Wands -->
+    <string name="card_66_love_up">Láska se rozpíná za hranice; vztah roste do nového a vzrušujícího území.</string>
+    <string name="card_66_love_rev">Romantické plány čelí zpožděním nebo překážkám; omezená vize brzdí růst lásky.</string>
+    <string name="card_66_career_up">Kariérní expanze a zahraniční příležitosti; vaše profesní vize sahá daleko a široko.</string>
+    <string name="card_66_career_rev">Kariérní expanze je zpožděna překážkami; frustrace z tempa profesního růstu.</string>
+    <string name="card_66_finances_up">Finanční expanze prostřednictvím mezinárodních příležitostí nebo široce dosahujících investic.</string>
+    <string name="card_66_finances_rev">Finanční růst je zpožděn; překážky brání rozšíření vašich příjmových toků.</string>
+    <string name="card_66_feelings_up">Pocit expanzivnosti a vyhlížení budoucnosti; vaše vize pro budoucnost vás naplňuje optimismem.</string>
+    <string name="card_66_feelings_rev">Frustrace z pomalého pokroku; pocit, že překážky blokují vaši cestu k růstu.</string>
+    <string name="card_66_actions_up">Rozšiřte své obzory a sledujte příležitosti za hranicemi svého bezprostředního okolí.</string>
+    <string name="card_66_actions_rev">Přehodnoťte své plány, pokud pokrok stagnuje; hledejte alternativní cesty k expanzi.</string>
+
+    <!-- Card 67: Four of Wands -->
+    <string name="card_67_love_up">Radostné romantické oslavy jako zásnuby nebo stěhování k sobě; milník ve vztahu.</string>
+    <string name="card_67_love_rev">Nestabilita vztahu narušuje oslavy; nedostatek podpory od rodiny nebo komunity.</string>
+    <string name="card_67_career_up">Oslava kariérního milníku nebo týmového úspěchu; podpůrná profesní komunita.</string>
+    <string name="card_67_career_rev">Nestabilita na pracovišti nebo nedostatek týmové harmonie; profesní oslavy působí předčasně.</string>
+    <string name="card_67_finances_up">Finanční stabilita hodná oslavy; milník v budování bohatství nebo vlastnictví nemovitosti.</string>
+    <string name="card_67_finances_rev">Finanční nestabilita ohrožuje váš pocit domova a bezpečí; nečekané změny.</string>
+    <string name="card_67_feelings_up">Pocit oslavy a vděčnosti; pocit sounáležitosti a společné radosti pozvedá vašeho ducha.</string>
+    <string name="card_67_feelings_rev">Pocit nepodporovanosti a nestability; vnitřní konflikt vám brání v plném slavení.</string>
+    <string name="card_67_actions_up">Oslavte své úspěchy se svou komunitou; připomeňte si tento milník s vděčností.</string>
+    <string name="card_67_actions_rev">Řešte základní nestabilitu dříve, než oslavíte; ujistěte se, že vaše základy jsou opravdu pevné.</string>
+
+    <!-- Card 68: Five of Wands -->
+    <string name="card_68_love_up">Soutěživá energie nebo neshody v lásce; konflikt, který může být konstruktivní, pokud se zvládne dobře.</string>
+    <string name="card_68_love_rev">Vyhýbání se nutným vztahovým konfliktům; vnitřní zmatek nahrazuje vnější neshody.</string>
+    <string name="card_68_career_up">Zdravá profesní soutěž vás nutí vyniknout; neshody na pracovišti podněcují inovace.</string>
+    <string name="card_68_career_rev">Vyhýbání se pracovním konfliktům za cenu pokroku; hledání kompromisu místo soutěže.</string>
+    <string name="card_68_finances_up">Finanční soutěž nebo dražební války; napětí kolem peněžních rozhodnutí vyžaduje energii.</string>
+    <string name="card_68_finances_rev">Řešení finančních sporů prostřednictvím kompromisu; ústup od soutěživého utrácení.</string>
+    <string name="card_68_feelings_up">Pocit vzplanutí ze soutěže a výzvy; adrenalin ze zdravého konfliktu.</string>
+    <string name="card_68_feelings_rev">Vnitřní konflikt vyčerpává vaši energii; vyhýbání se vnějším bitvám vytváří vnitřní boje.</string>
+    <string name="card_68_actions_up">Zapojte se do zdravé soutěže; využijte konflikt jako palivo pro růst a zlepšení.</string>
+    <string name="card_68_actions_rev">Hledejte řešení a kompromis; ne každá bitva stojí za to, aby se bojovala.</string>
+
+    <!-- Card 69: Six of Wands -->
+    <string name="card_69_love_up">Romantický úspěch a veřejné uznání vašeho vztahu; hrdost na vaše partnerství.</string>
+    <string name="card_69_love_rev">Střety ega ve vztahu; hledání vnějšího potvrzení místo budování opravdového spojení.</string>
+    <string name="card_69_career_up">Veřejné profesní uznání a kariérní vítězství; vaše úspěchy slaví kolegové.</string>
+    <string name="card_69_career_rev">Nedostatek profesního uznání; pád z výšin nebo neúspěch navzdory vašemu nejlepšímu úsilí.</string>
+    <string name="card_69_finances_up">Finanční úspěch, který si vyslouží veřejné uznání; vaše prosperita je viditelná a oslavovaná.</string>
+    <string name="card_69_finances_rev">Finanční neúspěch nebo ztráta dříve silné finanční pozice; pokořující nezdar.</string>
+    <string name="card_69_feelings_up">Pocit vítězství a veřejného uznání; sebedůvěra stoupá, jak ostatní slaví váš úspěch.</string>
+    <string name="card_69_feelings_rev">Pocit neuznání nebo ponížení; deflace ega po veřejném nezdaru.</string>
+    <string name="card_69_actions_up">Přijměte chválu s grácií a nechte svůj úspěch inspirovat ostatní; veďte se sebedůvěrou.</string>
+    <string name="card_69_actions_rev">Nenechte ego řídit vaše činy; skutečný úspěch nevyžaduje neustálé vnější potvrzování.</string>
+
+    <!-- Card 70: Seven of Wands -->
+    <string name="card_70_love_up">Obrana vašeho vztahu proti vnějším výzvám; pevný postoj ve vašich romantických přesvědčeních.</string>
+    <string name="card_70_love_rev">Příliš snadné vzdávání se vztahu; pocit zahlcení romantickými výzvami.</string>
+    <string name="card_70_career_up">Stojíte si za svým proti profesním vyzyvatelům; obhajujete svou pozici s odvahou.</string>
+    <string name="card_70_career_rev">Zahlcení konkurencí na pracovišti; zvažování vzdání se náročné kariérní cesty.</string>
+    <string name="card_70_finances_up">Obrana vaší finanční pozice proti hrozbám; vytrvalost chrání vaše zdroje.</string>
+    <string name="card_70_finances_rev">Finanční vyčerpání z neustálých bojů; zvažování kapitulace v peněžním sporu.</string>
+    <string name="card_70_feelings_up">Pocit obklíčení, ale odhodlání; odvaha vás udržuje navzdory narůstajícím výzvám.</string>
+    <string name="card_70_feelings_rev">Pocit vyčerpání a připravenosti to vzdát; neustálý boj vyčerpal vaše rezervy.</string>
+    <string name="card_70_actions_up">Stůjte pevně a braňte svou pozici; vytrvalost vás provede těmito výzvami.</string>
+    <string name="card_70_actions_rev">Zhodnoťte, zda tato bitva stále stojí za to; strategický ústup není totéž co porážka.</string>
+
+    <!-- Card 71: Eight of Wands -->
+    <string name="card_71_love_up">Rychlý romantický vývoj; vztah se zrychluje vzrušujícím tempem a hybností.</string>
+    <string name="card_71_love_rev">Romantický pokrok se zastaví; zpoždění a frustrace zpomalují dříve rychle se rozvíjející vztah.</string>
+    <string name="card_71_career_up">Rychlý kariérní pokrok a bleskový profesní vývoj; hybnost vás nese vpřed.</string>
+    <string name="card_71_career_rev">Kariérní pokrok naráží na nečekaná zpoždění; frustrující překážky zpomalují vaši profesní hybnost.</string>
+    <string name="card_71_finances_up">Bleskový finanční vývoj; peníze se pohybují rychle a příležitosti vyžadují rychlé jednání.</string>
+    <string name="card_71_finances_rev">Finanční transakce se zpožďují; očekávané peníze přicházejí pomalu.</string>
+    <string name="card_71_feelings_up">Pocit energie a stržení vzrušením z rychlého pokroku a pohybu.</string>
+    <string name="card_71_feelings_rev">Frustrace ze zpoždění; pocit netrpělivosti, když se hybnost zastaví.</string>
+    <string name="card_71_actions_up">Jednejte rychle a rozhodně; hybnost je na vaší straně, tak udeřte, dokud je energie vysoká.</string>
+    <string name="card_71_actions_rev">Cvičte trpělivost během zpoždění; využijte zpomalení k přípravě na návrat hybnosti.</string>
+
+    <!-- Card 72: Nine of Wands -->
+    <string name="card_72_love_up">Odolná láska, která přestála mnoho bouří; poslední obrana na ochranu vašeho vztahu.</string>
+    <string name="card_72_love_rev">Emoční vyčerpání v lásce; minulá zranění z vás dělají paranoidního a defenzivního ve vztazích.</string>
+    <string name="card_72_career_up">Vytrvalé odhodlání navzdory opakovaným profesním výzvám; jste blízko cílové čáry.</string>
+    <string name="card_72_career_rev">Kariérní vyhoření a vyčerpání; boj trval příliš dlouho a rezervy jsou vyčerpány.</string>
+    <string name="card_72_finances_up">Odolné finanční hospodaření navzdory přetrvávajícím výzvám; udržování se navzdory nezdarům.</string>
+    <string name="card_72_finances_rev">Finanční vyčerpání; zdlouhavý boj s peněžními záležitostmi vás opotřebovává.</string>
+    <string name="card_72_feelings_up">Pocit poznamenanosti bojem, ale odhodlanosti; odhodlání vás udržuje navzdory únavě.</string>
+    <string name="card_72_feelings_rev">Pocit naprostého vyčerpání a připravenosti zhroutit se; břemeno se stalo příliš těžkým.</string>
+    <string name="card_72_actions_up">Zůstaňte odolní a pokračujte dál; jste blíže k úspěchu, než si uvědomujete.</string>
+    <string name="card_72_actions_rev">Poznejte, kdy je dost; odpočinek a zotavení nejsou známky slabosti.</string>
+
+    <!-- Card 73: Ten of Wands -->
+    <string name="card_73_love_up">Tíha vztahových povinností působí drtivě; láska se stává břemenem místo radosti.</string>
+    <string name="card_73_love_rev">Uvolnění vztahových břemen; učení se sdílet odpovědnosti a pouštět zbytečnou zátěž.</string>
+    <string name="card_73_career_up">Zahlcení profesními povinnostmi; nesete celou pracovní zátěž na svých ramenou.</string>
+    <string name="card_73_career_rev">Delegování povinností v práci; uvolnění potřeby dělat všechno sami.</string>
+    <string name="card_73_finances_up">Finanční břemena těžce doléhají; stres ze správy příliš mnoha závazků je zdrcující.</string>
+    <string name="card_73_finances_rev">Uvolnění finančních břemen prostřednictvím delegování nebo restrukturalizace; odlehčení peněžní zátěže.</string>
+    <string name="card_73_feelings_up">Pocit drcení pod tíhou příliš mnoha povinností; vyčerpání a stres dominují.</string>
+    <string name="card_73_feelings_rev">Úleva, když jsou břemena uvolněna; tíha se zvedá, jak se učíte pouštět.</string>
+    <string name="card_73_actions_up">Prozkoumejte, která břemena jsou opravdu vaše; požádejte o pomoc, než se zhroutíte.</string>
+    <string name="card_73_actions_rev">Odložte to, co nemusíte nést; delegujte a uvolněte zbytečné povinnosti.</string>
+
+    <!-- Card 74: Page of Wands -->
+    <string name="card_74_love_up">Vzrušující nový flirt nebo romantické dobrodružství; nadšená a hravá energie v lásce.</string>
+    <string name="card_74_love_rev">Romantický neklid a nedostatek oddanosti; nuda nebo ukvapená romantická rozhodnutí.</string>
+    <string name="card_74_career_up">Vzrušující kariérní příležitost probouzí vaše nadšení; prozkoumejte nové profesní obzory.</string>
+    <string name="card_74_career_rev">Nedostatek kariérního směru; odkládání profesních cílů nebo ukvapená rozhodnutí.</string>
+    <string name="card_74_finances_up">Nadšené prozkoumávání nových finančních podniků; přistupování k penězům s dobrodružnou energií.</string>
+    <string name="card_74_finances_rev">Ukvapená finanční rozhodnutí bez řádného průzkumu; chybějící směr v peněžních záležitostech.</string>
+    <string name="card_74_feelings_up">Pocit dobrodružství a nadšení; svobodomyslná energie vás pohání k objevování.</string>
+    <string name="card_74_feelings_rev">Pocit nudy a bezúčelnosti; neklidná energie bez produktivního vyústění.</string>
+    <string name="card_74_actions_up">Následujte své nadšení a prozkoumejte nová dobrodružství; nechte svého svobodného ducha vést cestu.</string>
+    <string name="card_74_actions_rev">Usměrněte svou neklidnou energii produktivně; najděte směr, než uděláte impulzivní kroky.</string>
+
+    <!-- Card 75: Knight of Wands -->
+    <string name="card_75_love_up">Vášnivé a odvážné romantické úsilí; ohnivý a dobrodružný milostný zájem vás strhne z nohou.</string>
+    <string name="card_75_love_rev">Impulzivní romantická rozhodnutí; partner, který je nespolehlivý, roztěkaný nebo se vyhýbá závazkům.</string>
+    <string name="card_75_career_up">Odvážné a vášnivé kariérní kroky; přechod k akci ohledně ambiciózních profesních snů.</string>
+    <string name="card_75_career_rev">Roztříštěná profesní energie; zahajování mnoha projektů, ale nedokončení žádného kvůli netrpělivosti.</string>
+    <string name="card_75_finances_up">Odvážné finanční kroky poháněné vášní a dobrodružným duchem; kalkulované riskování.</string>
+    <string name="card_75_finances_rev">Impulzivní finanční rozhodnutí; roztříštěné utrácení, které vyčerpává zdroje bez směru.</string>
+    <string name="card_75_feelings_up">Pocit odvahy, vášně a připravenosti k akci; dobrodružný oheň hoří ve vašem nitru.</string>
+    <string name="card_75_feelings_rev">Pocit frustrace a roztříštěnosti; vaše vášnivá energie nemá zaměřený výstup.</string>
+    <string name="card_75_actions_up">Vyrazte vpřed s odvážnou vášní a jednejte podle toho, co vás nejvíce vzrušuje.</string>
+    <string name="card_75_actions_rev">Zaměřte svou roztříštěnou energii; vášeň bez směru vede k vyhoření a frustraci.</string>
+
+    <!-- Card 76: Queen of Wands -->
+    <string name="card_76_love_up">Sebevědomá a vřelá romantická energie; vaše charisma a vitalita přitahují hlubokou lásku.</string>
+    <string name="card_76_love_rev">Žárlivost nebo nejistota v lásce; panovačné chování partnera odpuzuje.</string>
+    <string name="card_76_career_up">Charismatické vedení a sebevědomé profesní vystupování; vaše vřelost inspiruje týmy.</string>
+    <string name="card_76_career_rev">Profesní žárlivost nebo sobecké chování v práci; nejistota podkopává vaše vedení.</string>
+    <string name="card_76_finances_up">Sebevědomé finanční hospodaření; vaše charisma a odhodlání přitahují bohatství.</string>
+    <string name="card_76_finances_rev">Sobecké utrácení nebo žárlivost na bohatství ostatních; finanční nejistota vede ke špatným rozhodnutím.</string>
+    <string name="card_76_feelings_up">Pocit zářivé sebedůvěry a vřelosti; váš vnitřní oheň jasně plane a inspiruje ostatní.</string>
+    <string name="card_76_feelings_rev">Nejistota se skrývá za sebevědomou fasádou; žárlivost rozleptává vaši vnitřní vřelost.</string>
+    <string name="card_76_actions_up">Veďte s vřelostí a sebedůvěrou; nechte své charisma a odhodlání inspirovat okolí.</string>
+    <string name="card_76_actions_rev">Řešte své nejistoty upřímně; žárlivost a sobectví jen zmenšují vaši skutečnou sílu.</string>
+
+    <!-- Card 77: King of Wands -->
+    <string name="card_77_love_up">Odvážný a vizionářský partner; vášnivý vůdce v lásce, který inspiruje oddanost a vzrušení.</string>
+    <string name="card_77_love_rev">Dominantní nebo panovačný partner; impulzivnost a bezohlednost poškozují vztah.</string>
+    <string name="card_77_career_up">Vizionářské podnikatelské vedení; vaše odvážná profesní vize inspiruje ostatní, aby vás následovali.</string>
+    <string name="card_77_career_rev">Tyranský styl vedení v práci; impulzivní obchodní rozhodnutí podkopávají vaši autoritu.</string>
+    <string name="card_77_finances_up">Odvážné a vizionářské finanční vedení; podnikatelské podniky přinášejí působivé výnosy.</string>
+    <string name="card_77_finances_rev">Impulzivní finanční rozhodnutí z pozice moci; bezohledné sledování bohatství za každou cenu.</string>
+    <string name="card_77_feelings_up">Pocit přirozeného vůdce s jasnou a vášnivou vizí; odvážná sebedůvěra vyzařuje.</string>
+    <string name="card_77_feelings_rev">Pocit přehnané dominance a ztráty kontroly; moc bez moudrosti vede k vnitřnímu zmatku.</string>
+    <string name="card_77_actions_up">Veďte odvážně s vizí a ctí; inspirujte ostatní svým vášnivým příkladem.</string>
+    <string name="card_77_actions_rev">Zmírněte svou odvahu moudrostí; skutečné vedení slouží ostatním, místo aby je ovládalo.</string>
+</resources>

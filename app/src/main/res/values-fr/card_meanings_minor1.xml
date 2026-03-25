@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================= -->
+    <!-- Coupes (Cups) — id 22–35, élément Eau                        -->
+    <!-- ============================================================= -->
+
+    <!-- Card 22: Ace of Cups / As de Coupes -->
+    <string name="card_22_love_up">Un magnifique nouveau départ émotionnel ; le commencement d\'une connexion amoureuse profonde et spirituelle.</string>
+    <string name="card_22_love_rev">Des blocages émotionnels empêchent l\'entrée d\'un nouvel amour ; vous refoulez peut-être vos véritables sentiments.</string>
+    <string name="card_22_career_up">L\'inspiration créative coule à flots ; un nouveau projet vous remplit d\'une satisfaction émotionnelle profonde.</string>
+    <string name="card_22_career_rev">Des blocages créatifs étouffent votre travail ; une insatisfaction émotionnelle vis-à-vis de votre parcours professionnel.</string>
+    <string name="card_22_finances_up">L\'épanouissement émotionnel compte davantage que l\'argent en ce moment ; la générosité attire l\'abondance.</string>
+    <string name="card_22_finances_rev">Un sentiment de vide émotionnel malgré la stabilité financière ; l\'argent ne peut combler ce gouffre.</string>
+    <string name="card_22_feelings_up">Votre cœur déborde d\'amour, de compassion et d\'ouverture émotionnelle.</string>
+    <string name="card_22_feelings_rev">Un sentiment d\'épuisement ou d\'engourdissement émotionnel ; difficulté à vous connecter à vos propres sentiments.</string>
+    <string name="card_22_actions_up">Ouvrez votre cœur et accueillez l\'amour et la nourriture émotionnelle de toutes les sources.</string>
+    <string name="card_22_actions_rev">Débloquez vos émotions refoulées ; autorisez-vous à ressentir et à exprimer vos véritables sentiments.</string>
+
+    <!-- Card 23: Two of Cups / Deux de Coupes -->
+    <string name="card_23_love_up">Une forte attirance mutuelle et un lien qui s\'approfondit ; deux cœurs s\'unissent dans une belle harmonie.</string>
+    <string name="card_23_love_rev">La relation perd son équilibre ; l\'éloignement et la méfiance créent une distance croissante.</string>
+    <string name="card_23_career_up">Un partenariat professionnel productif se forme ; le respect mutuel alimente un succès commun.</string>
+    <string name="card_23_career_rev">Les partenariats professionnels se désagrègent ; le manque de confiance sape la collaboration d\'équipe.</string>
+    <string name="card_23_finances_up">Un partenariat financier ou le partage de ressources apporte un bénéfice mutuel.</string>
+    <string name="card_23_finances_rev">Des désaccords financiers avec un partenaire ; les investissements communs deviennent une source de conflits.</string>
+    <string name="card_23_feelings_up">Un sentiment de connexion profonde avec quelqu\'un ; une affection mutuelle et une résonance émotionnelle.</string>
+    <string name="card_23_feelings_rev">Un sentiment d\'éloignement vis-à-vis de quelqu\'un qui vous est cher ; la distance émotionnelle s\'accroît.</string>
+    <string name="card_23_actions_up">Prenez soin de vos connexions significatives ; investissez dans vos relations mutuelles.</string>
+    <string name="card_23_actions_rev">Abordez le déséquilibre dans la relation avec sincérité ; restaurez la confiance ou séparez-vous avec grâce.</string>
+
+    <!-- Card 24: Three of Cups / Trois de Coupes -->
+    <string name="card_24_love_up">Des célébrations joyeuses avec vos proches ; les amitiés enrichissent vos relations amoureuses.</string>
+    <string name="card_24_love_rev">Des interférences d\'une tierce personne dans la relation ; des excès sociaux ou de la jalousie entre amis.</string>
+    <string name="card_24_career_up">Célébrations d\'équipe et succès partagé ; les projets créatifs en groupe s\'épanouissent.</string>
+    <string name="card_24_career_rev">Les ragots ou les cliques au travail causent des problèmes ; les excès lors des événements d\'entreprise nuisent.</string>
+    <string name="card_24_finances_up">Des célébrations financières partagées ; des investissements collectifs ou une prospérité commune.</string>
+    <string name="card_24_finances_rev">Des dépenses excessives lors d\'événements sociaux ; la pression du groupe mène à des excès financiers.</string>
+    <string name="card_24_feelings_up">Un bonheur débordant et une profonde gratitude ; un sentiment d\'élévation grâce à la communauté et l\'amitié.</string>
+    <string name="card_24_feelings_rev">Un sentiment d\'exclusion du groupe ; la solitude malgré le fait d\'être entouré de gens.</string>
+    <string name="card_24_actions_up">Célébrez avec votre communauté ; partagez votre joie et votre gratitude avec les autres.</string>
+    <string name="card_24_actions_rev">Limitez les activités sociales excessives ; réglez les ragots ou les dynamiques de groupe malsaines.</string>
+
+    <!-- Card 25: Four of Cups / Quatre de Coupes -->
+    <string name="card_25_love_up">Ennui émotionnel ou insatisfaction en amour ; vous tenez votre partenaire pour acquis.</string>
+    <string name="card_25_love_rev">Une appréciation renouvelée de votre partenaire ; vous voyez votre relation sous un jour nouveau.</string>
+    <string name="card_25_career_up">Un sentiment de désintérêt et de démotivation au travail ; vous vous demandez si vous devez rester ou partir.</string>
+    <string name="card_25_career_rev">Un enthousiasme renouvelé pour votre carrière ; une nouvelle opportunité capte votre attention.</string>
+    <string name="card_25_finances_up">Une insatisfaction financière malgré des moyens suffisants ; vous négligez les opportunités qui s\'offrent à vous.</string>
+    <string name="card_25_finances_rev">Vous reconnaissez et saisissez une opportunité financière que vous aviez négligée auparavant.</string>
+    <string name="card_25_feelings_up">Apathie émotionnelle et repli sur soi ; rien ne semble vous exciter ni vous satisfaire.</string>
+    <string name="card_25_feelings_rev">Vous émergez de votre repli émotionnel avec un intérêt et une gratitude renouvelés.</string>
+    <string name="card_25_actions_up">Prenez le temps de méditer sur ce qui compte vraiment avant d\'accepter ou de refuser les opportunités.</string>
+    <string name="card_25_actions_rev">Ouvrez les yeux sur les bénédictions qui vous entourent ; accueillez ce qui vous est offert.</string>
+
+    <!-- Card 26: Five of Cups / Cinq de Coupes -->
+    <string name="card_26_love_up">Le deuil d\'une perte ou d\'une déception amoureuse ; vous vous concentrez sur ce qui a mal tourné plutôt que sur ce qui reste.</string>
+    <string name="card_26_love_rev">Vous commencez à guérir d\'un cœur brisé ; vous acceptez la perte et trouvez l\'espoir d\'un nouvel amour.</string>
+    <string name="card_26_career_up">La déception d\'un échec professionnel ; vous vous attardez sur une opportunité manquée ou un revers.</string>
+    <string name="card_26_career_rev">Vous surmontez les déceptions professionnelles ; vous trouvez un nouveau sens après une perte de carrière.</string>
+    <string name="card_26_finances_up">Une perte financière cause du chagrin ; le regret de mauvaises décisions monétaires pèse lourdement.</string>
+    <string name="card_26_finances_rev">Vous vous remettez d\'une perte financière ; vous acceptez ce qui s\'est passé et reconstruisez avec sagesse.</string>
+    <string name="card_26_feelings_up">Une tristesse profonde et du regret ; vous vous concentrez sur ce qui a été perdu plutôt que sur ce qui demeure.</string>
+    <string name="card_26_feelings_rev">Vous trouvez la paix après le chagrin ; le processus de guérison commence à mesure que vous changez de perspective.</string>
+    <string name="card_26_actions_up">Autorisez-vous à faire votre deuil, mais n\'oubliez pas de regarder ce que vous possédez encore.</string>
+    <string name="card_26_actions_rev">Détournez-vous du regret et regardez vers l\'avenir ; pardonnez-vous et accueillez ce qui reste.</string>
+
+    <!-- Card 27: Six of Cups / Six de Coupes -->
+    <string name="card_27_love_up">Des connexions amoureuses nostalgiques et tendres ; un amour passé peut revenir ou d\'anciens souvenirs réchauffent le cœur.</string>
+    <string name="card_27_love_rev">Vivre dans le passé empêche un nouvel amour ; l\'idéalisation d\'une ancienne relation bloque votre croissance.</string>
+    <string name="card_27_career_up">Renouer avec un ancien collègue ou reprendre un chemin de carrière antérieur apporte de la joie.</string>
+    <string name="card_27_career_rev">Rester coincé dans des méthodes de travail obsolètes ; la nostalgie freine votre évolution professionnelle.</string>
+    <string name="card_27_finances_up">Des cadeaux financiers ou un héritage familial ; une générosité enracinée dans une histoire partagée.</string>
+    <string name="card_27_finances_rev">Des attentes financières irréalistes basées sur le passé ; des habitudes monétaires dépassées vous freinent.</string>
+    <string name="card_27_feelings_up">Une nostalgie chaleureuse et une joie innocente ; un sentiment de réconfort tiré de souvenirs heureux.</string>
+    <string name="card_27_feelings_rev">Être émotionnellement coincé dans le passé ; incapacité à s\'engager pleinement dans le moment présent.</string>
+    <string name="card_27_actions_up">Reconnectez-vous avec vos racines et les personnes qui vous ont façonné ; partagez avec générosité.</string>
+    <string name="card_27_actions_rev">Libérez-vous du passé et vivez dans le présent ; cessez d\'idéaliser ce qui fut.</string>
+
+    <!-- Card 28: Seven of Cups / Sept de Coupes -->
+    <string name="card_28_love_up">Des fantaisies romantiques et des images idéalisées de l\'amour ; trop de possibilités obscurcissent votre jugement.</string>
+    <string name="card_28_love_rev">La clarté sur ce que vous désirez vraiment en amour ; les fantaisies cèdent la place à des choix réalistes.</string>
+    <string name="card_28_career_up">Trop d\'options de carrière mènent à la paralysie de l\'analyse ; la rêverie remplace l\'action.</string>
+    <string name="card_28_career_rev">Un recentrage de votre orientation professionnelle ; vous vous engagez sur un seul chemin après avoir éliminé les distractions.</string>
+    <string name="card_28_finances_up">Des fantaisies financières ou des schémas d\'enrichissement rapide vous tentent ; gardez les pieds sur terre.</string>
+    <string name="card_28_finances_rev">Un regard lucide sur vos finances ; un engagement envers des plans financiers pratiques plutôt que fantasmés.</string>
+    <string name="card_28_feelings_up">Perdu dans les rêveries et les vœux pieux ; submergé par les possibilités sans pouvoir choisir.</string>
+    <string name="card_28_feelings_rev">La clarté mentale perce à travers la confusion ; vous savez enfin ce que vous désirez vraiment.</string>
+    <string name="card_28_actions_up">Évaluez soigneusement vos options ; distinguez les objectifs réalistes des simples fantaisies.</string>
+    <string name="card_28_actions_rev">Cessez de rêver et engagez-vous pleinement sur un seul objectif atteignable.</string>
+
+    <!-- Card 29: Eight of Cups / Huit de Coupes -->
+    <string name="card_29_love_up">Quitter une relation émotionnellement insatisfaisante à la recherche de quelque chose de plus profond.</string>
+    <string name="card_29_love_rev">Rester dans une relation sans amour par peur ; la crainte de quitter ce qui ne vous sert plus.</string>
+    <string name="card_29_career_up">Abandonner une carrière qui ne vous satisfait plus ; rechercher un travail plus porteur de sens.</string>
+    <string name="card_29_career_rev">La peur de quitter un travail insatisfaisant ; s\'accrocher à la sécurité plutôt qu\'à l\'épanouissement.</string>
+    <string name="card_29_finances_up">Quitter une situation financière qui ne sert plus votre croissance.</string>
+    <string name="card_29_finances_rev">Rester dans un arrangement financier désavantageux par peur de l\'inconnu.</string>
+    <string name="card_29_feelings_up">Une conscience intérieure profonde qu\'il faut avancer, même si partir est douloureux.</string>
+    <string name="card_29_feelings_rev">La peur de l\'abandon ou du changement vous maintient émotionnellement prisonnier du familier.</string>
+    <string name="card_29_actions_up">Ayez le courage de quitter ce qui ne vous nourrit plus ; cherchez des objectifs plus élevés.</string>
+    <string name="card_29_actions_rev">Explorez pourquoi vous avez peur de partir ; l\'inconfort de rester peut surpasser le risque de partir.</string>
+
+    <!-- Card 30: Nine of Cups / Neuf de Coupes -->
+    <string name="card_30_love_up">Vos souhaits romantiques se réalisent ; une satisfaction émotionnelle profonde et un contentement en amour.</string>
+    <string name="card_30_love_rev">Une satisfaction superficielle en amour ; le désir d\'avoir plus malgré une bonne relation.</string>
+    <string name="card_30_career_up">Vos souhaits professionnels se concrétisent ; vous atteignez un jalon de carrière qui apporte une profonde satisfaction.</string>
+    <string name="card_30_career_rev">Les réussites professionnelles semblent vides ; le succès sans sens vous laisse en quête de davantage.</string>
+    <string name="card_30_finances_up">Vos souhaits financiers se matérialisent ; l\'abondance et la prospérité apportent un profond contentement.</string>
+    <string name="card_30_finances_rev">L\'avidité ou le matérialisme diminue la joie du succès financier ; vouloir toujours plus ne suffit jamais.</string>
+    <string name="card_30_feelings_up">Un profond contentement et un épanouissement émotionnel ; un sentiment de gratitude pour tout ce que vous avez.</string>
+    <string name="card_30_feelings_rev">L\'insatisfaction malgré le fait d\'avoir tout ; un vide persistant que les possessions ne peuvent combler.</string>
+    <string name="card_30_actions_up">Comptez vos bénédictions et savourez la réalisation de vos souhaits avec gratitude.</string>
+    <string name="card_30_actions_rev">Explorez ce qui vous apporte véritablement de la joie ; l\'excès matériel ne peut remplacer l\'épanouissement intérieur.</string>
+
+    <!-- Card 31: Ten of Cups / Dix de Coupes -->
+    <string name="card_31_love_up">Le bonheur suprême en amour et en famille ; une relation harmonieuse profondément épanouissante.</string>
+    <string name="card_31_love_rev">Des conflits familiaux ou un dysfonctionnement dans la relation ; l\'image idéale de l\'amour semble brisée.</string>
+    <string name="card_31_career_up">Trouver une carrière qui apporte un épanouissement émotionnel et une harmonie à votre vie entière.</string>
+    <string name="card_31_career_rev">Le déséquilibre entre travail et vie personnelle perturbe l\'harmonie familiale ; le succès professionnel au détriment du bonheur personnel.</string>
+    <string name="card_31_finances_up">La stabilité financière soutient un foyer heureux ; la prospérité partagée avec vos proches.</string>
+    <string name="card_31_finances_rev">Le stress financier perturbe l\'harmonie familiale ; les problèmes d\'argent pèsent sur les relations personnelles.</string>
+    <string name="card_31_feelings_up">Un épanouissement émotionnel bienheureux ; un sentiment de bonheur profond et de paix avec votre vie.</string>
+    <string name="card_31_feelings_rev">Le sentiment que quelque chose est brisé dans votre vie personnelle ou familiale ; un désir d\'harmonie.</string>
+    <string name="card_31_actions_up">Investissez dans votre famille et vos relations proches ; créez la vie harmonieuse que vous imaginez.</string>
+    <string name="card_31_actions_rev">Abordez le dysfonctionnement familial avec sincérité ; travaillez à réparer les relations brisées et à restaurer l\'harmonie.</string>
+
+    <!-- Card 32: Page of Cups / Valet de Coupes -->
+    <string name="card_32_love_up">Un doux et tendre message romantique ou une proposition arrive ; une énergie juvénile d\'amour naissant.</string>
+    <string name="card_32_love_rev">L\'immaturité émotionnelle en amour ; des attentes romantiques irréalistes ou des fantaisies d\'évasion.</string>
+    <string name="card_32_career_up">Une opportunité créative ou une idée inspirée émerge ; abordez le travail avec curiosité et ouverture.</string>
+    <string name="card_32_career_rev">Des blocages créatifs ou un comportement immature au travail ; difficulté à mener les idées à leur terme.</string>
+    <string name="card_32_finances_up">Une petite opportunité financière prometteuse ; abordez les questions d\'argent avec une curiosité renouvelée.</string>
+    <string name="card_32_finances_rev">La naïveté financière ou une gestion immature de l\'argent ; des habitudes de dépenses d\'évasion.</string>
+    <string name="card_32_feelings_up">Un sentiment de curiosité émotionnelle et d\'ouverture ; un émerveillement enfantin remplit votre cœur.</string>
+    <string name="card_32_feelings_rev">L\'insécurité émotionnelle masquée par la rêverie ; difficulté à gérer des sentiments d\'adulte.</string>
+    <string name="card_32_actions_up">Restez ouvert aux messages émotionnels et créatifs de l\'univers ; suivez votre intuition.</string>
+    <string name="card_32_actions_rev">Ancrez vos émotions dans la réalité ; traversez vos insécurités au lieu de les fuir.</string>
+
+    <!-- Card 33: Knight of Cups / Cavalier de Coupes -->
+    <string name="card_33_love_up">Une proposition romantique ou un grand geste ; un prétendant charmant se présente avec des intentions sincères.</string>
+    <string name="card_33_love_rev">L\'humeur changeante et la jalousie perturbent la romance ; des attentes irréalistes mènent à la déception.</string>
+    <string name="card_33_career_up">Suivre son cœur dans les affaires de carrière ; une proposition créative ou un projet imaginatif prend forme.</string>
+    <string name="card_33_career_rev">Des objectifs de carrière irréalistes ou un comportement d\'humeur au travail ; tout le charme mais aucun suivi.</string>
+    <string name="card_33_finances_up">Suivre votre cœur mène à des entreprises créatives financièrement rentables.</string>
+    <string name="card_33_finances_rev">Des dépenses émotionnelles ou des attentes financières irréalistes ; des décisions d\'argent dictées par l\'humeur.</string>
+    <string name="card_33_feelings_up">Un sentiment d\'inspiration romantique et de générosité émotionnelle ; votre cœur montre le chemin.</string>
+    <string name="card_33_feelings_rev">L\'humeur changeante et l\'instabilité émotionnelle ; la jalousie ou l\'idéalisme irréaliste causent un trouble intérieur.</string>
+    <string name="card_33_actions_up">Suivez votre cœur avec courage ; faites un geste romantique ou créatif avec sincérité.</string>
+    <string name="card_33_actions_rev">Ancrez vos émotions ; ne laissez pas les sautes d\'humeur ou la jalousie guider vos actions.</string>
+
+    <!-- Card 34: Queen of Cups / Reine de Coupes -->
+    <string name="card_34_love_up">Une intelligence émotionnelle profonde enrichit votre vie amoureuse ; un partenariat bienveillant et intuitif.</string>
+    <string name="card_34_love_rev">La codépendance ou la manipulation émotionnelle en amour ; se sacrifier pour obtenir la reconnaissance d\'un partenaire.</string>
+    <string name="card_34_career_up">L\'intelligence émotionnelle fait de vous un leader compatissant ; faites confiance à votre approche intuitive du travail.</string>
+    <string name="card_34_career_rev">Assumer le fardeau émotionnel des autres au travail ; un sentiment d\'épuisement face aux problèmes des collègues.</string>
+    <string name="card_34_finances_up">Les décisions financières intuitives se révèlent sages ; la générosité et la compassion guident vos dépenses.</string>
+    <string name="card_34_finances_rev">Donner excessivement sur le plan financier ; les décisions émotionnelles sur l\'argent l\'emportent sur la sagesse pratique.</string>
+    <string name="card_34_feelings_up">Profondément compatissante et émotionnellement accordée ; votre empathie est un don pour votre entourage.</string>
+    <string name="card_34_feelings_rev">Un submergement émotionnel à force d\'absorber les sentiments des autres ; se perdre dans les soins aux autres.</string>
+    <string name="card_34_actions_up">Guidez-vous avec compassion et intelligence émotionnelle ; faites confiance à votre profonde connaissance intuitive.</string>
+    <string name="card_34_actions_rev">Établissez des limites émotionnelles ; cessez d\'absorber la douleur de tous au détriment de votre propre bien-être.</string>
+
+    <!-- Card 35: King of Cups / Roi de Coupes -->
+    <string name="card_35_love_up">Un amour émotionnellement mature et équilibré ; un partenaire sage, calme et profondément soutenant.</string>
+    <string name="card_35_love_rev">La froideur émotionnelle ou l\'instabilité dans la relation ; un partenaire qui refoule ou utilise les sentiments comme arme.</string>
+    <string name="card_35_career_up">Un leadership sage et diplomatique ; diriger les équipes avec intelligence émotionnelle et autorité calme.</string>
+    <string name="card_35_career_rev">Un leadership instable ou manipulateur ; utiliser le levier émotionnel pour contrôler les autres au travail.</string>
+    <string name="card_35_finances_up">Une gestion financière équilibrée et sage ; la maturité émotionnelle mène à de bonnes décisions monétaires.</string>
+    <string name="card_35_finances_rev">L\'instabilité émotionnelle perturbe la stabilité financière ; des décisions d\'argent impulsives dans les moments de trouble.</string>
+    <string name="card_35_feelings_up">Un sentiment d\'équilibre émotionnel et de sagesse ; une maîtrise calme de votre monde intérieur.</string>
+    <string name="card_35_feelings_rev">Refouler ses émotions crée un tumulte intérieur ; un calme apparent tandis qu\'à l\'intérieur tout bouillonne.</string>
+    <string name="card_35_actions_up">Dirigez avec sagesse émotionnelle et diplomatie ; équilibrez le cœur et la raison dans toutes vos décisions.</string>
+    <string name="card_35_actions_rev">Cessez de refouler vos émotions ; abordez l\'instabilité cachée sous votre apparence calme.</string>
+
+    <!-- ============================================================= -->
+    <!-- Deniers (Pentacles) — id 36–49, élément Terre                 -->
+    <!-- ============================================================= -->
+
+    <!-- Card 36: Ace of Pentacles / As de Deniers -->
+    <string name="card_36_love_up">Un nouveau départ solide en amour ; une relation qui offre sécurité et stabilité durable.</string>
+    <string name="card_36_love_rev">Une opportunité romantique prometteuse est gâchée ou gaspillée à cause de l\'insécurité.</string>
+    <string name="card_36_career_up">Une nouvelle opportunité de carrière lucrative se présente ; des fondations solides pour le succès professionnel.</string>
+    <string name="card_36_career_rev">Une opportunité de carrière vous échappe à cause d\'une mauvaise planification ou d\'hésitation.</string>
+    <string name="card_36_finances_up">Une nouvelle source de revenus ou un don financier inattendu ; la graine d\'une future prospérité est semée.</string>
+    <string name="card_36_finances_rev">Une opportunité financière gaspillée ; une mauvaise planification sape l\'abondance potentielle.</string>
+    <string name="card_36_feelings_up">Un sentiment d\'ancrage et d\'optimisme concernant un nouveau départ matériel ou pratique.</string>
+    <string name="card_36_feelings_rev">De l\'anxiété quant à la sécurité financière ; un sentiment d\'instabilité ou d\'inquiétude pour l\'avenir.</string>
+    <string name="card_36_actions_up">Saisissez la nouvelle opportunité avec une planification pratique et une détermination ancrée.</string>
+    <string name="card_36_actions_rev">Ne laissez pas la peur vous priver d\'une opportunité solide ; planifiez mieux et agissez de manière décisive.</string>
+
+    <!-- Card 37: Two of Pentacles / Deux de Deniers -->
+    <string name="card_37_love_up">Équilibrer l\'amour avec les autres obligations ; la flexibilité maintient la relation forte.</string>
+    <string name="card_37_love_rev">Des difficultés à équilibrer amour et vie quotidienne ; la relation souffre de négligence.</string>
+    <string name="card_37_career_up">Jongler avec succès entre plusieurs projets ou rôles ; l\'adaptabilité est votre plus grand atout.</string>
+    <string name="card_37_career_rev">Submergé par trop de responsabilités ; vous perdez le contrôle de vos tâches professionnelles.</string>
+    <string name="card_37_finances_up">Une gestion habile de finances fluctuantes ; adapter votre budget aux circonstances changeantes.</string>
+    <string name="card_37_finances_rev">Le chaos financier dû à une mauvaise organisation ; les dépenses excessives dans un domaine en épuisent un autre.</string>
+    <string name="card_37_feelings_up">Un sentiment d\'être occupé mais capable de tout gérer ; vous vous épanouissez dans le défi de maintenir l\'équilibre.</string>
+    <string name="card_37_feelings_rev">Un sentiment d\'être submergé et trop dispersé ; le numéro de jonglerie devient insoutenable.</string>
+    <string name="card_37_actions_up">Restez flexible et adaptable ; priorisez l\'essentiel et maintenez l\'équilibre.</string>
+    <string name="card_37_actions_rev">Simplifiez vos engagements ; vous ne pouvez pas tout bien faire, alors concentrez-vous sur l\'essentiel.</string>
+
+    <!-- Card 38: Three of Pentacles / Trois de Deniers -->
+    <string name="card_38_love_up">Construire une relation par un effort commun ; le travail d\'équipe renforce votre lien.</string>
+    <string name="card_38_love_rev">Le manque de travail d\'équipe dans la relation ; les partenaires échouent à collaborer sur des objectifs communs.</string>
+    <string name="card_38_career_up">Un succès collaboratif grâce à un travail d\'équipe habile ; votre expertise est reconnue et appréciée.</string>
+    <string name="card_38_career_rev">Les conflits au travail sapent l\'équipe ; une mauvaise collaboration mène à des résultats médiocres.</string>
+    <string name="card_38_finances_up">Des gains financiers grâce à un travail habile et une collaboration professionnelle.</string>
+    <string name="card_38_finances_rev">Une mauvaise planification financière par manque de conseils d\'experts ; économiser au mauvais endroit coûte davantage.</string>
+    <string name="card_38_feelings_up">De la fierté pour votre métier et vos réalisations communes ; le sentiment d\'être apprécié pour vos contributions.</string>
+    <string name="card_38_feelings_rev">De la frustration face à des personnes peu coopératives ; le sentiment de ne pas être apprécié ou de manquer de compétences.</string>
+    <string name="card_38_actions_up">Collaborez avec des personnes qualifiées ; investissez dans l\'apprentissage et le perfectionnement de votre métier.</string>
+    <string name="card_38_actions_rev">Améliorez vos compétences et votre communication ; résolvez les conflits d\'équipe avant qu\'ils ne sapent le travail.</string>
+
+    <!-- Card 39: Four of Pentacles / Quatre de Deniers -->
+    <string name="card_39_love_up">S\'accrocher à une relation par peur de la perte ; la possessivité en amour.</string>
+    <string name="card_39_love_rev">Relâcher la possessivité en amour ; ouvrir son cœur après une période de défense émotionnelle.</string>
+    <string name="card_39_career_up">La sécurité à tout prix dans la carrière ; s\'accrocher à un poste stable même s\'il n\'est pas épanouissant.</string>
+    <string name="card_39_career_rev">Relâcher la rigidité professionnelle ; prendre un risque de carrière après une période de prudence excessive.</string>
+    <string name="card_39_finances_up">S\'accrocher à l\'argent ; une gestion financière conservatrice offre la sécurité mais limite la croissance.</string>
+    <string name="card_39_finances_rev">Relâcher le contrôle financier ; des dépenses plus libres ou des dons généreux.</string>
+    <string name="card_39_feelings_up">Un sentiment de sécurité mais de limitation ; la peur de lâcher ce que vous avez accumulé.</string>
+    <string name="card_39_feelings_rev">Le soulagement de relâcher votre emprise ; un sentiment de légèreté après avoir abandonné le contrôle excessif.</string>
+    <string name="card_39_actions_up">Protégez ce que vous avez, mais examinez si un contrôle excessif ne limite pas votre vie.</string>
+    <string name="card_39_actions_rev">Desserrez votre emprise ; la générosité et l\'ouverture apporteront plus d\'abondance que l\'accumulation.</string>
+
+    <!-- Card 40: Five of Pentacles / Cinq de Deniers -->
+    <string name="card_40_love_up">Un sentiment d\'exclusion émotionnelle ; les épreuves mettent à l\'épreuve la solidité de votre relation.</string>
+    <string name="card_40_love_rev">La guérison après une période difficile en amour ; retrouver chaleur et soutien après un sentiment d\'abandon.</string>
+    <string name="card_40_career_up">Des difficultés professionnelles comme une perte d\'emploi ou des revers de carrière ; le sentiment d\'être écarté du jeu.</string>
+    <string name="card_40_career_rev">La reprise professionnelle commence ; de nouvelles perspectives d\'emploi apparaissent après une période difficile.</string>
+    <string name="card_40_finances_up">Des difficultés financières et des inquiétudes ; des difficultés à joindre les deux bouts en période de crise.</string>
+    <string name="card_40_finances_rev">La reprise financière est en chemin ; le pire est derrière vous et l\'amélioration est à l\'horizon.</string>
+    <string name="card_40_feelings_up">Un sentiment d\'appauvrissement et de solitude ; les soucis et la peur concernant la sécurité matérielle vous envahissent.</string>
+    <string name="card_40_feelings_rev">L\'espoir revient après une période sombre ; le sentiment que l\'aide et la guérison sont proches.</string>
+    <string name="card_40_actions_up">Cherchez de l\'aide et du soutien ; vous n\'avez pas à endurer ces épreuves seul.</string>
+    <string name="card_40_actions_rev">Acceptez l\'aide qui vous est offerte ; le processus de guérison a déjà commencé.</string>
+
+    <!-- Card 41: Six of Pentacles / Six de Deniers -->
+    <string name="card_41_love_up">Une relation généreuse et équilibrée de don et de réception en amour ; partage des ressources et du soutien émotionnel.</string>
+    <string name="card_41_love_rev">Un déséquilibre de pouvoir dans la relation ; la générosité assortie de conditions crée du ressentiment.</string>
+    <string name="card_41_career_up">Guider les autres ou recevoir un mentorat ; partager les connaissances et les ressources au travail.</string>
+    <string name="card_41_career_rev">L\'inégalité au travail ; des faveurs accordées avec des attentes ou une distribution injuste des ressources.</string>
+    <string name="card_41_finances_up">La générosité financière porte ses fruits ; partager votre abondance ou recevoir une aide financière nécessaire.</string>
+    <string name="card_41_finances_rev">Des dettes assorties de conditions ; la générosité financière utilisée comme outil de contrôle.</string>
+    <string name="card_41_feelings_up">Un sentiment de générosité et d\'abondance ; la joie de donner et la gratitude de recevoir.</string>
+    <string name="card_41_feelings_rev">Le sentiment d\'être redevable ou contrôlé par la générosité de quelqu\'un ; du ressentiment face à l\'inégalité.</string>
+    <string name="card_41_actions_up">Donnez généreusement quand vous le pouvez et recevez avec grâce quand vous en avez besoin ; maintenez l\'équilibre.</string>
+    <string name="card_41_actions_rev">Examinez la dynamique de pouvoir dans vos relations ; n\'acceptez pas de cadeaux assortis de conditions cachées.</string>
+
+    <!-- Card 42: Seven of Pentacles / Sept de Deniers -->
+    <string name="card_42_love_up">Cultiver patiemment la relation ; les graines que vous avez semées en amour poussent régulièrement.</string>
+    <string name="card_42_love_rev">De l\'impatience face aux progrès de la relation ; des doutes sur la valeur de votre investissement en amour.</string>
+    <string name="card_42_career_up">Les investissements professionnels à long terme commencent à porter leurs fruits ; la patience et la persévérance sont récompensées.</string>
+    <string name="card_42_career_rev">De la frustration face à la lenteur de l\'avancement professionnel ; des doutes sur le fait que votre travail acharné finira par payer.</string>
+    <string name="card_42_finances_up">Les investissements financiers à long terme croissent régulièrement ; la patience avec votre portefeuille porte ses fruits.</string>
+    <string name="card_42_finances_rev">De mauvais rendements sur les investissements financiers ; la frustration face à une croissance lente ou inexistante.</string>
+    <string name="card_42_feelings_up">De la patience mais aussi de la contemplation ; évaluer si vos efforts portent les fruits que vous espériez.</string>
+    <string name="card_42_feelings_rev">De la frustration et de l\'impatience ; le sentiment que votre dur labeur n\'a servi à rien.</string>
+    <string name="card_42_actions_up">Continuez à investir patiemment votre temps et votre énergie ; la récolte viendra en temps voulu.</string>
+    <string name="card_42_actions_rev">Réévaluez votre stratégie ; si vos efforts ne portent pas leurs fruits, envisagez une approche différente.</string>
+
+    <!-- Card 43: Eight of Pentacles / Huit de Deniers -->
+    <string name="card_43_love_up">Un travail assidu sur votre relation ; investir des efforts pour renforcer votre lien émotionnel.</string>
+    <string name="card_43_love_rev">Négliger la relation à cause d\'une obsession du travail ; le perfectionnisme crée de la distance en amour.</string>
+    <string name="card_43_career_up">Le développement dévoué de compétences mène à la maîtrise ; le travail acharné et l\'attention aux détails apportent le succès.</string>
+    <string name="card_43_career_rev">Prendre des raccourcis au travail ; le manque de dévouement mène à des résultats professionnels médiocres.</string>
+    <string name="card_43_finances_up">Une gestion financière méticuleuse et un revenu stable grâce à un travail habile.</string>
+    <string name="card_43_finances_rev">Les raccourcis financiers ne paient pas ; rogner sur la qualité diminue votre potentiel de gains.</string>
+    <string name="card_43_feelings_up">Un sentiment de concentration et d\'application ; une satisfaction profonde à maîtriser votre art.</string>
+    <string name="card_43_feelings_rev">Un sentiment d\'absence d\'inspiration ou d\'ennui face aux tâches répétitives ; le perfectionnisme épuise votre énergie.</string>
+    <string name="card_43_actions_up">Consacrez-vous à la maîtrise de votre art par la pratique assidue et l\'amélioration continue.</string>
+    <string name="card_43_actions_rev">Cessez de prendre des raccourcis ; réinvestissez dans un travail de qualité et évitez le piège du perfectionnisme.</string>
+
+    <!-- Card 44: Nine of Pentacles / Neuf de Deniers -->
+    <string name="card_44_love_up">Autonome et confiante en amour ; vous attirez un partenaire en étant pleinement épanouie par vous-même.</string>
+    <string name="card_44_love_rev">La dépendance financière envers un partenaire ; sacrifier son indépendance pour le confort matériel.</string>
+    <string name="card_44_career_up">Savourer les fruits de votre travail professionnel ; le succès acquis par vos propres efforts apporte une profonde satisfaction.</string>
+    <string name="card_44_career_rev">Se surmener pour maintenir une image de réussite ; l\'épuisement professionnel menace vos accomplissements.</string>
+    <string name="card_44_finances_up">L\'indépendance financière et le luxe acquis par vos propres efforts ; profiter de l\'abondance.</string>
+    <string name="card_44_finances_rev">Vivre au-dessus de vos moyens ; des revers financiers menacent le style de vie que vous avez construit.</string>
+    <string name="card_44_feelings_up">Un sentiment de riche autosuffisance et de fierté pour ce que vous avez bâti seul.</string>
+    <string name="card_44_feelings_rev">Le sentiment que votre indépendance est une illusion ; l\'inquiétude de perdre ce que vous avez.</string>
+    <string name="card_44_actions_up">Savourez l\'abondance que vous avez créée ; célébrez votre indépendance et votre succès durement acquis.</string>
+    <string name="card_44_actions_rev">Réévaluez si votre style de vie est durable ; la véritable abondance est bien plus que le luxe matériel.</string>
+
+    <!-- Card 45: Ten of Pentacles / Dix de Deniers -->
+    <string name="card_45_love_up">Une relation durable qui construit un héritage familial ; un engagement enraciné dans des valeurs partagées et la stabilité.</string>
+    <string name="card_45_love_rev">Des querelles familiales pèsent sur la relation ; des désaccords sur l\'argent ou l\'héritage causent des conflits.</string>
+    <string name="card_45_career_up">Construire un héritage professionnel durable ; un succès de carrière à long terme qui bénéficie aux générations futures.</string>
+    <string name="card_45_career_rev">Des conflits dans l\'entreprise familiale ou l\'effondrement d\'une entreprise professionnelle de longue date.</string>
+    <string name="card_45_finances_up">Une richesse intergénérationnelle et un héritage financier ; des investissements à long terme qui bénéficient à votre famille.</string>
+    <string name="card_45_finances_rev">Des disputes d\'héritage ou la perte de biens familiaux ; l\'instabilité financière menace votre héritage.</string>
+    <string name="card_45_feelings_up">Un sentiment d\'enracinement profond et de sécurité ; de la fierté pour l\'héritage que vous bâtissez pour les générations futures.</string>
+    <string name="card_45_feelings_rev">Des inquiétudes quant à la sécurité financière de la famille ; le sentiment que votre héritage se désagrège.</string>
+    <string name="card_45_actions_up">Construisez pour le long terme ; investissez dans la famille, les traditions et les institutions durables.</string>
+    <string name="card_45_actions_rev">Résolvez les conflits familiaux avant qu\'ils ne détruisent ce qui a pris des générations à construire.</string>
+
+    <!-- Card 46: Page of Pentacles / Valet de Deniers -->
+    <string name="card_46_love_up">Une approche stable et pratique d\'un nouvel amour ; construire une relation sur des bases solides.</string>
+    <string name="card_46_love_rev">Reporter l\'engagement ; la paresse ou le manque d\'effort dans la poursuite des objectifs romantiques.</string>
+    <string name="card_46_career_up">Une nouvelle opportunité d\'apprentissage passionnante ; une entreprise professionnelle pratique pleine de promesses.</string>
+    <string name="card_46_career_rev">Le manque de concentration ou la paresse freine l\'avancement professionnel ; des plans de carrière laissés inachevés.</string>
+    <string name="card_46_finances_up">Une nouvelle opportunité financière prometteuse ; abordez-la avec diligence et volonté d\'apprendre.</string>
+    <string name="card_46_finances_rev">Reporter la planification financière ; une gestion d\'argent dispersée donne de mauvais résultats.</string>
+    <string name="card_46_feelings_up">Un sentiment d\'ambition et de désir d\'apprendre ; de l\'enthousiasme pour un nouveau départ pratique.</string>
+    <string name="card_46_feelings_rev">Un sentiment de démotivation et de stagnation ; vous manquez de détermination pour poursuivre vos ambitions.</string>
+    <string name="card_46_actions_up">Poursuivez votre nouvelle entreprise avec diligence et la volonté d\'apprendre depuis les fondations.</string>
+    <string name="card_46_actions_rev">Cessez de procrastiner et prenez des mesures pratiques vers vos objectifs ; la discipline est nécessaire.</string>
+
+    <!-- Card 47: Knight of Pentacles / Cavalier de Deniers -->
+    <string name="card_47_love_up">Un partenaire fidèle et fiable ; un progrès lent mais régulier vers une relation engagée.</string>
+    <string name="card_47_love_rev">La relation est devenue ennuyeuse et routinière ; l\'entêtement empêche la croissance émotionnelle.</string>
+    <string name="card_47_career_up">Une éthique de travail stable et fiable qui produit des résultats constants ; la rigueur gagne la confiance.</string>
+    <string name="card_47_career_rev">La stagnation professionnelle par peur du changement ; un entêtement à s\'accrocher aux anciennes méthodes.</string>
+    <string name="card_47_finances_up">Une gestion financière responsable et méthodique ; une accumulation lente et régulière de richesse.</string>
+    <string name="card_47_finances_rev">La stagnation financière due à une prudence excessive ; manquer des opportunités par un conservatisme excessif.</string>
+    <string name="card_47_feelings_up">Un sentiment de stabilité et de responsabilité ; une détermination tranquille alimente vos efforts pratiques.</string>
+    <string name="card_47_feelings_rev">Le sentiment d\'être coincé dans la routine ; l\'ennui de l\'habitude mais trop d\'entêtement pour changer de cap.</string>
+    <string name="card_47_actions_up">Maintenez le cap avec un effort discipliné ; la fiabilité et la constance finiront par payer.</string>
+    <string name="card_47_actions_rev">Bousculez votre routine ; ne laissez pas l\'entêtement ou la peur du changement vous freiner.</string>
+
+    <!-- Card 48: Queen of Pentacles / Reine de Deniers -->
+    <string name="card_48_love_up">Un amour bienveillant et généreux ; créer un foyer chaleureux et abondant avec votre partenaire.</string>
+    <string name="card_48_love_rev">Négliger ses propres besoins en prenant soin des autres ; combler un partenaire de cadeaux matériels.</string>
+    <string name="card_48_career_up">Un leadership pratique et bienveillant ; créer un environnement de travail abondant et solidaire.</string>
+    <string name="card_48_career_rev">Le déséquilibre entre vie professionnelle et personnelle vous amène à négliger vos besoins ; trop investir dans la carrière au détriment du foyer.</string>
+    <string name="card_48_finances_up">Une gestion financière pratique et généreuse ; créer l\'abondance par une intendance sage.</string>
+    <string name="card_48_finances_rev">La surcharge financière due à une générosité excessive ; le matérialisme remplace le véritable soin.</string>
+    <string name="card_48_feelings_up">Un sentiment d\'ancrage, de générosité et de profonde satisfaction face à l\'abondance dans votre vie.</string>
+    <string name="card_48_feelings_rev">Un sentiment d\'épuisement à force de trop donner ; se perdre dans les soins aux besoins matériels des autres.</string>
+    <string name="card_48_actions_up">Créez l\'abondance par le soin pratique des autres ; soyez généreux tout en maintenant le soin de soi.</string>
+    <string name="card_48_actions_rev">Donnez la priorité à vos propres besoins ; cessez de donner aux autres au détriment de votre propre bien-être.</string>
+
+    <!-- Card 49: King of Pentacles / Roi de Deniers -->
+    <string name="card_49_love_up">Un partenaire stable et financièrement assuré ; l\'amour exprimé en offrant sécurité et confort.</string>
+    <string name="card_49_love_rev">Un partenaire qui privilégie l\'argent aux dépens de la connexion émotionnelle ; une approche matérialiste de l\'amour.</string>
+    <string name="card_49_career_up">La maîtrise des affaires et le leadership financier ; votre discipline et votre prévoyance apportent le succès professionnel.</string>
+    <string name="card_49_career_rev">La cupidité ou la mauvaise gestion sape votre entreprise ; l\'entêtement empêche l\'adaptation.</string>
+    <string name="card_49_finances_up">Le sommet du succès financier et de la gestion de patrimoine ; une direction disciplinée de votre empire financier.</string>
+    <string name="card_49_finances_rev">La mauvaise gestion financière due à la cupidité ou à la complaisance ; la richesse accumulée au détriment de l\'intégrité.</string>
+    <string name="card_49_feelings_up">Un sentiment de sécurité financière et de maîtrise ; la confiance dans votre capacité à bâtir et à maintenir la richesse.</string>
+    <string name="card_49_feelings_rev">Le sentiment d\'être défini par votre statut financier ; un vide malgré l\'abondance matérielle.</string>
+    <string name="card_49_actions_up">Dirigez avec sagesse commerciale et une gestion financière disciplinée ; bâtissez une richesse durable.</string>
+    <string name="card_49_actions_rev">Examinez si la cupidité n\'a pas corrompu vos valeurs ; la richesse sans intégrité est vide.</string>
+
+</resources>

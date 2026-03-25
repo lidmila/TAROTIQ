@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Major Arcana -->
+    <string name="card_the_fool">Il Matto</string>
+    <string name="card_the_magician">Il Bagatto</string>
+    <string name="card_the_high_priestess">La Papessa</string>
+    <string name="card_the_empress">L\'Imperatrice</string>
+    <string name="card_the_emperor">L\'Imperatore</string>
+    <string name="card_the_hierophant">Il Papa</string>
+    <string name="card_the_lovers">Gli Amanti</string>
+    <string name="card_the_chariot">Il Carro</string>
+    <string name="card_strength">La Forza</string>
+    <string name="card_the_hermit">L\'Eremita</string>
+    <string name="card_wheel_of_fortune">La Ruota della Fortuna</string>
+    <string name="card_justice">La Giustizia</string>
+    <string name="card_the_hanged_man">L\'Appeso</string>
+    <string name="card_death">La Morte</string>
+    <string name="card_temperance">La Temperanza</string>
+    <string name="card_the_devil">Il Diavolo</string>
+    <string name="card_the_tower">La Torre</string>
+    <string name="card_the_star">La Stella</string>
+    <string name="card_the_moon">La Luna</string>
+    <string name="card_the_sun">Il Sole</string>
+    <string name="card_judgement">Il Giudizio</string>
+    <string name="card_the_world">Il Mondo</string>
+
+    <!-- Cups -->
+    <string name="card_ace_of_cups">Asso di Coppe</string>
+    <string name="card_two_of_cups">Due di Coppe</string>
+    <string name="card_three_of_cups">Tre di Coppe</string>
+    <string name="card_four_of_cups">Quattro di Coppe</string>
+    <string name="card_five_of_cups">Cinque di Coppe</string>
+    <string name="card_six_of_cups">Sei di Coppe</string>
+    <string name="card_seven_of_cups">Sette di Coppe</string>
+    <string name="card_eight_of_cups">Otto di Coppe</string>
+    <string name="card_nine_of_cups">Nove di Coppe</string>
+    <string name="card_ten_of_cups">Dieci di Coppe</string>
+    <string name="card_page_of_cups">Fante di Coppe</string>
+    <string name="card_knight_of_cups">Cavaliere di Coppe</string>
+    <string name="card_queen_of_cups">Regina di Coppe</string>
+    <string name="card_king_of_cups">Re di Coppe</string>
+
+    <!-- Pentacles -->
+    <string name="card_ace_of_pentacles">Asso di Denari</string>
+    <string name="card_two_of_pentacles">Due di Denari</string>
+    <string name="card_three_of_pentacles">Tre di Denari</string>
+    <string name="card_four_of_pentacles">Quattro di Denari</string>
+    <string name="card_five_of_pentacles">Cinque di Denari</string>
+    <string name="card_six_of_pentacles">Sei di Denari</string>
+    <string name="card_seven_of_pentacles">Sette di Denari</string>
+    <string name="card_eight_of_pentacles">Otto di Denari</string>
+    <string name="card_nine_of_pentacles">Nove di Denari</string>
+    <string name="card_ten_of_pentacles">Dieci di Denari</string>
+    <string name="card_page_of_pentacles">Fante di Denari</string>
+    <string name="card_knight_of_pentacles">Cavaliere di Denari</string>
+    <string name="card_queen_of_pentacles">Regina di Denari</string>
+    <string name="card_king_of_pentacles">Re di Denari</string>
+
+    <!-- Swords -->
+    <string name="card_ace_of_swords">Asso di Spade</string>
+    <string name="card_two_of_swords">Due di Spade</string>
+    <string name="card_three_of_swords">Tre di Spade</string>
+    <string name="card_four_of_swords">Quattro di Spade</string>
+    <string name="card_five_of_swords">Cinque di Spade</string>
+    <string name="card_six_of_swords">Sei di Spade</string>
+    <string name="card_seven_of_swords">Sette di Spade</string>
+    <string name="card_eight_of_swords">Otto di Spade</string>
+    <string name="card_nine_of_swords">Nove di Spade</string>
+    <string name="card_ten_of_swords">Dieci di Spade</string>
+    <string name="card_page_of_swords">Fante di Spade</string>
+    <string name="card_knight_of_swords">Cavaliere di Spade</string>
+    <string name="card_queen_of_swords">Regina di Spade</string>
+    <string name="card_king_of_swords">Re di Spade</string>
+
+    <!-- Wands -->
+    <string name="card_ace_of_wands">Asso di Bastoni</string>
+    <string name="card_two_of_wands">Due di Bastoni</string>
+    <string name="card_three_of_wands">Tre di Bastoni</string>
+    <string name="card_four_of_wands">Quattro di Bastoni</string>
+    <string name="card_five_of_wands">Cinque di Bastoni</string>
+    <string name="card_six_of_wands">Sei di Bastoni</string>
+    <string name="card_seven_of_wands">Sette di Bastoni</string>
+    <string name="card_eight_of_wands">Otto di Bastoni</string>
+    <string name="card_nine_of_wands">Nove di Bastoni</string>
+    <string name="card_ten_of_wands">Dieci di Bastoni</string>
+    <string name="card_page_of_wands">Fante di Bastoni</string>
+    <string name="card_knight_of_wands">Cavaliere di Bastoni</string>
+    <string name="card_queen_of_wands">Regina di Bastoni</string>
+    <string name="card_king_of_wands">Re di Bastoni</string>
+</resources>

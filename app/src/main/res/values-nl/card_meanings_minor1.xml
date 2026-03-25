@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================= -->
+    <!-- Bekers (Cups) — id 22–35, element Water                       -->
+    <!-- ============================================================= -->
+
+    <!-- Card 22: Ace of Cups / Aas van Bekers -->
+    <string name="card_22_love_up">Een prachtig nieuw emotioneel begin; de kiem van een diepe en spirituele liefdesverbinding.</string>
+    <string name="card_22_love_rev">Emotionele blokkades verhinderen dat nieuwe liefde binnenkomt; je onderdrukt mogelijk je ware gevoelens.</string>
+    <string name="card_22_career_up">Creatieve inspiratie stroomt; een nieuw project vervult je met emotionele voldoening.</string>
+    <string name="card_22_career_rev">Creatieve blokkades verstikken je werk; emotionele ontevredenheid over je carrièrepad.</string>
+    <string name="card_22_finances_up">Emotionele vervulling is nu belangrijker dan geld; vrijgevigheid trekt overvloed aan.</string>
+    <string name="card_22_finances_rev">Een gevoel van emotionele leegte ondanks financiële stabiliteit; geld kan deze kloof niet vullen.</string>
+    <string name="card_22_feelings_up">Je hart stroomt over van liefde, mededogen en emotionele openheid.</string>
+    <string name="card_22_feelings_rev">Je emotioneel uitgeput of verdoofd voelen; moeite om verbinding te maken met je eigen gevoelens.</string>
+    <string name="card_22_actions_up">Open je hart en ontvang liefde en emotionele voeding uit alle bronnen.</string>
+    <string name="card_22_actions_rev">Deblokkeer onderdrukte emoties; sta jezelf toe te voelen en je ware gevoelens te uiten.</string>
+
+    <!-- Card 23: Two of Cups / Twee van Bekers -->
+    <string name="card_23_love_up">Sterke wederzijdse aantrekkingskracht en een dieper wordende band; twee harten verenigen zich in prachtige harmonie.</string>
+    <string name="card_23_love_rev">De relatie raakt uit balans; vervreemding en wantrouwen creëren afstand.</string>
+    <string name="card_23_career_up">Een productief zakelijk partnerschap ontstaat; wederzijds respect drijft gezamenlijk succes aan.</string>
+    <string name="card_23_career_rev">Professionele partnerschappen vallen uiteen; gebrek aan vertrouwen ondermijnt de teamsamenwerking.</string>
+    <string name="card_23_finances_up">Financiële partnerschappen of gedeelde middelen brengen wederzijds voordeel.</string>
+    <string name="card_23_finances_rev">Financiële meningsverschillen met een partner; gezamenlijke investeringen worden een bron van conflict.</string>
+    <string name="card_23_feelings_up">Een gevoel van diepe verbinding met iemand; wederzijdse genegenheid en emotionele afstemming.</string>
+    <string name="card_23_feelings_rev">Je vervreemd voelen van iemand om wie je geeft; de emotionele afstand groeit.</string>
+    <string name="card_23_actions_up">Koester je betekenisvolle verbindingen; investeer in wederzijdse relaties.</string>
+    <string name="card_23_actions_rev">Pak de onbalans in je relatie eerlijk aan; herstel het vertrouwen of neem waardig afscheid.</string>
+
+    <!-- Card 24: Three of Cups / Drie van Bekers -->
+    <string name="card_24_love_up">Vreugdevolle vieringen met dierbaren; vriendschappen verrijken je liefdesleven.</string>
+    <string name="card_24_love_rev">Inmenging van derden in de relatie; sociale buitensporigheid of jaloezie onder vrienden.</string>
+    <string name="card_24_career_up">Teamvieringen en gezamenlijk succes; creatieve groepsprojecten bloeien op.</string>
+    <string name="card_24_career_rev">Roddels of kliekjes op de werkvloer veroorzaken problemen; overmatig feesten op bedrijfsbijeenkomsten.</string>
+    <string name="card_24_finances_up">Gedeelde financiële vieringen; groepsinvesteringen of collectieve welvaart.</string>
+    <string name="card_24_finances_rev">Overmatig uitgeven aan sociale evenementen; groepsdruk leidt tot financiële buitensporigheid.</string>
+    <string name="card_24_feelings_up">Overstromend geluk en dankbaarheid; je opgetild voelen door gemeenschap en vriendschap.</string>
+    <string name="card_24_feelings_rev">Je buitengesloten voelen uit de groep; eenzaamheid ondanks dat je omringd bent door mensen.</string>
+    <string name="card_24_actions_up">Vier samen met je gemeenschap; deel je vreugde en dankbaarheid met anderen.</string>
+    <string name="card_24_actions_rev">Beperk overmatige sociale activiteiten; pak roddels of ongezonde groepsdynamiek aan.</string>
+
+    <!-- Card 25: Four of Cups / Vier van Bekers -->
+    <string name="card_25_love_up">Emotionele verveling of ontevredenheid in de liefde; je neemt je partner als vanzelfsprekend aan.</string>
+    <string name="card_25_love_rev">Hernieuwde waardering voor je partner; je ziet je relatie met frisse ogen.</string>
+    <string name="card_25_career_up">Je ongeïnteresseerd en ongemotiveerd voelen op het werk; je overweegt of je moet blijven of vertrekken.</string>
+    <string name="card_25_career_rev">Hernieuwd enthousiasme voor je carrière; een nieuwe kans trekt je aandacht.</string>
+    <string name="card_25_finances_up">Ontevredenheid over je financiële situatie ondanks dat je genoeg hebt; je ziet beschikbare kansen over het hoofd.</string>
+    <string name="card_25_finances_rev">Het herkennen en benutten van een financiële kans die je eerder over het hoofd zag.</string>
+    <string name="card_25_feelings_up">Emotionele apathie en geslotenheid; niets lijkt je te boeien of tevreden te stellen.</string>
+    <string name="card_25_feelings_rev">Je komt tevoorschijn uit emotionele geslotenheid met hernieuwde interesse en dankbaarheid.</string>
+    <string name="card_25_actions_up">Neem de tijd om te mediteren over wat echt belangrijk is voordat je kansen aanneemt of afwijst.</string>
+    <string name="card_25_actions_rev">Open je ogen voor de zegeningen om je heen; aanvaard wat je wordt aangeboden.</string>
+
+    <!-- Card 26: Five of Cups / Vijf van Bekers -->
+    <string name="card_26_love_up">Rouwen om een liefdesverlies of teleurstelling; je focust op wat er misging in plaats van op wat er nog is.</string>
+    <string name="card_26_love_rev">Je begint te genezen van een gebroken hart; je aanvaardt het verlies en vindt hoop op nieuwe liefde.</string>
+    <string name="card_26_career_up">Teleurstelling over een carrièretegenvaller; je blijft hangen bij een gemiste kans of falen.</string>
+    <string name="card_26_career_rev">Professionele teleurstellingen overwinnen; nieuw doel vinden na een carrièreverlies.</string>
+    <string name="card_26_finances_up">Financieel verlies veroorzaakt verdriet; spijt over slechte geldbeslissingen weegt zwaar.</string>
+    <string name="card_26_finances_rev">Herstel van financieel verlies; aanvaarden wat er is gebeurd en verstandig opnieuw opbouwen.</string>
+    <string name="card_26_feelings_up">Diep verdriet en spijt; je focust op wat verloren is gegaan in plaats van op wat er nog rest.</string>
+    <string name="card_26_feelings_rev">Vrede vinden na rouw; het genezingsproces begint terwijl je perspectief verschuift.</string>
+    <string name="card_26_actions_up">Sta jezelf toe te rouwen, maar vergeet niet om te kijken naar wat je nog steeds hebt.</string>
+    <string name="card_26_actions_rev">Keer je af van spijt en kijk vooruit; vergeef jezelf en aanvaard wat er nog is.</string>
+
+    <!-- Card 27: Six of Cups / Zes van Bekers -->
+    <string name="card_27_love_up">Nostalgische en tedere liefdesverbindingen; een oude liefde kan terugkeren of warme herinneringen komen boven.</string>
+    <string name="card_27_love_rev">Leven in het verleden verhindert nieuwe liefde; het idealiseren van een vroegere relatie blokkeert groei.</string>
+    <string name="card_27_career_up">Het hernieuwen van contact met een voormalige collega of terugkeren naar een eerder carrièrepad brengt vreugde.</string>
+    <string name="card_27_career_rev">Vastzitten in verouderde werkmethoden; nostalgie belemmert professionele ontwikkeling.</string>
+    <string name="card_27_finances_up">Financiële geschenken of een erfenis van familie; vrijgevigheid geworteld in gedeelde geschiedenis.</string>
+    <string name="card_27_finances_rev">Onrealistische financiële verwachtingen gebaseerd op het verleden; verouderde geldgewoonten houden je tegen.</string>
+    <string name="card_27_feelings_up">Warme nostalgie en onschuldige vreugde; troost vinden in gelukkige herinneringen.</string>
+    <string name="card_27_feelings_rev">Emotioneel vastzitten in het verleden; je kunt je niet volledig inlaten met het huidige moment.</string>
+    <string name="card_27_actions_up">Verbind je opnieuw met je wortels en de mensen die je gevormd hebben; deel met gulheid.</string>
+    <string name="card_27_actions_rev">Laat het verleden los en leef in het heden; stop met het idealiseren van wat ooit was.</string>
+
+    <!-- Card 28: Seven of Cups / Zeven van Bekers -->
+    <string name="card_28_love_up">Romantische fantasieën en geïdealiseerde beelden van liefde; te veel opties vertroebelen je oordeel.</string>
+    <string name="card_28_love_rev">Helderheid over wat je werkelijk wilt in de liefde; fantasieën maken plaats voor realistische keuzes.</string>
+    <string name="card_28_career_up">Te veel carrièremogelijkheden leiden tot analyseverlamming; dagdromen vervangt daden.</string>
+    <string name="card_28_career_rev">Je carrièrefocus vernauwen; je toewijden aan één pad na het elimineren van afleidingen.</string>
+    <string name="card_28_finances_up">Financiële fantasieën of snel-rijk-worden-schema\'s lokken je; blijf met beide benen op de grond.</string>
+    <string name="card_28_finances_rev">Een nuchtere kijk op financiën; toewijding aan praktische in plaats van fantasierijke geldplannen.</string>
+    <string name="card_28_feelings_up">Verdwaald in dagdromen en wensdenken; overweldigd door mogelijkheden zonder te kunnen kiezen.</string>
+    <string name="card_28_feelings_rev">Mentale helderheid doorbreekt de mist; je weet eindelijk wat je echt wilt.</string>
+    <string name="card_28_actions_up">Evalueer je opties zorgvuldig; maak onderscheid tussen realistische doelen en loze fantasieën.</string>
+    <string name="card_28_actions_rev">Stop met dromen en wijd je met volle overgave aan één haalbaar doel.</string>
+
+    <!-- Card 29: Eight of Cups / Acht van Bekers -->
+    <string name="card_29_love_up">Vertrekken uit een emotioneel onbevredigende relatie op zoek naar iets diepers.</string>
+    <string name="card_29_love_rev">Blijven in een liefdeloze relatie uit angst; je durft niet weg te gaan bij wat je niet meer dient.</string>
+    <string name="card_29_career_up">Een carrière verlaten die je niet langer vervult; op zoek gaan naar zinvoller werk.</string>
+    <string name="card_29_career_rev">Angst om een onbevredigende baan te verlaten; vasthouden aan zekerheid in plaats van vervulling.</string>
+    <string name="card_29_finances_up">Vertrekken uit een financiële situatie die je groei niet meer dient.</string>
+    <string name="card_29_finances_rev">Vasthouden aan een nadelige financiële regeling uit angst voor het onbekende.</string>
+    <string name="card_29_feelings_up">Een diep innerlijk besef dat je verder moet; zelfs al doet het pijn om te vertrekken.</string>
+    <string name="card_29_feelings_rev">Angst voor verlating of verandering houdt je emotioneel gevangen in het vertrouwde.</string>
+    <string name="card_29_actions_up">Heb de moed om weg te gaan bij wat je niet meer vervult; zoek hogere doelen.</string>
+    <string name="card_29_actions_rev">Onderzoek waarom je bang bent om te vertrekken; het ongemak van blijven kan groter zijn dan het risico van gaan.</string>
+
+    <!-- Card 30: Nine of Cups / Negen van Bekers -->
+    <string name="card_30_love_up">Je romantische wensen komen uit; diepe emotionele voldoening en tevredenheid in de liefde.</string>
+    <string name="card_30_love_rev">Oppervlakkige voldoening in de liefde; verlangen naar meer ondanks een goede relatie.</string>
+    <string name="card_30_career_up">Professionele wensen worden vervuld; je bereikt een carrièremijlpaal die diepe voldoening brengt.</string>
+    <string name="card_30_career_rev">Carrièresuccessen voelen leeg; succes zonder zingeving laat je verlangen naar meer.</string>
+    <string name="card_30_finances_up">Financiële wensen materialiseren zich; overvloed en welvaart brengen diepe tevredenheid.</string>
+    <string name="card_30_finances_rev">Hebzucht of materialisme vermindert de vreugde van financieel succes; meer willen is nooit genoeg.</string>
+    <string name="card_30_feelings_up">Diepe tevredenheid en emotionele vervulling; een gevoel van dankbaarheid voor alles wat je hebt.</string>
+    <string name="card_30_feelings_rev">Ontevredenheid ondanks dat je alles hebt; een knagende leegte die bezittingen niet kunnen vullen.</string>
+    <string name="card_30_actions_up">Tel je zegeningen en geniet van de vervulling van je wensen met dankbaarheid.</string>
+    <string name="card_30_actions_rev">Onderzoek wat je werkelijk vreugde brengt; materiële overvloed kan innerlijke vervulling niet vervangen.</string>
+
+    <!-- Card 31: Ten of Cups / Tien van Bekers -->
+    <string name="card_31_love_up">Het hoogste geluk in liefde en gezin; een harmonieuze relatie die diep vervullend is.</string>
+    <string name="card_31_love_rev">Gezinsonenigheid of disfunctie in de relatie; het ideale beeld van liefde lijkt gebroken.</string>
+    <string name="card_31_career_up">Een carrière vinden die emotionele vervulling en harmonie brengt in je hele leven.</string>
+    <string name="card_31_career_rev">Onbalans tussen werk en privé verstoort de gezinsharmonie; carrièresucces ten koste van persoonlijk geluk.</string>
+    <string name="card_31_finances_up">Financiële stabiliteit ondersteunt een gelukkig thuis; welvaart gedeeld met dierbaren.</string>
+    <string name="card_31_finances_rev">Financiële stress verstoort de gezinsharmonie; geldproblemen belasten persoonlijke relaties.</string>
+    <string name="card_31_feelings_up">Zalige emotionele vervulling; een gevoel van diep geluk en vrede met je leven.</string>
+    <string name="card_31_feelings_rev">Het gevoel dat er iets gebroken is in je persoonlijke of gezinsleven; verlangen naar harmonie.</string>
+    <string name="card_31_actions_up">Investeer in gezin en hechte relaties; creëer het harmonieuze leven dat je voor ogen hebt.</string>
+    <string name="card_31_actions_rev">Pak gezinsdisfunctie eerlijk aan; werk aan het herstellen van beschadigde relaties en het herstellen van harmonie.</string>
+
+    <!-- Card 32: Page of Cups / Page van Bekers -->
+    <string name="card_32_love_up">Er komt een lief en teder romantisch bericht of aanbod; jeugdige energie van puppy love.</string>
+    <string name="card_32_love_rev">Emotionele onrijpheid in de liefde; onrealistische romantische verwachtingen of escapistische fantasieën.</string>
+    <string name="card_32_career_up">Een creatieve kans of geïnspireerd idee dient zich aan; benader je werk met nieuwsgierigheid en openheid.</string>
+    <string name="card_32_career_rev">Creatieve blokkades of onvolwassen gedrag op het werk; moeite om ideeën af te ronden.</string>
+    <string name="card_32_finances_up">Een kleine maar veelbelovende financiële kans; benader geldzaken met frisse nieuwsgierigheid.</string>
+    <string name="card_32_finances_rev">Financiële naïviteit of onvolwassen omgang met geld; escapistische uitgavenpatronen.</string>
+    <string name="card_32_feelings_up">Een gevoel van emotionele nieuwsgierigheid en openheid; kinderlijke verwondering vult je hart.</string>
+    <string name="card_32_feelings_rev">Emotionele onzekerheid gemaskeerd door dagdromen; moeite om volwassen gevoelens te verwerken.</string>
+    <string name="card_32_actions_up">Sta open voor emotionele en creatieve boodschappen van het universum; volg je intuïtie.</string>
+    <string name="card_32_actions_rev">Aard je emoties in de realiteit; werk je onzekerheden door in plaats van ervoor weg te vluchten.</string>
+
+    <!-- Card 33: Knight of Cups / Ridder van Bekers -->
+    <string name="card_33_love_up">Een romantisch aanbod of groot gebaar; een charmante aanbidder verschijnt met oprechte bedoelingen.</string>
+    <string name="card_33_love_rev">Wispelturigheid en jaloezie verstoren de romantiek; onrealistische verwachtingen leiden tot teleurstelling.</string>
+    <string name="card_33_career_up">Je hart volgen in carrièrezaken; een creatief voorstel of fantasierijk project krijgt vorm.</string>
+    <string name="card_33_career_rev">Onrealistische carrièredoelen of wispelturig gedrag op het werk; veel charme maar weinig doorzetting.</string>
+    <string name="card_33_finances_up">Je hart volgen leidt tot financieel lonende creatieve ondernemingen.</string>
+    <string name="card_33_finances_rev">Emotioneel uitgeven of onrealistische financiële verwachtingen; geldbeslissingen gestuurd door stemming.</string>
+    <string name="card_33_feelings_up">Een gevoel van romantische inspiratie en emotionele vrijgevigheid; je hart wijst de weg.</string>
+    <string name="card_33_feelings_rev">Wispelturigheid en emotionele instabiliteit; jaloezie of onrealistisch idealisme veroorzaakt innerlijke chaos.</string>
+    <string name="card_33_actions_up">Volg je hart met moed; maak een romantisch of creatief gebaar met oprechtheid.</string>
+    <string name="card_33_actions_rev">Aard je emoties; laat wispelturigheid of jaloezie niet je handelen bepalen.</string>
+
+    <!-- Card 34: Queen of Cups / Koningin van Bekers -->
+    <string name="card_34_love_up">Diepe emotionele intelligentie verrijkt je liefdesleven; een zorgzaam en intuïtief partnerschap.</string>
+    <string name="card_34_love_rev">Co-afhankelijkheid of emotionele manipulatie in de liefde; jezelf opofferen voor de erkenning van je partner.</string>
+    <string name="card_34_career_up">Emotionele intelligentie maakt je een medelevend leider; vertrouw op je intuïtieve benadering van werk.</string>
+    <string name="card_34_career_rev">De emotionele lasten van anderen op het werk overnemen; je uitgeput voelen door de problemen van collega\'s.</string>
+    <string name="card_34_finances_up">Intuïtieve financiële beslissingen blijken wijs; vrijgevigheid en mededogen sturen je uitgaven.</string>
+    <string name="card_34_finances_rev">Financieel te veel weggeven; emotionele geldbeslissingen overheersen praktische wijsheid.</string>
+    <string name="card_34_feelings_up">Diep medelevend en emotioneel afgestemd; je empathie is een geschenk voor je omgeving.</string>
+    <string name="card_34_feelings_rev">Emotioneel overweldigd door het absorberen van andermans gevoelens; jezelf verliezen in de zorg voor anderen.</string>
+    <string name="card_34_actions_up">Leid met mededogen en emotionele intelligentie; vertrouw op je diep intuïtieve inzicht.</string>
+    <string name="card_34_actions_rev">Stel emotionele grenzen; stop met het absorberen van andermans pijn ten koste van je eigen welzijn.</string>
+
+    <!-- Card 35: King of Cups / Koning van Bekers -->
+    <string name="card_35_love_up">Emotioneel volwassen en evenwichtige liefde; een partner die wijs, kalm en diep ondersteunend is.</string>
+    <string name="card_35_love_rev">Emotionele kilte of instabiliteit in de relatie; een partner die gevoelens onderdrukt of als wapen gebruikt.</string>
+    <string name="card_35_career_up">Wijs en diplomatiek leiderschap; teams aansturen met emotionele intelligentie en kalme autoriteit.</string>
+    <string name="card_35_career_rev">Wispelturig of manipulatief leiderschap; emotionele druk gebruiken om anderen op het werk te controleren.</string>
+    <string name="card_35_finances_up">Evenwichtig en wijs financieel beheer; emotionele volwassenheid leidt tot goede geldbeslissingen.</string>
+    <string name="card_35_finances_rev">Emotionele instabiliteit verstoort financiële stabiliteit; impulsieve geldbeslissingen in momenten van ontregeling.</string>
+    <string name="card_35_feelings_up">Een gevoel van emotioneel evenwicht en wijsheid; kalm meesterschap over je innerlijke gevoelswereld.</string>
+    <string name="card_35_feelings_rev">Het onderdrukken van emoties creëert innerlijke chaos; uiterlijk kalm terwijl het vanbinnen stormt.</string>
+    <string name="card_35_actions_up">Leid met emotionele wijsheid en diplomatie; breng hart en verstand in evenwicht bij al je beslissingen.</string>
+    <string name="card_35_actions_rev">Stop met het onderdrukken van je emoties; pak de instabiliteit aan die schuilgaat achter je kalme uiterlijk.</string>
+
+    <!-- ============================================================= -->
+    <!-- Pentakels (Pentacles) — id 36–49, element Aarde               -->
+    <!-- ============================================================= -->
+
+    <!-- Card 36: Ace of Pentacles / Aas van Pentakels -->
+    <string name="card_36_love_up">Een solide nieuw begin in de liefde; een relatie die zekerheid en blijvende stabiliteit biedt.</string>
+    <string name="card_36_love_rev">Een veelbelovende romantische kans wordt verspild of gemist door onzekerheid.</string>
+    <string name="card_36_career_up">Een lucratieve nieuwe carrièrekans dient zich aan; een stevig fundament voor professioneel succes.</string>
+    <string name="card_36_career_rev">Een carrièrekans ontsnapt door slechte planning of aarzeling.</string>
+    <string name="card_36_finances_up">Een nieuwe inkomstenbron of financiële meevaller; het zaad van toekomstige welvaart is geplant.</string>
+    <string name="card_36_finances_rev">Een verspilde financiële kans; slechte planning ondermijnt potentiële overvloed.</string>
+    <string name="card_36_feelings_up">Je geaard en optimistisch voelen over een nieuw materieel of praktisch begin.</string>
+    <string name="card_36_feelings_rev">Angst om financiële zekerheid; je instabiel voelen of je zorgen maken over de toekomst.</string>
+    <string name="card_36_actions_up">Grijp de nieuwe kans met praktische planning en geaarde vastberadenheid.</string>
+    <string name="card_36_actions_rev">Laat angst je niet beroven van een solide kans; plan beter en handel doortastend.</string>
+
+    <!-- Card 37: Two of Pentacles / Twee van Pentakels -->
+    <string name="card_37_love_up">Liefde in balans brengen met andere verplichtingen; flexibiliteit houdt de relatie sterk.</string>
+    <string name="card_37_love_rev">Moeite om liefde en leven in balans te houden; de relatie lijdt onder verwaarlozing.</string>
+    <string name="card_37_career_up">Succesvol jongleren met meerdere projecten of rollen; aanpassingsvermogen is je grootste troef.</string>
+    <string name="card_37_career_rev">Overweldigd door te veel verantwoordelijkheden; de controle over werktaken verliezen.</string>
+    <string name="card_37_finances_up">Handig beheer van wisselende financiën; je budget aanpassen aan veranderende omstandigheden.</string>
+    <string name="card_37_finances_rev">Financiële chaos door slechte organisatie; overmatig uitgeven in één gebied put een ander uit.</string>
+    <string name="card_37_feelings_up">Je druk maar capabel voelen; je gedijt bij de uitdaging om meerdere dingen draaiende te houden.</string>
+    <string name="card_37_feelings_rev">Je overweldigd en te verspreid voelen; het jongleerkunstje is onhoudbaar.</string>
+    <string name="card_37_actions_up">Blijf flexibel en aanpasbaar; geef prioriteit aan wat het belangrijkst is en bewaar de balans.</string>
+    <string name="card_37_actions_rev">Vereenvoudig je verplichtingen; je kunt niet alles goed doen, dus focus op het essentiële.</string>
+
+    <!-- Card 38: Three of Pentacles / Drie van Pentakels -->
+    <string name="card_38_love_up">Samen bouwen aan de relatie door gezamenlijke inspanning; teamwerk versterkt jullie band.</string>
+    <string name="card_38_love_rev">Gebrek aan teamwerk in de relatie; partners falen in de samenwerking aan gemeenschappelijke doelen.</string>
+    <string name="card_38_career_up">Professioneel succes door vakkundige samenwerking; je expertise wordt erkend en gewaardeerd.</string>
+    <string name="card_38_career_rev">Conflicten op de werkvloer ondermijnen het team; slechte samenwerking leidt tot middelmatige resultaten.</string>
+    <string name="card_38_finances_up">Financiële winst door vakkundig werk en professionele samenwerking.</string>
+    <string name="card_38_finances_rev">Slecht financieel advies door gebrek aan deskundige raad; bezuinigen op de verkeerde plaats kost meer.</string>
+    <string name="card_38_feelings_up">Trots op je vakmanschap en gezamenlijke prestaties; je gewaardeerd voelen om je bijdrage.</string>
+    <string name="card_38_feelings_rev">Frustratie over mensen die niet meewerken; je ondergewaardeerd of onvoldoende bekwaam voelen.</string>
+    <string name="card_38_actions_up">Werk samen met vakmensen; investeer in leren en het perfectioneren van je ambacht.</string>
+    <string name="card_38_actions_rev">Verbeter je vaardigheden en communicatie; los teamconflicten op voordat ze het werk ondermijnen.</string>
+
+    <!-- Card 39: Four of Pentacles / Vier van Pentakels -->
+    <string name="card_39_love_up">Krampachtig vasthouden aan een relatie uit angst voor verlies; bezitterigheid in de liefde.</string>
+    <string name="card_39_love_rev">Het loslaten van bezitterigheid in de liefde; je hart openen na een periode van emotionele verdediging.</string>
+    <string name="card_39_career_up">Zekerheid koste wat kost in je carrière; vasthouden aan een stabiele positie zelfs als die niet vervult.</string>
+    <string name="card_39_career_rev">Het loslaten van carrièrestarheid; een professioneel risico nemen na een periode van op safe spelen.</string>
+    <string name="card_39_finances_up">Krampachtig vasthouden aan geld; conservatief financieel beheer biedt zekerheid maar beperkt groei.</string>
+    <string name="card_39_finances_rev">Financiële controle loslaten; vrijer uitgeven of genereus geven.</string>
+    <string name="card_39_feelings_up">Je veilig maar beperkt voelen; angst om los te laten wat je hebt opgebouwd.</string>
+    <string name="card_39_feelings_rev">Opluchting door het loslaten van de greep; je lichter voelen na het opgeven van overmatige controle.</string>
+    <string name="card_39_actions_up">Bescherm wat je hebt, maar onderzoek of overmatige controle je leven niet beperkt.</string>
+    <string name="card_39_actions_rev">Laat de greep los; vrijgevigheid en openheid brengen meer overvloed dan hamsteren.</string>
+
+    <!-- Card 40: Five of Pentacles / Vijf van Pentakels -->
+    <string name="card_40_love_up">Je emotioneel buitengesloten voelen; moeilijkheden testen de kracht van je relatie.</string>
+    <string name="card_40_love_rev">Herstel na een moeilijke periode in de liefde; warmte en steun vinden na een gevoel van verlatenheid.</string>
+    <string name="card_40_career_up">Carrièretegenspoed zoals baanverlies of professionele tegenslagen; je buitenspel voelen.</string>
+    <string name="card_40_career_rev">Professioneel herstel begint; nieuwe werkperspectieven verschijnen na een moeilijke periode.</string>
+    <string name="card_40_finances_up">Financiële tegenspoed en zorgen; moeite om rond te komen in een lastige periode.</string>
+    <string name="card_40_finances_rev">Financieel herstel is op komst; het ergste is voorbij en verbetering gloort aan de horizon.</string>
+    <string name="card_40_feelings_up">Je verarmd en eenzaam voelen; zorgen en angst om materiële zekerheid overspoelen je.</string>
+    <string name="card_40_feelings_rev">Hoop keert terug na een donkere periode; het gevoel dat hulp en herstel nabij zijn.</string>
+    <string name="card_40_actions_up">Zoek hulp en ondersteuning; je hoeft deze tegenspoed niet alleen te doorstaan.</string>
+    <string name="card_40_actions_rev">Aanvaard de aangeboden hulp; het herstelproces is al begonnen.</string>
+
+    <!-- Card 41: Six of Pentacles / Zes van Pentakels -->
+    <string name="card_41_love_up">Een genereuze en evenwichtige relatie van geven en ontvangen in de liefde; het delen van steun en middelen.</string>
+    <string name="card_41_love_rev">Machtsongelijkheid in de relatie; vrijgevigheid met voorwaarden creëert wrok.</string>
+    <string name="card_41_career_up">Anderen mentoren of begeleiding ontvangen; kennis en middelen delen op de werkvloer.</string>
+    <string name="card_41_career_rev">Ongelijkheid op de werkplek; gunsten verleend met verwachtingen of oneerlijke verdeling van middelen.</string>
+    <string name="card_41_finances_up">Financiële vrijgevigheid loont; je overvloed delen of broodnodige financiële hulp ontvangen.</string>
+    <string name="card_41_finances_rev">Schulden met voorwaarden; financiële vrijgevigheid gebruikt als middel tot controle.</string>
+    <string name="card_41_feelings_up">Je genereus en overvloedig voelen; vreugde in het geven en dankbaarheid in het ontvangen.</string>
+    <string name="card_41_feelings_rev">Je verschuldigd of gecontroleerd voelen door iemands vrijgevigheid; wrok door ongelijkheid.</string>
+    <string name="card_41_actions_up">Geef genereus wanneer je kunt en ontvang met gratie wanneer je het nodig hebt; bewaar de balans.</string>
+    <string name="card_41_actions_rev">Onderzoek de machtsdynamiek in je relaties; aanvaard geen geschenken met verborgen voorwaarden.</string>
+
+    <!-- Card 42: Seven of Pentacles / Zeven van Pentakels -->
+    <string name="card_42_love_up">Geduldig cultiveren van de relatie; de zaden die je in de liefde hebt geplant, groeien gestaag.</string>
+    <string name="card_42_love_rev">Ongeduld met de voortgang van de relatie; twijfels of je investering in de liefde de moeite waard is.</string>
+    <string name="card_42_career_up">Langetermijncarrière-investeringen beginnen vruchten af te werpen; geduld en doorzettingsvermogen worden beloond.</string>
+    <string name="card_42_career_rev">Frustratie over trage carrièrevordering; twijfels of je harde werk zich ooit zal uitbetalen.</string>
+    <string name="card_42_finances_up">Langetermijninvesteringen groeien gestaag; geduld met je portefeuille loont.</string>
+    <string name="card_42_finances_rev">Slechte rendementen op financiële investeringen; frustratie over langzame of geen groei.</string>
+    <string name="card_42_feelings_up">Geduldig maar bedachtzaam; je evalueert of je inspanningen de vruchten opleveren waarop je hoopte.</string>
+    <string name="card_42_feelings_rev">Frustratie en ongeduld; het gevoel dat je harde werk voor niets is geweest.</string>
+    <string name="card_42_actions_up">Blijf geduldig tijd en energie investeren; de oogst komt op het juiste moment.</string>
+    <string name="card_42_actions_rev">Heroverweeg je strategie; als je inspanningen geen resultaat opleveren, overweeg dan een andere aanpak.</string>
+
+    <!-- Card 43: Eight of Pentacles / Acht van Pentakels -->
+    <string name="card_43_love_up">IJverig werken aan je relatie; inspanning investeren om je emotionele band te versterken.</string>
+    <string name="card_43_love_rev">De relatie verwaarlozen door een obsessie met werk; perfectionisme creëert afstand in de liefde.</string>
+    <string name="card_43_career_up">Toegewijde vaardigheidsontwikkeling leidt tot meesterschap; hard werken en oog voor detail brengen succes.</string>
+    <string name="card_43_career_rev">De bocht afsnijden in je werk; gebrek aan toewijding leidt tot middelmatige professionele resultaten.</string>
+    <string name="card_43_finances_up">Zorgvuldig financieel beheer en stabiel inkomen uit vakkundig werk.</string>
+    <string name="card_43_finances_rev">Financiële sluiproutes lonen niet; beknibbelen op kwaliteit vermindert je verdienpotentieel.</string>
+    <string name="card_43_feelings_up">Je gefocust en arbeidzaam voelen; diepe voldoening uit het beheersen van je vak.</string>
+    <string name="card_43_feelings_rev">Je ongeïnspireerd of verveeld voelen door repetitieve taken; perfectionisme put je energie uit.</string>
+    <string name="card_43_actions_up">Wijd je aan het meesterschap van je vak door ijverige oefening en voortdurende verbetering.</string>
+    <string name="card_43_actions_rev">Stop met bochten afsnijden; investeer opnieuw in kwaliteitswerk en vermijd de valkuil van perfectionisme.</string>
+
+    <!-- Card 44: Nine of Pentacles / Negen van Pentakels -->
+    <string name="card_44_love_up">Zelfvoorzienend en zelfverzekerd in de liefde; je trekt een partner aan door volledig te zijn op eigen kracht.</string>
+    <string name="card_44_love_rev">Financiële afhankelijkheid van een partner; onafhankelijkheid opofferen voor materieel comfort.</string>
+    <string name="card_44_career_up">Genieten van de vruchten van je professionele arbeid; eigen verdiend succes brengt diepe voldoening.</string>
+    <string name="card_44_career_rev">Je overwerken om het beeld van succes in stand te houden; professionele burn-out bedreigt je prestaties.</string>
+    <string name="card_44_finances_up">Financiële onafhankelijkheid en luxe verdiend door eigen inspanning; genieten van overvloed.</string>
+    <string name="card_44_finances_rev">Boven je stand leven; financiële tegenslagen bedreigen de levensstijl die je hebt opgebouwd.</string>
+    <string name="card_44_feelings_up">Een gevoel van rijke zelfvoorzienendheid en trots op wat je zelf hebt opgebouwd.</string>
+    <string name="card_44_feelings_rev">Het gevoel dat je onafhankelijkheid een illusie is; zorgen over het verliezen van wat je hebt.</string>
+    <string name="card_44_actions_up">Geniet van de overvloed die je hebt gecreëerd; vier je onafhankelijkheid en zwaarbevochten succes.</string>
+    <string name="card_44_actions_rev">Heroverweeg of je levensstijl duurzaam is; ware overvloed is meer dan materiële luxe.</string>
+
+    <!-- Card 45: Ten of Pentacles / Tien van Pentakels -->
+    <string name="card_45_love_up">Een duurzame relatie die een familielegaat opbouwt; een verbintenis geworteld in gedeelde waarden en stabiliteit.</string>
+    <string name="card_45_love_rev">Familieruzies belasten de relatie; onenigheid over geld of erfenis veroorzaakt conflicten.</string>
+    <string name="card_45_career_up">Een blijvend professioneel legaat opbouwen; langetermijncarrièresucces dat toekomstige generaties ten goede komt.</string>
+    <string name="card_45_career_rev">Conflicten in het familiebedrijf of het instorten van een langdurige professionele onderneming.</string>
+    <string name="card_45_finances_up">Generatieoverstijgend vermogen en financieel erfgoed; langetermijninvesteringen die je familie ten goede komen.</string>
+    <string name="card_45_finances_rev">Erfenisgeschillen of verlies van familievermogen; financiële instabiliteit bedreigt je nalatenschap.</string>
+    <string name="card_45_feelings_up">Een gevoel van diepe geworteldheid en zekerheid; trots op het legaat dat je opbouwt voor toekomstige generaties.</string>
+    <string name="card_45_feelings_rev">Zorgen over de financiële zekerheid van het gezin; het gevoel dat je nalatenschap uit elkaar valt.</string>
+    <string name="card_45_actions_up">Bouw voor de lange termijn; investeer in familie, tradities en duurzame instituties.</string>
+    <string name="card_45_actions_rev">Los familiegeschillen op voordat ze vernietigen wat generaties heeft gekost om op te bouwen.</string>
+
+    <!-- Card 46: Page of Pentacles / Page van Pentakels -->
+    <string name="card_46_love_up">Een gestage en praktische benadering van nieuwe liefde; een relatie bouwen op stevige fundamenten.</string>
+    <string name="card_46_love_rev">Het uitstellen van een verbintenis; luiheid of gebrek aan inzet bij het nastreven van romantische doelen.</string>
+    <string name="card_46_career_up">Een opwindende nieuwe leermogelijkheid; een praktische carrièreonderneming met veel belofte.</string>
+    <string name="card_46_career_rev">Gebrek aan focus of luiheid remt carrièrevordering; professionele plannen niet afmaken.</string>
+    <string name="card_46_finances_up">Een veelbelovende nieuwe financiële kans; benader deze met vlijt en leergierigheid.</string>
+    <string name="card_46_finances_rev">Het uitstellen van financiële planning; onfocust geldbeheer levert slechte resultaten op.</string>
+    <string name="card_46_feelings_up">Je ambitieus voelen en begerig om te leren; enthousiasme over een praktisch nieuw begin.</string>
+    <string name="card_46_feelings_rev">Je ongemotiveerd en vastgelopen voelen; de vastberadenheid ontbreekt om je ambities na te streven.</string>
+    <string name="card_46_actions_up">Streef je nieuwe onderneming na met vlijt en de bereidheid om vanaf de basis te leren.</string>
+    <string name="card_46_actions_rev">Stop met uitstellen en onderneem praktische stappen richting je doelen; er is discipline nodig.</string>
+
+    <!-- Card 47: Knight of Pentacles / Ridder van Pentakels -->
+    <string name="card_47_love_up">Een trouwe en betrouwbare partner; langzame maar gestage vooruitgang naar een toegewijde relatie.</string>
+    <string name="card_47_love_rev">De relatie is saai en routinematig geworden; koppigheid belemmert emotionele groei.</string>
+    <string name="card_47_career_up">Een gestage en betrouwbare werkethiek levert consistente resultaten op; grondigheid verdient vertrouwen.</string>
+    <string name="card_47_career_rev">Professionele stagnatie door angst voor verandering; koppig vasthouden aan oude methoden.</string>
+    <string name="card_47_finances_up">Verantwoord en methodisch financieel beheer; langzame en gestage vermogensopbouw.</string>
+    <string name="card_47_finances_rev">Financiële stagnatie door overmatige voorzichtigheid; kansen missen door te veel conservatisme.</string>
+    <string name="card_47_feelings_up">Je standvastig en verantwoordelijk voelen; een stille vastberadenheid drijft je praktische inspanningen aan.</string>
+    <string name="card_47_feelings_rev">Je vastgelopen voelen in een sleur; verveeld door routine maar te koppig om van koers te veranderen.</string>
+    <string name="card_47_actions_up">Houd koers met gedisciplineerde inspanning; betrouwbaarheid en consistentie zullen zich uitbetalen.</string>
+    <string name="card_47_actions_rev">Schud je routine op; laat koppigheid of angst voor verandering je niet tegenhouden.</string>
+
+    <!-- Card 48: Queen of Pentacles / Koningin van Pentakels -->
+    <string name="card_48_love_up">Zorgzame en genereuze liefde; een warm en overvloedig thuis creëren met je partner.</string>
+    <string name="card_48_love_rev">Eigen behoeften verwaarlozen bij het zorgen voor anderen; je partner overstelpen met materiële geschenken.</string>
+    <string name="card_48_career_up">Praktisch en zorgzaam leiderschap; een overvloedige en ondersteunende werkomgeving creëren.</string>
+    <string name="card_48_career_rev">Onbalans tussen werk en privé waardoor je persoonlijke behoeften verwaarloost; te veel investeren in je carrière ten koste van thuis.</string>
+    <string name="card_48_finances_up">Praktisch en genereus financieel beheer; overvloed creëren door wijs huishouden.</string>
+    <string name="card_48_finances_rev">Financiële overbelasting door overmatige vrijgevigheid; materialisme vervangt oprechte zorg.</string>
+    <string name="card_48_feelings_up">Je geaard, genereus en diep tevreden voelen met de overvloed in je leven.</string>
+    <string name="card_48_feelings_rev">Je uitgeput voelen door te veel te geven; jezelf verliezen in de zorg voor andermans materiële behoeften.</string>
+    <string name="card_48_actions_up">Creëer overvloed door praktische zorg voor anderen; wees genereus maar behoud je zelfzorg.</string>
+    <string name="card_48_actions_rev">Geef prioriteit aan je eigen behoeften; stop met geven aan anderen ten koste van je eigen welzijn.</string>
+
+    <!-- Card 49: King of Pentacles / Koning van Pentakels -->
+    <string name="card_49_love_up">Een stabiele en financieel zekere partner; liefde uitgedrukt door zekerheid en comfort te bieden.</string>
+    <string name="card_49_love_rev">Een partner die geld boven emotionele verbinding stelt; een materialistische benadering van liefde.</string>
+    <string name="card_49_career_up">Zakelijk meesterschap en financieel leiderschap; je discipline en visie brengen professioneel succes.</string>
+    <string name="card_49_career_rev">Hebzucht of slecht management ondermijnt je onderneming; koppigheid verhindert aanpassing.</string>
+    <string name="card_49_finances_up">Het hoogtepunt van financieel succes en vermogensbeheer; gedisciplineerd leiderschap over je financiële imperium.</string>
+    <string name="card_49_finances_rev">Financieel wanbeheer door hebzucht of zelfgenoegzaamheid; vermogen opgebouwd ten koste van integriteit.</string>
+    <string name="card_49_feelings_up">Je financieel zeker en meesterlijk voelen; vertrouwen in je vermogen om rijkdom op te bouwen en te behouden.</string>
+    <string name="card_49_feelings_rev">Het gevoel dat je financiële status je definieert; leegte ondanks materiële overvloed.</string>
+    <string name="card_49_actions_up">Leid met zakelijke wijsheid en gedisciplineerd financieel beheer; bouw duurzame welvaart op.</string>
+    <string name="card_49_actions_rev">Onderzoek of hebzucht je waarden heeft aangetast; rijkdom zonder integriteit is leeg.</string>
+
+</resources>
