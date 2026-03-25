@@ -6,6 +6,7 @@ import android.app.NotificationManager
 import android.content.Context
 import com.tarotiq.app.data.local.CardDataInitializer
 import com.tarotiq.app.data.preferences.SettingsManager
+import com.tarotiq.app.data.remote.IntegrityTokenProvider
 import com.tarotiq.app.utils.DatabaseProvider
 import com.tarotiq.app.utils.LocaleUtils
 import com.tarotiq.app.worker.DailyCardReminderWorker
@@ -67,6 +68,11 @@ class TarotIQApp : Application() {
         applicationScope.launch(Dispatchers.IO) {
             val db = DatabaseProvider.getDatabase(this@TarotIQApp)
             CardDataInitializer.initializeCards(db.tarotCardDao())
+        }
+
+        // Warm up Play Integrity token provider
+        applicationScope.launch(Dispatchers.IO) {
+            IntegrityTokenProvider(this@TarotIQApp).warmUp()
         }
 
         // Schedule daily card reminder if enabled

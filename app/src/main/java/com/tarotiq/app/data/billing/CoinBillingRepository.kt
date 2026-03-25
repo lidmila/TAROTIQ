@@ -57,6 +57,7 @@ class CoinBillingRepository private constructor(
 
         billingClient.startConnection(object : BillingClientStateListener {
             override fun onBillingSetupFinished(billingResult: BillingResult) {
+                Log.d(TAG, "Billing setup finished: ${billingResult.responseCode} - ${billingResult.debugMessage}")
                 if (billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
                     _connectionState.value = BillingConnectionState.CONNECTED
                     scope.launch { queryProducts() }
@@ -76,7 +77,6 @@ class CoinBillingRepository private constructor(
         })
     }
 
-    // Cache product details after query
     private var cachedProductDetails = mutableListOf<ProductDetails>()
 
     private suspend fun queryProducts() {
@@ -86,21 +86,33 @@ class CoinBillingRepository private constructor(
                 .setProductType(BillingClient.ProductType.INAPP)
                 .build()
         }
+        Log.d(TAG, "Querying ${productList.size} products: ${CoinPack.PACKS.map { it.productId }}")
+
         val params = QueryProductDetailsParams.newBuilder()
             .setProductList(productList)
             .build()
 
         billingClient.queryProductDetailsAsync(params) { billingResult, queryResult ->
+            val products = queryResult.productDetailsList
+            Log.d(TAG, "Query result: code=${billingResult.responseCode}, message=${billingResult.debugMessage}, products=${products.size}")
+
             if (billingResult.responseCode == BillingClient.BillingResponseCode.OK) {
-                val productDetailsList = queryResult.productDetailsList
                 cachedProductDetails.clear()
-                cachedProductDetails.addAll(productDetailsList)
+                cachedProductDetails.addAll(products)
+
+                for (detail in products) {
+                    val price = detail.oneTimePurchaseOfferDetails?.formattedPrice
+                    Log.d(TAG, "Product: ${detail.productId}, price=$price")
+                }
+
                 _coinPacks.value = CoinPack.PACKS.map { pack ->
                     val detail = cachedProductDetails.firstOrNull { d -> d.productId == pack.productId }
                     pack.copy(
                         formattedPrice = detail?.oneTimePurchaseOfferDetails?.formattedPrice ?: ""
                     )
                 }
+            } else {
+                Log.e(TAG, "Product query failed: ${billingResult.responseCode} - ${billingResult.debugMessage}")
             }
         }
     }
@@ -108,20 +120,38 @@ class CoinBillingRepository private constructor(
     fun launchPurchase(activity: Activity, productId: String) {
         _purchaseState.value = PurchaseState.Processing
 
-        // Use cached product details
         val productDetails = cachedProductDetails.firstOrNull { it.productId == productId }
+        Log.d(TAG, "Launch purchase: $productId, found=${productDetails != null}, cached=${cachedProductDetails.size}")
+
         if (productDetails != null) {
-            val flowParams = BillingFlowParams.newBuilder()
-                .setProductDetailsParamsList(listOf(
-                    BillingFlowParams.ProductDetailsParams.newBuilder()
-                        .setProductDetails(productDetails)
-                        .build()
-                ))
-                .build()
-            billingClient.launchBillingFlow(activity, flowParams)
+            startBillingFlow(activity, productDetails)
         } else {
-            _purchaseState.value = PurchaseState.Error("Product not found")
+            Log.w(TAG, "Product not found, retrying query...")
+            scope.launch {
+                if (_connectionState.value != BillingConnectionState.CONNECTED) {
+                    connectToBillingService()
+                    delay(2000)
+                }
+                queryProducts()
+                val retryDetails = cachedProductDetails.firstOrNull { it.productId == productId }
+                if (retryDetails != null) {
+                    startBillingFlow(activity, retryDetails)
+                } else {
+                    _purchaseState.value = PurchaseState.Error("Product not found. Please try again later.")
+                }
+            }
         }
+    }
+
+    private fun startBillingFlow(activity: Activity, productDetails: ProductDetails) {
+        val flowParams = BillingFlowParams.newBuilder()
+            .setProductDetailsParamsList(listOf(
+                BillingFlowParams.ProductDetailsParams.newBuilder()
+                    .setProductDetails(productDetails)
+                    .build()
+            ))
+            .build()
+        billingClient.launchBillingFlow(activity, flowParams)
     }
 
     override fun onPurchasesUpdated(billingResult: BillingResult, purchases: MutableList<Purchase>?) {
@@ -144,7 +174,6 @@ class CoinBillingRepository private constructor(
         if (purchase.purchaseState != Purchase.PurchaseState.PURCHASED) return
 
         try {
-            // Acknowledge the purchase
             if (!purchase.isAcknowledged) {
                 val ackParams = AcknowledgePurchaseParams.newBuilder()
                     .setPurchaseToken(purchase.purchaseToken)
@@ -156,12 +185,10 @@ class CoinBillingRepository private constructor(
                 }
             }
 
-            // Grant coins via Firestore (in production, do this via Cloud Function)
             val userId = auth.currentUser?.uid ?: return
             val productId = purchase.products.firstOrNull() ?: return
             val coinsToGrant = CoinPack.getCoinsForProduct(productId)
 
-            // Check if already claimed
             val ownerDoc = firestore.collection("purchase_owners")
                 .document(purchase.purchaseToken)
                 .get().await()
@@ -172,7 +199,6 @@ class CoinBillingRepository private constructor(
                 return
             }
 
-            // Grant coins atomically, then consume
             firestore.runTransaction { transaction ->
                 val coinRef = firestore.collection("users").document(userId)
                     .collection("coins").document("balance")
@@ -188,7 +214,6 @@ class CoinBillingRepository private constructor(
                     "lastUpdated" to com.google.firebase.Timestamp.now()
                 ))
 
-                // Mark purchase as claimed
                 val ownerRef = firestore.collection("purchase_owners")
                     .document(purchase.purchaseToken)
                 transaction.set(ownerRef, mapOf(
@@ -200,7 +225,6 @@ class CoinBillingRepository private constructor(
                 ))
             }.await()
 
-            // Consume the purchase so it can be bought again
             val consumeParams = ConsumeParams.newBuilder()
                 .setPurchaseToken(purchase.purchaseToken)
                 .build()
