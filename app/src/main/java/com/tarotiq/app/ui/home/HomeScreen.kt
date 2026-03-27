@@ -15,6 +15,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.outlined.ArrowForward
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.material3.*
@@ -69,7 +70,6 @@ fun HomeScreen(
 ) {
     val dailyCard by homeViewModel.dailyCard.collectAsState()
     val dailyCardRevealed by homeViewModel.dailyCardRevealed.collectAsState()
-    val currentStreak by homeViewModel.currentStreak.collectAsState()
     val coinBalance by homeViewModel.coinBalance.collectAsState()
     val moonPhase = homeViewModel.moonPhase
 
@@ -119,7 +119,7 @@ fun HomeScreen(
                     dailyCard = dailyCard,
                     dailyCardRevealed = dailyCardRevealed,
                     glowAlpha = glowAlpha,
-                    onRevealClick = { homeViewModel.drawDailyCard() },
+                    onRevealClick = onNavigateToDailyCard,
                     onReflectClick = onNavigateToDailyCard,
                     modifier = Modifier.padding(horizontal = 20.dp)
                 )
@@ -366,6 +366,7 @@ private fun WelcomeSection(
 // ═══════════════════════════════════════════
 
 @Composable
+@Suppress("UNUSED_PARAMETER")
 private fun DailyCardDrawSection(
     dailyCard: com.tarotiq.app.domain.model.DailyCard?,
     dailyCardRevealed: Boolean,
@@ -626,6 +627,7 @@ private fun DailyCardDrawSection(
 // ═══════════════════════════════════════════
 
 @Composable
+@Suppress("UNUSED_PARAMETER")
 private fun QuickReadingsSection(
     onNavigateToNewReading: () -> Unit,
     onNavigateToQuickReading: (String) -> Unit,
@@ -810,7 +812,7 @@ private fun QuickReadingsSection(
                 }
                 Spacer(modifier = Modifier.width(8.dp))
                 Icon(
-                    Icons.Outlined.ArrowForward,
+                    Icons.AutoMirrored.Outlined.ArrowForward,
                     contentDescription = null,
                     tint = CelestialGold.copy(alpha = 0.5f),
                     modifier = Modifier.size(18.dp)
@@ -1255,6 +1257,7 @@ private fun AnimatedCoinIcon(size: androidx.compose.ui.unit.Dp = 32.dp) {
 // ═══════════════════════════════════════════
 
 @Composable
+@Suppress("UNUSED_PARAMETER")
 private fun DailyCardIcon(isRevealed: Boolean, glowAlpha: Float) {
     val transition = rememberInfiniteTransition(label = "daily_icon")
 

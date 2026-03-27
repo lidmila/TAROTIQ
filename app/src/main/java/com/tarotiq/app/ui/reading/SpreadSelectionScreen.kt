@@ -65,6 +65,7 @@ private val spreadOptions = listOf(
     )
 )
 
+@Suppress("UNUSED_PARAMETER")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SpreadSelectionScreen(

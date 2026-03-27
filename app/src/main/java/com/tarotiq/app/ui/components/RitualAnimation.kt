@@ -136,7 +136,7 @@ fun SequentialLightUp(
     }
 
     LaunchedEffect(itemCount) {
-        alphas.forEachIndexed { index, animatable ->
+        alphas.forEachIndexed { _, animatable ->
             delay(delayBetween.toLong())
             animatable.animateTo(
                 targetValue = 1f,

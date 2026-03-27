@@ -298,7 +298,6 @@ private fun DrawScope.drawQuestion(cx: Float, cy: Float, s: Float, color: Color,
 private fun DrawScope.drawLotus(cx: Float, cy: Float, s: Float, color: Color, sw: Float) {
     // 5 petals
     for (i in 0..4) {
-        val angle = (i * 36f - 90f + (if (i % 2 == 0) 0f else 18f))
         val spreadAngle = if (i == 0) 0f else if (i <= 2) -25f + i * 25f else -25f + (i - 2) * 25f
         rotate(spreadAngle - 90f + i * 36f, pivot = Offset(cx, cy)) {
             val petalPath = Path().apply {

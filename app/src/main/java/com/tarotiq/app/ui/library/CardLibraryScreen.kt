@@ -42,6 +42,7 @@ import com.tarotiq.app.ui.components.*
 import com.tarotiq.app.ui.theme.*
 import com.tarotiq.app.viewmodel.CardLibraryViewModel
 
+@Suppress("UNUSED_PARAMETER")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CardLibraryScreen(
@@ -52,8 +53,6 @@ fun CardLibraryScreen(
     val cards by viewModel.cards.collectAsState()
     val searchQuery by viewModel.searchQuery.collectAsState()
     val selectedFilter by viewModel.selectedFilter.collectAsState()
-    val context = LocalContext.current
-
     val filters = listOf(
         "all" to stringResource(R.string.library_all),
         "major" to stringResource(R.string.library_major_arcana),

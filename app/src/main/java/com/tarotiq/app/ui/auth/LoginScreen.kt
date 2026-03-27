@@ -320,7 +320,7 @@ fun LoginScreen(
             ArtNouveauButton(
                 text = stringResource(R.string.auth_google),
                 onClick = {
-                    scope.launch { authViewModel.signInWithGoogle(credentialManager) }
+                    scope.launch { authViewModel.signInWithGoogle(credentialManager, context) }
                 },
                 modifier = Modifier.fillMaxWidth(),
                 variant = ButtonVariant.SECONDARY

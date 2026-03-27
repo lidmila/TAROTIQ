@@ -35,13 +35,23 @@ class DailyCardViewModel(application: Application) : AndroidViewModel(applicatio
     private val _hasDrawnToday = MutableStateFlow(false)
     val hasDrawnToday: StateFlow<Boolean> = _hasDrawnToday.asStateFlow()
 
+    /** True once the initial DB check is done — prevents interaction before we know the state. */
+    private val _isInitDone = MutableStateFlow(false)
+    val isInitDone: StateFlow<Boolean> = _isInitDone.asStateFlow()
+
+    /** True when the card was loaded from a previous session (skip animation, show face immediately). */
+    private val _restoredFromDb = MutableStateFlow(false)
+    val restoredFromDb: StateFlow<Boolean> = _restoredFromDb.asStateFlow()
+
     init {
         viewModelScope.launch {
             val existing = gamificationRepo.getTodaysDailyCard()
             if (existing != null) {
                 _dailyCard.value = existing
                 _hasDrawnToday.value = true
+                _restoredFromDb.value = true
             }
+            _isInitDone.value = true
         }
     }
 

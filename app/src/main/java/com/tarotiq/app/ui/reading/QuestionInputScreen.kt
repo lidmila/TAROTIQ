@@ -27,6 +27,7 @@ import com.tarotiq.app.R
 import com.tarotiq.app.ui.components.*
 import com.tarotiq.app.ui.theme.*
 
+@Suppress("UNUSED_PARAMETER")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun QuestionInputScreen(

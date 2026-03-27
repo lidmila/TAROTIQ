@@ -15,6 +15,7 @@ import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+import androidx.compose.material.icons.automirrored.outlined.MenuBook
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -151,7 +152,7 @@ fun AppNavigation(
                             val navItems = listOf(
                                 NavItem(Screen.Home.route, Icons.Outlined.AutoAwesome, R.string.nav_portal),
                                 NavItem(Screen.TopicSelection.route, Icons.Outlined.AutoFixHigh, R.string.nav_oracle),
-                                NavItem(Screen.ReadingHistory.route, Icons.Outlined.MenuBook, R.string.nav_grimoire),
+                                NavItem(Screen.ReadingHistory.route, Icons.AutoMirrored.Outlined.MenuBook, R.string.nav_grimoire),
                                 NavItem(Screen.CardLibrary.route, Icons.Outlined.WbSunny, R.string.nav_library)
                             )
                             navItems.forEach { item ->

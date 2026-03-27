@@ -61,6 +61,7 @@
     <string name="spread_relationship_desc">Vy · Partner · Vztah · Výzvy · Budoucnost</string>
     <string name="spread_cost">%d mince</string>
     <string name="spread_cost_singular">%d mince</string>
+    <string name="spread_pick_cards">Vyberte %d karet pro svůj výklad</string>
 
     <!-- Card Drawing -->
     <string name="drawing_tap_to_reveal">Klepněte na kartu pro odhalení</string>

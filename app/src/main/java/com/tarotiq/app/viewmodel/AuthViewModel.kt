@@ -1,16 +1,22 @@
 package com.tarotiq.app.viewmodel
 
 import android.app.Application
+import android.content.Context
 import android.util.Log
 import androidx.credentials.CredentialManager
 import androidx.credentials.GetCredentialRequest
 import androidx.credentials.GetCredentialResponse
+import androidx.credentials.exceptions.GetCredentialCancellationException
+import androidx.credentials.exceptions.NoCredentialException
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.android.libraries.identity.googleid.GetGoogleIdOption
 import com.google.android.libraries.identity.googleid.GoogleIdTokenCredential
 import com.google.firebase.auth.ActionCodeSettings
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.google.firebase.auth.FirebaseAuthInvalidUserException
+import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -61,7 +67,7 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
                 auth.signInWithEmailAndPassword(email, password).await()
                 _authState.value = _authState.value.copy(isLoading = false)
             } catch (e: Exception) {
-                _authState.value = _authState.value.copy(error = e.message, isLoading = false)
+                _authState.value = _authState.value.copy(error = mapAuthError(e), isLoading = false)
             }
         }
     }
@@ -81,7 +87,7 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
                 auth.createUserWithEmailAndPassword(email, password).await()
                 _authState.value = _authState.value.copy(isLoading = false)
             } catch (e: Exception) {
-                _authState.value = _authState.value.copy(error = e.message, isLoading = false)
+                _authState.value = _authState.value.copy(error = mapAuthError(e), isLoading = false)
             }
         }
     }
@@ -110,7 +116,7 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
                 _emailLinkSent.value = true
                 _authState.value = _authState.value.copy(isLoading = false)
             } catch (e: Exception) {
-                _authState.value = _authState.value.copy(error = e.message, isLoading = false)
+                _authState.value = _authState.value.copy(error = mapAuthError(e), isLoading = false)
             }
         }
     }
@@ -124,12 +130,12 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
                 }
                 _authState.value = _authState.value.copy(isLoading = false)
             } catch (e: Exception) {
-                _authState.value = _authState.value.copy(error = e.message, isLoading = false)
+                _authState.value = _authState.value.copy(error = mapAuthError(e), isLoading = false)
             }
         }
     }
 
-    suspend fun signInWithGoogle(credentialManager: CredentialManager): Boolean {
+    suspend fun signInWithGoogle(credentialManager: CredentialManager, activityContext: Context): Boolean {
         _authState.value = _authState.value.copy(isLoading = true, error = null)
         return try {
             val rawNonce = UUID.randomUUID().toString()
@@ -148,18 +154,30 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
 
             val response = credentialManager.getCredential(
                 request = request,
-                context = getApplication()
+                context = activityContext
             )
 
             handleGoogleSignIn(response, rawNonce)
+            _authState.value = _authState.value.copy(isLoading = false)
             true
+        } catch (e: GetCredentialCancellationException) {
+            _authState.value = _authState.value.copy(isLoading = false)
+            false
+        } catch (e: NoCredentialException) {
+            Log.e(TAG, "Google sign-in: no credential available", e)
+            _authState.value = _authState.value.copy(
+                error = "No Google account available. Please add a Google account to your device.",
+                isLoading = false
+            )
+            false
         } catch (e: Exception) {
             Log.e(TAG, "Google sign-in failed", e)
-            _authState.value = _authState.value.copy(error = e.message, isLoading = false)
+            _authState.value = _authState.value.copy(error = mapAuthError(e), isLoading = false)
             false
         }
     }
 
+    @Suppress("UNUSED_PARAMETER")
     private suspend fun handleGoogleSignIn(response: GetCredentialResponse, rawNonce: String) {
         val credential = response.credential
         val googleIdTokenCredential = GoogleIdTokenCredential.createFrom(credential.data)
@@ -186,5 +204,31 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
 
     fun clearError() {
         _authState.update { it.copy(error = null) }
+    }
+
+    private fun mapAuthError(e: Exception): String {
+        return when (e) {
+            is FirebaseAuthInvalidCredentialsException ->
+                "Invalid email or password. Please check your credentials and try again."
+            is FirebaseAuthInvalidUserException -> when (e.errorCode) {
+                "ERROR_USER_NOT_FOUND" -> "No account found with this email. Please sign up first."
+                "ERROR_USER_DISABLED" -> "This account has been disabled. Please contact support."
+                else -> "Account error. Please try again or sign up."
+            }
+            is FirebaseAuthUserCollisionException ->
+                "An account with this email already exists. Please sign in instead."
+            else -> {
+                val msg = e.message ?: return "An unexpected error occurred. Please try again."
+                when {
+                    "INVALID_LOGIN_CREDENTIALS" in msg || "credential is incorrect" in msg ->
+                        "Invalid email or password. Please check your credentials and try again."
+                    "network" in msg.lowercase() || "NETWORK_ERROR" in msg ->
+                        "Network error. Please check your connection and try again."
+                    "too many" in msg.lowercase() || "BLOCKING" in msg ->
+                        "Too many attempts. Please wait a moment and try again."
+                    else -> msg
+                }
+            }
+        }
     }
 }

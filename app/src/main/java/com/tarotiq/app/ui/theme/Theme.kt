@@ -60,6 +60,7 @@ private val TarotIQDarkColorScheme = darkColorScheme(
 )
 
 @Composable
+@Suppress("UNUSED_PARAMETER")
 fun TarotIQTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
@@ -70,7 +71,9 @@ fun TarotIQTheme(
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as? Activity)?.window ?: return@SideEffect
+            @Suppress("DEPRECATION")
             window.statusBarColor = VoidBlack.toArgb()
+            @Suppress("DEPRECATION")
             window.navigationBarColor = VoidBlack.toArgb()
             WindowCompat.getInsetsController(window, view).apply {
                 isAppearanceLightStatusBars = false

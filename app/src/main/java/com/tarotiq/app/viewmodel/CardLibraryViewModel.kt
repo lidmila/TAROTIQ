@@ -6,8 +6,10 @@ import androidx.lifecycle.viewModelScope
 import com.tarotiq.app.data.repository.CardRepository
 import com.tarotiq.app.domain.model.TarotCard
 import com.tarotiq.app.utils.DatabaseProvider
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.*
 
+@OptIn(ExperimentalCoroutinesApi::class)
 class CardLibraryViewModel(application: Application) : AndroidViewModel(application) {
 
     private val db = DatabaseProvider.getDatabase(application)

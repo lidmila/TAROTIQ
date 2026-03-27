@@ -41,12 +41,30 @@ fun DailyCardScreen(
     val dailyCard by dailyCardViewModel.dailyCard.collectAsState()
     val hasDrawnToday by dailyCardViewModel.hasDrawnToday.collectAsState()
     val isLoading by dailyCardViewModel.isLoading.collectAsState()
+    val isInitDone by dailyCardViewModel.isInitDone.collectAsState()
+    val restoredFromDb by dailyCardViewModel.restoredFromDb.collectAsState()
     val context = LocalContext.current
 
     // Simple flip animation — no bounce, no portal, just clean rotation
     var hasStartedReveal by remember { mutableStateOf(false) }
     val flipRotation = remember { Animatable(0f) }
 
+    // Card restored from DB (previous session) → show face immediately, no animation
+    LaunchedEffect(restoredFromDb) {
+        if (restoredFromDb) {
+            hasStartedReveal = true
+            flipRotation.snapTo(180f)
+        }
+    }
+
+    // Auto-draw when screen opens and no card exists yet
+    LaunchedEffect(isInitDone, hasDrawnToday) {
+        if (isInitDone && !hasDrawnToday) {
+            dailyCardViewModel.drawDailyCard()
+        }
+    }
+
+    // Fresh draw by user → animate the flip
     LaunchedEffect(hasDrawnToday) {
         if (hasDrawnToday && !hasStartedReveal) {
             hasStartedReveal = true
@@ -97,13 +115,21 @@ fun DailyCardScreen(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
+                // Show prompt text: "tap to reveal" only when init is done and card not drawn yet
+                // Show "already drawn" only when card was restored from DB (not during fresh reveal animation)
+                val promptText = when {
+                    !isInitDone -> ""
+                    restoredFromDb -> stringResource(R.string.daily_already_drawn)
+                    hasDrawnToday -> "" // Fresh draw in progress — don't show "already drawn" during animation
+                    else -> stringResource(R.string.daily_tap_reveal)
+                }
                 Text(
-                    text = (if (hasDrawnToday) stringResource(R.string.daily_already_drawn) else stringResource(R.string.daily_tap_reveal)).uppercase(),
+                    text = promptText.uppercase(),
                     style = MaterialTheme.typography.labelLarge,
                     color = CelestialGold,
                     textAlign = TextAlign.Center,
                     modifier = Modifier.graphicsLayer {
-                        alpha = if (!hasDrawnToday) promptAlpha else 1f
+                        alpha = if (!isInitDone || (!restoredFromDb && !hasDrawnToday)) promptAlpha else 1f
                     }
                 )
                 Spacer(modifier = Modifier.height(32.dp))
@@ -120,7 +146,7 @@ fun DailyCardScreen(
                         }
                         .clip(RoundedCornerShape(12.dp))
                         .border(1.dp, CelestialGold.copy(alpha = 0.20f), RoundedCornerShape(12.dp))
-                        .clickable(enabled = !hasDrawnToday && !isLoading) {
+                        .clickable(enabled = isInitDone && !hasDrawnToday && !isLoading) {
                             dailyCardViewModel.drawDailyCard()
                         }
                     ) {
@@ -181,4 +207,3 @@ fun DailyCardScreen(
         }
     }
 }
-
