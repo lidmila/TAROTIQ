@@ -17,8 +17,11 @@
     <string name="auth_register">Zaregistrovat se</string>
     <string name="auth_email">E-mail</string>
     <string name="auth_password">Heslo</string>
-    <string name="auth_passwordless">Přihlášení bez hesla</string>
+    <string name="auth_passwordless">Přihlásit se e-mailovým odkazem</string>
     <string name="auth_passwordless_desc">Pošleme vám odkaz na e-mail</string>
+    <string name="auth_enter_email_first">Nejdříve zadejte e-mailovou adresu</string>
+    <string name="auth_forgot_password_title">Obnovení hesla</string>
+    <string name="auth_forgot_password_send">Odeslat</string>
     <string name="auth_google">Pokračovat s Google</string>
     <string name="auth_logout">Odhlásit se</string>
     <string name="auth_delete_account">Smazat účet</string>
@@ -59,6 +62,30 @@
     <string name="spread_celtic_cross_desc">Hluboký výklad (10 karet)</string>
     <string name="spread_relationship">Vztahový výklad</string>
     <string name="spread_relationship_desc">Vy · Partner · Vztah · Výzvy · Budoucnost</string>
+    <string name="spread_year_ahead">Roční výhled</string>
+    <string name="spread_year_ahead_desc">12 karet · Jeden měsíc, jedna karta</string>
+    <string name="spread_shadow_self">Stínové já</string>
+    <string name="spread_shadow_self_desc">Maska · Stín · Kořen · Strach · Dar · Integrace</string>
+    <string name="spread_crossroads">Křižovatka osudu</string>
+    <string name="spread_crossroads_desc">Dvě cesty · Skrytý faktor · Rada</string>
+    <string name="spread_chakra">Výklad čaker</string>
+    <string name="spread_chakra_desc">7 čaker · Energetická diagnostika</string>
+    <string name="spread_twin_flame">Spřízněná duše</string>
+    <string name="spread_twin_flame_desc">Karmická vazba · Lekce · Společná mise</string>
+    <string name="spread_moon_cycle">Lunární cyklus</string>
+    <string name="spread_moon_cycle_desc">8 fází Měsíce · Co zasít, pěstovat, sklidit</string>
+    <string name="spread_career_compass">Kariérní kompas</string>
+    <string name="spread_career_compass_desc">Talenty · Blokáda · Příležitost · Finance</string>
+    <string name="spread_inner_child">Vnitřní dítě</string>
+    <string name="spread_inner_child_desc">Zranění · Ochrana · Léčení · Dar</string>
+    <string name="spread_tree_of_life">Strom života</string>
+    <string name="spread_tree_of_life_desc">10 sefirot · Kabalistický výklad</string>
+    <string name="spread_week_ahead">Týdenní průvodce</string>
+    <string name="spread_week_ahead_desc">7 karet · Jedna na každý den</string>
+    <string name="spread_karmic">Karmický výklad</string>
+    <string name="spread_karmic_desc">Karmický dluh · Lekce · Účel inkarnace</string>
+    <string name="spread_self_love">Zrcadlo sebelásky</string>
+    <string name="spread_self_love_desc">Sebeobraz · Skrytá síla · Afirmace</string>
     <string name="spread_cost">%d mince</string>
     <string name="spread_cost_singular">%d mince</string>
     <string name="spread_pick_cards">Vyberte %d karet pro svůj výklad</string>
@@ -99,6 +126,117 @@
     <string name="position_hopes">Naděje a obavy</string>
     <string name="position_outcome">Výsledek</string>
     <string name="position_extra">Doplňková karta</string>
+
+    <!-- Year Ahead positions -->
+    <string name="position_january">Leden</string>
+    <string name="position_february">Únor</string>
+    <string name="position_march">Březen</string>
+    <string name="position_april">Duben</string>
+    <string name="position_may">Květen</string>
+    <string name="position_june">Červen</string>
+    <string name="position_july">Červenec</string>
+    <string name="position_august">Srpen</string>
+    <string name="position_september">Září</string>
+    <string name="position_october">Říjen</string>
+    <string name="position_november">Listopad</string>
+    <string name="position_december">Prosinec</string>
+
+    <!-- Shadow Self positions -->
+    <string name="position_mask">Maska</string>
+    <string name="position_shadow">Stín</string>
+    <string name="position_shadow_root">Kořen stínu</string>
+    <string name="position_fear">Strach</string>
+    <string name="position_shadow_gift">Dar stínu</string>
+    <string name="position_integration">Integrace</string>
+
+    <!-- Crossroads positions -->
+    <string name="position_current_situation">Současná situace</string>
+    <string name="position_path_a_desc">Cesta A</string>
+    <string name="position_path_a_outcome">Výsledek cesty A</string>
+    <string name="position_path_b_desc">Cesta B</string>
+    <string name="position_path_b_outcome">Výsledek cesty B</string>
+    <string name="position_hidden_factor">Skrytý faktor</string>
+
+    <!-- Chakra positions -->
+    <string name="position_root_chakra">Kořenová čakra</string>
+    <string name="position_sacral_chakra">Sakrální čakra</string>
+    <string name="position_solar_plexus">Solar plexus</string>
+    <string name="position_heart_chakra">Srdeční čakra</string>
+    <string name="position_throat_chakra">Krční čakra</string>
+    <string name="position_third_eye">Třetí oko</string>
+    <string name="position_crown_chakra">Korunní čakra</string>
+
+    <!-- Twin Flame positions -->
+    <string name="position_your_energy">Tvá energie</string>
+    <string name="position_their_energy">Energie druhé duše</string>
+    <string name="position_karmic_bond">Karmická vazba</string>
+    <string name="position_your_lesson">Tvá lekce</string>
+    <string name="position_their_lesson">Lekce partnera</string>
+    <string name="position_shared_mission">Společná mise</string>
+    <string name="position_obstacle">Překážka</string>
+
+    <!-- Moon Cycle positions -->
+    <string name="position_new_moon">Novoluní — Co zasít</string>
+    <string name="position_waxing_crescent">Dorůstající srpek — Co pěstovat</string>
+    <string name="position_first_quarter">První čtvrť — Akce</string>
+    <string name="position_waxing_gibbous">Dorůstající měsíc — Co vyladit</string>
+    <string name="position_full_moon">Úplněk — Co sklidit</string>
+    <string name="position_waning_gibbous">Couvající měsíc — Vděčnost</string>
+    <string name="position_last_quarter">Poslední čtvrť — Co pustit</string>
+    <string name="position_dark_moon">Tmavý měsíc — Reflexe</string>
+
+    <!-- Career Compass positions -->
+    <string name="position_hidden_talents">Skryté talenty</string>
+    <string name="position_current_block">Současná blokáda</string>
+    <string name="position_opportunity">Příležitost na obzoru</string>
+    <string name="position_skill_to_develop">Dovednost k rozvoji</string>
+    <string name="position_financial_energy">Finanční energie</string>
+    <string name="position_next_step">Další krok</string>
+
+    <!-- Inner Child positions -->
+    <string name="position_inner_child">Vnitřní dítě</string>
+    <string name="position_wound">Zranění</string>
+    <string name="position_protective_pattern">Ochranný vzorec</string>
+    <string name="position_healing">Léčení</string>
+    <string name="position_inner_gift">Dar</string>
+
+    <!-- Tree of Life positions -->
+    <string name="position_keter">Keter — Koruna</string>
+    <string name="position_chokma">Chokma — Moudrost</string>
+    <string name="position_bina">Bina — Porozumění</string>
+    <string name="position_chesed">Chesed — Milosrdenství</string>
+    <string name="position_gevura">Gevura — Síla</string>
+    <string name="position_tiferet">Tiferet — Krása</string>
+    <string name="position_netzach">Necach — Vítězství</string>
+    <string name="position_hod">Hod — Sláva</string>
+    <string name="position_yesod">Jesod — Základ</string>
+    <string name="position_malkhut">Malchut — Království</string>
+
+    <!-- Week Ahead positions -->
+    <string name="position_monday">Pondělí</string>
+    <string name="position_tuesday">Úterý</string>
+    <string name="position_wednesday">Středa</string>
+    <string name="position_thursday">Čtvrtek</string>
+    <string name="position_friday">Pátek</string>
+    <string name="position_saturday">Sobota</string>
+    <string name="position_sunday">Neděle</string>
+
+    <!-- Karmic positions -->
+    <string name="position_karmic_debt">Karmický dluh</string>
+    <string name="position_karmic_gift">Karmický dar</string>
+    <string name="position_current_lesson">Současná lekce</string>
+    <string name="position_repeating_pattern">Opakující se vzorec</string>
+    <string name="position_what_to_break">Co přerušit</string>
+    <string name="position_karmic_reward">Karmická odměna</string>
+    <string name="position_life_purpose">Účel inkarnace</string>
+
+    <!-- Self-Love positions -->
+    <string name="position_how_i_see_myself">Jak se vidím</string>
+    <string name="position_how_others_see_me">Jak mě vidí ostatní</string>
+    <string name="position_false_guilt">Nezasloužená vina</string>
+    <string name="position_hidden_strength">Skrytá síla</string>
+    <string name="position_what_i_need">Co potřebuji od sebe</string>
+    <string name="position_affirmation">Afirmace od karet</string>
 
     <!-- Reading -->
     <string name="reading_interpreting">Madame Stella čte vaše karty…</string>
@@ -305,6 +443,42 @@
     <string name="moon_waning_gibbous">Couvající měsíc</string>
     <string name="moon_last_quarter">Poslední čtvrť</string>
     <string name="moon_waning_crescent">Couvající srpek</string>
+
+    <!-- Moon Phase Energy Descriptions -->
+    <string name="moon_energy_new">Čas nových začátků. Zasejte záměry, které chcete v tomto cyklu naplnit.</string>
+    <string name="moon_energy_waxing_crescent">Vaše záměry nabírají sílu. Budujte plány a dělejte první kroky.</string>
+    <string name="moon_energy_first_quarter">Čas akce a rozhodnutí. Překonávejte překážky s odvahou.</string>
+    <string name="moon_energy_waxing_gibbous">Dolaďte detaily. Vaše projekty dozrávají — trpělivost přinese plody.</string>
+    <string name="moon_energy_full">Kulminace a odhalení. Sklízejte výsledky a oslavte, čeho jste dosáhli.</string>
+    <string name="moon_energy_waning_gibbous">Čas vděčnosti a sdílení. Předávejte moudrost, kterou jste získali.</string>
+    <string name="moon_energy_last_quarter">Pustěte, co vám už neslouží. Uvolněte staré vzorce a návyky.</string>
+    <string name="moon_energy_waning_crescent">Ticho a reflexe. Odpočívejte a připravte se na nový cyklus.</string>
+
+    <!-- Moon Phase Activities -->
+    <string name="moon_activity_new">Meditace nad záměry · Psaní přání · Plánování</string>
+    <string name="moon_activity_waxing_crescent">Vizualizace · První kroky · Budování návyků</string>
+    <string name="moon_activity_first_quarter">Rozhodování · Překonávání strachu · Akční kroky</string>
+    <string name="moon_activity_waxing_gibbous">Trpělivost · Doladění detailů · Revize plánů</string>
+    <string name="moon_activity_full">Oslava · Rituály vděčnosti · Naslouchání intuici</string>
+    <string name="moon_activity_waning_gibbous">Sdílení moudrosti · Odpouštění · Učení druhých</string>
+    <string name="moon_activity_last_quarter">Úklid a puštění · Uzavření kapitol · Detox</string>
+    <string name="moon_activity_waning_crescent">Odpočinek · Snění · Meditace · Ticho</string>
+
+    <!-- Moon Phase Tarot Connection -->
+    <string name="moon_tarot_new">Pod novoluním rezonuje The Star — nové naděje se rodí.</string>
+    <string name="moon_tarot_waxing_crescent">Pod dorůstajícím srpkem rezonuje The Magician — tvořte svou realitu.</string>
+    <string name="moon_tarot_first_quarter">Pod první čtvrtí rezonuje The Chariot — vůle vás povede vpřed.</string>
+    <string name="moon_tarot_waxing_gibbous">Pod dorůstajícím měsícem rezonuje Temperance — rovnováha je klíčem.</string>
+    <string name="moon_tarot_full">Pod úplňkem rezonuje The High Priestess — intuice je nejsilnější.</string>
+    <string name="moon_tarot_waning_gibbous">Pod couvajícím měsícem rezonuje The Hermit — hledejte moudrost uvnitř.</string>
+    <string name="moon_tarot_last_quarter">Pod poslední čtvrtí rezonuje Death — transformace přináší nový život.</string>
+    <string name="moon_tarot_waning_crescent">Pod couvajícím srpkem rezonuje The Moon — naslouchejte snům.</string>
+
+    <!-- Lunar Section UI -->
+    <string name="moon_days_until_full">Za %d dní úplněk</string>
+    <string name="moon_days_until_new">Za %d dní novoluní</string>
+    <string name="moon_recommended_spread">Ideální výklad pro tuto fázi</string>
+    <string name="moon_try_spread">Vyzkoušet Lunární cyklus</string>
 
     <!-- Achievements -->
     <string name="achievement_first_reading">První výklad</string>

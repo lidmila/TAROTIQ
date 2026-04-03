@@ -55,13 +55,85 @@ private val spreadOptions = listOf(
         spread = ReadingSpread.RELATIONSHIP,
         nameRes = R.string.spread_relationship,
         descRes = R.string.spread_relationship_desc,
-        imageRes = R.drawable.card_connection
+        imageRes = R.drawable.love
     ),
     SpreadOption(
         spread = ReadingSpread.CELTIC_CROSS,
         nameRes = R.string.spread_celtic_cross,
         descRes = R.string.spread_celtic_cross_desc,
         imageRes = R.drawable.celtic
+    ),
+    SpreadOption(
+        spread = ReadingSpread.YEAR_AHEAD,
+        nameRes = R.string.spread_year_ahead,
+        descRes = R.string.spread_year_ahead_desc,
+        imageRes = R.drawable.fortune
+    ),
+    SpreadOption(
+        spread = ReadingSpread.SHADOW_SELF,
+        nameRes = R.string.spread_shadow_self,
+        descRes = R.string.spread_shadow_self_desc,
+        imageRes = R.drawable.had
+    ),
+    SpreadOption(
+        spread = ReadingSpread.CROSSROADS,
+        nameRes = R.string.spread_crossroads,
+        descRes = R.string.spread_crossroads_desc,
+        imageRes = R.drawable.osud
+    ),
+    SpreadOption(
+        spread = ReadingSpread.CHAKRA,
+        nameRes = R.string.spread_chakra,
+        descRes = R.string.spread_chakra_desc,
+        imageRes = R.drawable.duchovni
+    ),
+    SpreadOption(
+        spread = ReadingSpread.TWIN_FLAME,
+        nameRes = R.string.spread_twin_flame,
+        descRes = R.string.spread_twin_flame_desc,
+        imageRes = R.drawable.love
+    ),
+    SpreadOption(
+        spread = ReadingSpread.MOON_CYCLE,
+        nameRes = R.string.spread_moon_cycle,
+        descRes = R.string.spread_moon_cycle_desc,
+        imageRes = R.drawable.lunar
+    ),
+    SpreadOption(
+        spread = ReadingSpread.CAREER_COMPASS,
+        nameRes = R.string.spread_career_compass,
+        descRes = R.string.spread_career_compass_desc,
+        imageRes = R.drawable.osud
+    ),
+    SpreadOption(
+        spread = ReadingSpread.INNER_CHILD,
+        nameRes = R.string.spread_inner_child,
+        descRes = R.string.spread_inner_child_desc,
+        imageRes = R.drawable.dite
+    ),
+    SpreadOption(
+        spread = ReadingSpread.TREE_OF_LIFE,
+        nameRes = R.string.spread_tree_of_life,
+        descRes = R.string.spread_tree_of_life_desc,
+        imageRes = R.drawable.tree
+    ),
+    SpreadOption(
+        spread = ReadingSpread.WEEK_AHEAD,
+        nameRes = R.string.spread_week_ahead,
+        descRes = R.string.spread_week_ahead_desc,
+        imageRes = R.drawable.fortune
+    ),
+    SpreadOption(
+        spread = ReadingSpread.KARMIC,
+        nameRes = R.string.spread_karmic,
+        descRes = R.string.spread_karmic_desc,
+        imageRes = R.drawable.nekonecno
+    ),
+    SpreadOption(
+        spread = ReadingSpread.SELF_LOVE,
+        nameRes = R.string.spread_self_love,
+        descRes = R.string.spread_self_love_desc,
+        imageRes = R.drawable.love
     )
 )
 
@@ -79,6 +151,7 @@ fun SpreadSelectionScreen(
 
     // Track selected spread for visual highlight
     var selectedSpread by remember { mutableStateOf<ReadingSpread?>(null) }
+    var hasNavigated by remember { mutableStateOf(false) }
 
     Box(modifier = Modifier.fillMaxSize()) {
         MysticBackground(modifier = Modifier.fillMaxSize())
@@ -198,13 +271,19 @@ fun SpreadSelectionScreen(
                 }
 
                 // Filter spreads based on selected topic
+                val loveOnly = setOf(
+                    ReadingSpread.RELATIONSHIP, ReadingSpread.TWIN_FLAME
+                )
+                val careerOnly = setOf(ReadingSpread.CAREER_COMPASS)
+                val spiritualOnly = setOf(ReadingSpread.TREE_OF_LIFE)
                 val availableSpreads = when (topic) {
-                    "love" -> ReadingSpread.entries  // all spreads make sense for love
-                    "career" -> ReadingSpread.entries.filter { it != ReadingSpread.RELATIONSHIP }
-                    "general" -> ReadingSpread.entries  // all spreads
-                    "yes_no" -> listOf(ReadingSpread.SINGLE)  // yes/no = one card answer
-                    "spiritual" -> ReadingSpread.entries.filter { it != ReadingSpread.RELATIONSHIP }
-                    else -> ReadingSpread.entries
+                    "all" -> ReadingSpread.entries.toList()
+                    "love" -> ReadingSpread.entries.filter { it !in careerOnly && it !in spiritualOnly }
+                    "career" -> ReadingSpread.entries.filter { it !in loveOnly && it !in spiritualOnly }
+                    "general" -> ReadingSpread.entries.filter { it !in loveOnly && it !in careerOnly && it !in spiritualOnly }
+                    "yes_no" -> listOf(ReadingSpread.SINGLE)
+                    "spiritual" -> ReadingSpread.entries.filter { it !in loveOnly && it !in careerOnly }
+                    else -> ReadingSpread.entries.toList()
                 }
                 val filteredOptions = spreadOptions.filter { it.spread in availableSpreads }
 
@@ -216,8 +295,11 @@ fun SpreadSelectionScreen(
                         canAfford = coinBalance.balance >= option.spread.coinCost || coinBalance.hasFreeReadings,
                         isSelected = isSelected,
                         onClick = {
-                            selectedSpread = option.spread
-                            onSpreadSelected(option.spread.key)
+                            if (!hasNavigated) {
+                                hasNavigated = true
+                                selectedSpread = option.spread
+                                onSpreadSelected(option.spread.key)
+                            }
                         }
                     )
                 }

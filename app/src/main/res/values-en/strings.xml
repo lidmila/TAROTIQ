@@ -17,8 +17,11 @@
     <string name="auth_register">Sign up</string>
     <string name="auth_email">E-mail</string>
     <string name="auth_password">Password</string>
-    <string name="auth_passwordless">Passwordless sign-in</string>
+    <string name="auth_passwordless">Sign in with email link</string>
     <string name="auth_passwordless_desc">We\'ll send you a link via e-mail</string>
+    <string name="auth_enter_email_first">Please enter your email address first</string>
+    <string name="auth_forgot_password_title">Reset password</string>
+    <string name="auth_forgot_password_send">Send</string>
     <string name="auth_google">Continue with Google</string>
     <string name="auth_logout">Sign out</string>
     <string name="auth_delete_account">Delete account</string>
@@ -59,6 +62,30 @@
     <string name="spread_celtic_cross_desc">Deep reading (10 cards)</string>
     <string name="spread_relationship">Relationship Spread</string>
     <string name="spread_relationship_desc">You \u00b7 Partner \u00b7 Relationship \u00b7 Challenges \u00b7 Future</string>
+    <string name="spread_year_ahead">Year Ahead</string>
+    <string name="spread_year_ahead_desc">12 cards \u00b7 One card per month</string>
+    <string name="spread_shadow_self">Shadow Self</string>
+    <string name="spread_shadow_self_desc">Mask \u00b7 Shadow \u00b7 Root \u00b7 Fear \u00b7 Gift \u00b7 Integration</string>
+    <string name="spread_crossroads">Crossroads</string>
+    <string name="spread_crossroads_desc">Two paths \u00b7 Hidden factor \u00b7 Advice</string>
+    <string name="spread_chakra">Chakra Reading</string>
+    <string name="spread_chakra_desc">7 chakras \u00b7 Energy diagnostics</string>
+    <string name="spread_twin_flame">Twin Flame</string>
+    <string name="spread_twin_flame_desc">Karmic bond \u00b7 Lessons \u00b7 Shared mission</string>
+    <string name="spread_moon_cycle">Moon Cycle</string>
+    <string name="spread_moon_cycle_desc">8 lunar phases \u00b7 Seed, grow, harvest</string>
+    <string name="spread_career_compass">Career Compass</string>
+    <string name="spread_career_compass_desc">Talents \u00b7 Blockage \u00b7 Opportunity \u00b7 Finances</string>
+    <string name="spread_inner_child">Inner Child</string>
+    <string name="spread_inner_child_desc">Wound \u00b7 Protection \u00b7 Healing \u00b7 Gift</string>
+    <string name="spread_tree_of_life">Tree of Life</string>
+    <string name="spread_tree_of_life_desc">10 Sephirot \u00b7 Kabbalistic reading</string>
+    <string name="spread_week_ahead">Week Ahead</string>
+    <string name="spread_week_ahead_desc">7 cards \u00b7 One for each day</string>
+    <string name="spread_karmic">Karmic Reading</string>
+    <string name="spread_karmic_desc">Karmic debt \u00b7 Lessons \u00b7 Life purpose</string>
+    <string name="spread_self_love">Self-Love Mirror</string>
+    <string name="spread_self_love_desc">Self-image \u00b7 Hidden strength \u00b7 Affirmation</string>
     <string name="spread_cost">%d coins</string>
     <string name="spread_cost_singular">%d coin</string>
 
@@ -97,6 +124,117 @@
     <string name="position_hopes">Hopes and Fears</string>
     <string name="position_outcome">Outcome</string>
     <string name="position_extra">Extra Card</string>
+
+    <!-- Year Ahead positions -->
+    <string name="position_january">January</string>
+    <string name="position_february">February</string>
+    <string name="position_march">March</string>
+    <string name="position_april">April</string>
+    <string name="position_may">May</string>
+    <string name="position_june">June</string>
+    <string name="position_july">July</string>
+    <string name="position_august">August</string>
+    <string name="position_september">September</string>
+    <string name="position_october">October</string>
+    <string name="position_november">November</string>
+    <string name="position_december">December</string>
+
+    <!-- Shadow Self positions -->
+    <string name="position_mask">The Mask</string>
+    <string name="position_shadow">The Shadow</string>
+    <string name="position_shadow_root">Root of the Shadow</string>
+    <string name="position_fear">Fear</string>
+    <string name="position_shadow_gift">Gift of the Shadow</string>
+    <string name="position_integration">Integration</string>
+
+    <!-- Crossroads positions -->
+    <string name="position_current_situation">Current Situation</string>
+    <string name="position_path_a_desc">Path A</string>
+    <string name="position_path_a_outcome">Path A Outcome</string>
+    <string name="position_path_b_desc">Path B</string>
+    <string name="position_path_b_outcome">Path B Outcome</string>
+    <string name="position_hidden_factor">Hidden Factor</string>
+
+    <!-- Chakra positions -->
+    <string name="position_root_chakra">Root Chakra</string>
+    <string name="position_sacral_chakra">Sacral Chakra</string>
+    <string name="position_solar_plexus">Solar Plexus</string>
+    <string name="position_heart_chakra">Heart Chakra</string>
+    <string name="position_throat_chakra">Throat Chakra</string>
+    <string name="position_third_eye">Third Eye</string>
+    <string name="position_crown_chakra">Crown Chakra</string>
+
+    <!-- Twin Flame positions -->
+    <string name="position_your_energy">Your Energy</string>
+    <string name="position_their_energy">Their Energy</string>
+    <string name="position_karmic_bond">Karmic Bond</string>
+    <string name="position_your_lesson">Your Lesson</string>
+    <string name="position_their_lesson">Their Lesson</string>
+    <string name="position_shared_mission">Shared Mission</string>
+    <string name="position_obstacle">Obstacle</string>
+
+    <!-- Moon Cycle positions -->
+    <string name="position_new_moon">New Moon — What to seed</string>
+    <string name="position_waxing_crescent">Waxing Crescent — What to nurture</string>
+    <string name="position_first_quarter">First Quarter — Action</string>
+    <string name="position_waxing_gibbous">Waxing Gibbous — What to refine</string>
+    <string name="position_full_moon">Full Moon — What to harvest</string>
+    <string name="position_waning_gibbous">Waning Gibbous — Gratitude</string>
+    <string name="position_last_quarter">Last Quarter — What to release</string>
+    <string name="position_dark_moon">Dark Moon — Reflection</string>
+
+    <!-- Career Compass positions -->
+    <string name="position_hidden_talents">Hidden Talents</string>
+    <string name="position_current_block">Current Blockage</string>
+    <string name="position_opportunity">Opportunity Ahead</string>
+    <string name="position_skill_to_develop">Skill to Develop</string>
+    <string name="position_financial_energy">Financial Energy</string>
+    <string name="position_next_step">Next Step</string>
+
+    <!-- Inner Child positions -->
+    <string name="position_inner_child">Your Inner Child</string>
+    <string name="position_wound">The Wound</string>
+    <string name="position_protective_pattern">Protective Pattern</string>
+    <string name="position_healing">Healing</string>
+    <string name="position_inner_gift">The Gift</string>
+
+    <!-- Tree of Life positions -->
+    <string name="position_keter">Keter — Crown</string>
+    <string name="position_chokma">Chokmah — Wisdom</string>
+    <string name="position_bina">Binah — Understanding</string>
+    <string name="position_chesed">Chesed — Mercy</string>
+    <string name="position_gevura">Gevurah — Strength</string>
+    <string name="position_tiferet">Tiferet — Beauty</string>
+    <string name="position_netzach">Netzach — Victory</string>
+    <string name="position_hod">Hod — Glory</string>
+    <string name="position_yesod">Yesod — Foundation</string>
+    <string name="position_malkhut">Malkhut — Kingdom</string>
+
+    <!-- Week Ahead positions -->
+    <string name="position_monday">Monday</string>
+    <string name="position_tuesday">Tuesday</string>
+    <string name="position_wednesday">Wednesday</string>
+    <string name="position_thursday">Thursday</string>
+    <string name="position_friday">Friday</string>
+    <string name="position_saturday">Saturday</string>
+    <string name="position_sunday">Sunday</string>
+
+    <!-- Karmic positions -->
+    <string name="position_karmic_debt">Karmic Debt</string>
+    <string name="position_karmic_gift">Karmic Gift</string>
+    <string name="position_current_lesson">Current Lesson</string>
+    <string name="position_repeating_pattern">Repeating Pattern</string>
+    <string name="position_what_to_break">What to Break</string>
+    <string name="position_karmic_reward">Karmic Reward</string>
+    <string name="position_life_purpose">Life Purpose</string>
+
+    <!-- Self-Love positions -->
+    <string name="position_how_i_see_myself">How I See Myself</string>
+    <string name="position_how_others_see_me">How Others See Me</string>
+    <string name="position_false_guilt">Undeserved Guilt</string>
+    <string name="position_hidden_strength">Hidden Strength</string>
+    <string name="position_what_i_need">What I Need From Myself</string>
+    <string name="position_affirmation">Affirmation From the Cards</string>
 
     <!-- Reading -->
     <string name="reading_interpreting">Madame Stella is reading your cards\u2026</string>
@@ -303,6 +441,42 @@
     <string name="moon_waning_gibbous">Waning Gibbous</string>
     <string name="moon_last_quarter">Last Quarter</string>
     <string name="moon_waning_crescent">Waning Crescent</string>
+
+    <!-- Moon Phase Energy Descriptions -->
+    <string name="moon_energy_new">A time for new beginnings. Plant the seeds of your intentions for this cycle.</string>
+    <string name="moon_energy_waxing_crescent">Your intentions are gaining strength. Build your plans and take the first steps.</string>
+    <string name="moon_energy_first_quarter">A time for action and decisions. Overcome obstacles with courage.</string>
+    <string name="moon_energy_waxing_gibbous">Fine-tune the details. Your projects are maturing — patience will bear fruit.</string>
+    <string name="moon_energy_full">Culmination and revelation. Harvest your results and celebrate what you\'ve achieved.</string>
+    <string name="moon_energy_waning_gibbous">A time for gratitude and sharing. Pass on the wisdom you\'ve gained.</string>
+    <string name="moon_energy_last_quarter">Release what no longer serves you. Let go of old patterns and habits.</string>
+    <string name="moon_energy_waning_crescent">Silence and reflection. Rest and prepare for a new cycle.</string>
+
+    <!-- Moon Phase Activities -->
+    <string name="moon_activity_new">Intention meditation \u00b7 Wish writing \u00b7 Planning</string>
+    <string name="moon_activity_waxing_crescent">Visualization \u00b7 First steps \u00b7 Building habits</string>
+    <string name="moon_activity_first_quarter">Decision-making \u00b7 Overcoming fear \u00b7 Action steps</string>
+    <string name="moon_activity_waxing_gibbous">Patience \u00b7 Fine-tuning \u00b7 Plan revision</string>
+    <string name="moon_activity_full">Celebration \u00b7 Gratitude rituals \u00b7 Listening to intuition</string>
+    <string name="moon_activity_waning_gibbous">Sharing wisdom \u00b7 Forgiveness \u00b7 Teaching others</string>
+    <string name="moon_activity_last_quarter">Decluttering \u00b7 Closing chapters \u00b7 Detox</string>
+    <string name="moon_activity_waning_crescent">Rest \u00b7 Dreaming \u00b7 Meditation \u00b7 Silence</string>
+
+    <!-- Moon Phase Tarot Connection -->
+    <string name="moon_tarot_new">Under the new moon, The Star resonates — new hopes are born.</string>
+    <string name="moon_tarot_waxing_crescent">Under the waxing crescent, The Magician resonates — create your reality.</string>
+    <string name="moon_tarot_first_quarter">Under the first quarter, The Chariot resonates — willpower guides you forward.</string>
+    <string name="moon_tarot_waxing_gibbous">Under the waxing gibbous, Temperance resonates — balance is the key.</string>
+    <string name="moon_tarot_full">Under the full moon, The High Priestess resonates — intuition is at its strongest.</string>
+    <string name="moon_tarot_waning_gibbous">Under the waning gibbous, The Hermit resonates — seek wisdom within.</string>
+    <string name="moon_tarot_last_quarter">Under the last quarter, Death resonates — transformation brings new life.</string>
+    <string name="moon_tarot_waning_crescent">Under the waning crescent, The Moon resonates — listen to your dreams.</string>
+
+    <!-- Lunar Section UI -->
+    <string name="moon_days_until_full">%d days until full moon</string>
+    <string name="moon_days_until_new">%d days until new moon</string>
+    <string name="moon_recommended_spread">Ideal spread for this phase</string>
+    <string name="moon_try_spread">Try Moon Cycle reading</string>
 
     <!-- Achievements -->
     <string name="achievement_first_reading">First Reading</string>

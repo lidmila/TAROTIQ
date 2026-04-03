@@ -14,6 +14,9 @@ import com.tarotiq.app.worker.ReminderScheduler
 import com.google.android.gms.ads.MobileAds
 import com.google.firebase.FirebaseApp
 import com.google.firebase.crashlytics.FirebaseCrashlytics
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.FirebaseFirestoreSettings
+import com.google.firebase.firestore.PersistentCacheSettings
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -48,6 +51,13 @@ class TarotIQApp : Application() {
 
         // Initialize Firebase
         FirebaseApp.initializeApp(this)
+
+        // Enable Firestore offline persistence
+        FirebaseFirestore.getInstance().firestoreSettings = FirebaseFirestoreSettings.Builder()
+            .setLocalCacheSettings(PersistentCacheSettings.newBuilder()
+                .setSizeBytes(50L * 1024L * 1024L) // 50 MB cache
+                .build())
+            .build()
 
         // Initialize Crashlytics
         FirebaseCrashlytics.getInstance().apply {

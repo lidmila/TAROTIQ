@@ -31,6 +31,11 @@ class CoinShopViewModel(application: Application) : AndroidViewModel(application
         coinRepo.startListening()
     }
 
+    override fun onCleared() {
+        super.onCleared()
+        coinRepo.stopListening()
+    }
+
     fun purchaseCoinPack(activity: Activity, productId: String) {
         billingRepo.launchPurchase(activity, productId)
     }

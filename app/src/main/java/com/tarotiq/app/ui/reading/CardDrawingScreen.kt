@@ -53,14 +53,9 @@ fun CardDrawingScreen(
     val view = LocalView.current
     val context = LocalContext.current
 
-    // Arc selection state
-    var selectedArcCards by remember { mutableStateOf(setOf<Int>()) }
-    val requiredCards = when (uiState.spread) {
-        ReadingSpread.SINGLE -> 1
-        ReadingSpread.THREE_CARD -> 3
-        ReadingSpread.RELATIONSHIP -> 5
-        ReadingSpread.CELTIC_CROSS -> 10
-    }
+    // Arc selection state — stored in ViewModel to survive rotation
+    val selectedArcCards = uiState.selectedArcCards
+    val requiredCards = uiState.spread.cardCount
 
     // Selection is complete when enough cards chosen — user must confirm with CTA
     val selectionComplete = selectedArcCards.size >= requiredCards && uiState.drawnCards.isEmpty()
@@ -79,6 +74,18 @@ fun CardDrawingScreen(
                                 ReadingSpread.THREE_CARD -> stringResource(R.string.spread_three_card)
                                 ReadingSpread.RELATIONSHIP -> stringResource(R.string.spread_relationship)
                                 ReadingSpread.CELTIC_CROSS -> stringResource(R.string.spread_celtic_cross)
+                                ReadingSpread.YEAR_AHEAD -> stringResource(R.string.spread_year_ahead)
+                                ReadingSpread.SHADOW_SELF -> stringResource(R.string.spread_shadow_self)
+                                ReadingSpread.CROSSROADS -> stringResource(R.string.spread_crossroads)
+                                ReadingSpread.CHAKRA -> stringResource(R.string.spread_chakra)
+                                ReadingSpread.TWIN_FLAME -> stringResource(R.string.spread_twin_flame)
+                                ReadingSpread.MOON_CYCLE -> stringResource(R.string.spread_moon_cycle)
+                                ReadingSpread.CAREER_COMPASS -> stringResource(R.string.spread_career_compass)
+                                ReadingSpread.INNER_CHILD -> stringResource(R.string.spread_inner_child)
+                                ReadingSpread.TREE_OF_LIFE -> stringResource(R.string.spread_tree_of_life)
+                                ReadingSpread.WEEK_AHEAD -> stringResource(R.string.spread_week_ahead)
+                                ReadingSpread.KARMIC -> stringResource(R.string.spread_karmic)
+                                ReadingSpread.SELF_LOVE -> stringResource(R.string.spread_self_love)
                             },
                             style = MaterialTheme.typography.headlineMedium.copy(
                                 fontFamily = NewsreaderFamily,
@@ -180,13 +187,14 @@ fun CardDrawingScreen(
                                     maxSelectable = requiredCards,
                                     onCardTap = { index ->
                                         view.performHapticFeedback(HapticFeedbackConstants.LONG_PRESS)
-                                        selectedArcCards = if (index in selectedArcCards) {
+                                        val updated = if (index in selectedArcCards) {
                                             selectedArcCards - index
                                         } else if (selectedArcCards.size < requiredCards) {
                                             selectedArcCards + index
                                         } else {
                                             selectedArcCards
                                         }
+                                        readingViewModel.updateSelectedArcCards(updated)
                                     }
                                 )
 
@@ -276,6 +284,16 @@ fun CardDrawingScreen(
                                             context = context
                                         )
                                     }
+                                    else -> {
+                                        GenericGridLayout(
+                                            uiState = uiState,
+                                            onReveal = { index ->
+                                                view.performHapticFeedback(HapticFeedbackConstants.LONG_PRESS)
+                                                readingViewModel.revealCard(index)
+                                            },
+                                            context = context
+                                        )
+                                    }
                                 }
                             }
                         }
@@ -322,34 +340,39 @@ private fun FlippableCard(
     cardHeight: Int = 150,
     levitationIndex: Int = 0
 ) {
-    // Pre-reveal pulse: unrevealed cards breathe subtly
-    val infiniteTransition = rememberInfiniteTransition(label = "levitate_$levitationIndex")
-    val preRevealPulse by infiniteTransition.animateFloat(
-        initialValue = 0.98f,
-        targetValue = 1.03f,
-        animationSpec = infiniteRepeatable(
-            animation = tween(2000, easing = EaseInOutSine),
-            repeatMode = RepeatMode.Reverse
-        ),
-        label = "pulse_$levitationIndex"
-    )
-
-    // Levitation: each card floats independently
-    val levitationOffset by infiniteTransition.animateFloat(
-        initialValue = -8f,
-        targetValue = 8f,
-        animationSpec = infiniteRepeatable(
-            animation = tween(
-                durationMillis = 2500 + levitationIndex * 400,
-                easing = EaseInOutSine
-            ),
-            repeatMode = RepeatMode.Reverse
-        ),
-        label = "float_$levitationIndex"
-    )
-
     // Card flip animation state
     var hasStartedReveal by remember { mutableStateOf(false) }
+
+    // Pre-reveal animations: only create for unrevealed cards to avoid 78+ infinite transitions
+    val preRevealPulse: Float
+    val levitationOffset: Float
+    if (!hasStartedReveal) {
+        val infiniteTransition = rememberInfiniteTransition(label = "levitate_$levitationIndex")
+        preRevealPulse = infiniteTransition.animateFloat(
+            initialValue = 0.98f,
+            targetValue = 1.03f,
+            animationSpec = infiniteRepeatable(
+                animation = tween(2000, easing = EaseInOutSine),
+                repeatMode = RepeatMode.Reverse
+            ),
+            label = "pulse_$levitationIndex"
+        ).value
+        levitationOffset = infiniteTransition.animateFloat(
+            initialValue = -8f,
+            targetValue = 8f,
+            animationSpec = infiniteRepeatable(
+                animation = tween(
+                    durationMillis = 2500 + levitationIndex * 400,
+                    easing = EaseInOutSine
+                ),
+                repeatMode = RepeatMode.Reverse
+            ),
+            label = "float_$levitationIndex"
+        ).value
+    } else {
+        preRevealPulse = 1f
+        levitationOffset = 0f
+    }
     val flipRotation = remember { Animatable(0f) }
     LaunchedEffect(isRevealed) {
         if (isRevealed && !hasStartedReveal) {
@@ -623,6 +646,39 @@ private fun CelticCrossLayout(
                         isRevealed = i in uiState.revealedCardIndices,
                         onReveal = { onReveal(i) }, context = context,
                         cardWidth = 70, cardHeight = 105
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun GenericGridLayout(
+    uiState: ReadingUiState,
+    onReveal: (Int) -> Unit,
+    context: android.content.Context
+) {
+    val columns = if (uiState.drawnCards.size <= 8) 3 else 4
+    val cardW = if (columns == 3) 80 else 70
+    val cardH = if (columns == 3) 120 else 105
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
+        uiState.drawnCards.chunked(columns).forEachIndexed { rowIdx, row ->
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                row.forEachIndexed { colIdx, c ->
+                    val i = rowIdx * columns + colIdx
+                    FlippableCard(
+                        cardId = c.cardId, isReversed = c.isReversed,
+                        positionLabel = c.positionMeaning,
+                        isRevealed = i in uiState.revealedCardIndices,
+                        onReveal = { onReveal(i) }, context = context,
+                        cardWidth = cardW, cardHeight = cardH
                     )
                 }
             }

@@ -56,6 +56,11 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
+    override fun onCleared() {
+        super.onCleared()
+        coinRepo.stopListening()
+    }
+
     fun drawDailyCard() {
         if (_dailyCardRevealed.value) return
         val userId = auth.currentUser?.uid ?: return

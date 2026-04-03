@@ -45,6 +45,11 @@ class ProfileViewModel(application: Application) : AndroidViewModel(application)
         }
     }
 
+    override fun onCleared() {
+        super.onCleared()
+        coinRepo.stopListening()
+    }
+
     fun setZodiacSign(sign: String) {
         viewModelScope.launch {
             settingsManager.setZodiacSign(sign)

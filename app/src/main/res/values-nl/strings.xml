@@ -17,8 +17,11 @@
     <string name="auth_register">Registreren</string>
     <string name="auth_email">E-mail</string>
     <string name="auth_password">Wachtwoord</string>
-    <string name="auth_passwordless">Inloggen zonder wachtwoord</string>
+    <string name="auth_passwordless">Inloggen via e-maillink</string>
     <string name="auth_passwordless_desc">We sturen u een link via e-mail</string>
+    <string name="auth_enter_email_first">Voer eerst uw e-mailadres in</string>
+    <string name="auth_forgot_password_title">Wachtwoord resetten</string>
+    <string name="auth_forgot_password_send">Verzenden</string>
     <string name="auth_google">Doorgaan met Google</string>
     <string name="auth_logout">Uitloggen</string>
     <string name="auth_delete_account">Account verwijderen</string>
@@ -59,8 +62,162 @@
     <string name="spread_celtic_cross_desc">Diepgaande lezing (10 kaarten)</string>
     <string name="spread_relationship">Relatielegging</string>
     <string name="spread_relationship_desc">U · Partner · Relatie · Uitdagingen · Toekomst</string>
+    <string name="spread_year_ahead">Jaaroverzicht</string>
+    <string name="spread_year_ahead_desc">12 kaarten · Eén kaart per maand</string>
+    <string name="spread_shadow_self">Schaduwzelf</string>
+    <string name="spread_shadow_self_desc">Masker · Schaduw · Wortel · Angst · Gave · Integratie</string>
+    <string name="spread_crossroads">Kruispunt van het lot</string>
+    <string name="spread_crossroads_desc">Twee wegen · Verborgen factor · Advies</string>
+    <string name="spread_chakra">Chakralezing</string>
+    <string name="spread_chakra_desc">7 chakra\'s · Energiediagnose</string>
+    <string name="spread_twin_flame">Tweelingvlam</string>
+    <string name="spread_twin_flame_desc">Karmische band · Lessen · Gedeelde missie</string>
+    <string name="spread_moon_cycle">Maancyclus</string>
+    <string name="spread_moon_cycle_desc">8 maanfasen · Zaaien, kweken, oogsten</string>
+    <string name="spread_career_compass">Carrièrekompas</string>
+    <string name="spread_career_compass_desc">Talenten · Blokkade · Kans · Financiën</string>
+    <string name="spread_inner_child">Innerlijk kind</string>
+    <string name="spread_inner_child_desc">Wond · Bescherming · Genezing · Gave</string>
+    <string name="spread_tree_of_life">Levensboom</string>
+    <string name="spread_tree_of_life_desc">10 Sefirot · Kabbalistische lezing</string>
+    <string name="spread_week_ahead">Weekgids</string>
+    <string name="spread_week_ahead_desc">7 kaarten · Eén voor elke dag</string>
+    <string name="spread_karmic">Karmische lezing</string>
+    <string name="spread_karmic_desc">Karmische schuld · Lessen · Levensdoel</string>
+    <string name="spread_self_love">Spiegel van zelfliefde</string>
+    <string name="spread_self_love_desc">Zelfbeeld · Verborgen kracht · Affirmatie</string>
     <string name="spread_cost">%d munten</string>
     <string name="spread_cost_singular">%d munt</string>
+
+    <!-- Spread Positions -->
+    <string name="position_insight">Inzicht</string>
+    <string name="position_past">Verleden</string>
+    <string name="position_present">Heden</string>
+    <string name="position_future">Toekomst</string>
+    <string name="position_you">Jij</string>
+    <string name="position_partner">Partner</string>
+    <string name="position_relationship">Relatie</string>
+    <string name="position_challenges">Uitdagingen</string>
+    <string name="position_present_situation">Huidige situatie</string>
+    <string name="position_challenge">Uitdaging</string>
+    <string name="position_conscious">Bewustzijn</string>
+    <string name="position_subconscious">Onderbewustzijn</string>
+    <string name="position_advice">Advies</string>
+    <string name="position_influences">Invloeden</string>
+    <string name="position_hopes">Hoop en angsten</string>
+    <string name="position_outcome">Uitkomst</string>
+    <string name="position_extra">Extra kaart</string>
+
+    <!-- Year Ahead positions -->
+    <string name="position_january">Januari</string>
+    <string name="position_february">Februari</string>
+    <string name="position_march">Maart</string>
+    <string name="position_april">April</string>
+    <string name="position_may">Mei</string>
+    <string name="position_june">Juni</string>
+    <string name="position_july">Juli</string>
+    <string name="position_august">Augustus</string>
+    <string name="position_september">September</string>
+    <string name="position_october">Oktober</string>
+    <string name="position_november">November</string>
+    <string name="position_december">December</string>
+
+    <!-- Shadow Self positions -->
+    <string name="position_mask">Het Masker</string>
+    <string name="position_shadow">De Schaduw</string>
+    <string name="position_shadow_root">Wortel van de schaduw</string>
+    <string name="position_fear">Angst</string>
+    <string name="position_shadow_gift">Gave van de schaduw</string>
+    <string name="position_integration">Integratie</string>
+
+    <!-- Crossroads positions -->
+    <string name="position_current_situation">Huidige situatie</string>
+    <string name="position_path_a_desc">Weg A</string>
+    <string name="position_path_a_outcome">Resultaat weg A</string>
+    <string name="position_path_b_desc">Weg B</string>
+    <string name="position_path_b_outcome">Resultaat weg B</string>
+    <string name="position_hidden_factor">Verborgen factor</string>
+
+    <!-- Chakra positions -->
+    <string name="position_root_chakra">Wortelchakra</string>
+    <string name="position_sacral_chakra">Sacraalchakra</string>
+    <string name="position_solar_plexus">Zonnevlecht</string>
+    <string name="position_heart_chakra">Hartchakra</string>
+    <string name="position_throat_chakra">Keelchakra</string>
+    <string name="position_third_eye">Derde oog</string>
+    <string name="position_crown_chakra">Kruinchakra</string>
+
+    <!-- Twin Flame positions -->
+    <string name="position_your_energy">Jouw energie</string>
+    <string name="position_their_energy">Energie van de ander</string>
+    <string name="position_karmic_bond">Karmische band</string>
+    <string name="position_your_lesson">Jouw les</string>
+    <string name="position_their_lesson">Les van de partner</string>
+    <string name="position_shared_mission">Gedeelde missie</string>
+    <string name="position_obstacle">Obstakel</string>
+
+    <!-- Moon Cycle positions -->
+    <string name="position_new_moon">Nieuwe maan — Wat te zaaien</string>
+    <string name="position_waxing_crescent">Wassende maan — Wat te koesteren</string>
+    <string name="position_first_quarter">Eerste kwartier — Actie</string>
+    <string name="position_waxing_gibbous">Wassende maan — Wat te verfijnen</string>
+    <string name="position_full_moon">Volle maan — Wat te oogsten</string>
+    <string name="position_waning_gibbous">Afnemende maan — Dankbaarheid</string>
+    <string name="position_last_quarter">Laatste kwartier — Wat los te laten</string>
+    <string name="position_dark_moon">Donkere maan — Reflectie</string>
+
+    <!-- Career Compass positions -->
+    <string name="position_hidden_talents">Verborgen talenten</string>
+    <string name="position_current_block">Huidige blokkade</string>
+    <string name="position_opportunity">Kans aan de horizon</string>
+    <string name="position_skill_to_develop">Vaardigheid om te ontwikkelen</string>
+    <string name="position_financial_energy">Financiële energie</string>
+    <string name="position_next_step">Volgende stap</string>
+
+    <!-- Inner Child positions -->
+    <string name="position_inner_child">Jouw innerlijk kind</string>
+    <string name="position_wound">De wond</string>
+    <string name="position_protective_pattern">Beschermingspatroon</string>
+    <string name="position_healing">Genezing</string>
+    <string name="position_inner_gift">De gave</string>
+
+    <!-- Tree of Life positions -->
+    <string name="position_keter">Keter — Kroon</string>
+    <string name="position_chokma">Chochma — Wijsheid</string>
+    <string name="position_bina">Bina — Begrip</string>
+    <string name="position_chesed">Chesed — Genade</string>
+    <string name="position_gevura">Gevoera — Kracht</string>
+    <string name="position_tiferet">Tiferet — Schoonheid</string>
+    <string name="position_netzach">Netzach — Overwinning</string>
+    <string name="position_hod">Hod — Glorie</string>
+    <string name="position_yesod">Jesod — Fundament</string>
+    <string name="position_malkhut">Malchoet — Koninkrijk</string>
+
+    <!-- Week Ahead positions -->
+    <string name="position_monday">Maandag</string>
+    <string name="position_tuesday">Dinsdag</string>
+    <string name="position_wednesday">Woensdag</string>
+    <string name="position_thursday">Donderdag</string>
+    <string name="position_friday">Vrijdag</string>
+    <string name="position_saturday">Zaterdag</string>
+    <string name="position_sunday">Zondag</string>
+
+    <!-- Karmic positions -->
+    <string name="position_karmic_debt">Karmische schuld</string>
+    <string name="position_karmic_gift">Karmische gave</string>
+    <string name="position_current_lesson">Huidige les</string>
+    <string name="position_repeating_pattern">Herhalend patroon</string>
+    <string name="position_what_to_break">Wat te doorbreken</string>
+    <string name="position_karmic_reward">Karmische beloning</string>
+    <string name="position_life_purpose">Levensdoel</string>
+
+    <!-- Self-Love positions -->
+    <string name="position_how_i_see_myself">Hoe ik mezelf zie</string>
+    <string name="position_how_others_see_me">Hoe anderen mij zien</string>
+    <string name="position_false_guilt">Onverdiende schuld</string>
+    <string name="position_hidden_strength">Verborgen kracht</string>
+    <string name="position_what_i_need">Wat ik van mezelf nodig heb</string>
+    <string name="position_affirmation">Affirmatie van de kaarten</string>
 
     <!-- Card Drawing -->
     <string name="drawing_tap_to_reveal">Tik op een kaart om te onthullen</string>

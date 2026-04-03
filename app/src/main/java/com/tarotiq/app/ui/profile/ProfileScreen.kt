@@ -316,7 +316,7 @@ fun ProfileScreen(
             title = { Text(stringResource(R.string.auth_delete_account)) },
             text = { Text(stringResource(R.string.delete_confirm_message)) },
             confirmButton = {
-                TextButton(onClick = { authViewModel.deleteAccount { _, _ -> showDeleteDialog = false } }) {
+                TextButton(onClick = { authViewModel.deleteAccount(null) { _, _ -> showDeleteDialog = false } }) {
                     Text(stringResource(R.string.delete), color = ErrorCrimson)
                 }
             },

@@ -18,13 +18,17 @@ import com.tarotiq.app.utils.DatabaseProvider
 import com.tarotiq.app.utils.LocaleUtils
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 
 data class ReadingUiState(
     val topic: String = "",
     val question: String? = null,
     val spread: ReadingSpread = ReadingSpread.SINGLE,
+    val spreadSelected: Boolean = false,
     val drawnCards: List<DrawnCard> = emptyList(),
     val revealedCardIndices: Set<Int> = emptySet(),
+    val selectedArcCards: Set<Int> = emptySet(),
     val isInterpreting: Boolean = false,
     val interpretation: String = "",
     val readingId: String? = null,
@@ -45,6 +49,7 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
     private val _uiState = MutableStateFlow(ReadingUiState())
     val uiState: StateFlow<ReadingUiState> = _uiState.asStateFlow()
     val coinBalance = coinRepo.coinBalance
+    private val coinSpendMutex = Mutex()
 
     fun setTopic(topic: String) {
         _uiState.update { it.copy(topic = topic) }
@@ -54,9 +59,14 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
         _uiState.update { it.copy(question = question) }
     }
 
+    fun updateSelectedArcCards(cards: Set<Int>) {
+        _uiState.update { it.copy(selectedArcCards = cards) }
+    }
+
     fun setSpread(spread: ReadingSpread) {
         _uiState.update { it.copy(
             spread = spread,
+            spreadSelected = true,
             drawnCards = emptyList(),
             revealedCardIndices = emptySet(),
             interpretation = "",
@@ -68,9 +78,14 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
 
     fun drawCards() {
         viewModelScope.launch {
-            val spread = _uiState.value.spread
-            // Spend coins IMMEDIATELY on confirm
-            if (!_uiState.value.coinSpent) {
+            coinSpendMutex.withLock {
+                val spread = _uiState.value.spread
+                if (_uiState.value.coinSpent) {
+                    // Already spent — just draw cards
+                    val cards = CardUtils.drawCards(spread, getApplication())
+                    _uiState.update { it.copy(drawnCards = cards, revealedCardIndices = emptySet()) }
+                    return@withLock
+                }
                 try {
                     functionsClient.spendCoins(spread.key)
                     _uiState.update { it.copy(coinSpent = true) }
@@ -83,12 +98,11 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
                         else -> msg
                     }
                     _uiState.update { it.copy(error = error) }
-                    return@launch
+                    return@withLock
                 }
+                val cards = CardUtils.drawCards(spread, getApplication())
+                _uiState.update { it.copy(drawnCards = cards, revealedCardIndices = emptySet()) }
             }
-            // Only draw cards after coins are spent
-            val cards = CardUtils.drawCards(spread, getApplication())
-            _uiState.update { it.copy(drawnCards = cards, revealedCardIndices = emptySet()) }
         }
     }
 
@@ -122,7 +136,10 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
                     moonPhase = moonPhase,
                     language = language
                 )
-                val userId = auth.currentUser?.uid ?: ""
+                val userId = auth.currentUser?.uid ?: run {
+                    _uiState.update { it.copy(isInterpreting = false, error = "NOT_AUTHENTICATED") }
+                    return@launch
+                }
                 val reading = TarotReading(
                     userId = userId,
                     topic = state.topic,

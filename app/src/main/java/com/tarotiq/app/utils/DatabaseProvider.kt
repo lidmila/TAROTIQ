@@ -15,7 +15,6 @@ object DatabaseProvider {
                 TarotDatabase::class.java,
                 TarotDatabase.DATABASE_NAME
             )
-                .fallbackToDestructiveMigration()
                 .build()
             INSTANCE = instance
             instance

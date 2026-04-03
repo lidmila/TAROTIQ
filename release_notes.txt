@@ -1,0 +1,36 @@
+<cs-CZ>
+Vylepsene prihlaseni: Tlacitko "Prihlasit se e-mailovym odkazem" je nyni srozumitelnejsi. Zapomenute heslo funguje pres novy dialog — staci zadat e-mail a odeslat.
+
+Bezpecnost a stabilita:
+- Opraveno dvojite strzeni minci pri rychlem kliknuti
+- Odhlaseni spravne maze lokalni data
+- Zabraneno ztrate minci pri navigaci zpet behem nakupu
+- Vylepsena ochrana transakcí
+
+Vykon:
+- Optimalizovane animace karet — plynulejsi zobrazeni u vetsich vykladu
+- Offline podpora — aplikace nyni lepe funguje bez pripojeni
+- Rychlejsi zobrazeni interpretace u delsich textu
+
+Dalsi vylepseni:
+- Vyber karet se neztraci pri otoceni obrazovky
+- Vylepsena sprava pameti
+</cs-CZ>
+<en-US>
+Improved login: "Sign in with email link" button is now clearer. Forgot password works via a new dialog — just enter your email and send.
+
+Security & stability:
+- Fixed double coin charge on rapid clicks
+- Logout now properly clears local data
+- Prevented coin loss when navigating back during purchase
+- Improved transaction protection
+
+Performance:
+- Optimized card animations — smoother display for larger spreads
+- Offline support — app now works better without connection
+- Faster interpretation display for longer texts
+
+Other improvements:
+- Card selection preserved on screen rotation
+- Improved memory management
+</en-US>

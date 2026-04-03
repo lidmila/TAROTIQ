@@ -105,9 +105,45 @@ export const interpretTarotReading = onCall({
     throw new HttpsError("resource-exhausted", "Daily reading limit reached. Maximum 20 readings per day.");
   }
 
+  const spreadInstructions: Record<string, string> = {
+    single: `SINGLE CARD READING — Deliver one powerful, focused message. No synthesis section needed. Total length: 80-120 words. Make every word count — this is a laser-focused insight, not a broad reading.`,
+
+    three_card: `THREE CARD SPREAD — Tell a story that flows from Past through Present into Future. Each card builds on the previous one. Show how the past created the present situation and how the present energy shapes what's coming. The synthesis should feel like a narrative conclusion.`,
+
+    relationship: `RELATIONSHIP SPREAD — Maintain balanced empathy for both partners. Never take sides. Interpret the "Challenges" position as a growth opportunity, not a blame card. The synthesis should offer concrete communication advice.`,
+
+    celtic_cross: `CELTIC CROSS — This is your most detailed reading. Draw deep connections between all 10 positions. Highlight the tension between conscious (position 5) and subconscious (position 6). The synthesis should be 180-250 words and weave all threads together into a comprehensive life narrative.`,
+
+    year_ahead: `YEAR AHEAD SPREAD — For each month, give a specific theme and one concrete actionable tip. Use seasonal metaphors (spring = growth, summer = abundance, autumn = harvest/release, winter = rest/reflection). Keep each month to 40-60 words. The synthesis should identify 2-3 key turning points across the year.`,
+
+    shadow_self: `SHADOW SELF SPREAD — Adopt a gentle, therapeutic tone inspired by Jungian psychology. Use language of integration, not elimination. The Shadow is not an enemy — it carries gifts. Be especially compassionate with the Fear and Root positions. End the synthesis with a self-compassion exercise the querent can practice. Avoid spiritual bypassing — honor the difficulty of shadow work.`,
+
+    crossroads: `CROSSROADS SPREAD — Structure your reading as a clear comparison. For each path: describe its energy, likely challenges, and probable outcome. Be specific about the differences. The Hidden Factor position should reveal something neither path shows on the surface. The Advice card should NOT simply pick one path — instead, offer a decision-making framework. Use the synthesis to present a clear, structured comparison.`,
+
+    chakra: `CHAKRA READING — For each chakra position, diagnose whether the energy is blocked, overactive, or balanced. Use the card to identify the specific blockage or strength. Offer one practical remedy per chakra (meditation, physical activity, affirmation, or lifestyle change). Use body-awareness language. The synthesis should identify which chakra needs the most urgent attention and how it affects the others.`,
+
+    twin_flame: `TWIN FLAME / SOULMATE SPREAD — Use deeply mystical, soul-level language. Speak of karmic contracts, soul recognition, and spiritual mirrors. The Karmic Bond position should explain WHY these souls chose each other. Both lesson positions should focus on individual growth, not codependency. The synthesis should address whether this connection is meant for a lifetime or a season — with compassion either way.`,
+
+    moon_cycle: `MOON CYCLE SPREAD — Connect each card to its lunar phase energy. Structure as a practical 28-day guide. New Moon = intention setting, Waxing = building momentum, Full Moon = celebration/revelation, Waning = release/gratitude. Each position should include a specific ritual or practice (journaling prompt, meditation, action step). If the current moon phase is provided, emphasize the card that matches it.`,
+
+    career_compass: `CAREER COMPASS SPREAD — Be practical and strategic, less poetic than usual. Use business/growth language alongside mystical imagery. Hidden Talents should be specific and actionable. Financial Energy should address the querent's relationship with money and abundance. The Next Step should be a concrete, achievable action the querent can take THIS WEEK. The synthesis should read like a strategic career brief.`,
+
+    inner_child: `INNER CHILD SPREAD — Use the gentlest, most nurturing tone in your repertoire. Speak as if addressing both the adult querent and their inner child simultaneously. The Wound position requires extreme sensitivity — validate the pain without minimizing it. The Protective Pattern should be honored as something that once served a purpose. End the synthesis with a letter from the querent's inner child, written in a childlike but wise voice (3-4 sentences).`,
+
+    tree_of_life: `TREE OF LIFE / KABBALISTIC SPREAD — This is your most esoteric reading. Reference the qualities of each Sephirah (Keter = divine will, Chokmah = wisdom/inspiration, Binah = understanding/form, Chesed = mercy/expansion, Gevurah = strength/discipline, Tiferet = beauty/balance, Netzach = victory/passion, Hod = glory/intellect, Yesod = foundation/dreams, Malkhut = physical reality). Show how energy flows down the Tree from the divine (Keter) to the material (Malkhut). The synthesis should map the querent's spiritual journey across the Tree.`,
+
+    week_ahead: `WEEK AHEAD SPREAD — Keep each day concise: 2-3 sentences maximum per card. Focus on ONE practical tip per day. Use the day's traditional planetary association if it fits (Monday = Moon/emotions, Tuesday = Mars/action, Wednesday = Mercury/communication, Thursday = Jupiter/growth, Friday = Venus/relationships, Saturday = Saturn/discipline, Sunday = Sun/joy). The synthesis should identify the week's overall theme and the most important day to watch.`,
+
+    karmic: `KARMIC READING — Speak with the authority of one who sees across lifetimes. Use past-life imagery and reincarnation language. The Karmic Debt position should explain a pattern, not assign blame. The Repeating Pattern should be described vividly so the querent recognizes it in their daily life. The Life Purpose position should be the emotional climax of the reading. The synthesis should answer the deep question: "Why am I here, and what am I meant to learn?"`,
+
+    self_love: `SELF-LOVE MIRROR SPREAD — Use affirming, empowering language throughout. The gap between "How I See Myself" and "How Others See Me" is the key insight — explore it with compassion. False Guilt should be explicitly named and released. Hidden Strength should feel like a revelation. IMPORTANT: The final position (Affirmation) must be a beautiful, personalized affirmation of 2-3 sentences that the querent can repeat daily. Format it clearly as: ✨ YOUR AFFIRMATION: "..." ✨`,
+  };
+
   const cardDescriptions = (drawnCards as any[]).map((card: any, i: number) =>
     `${i + 1}. Position: ${card.positionMeaning} | Card ID: ${card.cardId} | ${card.isReversed ? "REVERSED" : "UPRIGHT"}`
   ).join("\n");
+
+  const spreadGuide = spreadInstructions[spreadType] || "";
 
   const userMessage = `SPREAD: ${spreadType}
 TOPIC: ${topic}
@@ -115,6 +151,7 @@ ${question ? `QUESTION: ${question}` : "No specific question"}
 ${zodiacSign ? `ZODIAC: ${zodiacSign}` : ""}
 ${moonPhase ? `MOON PHASE: ${moonPhase}` : ""}
 LANGUAGE: ${language}
+${spreadGuide ? `\nSPREAD-SPECIFIC INSTRUCTIONS:\n${spreadGuide}` : ""}
 
 CARDS DRAWN:
 ${cardDescriptions}`;
@@ -178,7 +215,11 @@ export const spendCoins = onCall({ invoker: "public" }, async (request) => {
   const { readingType } = request.data;
 
   const costMap: Record<string, number> = {
-    single: 1, three_card: 2, relationship: 5, celtic_cross: 5, extra_card: 1,
+    single: 1, three_card: 2, relationship: 5, celtic_cross: 5,
+    year_ahead: 10, shadow_self: 6, crossroads: 6, chakra: 7,
+    twin_flame: 8, moon_cycle: 7, career_compass: 6, inner_child: 5,
+    tree_of_life: 10, week_ahead: 5, karmic: 8, self_love: 6,
+    extra_card: 1,
   };
   const cost = costMap[readingType] || 1;
 

@@ -17,8 +17,11 @@
     <string name="auth_register">S\'inscrire</string>
     <string name="auth_email">E-mail</string>
     <string name="auth_password">Mot de passe</string>
-    <string name="auth_passwordless">Connexion sans mot de passe</string>
+    <string name="auth_passwordless">Se connecter par lien e-mail</string>
     <string name="auth_passwordless_desc">Nous vous enverrons un lien par e-mail</string>
+    <string name="auth_enter_email_first">Veuillez d\'abord saisir votre adresse e-mail</string>
+    <string name="auth_forgot_password_title">Réinitialiser le mot de passe</string>
+    <string name="auth_forgot_password_send">Envoyer</string>
     <string name="auth_google">Continuer avec Google</string>
     <string name="auth_logout">Se déconnecter</string>
     <string name="auth_delete_account">Supprimer le compte</string>
@@ -59,6 +62,30 @@
     <string name="spread_celtic_cross_desc">Lecture approfondie (10 cartes)</string>
     <string name="spread_relationship">Tirage Relationnel</string>
     <string name="spread_relationship_desc">Vous · Partenaire · Relation · Défis · Futur</string>
+    <string name="spread_year_ahead">Prévision annuelle</string>
+    <string name="spread_year_ahead_desc">12 cartes · Une carte par mois</string>
+    <string name="spread_shadow_self">Moi de l\'ombre</string>
+    <string name="spread_shadow_self_desc">Masque · Ombre · Racine · Peur · Don · Intégration</string>
+    <string name="spread_crossroads">Carrefour du destin</string>
+    <string name="spread_crossroads_desc">Deux chemins · Facteur caché · Conseil</string>
+    <string name="spread_chakra">Lecture des chakras</string>
+    <string name="spread_chakra_desc">7 chakras · Diagnostic énergétique</string>
+    <string name="spread_twin_flame">Flamme jumelle</string>
+    <string name="spread_twin_flame_desc">Lien karmique · Leçons · Mission partagée</string>
+    <string name="spread_moon_cycle">Cycle lunaire</string>
+    <string name="spread_moon_cycle_desc">8 phases lunaires · Semer, cultiver, récolter</string>
+    <string name="spread_career_compass">Boussole de carrière</string>
+    <string name="spread_career_compass_desc">Talents · Blocage · Opportunité · Finances</string>
+    <string name="spread_inner_child">Enfant intérieur</string>
+    <string name="spread_inner_child_desc">Blessure · Protection · Guérison · Don</string>
+    <string name="spread_tree_of_life">Arbre de vie</string>
+    <string name="spread_tree_of_life_desc">10 Séphiroth · Lecture kabbalistique</string>
+    <string name="spread_week_ahead">Guide hebdomadaire</string>
+    <string name="spread_week_ahead_desc">7 cartes · Une pour chaque jour</string>
+    <string name="spread_karmic">Lecture karmique</string>
+    <string name="spread_karmic_desc">Dette karmique · Leçons · But de vie</string>
+    <string name="spread_self_love">Miroir de l\'amour de soi</string>
+    <string name="spread_self_love_desc">Image de soi · Force cachée · Affirmation</string>
     <string name="spread_cost">%d pièces</string>
     <string name="spread_cost_singular">%d pièce</string>
 
@@ -71,6 +98,136 @@
     <string name="drawing_scroll_hint">↓ Défilez pour voir plus de cartes ↓</string>
     <string name="spread_pick_cards">Choisissez %d cartes pour votre lecture</string>
     <string name="drawing_focus_energy">Concentrez votre énergie sur votre intention.</string>
+
+    <!-- Spread Positions -->
+    <string name="position_insight">Aperçu</string>
+    <string name="position_past">Passé</string>
+    <string name="position_present">Présent</string>
+    <string name="position_future">Futur</string>
+    <string name="position_you">Vous</string>
+    <string name="position_partner">Partenaire</string>
+    <string name="position_relationship">Relation</string>
+    <string name="position_challenges">Défis</string>
+    <string name="position_present_situation">Situation actuelle</string>
+    <string name="position_challenge">Défi</string>
+    <string name="position_conscious">Conscient</string>
+    <string name="position_subconscious">Subconscient</string>
+    <string name="position_advice">Conseil</string>
+    <string name="position_influences">Influences extérieures</string>
+    <string name="position_hopes">Espoirs et craintes</string>
+    <string name="position_outcome">Résultat</string>
+    <string name="position_extra">Carte supplémentaire</string>
+
+    <!-- Year Ahead positions -->
+    <string name="position_january">Janvier</string>
+    <string name="position_february">Février</string>
+    <string name="position_march">Mars</string>
+    <string name="position_april">Avril</string>
+    <string name="position_may">Mai</string>
+    <string name="position_june">Juin</string>
+    <string name="position_july">Juillet</string>
+    <string name="position_august">Août</string>
+    <string name="position_september">Septembre</string>
+    <string name="position_october">Octobre</string>
+    <string name="position_november">Novembre</string>
+    <string name="position_december">Décembre</string>
+
+    <!-- Shadow Self positions -->
+    <string name="position_mask">Le Masque</string>
+    <string name="position_shadow">L\'Ombre</string>
+    <string name="position_shadow_root">Racine de l\'ombre</string>
+    <string name="position_fear">Peur</string>
+    <string name="position_shadow_gift">Don de l\'ombre</string>
+    <string name="position_integration">Intégration</string>
+
+    <!-- Crossroads positions -->
+    <string name="position_current_situation">Situation actuelle</string>
+    <string name="position_path_a_desc">Chemin A</string>
+    <string name="position_path_a_outcome">Résultat chemin A</string>
+    <string name="position_path_b_desc">Chemin B</string>
+    <string name="position_path_b_outcome">Résultat chemin B</string>
+    <string name="position_hidden_factor">Facteur caché</string>
+
+    <!-- Chakra positions -->
+    <string name="position_root_chakra">Chakra racine</string>
+    <string name="position_sacral_chakra">Chakra sacré</string>
+    <string name="position_solar_plexus">Plexus solaire</string>
+    <string name="position_heart_chakra">Chakra du cœur</string>
+    <string name="position_throat_chakra">Chakra de la gorge</string>
+    <string name="position_third_eye">Troisième œil</string>
+    <string name="position_crown_chakra">Chakra couronne</string>
+
+    <!-- Twin Flame positions -->
+    <string name="position_your_energy">Votre énergie</string>
+    <string name="position_their_energy">Énergie de l\'autre</string>
+    <string name="position_karmic_bond">Lien karmique</string>
+    <string name="position_your_lesson">Votre leçon</string>
+    <string name="position_their_lesson">Leçon du partenaire</string>
+    <string name="position_shared_mission">Mission partagée</string>
+    <string name="position_obstacle">Obstacle</string>
+
+    <!-- Moon Cycle positions -->
+    <string name="position_new_moon">Nouvelle lune — Quoi semer</string>
+    <string name="position_waxing_crescent">Premier croissant — Quoi cultiver</string>
+    <string name="position_first_quarter">Premier quartier — Action</string>
+    <string name="position_waxing_gibbous">Lune gibbeuse — Quoi affiner</string>
+    <string name="position_full_moon">Pleine lune — Quoi récolter</string>
+    <string name="position_waning_gibbous">Lune décroissante — Gratitude</string>
+    <string name="position_last_quarter">Dernier quartier — Quoi lâcher</string>
+    <string name="position_dark_moon">Lune noire — Réflexion</string>
+
+    <!-- Career Compass positions -->
+    <string name="position_hidden_talents">Talents cachés</string>
+    <string name="position_current_block">Blocage actuel</string>
+    <string name="position_opportunity">Opportunité à l\'horizon</string>
+    <string name="position_skill_to_develop">Compétence à développer</string>
+    <string name="position_financial_energy">Énergie financière</string>
+    <string name="position_next_step">Prochaine étape</string>
+
+    <!-- Inner Child positions -->
+    <string name="position_inner_child">Votre enfant intérieur</string>
+    <string name="position_wound">La blessure</string>
+    <string name="position_protective_pattern">Schéma protecteur</string>
+    <string name="position_healing">Guérison</string>
+    <string name="position_inner_gift">Le don</string>
+
+    <!-- Tree of Life positions -->
+    <string name="position_keter">Keter — Couronne</string>
+    <string name="position_chokma">Hokhma — Sagesse</string>
+    <string name="position_bina">Bina — Compréhension</string>
+    <string name="position_chesed">Hessed — Miséricorde</string>
+    <string name="position_gevura">Guevoura — Force</string>
+    <string name="position_tiferet">Tiferet — Beauté</string>
+    <string name="position_netzach">Netzah — Victoire</string>
+    <string name="position_hod">Hod — Gloire</string>
+    <string name="position_yesod">Yessod — Fondement</string>
+    <string name="position_malkhut">Malkhout — Royaume</string>
+
+    <!-- Week Ahead positions -->
+    <string name="position_monday">Lundi</string>
+    <string name="position_tuesday">Mardi</string>
+    <string name="position_wednesday">Mercredi</string>
+    <string name="position_thursday">Jeudi</string>
+    <string name="position_friday">Vendredi</string>
+    <string name="position_saturday">Samedi</string>
+    <string name="position_sunday">Dimanche</string>
+
+    <!-- Karmic positions -->
+    <string name="position_karmic_debt">Dette karmique</string>
+    <string name="position_karmic_gift">Don karmique</string>
+    <string name="position_current_lesson">Leçon actuelle</string>
+    <string name="position_repeating_pattern">Schéma répétitif</string>
+    <string name="position_what_to_break">Quoi briser</string>
+    <string name="position_karmic_reward">Récompense karmique</string>
+    <string name="position_life_purpose">But de vie</string>
+
+    <!-- Self-Love positions -->
+    <string name="position_how_i_see_myself">Comment je me vois</string>
+    <string name="position_how_others_see_me">Comment les autres me voient</string>
+    <string name="position_false_guilt">Culpabilité imméritée</string>
+    <string name="position_hidden_strength">Force cachée</string>
+    <string name="position_what_i_need">Ce dont j\'ai besoin de moi-même</string>
+    <string name="position_affirmation">Affirmation des cartes</string>
 
     <!-- Reading -->
     <string name="reading_interpreting">Madame Stella lit vos cartes…</string>

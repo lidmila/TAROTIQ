@@ -51,8 +51,10 @@ fun LoginScreen(
     var password by remember { mutableStateOf("") }
     var isLoginMode by remember { mutableStateOf(true) }
     var passwordVisible by remember { mutableStateOf(false) }
-    var showForgotPassword by remember { mutableStateOf(false) }
+    var showForgotPasswordDialog by remember { mutableStateOf(false) }
+    var resetDialogEmail by remember { mutableStateOf("") }
     var resetEmailSent by remember { mutableStateOf(false) }
+    var emailLinkError by remember { mutableStateOf(false) }
 
     LaunchedEffect(authState.user) {
         if (authState.user != null) {
@@ -233,13 +235,9 @@ fun LoginScreen(
                     if (isLoginMode) {
                         TextButton(
                             onClick = {
-                                if (email.isNotBlank()) {
-                                    authViewModel.sendPasswordResetEmail(email) { success, _ ->
-                                        resetEmailSent = success
-                                    }
-                                } else {
-                                    showForgotPassword = true
-                                }
+                                resetDialogEmail = email
+                                resetEmailSent = false
+                                showForgotPasswordDialog = true
                             },
                             modifier = Modifier.align(Alignment.End)
                         ) {
@@ -288,15 +286,6 @@ fun LoginScreen(
                         )
                     }
 
-                    if (resetEmailSent) {
-                        Text(
-                            text = stringResource(R.string.auth_reset_sent),
-                            color = SuccessEmerald,
-                            style = MaterialTheme.typography.bodySmall,
-                            modifier = Modifier.padding(top = 8.dp),
-                            textAlign = TextAlign.Center
-                        )
-                    }
                 }
             }
 
@@ -306,13 +295,30 @@ fun LoginScreen(
 
             Spacer(modifier = Modifier.height(20.dp))
 
-            // Passwordless
+            // Email link sign-in
             ArtNouveauButton(
                 text = stringResource(R.string.auth_passwordless),
-                onClick = { if (email.isNotBlank()) authViewModel.sendSignInLinkToEmail(email) },
+                onClick = {
+                    if (email.isNotBlank()) {
+                        emailLinkError = false
+                        authViewModel.sendSignInLinkToEmail(email)
+                    } else {
+                        emailLinkError = true
+                    }
+                },
                 modifier = Modifier.fillMaxWidth(),
                 variant = ButtonVariant.SECONDARY
             )
+
+            if (emailLinkError) {
+                Text(
+                    text = stringResource(R.string.auth_enter_email_first),
+                    color = ErrorCrimson,
+                    style = MaterialTheme.typography.bodySmall,
+                    modifier = Modifier.padding(top = 4.dp),
+                    textAlign = TextAlign.Center
+                )
+            }
 
             Spacer(modifier = Modifier.height(12.dp))
 
@@ -328,6 +334,74 @@ fun LoginScreen(
 
             Spacer(modifier = Modifier.height(32.dp))
         }
+        }
+
+        // Forgot password dialog
+        if (showForgotPasswordDialog) {
+            AlertDialog(
+                onDismissRequest = { showForgotPasswordDialog = false },
+                title = {
+                    Text(
+                        stringResource(R.string.auth_forgot_password_title),
+                        color = StarWhite,
+                        fontFamily = NewsreaderFamily
+                    )
+                },
+                text = {
+                    Column {
+                        OutlinedTextField(
+                            value = resetDialogEmail,
+                            onValueChange = { resetDialogEmail = it },
+                            label = { Text(stringResource(R.string.auth_email)) },
+                            leadingIcon = { Icon(Icons.Outlined.Email, null, tint = MoonSilver) },
+                            singleLine = true,
+                            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
+                            modifier = Modifier.fillMaxWidth(),
+                            shape = RoundedCornerShape(12.dp),
+                            colors = OutlinedTextFieldDefaults.colors(
+                                focusedBorderColor = AstralPurple,
+                                unfocusedBorderColor = GlassBorder,
+                                focusedContainerColor = CosmicMid.copy(alpha = 0.5f),
+                                unfocusedContainerColor = CosmicMid.copy(alpha = 0.3f),
+                                cursorColor = CelestialGold,
+                                focusedTextColor = StarWhite,
+                                unfocusedTextColor = StarWhite
+                            )
+                        )
+                        if (resetEmailSent) {
+                            Text(
+                                text = stringResource(R.string.auth_reset_sent),
+                                color = SuccessEmerald,
+                                style = MaterialTheme.typography.bodySmall,
+                                modifier = Modifier.padding(top = 8.dp)
+                            )
+                        }
+                    }
+                },
+                confirmButton = {
+                    TextButton(
+                        onClick = {
+                            if (resetDialogEmail.isNotBlank()) {
+                                authViewModel.sendPasswordResetEmail(resetDialogEmail) { success, _ ->
+                                    if (success) {
+                                        resetEmailSent = true
+                                    }
+                                }
+                            }
+                        },
+                        enabled = resetDialogEmail.isNotBlank()
+                    ) {
+                        Text(stringResource(R.string.auth_forgot_password_send), color = CelestialGold)
+                    }
+                },
+                dismissButton = {
+                    TextButton(onClick = { showForgotPasswordDialog = false }) {
+                        Text(stringResource(R.string.cancel), color = MoonSilver)
+                    }
+                },
+                containerColor = CosmicDeep,
+                shape = RoundedCornerShape(16.dp)
+            )
         }
     }
 }

@@ -237,14 +237,18 @@ fun AppNavigation(
                     )
                 }
 
-                // Reading flow
+                // Reading flow — Oracle screen shows all spreads directly
                 composable(Screen.TopicSelection.route) {
-                    // Reset state for new reading
-                    LaunchedEffect(Unit) { readingViewModel.resetReading() }
-                    TopicSelectionScreen(
-                        onTopicSelected = { topic ->
-                            readingViewModel.setTopic(topic)
-                            navController.navigate(Screen.QuestionInput.createRoute(topic))
+                    LaunchedEffect(Unit) {
+                        readingViewModel.resetReading()
+                    }
+                    SpreadSelectionScreen(
+                        topic = "all",
+                        question = null,
+                        onSpreadSelected = { spreadKey ->
+                            readingViewModel.setTopic("general")
+                            readingViewModel.setSpread(ReadingSpread.fromKey(spreadKey))
+                            navController.navigate(Screen.QuestionInput.createRoute("general"))
                         },
                         onBack = { navController.popBackStack() }
                     )
@@ -256,7 +260,13 @@ fun AppNavigation(
                         topic = topic,
                         onContinue = { question ->
                             readingViewModel.setQuestion(question)
-                            navController.navigate(Screen.SpreadSelection.createRoute(topic, question))
+                            val state = readingViewModel.uiState.value
+                            if (state.spreadSelected) {
+                                // Spread was pre-selected from Oracle screen — skip to card drawing
+                                navController.navigate(Screen.CardDrawing.createRoute(topic, state.spread.key, question))
+                            } else {
+                                navController.navigate(Screen.SpreadSelection.createRoute(topic, question))
+                            }
                         },
                         onBack = { navController.popBackStack() }
                     )

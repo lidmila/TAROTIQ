@@ -102,8 +102,6 @@ class FirebaseFunctionsClient(private val context: Context) {
             }
         )
 
-        Log.d(TAG, "Auth user: ${auth.currentUser?.uid}, email: ${auth.currentUser?.email}")
-
         return try {
             val result = functions.getHttpsCallable("interpretTarotReading")
                 .withTimeout(90, java.util.concurrent.TimeUnit.SECONDS)
@@ -135,7 +133,11 @@ class FirebaseFunctionsClient(private val context: Context) {
 
     suspend fun spendCoins(readingType: String): Map<String, Any> {
         ensureFreshToken()
-        val data = hashMapOf("readingType" to readingType)
+        val integrityToken = integrityProvider.getToken()
+        val data = hashMapOf(
+            "readingType" to readingType,
+            "integrityToken" to integrityToken
+        )
         return try {
             val result = functions.getHttpsCallable("spendCoins").call(data).await()
             @Suppress("UNCHECKED_CAST")

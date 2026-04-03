@@ -14,4 +14,7 @@ interface DailyCardDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertDailyCard(dailyCard: DailyCard)
+
+    @Query("DELETE FROM daily_cards WHERE userId = :userId")
+    suspend fun deleteAllByUser(userId: String)
 }

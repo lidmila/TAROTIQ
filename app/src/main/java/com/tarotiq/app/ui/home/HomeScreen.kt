@@ -124,6 +124,13 @@ fun HomeScreen(
                     modifier = Modifier.padding(horizontal = 20.dp)
                 )
 
+                Spacer(modifier = Modifier.height(32.dp))
+
+                // ── Rewarded Ad Card ──
+                Box(modifier = Modifier.padding(horizontal = 20.dp)) {
+                    RewardedAdCard()
+                }
+
                 Spacer(modifier = Modifier.height(40.dp))
 
                 // ── Quick Readings Section ──
@@ -167,15 +174,9 @@ fun HomeScreen(
                 // ── Lunar Phase Bar ──
                 LunarPhaseSection(
                     moonPhase = moonPhase,
+                    onTryMoonCycleSpread = { onNavigateToQuickReading("moon_cycle") },
                     modifier = Modifier.padding(horizontal = 20.dp)
                 )
-
-                Spacer(modifier = Modifier.height(32.dp))
-
-                // ── Rewarded Ad Card ──
-                Box(modifier = Modifier.padding(horizontal = 20.dp)) {
-                    RewardedAdCard()
-                }
 
                 Spacer(modifier = Modifier.height(100.dp))
             }
@@ -897,10 +898,18 @@ private fun SpreadCard(
 @Composable
 private fun LunarPhaseSection(
     moonPhase: AstroUtils.MoonPhase,
+    onTryMoonCycleSpread: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     val illumination = getMoonIllumination(moonPhase)
     val phaseName = getMoonPhaseName(moonPhase)
+    val moonDrawable = getMoonPhaseDrawable(moonPhase)
+    val energyDesc = getMoonEnergyDescription(moonPhase)
+    val activity = getMoonActivity(moonPhase)
+    val tarotConnection = getMoonTarotConnection(moonPhase)
+    val daysUntilFull = AstroUtils.getDaysUntilFullMoon()
+    val daysUntilNew = AstroUtils.getDaysUntilNewMoon()
+    val cycleProgress = AstroUtils.getMoonCycleProgress()
 
     GlassCard(
         modifier = modifier.fillMaxWidth(),
@@ -930,24 +939,60 @@ private fun LunarPhaseSection(
                     ),
                     color = CelestialGold
                 )
+                Spacer(modifier = Modifier.weight(1f))
+                // Countdown badge
+                Text(
+                    text = if (daysUntilFull <= daysUntilNew)
+                        stringResource(R.string.moon_days_until_full, daysUntilFull)
+                    else
+                        stringResource(R.string.moon_days_until_new, daysUntilNew),
+                    style = TextStyle(
+                        fontFamily = SpaceGroteskFamily,
+                        fontWeight = FontWeight.Medium,
+                        fontSize = 9.sp,
+                        letterSpacing = 1.sp
+                    ),
+                    color = MoonSilver
+                )
             }
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Phase details row
+            // Phase image + details row
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.Bottom
+                verticalAlignment = Alignment.CenterVertically
             ) {
-                Column {
+                // Moon phase image
+                Box(contentAlignment = Alignment.Center) {
+                    Canvas(modifier = Modifier.size(90.dp)) {
+                        drawCircle(
+                            brush = Brush.radialGradient(
+                                colors = listOf(
+                                    MoonSilver.copy(alpha = 0.15f),
+                                    Color.Transparent
+                                )
+                            ),
+                            radius = size.minDimension / 2f
+                        )
+                    }
+                    Image(
+                        painter = painterResource(id = moonDrawable),
+                        contentDescription = phaseName,
+                        modifier = Modifier.size(72.dp),
+                        contentScale = ContentScale.Fit
+                    )
+                }
+
+                // Phase name + visibility
+                Column(horizontalAlignment = Alignment.End) {
                     Text(
                         text = phaseName,
                         style = MaterialTheme.typography.headlineSmall,
                         color = StarWhite
                     )
-                }
-                Column(horizontalAlignment = Alignment.End) {
+                    Spacer(modifier = Modifier.height(4.dp))
                     Text(
                         text = "${illumination}%",
                         style = TextStyle(
@@ -970,9 +1015,30 @@ private fun LunarPhaseSection(
                 }
             }
 
-            Spacer(modifier = Modifier.height(18.dp))
+            Spacer(modifier = Modifier.height(14.dp))
 
-            // Thin progress bar
+            // Cycle phase indicator — 8 dots
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                AstroUtils.MoonPhase.entries.forEach { phase ->
+                    val isActive = phase == moonPhase
+                    Box(
+                        modifier = Modifier
+                            .size(if (isActive) 10.dp else 6.dp)
+                            .background(
+                                color = if (isActive) CelestialGold else StarWhite.copy(alpha = 0.15f),
+                                shape = CircleShape
+                            )
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(14.dp))
+
+            // Progress bar
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -983,7 +1049,7 @@ private fun LunarPhaseSection(
                 Box(
                     modifier = Modifier
                         .fillMaxHeight()
-                        .fillMaxWidth(illumination / 100f)
+                        .fillMaxWidth(cycleProgress)
                         .clip(RoundedCornerShape(50))
                         .background(
                             Brush.horizontalGradient(
@@ -991,7 +1057,6 @@ private fun LunarPhaseSection(
                             )
                         )
                 ) {
-                    // Bright dot at the end
                     Box(
                         modifier = Modifier
                             .size(5.dp)
@@ -1001,6 +1066,65 @@ private fun LunarPhaseSection(
                     )
                 }
             }
+
+            Spacer(modifier = Modifier.height(18.dp))
+
+            // Energy description
+            Text(
+                text = energyDesc,
+                style = MaterialTheme.typography.bodyMedium.copy(
+                    fontFamily = NewsreaderFamily,
+                    lineHeight = 22.sp
+                ),
+                color = StarWhite.copy(alpha = 0.9f)
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            // Recommended activity
+            Text(
+                text = activity,
+                style = TextStyle(
+                    fontFamily = SpaceGroteskFamily,
+                    fontWeight = FontWeight.Medium,
+                    fontSize = 11.sp,
+                    letterSpacing = 0.5.sp
+                ),
+                color = AstralPurple
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Tarot connection
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(
+                        AstralPurple.copy(alpha = 0.08f),
+                        RoundedCornerShape(12.dp)
+                    )
+                    .padding(12.dp)
+            ) {
+                Text(
+                    text = tarotConnection,
+                    style = MaterialTheme.typography.bodySmall.copy(
+                        fontFamily = NewsreaderFamily,
+                        fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
+                        lineHeight = 18.sp
+                    ),
+                    color = CelestialGold.copy(alpha = 0.85f)
+                )
+            }
+
+            Spacer(modifier = Modifier.height(14.dp))
+
+            // Upsell: Try Moon Cycle spread
+            ArtNouveauButton(
+                text = stringResource(R.string.moon_try_spread),
+                onClick = onTryMoonCycleSpread,
+                modifier = Modifier.fillMaxWidth(),
+                variant = ButtonVariant.SECONDARY
+            )
         }
     }
 }
@@ -1356,6 +1480,61 @@ private fun moonPhaseToSymbol(phase: AstroUtils.MoonPhase): Symbol {
         AstroUtils.MoonPhase.WAXING_GIBBOUS, AstroUtils.MoonPhase.FULL_MOON -> Symbol.MOON_FULL
         AstroUtils.MoonPhase.WANING_GIBBOUS, AstroUtils.MoonPhase.LAST_QUARTER -> Symbol.MOON_WANING
         AstroUtils.MoonPhase.WANING_CRESCENT -> Symbol.MOON_NEW
+    }
+}
+
+@Composable
+private fun getMoonEnergyDescription(phase: AstroUtils.MoonPhase): String {
+    return when (phase) {
+        AstroUtils.MoonPhase.NEW_MOON -> stringResource(R.string.moon_energy_new)
+        AstroUtils.MoonPhase.WAXING_CRESCENT -> stringResource(R.string.moon_energy_waxing_crescent)
+        AstroUtils.MoonPhase.FIRST_QUARTER -> stringResource(R.string.moon_energy_first_quarter)
+        AstroUtils.MoonPhase.WAXING_GIBBOUS -> stringResource(R.string.moon_energy_waxing_gibbous)
+        AstroUtils.MoonPhase.FULL_MOON -> stringResource(R.string.moon_energy_full)
+        AstroUtils.MoonPhase.WANING_GIBBOUS -> stringResource(R.string.moon_energy_waning_gibbous)
+        AstroUtils.MoonPhase.LAST_QUARTER -> stringResource(R.string.moon_energy_last_quarter)
+        AstroUtils.MoonPhase.WANING_CRESCENT -> stringResource(R.string.moon_energy_waning_crescent)
+    }
+}
+
+@Composable
+private fun getMoonActivity(phase: AstroUtils.MoonPhase): String {
+    return when (phase) {
+        AstroUtils.MoonPhase.NEW_MOON -> stringResource(R.string.moon_activity_new)
+        AstroUtils.MoonPhase.WAXING_CRESCENT -> stringResource(R.string.moon_activity_waxing_crescent)
+        AstroUtils.MoonPhase.FIRST_QUARTER -> stringResource(R.string.moon_activity_first_quarter)
+        AstroUtils.MoonPhase.WAXING_GIBBOUS -> stringResource(R.string.moon_activity_waxing_gibbous)
+        AstroUtils.MoonPhase.FULL_MOON -> stringResource(R.string.moon_activity_full)
+        AstroUtils.MoonPhase.WANING_GIBBOUS -> stringResource(R.string.moon_activity_waning_gibbous)
+        AstroUtils.MoonPhase.LAST_QUARTER -> stringResource(R.string.moon_activity_last_quarter)
+        AstroUtils.MoonPhase.WANING_CRESCENT -> stringResource(R.string.moon_activity_waning_crescent)
+    }
+}
+
+@Composable
+private fun getMoonTarotConnection(phase: AstroUtils.MoonPhase): String {
+    return when (phase) {
+        AstroUtils.MoonPhase.NEW_MOON -> stringResource(R.string.moon_tarot_new)
+        AstroUtils.MoonPhase.WAXING_CRESCENT -> stringResource(R.string.moon_tarot_waxing_crescent)
+        AstroUtils.MoonPhase.FIRST_QUARTER -> stringResource(R.string.moon_tarot_first_quarter)
+        AstroUtils.MoonPhase.WAXING_GIBBOUS -> stringResource(R.string.moon_tarot_waxing_gibbous)
+        AstroUtils.MoonPhase.FULL_MOON -> stringResource(R.string.moon_tarot_full)
+        AstroUtils.MoonPhase.WANING_GIBBOUS -> stringResource(R.string.moon_tarot_waning_gibbous)
+        AstroUtils.MoonPhase.LAST_QUARTER -> stringResource(R.string.moon_tarot_last_quarter)
+        AstroUtils.MoonPhase.WANING_CRESCENT -> stringResource(R.string.moon_tarot_waning_crescent)
+    }
+}
+
+private fun getMoonPhaseDrawable(phase: AstroUtils.MoonPhase): Int {
+    return when (phase) {
+        AstroUtils.MoonPhase.NEW_MOON -> R.drawable.moon_phase_1
+        AstroUtils.MoonPhase.WAXING_CRESCENT -> R.drawable.moon_phase_2
+        AstroUtils.MoonPhase.FIRST_QUARTER -> R.drawable.moon_phase_5
+        AstroUtils.MoonPhase.WAXING_GIBBOUS -> R.drawable.moon_phase_6
+        AstroUtils.MoonPhase.FULL_MOON -> R.drawable.moon_phase_9
+        AstroUtils.MoonPhase.WANING_GIBBOUS -> R.drawable.moon_phase_7
+        AstroUtils.MoonPhase.LAST_QUARTER -> R.drawable.moon_phase_4
+        AstroUtils.MoonPhase.WANING_CRESCENT -> R.drawable.moon_phase_3
     }
 }
 

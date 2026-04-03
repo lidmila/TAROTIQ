@@ -201,7 +201,12 @@ private fun LoadingInterpretation(modifier: Modifier = Modifier) {
                 play()
             }
         }
-        DisposableEffect(Unit) { onDispose { exoPlayer.release() } }
+        DisposableEffect(Unit) {
+            onDispose {
+                exoPlayer.stop()
+                exoPlayer.release()
+            }
+        }
 
         AndroidView(
             factory = { ctx ->
@@ -357,7 +362,11 @@ private fun InterpretationBubble(text: String) {
 
     LaunchedEffect(text) {
         visibleCount = 0
-        for (i in 1..totalChars) {
+        // Batch characters for long texts to reduce total animation time
+        val batchSize = if (totalChars > 500) 3 else 1
+        var i = 0
+        while (i < totalChars) {
+            i = (i + batchSize).coerceAtMost(totalChars)
             visibleCount = i
             kotlinx.coroutines.delay(18L)
         }

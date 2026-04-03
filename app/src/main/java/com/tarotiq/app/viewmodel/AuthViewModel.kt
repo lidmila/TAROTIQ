@@ -16,9 +16,13 @@ import com.google.firebase.auth.ActionCodeSettings
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
+import com.google.firebase.auth.FirebaseAuthRecentLoginRequiredException
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.auth.EmailAuthProvider
+import com.tarotiq.app.data.preferences.SettingsManager
+import com.tarotiq.app.utils.DatabaseProvider
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -43,6 +47,8 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     private val auth = FirebaseAuth.getInstance()
+    private val settingsManager = SettingsManager(application)
+    private val db = DatabaseProvider.getDatabase(application)
 
     private val _authState = MutableStateFlow(AuthState(user = auth.currentUser))
     val authState: StateFlow<AuthState> = _authState.asStateFlow()
@@ -186,19 +192,45 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun logout() {
+        val userId = auth.currentUser?.uid
         auth.signOut()
         _authState.value = AuthState()
+        viewModelScope.launch {
+            clearLocalData(userId)
+        }
     }
 
-    fun deleteAccount(onResult: (Boolean, String?) -> Unit) {
+    fun deleteAccount(password: String?, onResult: (Boolean, String?) -> Unit) {
+        val user = auth.currentUser ?: run {
+            onResult(false, "Not authenticated")
+            return
+        }
+        val userId = user.uid
         viewModelScope.launch {
             try {
-                auth.currentUser?.delete()?.await()
+                // Re-authenticate before destructive operation
+                if (password != null) {
+                    val email = user.email ?: throw Exception("No email on account")
+                    val credential = EmailAuthProvider.getCredential(email, password)
+                    user.reauthenticate(credential).await()
+                }
+                user.delete().await()
+                clearLocalData(userId)
                 _authState.value = AuthState()
                 onResult(true, null)
+            } catch (e: FirebaseAuthRecentLoginRequiredException) {
+                onResult(false, "REQUIRES_REAUTH")
             } catch (e: Exception) {
-                onResult(false, e.message)
+                onResult(false, mapAuthError(e))
             }
+        }
+    }
+
+    private suspend fun clearLocalData(userId: String?) {
+        settingsManager.clearSettings()
+        if (userId != null) {
+            db.readingDao().deleteAllByUser(userId)
+            db.dailyCardDao().deleteAllByUser(userId)
         }
     }
 

@@ -12,6 +12,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
+import androidx.activity.compose.BackHandler
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -50,6 +51,9 @@ fun ExtraCardPickerScreen(
         animationSpec = tween(600),
         label = "coin_countdown"
     )
+
+    // Prevent back navigation while coin transaction is in progress
+    BackHandler(enabled = isSpending) { /* block back press */ }
 
     Box(modifier = Modifier.fillMaxSize()) {
         MysticBackground(modifier = Modifier.fillMaxSize())

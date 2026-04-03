@@ -3,6 +3,7 @@ package com.tarotiq.app.data.repository
 import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ListenerRegistration
 import com.tarotiq.app.domain.model.CoinBalance
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -21,9 +22,14 @@ class CoinRepository {
     private val _coinBalance = MutableStateFlow(CoinBalance())
     val coinBalance: StateFlow<CoinBalance> = _coinBalance.asStateFlow()
 
+    private var listenerRegistration: ListenerRegistration? = null
+
     fun startListening() {
         val userId = auth.currentUser?.uid ?: return
-        firestore.collection("users").document(userId)
+        // Prevent duplicate listeners
+        if (listenerRegistration != null) return
+
+        listenerRegistration = firestore.collection("users").document(userId)
             .collection("coins").document("balance")
             .addSnapshotListener { snapshot, error ->
                 if (error != null) {
@@ -39,6 +45,11 @@ class CoinRepository {
                     )
                 }
             }
+    }
+
+    fun stopListening() {
+        listenerRegistration?.remove()
+        listenerRegistration = null
     }
 
     suspend fun initializeCoinDocument() {
