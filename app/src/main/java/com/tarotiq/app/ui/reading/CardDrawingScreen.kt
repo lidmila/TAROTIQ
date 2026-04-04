@@ -185,6 +185,7 @@ fun CardDrawingScreen(
                                     totalCards = 78,
                                     selectedCards = selectedArcCards,
                                     maxSelectable = requiredCards,
+                                    modifier = Modifier.weight(1f),
                                     onCardTap = { index ->
                                         view.performHapticFeedback(HapticFeedbackConstants.LONG_PRESS)
                                         val updated = if (index in selectedArcCards) {
@@ -314,7 +315,7 @@ fun CardDrawingScreen(
                     ArtNouveauButton(
                         text = stringResource(R.string.drawing_get_reading),
                         onClick = onGetReading,
-                        modifier = Modifier.fillMaxWidth().height(56.dp),
+                        modifier = Modifier.fillMaxWidth(),
                         variant = ButtonVariant.PRIMARY
                     )
                 }
@@ -730,8 +731,8 @@ private fun CardArcDisplay(
     modifier: Modifier = Modifier
 ) {
     LazyVerticalGrid(
-        columns = GridCells.Fixed(4),
-        modifier = modifier.fillMaxWidth().height(480.dp),
+        columns = GridCells.Adaptive(minSize = 75.dp),
+        modifier = modifier.fillMaxWidth().heightIn(max = 500.dp),
         contentPadding = PaddingValues(horizontal = 8.dp, vertical = 8.dp),
         horizontalArrangement = Arrangement.spacedBy(6.dp),
         verticalArrangement = Arrangement.spacedBy(6.dp)

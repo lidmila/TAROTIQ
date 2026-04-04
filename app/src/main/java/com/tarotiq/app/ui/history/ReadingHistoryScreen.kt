@@ -146,7 +146,7 @@ fun ReadingHistoryScreen(
                             Box(
                                 modifier = Modifier
                                     .fillMaxWidth()
-                                    .height(300.dp),
+                                    .heightIn(min = 150.dp, max = 300.dp),
                                 contentAlignment = Alignment.Center
                             ) {
                                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
@@ -728,8 +728,8 @@ private fun CardThumbnail(
     // Outer decorative border
     Box(
         modifier = Modifier
-            .width(80.dp)
-            .height(120.dp)  // 2:3 aspect ratio
+            .width(70.dp)
+            .aspectRatio(2f / 3f)
             .border(
                 width = 1.dp,
                 color = CelestialGold.copy(alpha = 0.15f),

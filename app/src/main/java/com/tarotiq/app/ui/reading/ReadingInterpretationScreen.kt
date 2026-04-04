@@ -140,7 +140,7 @@ fun ReadingInterpretationScreen(
                             ArtNouveauButton(
                                 text = stringResource(R.string.reading_buy_extra_card),
                                 onClick = onBuyExtraCard,
-                                modifier = Modifier.fillMaxWidth().height(48.dp),
+                                modifier = Modifier.fillMaxWidth(),
                                 variant = ButtonVariant.SECONDARY
                             )
 
@@ -150,7 +150,7 @@ fun ReadingInterpretationScreen(
                             ArtNouveauButton(
                                 text = stringResource(R.string.reading_summary),
                                 onClick = onDone,
-                                modifier = Modifier.fillMaxWidth().height(48.dp),
+                                modifier = Modifier.fillMaxWidth(),
                                 variant = ButtonVariant.PRIMARY
                             )
                             Spacer(modifier = Modifier.height(32.dp))
@@ -263,7 +263,7 @@ private fun LoadingInterpretation(modifier: Modifier = Modifier) {
 
             LinearProgressIndicator(
                 modifier = Modifier
-                    .width(200.dp)
+                    .fillMaxWidth(0.5f)
                     .clip(RoundedCornerShape(4.dp)),
                 color = AstralPurple,
                 trackColor = CosmicMid

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=320,height=480">
+<title>TAROTIQ - Reveal 3 Cards</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,600;1,400&family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;600&display=swap');
+body,html{width:320px;height:480px;overflow:hidden}
+.ad{position:relative;width:320px;height:480px;background:linear-gradient(180deg,#0E0E11 0%,#131316 50%,#1B1B1E 100%);overflow:hidden}
+.stars{position:absolute;top:0;left:0;width:100%;height:100%}
+.star{position:absolute;width:2px;height:2px;background:#E4E1E6;border-radius:50%;animation:twinkle var(--d,3s) ease-in-out infinite var(--delay,0s)}
+@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:1}}
+.nebula{position:absolute;width:250px;height:250px;border-radius:50%;filter:blur(70px);opacity:.12}
+.n1{top:-60px;right:-40px;background:#EDB1FF}
+.n2{bottom:-40px;left:-60px;background:#883CA6}
+
+/* Header */
+.header{position:absolute;top:20px;left:0;right:0;text-align:center;z-index:10}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:4px;color:#E9C349;font-weight:700}
+.headline{font-family:'Newsreader',serif;font-size:22px;color:#E4E1E6;margin-top:8px;font-weight:300;line-height:1.2}
+.headline em{color:#EDB1FF;font-style:italic}
+
+/* 3 Cards row */
+.cards-row{position:absolute;top:120px;left:0;right:0;display:flex;justify-content:center;gap:10px;z-index:10;padding:0 16px}
+.card-slot{perspective:600px;flex-shrink:0}
+.card{width:86px;height:134px;position:relative;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.4,0,.2,1);cursor:pointer}
+.card.flipped{transform:rotateY(180deg)}
+.card-face{position:absolute;width:100%;height:100%;backface-visibility:hidden;border-radius:6px;overflow:hidden}
+.card-face img{width:100%;height:100%;object-fit:cover;display:block}
+.card-back{border:1px solid rgba(233,195,73,.25)}
+.card-front{transform:rotateY(180deg);border:1px solid #E9C349}
+
+/* Position labels */
+.positions{position:absolute;top:260px;left:0;right:0;display:flex;justify-content:center;gap:10px;padding:0 16px;z-index:10}
+.pos-label{width:86px;text-align:center;font-family:'Space Grotesk',sans-serif;font-size:8px;letter-spacing:1.5px;color:#928EA0;text-transform:uppercase}
+
+/* Card names (appear after flip) */
+.card-names{position:absolute;top:280px;left:0;right:0;display:flex;justify-content:center;gap:10px;padding:0 16px;z-index:10}
+.card-name{width:86px;text-align:center;font-family:'Newsreader',serif;font-size:11px;color:#E9C349;font-weight:600;opacity:0;transition:opacity .4s ease}
+.card-name.show{opacity:1}
+
+/* Progress dots */
+.progress{position:absolute;top:306px;left:0;right:0;display:flex;justify-content:center;gap:8px;z-index:10}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(228,225,230,.1);transition:all .3s}
+.dot.active{background:#E9C349}
+
+/* Tap hint */
+.tap-hint{position:absolute;top:330px;left:0;right:0;text-align:center;z-index:10}
+.tap-text{font-family:'Space Grotesk',sans-serif;font-size:9px;letter-spacing:1.5px;color:#C8C4D7;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
+.tap-hint.hidden{opacity:0;transition:opacity .3s}
+
+/* Reveal message */
+.reveal-msg{position:absolute;top:330px;left:0;right:0;text-align:center;z-index:10;opacity:0;transition:opacity .4s}
+.reveal-msg.show{opacity:1}
+.reveal-msg span{font-family:'Newsreader',serif;font-size:13px;color:#EDB1FF;font-style:italic}
+
+/* CTA */
+.cta{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:10;opacity:0;transition:opacity .5s,transform .5s}
+.cta.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.cta-btn{display:block;padding:14px 36px;background:linear-gradient(135deg,#E9C349,#CCA730);border-radius:30px;font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;color:#0E0E11;text-transform:uppercase;text-decoration:none;white-space:nowrap;box-shadow:0 0 24px rgba(233,195,73,.3)}
+
+/* Subtle card glow on hover/active */
+.card-slot .card:not(.flipped):active{transform:scale(.95)}
+</style>
+</head>
+<body>
+<div class="ad" id="ad">
+  <div class="stars" id="stars"></div>
+  <div class="nebula n1"></div>
+  <div class="nebula n2"></div>
+
+  <div class="header">
+    <div class="logo">TAROTIQ</div>
+    <h1 class="headline">Reveal your <em>three cards</em></h1>
+  </div>
+
+  <div class="cards-row">
+    <div class="card-slot">
+      <div class="card" id="c0" onclick="flip(0)">
+        <div class="card-face card-back"><img src="card_back_sm.webp" alt="Card"></div>
+        <div class="card-face card-front"><img src="the_fool_sm.webp" alt="The Fool"></div>
+      </div>
+    </div>
+    <div class="card-slot">
+      <div class="card" id="c1" onclick="flip(1)">
+        <div class="card-face card-back"><img src="card_back_sm.webp" alt="Card"></div>
+        <div class="card-face card-front"><img src="the_high_priestess_sm.webp" alt="The High Priestess"></div>
+      </div>
+    </div>
+    <div class="card-slot">
+      <div class="card" id="c2" onclick="flip(2)">
+        <div class="card-face card-back"><img src="card_back_sm.webp" alt="Card"></div>
+        <div class="card-face card-front"><img src="the_star_sm.webp" alt="The Star"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="positions">
+    <div class="pos-label">Past</div>
+    <div class="pos-label">Present</div>
+    <div class="pos-label">Future</div>
+  </div>
+
+  <div class="card-names">
+    <div class="card-name" id="n0">The Fool</div>
+    <div class="card-name" id="n1">The High Priestess</div>
+    <div class="card-name" id="n2">The Star</div>
+  </div>
+
+  <div class="progress">
+    <div class="dot" id="d0"></div>
+    <div class="dot" id="d1"></div>
+    <div class="dot" id="d2"></div>
+  </div>
+
+  <div class="tap-hint" id="tapHint"><span class="tap-text">Tap each card to reveal</span></div>
+
+  <div class="reveal-msg" id="revealMsg"><span>Your destiny awaits in the full reading...</span></div>
+
+  <div class="cta" id="cta">
+    <a class="cta-btn" href="https://play.google.com/store/apps/details?id=com.tarotiq.app" target="_blank">Get full reading free</a>
+  </div>
+</div>
+
+<script>
+(function(){var s=document.getElementById('stars');for(var i=0;i<50;i++){var d=document.createElement('div');d.className='star';d.style.left=Math.random()*100+'%';d.style.top=Math.random()*100+'%';d.style.setProperty('--d',(2+Math.random()*4)+'s');d.style.setProperty('--delay',Math.random()*3+'s');d.style.width=d.style.height=(1+Math.random()*2)+'px';s.appendChild(d)}})();
+
+var revealed=[false,false,false];
+var count=0;
+
+function flip(i){
+  if(revealed[i])return;
+  revealed[i]=true;
+  count++;
+  document.getElementById('c'+i).classList.add('flipped');
+  document.getElementById('n'+i).classList.add('show');
+  document.getElementById('d'+i).classList.add('active');
+
+  if(count>=2){
+    document.getElementById('tapHint').classList.add('hidden');
+  }
+  if(count>=3){
+    setTimeout(function(){
+      document.getElementById('revealMsg').classList.add('show');
+    },500);
+    setTimeout(function(){
+      document.getElementById('cta').classList.add('show');
+    },1200);
+  }
+}
+</script>
+</body>
+</html>

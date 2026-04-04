@@ -1,0 +1,5 @@
+v1.5.0
+
+- Opravena tlačítka napříč aplikací
+- Grimoire: výklady se po přihlášení obnoví z cloudu
+- Vylepšen layout výběru karet

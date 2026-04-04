@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=480,height=320">
+<title>TAROTIQ - 3 Free Readings</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,600;1,400&family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;600&display=swap');
+body,html{width:480px;height:320px;overflow:hidden}
+.ad{position:relative;width:480px;height:320px;background:linear-gradient(135deg,#0E0E11 0%,#131316 50%,#1B1B1E 100%);overflow:hidden;cursor:pointer;display:flex}
+.stars{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0}
+.star{position:absolute;width:2px;height:2px;background:#E4E1E6;border-radius:50%;animation:twinkle var(--d) ease-in-out infinite var(--delay)}
+@keyframes twinkle{0%,100%{opacity:.15}50%{opacity:.8}}
+.nebula{position:absolute;border-radius:50%;filter:blur(60px);opacity:.1}
+.n1{width:200px;height:200px;top:-50px;left:-30px;background:#EDB1FF}
+.n2{width:160px;height:160px;bottom:-40px;right:-20px;background:#883CA6}
+.cards-section{position:relative;width:220px;height:100%;display:flex;align-items:center;justify-content:center;z-index:5}
+.cards-fan{position:relative;width:180px;height:200px}
+.tarot-card{position:absolute;width:90px;height:140px;border-radius:6px;border:1px solid rgba(233,195,73,.25);overflow:hidden;opacity:0;transform-origin:bottom center;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+.tarot-card img{width:100%;height:100%;object-fit:cover;display:block}
+.card-1{left:5px;bottom:10px;animation:cardIn .5s ease .3s forwards;--r:-15deg}
+.card-2{left:45px;bottom:20px;animation:cardIn .5s ease .6s forwards;--r:0deg}
+.card-3{left:85px;bottom:10px;animation:cardIn .5s ease .9s forwards;--r:15deg}
+@keyframes cardIn{from{opacity:0;transform:rotate(var(--r)) translateY(30px)}to{opacity:1;transform:rotate(var(--r)) translateY(0)}}
+.cards-glow{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:160px;height:60px;background:radial-gradient(ellipse,rgba(233,195,73,.1),transparent);filter:blur(20px)}
+.deco-line{position:absolute;top:50%;right:0;width:1px;height:60%;transform:translateY(-50%);background:linear-gradient(180deg,transparent,rgba(233,195,73,.15),transparent)}
+.content-section{flex:1;display:flex;flex-direction:column;justify-content:center;padding:30px 28px 30px 10px;z-index:5}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:9px;letter-spacing:4px;color:#E9C349;font-weight:700;margin-bottom:12px;opacity:0;animation:fadeIn .4s ease .2s forwards}
+.headline{font-family:'Newsreader',serif;font-size:32px;color:#E4E1E6;font-weight:600;line-height:1.1;margin-bottom:4px;opacity:0;animation:fadeIn .4s ease .4s forwards}
+.headline .gold{color:#E9C349}
+.subtext{font-family:'Manrope',sans-serif;font-size:11px;color:#C8C4D7;line-height:1.4;margin-bottom:16px;opacity:0;animation:fadeIn .4s ease .6s forwards}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;background:rgba(237,177,255,.08);border:1px solid rgba(237,177,255,.15);border-radius:20px;font-family:'Space Grotesk',sans-serif;font-size:9px;color:#EDB1FF;letter-spacing:1px;margin-bottom:14px;opacity:0;animation:fadeIn .4s ease .8s forwards}
+.badge-dot{width:5px;height:5px;border-radius:50%;background:#EDB1FF;animation:blink 1.5s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:.4}50%{opacity:1}}
+.cta-btn{display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#E9C349,#CCA730);border-radius:24px;font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;color:#0E0E11;text-transform:uppercase;text-decoration:none;box-shadow:0 0 20px rgba(233,195,73,.2);opacity:0;animation:fadeIn .4s ease 1s forwards;align-self:flex-start}
+@keyframes fadeIn{to{opacity:1}}
+</style>
+</head>
+<body>
+<div class="ad" onclick="window.open('https://play.google.com/store/apps/details?id=com.tarotiq.app','_blank')">
+  <div class="stars" id="stars"></div>
+  <div class="nebula n1"></div>
+  <div class="nebula n2"></div>
+  <div class="cards-section">
+    <div class="cards-glow"></div>
+    <div class="cards-fan">
+      <div class="tarot-card card-1"><img src="the_sun_sm.webp" alt="The Sun"></div>
+      <div class="tarot-card card-2"><img src="the_star_sm.webp" alt="The Star"></div>
+      <div class="tarot-card card-3"><img src="the_moon_sm.webp" alt="The Moon"></div>
+    </div>
+    <div class="deco-line"></div>
+  </div>
+  <div class="content-section">
+    <div class="logo">TAROTIQ</div>
+    <h1 class="headline"><span class="gold">3</span> readings<br>for free</h1>
+    <div class="badge"><span class="badge-dot"></span>AI fortune teller Madame Stella</div>
+    <p class="subtext">Personalized tarot readings powered by artificial intelligence</p>
+    <a class="cta-btn" href="https://play.google.com/store/apps/details?id=com.tarotiq.app" target="_blank">Start now</a>
+  </div>
+</div>
+<script>
+(function(){var s=document.getElementById('stars');for(var i=0;i<40;i++){var d=document.createElement('div');d.className='star';d.style.left=Math.random()*100+'%';d.style.top=Math.random()*100+'%';d.style.setProperty('--d',(2+Math.random()*3)+'s');d.style.setProperty('--delay',Math.random()*2+'s');d.style.width=d.style.height=(1+Math.random()*1.5)+'px';s.appendChild(d)}})();
+</script>
+</body>
+</html>

@@ -196,8 +196,7 @@ fun QuestionInputScreen(
                         text = stringResource(R.string.question_skip),
                         onClick = { onContinue(null) },
                         modifier = Modifier
-                            .weight(1f)
-                            .height(52.dp),
+                            .weight(1f),
                         variant = ButtonVariant.SECONDARY
                     )
 
@@ -208,8 +207,7 @@ fun QuestionInputScreen(
                             onContinue(questionText.ifBlank { null })
                         },
                         modifier = Modifier
-                            .weight(1f)
-                            .height(52.dp),
+                            .weight(1f),
                         variant = ButtonVariant.PRIMARY
                     )
                 }

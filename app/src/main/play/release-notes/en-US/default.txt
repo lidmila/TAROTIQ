@@ -1,0 +1,5 @@
+v1.5.0
+
+- Fixed buttons across the app
+- Grimoire: readings restored from cloud after re-login
+- Improved card selection layout

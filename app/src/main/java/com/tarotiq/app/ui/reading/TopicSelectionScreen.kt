@@ -143,7 +143,7 @@ fun TopicSelectionScreen(
                     TopicCard(
                         topic = topics[4],
                         onClick = { onTopicSelected(topics[4].key) },
-                        modifier = Modifier.width(180.dp)
+                        modifier = Modifier.fillMaxWidth(0.6f)
                     )
                 }
 

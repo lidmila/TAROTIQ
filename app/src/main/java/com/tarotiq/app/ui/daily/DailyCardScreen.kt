@@ -8,7 +8,9 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
@@ -111,7 +113,11 @@ fun DailyCardScreen(
             }
         ) { padding ->
             Column(
-                modifier = Modifier.fillMaxSize().padding(padding).padding(24.dp),
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(padding)
+                    .padding(24.dp)
+                    .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
@@ -137,8 +143,8 @@ fun DailyCardScreen(
                 // Card — clean flip only, no portal/bounce
                 Box(
                     modifier = Modifier
-                        .width(180.dp)
-                        .height(270.dp)
+                        .fillMaxWidth(0.5f)
+                        .aspectRatio(2f / 3f)
                         .graphicsLayer {
                             translationY = if (!hasStartedReveal) levitation else 0f
                             rotationY = flipRotation.value
@@ -171,34 +177,35 @@ fun DailyCardScreen(
                     CircularProgressIndicator(color = CelestialGold, modifier = Modifier.padding(top = 16.dp))
                 }
 
-                dailyCard?.briefInsight?.let { insight ->
-                    Spacer(modifier = Modifier.height(24.dp))
-                    GlassCard(modifier = Modifier.fillMaxWidth()) {
-                        Column(modifier = Modifier.padding(20.dp)) {
-                            Text(
-                                text = dailyCard?.let { CardNameTranslator.getDisplayName(context, it.cardId) } ?: "",
-                                style = MaterialTheme.typography.headlineSmall,
-                                color = CelestialGold,
-                                textAlign = TextAlign.Center,
-                                modifier = Modifier.fillMaxWidth()
-                            )
-                            Spacer(modifier = Modifier.height(12.dp))
-                            Text(
-                                text = insight,
-                                style = MaterialTheme.typography.bodyLarge,
-                                color = StarWhite.copy(alpha = 0.9f),
-                                textAlign = TextAlign.Center,
-                                modifier = Modifier.fillMaxWidth()
-                            )
+                // Show insight and detail button only after flip animation completes
+                if (flipRotation.value >= 170f && dailyCard != null) {
+                    dailyCard?.briefInsight?.takeIf { it.isNotBlank() }?.let { insight ->
+                        Spacer(modifier = Modifier.height(24.dp))
+                        GlassCard(modifier = Modifier.fillMaxWidth()) {
+                            Column(modifier = Modifier.padding(20.dp)) {
+                                Text(
+                                    text = CardNameTranslator.getDisplayName(context, dailyCard!!.cardId),
+                                    style = MaterialTheme.typography.headlineSmall,
+                                    color = CelestialGold,
+                                    textAlign = TextAlign.Center,
+                                    modifier = Modifier.fillMaxWidth()
+                                )
+                                Spacer(modifier = Modifier.height(12.dp))
+                                Text(
+                                    text = insight,
+                                    style = MaterialTheme.typography.bodyLarge,
+                                    color = StarWhite.copy(alpha = 0.9f),
+                                    textAlign = TextAlign.Center,
+                                    modifier = Modifier.fillMaxWidth()
+                                )
+                            }
                         }
                     }
-                }
 
-                dailyCard?.let { card ->
                     Spacer(modifier = Modifier.height(16.dp))
                     ArtNouveauButton(
                         text = stringResource(R.string.daily_view_details),
-                        onClick = { onCardDetail(card.cardId) },
+                        onClick = { onCardDetail(dailyCard!!.cardId) },
                         variant = ButtonVariant.SECONDARY
                     )
                 }

@@ -158,7 +158,7 @@ fun ReadingSummaryScreen(
                 ArtNouveauButton(
                     text = stringResource(R.string.reading_save),
                     onClick = { readingViewModel.resetReading(); onDone() },
-                    modifier = Modifier.fillMaxWidth().height(50.dp),
+                    modifier = Modifier.fillMaxWidth(),
                     variant = ButtonVariant.PRIMARY
                 )
                 Spacer(modifier = Modifier.height(80.dp))

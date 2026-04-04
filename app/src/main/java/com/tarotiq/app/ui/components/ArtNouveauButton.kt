@@ -4,8 +4,6 @@ import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
@@ -22,7 +20,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
@@ -33,6 +31,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.tarotiq.app.ui.theme.AstralPurple
@@ -75,13 +74,11 @@ fun ArtNouveauButton(
 
     LaunchedEffect(isPressed) {
         if (isPressed && enabled) {
-            // Nabijeni: 0 -> 1 za 800ms
             chargeLevel.animateTo(
                 targetValue = 1f,
                 animationSpec = tween(800, easing = LinearEasing)
             )
         } else {
-            // Vybiti: rychly pokles
             chargeLevel.animateTo(
                 targetValue = 0f,
                 animationSpec = tween(200)
@@ -98,37 +95,26 @@ fun ArtNouveauButton(
     val charge = chargeLevel.value
     val shape = RoundedCornerShape(50) // pill shape
 
-    // PRIMARY: gradient from PrimaryContainerCA (#9d50bb) -> OnPrimaryFixedVariantCA (#6e208c)
-    // SECONDARY: transparent
     val bgBrush = when {
         !enabled -> Brush.linearGradient(listOf(CosmicDeep, CosmicDeep))
         variant == ButtonVariant.PRIMARY -> Brush.horizontalGradient(
-            listOf(
-                PrimaryContainerCA,            // #9d50bb
-                OnPrimaryFixedVariantCA        // #6e208c
-            )
+            listOf(PrimaryContainerCA, OnPrimaryFixedVariantCA)
         )
         else -> Brush.linearGradient(listOf(Color.Transparent, Color.Transparent))
     }
 
-    // PRIMARY border: AstralPurple at 30% alpha
-    // SECONDARY border: CelestialGold solid
     val borderColor = when {
         !enabled -> GlassBorder.copy(alpha = 0.3f)
         variant == ButtonVariant.PRIMARY -> AstralPurple.copy(alpha = 0.3f + charge * 0.2f)
         else -> CelestialGold.copy(alpha = 1f)
     }
 
-    // PRIMARY text: OnPrimaryContainerCA (white-pink for contrast on purple gradient)
-    // SECONDARY text: AstralPurple (#edb1ff)
     val textColor = when {
         !enabled -> StarWhite.copy(alpha = 0.3f)
         variant == ButtonVariant.PRIMARY -> OnPrimaryContainerCA
         else -> AstralPurple
     }
 
-    // PRIMARY glow: PrimaryContainerCA at 40% alpha
-    // SECONDARY glow: CelestialGold at 20% alpha
     val glowColor = when (variant) {
         ButtonVariant.PRIMARY -> PrimaryContainerCA
         ButtonVariant.SECONDARY -> CelestialGold
@@ -159,15 +145,26 @@ fun ArtNouveauButton(
                     }
                 )
             }
-            .background(bgBrush, shape)
-            // Both variants get a border
-            .border(
-                width = if (enabled) (1f + charge * 0.5f).dp else 1.dp,
-                color = borderColor,
-                shape = shape
-            )
-            .drawBehind {
-                // Inner shine: top highlight for depth (PRIMARY only)
+            .defaultMinSize(minHeight = 48.dp)
+            .drawWithContent {
+                val cornerRadius = CornerRadius(size.height / 2f)
+
+                // 1. Background gradient
+                drawRoundRect(
+                    brush = bgBrush,
+                    cornerRadius = cornerRadius
+                )
+
+                // 2. Border
+                drawRoundRect(
+                    color = borderColor,
+                    cornerRadius = cornerRadius,
+                    style = Stroke(
+                        width = if (enabled) (1f + charge * 0.5f).dp.toPx() else 1.dp.toPx()
+                    )
+                )
+
+                // 3. Inner shine (PRIMARY only)
                 if (enabled && variant == ButtonVariant.PRIMARY) {
                     drawRoundRect(
                         brush = Brush.verticalGradient(
@@ -178,24 +175,21 @@ fun ArtNouveauButton(
                             startY = 0f,
                             endY = size.height * 0.45f
                         ),
-                        cornerRadius = CornerRadius(16.dp.toPx())
+                        cornerRadius = cornerRadius
                     )
                 }
-            }
-            .drawBehind {
-                // -- Energie glow efekt --
+
+                // 4. Energy glow (while pressing)
                 if (charge > 0.01f) {
-                    // Vnitrni zare
                     drawRoundRect(
                         color = glowColor.copy(alpha = charge * 0.35f),
-                        cornerRadius = CornerRadius(16.dp.toPx())
+                        cornerRadius = cornerRadius
                     )
-
-                    // Pulsujici castice kolem tlacitka (orbiting energy dots)
                     val particleCount = 6
                     val radius = size.minDimension * 0.6f * charge
                     for (i in 0 until particleCount) {
-                        val angle = (i.toFloat() / particleCount) * 6.2831f + charge * 12f
+                        val angle =
+                            (i.toFloat() / particleCount) * 6.2831f + charge * 12f
                         val px = center.x + cos(angle) * radius
                         val py = center.y + sin(angle) * radius * 0.4f
                         drawCircle(
@@ -204,16 +198,16 @@ fun ArtNouveauButton(
                             center = Offset(px, py)
                         )
                     }
-
-                    // Vnejsi ring
                     drawRoundRect(
                         color = glowColor.copy(alpha = charge * 0.2f),
-                        cornerRadius = CornerRadius(16.dp.toPx()),
+                        cornerRadius = cornerRadius,
                         style = Stroke(width = charge * 3f)
                     )
                 }
+
+                // 5. Content (Text) — drawn LAST = on top
+                drawContent()
             }
-            .defaultMinSize(minHeight = 52.dp)
             .padding(contentPadding),
         contentAlignment = Alignment.Center
     ) {
@@ -225,7 +219,9 @@ fun ArtNouveauButton(
                 fontSize = 12.sp,
                 letterSpacing = 2.sp
             ),
-            color = textColor
+            color = textColor,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis
         )
     }
 }
@@ -242,15 +238,12 @@ fun ArtNouveauButton(
     textStyle: TextStyle? = null,
     contentPadding: PaddingValues = PaddingValues(horizontal = 32.dp, vertical = 16.dp)
 ) {
-    val shape = RoundedCornerShape(50) // pill shape
+    val shape = RoundedCornerShape(50)
 
     val bgBrush = when {
         !enabled -> Brush.linearGradient(listOf(CosmicDeep, CosmicDeep))
         variant == ButtonVariant.PRIMARY -> Brush.horizontalGradient(
-            listOf(
-                PrimaryContainerCA,
-                OnPrimaryFixedVariantCA
-            )
+            listOf(PrimaryContainerCA, OnPrimaryFixedVariantCA)
         )
         else -> Brush.linearGradient(listOf(Color.Transparent, Color.Transparent))
     }
@@ -285,9 +278,24 @@ fun ArtNouveauButton(
                 ambientColor = glowColor.copy(alpha = baseGlowAlpha)
             )
             .clip(shape)
-            .background(bgBrush, shape)
-            .border(1.dp, borderColor, shape)
-            .drawBehind {
+            .defaultMinSize(minHeight = 48.dp)
+            .drawWithContent {
+                val cornerRadius = CornerRadius(size.height / 2f)
+
+                // 1. Background gradient
+                drawRoundRect(
+                    brush = bgBrush,
+                    cornerRadius = cornerRadius
+                )
+
+                // 2. Border
+                drawRoundRect(
+                    color = borderColor,
+                    cornerRadius = cornerRadius,
+                    style = Stroke(width = 1.dp.toPx())
+                )
+
+                // 3. Inner shine (PRIMARY only)
                 if (enabled && variant == ButtonVariant.PRIMARY) {
                     drawRoundRect(
                         brush = Brush.verticalGradient(
@@ -298,11 +306,13 @@ fun ArtNouveauButton(
                             startY = 0f,
                             endY = size.height * 0.45f
                         ),
-                        cornerRadius = CornerRadius(16.dp.toPx())
+                        cornerRadius = cornerRadius
                     )
                 }
+
+                // 4. Content (Text) — drawn LAST = on top
+                drawContent()
             }
-            .defaultMinSize(minHeight = 52.dp)
             .padding(contentPadding),
         contentAlignment = Alignment.Center
     ) {
@@ -314,7 +324,9 @@ fun ArtNouveauButton(
                 fontSize = 12.sp,
                 letterSpacing = 2.sp
             ),
-            color = textColor
+            color = textColor,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis
         )
     }
 }

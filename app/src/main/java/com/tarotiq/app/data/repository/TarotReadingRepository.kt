@@ -17,6 +17,25 @@ class TarotReadingRepository(private val readingDao: ReadingDao) {
         return readingDao.getReadingsByUser(userId)
     }
 
+    /**
+     * Pull readings from Firestore into Room.
+     * Called after login to restore data that was cleared on logout.
+     */
+    suspend fun syncFromFirestore() {
+        val userId = auth.currentUser?.uid ?: return
+        try {
+            val snapshot = firestore.collection("users").document(userId)
+                .collection("readings")
+                .get().await()
+            for (doc in snapshot.documents) {
+                val reading = doc.toObject(TarotReading::class.java) ?: continue
+                readingDao.insertReading(reading)
+            }
+        } catch (e: Exception) {
+            android.util.Log.w("Sync", "Firestore pull failed", e)
+        }
+    }
+
     fun getReadingsByTopic(topic: String): Flow<List<TarotReading>> {
         val userId = auth.currentUser?.uid ?: return kotlinx.coroutines.flow.flowOf(emptyList())
         return readingDao.getReadingsByTopic(userId, topic)

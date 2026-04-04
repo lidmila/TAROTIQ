@@ -103,7 +103,7 @@ fun ExtraCardPickerScreen(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 LazyVerticalGrid(
-                    columns = GridCells.Fixed(4),
+                    columns = GridCells.Adaptive(minSize = 75.dp),
                     modifier = Modifier
                         .fillMaxWidth()
                         .weight(1f),
@@ -198,8 +198,7 @@ fun ExtraCardPickerScreen(
                             }
                         },
                         modifier = Modifier
-                            .fillMaxWidth()
-                            .height(56.dp),
+                            .fillMaxWidth(),
                         variant = ButtonVariant.PRIMARY,
                         enabled = coinBalance > 0
                     )

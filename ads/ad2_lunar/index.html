@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=320,height=480">
+<title>TAROTIQ - Lunar Energy</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,600;1,400&family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;600&display=swap');
+body,html{width:320px;height:480px;overflow:hidden}
+.ad{position:relative;width:320px;height:480px;background:linear-gradient(180deg,#0E0E11 0%,#131316 40%,#1B1B1E 100%);overflow:hidden;cursor:pointer}
+.stars{position:absolute;top:0;left:0;width:100%;height:100%}
+.star{position:absolute;width:2px;height:2px;background:#E4E1E6;border-radius:50%;animation:twinkle var(--d) ease-in-out infinite var(--delay)}
+@keyframes twinkle{0%,100%{opacity:.15}50%{opacity:.9}}
+.nebula{position:absolute;width:250px;height:250px;border-radius:50%;filter:blur(70px);opacity:.12;top:-40px;right:-40px;background:#EDB1FF}
+
+/* Card as hero */
+.card-wrap{position:absolute;top:40px;left:50%;transform:translateX(-50%);z-index:5}
+.card-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:160px;height:240px;border-radius:16px;background:radial-gradient(ellipse,rgba(237,177,255,.15),transparent 70%);animation:glow 3s ease-in-out infinite}
+@keyframes glow{0%,100%{opacity:.4;transform:translate(-50%,-50%) scale(1)}50%{opacity:.7;transform:translate(-50%,-50%) scale(1.06)}}
+.card-img{width:120px;height:188px;border-radius:8px;border:1.5px solid rgba(233,195,73,.3);overflow:hidden;position:relative}
+.card-img img{width:100%;height:100%;object-fit:cover;display:block}
+.card-label{font-family:'Newsreader',serif;font-size:14px;color:#E9C349;text-align:center;margin-top:10px;font-weight:600}
+
+/* Phase dots */
+.phases{display:flex;gap:8px;justify-content:center;margin-top:16px}
+.phase-dot{width:7px;height:7px;border-radius:50%;background:rgba(228,225,230,.12)}
+.phase-dot.active{width:9px;height:9px;background:#E9C349}
+
+/* Content */
+.content{position:absolute;bottom:0;left:0;right:0;padding:0 28px 38px;z-index:10;text-align:center}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:4px;color:#E9C349;font-weight:700;margin-bottom:14px}
+.headline{font-family:'Newsreader',serif;font-size:24px;color:#E4E1E6;font-weight:300;line-height:1.25;margin-bottom:8px}
+.headline em{color:#EDB1FF;font-style:italic}
+.subtext{font-family:'Manrope',sans-serif;font-size:11px;color:#C8C4D7;line-height:1.5;margin-bottom:18px}
+.divider{width:40px;height:1px;background:linear-gradient(90deg,transparent,#E9C349,transparent);margin:0 auto 14px}
+.cta-btn{display:inline-block;padding:13px 34px;background:linear-gradient(135deg,#E9C349,#CCA730);border-radius:30px;font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;color:#0E0E11;text-transform:uppercase;text-decoration:none;box-shadow:0 0 24px rgba(233,195,73,.25)}
+.fade-up{opacity:0;animation:fadeUp .6s ease forwards}
+.d1{animation-delay:.2s}.d2{animation-delay:.4s}.d3{animation-delay:.6s}.d4{animation-delay:.8s}.d5{animation-delay:1s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div class="ad" onclick="window.open('https://play.google.com/store/apps/details?id=com.tarotiq.app','_blank')">
+  <div class="stars" id="stars"></div>
+  <div class="nebula"></div>
+  <div class="card-wrap fade-up d1">
+    <div class="card-glow"></div>
+    <div class="card-img"><img src="the_moon.webp" alt="The Moon"></div>
+    <div class="card-label">The Moon</div>
+    <div class="phases fade-up d2">
+      <div class="phase-dot"></div><div class="phase-dot"></div><div class="phase-dot active"></div><div class="phase-dot"></div>
+      <div class="phase-dot"></div><div class="phase-dot"></div><div class="phase-dot"></div><div class="phase-dot"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="logo fade-up d2">TAROTIQ</div>
+    <h1 class="headline fade-up d3">The Moon whispers<br><em>your path</em></h1>
+    <div class="divider fade-up d3"></div>
+    <p class="subtext fade-up d4">AI tarot readings aligned with the lunar cycle</p>
+    <a class="cta-btn fade-up d5" href="https://play.google.com/store/apps/details?id=com.tarotiq.app" target="_blank">Download TAROTIQ</a>
+  </div>
+</div>
+<script>
+(function(){var s=document.getElementById('stars');for(var i=0;i<50;i++){var d=document.createElement('div');d.className='star';d.style.left=Math.random()*100+'%';d.style.top=Math.random()*100+'%';d.style.setProperty('--d',(2+Math.random()*4)+'s');d.style.setProperty('--delay',Math.random()*3+'s');d.style.width=d.style.height=(1+Math.random()*1.5)+'px';s.appendChild(d)}})();
+</script>
+</body>
+</html>

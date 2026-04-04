@@ -431,9 +431,7 @@ private fun TarotCardImage(
     val resId = remember(cardId) { getCardDrawableResId(context, cardId) }
     val cardShape = RoundedCornerShape(12.dp)
 
-    // Sizes: center card ~192x288dp, side cards ~160x256dp
-    val width = if (isCenter) 144.dp else 112.dp
-    val height = if (isCenter) 216.dp else 168.dp
+    val width = if (isCenter) 130.dp else 100.dp
 
     // Gold glow intensity differs for center vs side
     val glowAlpha = if (isCenter) 0.20f else 0.08f
@@ -442,7 +440,7 @@ private fun TarotCardImage(
     Box(
         modifier = Modifier
             .width(width)
-            .height(height)
+            .aspectRatio(2f / 3f)
             .shadow(
                 elevation = if (isCenter) 24.dp else 12.dp,
                 shape = cardShape,
