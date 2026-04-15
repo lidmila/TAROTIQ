@@ -27,6 +27,8 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.tarotiq.app.R
+import com.tarotiq.app.domain.model.Achievement
+import com.tarotiq.app.domain.model.AchievementDef
 import com.tarotiq.app.ui.components.*
 import com.tarotiq.app.ui.theme.*
 import com.tarotiq.app.utils.LocaleUtils
@@ -50,6 +52,7 @@ fun ProfileScreen(
     val longestStreak by profileViewModel.longestStreak.collectAsState()
     val coinBalance by profileViewModel.coinBalance.collectAsState()
     val totalReadings by profileViewModel.totalReadings.collectAsState()
+    val achievements by profileViewModel.achievements.collectAsState()
     val user = FirebaseAuth.getInstance().currentUser
     var showZodiacDialog by remember { mutableStateOf(false) }
     var showLogoutDialog by remember { mutableStateOf(false) }
@@ -142,6 +145,24 @@ fun ProfileScreen(
                             StatItem(stringResource(R.string.profile_total_readings), "$totalReadings")
                             StatItem(stringResource(R.string.home_streak), "$currentStreak")
                             StatItem(stringResource(R.string.profile_longest_streak), "$longestStreak")
+                        }
+                    }
+                }
+                Spacer(modifier = Modifier.height(14.dp))
+
+                // Achievements
+                ArtNouveauFrame(modifier = Modifier.fillMaxWidth(), frameStyle = FrameStyle.ORNATE) {
+                    Column(modifier = Modifier.padding(20.dp)) {
+                        Text(
+                            stringResource(R.string.achievements_title),
+                            style = MaterialTheme.typography.headlineSmall.copy(fontSize = 18.sp),
+                            color = CelestialGold
+                        )
+                        Spacer(modifier = Modifier.height(12.dp))
+                        val achievementMap = achievements.associateBy { it.id }
+                        AchievementDef.entries.forEach { def ->
+                            val achievement = achievementMap[def.id]
+                            AchievementRow(def = def, achievement = achievement)
                         }
                     }
                 }
@@ -330,5 +351,59 @@ private fun StatItem(label: String, value: String) {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
         Text(value, style = MaterialTheme.typography.headlineSmall, color = CelestialGold)
         Text(label.uppercase(), style = MaterialTheme.typography.labelSmall.copy(fontFamily = SpaceGroteskFamily), color = MoonSilver)
+    }
+}
+
+@Composable
+private fun AchievementRow(def: AchievementDef, achievement: Achievement?) {
+    val isUnlocked = achievement?.unlockedAt != null
+    val progress = achievement?.progress ?: 0
+    val fraction = (progress.toFloat() / def.target).coerceIn(0f, 1f)
+
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 6.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        // Icon
+        Text(
+            text = if (isUnlocked) "\u2728" else "\uD83D\uDD12",
+            fontSize = 20.sp,
+            modifier = Modifier.width(32.dp)
+        )
+        Column(modifier = Modifier.weight(1f)) {
+            Text(
+                text = stringResource(def.titleResId),
+                style = MaterialTheme.typography.bodyMedium.copy(
+                    fontWeight = if (isUnlocked) FontWeight.Bold else FontWeight.Normal
+                ),
+                color = if (isUnlocked) CelestialGold else StarWhite
+            )
+            Text(
+                text = stringResource(def.descResId),
+                style = MaterialTheme.typography.bodySmall,
+                color = MoonSilver
+            )
+            if (!isUnlocked) {
+                Spacer(modifier = Modifier.height(4.dp))
+                LinearProgressIndicator(
+                    progress = { fraction },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(4.dp),
+                    color = AstralPurple,
+                    trackColor = CosmicSurface
+                )
+            }
+        }
+        if (!isUnlocked) {
+            Text(
+                text = "$progress/${def.target}",
+                style = MaterialTheme.typography.labelSmall.copy(fontFamily = SpaceGroteskFamily),
+                color = MoonSilver,
+                modifier = Modifier.padding(start = 8.dp)
+            )
+        }
     }
 }

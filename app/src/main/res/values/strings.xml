@@ -326,8 +326,89 @@
     <!-- Notifications -->
     <string name="notification_channel_name">Denní karta</string>
     <string name="notification_channel_description">Připomenutí denní tarotové karty</string>
-    <string name="notification_daily_title">Vaše denní karta čeká ✨</string>
+    <string name="notification_daily_title">Vaše denní karta čeká</string>
     <string name="notification_daily_text">Odkryjte, co pro vás hvězdy dnes připravily.</string>
+
+    <!-- Smart notification variants -->
+    <string name="notif_streak_title">Vaše %d-denní série pokračuje!</string>
+    <string name="notif_streak_text">Nepřerušujte kosmické vlákno. Denní karta čeká.</string>
+    <string name="notif_streak_risk_title">Vaše série je v ohrožení!</string>
+    <string name="notif_streak_risk_text">Ještě jste nevytáhli kartu. Vaše %d-denní série slábne…</string>
+    <string name="notif_comeback_title">Hvězdy na vás čekají</string>
+    <string name="notif_comeback_text">Nová denní karta je připravena. Začněte novou kapitolu.</string>
+    <string name="notif_full_moon_title">Úplněk září nad vámi</string>
+    <string name="notif_full_moon_text">Úplněk odhaluje skrytá tajemství. Co odhalí vaše karta?</string>
+    <string name="notif_new_moon_title">Novoluní přináší nové začátky</string>
+    <string name="notif_new_moon_text">Ideální čas na introspekci. Vytáhněte si denní kartu.</string>
+    <string name="notif_milestone_title">Blížíte se k milníku!</string>
+    <string name="notif_milestone_week_text">Ještě %d dní do týdenní série! Nevzdávejte to.</string>
+    <string name="notif_milestone_month_text">Ještě %d dní do měsíční série! Jste úžasní.</string>
+    <string name="notif_general_1_title">Co vám hvězdy šeptají?</string>
+    <string name="notif_general_1_text">Vaše denní karta skrývá poselství. Odkryjte ho.</string>
+    <string name="notif_general_2_title">Nový den, nová karta</string>
+    <string name="notif_general_2_text">Jakou energii vám přinese dnešek? Zjistěte to.</string>
+    <string name="notif_general_3_title">Vesmír má pro vás zprávu</string>
+    <string name="notif_general_3_text">Vytáhněte si denní kartu a naslouchejte hvězdám.</string>
+
+    <!-- What's New -->
+    <string name="whats_new_title">Co je nového?</string>
+    <string name="whats_new_version">Verze 1.6.0</string>
+    <string name="whats_new_1">\u2B50 Nové úspěchy — Sbírejte 12 úspěchů za výklady, série i denní karty. Za každý dostanete bonus mince!</string>
+    <string name="whats_new_2">\u2744\uFE0F Zmrazení série — Vynechali jste den? Série se nezlomí, pokud máte zmrazení. Získáte ho za každou týdenní sérii.</string>
+    <string name="whats_new_3">\uD83D\uDD2E Denní kosmická zpráva — Personalizovaný horoskop podle vašeho znamení a fáze Měsíce, každý den nový.</string>
+    <string name="whats_new_4">\uD83D\uDCF2 Sdílení výkladů — Sdílejte svou denní kartu nebo výklad jako krásný obrázek s přáteli.</string>
+    <string name="whats_new_5">\uD83C\uDF1F Týdenní téma — Každý týden nové tematické doporučení rozložení, které vás inspiruje k hlubšímu poznání.</string>
+    <string name="whats_new_6">\uD83C\uDF19 Chytřejší připomenutí — Notifikace se přizpůsobí vaší sérii, fázi Měsíce i tomu, jak dlouho jste nás nenavštívili.</string>
+    <string name="whats_new_dismiss">Skvělé, pojďme na to!</string>
+
+    <!-- Evening Notification -->
+    <string name="notif_evening_title">Večerní reflexe</string>
+    <string name="notif_evening_text">Jak se váš den shodoval s ranní kartou? Zastavte se a zreflektujte.</string>
+
+    <!-- Weekly Themes -->
+    <string name="weekly_focus_title">Téma tohoto týdne</string>
+    <string name="weekly_focus_cta">Vyzkoušet tento výklad</string>
+    <string name="theme_shadow_work">Práce se stínem</string>
+    <string name="theme_shadow_work_desc">Odkryjte skryté části sebe a přijměte je s láskou.</string>
+    <string name="theme_heart_opening">Otevření srdce</string>
+    <string name="theme_heart_opening_desc">Zaměřte se na sebelásku a vnitřní harmonii.</string>
+    <string name="theme_career_focus">Kariérní kompas</string>
+    <string name="theme_career_focus_desc">Najděte směr ve své profesní cestě.</string>
+    <string name="theme_inner_child">Vnitřní dítě</string>
+    <string name="theme_inner_child_desc">Uzdravte staré rány a znovu objevte svou hravost.</string>
+    <string name="theme_cosmic_connection">Kosmické spojení</string>
+    <string name="theme_cosmic_connection_desc">Prozkoumejte hluboké duševní vazby ve svém životě.</string>
+    <string name="theme_karmic_clearing">Karmické očištění</string>
+    <string name="theme_karmic_clearing_desc">Pochopte opakující se vzorce a prolomte je.</string>
+    <string name="theme_lunar_wisdom">Lunární moudrost</string>
+    <string name="theme_lunar_wisdom_desc">Naladťte se na cykly Měsíce pro hlubší introspekci.</string>
+    <string name="theme_crossroads">Na křižovatce</string>
+    <string name="theme_crossroads_desc">Stojíte před rozhodnutím? Karty vám ukáží cestu.</string>
+    <string name="theme_energy_balance">Energetická rovnováha</string>
+    <string name="theme_energy_balance_desc">Harmonizujte svých sedm čaker pro vnitřní klid.</string>
+    <string name="theme_deeper_knowledge">Hlubší poznání</string>
+    <string name="theme_deeper_knowledge_desc">Ponořte se do tajemství Stromu života.</string>
+    <string name="theme_week_planning">Plánování týdne</string>
+    <string name="theme_week_planning_desc">Zjistěte, co vám přinese každý den tohoto týdne.</string>
+    <string name="theme_relationships">Vztahy</string>
+    <string name="theme_relationships_desc">Prozkoumejte dynamiku svých nejbližších vztahů.</string>
+
+    <!-- Daily Horoscope -->
+    <string name="horoscope_title">Kosmická zpráva dne</string>
+    <string name="horoscope_set_zodiac">Nastavte si znamení pro denní horoskop</string>
+
+    <!-- Streak Features -->
+    <string name="streak_freeze_used">Série zachráněna!</string>
+    <string name="streak_freeze_used_desc">Použili jste zmrazení série. Zbývá: %d</string>
+    <string name="streak_freeze_count">Zmrazení: %d</string>
+    <string name="streak_freeze_earned">Získali jste zmrazení série!</string>
+    <string name="comeback_title">Vítejte zpět!</string>
+    <string name="comeback_text">Hvězdy na vás čekaly. Tady je malý dárek na uvítanou.</string>
+    <string name="comeback_reward">+2 mince zdarma</string>
+    <string name="comeback_claim">Přijmout dárek</string>
+    <string name="milestone_title">Milník dosažen!</string>
+    <string name="milestone_text">%d dní v řadě! Vaše oddanost je inspirativní.</string>
+    <string name="milestone_reward">+%d mince jako bonus</string>
 
     <!-- Zodiac Signs -->
     <string name="profile_zodiac_not_set">Nenastaveno</string>
@@ -406,6 +487,8 @@
     <string name="save">Uložit</string>
     <string name="delete">Smazat</string>
     <string name="share">Sdílet</string>
+    <string name="share_text">Moje tarotová karta: %s \uD83C\uDFB4 Nech si vyložit karty na Tarotiq!</string>
+    <string name="share_daily_card_label">Denní karta</string>
     <string name="loading">Načítání…</string>
     <string name="error_generic">Něco se pokazilo. Zkuste to znovu.</string>
     <string name="error_network">Zkontrolujte připojení k internetu.</string>
@@ -482,11 +565,32 @@
 
     <!-- Achievements -->
     <string name="achievement_first_reading">První výklad</string>
+    <string name="achievement_first_reading_desc">Dokončete svůj první tarotový výklad</string>
     <string name="achievement_ten_readings">10 výkladů</string>
+    <string name="achievement_ten_readings_desc">Dokončete 10 tarotových výkladů</string>
+    <string name="achievement_fifty_readings">50 výkladů</string>
+    <string name="achievement_fifty_readings_desc">Dokončete 50 tarotových výkladů</string>
+    <string name="achievement_hundred_readings">100 výkladů</string>
+    <string name="achievement_hundred_readings_desc">Dokončete 100 tarotových výkladů</string>
     <string name="achievement_all_spreads">Všechna rozložení</string>
+    <string name="achievement_all_spreads_desc">Vyzkoušejte každý typ rozložení</string>
     <string name="achievement_week_streak">Týdenní série</string>
+    <string name="achievement_week_streak_desc">Udržujte sérii 7 dní v řadě</string>
     <string name="achievement_month_streak">Měsíční série</string>
+    <string name="achievement_month_streak_desc">Udržujte sérii 30 dní v řadě</string>
     <string name="achievement_major_arcana">Všechna Velká Arkána</string>
+    <string name="achievement_major_arcana_desc">Objevte všech 22 karet Velké Arkány</string>
+    <string name="achievement_first_daily">První denní karta</string>
+    <string name="achievement_first_daily_desc">Vytáhněte svou první denní kartu</string>
+    <string name="achievement_thirty_dailies">30 denních karet</string>
+    <string name="achievement_thirty_dailies_desc">Vytáhněte 30 denních karet</string>
+    <string name="achievement_night_owl">Noční sova</string>
+    <string name="achievement_night_owl_desc">Proveďte výklad po 23. hodině</string>
+    <string name="achievement_early_bird">Ranní ptáče</string>
+    <string name="achievement_early_bird_desc">Proveďte výklad před 7. hodinou</string>
+    <string name="achievement_unlocked">Úspěch odemčen!</string>
+    <string name="achievement_coin_reward">+%d mince</string>
+    <string name="achievements_title">Úspěchy</string>
 
     <!-- FAQ -->
     <string name="faq_q1">Jak funguje výklad?</string>

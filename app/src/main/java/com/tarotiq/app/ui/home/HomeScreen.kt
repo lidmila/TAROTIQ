@@ -50,6 +50,7 @@ import com.tarotiq.app.R
 import com.tarotiq.app.data.preferences.SettingsManager
 import com.tarotiq.app.ui.components.*
 import com.tarotiq.app.ui.theme.*
+import com.tarotiq.app.domain.model.WeeklyTheme
 import com.tarotiq.app.utils.AstroUtils
 import com.tarotiq.app.viewmodel.HomeViewModel
 import kotlin.math.PI
@@ -72,6 +73,16 @@ fun HomeScreen(
     val dailyCardRevealed by homeViewModel.dailyCardRevealed.collectAsState()
     val coinBalance by homeViewModel.coinBalance.collectAsState()
     val moonPhase = homeViewModel.moonPhase
+
+    // Daily horoscope
+    val dailyHoroscope by homeViewModel.dailyHoroscope.collectAsState()
+
+    // Streak features
+    val showComebackBanner by homeViewModel.showComebackBanner.collectAsState()
+    val showFreezeNotice by homeViewModel.showFreezeNotice.collectAsState()
+    val freezesRemaining by homeViewModel.freezesRemaining.collectAsState()
+    val streakMilestone by homeViewModel.streakMilestone.collectAsState()
+    val streakFreezes by homeViewModel.streakFreezes.collectAsState()
 
     // Breathing animation for glow effects
     val infiniteTransition = rememberInfiniteTransition(label = "home_breathe")
@@ -112,6 +123,41 @@ fun HomeScreen(
                     modifier = Modifier.padding(horizontal = 20.dp)
                 )
 
+                // ── Streak Features ──
+                ComebackRewardBanner(
+                    visible = showComebackBanner,
+                    onClaim = { homeViewModel.claimComebackReward() }
+                )
+
+                StreakFreezeNotice(
+                    visible = showFreezeNotice,
+                    remainingFreezes = freezesRemaining
+                )
+
+                // Auto-dismiss freeze notice after 5 seconds
+                LaunchedEffect(showFreezeNotice) {
+                    if (showFreezeNotice) {
+                        kotlinx.coroutines.delay(5000)
+                        homeViewModel.dismissFreezeNotice()
+                    }
+                }
+
+                // Streak freeze indicator
+                if (streakFreezes > 0 && !showFreezeNotice && !showComebackBanner) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 20.dp, vertical = 4.dp),
+                        horizontalArrangement = Arrangement.End
+                    ) {
+                        Text(
+                            text = stringResource(R.string.streak_freeze_count, streakFreezes),
+                            style = MaterialTheme.typography.labelSmall.copy(fontFamily = SpaceGroteskFamily),
+                            color = MoonSilver
+                        )
+                    }
+                }
+
                 Spacer(modifier = Modifier.height(40.dp))
 
                 // ── Daily Card Draw Section ──
@@ -123,6 +169,72 @@ fun HomeScreen(
                     onReflectClick = onNavigateToDailyCard,
                     modifier = Modifier.padding(horizontal = 20.dp)
                 )
+
+                // ── Daily Horoscope ──
+                if (dailyHoroscope != null) {
+                    Spacer(modifier = Modifier.height(24.dp))
+                    GlassCard(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(horizontal = 20.dp)
+                    ) {
+                        Column(modifier = Modifier.padding(16.dp)) {
+                            Text(
+                                text = stringResource(R.string.horoscope_title).uppercase(),
+                                style = MaterialTheme.typography.labelMedium.copy(
+                                    fontFamily = SpaceGroteskFamily,
+                                    letterSpacing = 1.5.sp
+                                ),
+                                color = AstralPurple
+                            )
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Text(
+                                text = dailyHoroscope!!,
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = StarWhite.copy(alpha = 0.9f)
+                            )
+                        }
+                    }
+                }
+
+                // ── Weekly Theme ──
+                Spacer(modifier = Modifier.height(24.dp))
+                val weeklyTheme = remember { WeeklyTheme.getCurrentTheme() }
+                GlassCard(
+                    onClick = { onNavigateToQuickReading(weeklyTheme.spreadKey) },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 20.dp)
+                ) {
+                    Column(modifier = Modifier.padding(16.dp)) {
+                        Text(
+                            text = stringResource(R.string.weekly_focus_title).uppercase(),
+                            style = MaterialTheme.typography.labelMedium.copy(
+                                fontFamily = SpaceGroteskFamily,
+                                letterSpacing = 1.5.sp
+                            ),
+                            color = CelestialGold
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text(
+                            text = stringResource(weeklyTheme.titleResId),
+                            style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold),
+                            color = StarWhite
+                        )
+                        Spacer(modifier = Modifier.height(4.dp))
+                        Text(
+                            text = stringResource(weeklyTheme.descResId),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MoonSilver
+                        )
+                        Spacer(modifier = Modifier.height(10.dp))
+                        Text(
+                            text = stringResource(R.string.weekly_focus_cta) + " \u2192",
+                            style = MaterialTheme.typography.labelMedium.copy(fontFamily = SpaceGroteskFamily),
+                            color = AstralPurple
+                        )
+                    }
+                }
 
                 Spacer(modifier = Modifier.height(32.dp))
 
@@ -181,6 +293,16 @@ fun HomeScreen(
                 Spacer(modifier = Modifier.height(100.dp))
             }
         }
+
+        // Streak milestone popup overlay
+        val milestoneReward = when (streakMilestone) {
+            7 -> 1; 14 -> 2; 30 -> 3; 60 -> 5; 100 -> 10; else -> 0
+        }
+        StreakMilestonePopup(
+            milestone = streakMilestone,
+            coinReward = milestoneReward,
+            onDismiss = { homeViewModel.dismissMilestone() }
+        )
     }
 }
 

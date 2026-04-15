@@ -148,6 +148,27 @@ class FirebaseFunctionsClient(private val context: Context) {
         }
     }
 
+    suspend fun generateDailyHoroscope(
+        zodiacSign: String,
+        moonPhase: String,
+        language: String
+    ): String {
+        ensureFreshToken()
+        val data = hashMapOf(
+            "zodiacSign" to zodiacSign,
+            "moonPhase" to moonPhase,
+            "language" to language
+        )
+        return try {
+            val result = functions.getHttpsCallable("generateDailyHoroscope").call(data).await()
+            val response = result.data as? Map<*, *>
+            response?.get("horoscope") as? String ?: ""
+        } catch (e: Exception) {
+            Log.e(TAG, "Error calling generateDailyHoroscope", e)
+            ""
+        }
+    }
+
     suspend fun generateDailyInsight(cardId: Int, isReversed: Boolean, language: String): String {
         ensureFreshToken()
         val data = hashMapOf(

@@ -19,7 +19,7 @@ class ProfileViewModel(application: Application) : AndroidViewModel(application)
     private val settingsManager = SettingsManager(application)
     private val readingRepo = TarotReadingRepository(db.readingDao())
     private val coinRepo = CoinRepository()
-    private val gamificationRepo = GamificationRepository(db.dailyCardDao(), db.achievementDao(), settingsManager)
+    private val gamificationRepo = GamificationRepository(db.dailyCardDao(), db.achievementDao(), settingsManager, db.readingDao())
 
     val zodiacSign: StateFlow<String?> = settingsManager.zodiacSignFlow
         .stateIn(viewModelScope, SharingStarted.Lazily, null)

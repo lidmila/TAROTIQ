@@ -327,6 +327,87 @@
     <string name="notification_daily_title">Your daily card is waiting</string>
     <string name="notification_daily_text">Discover what the stars have prepared for you today.</string>
 
+    <!-- Smart notification variants -->
+    <string name="notif_streak_title">Your %d-day streak lives on!</string>
+    <string name="notif_streak_text">Don\'t break the cosmic thread. Your daily card awaits.</string>
+    <string name="notif_streak_risk_title">Your streak is at risk!</string>
+    <string name="notif_streak_risk_text">You haven\'t drawn your card yet. Your %d-day streak is fading…</string>
+    <string name="notif_comeback_title">The stars have missed you</string>
+    <string name="notif_comeback_text">A new daily card awaits your return. Start a fresh chapter.</string>
+    <string name="notif_full_moon_title">The Full Moon shines upon you</string>
+    <string name="notif_full_moon_text">The Full Moon reveals hidden truths. What will your card show?</string>
+    <string name="notif_new_moon_title">New Moon brings new beginnings</string>
+    <string name="notif_new_moon_text">A perfect time for introspection. Draw your daily card.</string>
+    <string name="notif_milestone_title">You\'re close to a milestone!</string>
+    <string name="notif_milestone_week_text">Just %d more days until your week streak! Keep going.</string>
+    <string name="notif_milestone_month_text">Just %d more days until your month streak! You\'re amazing.</string>
+    <string name="notif_general_1_title">What do the stars whisper?</string>
+    <string name="notif_general_1_text">Your daily card holds a message. Uncover it.</string>
+    <string name="notif_general_2_title">New day, new card</string>
+    <string name="notif_general_2_text">What energy will today bring? Find out.</string>
+    <string name="notif_general_3_title">The universe has a message for you</string>
+    <string name="notif_general_3_text">Draw your daily card and listen to the stars.</string>
+
+    <!-- What's New -->
+    <string name="whats_new_title">What\'s New?</string>
+    <string name="whats_new_version">Version 1.6.0</string>
+    <string name="whats_new_1">\u2B50 New Achievements — Collect 12 achievements for readings, streaks, and daily cards. Earn bonus coins for each one!</string>
+    <string name="whats_new_2">\u2744\uFE0F Streak Freeze — Missed a day? Your streak won\'t break if you have a freeze. Earn one every week streak!</string>
+    <string name="whats_new_3">\uD83D\uDD2E Daily Cosmic Message — A personalized horoscope based on your zodiac sign and Moon phase, fresh every day.</string>
+    <string name="whats_new_4">\uD83D\uDCF2 Share Your Readings — Share your daily card or reading as a beautiful branded image with friends.</string>
+    <string name="whats_new_5">\uD83C\uDF1F Weekly Theme — A new themed spread recommendation every week to inspire deeper self-discovery.</string>
+    <string name="whats_new_6">\uD83C\uDF19 Smarter Reminders — Notifications now adapt to your streak, Moon phase, and how long you\'ve been away.</string>
+    <string name="whats_new_dismiss">Awesome, let\'s go!</string>
+
+    <!-- Evening Notification -->
+    <string name="notif_evening_title">Evening Reflection</string>
+    <string name="notif_evening_text">How did your day align with this morning\'s card? Take a moment to reflect.</string>
+
+    <!-- Weekly Themes -->
+    <string name="weekly_focus_title">This Week\'s Focus</string>
+    <string name="weekly_focus_cta">Try this reading</string>
+    <string name="theme_shadow_work">Shadow Work</string>
+    <string name="theme_shadow_work_desc">Uncover hidden parts of yourself and embrace them with love.</string>
+    <string name="theme_heart_opening">Heart Opening</string>
+    <string name="theme_heart_opening_desc">Focus on self-love and inner harmony.</string>
+    <string name="theme_career_focus">Career Compass</string>
+    <string name="theme_career_focus_desc">Find direction in your professional journey.</string>
+    <string name="theme_inner_child">Inner Child</string>
+    <string name="theme_inner_child_desc">Heal old wounds and rediscover your playfulness.</string>
+    <string name="theme_cosmic_connection">Cosmic Connection</string>
+    <string name="theme_cosmic_connection_desc">Explore deep soul bonds in your life.</string>
+    <string name="theme_karmic_clearing">Karmic Clearing</string>
+    <string name="theme_karmic_clearing_desc">Understand repeating patterns and break free.</string>
+    <string name="theme_lunar_wisdom">Lunar Wisdom</string>
+    <string name="theme_lunar_wisdom_desc">Tune into the Moon\'s cycles for deeper introspection.</string>
+    <string name="theme_crossroads">At the Crossroads</string>
+    <string name="theme_crossroads_desc">Facing a decision? The cards will show you the way.</string>
+    <string name="theme_energy_balance">Energy Balance</string>
+    <string name="theme_energy_balance_desc">Harmonize your seven chakras for inner peace.</string>
+    <string name="theme_deeper_knowledge">Deeper Knowledge</string>
+    <string name="theme_deeper_knowledge_desc">Dive into the mysteries of the Tree of Life.</string>
+    <string name="theme_week_planning">Week Planning</string>
+    <string name="theme_week_planning_desc">Discover what each day of this week holds for you.</string>
+    <string name="theme_relationships">Relationships</string>
+    <string name="theme_relationships_desc">Explore the dynamics of your closest relationships.</string>
+
+    <!-- Daily Horoscope -->
+    <string name="horoscope_title">Daily Cosmic Message</string>
+    <string name="horoscope_set_zodiac">Set your zodiac sign for daily horoscopes</string>
+
+    <!-- Streak Features -->
+    <string name="streak_freeze_used">Streak saved!</string>
+    <string name="streak_freeze_used_desc">You used a streak freeze. Remaining: %d</string>
+    <string name="streak_freeze_count">Freezes: %d</string>
+    <string name="streak_freeze_earned">You earned a streak freeze!</string>
+    <string name="comeback_title">Welcome back!</string>
+    <string name="comeback_text">The stars have been waiting for you. Here\'s a little welcome gift.</string>
+    <string name="comeback_reward">+2 free coins</string>
+    <string name="comeback_claim">Claim gift</string>
+    <string name="milestone_title">Milestone reached!</string>
+    <string name="milestone_text">%d days in a row! Your dedication is inspiring.</string>
+    <string name="milestone_reward">+%d bonus coins</string>
+
     <!-- Zodiac Signs -->
     <string name="profile_zodiac_not_set">Not set</string>
     <string name="coins_count">%d coins</string>
@@ -404,6 +485,8 @@
     <string name="save">Save</string>
     <string name="delete">Delete</string>
     <string name="share">Share</string>
+    <string name="share_text">My tarot card: %s \uD83C\uDFB4 Get your reading on Tarotiq!</string>
+    <string name="share_daily_card_label">Daily Card</string>
     <string name="loading">Loading\u2026</string>
     <string name="error_generic">Something went wrong. Please try again.</string>
     <string name="error_network">Check your internet connection.</string>
@@ -480,11 +563,32 @@
 
     <!-- Achievements -->
     <string name="achievement_first_reading">First Reading</string>
+    <string name="achievement_first_reading_desc">Complete your first tarot reading</string>
     <string name="achievement_ten_readings">10 Readings</string>
+    <string name="achievement_ten_readings_desc">Complete 10 tarot readings</string>
+    <string name="achievement_fifty_readings">50 Readings</string>
+    <string name="achievement_fifty_readings_desc">Complete 50 tarot readings</string>
+    <string name="achievement_hundred_readings">100 Readings</string>
+    <string name="achievement_hundred_readings_desc">Complete 100 tarot readings</string>
     <string name="achievement_all_spreads">All Spreads</string>
+    <string name="achievement_all_spreads_desc">Try every spread type</string>
     <string name="achievement_week_streak">Week Streak</string>
+    <string name="achievement_week_streak_desc">Maintain a 7-day streak</string>
     <string name="achievement_month_streak">Month Streak</string>
+    <string name="achievement_month_streak_desc">Maintain a 30-day streak</string>
     <string name="achievement_major_arcana">All Major Arcana</string>
+    <string name="achievement_major_arcana_desc">Discover all 22 Major Arcana cards</string>
+    <string name="achievement_first_daily">First Daily Card</string>
+    <string name="achievement_first_daily_desc">Draw your first daily card</string>
+    <string name="achievement_thirty_dailies">30 Daily Cards</string>
+    <string name="achievement_thirty_dailies_desc">Draw 30 daily cards</string>
+    <string name="achievement_night_owl">Night Owl</string>
+    <string name="achievement_night_owl_desc">Do a reading after 11 PM</string>
+    <string name="achievement_early_bird">Early Bird</string>
+    <string name="achievement_early_bird_desc">Do a reading before 7 AM</string>
+    <string name="achievement_unlocked">Achievement Unlocked!</string>
+    <string name="achievement_coin_reward">+%d coins</string>
+    <string name="achievements_title">Achievements</string>
 
     <!-- FAQ -->
     <string name="faq_q1">How does a reading work?</string>

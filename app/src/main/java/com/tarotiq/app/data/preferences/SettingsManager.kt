@@ -38,6 +38,11 @@ class SettingsManager(private val context: Context) {
         private val KEY_CACHED_COIN_BALANCE = intPreferencesKey("cached_coin_balance")
         private val KEY_REWARDED_ADS_THIS_WEEK = intPreferencesKey("rewarded_ads_this_week")
         private val KEY_REWARDED_ADS_WEEK_START = stringPreferencesKey("rewarded_ads_week_start")
+        private val KEY_SEEN_WHATS_NEW_VERSION = stringPreferencesKey("seen_whats_new_version")
+        private val KEY_EVENING_NOTIFICATION_ENABLED = booleanPreferencesKey("evening_notification_enabled")
+        private val KEY_STREAK_FREEZES = intPreferencesKey("streak_freezes_available")
+        private val KEY_LAST_STREAK_FREEZE_DATE = stringPreferencesKey("last_streak_freeze_date")
+        private val KEY_COMEBACK_ELIGIBLE = booleanPreferencesKey("comeback_bonus_eligible")
     }
 
     // === Settings Flow ===
@@ -265,6 +270,77 @@ class SettingsManager(private val context: Context) {
         val cal = java.util.Calendar.getInstance()
         cal.set(java.util.Calendar.DAY_OF_WEEK, java.util.Calendar.MONDAY)
         return "${cal.get(java.util.Calendar.YEAR)}-${cal.get(java.util.Calendar.WEEK_OF_YEAR)}"
+    }
+
+    // === What's New ===
+
+    suspend fun getSeenWhatsNewVersion(): String? {
+        return context.dataStore.data
+            .map { it[KEY_SEEN_WHATS_NEW_VERSION] }
+            .first()
+    }
+
+    suspend fun setSeenWhatsNewVersion(version: String) {
+        context.dataStore.edit { preferences ->
+            preferences[KEY_SEEN_WHATS_NEW_VERSION] = version
+        }
+    }
+
+    // === Evening Notification ===
+
+    val eveningNotificationEnabledFlow: Flow<Boolean> = context.dataStore.data
+        .map { preferences ->
+            preferences[KEY_EVENING_NOTIFICATION_ENABLED] ?: false
+        }
+
+    suspend fun setEveningNotificationEnabled(enabled: Boolean) {
+        context.dataStore.edit { preferences ->
+            preferences[KEY_EVENING_NOTIFICATION_ENABLED] = enabled
+        }
+    }
+
+    // === Streak Freeze ===
+
+    val streakFreezesFlow: Flow<Int> = context.dataStore.data
+        .map { preferences ->
+            preferences[KEY_STREAK_FREEZES] ?: 0
+        }
+
+    suspend fun getStreakFreezes(): Int {
+        return context.dataStore.data
+            .map { it[KEY_STREAK_FREEZES] ?: 0 }
+            .first()
+    }
+
+    suspend fun setStreakFreezes(count: Int) {
+        context.dataStore.edit { preferences ->
+            preferences[KEY_STREAK_FREEZES] = count
+        }
+    }
+
+    suspend fun getLastStreakFreezeDate(): String? {
+        return context.dataStore.data
+            .map { it[KEY_LAST_STREAK_FREEZE_DATE] }
+            .first()
+    }
+
+    suspend fun setLastStreakFreezeDate(date: String) {
+        context.dataStore.edit { preferences ->
+            preferences[KEY_LAST_STREAK_FREEZE_DATE] = date
+        }
+    }
+
+    // === Comeback Bonus ===
+
+    val comebackEligibleFlow: Flow<Boolean> = context.dataStore.data
+        .map { preferences ->
+            preferences[KEY_COMEBACK_ELIGIBLE] ?: false
+        }
+
+    suspend fun setComebackEligible(eligible: Boolean) {
+        context.dataStore.edit { preferences ->
+            preferences[KEY_COMEBACK_ELIGIBLE] = eligible
+        }
     }
 
     // === Clear Settings ===

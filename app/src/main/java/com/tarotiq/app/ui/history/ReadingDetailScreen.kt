@@ -43,6 +43,7 @@ import com.tarotiq.app.domain.model.TarotReading
 import com.tarotiq.app.ui.components.*
 import com.tarotiq.app.ui.theme.*
 import com.tarotiq.app.utils.CardNameTranslator
+import com.tarotiq.app.utils.ShareUtils
 import com.tarotiq.app.viewmodel.ReadingHistoryViewModel
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
@@ -229,7 +230,26 @@ fun ReadingDetailScreen(
 
                         // ── Action buttons ──
                         ActionButtonsRow(
-                            onDelete = { showDeleteDialog = true }
+                            onDelete = { showDeleteDialog = true },
+                            onShare = {
+                                val firstCard = drawnCards.firstOrNull()
+                                if (firstCard != null) {
+                                    val cardResId = getCardDrawableResId(context, firstCard.cardId)
+                                    val cardName = CardNameTranslator.getDisplayName(context, firstCard.cardId)
+                                    val spreadLabel = r.spreadType.replace("_", " ")
+                                        .replaceFirstChar { it.uppercase() }
+                                    val dateStr = dateFormat.format(Date(r.timestamp))
+                                    val interpretation = r.aiInterpretation
+                                    ShareUtils.shareReadingAsImage(
+                                        context = context,
+                                        cardResId = cardResId,
+                                        cardName = cardName,
+                                        spreadType = spreadLabel,
+                                        interpretation = interpretation,
+                                        date = dateStr
+                                    )
+                                }
+                            }
                         )
 
                         Spacer(modifier = Modifier.height(80.dp))
@@ -711,7 +731,8 @@ private fun OverallInterpretationSection(
 
 @Composable
 private fun ActionButtonsRow(
-    onDelete: () -> Unit
+    onDelete: () -> Unit,
+    onShare: () -> Unit
 ) {
     Row(
         modifier = Modifier
@@ -730,7 +751,7 @@ private fun ActionButtonsRow(
         // Share button (primary style with breathing animation)
         ArtNouveauButton(
             text = stringResource(R.string.share),
-            onClick = { /* Share functionality placeholder */ },
+            onClick = onShare,
             variant = ButtonVariant.PRIMARY,
             modifier = Modifier.weight(1f).breatheAnimation()
         )

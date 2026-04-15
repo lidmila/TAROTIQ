@@ -31,7 +31,10 @@ import com.tarotiq.app.R
 import com.tarotiq.app.ui.components.*
 import com.tarotiq.app.ui.theme.*
 import com.tarotiq.app.utils.CardNameTranslator
+import com.tarotiq.app.utils.ShareUtils
 import com.tarotiq.app.viewmodel.DailyCardViewModel
+import java.text.SimpleDateFormat
+import java.util.*
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -203,11 +206,35 @@ fun DailyCardScreen(
                     }
 
                     Spacer(modifier = Modifier.height(16.dp))
-                    ArtNouveauButton(
-                        text = stringResource(R.string.daily_view_details),
-                        onClick = { onCardDetail(dailyCard!!.cardId) },
-                        variant = ButtonVariant.SECONDARY
-                    )
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(12.dp)
+                    ) {
+                        ArtNouveauButton(
+                            text = stringResource(R.string.daily_view_details),
+                            onClick = { onCardDetail(dailyCard!!.cardId) },
+                            variant = ButtonVariant.SECONDARY,
+                            modifier = Modifier.weight(1f)
+                        )
+                        ArtNouveauButton(
+                            text = stringResource(R.string.share),
+                            onClick = {
+                                val card = dailyCard ?: return@ArtNouveauButton
+                                val majorNames = listOf("major_the_fool","major_the_magician","major_the_high_priestess","major_the_empress","major_the_emperor","major_the_hierophant","major_the_lovers","major_the_chariot","major_strength","major_the_hermit","major_wheel_of_fortune","major_justice","major_the_hanged_man","major_death","major_temperance","major_the_devil","major_the_tower","major_the_star","major_the_moon","major_the_sun","major_judgement","major_the_world")
+                                val ranks = listOf("ace","two","three","four","five","six","seven","eight","nine","ten","page","knight","queen","king")
+                                val suits = listOf("cups","pentacles","swords","wands")
+                                val resName = if (card.cardId < 22) majorNames[card.cardId]
+                                else { val mi = card.cardId - 22; "minor_${ranks[mi % 14]}_of_${suits[mi / 14]}" }
+                                val resId = context.resources.getIdentifier(resName, "drawable", context.packageName)
+                                val cardResId = if (resId != 0) resId else R.drawable.card_back
+                                val cardName = CardNameTranslator.getDisplayName(context, card.cardId)
+                                val dateStr = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault()).format(Date(card.timestamp))
+                                ShareUtils.shareDailyCard(context, cardResId, cardName, card.briefInsight, dateStr)
+                            },
+                            variant = ButtonVariant.PRIMARY,
+                            modifier = Modifier.weight(1f)
+                        )
+                    }
                 }
             }
         }

@@ -4,22 +4,55 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.tarotiq.app.data.local.AchievementDao
 import com.tarotiq.app.data.local.DailyCardDao
+import com.tarotiq.app.data.local.ReadingDao
 import com.tarotiq.app.data.preferences.SettingsManager
 import com.tarotiq.app.domain.model.Achievement
+import com.tarotiq.app.domain.model.AchievementDef
 import com.tarotiq.app.domain.model.DailyCard
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.SharedFlow
+import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.tasks.await
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
+object AchievementEvents {
+    private val _unlocked = MutableSharedFlow<AchievementDef>(extraBufferCapacity = 5)
+    val unlocked: SharedFlow<AchievementDef> = _unlocked.asSharedFlow()
+
+    fun emit(def: AchievementDef) {
+        _unlocked.tryEmit(def)
+    }
+}
+
+data class StreakUpdateResult(
+    val newStreak: Int,
+    val freezeUsed: Boolean = false,
+    val comebackEligible: Boolean = false,
+    val milestoneReached: Int? = null // 7, 14, 30, 60, 100
+)
+
+data class AchievementContext(
+    val totalReadings: Int = 0,
+    val currentStreak: Int = 0,
+    val distinctSpreads: Int = 0,
+    val dailyCardCount: Int = 0,
+    val distinctMajorArcana: Int = 0,
+    val currentHour: Int = -1
+)
+
 class GamificationRepository(
     private val dailyCardDao: DailyCardDao,
     private val achievementDao: AchievementDao,
-    private val settingsManager: SettingsManager
+    private val settingsManager: SettingsManager,
+    private val readingDao: ReadingDao? = null
 ) {
     private val auth = FirebaseAuth.getInstance()
     private val firestore = FirebaseFirestore.getInstance()
+
+    val achievementUnlocked: SharedFlow<AchievementDef> = AchievementEvents.unlocked
 
     suspend fun getTodaysDailyCard(): DailyCard? {
         val userId = auth.currentUser?.uid ?: return null
@@ -50,17 +83,39 @@ class GamificationRepository(
         return achievementDao.getAchievements(userId)
     }
 
-    suspend fun updateStreak() {
+    suspend fun updateStreak(): StreakUpdateResult {
         val today = LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE)
         val lastActive = settingsManager.lastActiveDateFlow.first()
         val currentStreak = settingsManager.currentStreakFlow.first()
-
         val yesterday = LocalDate.now().minusDays(1).format(DateTimeFormatter.ISO_LOCAL_DATE)
+        val dayBeforeYesterday = LocalDate.now().minusDays(2).format(DateTimeFormatter.ISO_LOCAL_DATE)
+
+        var freezeUsed = false
+        var comebackEligible = false
 
         val newStreak = when (lastActive) {
             today -> currentStreak // Already updated today
             yesterday -> currentStreak + 1 // Continue streak
-            else -> 1 // Reset streak
+            dayBeforeYesterday -> {
+                // Missed exactly 1 day -- try streak freeze
+                val freezes = settingsManager.getStreakFreezes()
+                if (freezes > 0 && currentStreak > 1) {
+                    settingsManager.setStreakFreezes(freezes - 1)
+                    settingsManager.setLastStreakFreezeDate(today)
+                    freezeUsed = true
+                    currentStreak + 1 // Continue as if not missed
+                } else {
+                    comebackEligible = currentStreak >= 3
+                    if (comebackEligible) settingsManager.setComebackEligible(true)
+                    1 // Reset
+                }
+            }
+            else -> {
+                // Inactive 3+ days
+                comebackEligible = lastActive != null
+                if (comebackEligible) settingsManager.setComebackEligible(true)
+                1 // Reset
+            }
         }
 
         settingsManager.setCurrentStreak(newStreak)
@@ -70,27 +125,101 @@ class GamificationRepository(
         if (newStreak > longestStreak) {
             settingsManager.setLongestStreak(newStreak)
         }
+
+        // Award streak freeze at every 7-day milestone
+        val milestones = listOf(7, 14, 30, 60, 100)
+        val milestoneReached = milestones.firstOrNull { newStreak == it }
+        if (milestoneReached != null && milestoneReached % 7 == 0) {
+            val currentFreezes = settingsManager.getStreakFreezes()
+            if (currentFreezes < 3) {
+                settingsManager.setStreakFreezes(currentFreezes + 1)
+            }
+        }
+
+        return StreakUpdateResult(
+            newStreak = newStreak,
+            freezeUsed = freezeUsed,
+            comebackEligible = comebackEligible,
+            milestoneReached = milestoneReached
+        )
     }
 
-    suspend fun checkAndUnlockAchievements(totalReadings: Int) {
-        val userId = auth.currentUser?.uid ?: return
-        val achievements = listOf(
-            "first_reading" to 1,
-            "ten_readings" to 10,
-            "fifty_readings" to 50
+    suspend fun buildAchievementContext(currentHour: Int = -1): AchievementContext {
+        val userId = auth.currentUser?.uid ?: return AchievementContext()
+        val totalReadings = readingDao?.getReadingCount(userId) ?: 0
+        val currentStreak = settingsManager.currentStreakFlow.first()
+        val distinctSpreads = readingDao?.getDistinctSpreadCount(userId) ?: 0
+        val dailyCardCount = dailyCardDao.getDailyCardCount(userId)
+        val distinctCardIds = dailyCardDao.getDistinctCardIds(userId)
+        // Major Arcana cards have IDs 1-22
+        val distinctMajorArcana = distinctCardIds.count { it in 1..22 }
+        return AchievementContext(
+            totalReadings = totalReadings,
+            currentStreak = currentStreak,
+            distinctSpreads = distinctSpreads,
+            dailyCardCount = dailyCardCount,
+            distinctMajorArcana = distinctMajorArcana,
+            currentHour = currentHour
         )
-        for ((id, target) in achievements) {
-            val existing = achievementDao.getAchievement(userId, id)
+    }
+
+    suspend fun checkAndUnlockAchievements(context: AchievementContext) {
+        val userId = auth.currentUser?.uid ?: return
+
+        for (def in AchievementDef.entries) {
+            val progress = getProgressForAchievement(def, context)
+            val existing = achievementDao.getAchievement(userId, def.id)
+
             if (existing == null) {
+                val unlocked = progress >= def.target
                 achievementDao.insertAchievement(
-                    Achievement(id = id, userId = userId, target = target, progress = totalReadings,
-                        unlockedAt = if (totalReadings >= target) System.currentTimeMillis() else null)
+                    Achievement(
+                        id = def.id,
+                        userId = userId,
+                        target = def.target,
+                        progress = progress,
+                        unlockedAt = if (unlocked) System.currentTimeMillis() else null
+                    )
                 )
-            } else if (existing.unlockedAt == null && totalReadings >= target) {
-                achievementDao.updateAchievement(existing.copy(progress = totalReadings, unlockedAt = System.currentTimeMillis()))
-            } else {
-                achievementDao.updateAchievement(existing.copy(progress = totalReadings))
+                if (unlocked) {
+                    AchievementEvents.emit(def)
+                }
+            } else if (existing.unlockedAt == null && progress >= def.target) {
+                achievementDao.updateAchievement(
+                    existing.copy(progress = progress, unlockedAt = System.currentTimeMillis())
+                )
+                AchievementEvents.emit(def)
+            } else if (existing.progress != progress) {
+                achievementDao.updateAchievement(existing.copy(progress = progress))
             }
+        }
+    }
+
+    @Suppress("DEPRECATION")
+    suspend fun checkAndUnlockAchievements(totalReadings: Int) {
+        val ctx = buildAchievementContext().copy(totalReadings = totalReadings)
+        checkAndUnlockAchievements(ctx)
+    }
+
+    private fun getProgressForAchievement(def: AchievementDef, context: AchievementContext): Int {
+        return when (def) {
+            AchievementDef.FIRST_READING,
+            AchievementDef.TEN_READINGS,
+            AchievementDef.FIFTY_READINGS,
+            AchievementDef.HUNDRED_READINGS -> context.totalReadings
+
+            AchievementDef.WEEK_STREAK,
+            AchievementDef.MONTH_STREAK -> context.currentStreak
+
+            AchievementDef.ALL_SPREADS -> context.distinctSpreads
+
+            AchievementDef.MAJOR_ARCANA -> context.distinctMajorArcana
+
+            AchievementDef.FIRST_DAILY,
+            AchievementDef.THIRTY_DAILIES -> context.dailyCardCount
+
+            AchievementDef.NIGHT_OWL -> if (context.currentHour in 23..23 || context.currentHour in 0..4) 1 else 0
+            AchievementDef.EARLY_BIRD -> if (context.currentHour in 4..6) 1 else 0
         }
     }
 }

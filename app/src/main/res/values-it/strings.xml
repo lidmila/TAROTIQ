@@ -185,6 +185,76 @@
     <string name="notification_daily_title">La tua carta giornaliera ti aspetta</string>
     <string name="notification_daily_text">Scopri cosa le stelle hanno preparato per te oggi.</string>
 
+    <!-- Smart notification variants -->
+    <string name="notif_streak_title">La tua serie di %d giorni continua!</string>
+    <string name="notif_streak_text">Non spezzare il filo cosmico. La tua carta giornaliera ti aspetta.</string>
+    <string name="notif_streak_risk_title">La tua serie è a rischio!</string>
+    <string name="notif_streak_risk_text">Non hai ancora pescato la tua carta. La tua serie di %d giorni svanisce…</string>
+    <string name="notif_comeback_title">Le stelle ti hanno aspettato</string>
+    <string name="notif_comeback_text">Una nuova carta giornaliera attende il tuo ritorno. Inizia un nuovo capitolo.</string>
+    <string name="notif_full_moon_title">La Luna Piena risplende su di te</string>
+    <string name="notif_full_moon_text">La Luna Piena rivela verità nascoste. Cosa mostrerà la tua carta?</string>
+    <string name="notif_new_moon_title">La Luna Nuova porta nuovi inizi</string>
+    <string name="notif_new_moon_text">Il momento perfetto per l\'introspezione. Pesca la tua carta giornaliera.</string>
+    <string name="notif_milestone_title">Sei vicino a un traguardo!</string>
+    <string name="notif_milestone_week_text">Solo %d giorni alla serie settimanale! Continua così.</string>
+    <string name="notif_milestone_month_text">Solo %d giorni alla serie mensile! Sei fantastico.</string>
+    <string name="notif_general_1_title">Cosa sussurrano le stelle?</string>
+    <string name="notif_general_1_text">La tua carta giornaliera nasconde un messaggio. Scoprilo.</string>
+    <string name="notif_general_2_title">Nuovo giorno, nuova carta</string>
+    <string name="notif_general_2_text">Quale energia porterà oggi? Scoprilo.</string>
+    <string name="notif_general_3_title">L\'universo ha un messaggio per te</string>
+    <string name="notif_general_3_text">Pesca la tua carta giornaliera e ascolta le stelle.</string>
+
+    <!-- Evening Notification -->
+    <string name="notif_evening_title">Riflessione Serale</string>
+    <string name="notif_evening_text">Come si è allineata la tua giornata con la carta di stamattina? Prenditi un momento per riflettere.</string>
+
+    <!-- Weekly Themes -->
+    <string name="weekly_focus_title">Focus della settimana</string>
+    <string name="weekly_focus_cta">Prova questa stesa</string>
+    <string name="theme_shadow_work">Lavoro sull\'Ombra</string>
+    <string name="theme_shadow_work_desc">Scopri le parti nascoste di te e accoglile con amore.</string>
+    <string name="theme_heart_opening">Apertura del Cuore</string>
+    <string name="theme_heart_opening_desc">Concentrati sull\'amore di sé e l\'armonia interiore.</string>
+    <string name="theme_career_focus">Bussola di Carriera</string>
+    <string name="theme_career_focus_desc">Trova la direzione nel tuo percorso professionale.</string>
+    <string name="theme_inner_child">Bambino Interiore</string>
+    <string name="theme_inner_child_desc">Guarisci vecchie ferite e riscopri la tua giocosità.</string>
+    <string name="theme_cosmic_connection">Connessione Cosmica</string>
+    <string name="theme_cosmic_connection_desc">Esplora i legami profondi dell\'anima nella tua vita.</string>
+    <string name="theme_karmic_clearing">Pulizia Karmica</string>
+    <string name="theme_karmic_clearing_desc">Comprendi gli schemi ripetitivi e liberatene.</string>
+    <string name="theme_lunar_wisdom">Saggezza Lunare</string>
+    <string name="theme_lunar_wisdom_desc">Sintonizzati con i cicli della Luna per un\'introspezione più profonda.</string>
+    <string name="theme_crossroads">Al Bivio</string>
+    <string name="theme_crossroads_desc">Davanti a una decisione? Le carte ti mostreranno la via.</string>
+    <string name="theme_energy_balance">Equilibrio Energetico</string>
+    <string name="theme_energy_balance_desc">Armonizza i tuoi sette chakra per la pace interiore.</string>
+    <string name="theme_deeper_knowledge">Conoscenza Profonda</string>
+    <string name="theme_deeper_knowledge_desc">Immergiti nei misteri dell\'Albero della Vita.</string>
+    <string name="theme_week_planning">Pianificazione Settimanale</string>
+    <string name="theme_week_planning_desc">Scopri cosa ti riserva ogni giorno di questa settimana.</string>
+    <string name="theme_relationships">Relazioni</string>
+    <string name="theme_relationships_desc">Esplora le dinamiche delle tue relazioni più strette.</string>
+
+    <!-- Daily Horoscope -->
+    <string name="horoscope_title">Messaggio Cosmico del Giorno</string>
+    <string name="horoscope_set_zodiac">Imposta il tuo segno per gli oroscopi giornalieri</string>
+
+    <!-- Streak Features -->
+    <string name="streak_freeze_used">Serie salvata!</string>
+    <string name="streak_freeze_used_desc">Hai usato un congelamento. Rimanenti: %d</string>
+    <string name="streak_freeze_count">Congelamenti: %d</string>
+    <string name="streak_freeze_earned">Hai guadagnato un congelamento della serie!</string>
+    <string name="comeback_title">Bentornato!</string>
+    <string name="comeback_text">Le stelle ti aspettavano. Ecco un piccolo regalo di benvenuto.</string>
+    <string name="comeback_reward">+2 monete gratis</string>
+    <string name="comeback_claim">Riscuoti il regalo</string>
+    <string name="milestone_title">Traguardo raggiunto!</string>
+    <string name="milestone_text">%d giorni di fila! La tua dedizione è ispiratrice.</string>
+    <string name="milestone_reward">+%d monete bonus</string>
+
     <!-- Zodiac Signs -->
     <string name="zodiac_aries">Ariete</string>
     <string name="zodiac_taurus">Toro</string>
@@ -256,6 +326,8 @@
     <string name="save">Salva</string>
     <string name="delete">Elimina</string>
     <string name="share">Condividi</string>
+    <string name="share_text">La mia carta dei tarocchi: %s \uD83C\uDFB4 Ottieni la tua lettura su Tarotiq!</string>
+    <string name="share_daily_card_label">Carta del Giorno</string>
     <string name="loading">Caricamento…</string>
     <string name="error_generic">Qualcosa è andato storto. Per favore, riprova.</string>
     <string name="error_network">Controlla la tua connessione internet.</string>
@@ -295,11 +367,32 @@
 
     <!-- Achievements -->
     <string name="achievement_first_reading">Prima Lettura</string>
+    <string name="achievement_first_reading_desc">Completa la tua prima lettura dei tarocchi</string>
     <string name="achievement_ten_readings">10 Letture</string>
+    <string name="achievement_ten_readings_desc">Completa 10 letture dei tarocchi</string>
+    <string name="achievement_fifty_readings">50 Letture</string>
+    <string name="achievement_fifty_readings_desc">Completa 50 letture dei tarocchi</string>
+    <string name="achievement_hundred_readings">100 Letture</string>
+    <string name="achievement_hundred_readings_desc">Completa 100 letture dei tarocchi</string>
     <string name="achievement_all_spreads">Tutte le Stese</string>
+    <string name="achievement_all_spreads_desc">Prova ogni tipo di stesa</string>
     <string name="achievement_week_streak">Serie Settimanale</string>
+    <string name="achievement_week_streak_desc">Mantieni una serie di 7 giorni</string>
     <string name="achievement_month_streak">Serie Mensile</string>
+    <string name="achievement_month_streak_desc">Mantieni una serie di 30 giorni</string>
     <string name="achievement_major_arcana">Tutti gli Arcani Maggiori</string>
+    <string name="achievement_major_arcana_desc">Scopri tutte le 22 carte degli Arcani Maggiori</string>
+    <string name="achievement_first_daily">Prima Carta del Giorno</string>
+    <string name="achievement_first_daily_desc">Pesca la tua prima carta del giorno</string>
+    <string name="achievement_thirty_dailies">30 Carte del Giorno</string>
+    <string name="achievement_thirty_dailies_desc">Pesca 30 carte del giorno</string>
+    <string name="achievement_night_owl">Nottambulo</string>
+    <string name="achievement_night_owl_desc">Fai una lettura dopo le 23</string>
+    <string name="achievement_early_bird">Mattiniero</string>
+    <string name="achievement_early_bird_desc">Fai una lettura prima delle 7</string>
+    <string name="achievement_unlocked">Traguardo sbloccato!</string>
+    <string name="achievement_coin_reward">+%d monete</string>
+    <string name="achievements_title">Traguardi</string>
 
     <!-- FAQ -->
     <string name="faq_q1">Come funziona una lettura?</string>

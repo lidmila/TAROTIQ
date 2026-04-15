@@ -260,6 +260,25 @@ export const spendCoins = onCall({ invoker: "public" }, async (request) => {
   });
 });
 
+function getCardName(cardId: number): string {
+  const majorArcana = [
+    "The Fool", "The Magician", "The High Priestess", "The Empress",
+    "The Emperor", "The Hierophant", "The Lovers", "The Chariot",
+    "Strength", "The Hermit", "Wheel of Fortune", "Justice",
+    "The Hanged Man", "Death", "Temperance", "The Devil",
+    "The Tower", "The Star", "The Moon", "The Sun",
+    "Judgement", "The World"
+  ];
+  if (cardId < 22) return majorArcana[cardId];
+
+  const ranks = ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Page", "Knight", "Queen", "King"];
+  const suits = ["Cups", "Pentacles", "Swords", "Wands"];
+  const minorIndex = cardId - 22;
+  const suitIndex = Math.floor(minorIndex / 14);
+  const rankIndex = minorIndex % 14;
+  return `${ranks[rankIndex]} of ${suits[suitIndex]}`;
+}
+
 export const generateDailyInsight = onCall({
   secrets: [openaiApiKey],
   maxInstances: 5,
@@ -270,8 +289,9 @@ export const generateDailyInsight = onCall({
   if (!request.auth) throw new HttpsError("unauthenticated", "Must be logged in");
 
   const { cardId, isReversed, language } = request.data;
+  const cardName = getCardName(cardId);
 
-  const prompt = `You are Madame Stella. Give a brief (2-3 sentences) daily insight for card ID ${cardId} (${isReversed ? "reversed" : "upright"}). Be encouraging and mystical. Respond in ${language}.`;
+  const prompt = `You are Madame Stella. Give a brief (2-3 sentences) daily insight for the tarot card "${cardName}" (${isReversed ? "reversed" : "upright"}). Be encouraging and mystical. Do NOT mention the card name in the response — the user already sees the card. Respond in ${language}.`;
 
   try {
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -293,5 +313,61 @@ export const generateDailyInsight = onCall({
   } catch (error) {
     console.error("Daily insight error:", error);
     return { insight: "" };
+  }
+});
+
+export const generateDailyHoroscope = onCall({
+  secrets: [openaiApiKey],
+  maxInstances: 5,
+  memory: "256MiB",
+  timeoutSeconds: 30,
+  invoker: "public",
+}, async (request) => {
+  if (!request.auth) throw new HttpsError("unauthenticated", "Must be logged in");
+
+  const { zodiacSign, moonPhase, language } = request.data;
+  const uid = request.auth.uid;
+
+  // Check cache in Firestore
+  const today = new Date().toISOString().split("T")[0];
+  const cacheRef = admin.firestore()
+    .collection("users").doc(uid)
+    .collection("dailyContent").doc(today);
+  const cached = await cacheRef.get();
+  if (cached.exists && cached.data()?.horoscope) {
+    return { horoscope: cached.data()?.horoscope };
+  }
+
+  const dayOfWeek = new Date().toLocaleDateString("en-US", { weekday: "long" });
+
+  const prompt = `You are Madame Stella, a mystical and empathetic astrologer. Write a brief (2-3 sentences) personalized daily cosmic message for a ${zodiacSign} on ${dayOfWeek} under the ${moonPhase}. Be specific, encouraging, and poetically mystical. Include one concrete suggestion for the day. Respond in ${language}.`;
+
+  try {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${openaiApiKey.value()}`,
+      },
+      body: JSON.stringify({
+        model: "gpt-4o-mini",
+        messages: [{ role: "user", content: prompt }],
+        max_tokens: 200,
+        temperature: 0.9,
+      }),
+    });
+
+    const data = await response.json() as any;
+    const horoscope = data.choices?.[0]?.message?.content || "";
+
+    // Cache result
+    if (horoscope) {
+      await cacheRef.set({ horoscope, zodiacSign, moonPhase, createdAt: admin.firestore.FieldValue.serverTimestamp() });
+    }
+
+    return { horoscope };
+  } catch (error) {
+    console.error("Daily horoscope error:", error);
+    return { horoscope: "" };
   }
 });

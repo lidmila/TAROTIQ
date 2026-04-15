@@ -22,7 +22,7 @@ class DailyCardViewModel(application: Application) : AndroidViewModel(applicatio
 
     private val db = DatabaseProvider.getDatabase(application)
     private val settingsManager = SettingsManager(application)
-    private val gamificationRepo = GamificationRepository(db.dailyCardDao(), db.achievementDao(), settingsManager)
+    private val gamificationRepo = GamificationRepository(db.dailyCardDao(), db.achievementDao(), settingsManager, db.readingDao())
     private val functionsClient = FirebaseFunctionsClient(application)
     private val auth = FirebaseAuth.getInstance()
 
@@ -82,6 +82,10 @@ class DailyCardViewModel(application: Application) : AndroidViewModel(applicatio
             gamificationRepo.saveDailyCard(card)
             _dailyCard.value = card
             _hasDrawnToday.value = true
+
+            // Check achievements after daily card draw
+            val ctx = gamificationRepo.buildAchievementContext()
+            gamificationRepo.checkAndUnlockAchievements(ctx)
 
             // Try to get AI insight (optional, don't block on failure)
             try {

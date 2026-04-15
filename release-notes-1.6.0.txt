@@ -1,0 +1,34 @@
+<cs-CZ>
+Nové úspěchy — Sbírejte 12 úspěchů za výklady, denní karty i série. Za každý odemčený úspěch získáte bonus mince!
+
+Zmrazení série — Vynechali jste den? Pokud máte zmrazení, vaše série se nepřeruší. Jedno zmrazení získáte za každou dokončenou týdenní sérii.
+
+Denní kosmická zpráva — Každé ráno vás čeká personalizovaný horoskop podle vašeho znamení a aktuální fáze Měsíce.
+
+Sdílení výkladů — Sdílejte svou denní kartu nebo výklad jako krásný obrázek s přáteli na sociálních sítích.
+
+Týdenní téma — Každý týden nové tematické doporučení rozložení, které vás inspiruje k hlubšímu poznání sebe sama.
+
+Chytřejší připomenutí — Oznámení se nyní přizpůsobí vaší sérii, fázi Měsíce i tomu, jak dlouho jste aplikaci neotevřeli.
+
+Dárek na uvítanou — Vracíte se po delší pauze? Přivítáme vás malým dárkem.
+
+Oslavy milníků — Při dosažení 7, 14, 30, 60 a 100denní série vás čeká slavnostní odměna.
+</cs-CZ>
+<en-US>
+New Achievements — Collect 12 achievements for readings, daily cards, and streaks. Earn bonus coins for every achievement you unlock!
+
+Streak Freeze — Missed a day? Your streak won't break if you have a freeze. Earn one for every completed week streak.
+
+Daily Cosmic Message — A personalized horoscope based on your zodiac sign and the current Moon phase, fresh every morning.
+
+Share Your Readings — Share your daily card or reading as a beautiful branded image with friends on social media.
+
+Weekly Theme — A new themed spread recommendation every week to inspire deeper self-discovery.
+
+Smarter Reminders — Notifications now adapt to your streak, Moon phase, and how long you've been away.
+
+Welcome Back Gift — Returning after a break? We'll greet you with a small gift.
+
+Milestone Celebrations — Reach 7, 14, 30, 60, or 100-day streaks and receive a special reward.
+</en-US>

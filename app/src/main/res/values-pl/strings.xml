@@ -315,6 +315,76 @@
     <string name="notification_daily_title">Twoja codzienna karta czeka</string>
     <string name="notification_daily_text">Odkryj, co gwiazdy przygotowały dla Ciebie dzisiaj.</string>
 
+    <!-- Smart notification variants -->
+    <string name="notif_streak_title">Twoja %d-dniowa seria trwa!</string>
+    <string name="notif_streak_text">Nie przerywaj kosmicznej nici. Twoja codzienna karta czeka.</string>
+    <string name="notif_streak_risk_title">Twoja seria jest zagrożona!</string>
+    <string name="notif_streak_risk_text">Nie wyciągnąłeś jeszcze karty. Twoja %d-dniowa seria słabnie…</string>
+    <string name="notif_comeback_title">Gwiazdy za Tobą tęskniły</string>
+    <string name="notif_comeback_text">Nowa codzienna karta czeka na Twój powrót. Rozpocznij nowy rozdział.</string>
+    <string name="notif_full_moon_title">Pełnia Księżyca świeci nad Tobą</string>
+    <string name="notif_full_moon_text">Pełnia Księżyca odkrywa ukryte prawdy. Co pokaże Twoja karta?</string>
+    <string name="notif_new_moon_title">Nów Księżyca przynosi nowe początki</string>
+    <string name="notif_new_moon_text">Idealny czas na introspekcję. Wyciągnij swoją codzienną kartę.</string>
+    <string name="notif_milestone_title">Zbliżasz się do kamienia milowego!</string>
+    <string name="notif_milestone_week_text">Jeszcze tylko %d dni do tygodniowej serii! Nie poddawaj się.</string>
+    <string name="notif_milestone_month_text">Jeszcze tylko %d dni do miesięcznej serii! Jesteś niesamowity.</string>
+    <string name="notif_general_1_title">Co szepczą gwiazdy?</string>
+    <string name="notif_general_1_text">Twoja codzienna karta kryje wiadomość. Odkryj ją.</string>
+    <string name="notif_general_2_title">Nowy dzień, nowa karta</string>
+    <string name="notif_general_2_text">Jaką energię przyniesie dzisiejszy dzień? Przekonaj się.</string>
+    <string name="notif_general_3_title">Wszechświat ma dla Ciebie wiadomość</string>
+    <string name="notif_general_3_text">Wyciągnij codzienną kartę i wsłuchaj się w gwiazdy.</string>
+
+    <!-- Evening Notification -->
+    <string name="notif_evening_title">Wieczorna Refleksja</string>
+    <string name="notif_evening_text">Jak twój dzień współgrał z poranną kartą? Poświęć chwilę na refleksję.</string>
+
+    <!-- Weekly Themes -->
+    <string name="weekly_focus_title">Temat tego tygodnia</string>
+    <string name="weekly_focus_cta">Wypróbuj ten odczyt</string>
+    <string name="theme_shadow_work">Praca z Cieniem</string>
+    <string name="theme_shadow_work_desc">Odkryj ukryte części siebie i przyjmij je z miłością.</string>
+    <string name="theme_heart_opening">Otwarcie Serca</string>
+    <string name="theme_heart_opening_desc">Skup się na miłości do siebie i wewnętrznej harmonii.</string>
+    <string name="theme_career_focus">Kompas Kariery</string>
+    <string name="theme_career_focus_desc">Znajdź kierunek w swojej drodze zawodowej.</string>
+    <string name="theme_inner_child">Wewnętrzne Dziecko</string>
+    <string name="theme_inner_child_desc">Ulecz stare rany i odkryj na nowo swoją radość.</string>
+    <string name="theme_cosmic_connection">Kosmiczne Połączenie</string>
+    <string name="theme_cosmic_connection_desc">Zbadaj głębokie więzi duszy w swoim życiu.</string>
+    <string name="theme_karmic_clearing">Karmiczne Oczyszczenie</string>
+    <string name="theme_karmic_clearing_desc">Zrozum powtarzające się wzorce i uwolnij się.</string>
+    <string name="theme_lunar_wisdom">Mądrość Księżyca</string>
+    <string name="theme_lunar_wisdom_desc">Nastaw się na cykle Księżyca dla głębszej introspekcji.</string>
+    <string name="theme_crossroads">Na Rozdrożu</string>
+    <string name="theme_crossroads_desc">Stoisz przed decyzją? Karty pokażą Ci drogę.</string>
+    <string name="theme_energy_balance">Równowaga Energetyczna</string>
+    <string name="theme_energy_balance_desc">Zharmonizuj swoje siedem czakr dla wewnętrznego spokoju.</string>
+    <string name="theme_deeper_knowledge">Głębsza Wiedza</string>
+    <string name="theme_deeper_knowledge_desc">Zanurz się w tajemnicach Drzewa Życia.</string>
+    <string name="theme_week_planning">Planowanie Tygodnia</string>
+    <string name="theme_week_planning_desc">Odkryj, co każdy dzień tego tygodnia ma dla Ciebie.</string>
+    <string name="theme_relationships">Relacje</string>
+    <string name="theme_relationships_desc">Zbadaj dynamikę swoich najbliższych relacji.</string>
+
+    <!-- Daily Horoscope -->
+    <string name="horoscope_title">Kosmiczna Wiadomość Dnia</string>
+    <string name="horoscope_set_zodiac">Ustaw swój znak zodiaku dla codziennych horoskopów</string>
+
+    <!-- Streak Features -->
+    <string name="streak_freeze_used">Seria uratowana!</string>
+    <string name="streak_freeze_used_desc">Użyto zamrożenie serii. Pozostało: %d</string>
+    <string name="streak_freeze_count">Zamrożenia: %d</string>
+    <string name="streak_freeze_earned">Zdobyłeś zamrożenie serii!</string>
+    <string name="comeback_title">Witaj z powrotem!</string>
+    <string name="comeback_text">Gwiazdy na Ciebie czekały. Oto mały powitalny prezent.</string>
+    <string name="comeback_reward">+2 darmowe monety</string>
+    <string name="comeback_claim">Odbierz prezent</string>
+    <string name="milestone_title">Kamień milowy osiągnięty!</string>
+    <string name="milestone_text">%d dni z rzędu! Twoje zaangażowanie jest inspirujące.</string>
+    <string name="milestone_reward">+%d monet bonusowych</string>
+
     <!-- Zodiac Signs -->
     <string name="zodiac_aries">Baran</string>
     <string name="zodiac_taurus">Byk</string>
@@ -386,6 +456,8 @@
     <string name="save">Zapisz</string>
     <string name="delete">Usuń</string>
     <string name="share">Udostępnij</string>
+    <string name="share_text">Moja karta tarota: %s \uD83C\uDFB4 Wyciągnij swoje karty na Tarotiq!</string>
+    <string name="share_daily_card_label">Karta Dnia</string>
     <string name="loading">Ładowanie…</string>
     <string name="error_generic">Coś poszło nie tak. Spróbuj ponownie.</string>
     <string name="error_network">Sprawdź połączenie z internetem.</string>
@@ -425,11 +497,32 @@
 
     <!-- Achievements -->
     <string name="achievement_first_reading">Pierwszy Odczyt</string>
+    <string name="achievement_first_reading_desc">Ukończ swój pierwszy odczyt tarota</string>
     <string name="achievement_ten_readings">10 Odczytów</string>
+    <string name="achievement_ten_readings_desc">Ukończ 10 odczytów tarota</string>
+    <string name="achievement_fifty_readings">50 Odczytów</string>
+    <string name="achievement_fifty_readings_desc">Ukończ 50 odczytów tarota</string>
+    <string name="achievement_hundred_readings">100 Odczytów</string>
+    <string name="achievement_hundred_readings_desc">Ukończ 100 odczytów tarota</string>
     <string name="achievement_all_spreads">Wszystkie Rozkłady</string>
+    <string name="achievement_all_spreads_desc">Wypróbuj każdy typ rozkładu</string>
     <string name="achievement_week_streak">Tygodniowa Seria</string>
+    <string name="achievement_week_streak_desc">Utrzymaj serię 7 dni</string>
     <string name="achievement_month_streak">Miesięczna Seria</string>
+    <string name="achievement_month_streak_desc">Utrzymaj serię 30 dni</string>
     <string name="achievement_major_arcana">Wszystkie Arcana Większe</string>
+    <string name="achievement_major_arcana_desc">Odkryj wszystkie 22 karty Arcanów Większych</string>
+    <string name="achievement_first_daily">Pierwsza Karta Dnia</string>
+    <string name="achievement_first_daily_desc">Wyciągnij swoją pierwszą kartę dnia</string>
+    <string name="achievement_thirty_dailies">30 Kart Dnia</string>
+    <string name="achievement_thirty_dailies_desc">Wyciągnij 30 kart dnia</string>
+    <string name="achievement_night_owl">Nocny Marek</string>
+    <string name="achievement_night_owl_desc">Wykonaj odczyt po 23:00</string>
+    <string name="achievement_early_bird">Ranny Ptaszek</string>
+    <string name="achievement_early_bird_desc">Wykonaj odczyt przed 7:00</string>
+    <string name="achievement_unlocked">Osiągnięcie odblokowane!</string>
+    <string name="achievement_coin_reward">+%d monet</string>
+    <string name="achievements_title">Osiągnięcia</string>
 
     <!-- FAQ -->
     <string name="faq_q1">Jak działa odczyt?</string>

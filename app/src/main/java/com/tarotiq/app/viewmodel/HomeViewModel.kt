@@ -5,8 +5,11 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.tarotiq.app.data.local.DailyCardDao
 import com.tarotiq.app.data.preferences.SettingsManager
+import com.tarotiq.app.data.remote.FirebaseFunctionsClient
 import com.tarotiq.app.data.repository.CoinRepository
 import com.tarotiq.app.data.repository.GamificationRepository
+import com.tarotiq.app.data.repository.StreakUpdateResult
+import com.tarotiq.app.utils.LocaleUtils
 import com.tarotiq.app.domain.model.CoinBalance
 import com.tarotiq.app.domain.model.DailyCard
 import com.tarotiq.app.utils.AstroUtils
@@ -22,8 +25,9 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     private val db = DatabaseProvider.getDatabase(application)
     private val settingsManager = SettingsManager(application)
-    private val gamificationRepo = GamificationRepository(db.dailyCardDao(), db.achievementDao(), settingsManager)
+    private val gamificationRepo = GamificationRepository(db.dailyCardDao(), db.achievementDao(), settingsManager, db.readingDao())
     private val coinRepo = CoinRepository()
+    private val functionsClient = FirebaseFunctionsClient(application)
     private val auth = FirebaseAuth.getInstance()
 
     private val _dailyCard = MutableStateFlow<DailyCard?>(null)
@@ -39,13 +43,77 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     val moonPhase = AstroUtils.getCurrentMoonPhase()
 
+    // Streak features
+    private val _showComebackBanner = MutableStateFlow(false)
+    val showComebackBanner: StateFlow<Boolean> = _showComebackBanner.asStateFlow()
+
+    private val _showFreezeNotice = MutableStateFlow(false)
+    val showFreezeNotice: StateFlow<Boolean> = _showFreezeNotice.asStateFlow()
+
+    private val _freezesRemaining = MutableStateFlow(0)
+    val freezesRemaining: StateFlow<Int> = _freezesRemaining.asStateFlow()
+
+    private val _streakMilestone = MutableStateFlow<Int?>(null)
+    val streakMilestone: StateFlow<Int?> = _streakMilestone.asStateFlow()
+
+    val streakFreezes: StateFlow<Int> = settingsManager.streakFreezesFlow
+        .stateIn(viewModelScope, SharingStarted.Lazily, 0)
+
+    // Daily horoscope
+    private val _dailyHoroscope = MutableStateFlow<String?>(null)
+    val dailyHoroscope: StateFlow<String?> = _dailyHoroscope.asStateFlow()
+
     init {
         viewModelScope.launch {
             coinRepo.initializeCoinDocument()
             coinRepo.startListening()
-            gamificationRepo.updateStreak()
+            val result = gamificationRepo.updateStreak()
+            handleStreakResult(result)
             checkDailyCard()
+            loadDailyHoroscope()
         }
+    }
+
+    private fun loadDailyHoroscope() {
+        viewModelScope.launch {
+            val zodiac = settingsManager.getZodiacSign() ?: return@launch
+            val moonPhaseName = moonPhase.name
+            val language = LocaleUtils.getCurrentLanguage(getApplication())
+            val horoscope = functionsClient.generateDailyHoroscope(zodiac, moonPhaseName, language)
+            if (horoscope.isNotBlank()) {
+                _dailyHoroscope.value = horoscope
+            }
+        }
+    }
+
+    private suspend fun handleStreakResult(result: StreakUpdateResult) {
+        if (result.freezeUsed) {
+            _freezesRemaining.value = settingsManager.getStreakFreezes()
+            _showFreezeNotice.value = true
+        }
+        if (result.comebackEligible) {
+            _showComebackBanner.value = true
+        }
+        if (result.milestoneReached != null) {
+            _streakMilestone.value = result.milestoneReached
+        }
+    }
+
+    fun claimComebackReward() {
+        viewModelScope.launch {
+            settingsManager.setComebackEligible(false)
+            _showComebackBanner.value = false
+            // Coins are granted via Firestore in a real implementation
+            // For now, the banner itself is the engagement hook
+        }
+    }
+
+    fun dismissFreezeNotice() {
+        _showFreezeNotice.value = false
+    }
+
+    fun dismissMilestone() {
+        _streakMilestone.value = null
     }
 
     private suspend fun checkDailyCard() {
@@ -83,6 +151,10 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
             gamificationRepo.saveDailyCard(card)
             _dailyCard.value = card
             _dailyCardRevealed.value = true
+
+            // Check achievements after daily card draw
+            val ctx = gamificationRepo.buildAchievementContext()
+            gamificationRepo.checkAndUnlockAchievements(ctx)
         }
     }
 }

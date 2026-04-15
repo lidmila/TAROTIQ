@@ -10,6 +10,7 @@ import com.tarotiq.app.R
 import com.tarotiq.app.data.preferences.SettingsManager
 import com.tarotiq.app.data.remote.FirebaseFunctionsClient
 import com.tarotiq.app.data.repository.CoinRepository
+import com.tarotiq.app.data.repository.GamificationRepository
 import com.tarotiq.app.data.repository.TarotReadingRepository
 import com.tarotiq.app.domain.model.*
 import com.tarotiq.app.utils.AstroUtils
@@ -43,6 +44,7 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
     private val coinRepo = CoinRepository()
     private val functionsClient = FirebaseFunctionsClient(application)
     private val settingsManager = SettingsManager(application)
+    private val gamificationRepo = GamificationRepository(db.dailyCardDao(), db.achievementDao(), settingsManager, db.readingDao())
     private val auth = FirebaseAuth.getInstance()
     private val gson = Gson()
 
@@ -151,6 +153,11 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
                     zodiacSign = zodiac
                 )
                 readingRepo.saveReading(reading)
+
+                // Check achievements after saving
+                val hour = java.util.Calendar.getInstance().get(java.util.Calendar.HOUR_OF_DAY)
+                val ctx = gamificationRepo.buildAchievementContext(currentHour = hour)
+                gamificationRepo.checkAndUnlockAchievements(ctx)
 
                 _uiState.update { it.copy(
                     isInterpreting = false,

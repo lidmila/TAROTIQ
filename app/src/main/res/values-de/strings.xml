@@ -315,6 +315,76 @@
     <string name="notification_daily_title">Ihre Tageskarte wartet auf Sie</string>
     <string name="notification_daily_text">Entdecken Sie, was die Sterne heute für Sie vorbereitet haben.</string>
 
+    <!-- Smart notification variants -->
+    <string name="notif_streak_title">Ihre %d-Tage-Serie lebt weiter!</string>
+    <string name="notif_streak_text">Unterbrechen Sie nicht den kosmischen Faden. Ihre Tageskarte wartet.</string>
+    <string name="notif_streak_risk_title">Ihre Serie ist in Gefahr!</string>
+    <string name="notif_streak_risk_text">Sie haben Ihre Karte noch nicht gezogen. Ihre %d-Tage-Serie verblasst…</string>
+    <string name="notif_comeback_title">Die Sterne haben Sie vermisst</string>
+    <string name="notif_comeback_text">Eine neue Tageskarte erwartet Ihre Rückkehr. Beginnen Sie ein neues Kapitel.</string>
+    <string name="notif_full_moon_title">Der Vollmond scheint auf Sie</string>
+    <string name="notif_full_moon_text">Der Vollmond enthüllt verborgene Wahrheiten. Was wird Ihre Karte zeigen?</string>
+    <string name="notif_new_moon_title">Neumond bringt neue Anfänge</string>
+    <string name="notif_new_moon_text">Die perfekte Zeit für Introspektion. Ziehen Sie Ihre Tageskarte.</string>
+    <string name="notif_milestone_title">Sie sind einem Meilenstein nahe!</string>
+    <string name="notif_milestone_week_text">Nur noch %d Tage bis zur Wochenserie! Weitermachen.</string>
+    <string name="notif_milestone_month_text">Nur noch %d Tage bis zur Monatsserie! Sie sind großartig.</string>
+    <string name="notif_general_1_title">Was flüstern die Sterne?</string>
+    <string name="notif_general_1_text">Ihre Tageskarte birgt eine Botschaft. Enthüllen Sie sie.</string>
+    <string name="notif_general_2_title">Neuer Tag, neue Karte</string>
+    <string name="notif_general_2_text">Welche Energie bringt der heutige Tag? Finden Sie es heraus.</string>
+    <string name="notif_general_3_title">Das Universum hat eine Nachricht für Sie</string>
+    <string name="notif_general_3_text">Ziehen Sie Ihre Tageskarte und hören Sie den Sternen zu.</string>
+
+    <!-- Evening Notification -->
+    <string name="notif_evening_title">Abendreflexion</string>
+    <string name="notif_evening_text">Wie hat Ihr Tag mit der Morgenkarte übereingestimmt? Nehmen Sie sich einen Moment zum Reflektieren.</string>
+
+    <!-- Weekly Themes -->
+    <string name="weekly_focus_title">Fokus dieser Woche</string>
+    <string name="weekly_focus_cta">Diese Legung ausprobieren</string>
+    <string name="theme_shadow_work">Schattenarbeit</string>
+    <string name="theme_shadow_work_desc">Entdecken Sie verborgene Teile von sich und umarmen Sie sie mit Liebe.</string>
+    <string name="theme_heart_opening">Herzöffnung</string>
+    <string name="theme_heart_opening_desc">Konzentrieren Sie sich auf Selbstliebe und innere Harmonie.</string>
+    <string name="theme_career_focus">Karrierekompass</string>
+    <string name="theme_career_focus_desc">Finden Sie Richtung in Ihrem beruflichen Weg.</string>
+    <string name="theme_inner_child">Inneres Kind</string>
+    <string name="theme_inner_child_desc">Heilen Sie alte Wunden und entdecken Sie Ihre Verspieltheit wieder.</string>
+    <string name="theme_cosmic_connection">Kosmische Verbindung</string>
+    <string name="theme_cosmic_connection_desc">Erforschen Sie tiefe Seelenbande in Ihrem Leben.</string>
+    <string name="theme_karmic_clearing">Karmische Klärung</string>
+    <string name="theme_karmic_clearing_desc">Verstehen Sie sich wiederholende Muster und durchbrechen Sie sie.</string>
+    <string name="theme_lunar_wisdom">Mondweisheit</string>
+    <string name="theme_lunar_wisdom_desc">Stimmen Sie sich auf die Mondzyklen für tiefere Introspektion ein.</string>
+    <string name="theme_crossroads">Am Scheideweg</string>
+    <string name="theme_crossroads_desc">Stehen Sie vor einer Entscheidung? Die Karten zeigen Ihnen den Weg.</string>
+    <string name="theme_energy_balance">Energiebalance</string>
+    <string name="theme_energy_balance_desc">Harmonisieren Sie Ihre sieben Chakren für inneren Frieden.</string>
+    <string name="theme_deeper_knowledge">Tieferes Wissen</string>
+    <string name="theme_deeper_knowledge_desc">Tauchen Sie in die Geheimnisse des Lebensbaums ein.</string>
+    <string name="theme_week_planning">Wochenplanung</string>
+    <string name="theme_week_planning_desc">Entdecken Sie, was jeder Tag dieser Woche für Sie bereithält.</string>
+    <string name="theme_relationships">Beziehungen</string>
+    <string name="theme_relationships_desc">Erforschen Sie die Dynamik Ihrer engsten Beziehungen.</string>
+
+    <!-- Daily Horoscope -->
+    <string name="horoscope_title">Kosmische Botschaft des Tages</string>
+    <string name="horoscope_set_zodiac">Legen Sie Ihr Sternzeichen für tägliche Horoskope fest</string>
+
+    <!-- Streak Features -->
+    <string name="streak_freeze_used">Serie gerettet!</string>
+    <string name="streak_freeze_used_desc">Sie haben ein Einfrieren verwendet. Verbleibend: %d</string>
+    <string name="streak_freeze_count">Einfrieren: %d</string>
+    <string name="streak_freeze_earned">Sie haben ein Serien-Einfrieren verdient!</string>
+    <string name="comeback_title">Willkommen zurück!</string>
+    <string name="comeback_text">Die Sterne haben auf Sie gewartet. Hier ist ein kleines Willkommensgeschenk.</string>
+    <string name="comeback_reward">+2 Gratismünzen</string>
+    <string name="comeback_claim">Geschenk annehmen</string>
+    <string name="milestone_title">Meilenstein erreicht!</string>
+    <string name="milestone_text">%d Tage in Folge! Ihre Hingabe ist inspirierend.</string>
+    <string name="milestone_reward">+%d Bonusmünzen</string>
+
     <!-- Zodiac Signs -->
     <string name="zodiac_aries">Widder</string>
     <string name="zodiac_taurus">Stier</string>
@@ -386,6 +456,8 @@
     <string name="save">Speichern</string>
     <string name="delete">Löschen</string>
     <string name="share">Teilen</string>
+    <string name="share_text">Meine Tarotkarte: %s \uD83C\uDFB4 Lass dir die Karten auf Tarotiq legen!</string>
+    <string name="share_daily_card_label">Tageskarte</string>
     <string name="loading">Wird geladen…</string>
     <string name="error_generic">Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.</string>
     <string name="error_network">Überprüfen Sie Ihre Internetverbindung.</string>
@@ -425,11 +497,32 @@
 
     <!-- Achievements -->
     <string name="achievement_first_reading">Erste Legung</string>
+    <string name="achievement_first_reading_desc">Schließen Sie Ihre erste Tarot-Legung ab</string>
     <string name="achievement_ten_readings">10 Legungen</string>
+    <string name="achievement_ten_readings_desc">Schließen Sie 10 Tarot-Legungen ab</string>
+    <string name="achievement_fifty_readings">50 Legungen</string>
+    <string name="achievement_fifty_readings_desc">Schließen Sie 50 Tarot-Legungen ab</string>
+    <string name="achievement_hundred_readings">100 Legungen</string>
+    <string name="achievement_hundred_readings_desc">Schließen Sie 100 Tarot-Legungen ab</string>
     <string name="achievement_all_spreads">Alle Legemuster</string>
+    <string name="achievement_all_spreads_desc">Probieren Sie jedes Legemuster aus</string>
     <string name="achievement_week_streak">Wochenserie</string>
+    <string name="achievement_week_streak_desc">Halten Sie eine 7-Tage-Serie</string>
     <string name="achievement_month_streak">Monatsserie</string>
+    <string name="achievement_month_streak_desc">Halten Sie eine 30-Tage-Serie</string>
     <string name="achievement_major_arcana">Alle Großen Arkana</string>
+    <string name="achievement_major_arcana_desc">Entdecken Sie alle 22 Großen Arkana</string>
+    <string name="achievement_first_daily">Erste Tageskarte</string>
+    <string name="achievement_first_daily_desc">Ziehen Sie Ihre erste Tageskarte</string>
+    <string name="achievement_thirty_dailies">30 Tageskarten</string>
+    <string name="achievement_thirty_dailies_desc">Ziehen Sie 30 Tageskarten</string>
+    <string name="achievement_night_owl">Nachteule</string>
+    <string name="achievement_night_owl_desc">Machen Sie eine Legung nach 23 Uhr</string>
+    <string name="achievement_early_bird">Frühaufsteher</string>
+    <string name="achievement_early_bird_desc">Machen Sie eine Legung vor 7 Uhr</string>
+    <string name="achievement_unlocked">Erfolg freigeschaltet!</string>
+    <string name="achievement_coin_reward">+%d Münzen</string>
+    <string name="achievements_title">Erfolge</string>
 
     <!-- FAQ -->
     <string name="faq_q1">Wie funktioniert eine Legung?</string>

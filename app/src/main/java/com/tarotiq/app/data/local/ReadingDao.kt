@@ -27,6 +27,9 @@ interface ReadingDao {
     @Query("SELECT COUNT(*) FROM tarot_readings WHERE userId = :userId")
     suspend fun getReadingCount(userId: String): Int
 
+    @Query("SELECT COUNT(DISTINCT spreadType) FROM tarot_readings WHERE userId = :userId")
+    suspend fun getDistinctSpreadCount(userId: String): Int
+
     @Query("DELETE FROM tarot_readings WHERE userId = :userId")
     suspend fun deleteAllByUser(userId: String)
 }

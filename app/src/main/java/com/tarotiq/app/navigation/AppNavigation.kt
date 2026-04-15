@@ -42,8 +42,14 @@ import com.tarotiq.app.R
 import com.tarotiq.app.data.preferences.SettingsManager
 import com.tarotiq.app.domain.model.ReadingSpread
 import com.tarotiq.app.ui.auth.LoginScreen
+import com.tarotiq.app.data.repository.AchievementEvents
+import com.tarotiq.app.domain.model.AchievementDef
+import com.tarotiq.app.BuildConfig
+import com.tarotiq.app.ui.components.AchievementPopup
 import com.tarotiq.app.ui.components.InterstitialAdManager
 import com.tarotiq.app.ui.components.OfflineBanner
+import com.tarotiq.app.ui.components.WhatsNewDialog
+import com.tarotiq.app.utils.InAppReviewManager
 import com.tarotiq.app.ui.daily.DailyCardScreen
 import com.tarotiq.app.ui.history.ReadingDetailScreen
 import com.tarotiq.app.ui.history.ReadingHistoryScreen
@@ -66,6 +72,7 @@ import com.tarotiq.app.ui.theme.VoidBlack
 import com.tarotiq.app.viewmodel.AuthViewModel
 import com.tarotiq.app.viewmodel.ReadingViewModel
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
 private data class NavItem(val route: String, val icon: ImageVector, val labelRes: Int)
@@ -87,6 +94,18 @@ fun AppNavigation(
 
     val trackAction: () -> Unit = remember {
         { actionCount++; if (actionCount % 5 == 0 && activity != null) interstitialAdManager.showIfReady(activity) }
+    }
+
+    // Achievement popup + in-app review trigger
+    var unlockedAchievement by remember { mutableStateOf<AchievementDef?>(null) }
+    LaunchedEffect(Unit) {
+        AchievementEvents.unlocked.collect { def ->
+            unlockedAchievement = def
+            // Trigger review on positive moment (achievement unlock)
+            if (activity != null) {
+                InAppReviewManager.maybeRequestReview(activity, settingsManager)
+            }
+        }
     }
 
     val authState by authViewModel.authState.collectAsState()
@@ -114,6 +133,23 @@ fun AppNavigation(
     var countIncremented by remember { mutableStateOf(false) }
     LaunchedEffect(isAuthenticated) {
         if (isAuthenticated && !countIncremented) { countIncremented = true; settingsManager.incrementAppOpenCount() }
+    }
+
+    // What's New dialog — shown once per version
+    var showWhatsNew by remember { mutableStateOf(false) }
+    LaunchedEffect(isAuthenticated) {
+        if (isAuthenticated) {
+            val currentVersion = BuildConfig.VERSION_NAME
+            val seenVersion = settingsManager.getSeenWhatsNewVersion()
+            if (seenVersion != currentVersion) {
+                // Only show for existing users (appOpenCount > 1 means they used the app before this update)
+                val opens = settingsManager.appOpenCountFlow.first()
+                if (opens > 1) {
+                    showWhatsNew = true
+                }
+                settingsManager.setSeenWhatsNewVersion(currentVersion)
+            }
+        }
     }
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()
@@ -396,5 +432,16 @@ fun AppNavigation(
                 composable(Screen.Contact.route) { ContactScreen(onBack = { navController.popBackStack() }) }
             }
         }
+
+        // What's New dialog
+        if (showWhatsNew) {
+            WhatsNewDialog(onDismiss = { showWhatsNew = false })
+        }
+
+        // Achievement unlock overlay
+        AchievementPopup(
+            achievementDef = unlockedAchievement,
+            onDismiss = { unlockedAchievement = null }
+        )
     }
 }

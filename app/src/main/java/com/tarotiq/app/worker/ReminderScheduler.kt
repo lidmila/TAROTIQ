@@ -44,4 +44,39 @@ object ReminderScheduler {
     fun cancel(context: Context) {
         WorkManager.getInstance(context).cancelUniqueWork(WORK_NAME)
     }
+
+    private const val EVENING_WORK_NAME = "evening_reflection_reminder"
+
+    fun scheduleEvening(context: Context) {
+        val targetHour = 20
+        val targetMinute = 0
+
+        val now = Calendar.getInstance()
+        val target = Calendar.getInstance().apply {
+            set(Calendar.HOUR_OF_DAY, targetHour)
+            set(Calendar.MINUTE, targetMinute)
+            set(Calendar.SECOND, 0)
+            set(Calendar.MILLISECOND, 0)
+        }
+
+        if (target.before(now)) {
+            target.add(Calendar.DAY_OF_MONTH, 1)
+        }
+
+        val initialDelay = target.timeInMillis - now.timeInMillis
+
+        val request = PeriodicWorkRequestBuilder<EveningReflectionWorker>(1, TimeUnit.DAYS)
+            .setInitialDelay(initialDelay, TimeUnit.MILLISECONDS)
+            .build()
+
+        WorkManager.getInstance(context).enqueueUniquePeriodicWork(
+            EVENING_WORK_NAME,
+            ExistingPeriodicWorkPolicy.UPDATE,
+            request
+        )
+    }
+
+    fun cancelEvening(context: Context) {
+        WorkManager.getInstance(context).cancelUniqueWork(EVENING_WORK_NAME)
+    }
 }

@@ -315,6 +315,76 @@
     <string name="notification_daily_title">Uw dagelijkse kaart wacht op u</string>
     <string name="notification_daily_text">Ontdek wat de sterren vandaag voor u in petto hebben.</string>
 
+    <!-- Smart notification variants -->
+    <string name="notif_streak_title">Uw reeks van %d dagen leeft voort!</string>
+    <string name="notif_streak_text">Verbreek de kosmische draad niet. Uw dagkaart wacht.</string>
+    <string name="notif_streak_risk_title">Uw reeks loopt gevaar!</string>
+    <string name="notif_streak_risk_text">U heeft uw kaart nog niet getrokken. Uw reeks van %d dagen vervaagt…</string>
+    <string name="notif_comeback_title">De sterren hebben u gemist</string>
+    <string name="notif_comeback_text">Een nieuwe dagkaart wacht op uw terugkeer. Begin een nieuw hoofdstuk.</string>
+    <string name="notif_full_moon_title">De Volle Maan schijnt op u</string>
+    <string name="notif_full_moon_text">De Volle Maan onthult verborgen waarheden. Wat zal uw kaart tonen?</string>
+    <string name="notif_new_moon_title">Nieuwe Maan brengt nieuwe kansen</string>
+    <string name="notif_new_moon_text">Het perfecte moment voor introspectie. Trek uw dagkaart.</string>
+    <string name="notif_milestone_title">U bent dicht bij een mijlpaal!</string>
+    <string name="notif_milestone_week_text">Nog maar %d dagen tot uw weekreeks! Ga zo door.</string>
+    <string name="notif_milestone_month_text">Nog maar %d dagen tot uw maandreeks! U bent geweldig.</string>
+    <string name="notif_general_1_title">Wat fluisteren de sterren?</string>
+    <string name="notif_general_1_text">Uw dagkaart bevat een boodschap. Ontdek het.</string>
+    <string name="notif_general_2_title">Nieuwe dag, nieuwe kaart</string>
+    <string name="notif_general_2_text">Welke energie brengt vandaag? Ontdek het.</string>
+    <string name="notif_general_3_title">Het universum heeft een bericht voor u</string>
+    <string name="notif_general_3_text">Trek uw dagkaart en luister naar de sterren.</string>
+
+    <!-- Evening Notification -->
+    <string name="notif_evening_title">Avondreflectie</string>
+    <string name="notif_evening_text">Hoe sloot uw dag aan bij de ochtendkaart? Neem even de tijd om te reflecteren.</string>
+
+    <!-- Weekly Themes -->
+    <string name="weekly_focus_title">Focus van deze week</string>
+    <string name="weekly_focus_cta">Probeer deze legging</string>
+    <string name="theme_shadow_work">Schaduwwerk</string>
+    <string name="theme_shadow_work_desc">Ontdek verborgen delen van uzelf en omarm ze met liefde.</string>
+    <string name="theme_heart_opening">Hartopening</string>
+    <string name="theme_heart_opening_desc">Richt u op zelfliefde en innerlijke harmonie.</string>
+    <string name="theme_career_focus">Carrièrekompas</string>
+    <string name="theme_career_focus_desc">Vind richting in uw professionele reis.</string>
+    <string name="theme_inner_child">Innerlijk Kind</string>
+    <string name="theme_inner_child_desc">Genees oude wonden en herontdek uw speelsheid.</string>
+    <string name="theme_cosmic_connection">Kosmische Verbinding</string>
+    <string name="theme_cosmic_connection_desc">Verken diepe zielsbanden in uw leven.</string>
+    <string name="theme_karmic_clearing">Karmische Zuivering</string>
+    <string name="theme_karmic_clearing_desc">Begrijp herhalende patronen en doorbreek ze.</string>
+    <string name="theme_lunar_wisdom">Maanwijsheid</string>
+    <string name="theme_lunar_wisdom_desc">Stem af op de maancycli voor diepere introspectie.</string>
+    <string name="theme_crossroads">Op het Kruispunt</string>
+    <string name="theme_crossroads_desc">Staat u voor een beslissing? De kaarten wijzen u de weg.</string>
+    <string name="theme_energy_balance">Energiebalans</string>
+    <string name="theme_energy_balance_desc">Harmoniseer uw zeven chakra\'s voor innerlijke vrede.</string>
+    <string name="theme_deeper_knowledge">Diepere Kennis</string>
+    <string name="theme_deeper_knowledge_desc">Duik in de mysteries van de Levensboom.</string>
+    <string name="theme_week_planning">Weekplanning</string>
+    <string name="theme_week_planning_desc">Ontdek wat elke dag van deze week voor u in petto heeft.</string>
+    <string name="theme_relationships">Relaties</string>
+    <string name="theme_relationships_desc">Verken de dynamiek van uw nauwste relaties.</string>
+
+    <!-- Daily Horoscope -->
+    <string name="horoscope_title">Kosmisch Bericht van de Dag</string>
+    <string name="horoscope_set_zodiac">Stel uw sterrenbeeld in voor dagelijkse horoscopen</string>
+
+    <!-- Streak Features -->
+    <string name="streak_freeze_used">Reeks gered!</string>
+    <string name="streak_freeze_used_desc">U heeft een bevriezing gebruikt. Resterend: %d</string>
+    <string name="streak_freeze_count">Bevriezingen: %d</string>
+    <string name="streak_freeze_earned">U heeft een reeksbevriezing verdiend!</string>
+    <string name="comeback_title">Welkom terug!</string>
+    <string name="comeback_text">De sterren wachtten op u. Hier is een klein welkomstcadeau.</string>
+    <string name="comeback_reward">+2 gratis munten</string>
+    <string name="comeback_claim">Cadeau claimen</string>
+    <string name="milestone_title">Mijlpaal bereikt!</string>
+    <string name="milestone_text">%d dagen op rij! Uw toewijding is inspirerend.</string>
+    <string name="milestone_reward">+%d bonusmunten</string>
+
     <!-- Zodiac Signs -->
     <string name="zodiac_aries">Ram</string>
     <string name="zodiac_taurus">Stier</string>
@@ -386,6 +456,8 @@
     <string name="save">Opslaan</string>
     <string name="delete">Verwijderen</string>
     <string name="share">Delen</string>
+    <string name="share_text">Mijn tarotkaart: %s \uD83C\uDFB4 Laat je kaarten leggen op Tarotiq!</string>
+    <string name="share_daily_card_label">Dagkaart</string>
     <string name="loading">Laden…</string>
     <string name="error_generic">Er is iets misgegaan. Probeer het opnieuw.</string>
     <string name="error_network">Controleer uw internetverbinding.</string>
@@ -425,11 +497,32 @@
 
     <!-- Achievements -->
     <string name="achievement_first_reading">Eerste Lezing</string>
+    <string name="achievement_first_reading_desc">Voltooi je eerste tarotlezing</string>
     <string name="achievement_ten_readings">10 Lezingen</string>
+    <string name="achievement_ten_readings_desc">Voltooi 10 tarotlezingen</string>
+    <string name="achievement_fifty_readings">50 Lezingen</string>
+    <string name="achievement_fifty_readings_desc">Voltooi 50 tarotlezingen</string>
+    <string name="achievement_hundred_readings">100 Lezingen</string>
+    <string name="achievement_hundred_readings_desc">Voltooi 100 tarotlezingen</string>
     <string name="achievement_all_spreads">Alle Leggingen</string>
+    <string name="achievement_all_spreads_desc">Probeer elk type legging</string>
     <string name="achievement_week_streak">Weekreeks</string>
+    <string name="achievement_week_streak_desc">Houd een reeks van 7 dagen vol</string>
     <string name="achievement_month_streak">Maandreeks</string>
+    <string name="achievement_month_streak_desc">Houd een reeks van 30 dagen vol</string>
     <string name="achievement_major_arcana">Alle Grote Arcana</string>
+    <string name="achievement_major_arcana_desc">Ontdek alle 22 Grote Arcana kaarten</string>
+    <string name="achievement_first_daily">Eerste Dagkaart</string>
+    <string name="achievement_first_daily_desc">Trek je eerste dagkaart</string>
+    <string name="achievement_thirty_dailies">30 Dagkaarten</string>
+    <string name="achievement_thirty_dailies_desc">Trek 30 dagkaarten</string>
+    <string name="achievement_night_owl">Nachtuil</string>
+    <string name="achievement_night_owl_desc">Doe een lezing na 23 uur</string>
+    <string name="achievement_early_bird">Vroege Vogel</string>
+    <string name="achievement_early_bird_desc">Doe een lezing voor 7 uur</string>
+    <string name="achievement_unlocked">Prestatie ontgrendeld!</string>
+    <string name="achievement_coin_reward">+%d munten</string>
+    <string name="achievements_title">Prestaties</string>
 
     <!-- FAQ -->
     <string name="faq_q1">Hoe werkt een lezing?</string>

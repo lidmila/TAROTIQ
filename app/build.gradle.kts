@@ -24,8 +24,8 @@ android {
         applicationId = "com.tarotiq.app"
         minSdk = 26
         targetSdk = 35
-        versionCode = 7
-        versionName = "1.5.0"
+        versionCode = 8
+        versionName = "1.6.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -148,6 +148,10 @@ dependencies {
 
     // Play Integrity API
     implementation("com.google.android.play:integrity:1.6.0")
+
+    // In-App Review
+    implementation("com.google.android.play:review:2.0.2")
+    implementation("com.google.android.play:review-ktx:2.0.2")
 
     // DataStore for preferences
     implementation("androidx.datastore:datastore-preferences:1.0.0")
