@@ -22,7 +22,9 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.EmailAuthProvider
 import com.tarotiq.app.data.preferences.SettingsManager
+import com.tarotiq.app.data.repository.GamificationRepository
 import com.tarotiq.app.data.repository.TarotReadingRepository
+import com.tarotiq.app.data.repository.UserProfileRepository
 import com.tarotiq.app.utils.DatabaseProvider
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -51,6 +53,10 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
     private val settingsManager = SettingsManager(application)
     private val db = DatabaseProvider.getDatabase(application)
     private val readingRepo = TarotReadingRepository(db.readingDao())
+    private val userProfileRepo = UserProfileRepository()
+    private val gamificationRepo = GamificationRepository(
+        db.dailyCardDao(), db.achievementDao(), settingsManager, db.readingDao()
+    )
 
     private val _authState = MutableStateFlow(AuthState(user = auth.currentUser))
     val authState: StateFlow<AuthState> = _authState.asStateFlow()
@@ -63,9 +69,19 @@ class AuthViewModel(application: Application) : AndroidViewModel(application) {
             val prev = _authState.value.user
             val curr = firebaseAuth.currentUser
             _authState.value = _authState.value.copy(user = curr)
-            // Sync readings from Firestore after login
+            // Sync readings + daily cards + achievements + settings from Firestore after login
             if (prev == null && curr != null) {
-                viewModelScope.launch { readingRepo.syncFromFirestore() }
+                viewModelScope.launch {
+                    readingRepo.syncFromFirestore()
+                    // Restore daily cards & achievements so today's card isn't offered
+                    // again and unlocked achievements don't re-trigger their popups
+                    gamificationRepo.syncFromFirestore()
+                    // Restore settings saved in the cloud (survive reinstall / new device)
+                    val cloudSettings = userProfileRepo.fetchSettings()
+                    if (cloudSettings != null) {
+                        settingsManager.applyCloudSnapshot(cloudSettings)
+                    }
+                }
             }
         }
     }

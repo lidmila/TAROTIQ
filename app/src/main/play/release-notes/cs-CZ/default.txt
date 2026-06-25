@@ -1,5 +1,4 @@
-v1.5.0
+v1.8.0
 
-- Opravena tlačítka napříč aplikací
-- Grimoire: výklady se po přihlášení obnoví z cloudu
-- Vylepšen layout výběru karet
+- Nastavení se nyní zálohují k vašemu účtu — po přeinstalování či na novém zařízení se vše obnoví
+- Drobné opravy a vylepšení stability

@@ -7,12 +7,14 @@ import android.content.Context
 import com.tarotiq.app.data.local.CardDataInitializer
 import com.tarotiq.app.data.preferences.SettingsManager
 import com.tarotiq.app.data.remote.IntegrityTokenProvider
+import com.tarotiq.app.data.repository.UserProfileRepository
 import com.tarotiq.app.utils.DatabaseProvider
 import com.tarotiq.app.utils.LocaleUtils
 import com.tarotiq.app.worker.DailyCardReminderWorker
 import com.tarotiq.app.worker.ReminderScheduler
 import com.google.android.gms.ads.MobileAds
 import com.google.firebase.FirebaseApp
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.crashlytics.FirebaseCrashlytics
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
@@ -23,6 +25,7 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
@@ -93,6 +96,21 @@ class TarotIQApp : Application() {
                 val time = settingsManager.notificationTimeFlow.first()
                 ReminderScheduler.schedule(this@TarotIQApp, time)
             }
+        }
+
+        // Continuously back up account-level settings to Firestore so they
+        // survive reinstalls and follow the account across devices.
+        applicationScope.launch {
+            val settingsManager = SettingsManager(this@TarotIQApp)
+            val userProfileRepo = UserProfileRepository()
+            val auth = FirebaseAuth.getInstance()
+            settingsManager.cloudSnapshotFlow
+                .distinctUntilChanged()
+                .collect { snapshot ->
+                    if (auth.currentUser != null) {
+                        userProfileRepo.saveSettings(snapshot)
+                    }
+                }
         }
     }
 

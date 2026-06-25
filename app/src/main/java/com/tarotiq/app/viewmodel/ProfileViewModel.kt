@@ -52,6 +52,8 @@ class ProfileViewModel(application: Application) : AndroidViewModel(application)
 
     fun setZodiacSign(sign: String) {
         viewModelScope.launch {
+            // Local write → instant UI. The cloud backup happens automatically
+            // via TarotIQApp's settings sync collector (cloudSnapshotFlow).
             settingsManager.setZodiacSign(sign)
         }
     }

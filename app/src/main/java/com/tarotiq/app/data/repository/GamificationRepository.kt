@@ -83,6 +83,66 @@ class GamificationRepository(
         return achievementDao.getAchievements(userId)
     }
 
+    private suspend fun syncAchievementToFirestore(achievement: Achievement) {
+        val userId = auth.currentUser?.uid ?: return
+        try {
+            firestore.collection("users").document(userId)
+                .collection("achievements").document(achievement.id)
+                .set(achievement).await()
+        } catch (e: Exception) {
+            android.util.Log.w("Sync", "Achievement sync failed", e)
+        }
+    }
+
+    /**
+     * Pull daily cards and achievements from Firestore into Room.
+     * Called after login to restore data that was cleared on logout / reinstall.
+     * Restoring unlocked achievements here prevents the "you unlocked X" popup
+     * from firing again, and restoring today's daily card prevents the app from
+     * offering a fresh card the user already drew.
+     */
+    suspend fun syncFromFirestore() {
+        val userId = auth.currentUser?.uid ?: return
+
+        try {
+            val cards = firestore.collection("users").document(userId)
+                .collection("dailyCards").get().await()
+            for (doc in cards.documents) {
+                dailyCardDao.insertDailyCard(
+                    DailyCard(
+                        id = doc.getString("id") ?: doc.id,
+                        userId = doc.getString("userId") ?: userId,
+                        cardId = (doc.getLong("cardId") ?: 0L).toInt(),
+                        isReversed = doc.getBoolean("isReversed") ?: false,
+                        date = doc.getString("date") ?: doc.id,
+                        briefInsight = doc.getString("briefInsight"),
+                        timestamp = doc.getLong("timestamp") ?: System.currentTimeMillis()
+                    )
+                )
+            }
+        } catch (e: Exception) {
+            android.util.Log.w("Sync", "Daily card pull failed", e)
+        }
+
+        try {
+            val achievements = firestore.collection("users").document(userId)
+                .collection("achievements").get().await()
+            for (doc in achievements.documents) {
+                achievementDao.insertAchievement(
+                    Achievement(
+                        id = doc.getString("id") ?: doc.id,
+                        userId = doc.getString("userId") ?: userId,
+                        unlockedAt = doc.getLong("unlockedAt"),
+                        progress = (doc.getLong("progress") ?: 0L).toInt(),
+                        target = (doc.getLong("target") ?: 0L).toInt()
+                    )
+                )
+            }
+        } catch (e: Exception) {
+            android.util.Log.w("Sync", "Achievement pull failed", e)
+        }
+    }
+
     suspend fun updateStreak(): StreakUpdateResult {
         val today = LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE)
         val lastActive = settingsManager.lastActiveDateFlow.first()
@@ -172,25 +232,27 @@ class GamificationRepository(
 
             if (existing == null) {
                 val unlocked = progress >= def.target
-                achievementDao.insertAchievement(
-                    Achievement(
-                        id = def.id,
-                        userId = userId,
-                        target = def.target,
-                        progress = progress,
-                        unlockedAt = if (unlocked) System.currentTimeMillis() else null
-                    )
+                val achievement = Achievement(
+                    id = def.id,
+                    userId = userId,
+                    target = def.target,
+                    progress = progress,
+                    unlockedAt = if (unlocked) System.currentTimeMillis() else null
                 )
+                achievementDao.insertAchievement(achievement)
+                syncAchievementToFirestore(achievement)
                 if (unlocked) {
                     AchievementEvents.emit(def)
                 }
             } else if (existing.unlockedAt == null && progress >= def.target) {
-                achievementDao.updateAchievement(
-                    existing.copy(progress = progress, unlockedAt = System.currentTimeMillis())
-                )
+                val achievement = existing.copy(progress = progress, unlockedAt = System.currentTimeMillis())
+                achievementDao.updateAchievement(achievement)
+                syncAchievementToFirestore(achievement)
                 AchievementEvents.emit(def)
             } else if (existing.progress != progress) {
-                achievementDao.updateAchievement(existing.copy(progress = progress))
+                val achievement = existing.copy(progress = progress)
+                achievementDao.updateAchievement(achievement)
+                syncAchievementToFirestore(achievement)
             }
         }
     }

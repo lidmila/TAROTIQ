@@ -1,0 +1,8 @@
+<cs-CZ>
+• Záloha nastavení k účtu — znamení, série a další volby se nyní zálohují do cloudu a obnoví se po přeinstalování aplikace i na novém zařízení
+• Drobné opravy a vylepšení stability
+</cs-CZ>
+<en-US>
+• Settings backup — your zodiac sign, streak, and other preferences now back up to the cloud and restore after reinstalling the app or on a new device
+• Minor fixes and stability improvements
+</en-US>
