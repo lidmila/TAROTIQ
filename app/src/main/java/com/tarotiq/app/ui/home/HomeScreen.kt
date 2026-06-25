@@ -15,7 +15,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.outlined.ArrowForward
+import androidx.compose.material.icons.filled.ChevronRight
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.material3.*
@@ -67,6 +67,8 @@ fun HomeScreen(
     onNavigateToCoinShop: () -> Unit,
     onNavigateToQuickReading: (spreadType: String) -> Unit,
     onNavigateToLibrary: () -> Unit = {},
+    onNavigateToChallenges: () -> Unit = {},
+    isLifetimePremium: Boolean = false,
     homeViewModel: HomeViewModel = viewModel()
 ) {
     val dailyCard by homeViewModel.dailyCard.collectAsState()
@@ -240,8 +242,16 @@ fun HomeScreen(
 
                 // ── Rewarded Ad Card ──
                 Box(modifier = Modifier.padding(horizontal = 20.dp)) {
-                    RewardedAdCard()
+                    RewardedAdCard(isLifetimePremium = isLifetimePremium)
                 }
+
+                Spacer(modifier = Modifier.height(32.dp))
+
+                // ── Active Challenge Widget ──
+                ActiveChallengeWidget(
+                    onNavigateToChallenges = onNavigateToChallenges,
+                    modifier = Modifier.padding(horizontal = 20.dp)
+                )
 
                 Spacer(modifier = Modifier.height(40.dp))
 
@@ -935,7 +945,7 @@ private fun QuickReadingsSection(
                 }
                 Spacer(modifier = Modifier.width(8.dp))
                 Icon(
-                    Icons.AutoMirrored.Outlined.ArrowForward,
+                    Icons.Default.ChevronRight,
                     contentDescription = null,
                     tint = CelestialGold.copy(alpha = 0.5f),
                     modifier = Modifier.size(18.dp)
@@ -1032,6 +1042,7 @@ private fun LunarPhaseSection(
     val daysUntilFull = AstroUtils.getDaysUntilFullMoon()
     val daysUntilNew = AstroUtils.getDaysUntilNewMoon()
     val cycleProgress = AstroUtils.getMoonCycleProgress()
+    val mercuryInfo = remember { AstroUtils.getMercuryInfo() }
 
     GlassCard(
         modifier = modifier.fillMaxWidth(),
@@ -1217,6 +1228,81 @@ private fun LunarPhaseSection(
 
             Spacer(modifier = Modifier.height(16.dp))
 
+            // Mercury retrograde indicator
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(
+                        color = if (mercuryInfo.isRetrograde)
+                            Color(0xFFE9C349).copy(alpha = 0.08f)
+                        else
+                            Color(0xFF5ED0E7).copy(alpha = 0.07f),
+                        shape = RoundedCornerShape(12.dp)
+                    )
+                    .padding(horizontal = 14.dp, vertical = 10.dp)
+            ) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Column(modifier = Modifier.weight(1f)) {
+                        Text(
+                            text = if (mercuryInfo.isRetrograde)
+                                stringResource(R.string.mercury_retrograde)
+                            else
+                                stringResource(R.string.mercury_direct),
+                            style = TextStyle(
+                                fontFamily = SpaceGroteskFamily,
+                                fontWeight = FontWeight.Medium,
+                                fontSize = 10.sp,
+                                letterSpacing = 2.sp
+                            ),
+                            color = if (mercuryInfo.isRetrograde) CelestialGold else Color(0xFF5ED0E7)
+                        )
+                        Spacer(modifier = Modifier.height(2.dp))
+                        Text(
+                            text = when {
+                                mercuryInfo.isRetrograde && mercuryInfo.endDateStr != null ->
+                                    stringResource(R.string.mercury_retrograde_until, mercuryInfo.endDateStr)
+                                !mercuryInfo.isRetrograde && mercuryInfo.nextStartStr != null ->
+                                    stringResource(R.string.mercury_direct_next, mercuryInfo.nextStartStr)
+                                else -> if (mercuryInfo.isRetrograde)
+                                    stringResource(R.string.mercury_retrograde_warning)
+                                else
+                                    stringResource(R.string.mercury_direct_desc)
+                            },
+                            style = MaterialTheme.typography.bodySmall.copy(
+                                fontFamily = ManropeFamily,
+                                fontSize = 10.sp
+                            ),
+                            color = StarWhite.copy(alpha = 0.6f)
+                        )
+                        Spacer(modifier = Modifier.height(4.dp))
+                        Text(
+                            text = if (mercuryInfo.isRetrograde)
+                                stringResource(R.string.mercury_retrograde_warning)
+                            else
+                                stringResource(R.string.mercury_direct_desc),
+                            style = MaterialTheme.typography.bodySmall.copy(
+                                fontFamily = ManropeFamily,
+                                fontSize = 9.sp
+                            ),
+                            color = StarWhite.copy(alpha = 0.45f)
+                        )
+                    }
+                    Text(
+                        text = if (mercuryInfo.isRetrograde) "☿ℜ" else "☿",
+                        style = TextStyle(
+                            fontSize = 22.sp,
+                            color = if (mercuryInfo.isRetrograde) CelestialGold else Color(0xFF5ED0E7)
+                        )
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(14.dp))
+
             // Tarot connection
             Box(
                 modifier = Modifier
@@ -1256,7 +1342,8 @@ private fun LunarPhaseSection(
 // ═══════════════════════════════════════════
 
 @Composable
-private fun RewardedAdCard() {
+private fun RewardedAdCard(isLifetimePremium: Boolean = false) {
+    if (isLifetimePremium) return
     val context = LocalContext.current
     val activity = context as? android.app.Activity
     val settingsManager = remember { SettingsManager(context) }
@@ -1267,7 +1354,7 @@ private fun RewardedAdCard() {
     var isLoading by remember { mutableStateOf(false) }
     var showSuccess by remember { mutableStateOf(false) }
 
-    val maxAdsPerWeek = 3
+    val maxAdsPerWeek = 5
     val remaining = maxAdsPerWeek - adsWatchedThisWeek
 
     LaunchedEffect(Unit) { rewardedAdManager.preload() }
@@ -1684,5 +1771,70 @@ private fun getMoonPhaseName(phase: AstroUtils.MoonPhase): String {
         AstroUtils.MoonPhase.WANING_GIBBOUS -> stringResource(R.string.moon_waning_gibbous)
         AstroUtils.MoonPhase.LAST_QUARTER -> stringResource(R.string.moon_last_quarter)
         AstroUtils.MoonPhase.WANING_CRESCENT -> stringResource(R.string.moon_waning_crescent)
+    }
+}
+
+@Composable
+private fun ActiveChallengeWidget(
+    onNavigateToChallenges: () -> Unit,
+    modifier: Modifier = Modifier,
+    challengeViewModel: com.tarotiq.app.viewmodel.ChallengeViewModel = viewModel()
+) {
+    val activeChallenge by challengeViewModel.activeChallenge.collectAsState()
+    val context = LocalContext.current
+
+    GlassCard(
+        onClick = onNavigateToChallenges,
+        modifier = modifier.fillMaxWidth()
+    ) {
+        Row(
+            modifier = Modifier.padding(horizontal = 20.dp, vertical = 16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            androidx.compose.material3.Icon(
+                imageVector = androidx.compose.material.icons.Icons.Outlined.EmojiEvents,
+                contentDescription = null,
+                tint = CelestialGold,
+                modifier = Modifier.size(28.dp)
+            )
+            Spacer(modifier = Modifier.width(14.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    stringResource(R.string.challenge_section_title),
+                    style = MaterialTheme.typography.labelLarge.copy(
+                        fontFamily = SpaceGroteskFamily,
+                        letterSpacing = 2.sp
+                    ),
+                    color = CelestialGold.copy(alpha = 0.8f)
+                )
+                if (activeChallenge != null) {
+                    val challenge = activeChallenge!!
+                    val def = com.tarotiq.app.domain.model.ChallengeDefinition.findById(challenge.challengeId, context)
+                    Spacer(modifier = Modifier.height(4.dp))
+                    Text(
+                        if (def != null) context.getString(def.titleRes) else challenge.challengeId,
+                        style = MaterialTheme.typography.bodyMedium.copy(fontFamily = ManropeFamily),
+                        color = StarWhite
+                    )
+                    Text(
+                        stringResource(R.string.challenge_active_day, challenge.currentDay, def?.durationDays ?: 0),
+                        style = MaterialTheme.typography.bodySmall.copy(fontFamily = ManropeFamily),
+                        color = AstralPurple
+                    )
+                } else {
+                    Text(
+                        stringResource(R.string.challenge_browse),
+                        style = MaterialTheme.typography.bodySmall.copy(fontFamily = ManropeFamily),
+                        color = MoonSilver
+                    )
+                }
+            }
+            androidx.compose.material3.Icon(
+                imageVector = Icons.Default.ChevronRight,
+                contentDescription = null,
+                tint = AstralPurple.copy(alpha = 0.5f),
+                modifier = Modifier.size(20.dp)
+            )
+        }
     }
 }

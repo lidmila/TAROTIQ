@@ -26,6 +26,9 @@ class CoinShopViewModel(application: Application) : AndroidViewModel(application
     val coinBalance: StateFlow<Int> = coinRepo.coinBalance
         .map { it.balance }
         .stateIn(scope, SharingStarted.Eagerly, 0)
+    val lifetimePack: StateFlow<CoinPack?> = billingRepo.lifetimePack
+    val lifetimeOfferPack: StateFlow<CoinPack?> = billingRepo.lifetimeOfferPack
+    val isLifetimePremium: StateFlow<Boolean> = coinRepo.isLifetimePremium
 
     init {
         coinRepo.startListening()
@@ -38,6 +41,14 @@ class CoinShopViewModel(application: Application) : AndroidViewModel(application
 
     fun purchaseCoinPack(activity: Activity, productId: String) {
         billingRepo.launchPurchase(activity, productId)
+    }
+
+    fun purchaseLifetime(activity: Activity) {
+        billingRepo.launchPurchase(activity, CoinPack.LIFETIME_PRODUCT_ID)
+    }
+
+    fun purchaseLifetimeOffer(activity: Activity) {
+        billingRepo.launchPurchase(activity, CoinPack.LIFETIME_OFFER_PRODUCT_ID)
     }
 
     fun resetPurchaseState() {

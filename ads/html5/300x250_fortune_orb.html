@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=250">
+<title>TarotIQ – The Oracle</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:300px; height:250px; overflow:hidden; background:#07071a; cursor:pointer; user-select:none; }
+
+.bg {
+  position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse at 50% 45%, rgba(88,28,180,.3) 0%, transparent 55%),
+    radial-gradient(ellipse at 20% 80%, rgba(60,10,120,.25) 0%, transparent 40%),
+    radial-gradient(ellipse at 80% 80%, rgba(60,10,120,.2) 0%, transparent 40%),
+    #07071a;
+}
+.star { position:absolute; border-radius:50%; background:#fff; animation:tw var(--d,3s) ease-in-out infinite; }
+@keyframes tw { 0%,100%{opacity:.06} 50%{opacity:.75} }
+
+/* === HANDS (SVG) === */
+.hands-svg {
+  position:absolute; bottom:0; left:0; right:0;
+  width:300px; height:140px;
+  z-index:5; pointer-events:none;
+}
+
+/* === CRYSTAL BALL === */
+.ball-stage {
+  position:absolute; top:28px; left:50%; transform:translateX(-50%);
+  width:116px; height:116px; z-index:10;
+}
+.ball-glow {
+  position:absolute; inset:-18px; border-radius:50%;
+  background:radial-gradient(circle, rgba(140,80,240,.35) 0%, transparent 70%);
+  animation:breathe-glow 3s ease-in-out infinite;
+}
+@keyframes breathe-glow {
+  0%,100%{transform:scale(1);opacity:.7}
+  50%{transform:scale(1.12);opacity:1}
+}
+.ball {
+  position:absolute; inset:0; border-radius:50%;
+  background:radial-gradient(circle at 36% 32%,
+    rgba(240,220,255,.85) 0%,
+    rgba(160,90,255,.65) 18%,
+    rgba(70,25,140,.9) 50%,
+    rgba(18,6,45,1) 100%
+  );
+  box-shadow:
+    0 0 40px rgba(140,80,240,.75),
+    0 0 80px rgba(108,43,217,.4),
+    inset 0 0 30px rgba(0,0,0,.55);
+  overflow:hidden;
+  animation:breathe-ball 3s ease-in-out infinite;
+}
+@keyframes breathe-ball {
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.03)}
+}
+/* Swirl inside */
+.ball::after {
+  content:''; position:absolute; inset:-20%;
+  background:conic-gradient(from 0deg,
+    transparent 0%,
+    rgba(200,160,255,.12) 20%,
+    transparent 40%,
+    rgba(160,100,255,.08) 60%,
+    transparent 80%
+  );
+  animation:spin 8s linear infinite; border-radius:50%;
+}
+@keyframes spin { to{transform:rotate(360deg)} }
+/* Highlight */
+.ball::before {
+  content:''; position:absolute;
+  top:10%; left:16%; width:38%; height:30%;
+  background:radial-gradient(ellipse, rgba(255,255,255,.55) 0%, transparent 70%);
+  border-radius:50%; transform:rotate(-28deg);
+}
+/* Card visions inside ball */
+.ball-visions {
+  position:absolute; inset:0; border-radius:50%; overflow:hidden;
+}
+.ball-vision {
+  position:absolute; inset:0;
+  background-size:cover; background-position:center;
+  opacity:0; transition:opacity 1.4s ease;
+  filter:hue-rotate(250deg) saturate(.5) brightness(.65);
+  mix-blend-mode:screen;
+}
+.ball-vision.vis { opacity:.6; }
+
+/* === REVEAL CARD (flies out of ball) === */
+.reveal-wrap {
+  position:absolute; top:28px; left:50%; z-index:25;
+  width:86px; height:143px; margin-left:-43px;
+  transform:scale(.12) translateY(40px);
+  opacity:0;
+  transition:transform .65s cubic-bezier(.2,.8,.2,1), opacity .5s;
+  pointer-events:none;
+}
+.reveal-wrap.shown { transform:scale(1) translateY(-12px); opacity:1; }
+.reveal-card {
+  width:100%; height:100%; border-radius:7px; overflow:hidden;
+  border:1px solid rgba(212,175,55,.65);
+  box-shadow:0 0 22px rgba(212,175,55,.3), 0 14px 36px rgba(0,0,0,.85);
+}
+.reveal-card img { width:100%; height:100%; object-fit:cover; display:block; }
+.reveal-card img.rev { transform:rotate(180deg); }
+.reveal-badge {
+  position:absolute; bottom:0; left:0; right:0;
+  padding:28px 5px 6px;
+  background:linear-gradient(to top,rgba(4,1,18,.96) 0%,transparent 100%);
+  border-radius:0 0 6px 6px; text-align:center;
+}
+.reveal-name { font-family:Georgia,serif; font-size:8.5px; font-weight:700; color:#e4c040; letter-spacing:1px; text-transform:uppercase; }
+.reveal-orient { font-family:Arial,sans-serif; font-size:7px; color:rgba(200,175,255,.7); letter-spacing:1.8px; text-transform:uppercase; margin-top:2px; }
+
+/* Flash overlay */
+.flash { position:absolute; inset:0; background:#fff; opacity:0; pointer-events:none; z-index:50; transition:opacity .1s; }
+.flash.on { opacity:.5; }
+
+/* === TEXT === */
+.prompt {
+  position:absolute; top:152px; left:0; right:0; text-align:center;
+  font-family:Arial,sans-serif; font-size:9px;
+  color:rgba(200,175,255,.65); letter-spacing:2px; text-transform:uppercase;
+  animation:pulse-txt 2s ease-in-out infinite;
+  transition:opacity .4s;
+}
+.prompt.hidden { opacity:0; }
+@keyframes pulse-txt { 0%,100%{opacity:.5} 50%{opacity:.9} }
+
+.brand {
+  position:absolute; top:162px; left:0; right:0; text-align:center;
+  font-family:Georgia,serif; font-size:19px; font-weight:700; letter-spacing:2px;
+  background:linear-gradient(90deg,#a07010,#f0d060,#a07010);
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  transition:opacity .4s;
+}
+.tagline {
+  position:absolute; top:186px; left:0; right:0; text-align:center;
+  font-family:Arial,sans-serif; font-size:9px;
+  color:rgba(180,150,255,.6); letter-spacing:1.8px; text-transform:uppercase;
+  transition:opacity .4s;
+}
+.brand.fade,.tagline.fade { opacity:0; }
+
+/* CTA */
+.cta {
+  position:absolute; bottom:10px; left:50%; transform:translateX(-50%);
+  padding:9px 26px; border-radius:22px;
+  background:linear-gradient(135deg,#6d28d9,#a855f7);
+  color:#fff; font-family:Arial,sans-serif; font-size:11px; font-weight:700;
+  letter-spacing:1.5px; text-transform:uppercase; white-space:nowrap;
+  border:1px solid rgba(255,255,255,.2);
+  box-shadow:0 4px 20px rgba(109,40,217,.55);
+  animation:pulse-cta 2.5s ease-in-out infinite;
+}
+@keyframes pulse-cta {
+  0%,100%{box-shadow:0 4px 20px rgba(109,40,217,.55)}
+  50%{box-shadow:0 4px 32px rgba(168,85,247,.85)}
+}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div id="sf"></div>
+<div class="flash" id="flash"></div>
+
+<!-- Mystical hands (SVG) behind crystal ball -->
+<svg class="hands-svg" viewBox="0 0 300 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left hand -->
+  <path d="M0 140 L0 95 Q3 82 14 78 Q24 75 27 85 L27 96 Q30 81 40 78 Q50 76 52 88 L52 100 Q55 84 66 82 Q76 81 77 95 L77 108 Q80 95 89 95 Q97 96 97 110 L97 128 Q99 138 85 140 Z" fill="#120725" stroke="rgba(130,60,220,.15)" stroke-width="0.5"/>
+  <!-- Left hand ring glow hint -->
+  <ellipse cx="27" cy="80" rx="4" ry="2" fill="rgba(180,120,255,.12)"/>
+  <!-- Right hand (mirror) -->
+  <path d="M300 140 L300 95 Q297 82 286 78 Q276 75 273 85 L273 96 Q270 81 260 78 Q250 76 248 88 L248 100 Q245 84 234 82 Q224 81 223 95 L223 108 Q220 95 211 95 Q203 96 203 110 L203 128 Q201 138 215 140 Z" fill="#120725" stroke="rgba(130,60,220,.15)" stroke-width="0.5"/>
+  <!-- Subtle finger highlight lines (left) -->
+  <path d="M14 79 Q14 70 14 60" stroke="rgba(160,90,255,.08)" stroke-width="1" stroke-linecap="round"/>
+  <path d="M40 79 Q40 70 40 58" stroke="rgba(160,90,255,.08)" stroke-width="1" stroke-linecap="round"/>
+  <path d="M66 83 Q66 74 66 62" stroke="rgba(160,90,255,.08)" stroke-width="1" stroke-linecap="round"/>
+  <!-- Subtle finger highlight lines (right) -->
+  <path d="M286 79 Q286 70 286 60" stroke="rgba(160,90,255,.08)" stroke-width="1" stroke-linecap="round"/>
+  <path d="M260 79 Q260 70 260 58" stroke="rgba(160,90,255,.08)" stroke-width="1" stroke-linecap="round"/>
+  <path d="M234 83 Q234 74 234 62" stroke="rgba(160,90,255,.08)" stroke-width="1" stroke-linecap="round"/>
+  <!-- Glowing rings on fingers -->
+  <circle cx="27" cy="83" r="3" fill="none" stroke="rgba(212,175,55,.25)" stroke-width="1"/>
+  <circle cx="273" cy="83" r="3" fill="none" stroke="rgba(212,175,55,.25)" stroke-width="1"/>
+</svg>
+
+<!-- Crystal Ball -->
+<div class="ball-stage" id="ball-stage">
+  <div class="ball-glow"></div>
+  <div class="ball" id="ball">
+    <div class="ball-visions" id="visions">
+      <div class="ball-vision" id="v0" style="background-image:url('major_arcana_x22_17.jpg')"></div>
+      <div class="ball-vision" id="v1" style="background-image:url('major_arcana_x22_18_v2.jpg')"></div>
+      <div class="ball-vision" id="v2" style="background-image:url('major_arcana_x22_19.jpg')"></div>
+      <div class="ball-vision" id="v3" style="background-image:url('major_arcana_x22_21_v2.jpg')"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Reveal card -->
+<div class="reveal-wrap" id="reveal-wrap">
+  <div class="reveal-card">
+    <img id="reveal-img" src="major_arcana_x22_17.jpg" alt="">
+    <div class="reveal-badge">
+      <div class="reveal-name" id="reveal-name">The Star</div>
+      <div class="reveal-orient" id="reveal-orient">Vzpřímená</div>
+    </div>
+  </div>
+</div>
+
+<div class="prompt" id="prompt">Dotkněte se koule</div>
+<div class="brand" id="brand">TarotIQ</div>
+<div class="tagline" id="tagline">AI Tarot Readings</div>
+<div class="cta" id="cta">Reveal My Reading →</div>
+
+<script>
+var clickTag = "";
+var CARDS = [
+  {img:'major_arcana_x22_17.jpg', name:'The Star'},
+  {img:'major_arcana_x22_18_v2.jpg', name:'The Moon'},
+  {img:'major_arcana_x22_19.jpg', name:'The Sun'},
+  {img:'major_arcana_x22_21_v2.jpg', name:'The World'}
+];
+
+// Stars
+var sf = document.getElementById('sf');
+for (var i=0;i<50;i++){
+  var s=document.createElement('div'); s.className='star';
+  var sz=(Math.random()*2+.6)+'px';
+  s.style.cssText='width:'+sz+';height:'+sz+';left:'+Math.random()*100+'%;top:'+Math.random()*100+'%;';
+  s.style.setProperty('--d',(2+Math.random()*4)+'s');
+  s.style.animationDelay=(Math.random()*5)+'s';
+  sf.appendChild(s);
+}
+
+// Vision cycling
+var visIdx=0, visions=document.querySelectorAll('.ball-vision');
+visions[0].classList.add('vis');
+setInterval(function(){
+  visions[visIdx].classList.remove('vis');
+  visIdx=(visIdx+1)%visions.length;
+  visions[visIdx].classList.add('vis');
+},2800);
+
+// Reveal state
+var revealed=false;
+var revealTid;
+
+function doReveal(){
+  if(revealed) return;
+  revealed=true;
+  clearTimeout(revealTid);
+
+  var cardIdx=visIdx%CARDS.length;
+  var c=CARDS[cardIdx];
+  var rev=Math.random()<.33;
+  var ri=document.getElementById('reveal-img');
+  ri.src=c.img;
+  ri.className=rev?'rev':'';
+  document.getElementById('reveal-name').textContent=c.name;
+  document.getElementById('reveal-orient').textContent=rev?'Obrácená':'Vzpřímená';
+
+  // Flash
+  var fl=document.getElementById('flash');
+  fl.classList.add('on');
+  setTimeout(function(){fl.classList.remove('on');},140);
+
+  // Show card
+  setTimeout(function(){
+    document.getElementById('reveal-wrap').classList.add('shown');
+    document.getElementById('prompt').classList.add('hidden');
+    document.getElementById('brand').classList.add('fade');
+    document.getElementById('tagline').classList.add('fade');
+  },60);
+
+  // Hide after 4s
+  revealTid=setTimeout(function(){
+    document.getElementById('reveal-wrap').classList.remove('shown');
+    document.getElementById('prompt').classList.remove('hidden');
+    document.getElementById('brand').classList.remove('fade');
+    document.getElementById('tagline').classList.remove('fade');
+    setTimeout(function(){revealed=false;},700);
+  },4000);
+}
+
+document.getElementById('ball-stage').addEventListener('click',function(e){
+  e.stopPropagation(); doReveal();
+});
+document.getElementById('cta').addEventListener('click',function(e){e.stopPropagation();window.open(clickTag);});
+document.body.addEventListener('click',function(e){
+  if(!e.target.closest('#ball-stage')&&!e.target.closest('#cta')) window.open(clickTag);
+});
+
+// Auto-reveal after 2.5s then every 7s
+setTimeout(doReveal,2500);
+</script>
+</body>
+</html>

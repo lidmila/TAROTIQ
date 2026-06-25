@@ -227,6 +227,26 @@ enum class ReadingSpread(
             SpreadPosition("what_i_need", R.string.position_what_i_need),
             SpreadPosition("affirmation", R.string.position_affirmation)
         )
+    ),
+
+    MONTHLY_HOROSCOPE(
+        key = "monthly_horoscope",
+        coinCost = 10,
+        cardCount = 12,
+        positions = listOf(
+            SpreadPosition("month_theme", R.string.position_month_theme),
+            SpreadPosition("month_love", R.string.position_month_love),
+            SpreadPosition("month_career", R.string.position_month_career),
+            SpreadPosition("month_finances", R.string.position_month_finances),
+            SpreadPosition("month_health", R.string.position_month_health),
+            SpreadPosition("month_spirituality", R.string.position_month_spirituality),
+            SpreadPosition("month_family", R.string.position_month_family),
+            SpreadPosition("month_growth", R.string.position_month_growth),
+            SpreadPosition("month_challenges", R.string.position_month_challenges),
+            SpreadPosition("month_opportunities", R.string.position_month_opportunities),
+            SpreadPosition("month_hidden", R.string.position_month_hidden),
+            SpreadPosition("month_message", R.string.position_month_message)
+        )
     );
 
     companion object {

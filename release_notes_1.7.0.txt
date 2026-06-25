@@ -1,0 +1,16 @@
+<cs-CZ>
+• Doživotní přístup — jednorázová platba, neomezené výklady navždy
+• Vítejte nabídka — exkluzivní sleva po prvním výkladu
+• Paměť AI — Madame Stella si pamatuje vaše předchozí výklady
+• Analýza deníku — AI rozbor vašich poznámek z výkladu
+• Tarotové výzvy — 7, 21 nebo 30denní cesty osobního růstu
+• Měsíční horoskop za 10 kreditů
+</cs-CZ>
+<en-US>
+• Lifetime Access — one-time payment, unlimited readings forever
+• Welcome Offer — exclusive discount after your first reading
+• AI Memory — Madame Stella remembers your past readings
+• Journal Analysis — AI reflection on your reading notes
+• Tarot Challenges — 7, 21, or 30-day personal growth journeys
+• Monthly horoscope for 10 coins
+</en-US>

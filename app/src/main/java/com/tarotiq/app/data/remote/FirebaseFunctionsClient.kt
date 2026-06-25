@@ -76,7 +76,8 @@ class FirebaseFunctionsClient(private val context: Context) {
         zodiacSign: String?,
         moonPhase: String?,
         language: String,
-        conversationHistory: List<ChatMessage> = emptyList()
+        conversationHistory: List<ChatMessage> = emptyList(),
+        readingHistory: List<Map<String, String>> = emptyList()
     ): String {
         ensureFreshToken()
         val integrityToken = integrityProvider.getToken()
@@ -99,7 +100,8 @@ class FirebaseFunctionsClient(private val context: Context) {
             "integrityToken" to integrityToken,
             "conversationHistory" to conversationHistory.map { msg ->
                 hashMapOf("role" to msg.role.name.lowercase(), "content" to msg.content)
-            }
+            },
+            "readingHistory" to readingHistory
         )
 
         return try {
@@ -166,6 +168,32 @@ class FirebaseFunctionsClient(private val context: Context) {
         } catch (e: Exception) {
             Log.e(TAG, "Error calling generateDailyHoroscope", e)
             ""
+        }
+    }
+
+    suspend fun analyzeJournalEntry(
+        notes: String,
+        recentReadings: List<Map<String, String>>,
+        language: String
+    ): String {
+        ensureFreshToken()
+        val integrityToken = integrityProvider.getToken()
+        val data = hashMapOf(
+            "notes" to notes,
+            "recentReadings" to recentReadings,
+            "language" to language,
+            "integrityToken" to integrityToken
+        )
+        return try {
+            val result = functions.getHttpsCallable("analyzeJournalEntry")
+                .withTimeout(90, java.util.concurrent.TimeUnit.SECONDS)
+                .call(data)
+                .await()
+            val response = result.data as? Map<*, *>
+            response?.get("analysis") as? String ?: ""
+        } catch (e: Exception) {
+            Log.e(TAG, "Error calling analyzeJournalEntry", e)
+            throw wrapException(e)
         }
     }
 

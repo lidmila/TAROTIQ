@@ -18,5 +18,6 @@ data class TarotReading(
     val mood: String? = null,
     val timestamp: Long = System.currentTimeMillis(),
     val coinsCost: Int = 0,
-    val zodiacSign: String? = null
+    val zodiacSign: String? = null,
+    val userNotes: String? = null
 )

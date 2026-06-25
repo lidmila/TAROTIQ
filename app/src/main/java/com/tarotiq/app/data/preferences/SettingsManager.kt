@@ -43,6 +43,9 @@ class SettingsManager(private val context: Context) {
         private val KEY_STREAK_FREEZES = intPreferencesKey("streak_freezes_available")
         private val KEY_LAST_STREAK_FREEZE_DATE = stringPreferencesKey("last_streak_freeze_date")
         private val KEY_COMEBACK_ELIGIBLE = booleanPreferencesKey("comeback_bonus_eligible")
+        private val KEY_READINGS_COMPLETED = intPreferencesKey("readings_completed_count")
+        private val KEY_WELCOME_OFFER_SHOWN = booleanPreferencesKey("welcome_offer_shown")
+        private val KEY_FIRST_READING_DATE = stringPreferencesKey("first_reading_date")
     }
 
     // === Settings Flow ===
@@ -341,6 +344,48 @@ class SettingsManager(private val context: Context) {
         context.dataStore.edit { preferences ->
             preferences[KEY_COMEBACK_ELIGIBLE] = eligible
         }
+    }
+
+    // === Readings Completed ===
+
+    val readingsCompletedFlow: Flow<Int> = context.dataStore.data
+        .map { preferences -> preferences[KEY_READINGS_COMPLETED] ?: 0 }
+
+    suspend fun incrementReadingsCompleted(): Int {
+        var newCount = 0
+        context.dataStore.edit { preferences ->
+            val current = preferences[KEY_READINGS_COMPLETED] ?: 0
+            newCount = current + 1
+            preferences[KEY_READINGS_COMPLETED] = newCount
+        }
+        return newCount
+    }
+
+    // === Welcome Offer ===
+
+    val welcomeOfferShownFlow: Flow<Boolean> = context.dataStore.data
+        .map { preferences -> preferences[KEY_WELCOME_OFFER_SHOWN] ?: false }
+
+    suspend fun setWelcomeOfferShown() {
+        context.dataStore.edit { preferences ->
+            preferences[KEY_WELCOME_OFFER_SHOWN] = true
+        }
+    }
+
+    suspend fun isWelcomeOfferShown(): Boolean {
+        return context.dataStore.data.map { it[KEY_WELCOME_OFFER_SHOWN] ?: false }.first()
+    }
+
+    suspend fun setFirstReadingDate(date: String) {
+        context.dataStore.edit { preferences ->
+            if (preferences[KEY_FIRST_READING_DATE] == null) {
+                preferences[KEY_FIRST_READING_DATE] = date
+            }
+        }
+    }
+
+    suspend fun getFirstReadingDate(): String? {
+        return context.dataStore.data.map { it[KEY_FIRST_READING_DATE] }.first()
     }
 
     // === Clear Settings ===

@@ -28,8 +28,17 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import android.app.Activity
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.google.firebase.analytics.analytics
+import com.google.firebase.analytics.logEvent
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.Firebase
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.tasks.await
 import com.tarotiq.app.R
+import com.tarotiq.app.data.preferences.SettingsManager
 import com.tarotiq.app.ui.components.*
 import com.tarotiq.app.ui.theme.*
 import com.tarotiq.app.viewmodel.ReadingViewModel
@@ -41,14 +50,60 @@ fun ReadingInterpretationScreen(
     onDone: () -> Unit,
     onBack: () -> Unit,
     onBuyExtraCard: () -> Unit = {},
+    onNavigateToShop: () -> Unit = {},
     readingViewModel: ReadingViewModel = viewModel()
 ) {
     val uiState by readingViewModel.uiState.collectAsState()
+
+    val context = LocalContext.current
+    val activity = context as? Activity
+    val settingsManager = remember { SettingsManager(context) }
+    val rewardedAdManager = remember { RewardedAdManager(context) }
+    val scope = rememberCoroutineScope()
+    val adsThisWeek by settingsManager.rewardedAdsThisWeekFlow.collectAsState(initial = 0)
+    var isWatchingAd by remember { mutableStateOf(false) }
+
+    val onWatchAd: () -> Unit = {
+        if (activity != null && !isWatchingAd) {
+            isWatchingAd = true
+            rewardedAdManager.show(
+                activity = activity,
+                onRewarded = {
+                    scope.launch {
+                        settingsManager.incrementRewardedAdsCount()
+                        val userId = FirebaseAuth.getInstance().currentUser?.uid
+                        if (userId != null) {
+                            try {
+                                val db = FirebaseFirestore.getInstance()
+                                val coinRef = db.collection("users").document(userId)
+                                    .collection("coins").document("balance")
+                                db.runTransaction { transaction ->
+                                    val doc = transaction.get(coinRef)
+                                    val current = doc.getLong("balance")?.toInt() ?: 0
+                                    transaction.update(coinRef, "balance", current + 1)
+                                }.await()
+                            } catch (_: Exception) { }
+                        }
+                        isWatchingAd = false
+                        readingViewModel.requestInterpretation()
+                    }
+                },
+                onDismissed = { isWatchingAd = false }
+            )
+        }
+    }
 
     // Request interpretation on first composition
     LaunchedEffect(Unit) {
         if (uiState.interpretation.isEmpty() && !uiState.isInterpreting) {
             readingViewModel.requestInterpretation()
+        }
+    }
+
+    LaunchedEffect(uiState.error) {
+        if (uiState.error == "INSUFFICIENT_COINS") {
+            Firebase.analytics.logEvent("paywall_shown") {}
+            rewardedAdManager.preload()
         }
     }
 
@@ -97,6 +152,10 @@ fun ReadingInterpretationScreen(
                     error = uiState.error!!,
                     onRetry = { readingViewModel.requestInterpretation() },
                     onBack = onBack,
+                    onNavigateToShop = onNavigateToShop,
+                    onWatchAd = onWatchAd,
+                    adAvailable = adsThisWeek < 5 && rewardedAdManager.isReady(),
+                    isWatchingAd = isWatchingAd,
                     modifier = Modifier
                         .fillMaxSize()
                         .padding(padding)
@@ -281,6 +340,10 @@ private fun ErrorState(
     error: String,
     onRetry: () -> Unit,
     onBack: () -> Unit,
+    onNavigateToShop: () -> Unit = {},
+    onWatchAd: () -> Unit = {},
+    adAvailable: Boolean = false,
+    isWatchingAd: Boolean = false,
     modifier: Modifier = Modifier
 ) {
     val isInsufficientCoins = error == "INSUFFICIENT_COINS"
@@ -337,9 +400,27 @@ private fun ErrorState(
 
         if (isInsufficientCoins) {
             ArtNouveauButton(
+                text = stringResource(R.string.coins_buy_now),
+                onClick = onNavigateToShop,
+                modifier = Modifier.fillMaxWidth(),
+                variant = ButtonVariant.PRIMARY
+            )
+            if (adAvailable) {
+                Spacer(modifier = Modifier.height(12.dp))
+                ArtNouveauButton(
+                    text = if (isWatchingAd) stringResource(R.string.ad_loading) else stringResource(R.string.ad_watch_for_coin),
+                    onClick = onWatchAd,
+                    modifier = Modifier.fillMaxWidth(),
+                    enabled = !isWatchingAd,
+                    variant = ButtonVariant.SECONDARY
+                )
+            }
+            Spacer(modifier = Modifier.height(12.dp))
+            ArtNouveauButton(
                 text = stringResource(R.string.back),
                 onClick = onBack,
-                variant = ButtonVariant.PRIMARY
+                modifier = Modifier.fillMaxWidth(),
+                variant = ButtonVariant.SECONDARY
             )
         } else {
             ArtNouveauButton(

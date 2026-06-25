@@ -72,7 +72,7 @@ export const interpretTarotReading = onCall({
 }, async (request) => {
   if (!request.auth) throw new HttpsError("unauthenticated", "Must be logged in");
 
-  const { topic, question, spreadType, drawnCards, zodiacSign, moonPhase, language, conversationHistory } = request.data;
+  const { topic, question, spreadType, drawnCards, zodiacSign, moonPhase, language, conversationHistory, readingHistory } = request.data;
 
   // F4: Input validation
   if (typeof topic !== "string" || topic.length === 0 || topic.length > 200) {
@@ -145,6 +145,17 @@ export const interpretTarotReading = onCall({
 
   const spreadGuide = spreadInstructions[spreadType] || "";
 
+  // Build reading history context when available
+  let historySection = "";
+  if (Array.isArray(readingHistory) && readingHistory.length > 0) {
+    const historyLines = (readingHistory as any[]).map((r: any, i: number) => {
+      const dateStr = r.date ? new Date(r.date).toLocaleDateString("cs-CZ") : "";
+      const summaryExcerpt = typeof r.summary === "string" ? r.summary.slice(0, 300) : "";
+      return `${i + 1}. [${dateStr}] ${r.spreadType ?? ""} — téma: ${r.topic ?? ""}\n   ${summaryExcerpt}`;
+    }).join("\n\n");
+    historySection = `\nQUERENT'S RECENT READING HISTORY (use this to identify patterns, growth, recurring themes — reference it naturally when relevant, don't repeat it verbatim):\n${historyLines}\n`;
+  }
+
   const userMessage = `SPREAD: ${spreadType}
 TOPIC: ${topic}
 ${question ? `QUESTION: ${question}` : "No specific question"}
@@ -152,7 +163,7 @@ ${zodiacSign ? `ZODIAC: ${zodiacSign}` : ""}
 ${moonPhase ? `MOON PHASE: ${moonPhase}` : ""}
 LANGUAGE: ${language}
 ${spreadGuide ? `\nSPREAD-SPECIFIC INSTRUCTIONS:\n${spreadGuide}` : ""}
-
+${historySection}
 CARDS DRAWN:
 ${cardDescriptions}`;
 
@@ -219,11 +230,20 @@ export const spendCoins = onCall({ invoker: "public" }, async (request) => {
     year_ahead: 10, shadow_self: 6, crossroads: 6, chakra: 7,
     twin_flame: 8, moon_cycle: 7, career_compass: 6, inner_child: 5,
     tree_of_life: 10, week_ahead: 5, karmic: 8, self_love: 6,
+    monthly_horoscope: 10,
     extra_card: 1,
   };
   const cost = costMap[readingType] || 1;
 
   const db = admin.firestore();
+
+  // Lifetime premium users skip coin deduction entirely
+  const premiumSnap = await db.collection("users").doc(userId)
+    .collection("premium").doc("status").get();
+  if (premiumSnap.exists && premiumSnap.data()?.isLifetime === true) {
+    return { lifetimePremium: true, newBalance: null };
+  }
+
   const coinRef = db.collection("users").doc(userId).collection("coins").doc("balance");
 
   return db.runTransaction(async (transaction) => {
@@ -313,6 +333,102 @@ export const generateDailyInsight = onCall({
   } catch (error) {
     console.error("Daily insight error:", error);
     return { insight: "" };
+  }
+});
+
+export const analyzeJournalEntry = onCall({
+  secrets: [openaiApiKey],
+  maxInstances: 5,
+  memory: "256MiB",
+  timeoutSeconds: 60,
+  invoker: "public",
+}, async (request) => {
+  if (!request.auth) throw new HttpsError("unauthenticated", "Must be logged in");
+
+  const { notes, recentReadings, language } = request.data;
+
+  if (typeof notes !== "string" || notes.trim().length === 0) {
+    throw new HttpsError("invalid-argument", "Notes must be a non-empty string");
+  }
+  if (notes.length > 2000) {
+    throw new HttpsError("invalid-argument", "Notes must be under 2000 characters");
+  }
+
+  // Rate limit — max 5 journal analyses per day
+  const db = admin.firestore();
+  const startOfDay = new Date();
+  startOfDay.setHours(0, 0, 0, 0);
+  const rateSnap = await db.collection("usage_logs")
+    .where("userId", "==", request.auth.uid)
+    .where("action", "==", "journal_analysis")
+    .where("timestamp", ">=", startOfDay)
+    .get();
+  if (rateSnap.size >= 5) {
+    throw new HttpsError("resource-exhausted", "Daily journal analysis limit reached (5 per day).");
+  }
+
+  // Build recent readings context
+  let readingsContext = "";
+  if (Array.isArray(recentReadings) && recentReadings.length > 0) {
+    const lines = (recentReadings as any[]).map((r: any, i: number) => {
+      const summaryExcerpt = typeof r.summary === "string" ? r.summary.slice(0, 250) : "";
+      return `${i + 1}. ${r.spreadType ?? ""} — téma: ${r.topic ?? ""}\n   ${summaryExcerpt}`;
+    }).join("\n\n");
+    readingsContext = `\nQUERENT'S RECENT READINGS:\n${lines}\n`;
+  }
+
+  const prompt = `You are Madame Stella — a deeply empathetic, poetic, and wise tarot reader and journal guide.
+
+The querent has shared the following personal journal notes written after their tarot reading:
+
+"${notes.trim()}"
+${readingsContext}
+Your task:
+1. Reflect back the emotional core of what the querent has written — show them you truly heard them (2-3 sentences)
+2. Identify 1-2 recurring patterns or themes you see across their notes AND recent readings (if provided)
+3. Offer one deeply insightful question for the querent to sit with — something that opens a door rather than closes one
+4. End with a short, empowering affirmation or poetic closing sentence
+
+Tone: warm, mystical, non-judgmental. Like a trusted wise friend who sees patterns the querent cannot yet see themselves.
+Length: 150-250 words.
+Language: ${language}`;
+
+  try {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${openaiApiKey.value()}`,
+      },
+      body: JSON.stringify({
+        model: "gpt-4o",
+        messages: [
+          { role: "system", content: "You are Madame Stella, a deeply empathetic and wise tarot reader and journal guide." },
+          { role: "user", content: prompt },
+        ],
+        max_tokens: 500,
+        temperature: 0.85,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new HttpsError("internal", "AI service returned an error");
+    }
+
+    const data = await response.json() as any;
+    const analysis = data.choices?.[0]?.message?.content || "";
+
+    // Log usage
+    await db.collection("usage_logs").add({
+      userId: request.auth.uid,
+      action: "journal_analysis",
+      timestamp: admin.firestore.FieldValue.serverTimestamp(),
+    });
+
+    return { analysis };
+  } catch (error: any) {
+    console.error("Journal analysis error:", error);
+    throw new HttpsError("internal", "Failed to analyze journal entry");
   }
 });
 

@@ -193,6 +193,16 @@ fun DailyCardScreen(
                                     textAlign = TextAlign.Center,
                                     modifier = Modifier.fillMaxWidth()
                                 )
+                                Text(
+                                    text = (if (dailyCard!!.isReversed) stringResource(R.string.reading_reversed)
+                                            else stringResource(R.string.reading_upright)).uppercase(),
+                                    style = MaterialTheme.typography.labelSmall,
+                                    color = if (dailyCard!!.isReversed) CardReversed else CardUpright,
+                                    textAlign = TextAlign.Center,
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .padding(top = 4.dp)
+                                )
                                 Spacer(modifier = Modifier.height(12.dp))
                                 Text(
                                     text = insight,

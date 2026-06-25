@@ -51,7 +51,22 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
     private val _uiState = MutableStateFlow(ReadingUiState())
     val uiState: StateFlow<ReadingUiState> = _uiState.asStateFlow()
     val coinBalance = coinRepo.coinBalance
+    val isLifetimePremium: StateFlow<Boolean> = coinRepo.isLifetimePremium
     private val coinSpendMutex = Mutex()
+
+    private val _journalAnalysis = MutableStateFlow<String?>(null)
+    val journalAnalysis: StateFlow<String?> = _journalAnalysis.asStateFlow()
+    private val _isAnalyzingJournal = MutableStateFlow(false)
+    val isAnalyzingJournal: StateFlow<Boolean> = _isAnalyzingJournal.asStateFlow()
+
+    init {
+        coinRepo.startListening()
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        coinRepo.stopListening()
+    }
 
     fun setTopic(topic: String) {
         _uiState.update { it.copy(topic = topic) }
@@ -83,7 +98,13 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
             coinSpendMutex.withLock {
                 val spread = _uiState.value.spread
                 if (_uiState.value.coinSpent) {
-                    // Already spent — just draw cards
+                    val cards = CardUtils.drawCards(spread, getApplication())
+                    _uiState.update { it.copy(drawnCards = cards, revealedCardIndices = emptySet()) }
+                    return@withLock
+                }
+                // Lifetime premium users skip coin spending
+                if (coinRepo.isLifetimePremium.value) {
+                    _uiState.update { it.copy(coinSpent = true) }
                     val cards = CardUtils.drawCards(spread, getApplication())
                     _uiState.update { it.copy(drawnCards = cards, revealedCardIndices = emptySet()) }
                     return@withLock
@@ -120,6 +141,18 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
             (0 until spreadCount).all { it in state.revealedCardIndices }
     }.stateIn(viewModelScope, SharingStarted.Lazily, false)
 
+    private suspend fun buildReadingHistory(): List<Map<String, String>> {
+        val uid = auth.currentUser?.uid ?: return emptyList()
+        return db.readingDao().getRecentReadings(uid, 5).map { r ->
+            mapOf(
+                "spreadType" to r.spreadType,
+                "topic" to r.topic,
+                "date" to r.timestamp.toString(),
+                "summary" to r.aiInterpretation.take(400)
+            )
+        }
+    }
+
     fun requestInterpretation() {
         viewModelScope.launch {
             _uiState.update { it.copy(isInterpreting = true, error = null) }
@@ -128,6 +161,7 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
                 val zodiac = settingsManager.zodiacSignFlow.first()
                 val language = LocaleUtils.getCurrentLanguage(getApplication())
                 val moonPhase = AstroUtils.getCurrentMoonPhase().name
+                val history = buildReadingHistory()
 
                 val interpretation = functionsClient.interpretTarotReading(
                     topic = state.topic,
@@ -136,7 +170,8 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
                     drawnCards = state.drawnCards,
                     zodiacSign = zodiac,
                     moonPhase = moonPhase,
-                    language = language
+                    language = language,
+                    readingHistory = history
                 )
                 val userId = auth.currentUser?.uid ?: run {
                     _uiState.update { it.copy(isInterpreting = false, error = "NOT_AUTHENTICATED") }
@@ -258,5 +293,38 @@ class ReadingViewModel(application: Application) : AndroidViewModel(application)
 
     fun resetReading() {
         _uiState.value = ReadingUiState()
+    }
+
+    suspend fun getFirstCardImageRes(): String? {
+        val cardId = _uiState.value.drawnCards.firstOrNull()?.cardId ?: return null
+        return db.tarotCardDao().getCardById(cardId)?.imageRes
+    }
+
+    fun saveNotes(readingId: String, notes: String) {
+        viewModelScope.launch {
+            db.readingDao().updateNotes(readingId, notes)
+        }
+    }
+
+    fun analyzeJournalNotes(notes: String) {
+        viewModelScope.launch {
+            _isAnalyzingJournal.value = true
+            _journalAnalysis.value = null
+            try {
+                val language = LocaleUtils.getCurrentLanguage(getApplication())
+                val recentReadings = buildReadingHistory()
+                val analysis = functionsClient.analyzeJournalEntry(notes, recentReadings, language)
+                _journalAnalysis.value = analysis
+            } catch (e: Exception) {
+                Log.e("ReadingVM", "Journal analysis failed: ${e.message}", e)
+                _journalAnalysis.value = null
+            } finally {
+                _isAnalyzingJournal.value = false
+            }
+        }
+    }
+
+    fun clearJournalAnalysis() {
+        _journalAnalysis.value = null
     }
 }

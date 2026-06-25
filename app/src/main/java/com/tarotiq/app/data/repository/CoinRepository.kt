@@ -4,6 +4,7 @@ import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ListenerRegistration
+import com.google.firebase.firestore.Source
 import com.tarotiq.app.domain.model.CoinBalance
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -22,11 +23,14 @@ class CoinRepository {
     private val _coinBalance = MutableStateFlow(CoinBalance())
     val coinBalance: StateFlow<CoinBalance> = _coinBalance.asStateFlow()
 
+    private val _isLifetimePremium = MutableStateFlow(false)
+    val isLifetimePremium: StateFlow<Boolean> = _isLifetimePremium.asStateFlow()
+
     private var listenerRegistration: ListenerRegistration? = null
+    private var premiumListenerRegistration: ListenerRegistration? = null
 
     fun startListening() {
         val userId = auth.currentUser?.uid ?: return
-        // Prevent duplicate listeners
         if (listenerRegistration != null) return
 
         listenerRegistration = firestore.collection("users").document(userId)
@@ -45,18 +49,30 @@ class CoinRepository {
                     )
                 }
             }
+
+        premiumListenerRegistration = firestore.collection("users").document(userId)
+            .collection("premium").document("status")
+            .addSnapshotListener { snapshot, error ->
+                if (error != null) {
+                    Log.e(TAG, "Error listening to premium status", error)
+                    return@addSnapshotListener
+                }
+                _isLifetimePremium.value = snapshot?.getBoolean("isLifetime") ?: false
+            }
     }
 
     fun stopListening() {
         listenerRegistration?.remove()
         listenerRegistration = null
+        premiumListenerRegistration?.remove()
+        premiumListenerRegistration = null
     }
 
     suspend fun initializeCoinDocument() {
         val userId = auth.currentUser?.uid ?: return
         val coinRef = firestore.collection("users").document(userId)
             .collection("coins").document("balance")
-        val doc = coinRef.get().await()
+        val doc = try { coinRef.get(Source.SERVER).await() } catch (_: Exception) { coinRef.get().await() }
         if (!doc.exists()) {
             coinRef.set(mapOf(
                 "balance" to 0,

@@ -5,16 +5,23 @@ import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.slideInVertically
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.AutoAwesome
+import androidx.compose.material.icons.filled.CheckCircle
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
@@ -23,6 +30,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.analytics.ktx.logEvent
+import com.google.firebase.ktx.Firebase
 import com.tarotiq.app.R
 import com.tarotiq.app.data.billing.PurchaseState
 import com.tarotiq.app.ui.components.*
@@ -38,6 +48,8 @@ fun CoinShopScreen(
     val coinPacks by coinShopViewModel.coinPacks.collectAsState()
     val purchaseState by coinShopViewModel.purchaseState.collectAsState()
     val coinBalance by coinShopViewModel.coinBalance.collectAsState()
+    val lifetimePack by coinShopViewModel.lifetimePack.collectAsState()
+    val isLifetimePremium by coinShopViewModel.isLifetimePremium.collectAsState()
     val context = LocalContext.current
     val activity = context as? Activity
 
@@ -52,7 +64,10 @@ fun CoinShopScreen(
         MysticBackground(modifier = Modifier.fillMaxSize())
 
         var screenVisible by remember { mutableStateOf(false) }
-        LaunchedEffect(Unit) { screenVisible = true }
+        LaunchedEffect(Unit) {
+            screenVisible = true
+            Firebase.analytics.logEvent("shop_opened") {}
+        }
         AnimatedVisibility(
             visible = screenVisible,
             enter = fadeIn(tween(600)) + slideInVertically(tween(600)) { it / 16 }
@@ -88,6 +103,121 @@ fun CoinShopScreen(
                     }
                 }
                 Spacer(modifier = Modifier.height(32.dp))
+
+                // Lifetime Premium card
+                if (isLifetimePremium) {
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 8.dp)
+                            .clip(RoundedCornerShape(20.dp))
+                            .background(
+                                Brush.linearGradient(listOf(
+                                    Color(0xFF2D1B69), Color(0xFF1A0A3A), Color(0xFF2D1B69)
+                                ))
+                            )
+                            .border(2.dp, CelestialGold.copy(alpha = 0.6f), RoundedCornerShape(20.dp))
+                    ) {
+                        Column(
+                            modifier = Modifier.padding(24.dp),
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Icon(Icons.Default.Star, null, tint = CelestialGold, modifier = Modifier.size(24.dp))
+                                Spacer(modifier = Modifier.width(8.dp))
+                                Text(
+                                    stringResource(R.string.lifetime_active),
+                                    style = MaterialTheme.typography.titleLarge.copy(
+                                        fontFamily = NewsreaderFamily, fontWeight = FontWeight.Bold
+                                    ),
+                                    color = CelestialGold
+                                )
+                                Spacer(modifier = Modifier.width(8.dp))
+                                Icon(Icons.Default.Star, null, tint = CelestialGold, modifier = Modifier.size(24.dp))
+                            }
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Text(
+                                stringResource(R.string.lifetime_active_desc),
+                                style = MaterialTheme.typography.bodyMedium.copy(fontFamily = ManropeFamily),
+                                color = MoonSilver,
+                                textAlign = TextAlign.Center
+                            )
+                        }
+                    }
+                    Spacer(modifier = Modifier.height(16.dp))
+                } else if (lifetimePack != null) {
+                    val pack = lifetimePack!!
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 8.dp)
+                            .clip(RoundedCornerShape(20.dp))
+                            .background(
+                                Brush.linearGradient(listOf(
+                                    Color(0xFF2D1B69), Color(0xFF1A0A3A), Color(0xFF2D1B69)
+                                ))
+                            )
+                            .border(2.dp, CelestialGold.copy(alpha = 0.5f), RoundedCornerShape(20.dp))
+                    ) {
+                        Column(modifier = Modifier.padding(24.dp)) {
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                Icon(Icons.Default.AutoAwesome, null, tint = CelestialGold, modifier = Modifier.size(28.dp))
+                                Spacer(modifier = Modifier.width(12.dp))
+                                Column(modifier = Modifier.weight(1f)) {
+                                    Text(
+                                        stringResource(R.string.lifetime_title),
+                                        style = MaterialTheme.typography.titleLarge.copy(
+                                            fontFamily = NewsreaderFamily, fontWeight = FontWeight.Bold
+                                        ),
+                                        color = CelestialGold
+                                    )
+                                    Text(
+                                        stringResource(R.string.lifetime_desc),
+                                        style = MaterialTheme.typography.bodySmall.copy(fontFamily = ManropeFamily),
+                                        color = MoonSilver
+                                    )
+                                }
+                            }
+                            Spacer(modifier = Modifier.height(16.dp))
+                            val features = listOf(
+                                stringResource(R.string.lifetime_feature_1),
+                                stringResource(R.string.lifetime_feature_2),
+                                stringResource(R.string.lifetime_feature_3),
+                                stringResource(R.string.lifetime_feature_4),
+                                stringResource(R.string.lifetime_feature_5)
+                            )
+                            features.forEach { feature ->
+                                Row(
+                                    modifier = Modifier.padding(vertical = 3.dp),
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    Icon(Icons.Default.CheckCircle, null, tint = SuccessEmerald, modifier = Modifier.size(16.dp))
+                                    Spacer(modifier = Modifier.width(8.dp))
+                                    Text(feature, style = MaterialTheme.typography.bodySmall.copy(fontFamily = ManropeFamily), color = StarWhite)
+                                }
+                            }
+                            Spacer(modifier = Modifier.height(20.dp))
+                            ArtNouveauButton(
+                                text = "${stringResource(R.string.lifetime_buy)} — ${pack.formattedPrice.ifEmpty { "4 499 Kč" }}",
+                                onClick = { activity?.let { coinShopViewModel.purchaseLifetime(it) } },
+                                modifier = Modifier.fillMaxWidth(),
+                                variant = ButtonVariant.PRIMARY
+                            )
+                        }
+                    }
+                    Spacer(modifier = Modifier.height(24.dp))
+                    HorizontalDivider(color = AstralPurple.copy(alpha = 0.3f))
+                    Spacer(modifier = Modifier.height(16.dp))
+                    Text(
+                        stringResource(R.string.coins_buy).uppercase(),
+                        style = MaterialTheme.typography.labelLarge.copy(fontFamily = SpaceGroteskFamily, letterSpacing = 2.sp),
+                        color = MoonSilver.copy(alpha = 0.6f)
+                    )
+                    Spacer(modifier = Modifier.height(12.dp))
+                }
 
                 // Coin packs
                 coinPacks.forEach { pack ->

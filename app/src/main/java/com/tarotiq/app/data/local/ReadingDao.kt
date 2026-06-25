@@ -30,6 +30,12 @@ interface ReadingDao {
     @Query("SELECT COUNT(DISTINCT spreadType) FROM tarot_readings WHERE userId = :userId")
     suspend fun getDistinctSpreadCount(userId: String): Int
 
+    @Query("UPDATE tarot_readings SET userNotes = :notes WHERE id = :id")
+    suspend fun updateNotes(id: String, notes: String)
+
+    @Query("SELECT * FROM tarot_readings WHERE userId = :userId ORDER BY timestamp DESC LIMIT :limit")
+    suspend fun getRecentReadings(userId: String, limit: Int): List<TarotReading>
+
     @Query("DELETE FROM tarot_readings WHERE userId = :userId")
     suspend fun deleteAllByUser(userId: String)
 }

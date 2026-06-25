@@ -226,6 +226,39 @@ fun ReadingDetailScreen(
                             )
                         }
 
+                        // ── Personal notes (journal) ──
+                        if (!r.userNotes.isNullOrBlank()) {
+                            Spacer(modifier = Modifier.height(16.dp))
+                            Text(
+                                text = stringResource(R.string.journal_notes_label).uppercase(),
+                                style = MaterialTheme.typography.labelSmall.copy(
+                                    fontFamily = SpaceGroteskFamily,
+                                    letterSpacing = 2.sp
+                                ),
+                                color = CelestialGold.copy(alpha = 0.7f),
+                                modifier = Modifier.padding(bottom = 6.dp)
+                            )
+                            Box(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .background(
+                                        AstralPurple.copy(alpha = 0.07f),
+                                        RoundedCornerShape(12.dp)
+                                    )
+                                    .padding(14.dp)
+                            ) {
+                                Text(
+                                    text = r.userNotes,
+                                    style = MaterialTheme.typography.bodyMedium.copy(
+                                        fontFamily = ManropeFamily,
+                                        fontStyle = androidx.compose.ui.text.font.FontStyle.Italic,
+                                        lineHeight = 22.sp
+                                    ),
+                                    color = StarWhite.copy(alpha = 0.85f)
+                                )
+                            }
+                        }
+
                         Spacer(modifier = Modifier.height(24.dp))
 
                         // ── Action buttons ──

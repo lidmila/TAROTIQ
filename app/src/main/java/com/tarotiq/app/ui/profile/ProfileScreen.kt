@@ -26,12 +26,15 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.coroutines.launch
 import com.tarotiq.app.R
 import com.tarotiq.app.domain.model.Achievement
 import com.tarotiq.app.domain.model.AchievementDef
 import com.tarotiq.app.ui.components.*
 import com.tarotiq.app.ui.theme.*
+import com.tarotiq.app.data.preferences.SettingsManager
 import com.tarotiq.app.utils.LocaleUtils
+import com.tarotiq.app.worker.ReminderScheduler
 import com.tarotiq.app.viewmodel.AuthViewModel
 import com.tarotiq.app.viewmodel.ProfileViewModel
 
@@ -57,6 +60,10 @@ fun ProfileScreen(
     var showZodiacDialog by remember { mutableStateOf(false) }
     var showLogoutDialog by remember { mutableStateOf(false) }
     var showDeleteDialog by remember { mutableStateOf(false) }
+    val settingsManager = remember { SettingsManager(context) }
+    val scope = rememberCoroutineScope()
+    val notificationsEnabled by settingsManager.notificationEnabledFlow.collectAsState(initial = true)
+    val notificationTime by settingsManager.notificationTimeFlow.collectAsState(initial = "07:00")
 
     val zodiacSigns = listOf("aries","taurus","gemini","cancer","leo","virgo","libra","scorpio","sagittarius","capricorn","aquarius","pisces")
     val zodiacResMap = mapOf(
@@ -184,6 +191,95 @@ fun ProfileScreen(
                                         selectedLabelColor = StarWhite
                                     )
                                 )
+                            }
+                        }
+                    }
+                }
+                Spacer(modifier = Modifier.height(14.dp))
+
+                // Notifications
+                ArtNouveauFrame(modifier = Modifier.fillMaxWidth(), frameStyle = FrameStyle.SIMPLE) {
+                    Column(modifier = Modifier.padding(18.dp)) {
+                        Text(
+                            stringResource(R.string.profile_notifications),
+                            style = MaterialTheme.typography.headlineSmall.copy(fontSize = 18.sp),
+                            color = CelestialGold
+                        )
+                        Spacer(modifier = Modifier.height(12.dp))
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Column(modifier = Modifier.weight(1f)) {
+                                Text(
+                                    stringResource(R.string.notification_daily_title),
+                                    style = MaterialTheme.typography.bodyMedium.copy(fontFamily = ManropeFamily),
+                                    color = StarWhite
+                                )
+                                Text(
+                                    stringResource(R.string.notification_daily_text),
+                                    style = MaterialTheme.typography.bodySmall.copy(fontFamily = ManropeFamily),
+                                    color = MoonSilver.copy(alpha = 0.7f)
+                                )
+                            }
+                            Switch(
+                                checked = notificationsEnabled,
+                                onCheckedChange = { enabled ->
+                                    scope.launch {
+                                        settingsManager.setNotificationEnabled(enabled)
+                                        if (enabled) {
+                                            ReminderScheduler.schedule(context, notificationTime)
+                                        } else {
+                                            ReminderScheduler.cancel(context)
+                                        }
+                                    }
+                                },
+                                colors = SwitchDefaults.colors(
+                                    checkedThumbColor = CelestialGold,
+                                    checkedTrackColor = AstralPurple
+                                )
+                            )
+                        }
+                        if (notificationsEnabled) {
+                            Spacer(modifier = Modifier.height(14.dp))
+                            Text(
+                                stringResource(R.string.profile_notification_time),
+                                style = MaterialTheme.typography.labelMedium.copy(
+                                    fontFamily = SpaceGroteskFamily,
+                                    letterSpacing = 1.sp
+                                ),
+                                color = MoonSilver
+                            )
+                            Spacer(modifier = Modifier.height(8.dp))
+                            val timeOptions = listOf("06:00", "07:00", "08:00", "09:00", "20:00", "21:00")
+                            FlowRow(
+                                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                                verticalArrangement = Arrangement.spacedBy(8.dp)
+                            ) {
+                                timeOptions.forEach { time ->
+                                    FilterChip(
+                                        selected = notificationTime == time,
+                                        onClick = {
+                                            scope.launch {
+                                                settingsManager.setNotificationTime(time)
+                                                ReminderScheduler.schedule(context, time)
+                                            }
+                                        },
+                                        label = {
+                                            Text(
+                                                time,
+                                                style = MaterialTheme.typography.labelMedium.copy(
+                                                    fontFamily = SpaceGroteskFamily
+                                                )
+                                            )
+                                        },
+                                        colors = FilterChipDefaults.filterChipColors(
+                                            selectedContainerColor = AstralPurple,
+                                            selectedLabelColor = StarWhite
+                                        )
+                                    )
+                                }
                             }
                         }
                     }

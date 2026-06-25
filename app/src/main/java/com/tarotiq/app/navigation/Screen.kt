@@ -58,4 +58,7 @@ sealed class Screen(val route: String) {
     object FAQ : Screen("faq")
     object About : Screen("about")
     object Contact : Screen("contact")
+
+    // Challenge Journeys
+    object ChallengeList : Screen("challenges")
 }

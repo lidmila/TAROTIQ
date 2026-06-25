@@ -61,6 +61,8 @@ import com.tarotiq.app.ui.library.CardDetailScreen
 import com.tarotiq.app.ui.library.CardLibraryScreen
 import com.tarotiq.app.ui.onboarding.OnboardingScreen
 import com.tarotiq.app.ui.profile.ProfileScreen
+import com.tarotiq.app.ui.challenge.ChallengeListScreen
+import com.tarotiq.app.ui.components.WelcomeOfferDialog
 import com.tarotiq.app.ui.reading.*
 import com.tarotiq.app.ui.shop.CoinShopScreen
 import com.tarotiq.app.ui.theme.AstralPurple
@@ -69,6 +71,7 @@ import com.tarotiq.app.ui.theme.CosmicDeep
 import com.tarotiq.app.ui.theme.SpaceGroteskFamily
 import com.tarotiq.app.ui.theme.MoonSilver
 import com.tarotiq.app.ui.theme.VoidBlack
+import com.tarotiq.app.data.billing.CoinBillingRepository
 import com.tarotiq.app.viewmodel.AuthViewModel
 import com.tarotiq.app.viewmodel.ReadingViewModel
 import kotlinx.coroutines.delay
@@ -92,9 +95,6 @@ fun AppNavigation(
 
     LaunchedEffect(Unit) { interstitialAdManager.preload() }
 
-    val trackAction: () -> Unit = remember {
-        { actionCount++; if (actionCount % 5 == 0 && activity != null) interstitialAdManager.showIfReady(activity) }
-    }
 
     // Achievement popup + in-app review trigger
     var unlockedAchievement by remember { mutableStateOf<AchievementDef?>(null) }
@@ -128,6 +128,14 @@ fun AppNavigation(
 
     // Shared reading ViewModel
     val readingViewModel: ReadingViewModel = viewModel()
+    val isLifetimePremium by readingViewModel.isLifetimePremium.collectAsState()
+
+    val trackAction: () -> Unit = {
+        if (!isLifetimePremium) {
+            actionCount++
+            if (actionCount % 3 == 0 && activity != null) interstitialAdManager.showIfReady(activity)
+        }
+    }
 
     // Increment open count once per session
     var countIncremented by remember { mutableStateOf(false) }
@@ -142,12 +150,26 @@ fun AppNavigation(
             val currentVersion = BuildConfig.VERSION_NAME
             val seenVersion = settingsManager.getSeenWhatsNewVersion()
             if (seenVersion != currentVersion) {
-                // Only show for existing users (appOpenCount > 1 means they used the app before this update)
                 val opens = settingsManager.appOpenCountFlow.first()
                 if (opens > 1) {
                     showWhatsNew = true
                 }
                 settingsManager.setSeenWhatsNewVersion(currentVersion)
+            }
+        }
+    }
+
+    // Welcome offer — shown after first completed reading if not yet shown
+    var showWelcomeOffer by remember { mutableStateOf(false) }
+    val billingRepo = remember { CoinBillingRepository.getInstance(context) }
+    val readingsCompleted by settingsManager.readingsCompletedFlow.collectAsState(initial = 0)
+    LaunchedEffect(isAuthenticated, readingsCompleted) {
+        if (isAuthenticated && readingsCompleted >= 1) {
+            val alreadyShown = settingsManager.isWelcomeOfferShown()
+            if (!alreadyShown) {
+                delay(1500)
+                showWelcomeOffer = true
+                settingsManager.setWelcomeOfferShown()
             }
         }
     }
@@ -269,7 +291,9 @@ fun AppNavigation(
                         onNavigateToCoinShop = { navController.navigate(Screen.CoinShop.route) },
                         onNavigateToQuickReading = { spreadType -> readingViewModel.resetReading(); readingViewModel.setSpread(ReadingSpread.fromKey(spreadType)); readingViewModel.setTopic("general")
                             navController.navigate(Screen.CardDrawing.createRoute("general", spreadType)) },
-                        onNavigateToLibrary = { navController.navigate(Screen.CardLibrary.route) }
+                        onNavigateToLibrary = { navController.navigate(Screen.CardLibrary.route) },
+                        onNavigateToChallenges = { navController.navigate(Screen.ChallengeList.route) },
+                        isLifetimePremium = isLifetimePremium
                     )
                 }
 
@@ -344,6 +368,7 @@ fun AppNavigation(
                         onDone = { navController.navigate("reading/summary/temp") },
                         onBack = { navController.popBackStack() },
                         onBuyExtraCard = { navController.navigate("reading/extra_card_picker") },
+                        onNavigateToShop = { navController.navigate(Screen.CoinShop.route) },
                         readingViewModel = readingViewModel
                     )
                 }
@@ -366,7 +391,14 @@ fun AppNavigation(
                     navArgument("readingId") { type = NavType.StringType }
                 )) {
                     ReadingSummaryScreen(
-                        onDone = { navController.navigate(Screen.Home.route) { popUpTo(Screen.Home.route) { inclusive = true } } },
+                        onDone = {
+                            val navigate = { navController.navigate(Screen.Home.route) { popUpTo(Screen.Home.route) { inclusive = true } } }
+                            if (!isLifetimePremium && activity != null) {
+                                interstitialAdManager.showIfReady(activity) { navigate() }
+                            } else {
+                                navigate()
+                            }
+                        },
                         readingViewModel = readingViewModel
                     )
                 }
@@ -430,12 +462,26 @@ fun AppNavigation(
                 composable(Screen.FAQ.route) { FAQScreen(onBack = { navController.popBackStack() }) }
                 composable(Screen.About.route) { AboutScreen(onBack = { navController.popBackStack() }) }
                 composable(Screen.Contact.route) { ContactScreen(onBack = { navController.popBackStack() }) }
+
+                // Challenge Journeys
+                composable(Screen.ChallengeList.route) {
+                    ChallengeListScreen(onBack = { navController.popBackStack() })
+                }
             }
         }
 
         // What's New dialog
         if (showWhatsNew) {
             WhatsNewDialog(onDismiss = { showWhatsNew = false })
+        }
+
+        // Welcome offer popup — after first reading
+        if (showWelcomeOffer) {
+            WelcomeOfferDialog(
+                onDismiss = { showWelcomeOffer = false },
+                onBuyCoins = { act -> billingRepo.launchPurchase(act, "tarotiq_coins_15"); showWelcomeOffer = false },
+                onBuyLifetime = { act -> billingRepo.launchPurchase(act, "lifetime_premium_offer"); showWelcomeOffer = false }
+            )
         }
 
         // Achievement unlock overlay

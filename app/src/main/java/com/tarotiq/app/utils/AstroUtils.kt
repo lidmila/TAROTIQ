@@ -5,6 +5,46 @@ import kotlin.math.*
 
 object AstroUtils {
 
+    data class MercuryInfo(
+        val isRetrograde: Boolean,
+        val endDateStr: String? = null,
+        val nextStartStr: String? = null
+    )
+
+    fun getMercuryInfo(): MercuryInfo {
+        // Known retrograde periods as YYYYMMDD ints for fast comparison
+        val periods = listOf(
+            20250315 to 20250407,
+            20250718 to 20250811,
+            20251109 to 20251129,
+            20260302 to 20260325,
+            20260629 to 20260723,
+            20261016 to 20261107,
+            20270212 to 20270306,
+            20270610 to 20270704,
+            20270929 to 20271022
+        )
+        val cal = Calendar.getInstance()
+        val today = cal.get(Calendar.YEAR) * 10000 +
+                (cal.get(Calendar.MONTH) + 1) * 100 +
+                cal.get(Calendar.DAY_OF_MONTH)
+
+        for ((start, end) in periods) {
+            if (today in start..end) {
+                val m = (end / 100) % 100
+                val d = end % 100
+                return MercuryInfo(isRetrograde = true, endDateStr = "$d.$m.")
+            }
+        }
+        val next = periods.firstOrNull { (start, _) -> today < start }
+        if (next != null) {
+            val m = (next.first / 100) % 100
+            val d = next.first % 100
+            return MercuryInfo(isRetrograde = false, nextStartStr = "$d.$m.")
+        }
+        return MercuryInfo(isRetrograde = false)
+    }
+
     enum class MoonPhase(val emoji: String) {
         NEW_MOON("\uD83C\uDF11"),
         WAXING_CRESCENT("\uD83C\uDF12"),

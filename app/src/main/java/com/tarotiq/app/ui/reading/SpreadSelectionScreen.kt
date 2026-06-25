@@ -134,6 +134,12 @@ private val spreadOptions = listOf(
         nameRes = R.string.spread_self_love,
         descRes = R.string.spread_self_love_desc,
         imageRes = R.drawable.love
+    ),
+    SpreadOption(
+        spread = ReadingSpread.MONTHLY_HOROSCOPE,
+        nameRes = R.string.spread_monthly_horoscope,
+        descRes = R.string.spread_monthly_horoscope_desc,
+        imageRes = R.drawable.lunar
     )
 )
 
@@ -364,15 +370,6 @@ private fun SpreadOptionCard(
                     contentDescription = null,
                     modifier = Modifier.size(40.dp),
                     contentScale = ContentScale.Fit
-                )
-                Spacer(modifier = Modifier.height(4.dp))
-                Text(
-                    text = "${option.spread.cardCount}",
-                    style = MaterialTheme.typography.labelSmall.copy(
-                        fontFamily = SpaceGroteskFamily,
-                        letterSpacing = 2.sp
-                    ),
-                    color = MoonSilver
                 )
             }
 

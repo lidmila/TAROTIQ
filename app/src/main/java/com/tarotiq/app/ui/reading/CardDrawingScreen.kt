@@ -86,6 +86,7 @@ fun CardDrawingScreen(
                                 ReadingSpread.WEEK_AHEAD -> stringResource(R.string.spread_week_ahead)
                                 ReadingSpread.KARMIC -> stringResource(R.string.spread_karmic)
                                 ReadingSpread.SELF_LOVE -> stringResource(R.string.spread_self_love)
+                                ReadingSpread.MONTHLY_HOROSCOPE -> stringResource(R.string.spread_monthly_horoscope)
                             },
                             style = MaterialTheme.typography.headlineMedium.copy(
                                 fontFamily = NewsreaderFamily,
@@ -505,22 +506,31 @@ private fun ThreeCardLayout(
     onReveal: (Int) -> Unit,
     context: android.content.Context
 ) {
-    Row(
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
-        verticalAlignment = Alignment.CenterVertically
-    ) {
-        uiState.drawnCards.forEachIndexed { index, card ->
-            FlippableCard(
-                cardId = card.cardId,
-                isReversed = card.isReversed,
-                positionLabel = card.positionMeaning,
-                isRevealed = index in uiState.revealedCardIndices,
-                onReveal = { onReveal(index) },
-                context = context,
-                cardWidth = 100,
-                cardHeight = 150,
-                levitationIndex = index
-            )
+    val cardCount = uiState.drawnCards.size.coerceAtLeast(1)
+    val gapDp = 12
+    BoxWithConstraints(modifier = Modifier.fillMaxWidth()) {
+        val availablePx = maxWidth.value
+        val totalGaps = (cardCount - 1) * gapDp
+        val cardWidth = ((availablePx - totalGaps) / cardCount).toInt().coerceIn(72, 100)
+        val cardHeight = (cardWidth * 1.5f).toInt()
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(gapDp.dp, Alignment.CenterHorizontally),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            uiState.drawnCards.forEachIndexed { index, card ->
+                FlippableCard(
+                    cardId = card.cardId,
+                    isReversed = card.isReversed,
+                    positionLabel = card.positionMeaning,
+                    isRevealed = index in uiState.revealedCardIndices,
+                    onReveal = { onReveal(index) },
+                    context = context,
+                    cardWidth = cardWidth,
+                    cardHeight = cardHeight,
+                    levitationIndex = index
+                )
+            }
         }
     }
 }

@@ -457,7 +457,10 @@
 
     <!-- ReadingInterpretation errors -->
     <string name="error_insufficient_coins_title">Nedostatek mincí</string>
-    <string name="error_insufficient_coins_desc">Nemáte dostatek mincí pro tento výklad. Kupte si mince nebo sledujte reklamu pro získání mince zdarma.</string>
+    <string name="error_insufficient_coins_desc">Pro toto čtení potřebujete více mincí. Doplňte zásobu a odkryjte vzkazy, které pro vás karty mají.</string>
+    <string name="coins_buy_now">KOUPIT MINCE</string>
+    <string name="ad_watch_for_coin">ZHLÉDNI REKLAMU (+1 MINCE)</string>
+    <string name="ad_loading">Načítám reklamu…</string>
     <string name="error_no_internet_title">Žádné připojení</string>
     <string name="error_no_internet_desc">Zkontrolujte připojení k internetu a zkuste to znovu.</string>
     <string name="error_timeout_title">Časový limit vypršel</string>
@@ -478,6 +481,15 @@
 
     <!-- About -->
     <string name="about_description">Váš mystický AI tarot čtenář.\nObjevte vhledy skrze starobylé umění tarotu, poháněné moderní AI.\n\nTAROTIQ kombinuje staletí tarotové moudrosti s nejmodernější technologií pro personalizované, interaktivní výklady.</string>
+
+    <!-- Rating Gate -->
+    <string name="rating_title">Bylo čtení pro vás přínosné?</string>
+    <string name="rating_subtitle">Vaše hodnocení pomáhá dalším hledačům nalézt TarotIQ.</string>
+    <string name="rating_submit_positive">OHODNOTIT NA GOOGLE PLAY</string>
+    <string name="rating_submit_negative">NAPSAT NÁM ZPĚTNOU VAZBU</string>
+    <string name="rating_skip">Teď ne</string>
+    <string name="rating_thanks">Děkujeme!</string>
+    <string name="rating_thanks_desc">Vaše podpora znamená pro nás celý svět. ✨</string>
 
     <!-- General -->
     <string name="ok">OK</string>
@@ -603,4 +615,116 @@
     <string name="faq_a4">Tarot je nástroj pro introspekci a osobní rozvoj. Výklady jsou generovány AI a slouží jako inspirace, nikoli jako definitivní předpovědi budoucnosti.</string>
     <string name="faq_q5">Mohu se ptát na doplňující otázky?</string>
     <string name="faq_a5">Ano! Po každém výkladu se můžete Madame Stelly zeptat na cokoliv dalšího ohledně vašich karet — bez dalších nákladů.</string>
+
+    <!-- Monthly Horoscope Spread -->
+    <string name="spread_monthly_horoscope">Měsíční horoskop</string>
+    <string name="spread_monthly_horoscope_desc">12 karet · Kompletní průvodce nadcházejícím měsícem</string>
+    <string name="position_month_theme">Hlavní téma měsíce</string>
+    <string name="position_month_love">Láska a vztahy</string>
+    <string name="position_month_career">Kariéra</string>
+    <string name="position_month_finances">Finance</string>
+    <string name="position_month_health">Zdraví a vitalita</string>
+    <string name="position_month_spirituality">Duchovní růst</string>
+    <string name="position_month_family">Rodina a domov</string>
+    <string name="position_month_growth">Osobní rozvoj</string>
+    <string name="position_month_challenges">Výzvy a překážky</string>
+    <string name="position_month_opportunities">Příležitosti</string>
+    <string name="position_month_hidden">Skrytý vliv</string>
+    <string name="position_month_message">Poselství měsíce</string>
+
+    <!-- Mercury Retrograde -->
+    <string name="mercury_retrograde">MERKUR RETROGRÁDNÍ</string>
+    <string name="mercury_direct">Merkur přímý</string>
+    <string name="mercury_retrograde_until">Retrográdní do %s</string>
+    <string name="mercury_direct_next">Příší retrograce: %s</string>
+    <string name="mercury_retrograde_warning">Pozor na komunikaci, technika a smlouvy. Vyhněte se důležitým rozhodnutím.</string>
+    <string name="mercury_direct_desc">Vhodný čas pro jasnou komunikaci a nové začátky.</string>
+
+    <!-- Tarot Journal / Notes -->
+    <string name="journal_notes_label">Osobní poznámky</string>
+    <string name="journal_notes_hint">Zaznamenejte své pocity, intuitivní dojmy nebo synchronicity…</string>
+    <string name="journal_notes_saved">Poznámka uložena</string>
+    <string name="journal_save_notes">ULOŽIT POZNÁMKU</string>
+
+    <!-- Share Reading -->
+    <string name="share_reading">SDÍLET VÝKLAD</string>
+
+    <!-- Lifetime Premium -->
+    <string name="lifetime_title">Doživotní přístup</string>
+    <string name="lifetime_desc">Neomezené výklady navždy. Žádné mince, žádné limity.</string>
+    <string name="lifetime_feature_1">✦ Neomezené výklady všech 17 rozložení</string>
+    <string name="lifetime_feature_2">✦ Prioritní AI interpretace od Madame Stelly</string>
+    <string name="lifetime_feature_3">✦ Přístup ke všem budoucím rozložením zdarma</string>
+    <string name="lifetime_feature_4">✦ Exkluzivní VIP status navždy</string>
+    <string name="lifetime_feature_5">✦ Žádné reklamy</string>
+    <string name="lifetime_buy">TO CHCI</string>
+    <string name="lifetime_price">4 499 Kč jednorázově</string>
+    <string name="lifetime_badge">NEJLEPŠÍ VOLBA</string>
+    <string name="lifetime_active">✓ Doživotní přístup aktivní</string>
+    <string name="lifetime_active_desc">Užívejte neomezené výklady navždy.</string>
+
+    <!-- Welcome Offer Dialog -->
+    <string name="welcome_offer_title">Kosmická iniciace</string>
+    <string name="welcome_offer_subtitle">Karty vám ukázaly cestu — vstoupíte dál?</string>
+    <string name="welcome_offer_timer">Nabídka vyprší za</string>
+    <string name="welcome_offer_skip">Teď ne</string>
+    <string name="welcome_offer_tier1_title">Hvězdný balík</string>
+    <string name="welcome_offer_tier1_coins">15 mincí</string>
+    <string name="welcome_offer_tier1_badge">50% SLEVA</string>
+    <string name="welcome_offer_tier2_title">Doživotní přístup</string>
+    <string name="welcome_offer_tier2_original">4 499 Kč</string>
+    <string name="welcome_offer_tier2_price">3 499 Kč</string>
+    <string name="welcome_offer_tier2_badge">WELCOME NABÍDKA</string>
+    <string name="welcome_offer_tier2_desc">Neomezeno navždy · Pouze pro nové uživatele</string>
+    <string name="welcome_offer_recommended">DOPORUČENO</string>
+
+    <!-- Journal AI Analysis -->
+    <string name="journal_analyze_cta">ANALYZOVAT S AI</string>
+    <string name="journal_analyze_desc">Madame Stella propojí vaše poznámky s výkladem</string>
+    <string name="journal_analyzing">Madame Stella čte vaše poznámky…</string>
+    <string name="journal_analysis_title">Reflexe Madame Stelly</string>
+    <string name="journal_analysis_error">Analýzu se nepodařilo dokončit. Zkuste to znovu.</string>
+
+    <!-- Challenge Journeys -->
+    <string name="challenge_section_title">TAROTOVÁ VÝZVA</string>
+    <string name="challenge_browse">Procházet výzvy</string>
+    <string name="challenge_active_day">Den %1$d z %2$d</string>
+    <string name="challenge_today_intention">Dnešní záměr</string>
+    <string name="challenge_draw_card">VYTÁHNOUT KARTU</string>
+    <string name="challenge_completed_today">Dnešní výzva splněna ✓</string>
+    <string name="challenge_completed_all">Výzva dokončena! 🎉</string>
+    <string name="challenge_reward">Odměna: +%d mincí</string>
+    <string name="challenge_start">ZAHÁJIT VÝZVU</string>
+    <string name="challenge_abandon">Opustit výzvu</string>
+    <string name="challenge_abandon_confirm">Opravdu chcete opustit výzvu? Váš pokrok bude ztracen.</string>
+    <string name="challenge_days_remaining">Zbývá %d dní</string>
+    <string name="challenge_list_title">Tarotové výzvy</string>
+    <string name="challenge_list_subtitle">Strukturované cesty osobního růstu skrze taroty</string>
+    <string name="challenge_progress">%1$d/%2$d dní</string>
+
+    <!-- Challenge: 7 dní Osvícení -->
+    <string name="challenge_7_name">7 dní Osvícení</string>
+    <string name="challenge_7_desc">Týdenní průzkum vaší duše — každý den jiná oblast života.</string>
+    <string name="challenge_7_d1">Minulost — Jaký vzorec přinášíte ze své minulosti?</string>
+    <string name="challenge_7_d2">Přítomnost — Co vám přináší dnešní okamžik?</string>
+    <string name="challenge_7_d3">Stíny — Co ve vás ještě čeká na přijetí a uzdravení?</string>
+    <string name="challenge_7_d4">Vztahy — Jak se projevujete vůči lidem kolem vás?</string>
+    <string name="challenge_7_d5">Hojnost — Jaký je váš skutečný vztah k penězům a prosperitě?</string>
+    <string name="challenge_7_d6">Dary — Jaký jedinečný dar v sobě nesete do světa?</string>
+    <string name="challenge_7_d7">Budoucnost — Co vám hvězdy připravují za obzorem?</string>
+
+    <!-- Challenge: 21 dní Probuzení -->
+    <string name="challenge_21_name">21 dní Probuzení</string>
+    <string name="challenge_21_desc">Tři týdny hlubokého sebepoznání — od kořenů po horizonty.</string>
+    <string name="challenge_21_w1">Týden sebepoznání — Kdo jsem?</string>
+    <string name="challenge_21_w2">Týden vztahů — Jak miluji?</string>
+    <string name="challenge_21_w3">Týden vize — Kam mířím?</string>
+
+    <!-- Challenge: 30 dní Transformace -->
+    <string name="challenge_30_name">30 dní Transformace</string>
+    <string name="challenge_30_desc">Měsíc zásadní proměny — komplexní práce se všemi rovinami bytí.</string>
+    <string name="challenge_30_w1">Kořeny — Zpracování minulosti a rodinných vzorců</string>
+    <string name="challenge_30_w2">Srdce — Láska, vztahy a emocionální inteligence</string>
+    <string name="challenge_30_w3">Mysl — Přesvědčení, kreativita a nové možnosti</string>
+    <string name="challenge_30_w4">Duch — Smysl, účel a vaše kosmická mise</string>
 </resources>
