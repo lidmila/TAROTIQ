@@ -1,0 +1,8 @@
+<cs-CZ>
+• Opravený pád aplikace, který se mohl objevit při prvním spuštění bez připojení k internetu
+• Vylepšená stabilita a drobné opravy
+</cs-CZ>
+<en-US>
+• Fixed a crash that could occur on first launch without an internet connection
+• Improved stability and minor fixes
+</en-US>

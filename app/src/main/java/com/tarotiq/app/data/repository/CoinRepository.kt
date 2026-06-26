@@ -72,14 +72,21 @@ class CoinRepository {
         val userId = auth.currentUser?.uid ?: return
         val coinRef = firestore.collection("users").document(userId)
             .collection("coins").document("balance")
-        val doc = try { coinRef.get(Source.SERVER).await() } catch (_: Exception) { coinRef.get().await() }
-        if (!doc.exists()) {
-            coinRef.set(mapOf(
-                "balance" to 0,
-                "totalPurchased" to 0,
-                "totalSpent" to 0,
-                "freeReadingsUsed" to 0
-            )).await()
+        try {
+            val doc = try { coinRef.get(Source.SERVER).await() } catch (_: Exception) { coinRef.get().await() }
+            if (!doc.exists()) {
+                coinRef.set(mapOf(
+                    "balance" to 0,
+                    "totalPurchased" to 0,
+                    "totalSpent" to 0,
+                    "freeReadingsUsed" to 0
+                )).await()
+            }
+        } catch (e: Exception) {
+            // Offline with no cached balance doc (e.g. fresh install): defer
+            // initialization until the client is back online. Throwing here
+            // crashed the app — see Crashlytics issue "client is offline".
+            Log.w(TAG, "Coin document init deferred (offline?)", e)
         }
     }
 }
