@@ -1,0 +1,5 @@
+v1.8.2
+
+- L'application parle désormais entièrement français
+- Les tirages, horoscopes et messages quotidiens de Madame Stella sont maintenant en français
+- Traductions complétées et corrections mineures

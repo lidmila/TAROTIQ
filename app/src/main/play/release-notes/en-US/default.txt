@@ -1,4 +1,5 @@
-v1.8.0
+v1.8.2
 
-- Your settings now back up to your account — everything is restored after reinstalling or on a new device
-- Minor fixes and stability improvements
+- The app now fully speaks French, German, Spanish, Italian, Polish and Dutch
+- Madame Stella's readings, horoscopes and daily insights now arrive in your language
+- Completed missing translations and minor fixes

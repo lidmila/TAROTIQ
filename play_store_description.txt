@@ -8,6 +8,9 @@ Osobní výklady karet s AI Madame Stellou. Horoskopy, výzvy a odměny.
 EN-US:
 Personal AI tarot readings with Madame Stella. Horoscopes & challenges.
 
+FR-FR:
+Tirages de tarot personnalisés avec l'IA Madame Stella. Horoscopes et défis.
+
 
 ========================================
 DLOUHÝ POPIS (max 4000 znaků)
@@ -86,3 +89,52 @@ Browse the full Rider-Waite deck: Major Arcana and all four suits of Minor Arcan
 One-time payment. No coins, no ads, no limits. Unlimited readings across all 17 spreads — including all future spreads, free forever.
 
 ---
+
+FR-FR:
+---
+
+Laissez Madame Stella éclairer votre avenir.
+
+TarotIQ est une application de tarot propulsée par l'IA qui vous offre des tirages personnalisés, adaptés à votre situation, vos questions et votre profil astrologique. Madame Stella se souvient de vos tirages précédents et apprend peu à peu les schémas de votre vie — plus vous la consultez, plus ses interprétations gagnent en profondeur.
+
+🔮 Ce que sait faire Madame Stella
+– Interprète chaque tirage en lien avec votre question précise
+– Répond aux questions complémentaires au sein de chaque tirage
+– Tient compte de la phase de la Lune et de votre signe astrologique
+– Analyse vos notes de journal pour révéler les schémas cachés
+– S'exprime en français, avec naturel et empathie
+
+🃏 17 tirages de tarot
+De la simple Carte du jour à la Croix celtique, à l'Arbre de vie kabbalistique ou à l'Horoscope mensuel de 12 cartes. Chaque tirage a sa structure et sa vocation — amour, carrière, développement personnel ou quête spirituelle.
+
+☀️ De nouvelles énergies chaque jour
+– Carte du jour gratuite avec une brève interprétation
+– Horoscope quotidien selon votre signe astrologique
+– Phase de la Lune actuelle et compte à rebours vers la pleine et la nouvelle lune
+– Suivi de Mercure rétrograde
+
+🏆 Défis et récompenses
+Lancez-vous dans des parcours de tarot structurés : 7 jours d'Illumination, 21 jours d'Éveil ou 30 jours de Transformation. Chaque jour vous apporte une intention et un tirage de méditation. Terminez un défi et gagnez des pièces.
+
+📖 Grimoire — votre chronique personnelle du tarot
+Chaque tirage est enregistré dans votre Grimoire. Recherchez, filtrez par type de tirage et revenez-y à tout moment. Ajoutez vos notes personnelles — Madame Stella peut les analyser et révéler ce qui se répète dans votre histoire.
+
+🌟 Bibliothèque de 78 cartes
+Parcourez le jeu Rider-Waite complet : les arcanes majeurs et les quatre couleurs des arcanes mineurs. Chaque carte propose des mots-clés à l'endroit et à l'envers, ainsi que des interprétations pour l'amour, la carrière, les finances et le développement personnel.
+
+💎 Accès à vie
+Paiement unique. Pas de pièces, pas de publicité, pas de limites. Tirages illimités sur les 17 tirages — y compris tous les futurs tirages, gratuits pour toujours.
+
+---
+
+
+========================================
+NÁZEV APLIKACE (max 30 znaků) — oprava českého titulku v cizojazyčných záznamech
+========================================
+
+FR-FR: Tarotiq : Tirage de tarot IA
+DE-DE: Tarotiq: KI-Tarot-Legung
+ES-ES: Tarotiq: Tarot con IA
+IT-IT: Tarotiq: Tarocchi con IA
+PL-PL: Tarotiq: Tarot z AI
+NL-NL: Tarotiq: AI-tarotlegging

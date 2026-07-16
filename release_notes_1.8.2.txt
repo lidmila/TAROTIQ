@@ -1,0 +1,15 @@
+<cs-CZ>
+• Aplikace nyní kompletně mluví francouzsky, německy, španělsky, italsky, polsky a nizozemsky
+• Výklady, horoskopy i denní vhledy od Madame Stelly nově ve vašem jazyce
+• Doplněné chybějící překlady a drobné opravy
+</cs-CZ>
+<en-US>
+• The app now fully speaks French, German, Spanish, Italian, Polish and Dutch
+• Madame Stella's readings, horoscopes and daily insights now arrive in your language
+• Completed missing translations and minor fixes
+</en-US>
+<fr-FR>
+• L'application parle désormais entièrement français
+• Les tirages, horoscopes et messages quotidiens de Madame Stella sont maintenant en français
+• Traductions complétées et corrections mineures
+</fr-FR>

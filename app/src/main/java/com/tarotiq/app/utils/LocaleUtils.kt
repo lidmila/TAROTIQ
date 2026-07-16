@@ -17,7 +17,7 @@ object LocaleUtils {
     private const val PREFS_NAME = "language_prefs"
     private const val KEY_LANGUAGE = "app_language"
 
-    private val supportedLanguages = setOf("cs", "en")
+    private val supportedLanguages = setOf("cs", "en", "fr", "de", "es", "it", "pl", "nl")
 
     private val _languageFlow = MutableStateFlow("cs")
     val languageFlow: StateFlow<String> = _languageFlow.asStateFlow()
@@ -95,7 +95,13 @@ object LocaleUtils {
     fun getAvailableLanguages(): List<Pair<String, String>> {
         return listOf(
             "cs" to "Čeština",
-            "en" to "English"
+            "en" to "English",
+            "fr" to "Français",
+            "de" to "Deutsch",
+            "es" to "Español",
+            "it" to "Italiano",
+            "pl" to "Polski",
+            "nl" to "Nederlands"
         )
     }
 }
