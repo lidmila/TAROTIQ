@@ -1,8 +1,9 @@
 import { onCall, HttpsError } from "firebase-functions/v2/https";
 import { defineSecret } from "firebase-functions/params";
-import * as admin from "firebase-admin";
+import { initializeApp } from "firebase-admin/app";
+import { getFirestore, FieldValue } from "firebase-admin/firestore";
 
-admin.initializeApp();
+initializeApp();
 
 const openaiApiKey = defineSecret("OPENAI_API_KEY");
 
@@ -62,6 +63,30 @@ NEVER:
 - Break character or mention being an AI
 - Be dismissive of the querent's emotions or concerns`;
 
+/**
+ * We never collect the querent's gender, so every prompt must avoid grammatical gender
+ * agreement with the reader. Without this, gendered languages silently pick one —
+ * Czech daily horoscopes were opening with "Drahá Raku…", addressing every user as female.
+ * Appended to all four prompts; keep it in sync rather than duplicating per-function.
+ */
+const GENDER_RULE = `
+═══ GENDER (CRITICAL) ═══
+You do NOT know the querent's gender. Never guess it, never ask, never imply it.
+- No gendered form of address. Czech "Drahá/Drahý", Polish "Droga/Drogi", Spanish "querida/querido",
+  French "chère/cher", Italian "cara/caro", Portuguese "querida/querido", Russian "дорогая/дорогой",
+  Ukrainian "дорога/дорогий", Romanian "dragă" with a gendered adjective — all forbidden.
+  Address the querent by their zodiac sign alone, or use no vocative at all.
+- In languages where adjectives, participles or past-tense verbs agree with the addressee's gender
+  (Czech, Slovak, Polish, Russian, Ukrainian, Romanian, Spanish, Italian, Portuguese, French),
+  REPHRASE to remove the agreement rather than picking one:
+  · Czech/Slavic — avoid past-tense verbs aimed at the querent. Write "Dnes je čas zpomalit" or
+    "Můžete cítit…", never "Cítila jste…" / "Byl jste…". Prefer present tense, infinitives,
+    impersonal and noun constructions.
+  · Romance — avoid predicative adjectives about the querent ("estás cansado/a");
+    use noun phrases instead ("sientes cansancio").
+- Never write double forms like "unavený/á" or "drahý/á" — they look like a form field, not a reading.
+- If a sentence cannot be written without gender agreement, rewrite the sentence.`;
+
 export const interpretTarotReading = onCall({
   secrets: [openaiApiKey],
   maxInstances: 10,
@@ -93,7 +118,7 @@ export const interpretTarotReading = onCall({
   }
 
   // F1: Rate limiting — max 20 readings per day per user
-  const db = admin.firestore();
+  const db = getFirestore();
   const now = new Date();
   const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const rateLimitSnapshot = await db.collection("usage_logs")
@@ -168,7 +193,7 @@ CARDS DRAWN:
 ${cardDescriptions}`;
 
   const messages: any[] = [
-    { role: "system", content: SYSTEM_PROMPT },
+    { role: "system", content: SYSTEM_PROMPT + GENDER_RULE },
   ];
 
   if (conversationHistory && conversationHistory.length > 0) {
@@ -209,7 +234,7 @@ ${cardDescriptions}`;
       action: "tarot_reading",
       spreadType,
       topic,
-      timestamp: admin.firestore.FieldValue.serverTimestamp(),
+      timestamp: FieldValue.serverTimestamp(),
     });
 
     return { interpretation };
@@ -235,7 +260,7 @@ export const spendCoins = onCall({ invoker: "public" }, async (request) => {
   };
   const cost = costMap[readingType] || 1;
 
-  const db = admin.firestore();
+  const db = getFirestore();
 
   // Lifetime premium users skip coin deduction entirely
   const premiumSnap = await db.collection("users").doc(userId)
@@ -273,7 +298,7 @@ export const spendCoins = onCall({ invoker: "public" }, async (request) => {
     transaction.set(txRef, {
       userId, type: "spend", amount: -cost,
       description: `Reading: ${readingType}`,
-      timestamp: admin.firestore.FieldValue.serverTimestamp(),
+      timestamp: FieldValue.serverTimestamp(),
     });
 
     return { newBalance: (data.balance || 0) - cost };
@@ -311,7 +336,8 @@ export const generateDailyInsight = onCall({
   const { cardId, isReversed, language } = request.data;
   const cardName = getCardName(cardId);
 
-  const prompt = `You are Madame Stella. Give a brief (2-3 sentences) daily insight for the tarot card "${cardName}" (${isReversed ? "reversed" : "upright"}). Be encouraging and mystical. Do NOT mention the card name in the response — the user already sees the card. Respond in ${language}.`;
+  const prompt = `You are Madame Stella. Give a brief (2-3 sentences) daily insight for the tarot card "${cardName}" (${isReversed ? "reversed" : "upright"}). Be encouraging and mystical. Do NOT mention the card name in the response — the user already sees the card. Respond in ${language}.
+${GENDER_RULE}`;
 
   try {
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -355,7 +381,7 @@ export const analyzeJournalEntry = onCall({
   }
 
   // Rate limit — max 5 journal analyses per day
-  const db = admin.firestore();
+  const db = getFirestore();
   const startOfDay = new Date();
   startOfDay.setHours(0, 0, 0, 0);
   const rateSnap = await db.collection("usage_logs")
@@ -391,7 +417,8 @@ Your task:
 
 Tone: warm, mystical, non-judgmental. Like a trusted wise friend who sees patterns the querent cannot yet see themselves.
 Length: 150-250 words.
-Language: ${language}`;
+Language: ${language}
+${GENDER_RULE}`;
 
   try {
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -403,7 +430,7 @@ Language: ${language}`;
       body: JSON.stringify({
         model: "gpt-4o",
         messages: [
-          { role: "system", content: "You are Madame Stella, a deeply empathetic and wise tarot reader and journal guide." },
+          { role: "system", content: "You are Madame Stella, a deeply empathetic and wise tarot reader and journal guide." + GENDER_RULE },
           { role: "user", content: prompt },
         ],
         max_tokens: 500,
@@ -422,7 +449,7 @@ Language: ${language}`;
     await db.collection("usage_logs").add({
       userId: request.auth.uid,
       action: "journal_analysis",
-      timestamp: admin.firestore.FieldValue.serverTimestamp(),
+      timestamp: FieldValue.serverTimestamp(),
     });
 
     return { analysis };
@@ -446,7 +473,7 @@ export const generateDailyHoroscope = onCall({
 
   // Check cache in Firestore
   const today = new Date().toISOString().split("T")[0];
-  const cacheRef = admin.firestore()
+  const cacheRef = getFirestore()
     .collection("users").doc(uid)
     .collection("dailyContent").doc(today);
   const cached = await cacheRef.get();
@@ -456,7 +483,8 @@ export const generateDailyHoroscope = onCall({
 
   const dayOfWeek = new Date().toLocaleDateString("en-US", { weekday: "long" });
 
-  const prompt = `You are Madame Stella, a mystical and empathetic astrologer. Write a brief (2-3 sentences) personalized daily cosmic message for a ${zodiacSign} on ${dayOfWeek} under the ${moonPhase}. Be specific, encouraging, and poetically mystical. Include one concrete suggestion for the day. Respond in ${language}.`;
+  const prompt = `You are Madame Stella, a mystical and empathetic astrologer. Write a brief (2-3 sentences) personalized daily cosmic message for a ${zodiacSign} on ${dayOfWeek} under the ${moonPhase}. Be specific, encouraging, and poetically mystical. Include one concrete suggestion for the day. Respond in ${language}.
+${GENDER_RULE}`;
 
   try {
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -478,7 +506,7 @@ export const generateDailyHoroscope = onCall({
 
     // Cache result
     if (horoscope) {
-      await cacheRef.set({ horoscope, zodiacSign, moonPhase, createdAt: admin.firestore.FieldValue.serverTimestamp() });
+      await cacheRef.set({ horoscope, zodiacSign, moonPhase, createdAt: FieldValue.serverTimestamp() });
     }
 
     return { horoscope };
