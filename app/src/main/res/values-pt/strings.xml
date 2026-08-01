@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TAROTIQ</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Portal</string>
+    <string name="nav_portal">Portal</string>
+    <string name="nav_library">Biblioteca</string>
+    <string name="nav_new_reading">Oráculo</string>
+    <string name="nav_oracle">Oráculo</string>
+    <string name="nav_history">Registros</string>
+    <string name="nav_grimoire">Registros</string>
+    <string name="nav_profile">Perfil</string>
+
+    <!-- Auth -->
+    <string name="auth_login">Entrar</string>
+    <string name="auth_register">Criar conta</string>
+    <string name="auth_email">E-mail</string>
+    <string name="auth_password">Senha</string>
+    <string name="auth_passwordless">Entrar com link por e-mail</string>
+    <string name="auth_passwordless_desc">Enviaremos um link para o seu e-mail</string>
+    <string name="auth_enter_email_first">Digite primeiro o seu endereço de e-mail</string>
+    <string name="auth_forgot_password_title">Redefinição de senha</string>
+    <string name="auth_forgot_password_send">Enviar</string>
+    <string name="auth_google">Continuar com o Google</string>
+    <string name="auth_logout">Sair</string>
+    <string name="auth_delete_account">Excluir conta</string>
+    <string name="auth_profile">Perfil</string>
+    <string name="auth_email_sent">Link enviado para o seu e-mail</string>
+    <string name="auth_forgot_password">Esqueceu a senha?</string>
+    <string name="auth_reset_sent">E-mail de redefinição de senha enviado</string>
+
+    <!-- Home -->
+    <string name="home_daily_card">Carta do Dia</string>
+    <string name="home_daily_card_desc">Revele sua carta diária</string>
+    <string name="home_quick_reading">Leitura rápida</string>
+    <string name="home_new_reading">Nova leitura</string>
+    <string name="home_streak">Sequência</string>
+    <string name="home_streak_days">%d dias seguidos</string>
+
+    <!-- Reading Topics -->
+    <string name="topic_love">Amor</string>
+    <string name="topic_career">Carreira</string>
+    <string name="topic_general">Geral</string>
+    <string name="topic_yes_no">Sim / Não</string>
+    <string name="topic_spiritual">Espiritual</string>
+    <string name="topic_select">Escolha o tema da leitura</string>
+
+    <!-- Question -->
+    <string name="question_title">Sua pergunta</string>
+    <string name="question_hint">As estrelas estão ouvindo…</string>
+    <string name="question_skip">Pular</string>
+    <string name="question_continue">Continuar</string>
+
+    <!-- Spread -->
+    <string name="spread_select">Escolha a tiragem</string>
+    <string name="spread_single">Uma carta</string>
+    <string name="spread_single_desc">Visão rápida</string>
+    <string name="spread_three_card">Três cartas</string>
+    <string name="spread_three_card_desc">Passado · Presente · Futuro</string>
+    <string name="spread_celtic_cross">Cruz Celta</string>
+    <string name="spread_celtic_cross_desc">Leitura profunda (10 cartas)</string>
+    <string name="spread_relationship">Leitura de Relacionamento</string>
+    <string name="spread_relationship_desc">Você · Parceiro · Relacionamento · Desafios · Futuro</string>
+    <string name="spread_year_ahead">Panorama Anual</string>
+    <string name="spread_year_ahead_desc">12 cartas · Um mês, uma carta</string>
+    <string name="spread_shadow_self">Eu Sombra</string>
+    <string name="spread_shadow_self_desc">Máscara · Sombra · Raiz · Medo · Dom · Integração</string>
+    <string name="spread_crossroads">Encruzilhada do Destino</string>
+    <string name="spread_crossroads_desc">Dois caminhos · Fator oculto · Conselho</string>
+    <string name="spread_chakra">Leitura dos Chakras</string>
+    <string name="spread_chakra_desc">7 chakras · Diagnóstico energético</string>
+    <string name="spread_twin_flame">Alma Gêmea</string>
+    <string name="spread_twin_flame_desc">Vínculo cármico · Lições · Missão compartilhada</string>
+    <string name="spread_moon_cycle">Ciclo Lunar</string>
+    <string name="spread_moon_cycle_desc">8 fases da Lua · O que semear, cultivar, colher</string>
+    <string name="spread_career_compass">Bússola da Carreira</string>
+    <string name="spread_career_compass_desc">Talentos · Bloqueio · Oportunidade · Finanças</string>
+    <string name="spread_inner_child">Criança Interior</string>
+    <string name="spread_inner_child_desc">Ferida · Proteção · Cura · Dom</string>
+    <string name="spread_tree_of_life">Árvore da Vida</string>
+    <string name="spread_tree_of_life_desc">10 sefirot · Leitura cabalística</string>
+    <string name="spread_week_ahead">Guia Semanal</string>
+    <string name="spread_week_ahead_desc">7 cartas · Uma para cada dia</string>
+    <string name="spread_karmic">Leitura Cármica</string>
+    <string name="spread_karmic_desc">Dívida cármica · Lições · Propósito da encarnação</string>
+    <string name="spread_self_love">Espelho do Amor-Próprio</string>
+    <string name="spread_self_love_desc">Autoimagem · Força oculta · Afirmação</string>
+    <string name="spread_cost">%d moedas</string>
+    <string name="spread_cost_singular">%d moeda</string>
+    <string name="spread_pick_cards">Escolha %d cartas para sua leitura</string>
+
+    <!-- Card Drawing -->
+    <string name="drawing_tap_to_reveal">Toque na carta para revelar</string>
+    <string name="drawing_card_revealed">Carta revelada!</string>
+    <string name="drawing_all_revealed">Todas as cartas reveladas</string>
+    <string name="drawing_get_reading">Receber a leitura</string>
+    <string name="drawing_confirm_selection">Confirmar seleção</string>
+    <string name="drawing_scroll_hint">↓ Deslize para ver mais cartas ↓</string>
+    <plurals name="spread_pick_cards">
+        <item quantity="one">Escolha %d carta para sua leitura</item>
+        <item quantity="other">Escolha %d cartas para sua leitura</item>
+    </plurals>
+    <string name="drawing_focus_energy">Concentre sua energia na sua intenção.</string>
+    <string name="reading_extra_card_offer">Quer saber mais?\nCompre uma carta extra para sua leitura.</string>
+    <string name="reading_buy_extra_card">Comprar carta extra por 1 moeda</string>
+    <string name="extra_card_title">Escolha uma carta</string>
+    <string name="extra_card_confirm">Confirmar seleção</string>
+
+    <!-- Spread Positions -->
+    <string name="position_insight">Visão</string>
+    <string name="position_past">Passado</string>
+    <string name="position_present">Presente</string>
+    <string name="position_future">Futuro</string>
+    <string name="position_you">Você</string>
+    <string name="position_partner">Parceiro</string>
+    <string name="position_relationship">Relacionamento</string>
+    <string name="position_challenges">Desafios</string>
+    <string name="position_present_situation">Presente</string>
+    <string name="position_challenge">Desafio</string>
+    <string name="position_conscious">Consciente</string>
+    <string name="position_subconscious">Subconsciente</string>
+    <string name="position_advice">Conselho</string>
+    <string name="position_influences">Influências</string>
+    <string name="position_hopes">Esperanças e medos</string>
+    <string name="position_outcome">Resultado</string>
+    <string name="position_extra">Carta adicional</string>
+
+    <!-- Year Ahead positions -->
+    <string name="position_january">Janeiro</string>
+    <string name="position_february">Fevereiro</string>
+    <string name="position_march">Março</string>
+    <string name="position_april">Abril</string>
+    <string name="position_may">Maio</string>
+    <string name="position_june">Junho</string>
+    <string name="position_july">Julho</string>
+    <string name="position_august">Agosto</string>
+    <string name="position_september">Setembro</string>
+    <string name="position_october">Outubro</string>
+    <string name="position_november">Novembro</string>
+    <string name="position_december">Dezembro</string>
+
+    <!-- Shadow Self positions -->
+    <string name="position_mask">Máscara</string>
+    <string name="position_shadow">Sombra</string>
+    <string name="position_shadow_root">Raiz da sombra</string>
+    <string name="position_fear">Medo</string>
+    <string name="position_shadow_gift">Dom da sombra</string>
+    <string name="position_integration">Integração</string>
+
+    <!-- Crossroads positions -->
+    <string name="position_current_situation">Situação atual</string>
+    <string name="position_path_a_desc">Caminho A</string>
+    <string name="position_path_a_outcome">Resultado do caminho A</string>
+    <string name="position_path_b_desc">Caminho B</string>
+    <string name="position_path_b_outcome">Resultado do caminho B</string>
+    <string name="position_hidden_factor">Fator oculto</string>
+
+    <!-- Chakra positions -->
+    <string name="position_root_chakra">Chakra raiz</string>
+    <string name="position_sacral_chakra">Chakra sacral</string>
+    <string name="position_solar_plexus">Plexo solar</string>
+    <string name="position_heart_chakra">Chakra cardíaco</string>
+    <string name="position_throat_chakra">Chakra laríngeo</string>
+    <string name="position_third_eye">Terceiro olho</string>
+    <string name="position_crown_chakra">Chakra coronário</string>
+
+    <!-- Twin Flame positions -->
+    <string name="position_your_energy">Sua energia</string>
+    <string name="position_their_energy">Energia da outra alma</string>
+    <string name="position_karmic_bond">Vínculo cármico</string>
+    <string name="position_your_lesson">Sua lição</string>
+    <string name="position_their_lesson">Lição do parceiro</string>
+    <string name="position_shared_mission">Missão compartilhada</string>
+    <string name="position_obstacle">Obstáculo</string>
+
+    <!-- Moon Cycle positions -->
+    <string name="position_new_moon">Lua Nova — O que semear</string>
+    <string name="position_waxing_crescent">Crescente Côncava — O que cultivar</string>
+    <string name="position_first_quarter">Quarto Crescente — Ação</string>
+    <string name="position_waxing_gibbous">Crescente Gibosa — O que ajustar</string>
+    <string name="position_full_moon">Lua Cheia — O que colher</string>
+    <string name="position_waning_gibbous">Minguante Gibosa — Gratidão</string>
+    <string name="position_last_quarter">Quarto Minguante — O que soltar</string>
+    <string name="position_dark_moon">Lua Negra — Reflexão</string>
+
+    <!-- Career Compass positions -->
+    <string name="position_hidden_talents">Talentos ocultos</string>
+    <string name="position_current_block">Bloqueio atual</string>
+    <string name="position_opportunity">Oportunidade no horizonte</string>
+    <string name="position_skill_to_develop">Habilidade a desenvolver</string>
+    <string name="position_financial_energy">Energia financeira</string>
+    <string name="position_next_step">Próximo passo</string>
+
+    <!-- Inner Child positions -->
+    <string name="position_inner_child">Criança interior</string>
+    <string name="position_wound">Ferida</string>
+    <string name="position_protective_pattern">Padrão de proteção</string>
+    <string name="position_healing">Cura</string>
+    <string name="position_inner_gift">Dom</string>
+
+    <!-- Tree of Life positions -->
+    <string name="position_keter">Keter — Coroa</string>
+    <string name="position_chokma">Chokmah — Sabedoria</string>
+    <string name="position_bina">Binah — Entendimento</string>
+    <string name="position_chesed">Chesed — Misericórdia</string>
+    <string name="position_gevura">Gevurah — Força</string>
+    <string name="position_tiferet">Tiferet — Beleza</string>
+    <string name="position_netzach">Netzach — Vitória</string>
+    <string name="position_hod">Hod — Glória</string>
+    <string name="position_yesod">Yesod — Fundamento</string>
+    <string name="position_malkhut">Malkuth — Reino</string>
+
+    <!-- Week Ahead positions -->
+    <string name="position_monday">Segunda-feira</string>
+    <string name="position_tuesday">Terça-feira</string>
+    <string name="position_wednesday">Quarta-feira</string>
+    <string name="position_thursday">Quinta-feira</string>
+    <string name="position_friday">Sexta-feira</string>
+    <string name="position_saturday">Sábado</string>
+    <string name="position_sunday">Domingo</string>
+
+    <!-- Karmic positions -->
+    <string name="position_karmic_debt">Dívida cármica</string>
+    <string name="position_karmic_gift">Dom cármico</string>
+    <string name="position_current_lesson">Lição atual</string>
+    <string name="position_repeating_pattern">Padrão repetitivo</string>
+    <string name="position_what_to_break">O que romper</string>
+    <string name="position_karmic_reward">Recompensa cármica</string>
+    <string name="position_life_purpose">Propósito da encarnação</string>
+
+    <!-- Self-Love positions -->
+    <string name="position_how_i_see_myself">Como me vejo</string>
+    <string name="position_how_others_see_me">Como os outros me veem</string>
+    <string name="position_false_guilt">Culpa imerecida</string>
+    <string name="position_hidden_strength">Força oculta</string>
+    <string name="position_what_i_need">O que preciso de mim</string>
+    <string name="position_affirmation">Afirmação das cartas</string>
+
+    <!-- Reading -->
+    <string name="reading_interpreting">Madame Stella está lendo suas cartas…</string>
+    <string name="reading_follow_up">Pergunte mais…</string>
+    <string name="reading_follow_up_hint">Quer perguntar mais alguma coisa?</string>
+    <string name="reading_save">Salvar leitura</string>
+    <string name="reading_share">Compartilhar</string>
+    <string name="reading_saved">Leitura salva</string>
+    <string name="reading_interpretation_title">Interpretação</string>
+    <string name="reading_summary">Resumo da leitura</string>
+    <string name="reading_upright">Em pé</string>
+    <string name="reading_reversed">Invertida</string>
+
+    <!-- History -->
+    <string name="history_title">Histórico de leituras</string>
+    <string name="history_empty">Nenhuma leitura ainda</string>
+    <string name="history_filter_all">Todas</string>
+
+    <!-- Card Library -->
+    <string name="library_title">Biblioteca de cartas</string>
+    <string name="library_major_arcana">Arcanos Maiores</string>
+    <string name="library_minor_arcana">Arcanos Menores</string>
+    <string name="library_cups">Copas</string>
+    <string name="library_pentacles">Pentáculos</string>
+    <string name="library_swords">Espadas</string>
+    <string name="library_wands">Paus</string>
+    <string name="library_all">Todas</string>
+    <string name="library_search">Buscar carta…</string>
+    <string name="library_upright_keywords">Palavras-chave (em pé)</string>
+    <string name="library_reversed_keywords">Palavras-chave (invertida)</string>
+    <string name="library_love">Amor</string>
+    <string name="library_career">Carreira</string>
+    <string name="library_finances">Finanças</string>
+    <string name="library_feelings">Sentimentos</string>
+    <string name="library_actions">Conselhos</string>
+
+    <!-- Daily Card -->
+    <string name="daily_title">Carta do Dia</string>
+    <string name="daily_tap_reveal">Toque para revelar sua carta diária</string>
+    <string name="daily_already_drawn">Você já revelou sua carta hoje</string>
+    <string name="daily_view_details">Ver detalhes da carta</string>
+
+    <!-- Coins -->
+    <string name="coins_balance">Suas moedas</string>
+    <string name="coins_buy">Comprar moedas</string>
+    <string name="coins_pack_5">5 moedas</string>
+    <string name="coins_pack_15">15 moedas</string>
+    <string name="coins_pack_50">50 moedas</string>
+    <string name="coins_pack_300">300 moedas</string>
+    <string name="coins_save">ECONOMIZE %d%%</string>
+    <string name="coins_most_popular">Mais popular</string>
+    <string name="coins_best_value">Melhor custo-benefício</string>
+    <string name="coins_not_enough">Você não tem moedas suficientes</string>
+    <string name="coins_free_readings">Restam %d leituras gratuitas</string>
+    <string name="coins_free_reading_used">Leitura gratuita usada (%d/3)</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Perfil</string>
+    <string name="profile_zodiac">Signo do zodíaco</string>
+    <string name="profile_achievements">Conquistas</string>
+    <string name="profile_statistics">Estatísticas</string>
+    <string name="profile_total_readings">Total de leituras</string>
+    <string name="profile_favorite_card">Carta mais frequente</string>
+    <string name="profile_longest_streak">Maior sequência</string>
+    <string name="profile_language">Idioma</string>
+    <string name="profile_notifications">Notificações</string>
+    <string name="profile_notification_time">Horário do lembrete</string>
+    <string name="profile_about">Sobre o app</string>
+    <string name="profile_legal">Informações legais</string>
+    <string name="profile_other_apps">Experimente nossos outros apps</string>
+    <string name="app_kvitta_desc">Divisão inteligente de despesas e acerto de dívidas</string>
+    <string name="app_bettermingle_desc">Melhore seus perfis de namoro com IA</string>
+    <string name="app_bettershelf_desc">Organize sua biblioteca e descubra novos livros</string>
+    <string name="app_dreamwitness_desc">Registre e interprete seus sonhos</string>
+
+    <!-- Info -->
+    <string name="faq_title">Perguntas frequentes</string>
+    <string name="about_title">Sobre o TAROTIQ</string>
+    <string name="about_version">Versão %s</string>
+    <string name="contact_title">Falar com o suporte</string>
+    <string name="contact_send">Enviar</string>
+    <string name="contact_subject">Assunto</string>
+    <string name="contact_message">Mensagem</string>
+    <string name="terms_title">Termos de uso</string>
+    <string name="privacy_title">Política de privacidade</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Carta do Dia</string>
+    <string name="notification_channel_description">Lembrete da carta de tarô diária</string>
+    <string name="notification_daily_title">Sua carta diária está esperando</string>
+    <string name="notification_daily_text">Descubra o que as estrelas prepararam para você hoje.</string>
+
+    <!-- Smart notification variants -->
+    <string name="notif_streak_title">Sua sequência de %d dias continua!</string>
+    <string name="notif_streak_text">Não rompa o fio cósmico. Sua carta diária espera.</string>
+    <string name="notif_streak_risk_title">Sua sequência está em risco!</string>
+    <string name="notif_streak_risk_text">Você ainda não tirou sua carta. Sua sequência de %d dias está enfraquecendo…</string>
+    <string name="notif_comeback_title">As estrelas esperam por você</string>
+    <string name="notif_comeback_text">Uma nova carta diária está pronta. Comece um novo capítulo.</string>
+    <string name="notif_full_moon_title">A Lua Cheia brilha sobre você</string>
+    <string name="notif_full_moon_text">A Lua Cheia revela segredos ocultos. O que sua carta revelará?</string>
+    <string name="notif_new_moon_title">A Lua Nova traz novos começos</string>
+    <string name="notif_new_moon_text">Momento ideal para a introspecção. Tire sua carta diária.</string>
+    <string name="notif_milestone_title">Você está perto de um marco!</string>
+    <string name="notif_milestone_week_text">Faltam %d dias para a sequência semanal! Não desista.</string>
+    <string name="notif_milestone_month_text">Faltam %d dias para a sequência mensal! Você é incrível.</string>
+    <string name="notif_general_1_title">O que as estrelas sussurram para você?</string>
+    <string name="notif_general_1_text">Sua carta diária guarda uma mensagem. Revele-a.</string>
+    <string name="notif_general_2_title">Novo dia, nova carta</string>
+    <string name="notif_general_2_text">Que energia o dia de hoje trará para você? Descubra.</string>
+    <string name="notif_general_3_title">O universo tem um recado para você</string>
+    <string name="notif_general_3_text">Tire sua carta diária e ouça as estrelas.</string>
+
+    <!-- What's New -->
+    <string name="whats_new_title">O que há de novo?</string>
+    <string name="whats_new_version">Versão 1.6.0</string>
+    <string name="whats_new_1">\u2B50 Novas conquistas — Colecione 12 conquistas por leituras, sequências e cartas diárias. Cada uma rende moedas de bônus!</string>
+    <string name="whats_new_2">\u2744\uFE0F Congelamento de sequência — Pulou um dia? Sua sequência não quebra se você tiver um congelamento. Ganhe um a cada sequência semanal.</string>
+    <string name="whats_new_3">\uD83D\uDD2E Mensagem cósmica diária — Um horóscopo personalizado de acordo com seu signo e a fase da Lua, novo a cada dia.</string>
+    <string name="whats_new_4">\uD83D\uDCF2 Compartilhamento de leituras — Compartilhe sua carta diária ou leitura como uma bela imagem com seus amigos.</string>
+    <string name="whats_new_5">\uD83C\uDF1F Tema semanal — Toda semana, uma nova tiragem temática recomendada para inspirar um autoconhecimento mais profundo.</string>
+    <string name="whats_new_6">\uD83C\uDF19 Lembretes mais inteligentes — As notificações se adaptam à sua sequência, à fase da Lua e a quanto tempo você não nos visita.</string>
+    <string name="whats_new_dismiss">Ótimo, vamos lá!</string>
+
+    <!-- Evening Notification -->
+    <string name="notif_evening_title">Reflexão noturna</string>
+    <string name="notif_evening_text">Como o seu dia se alinhou com a carta da manhã? Pare um momento e reflita.</string>
+
+    <!-- Weekly Themes -->
+    <string name="weekly_focus_title">Tema desta semana</string>
+    <string name="weekly_focus_cta">Experimentar esta leitura</string>
+    <string name="theme_shadow_work">Trabalho de sombra</string>
+    <string name="theme_shadow_work_desc">Revele as partes ocultas de si e acolha-as com amor.</string>
+    <string name="theme_heart_opening">Abertura do coração</string>
+    <string name="theme_heart_opening_desc">Concentre-se no amor-próprio e na harmonia interior.</string>
+    <string name="theme_career_focus">Bússola da Carreira</string>
+    <string name="theme_career_focus_desc">Encontre a direção na sua jornada profissional.</string>
+    <string name="theme_inner_child">Criança Interior</string>
+    <string name="theme_inner_child_desc">Cure feridas antigas e redescubra seu lado brincalhão.</string>
+    <string name="theme_cosmic_connection">Conexão cósmica</string>
+    <string name="theme_cosmic_connection_desc">Explore os vínculos profundos de alma na sua vida.</string>
+    <string name="theme_karmic_clearing">Limpeza cármica</string>
+    <string name="theme_karmic_clearing_desc">Compreenda os padrões repetitivos e rompa com eles.</string>
+    <string name="theme_lunar_wisdom">Sabedoria lunar</string>
+    <string name="theme_lunar_wisdom_desc">Sintonize-se com os ciclos da Lua para uma introspecção mais profunda.</string>
+    <string name="theme_crossroads">Na encruzilhada</string>
+    <string name="theme_crossroads_desc">Diante de uma decisão? As cartas mostrarão o caminho.</string>
+    <string name="theme_energy_balance">Equilíbrio energético</string>
+    <string name="theme_energy_balance_desc">Harmonize seus sete chakras para alcançar a paz interior.</string>
+    <string name="theme_deeper_knowledge">Conhecimento profundo</string>
+    <string name="theme_deeper_knowledge_desc">Mergulhe nos mistérios da Árvore da Vida.</string>
+    <string name="theme_week_planning">Planejamento da semana</string>
+    <string name="theme_week_planning_desc">Descubra o que cada dia desta semana trará para você.</string>
+    <string name="theme_relationships">Relacionamentos</string>
+    <string name="theme_relationships_desc">Explore a dinâmica dos seus relacionamentos mais próximos.</string>
+
+    <!-- Daily Horoscope -->
+    <string name="horoscope_title">Mensagem cósmica do dia</string>
+    <string name="horoscope_set_zodiac">Defina seu signo para receber o horóscopo diário</string>
+
+    <!-- Streak Features -->
+    <string name="streak_freeze_used">Sequência salva!</string>
+    <string name="streak_freeze_used_desc">Você usou um congelamento de sequência. Restam: %d</string>
+    <string name="streak_freeze_count">Congelamentos: %d</string>
+    <string name="streak_freeze_earned">Você ganhou um congelamento de sequência!</string>
+    <string name="comeback_title">Bem-vindo de volta!</string>
+    <string name="comeback_text">As estrelas esperavam por você. Aqui está um presentinho de boas-vindas.</string>
+    <string name="comeback_reward">+2 moedas grátis</string>
+    <string name="comeback_claim">Aceitar presente</string>
+    <string name="milestone_title">Marco alcançado!</string>
+    <string name="milestone_text">%d dias seguidos! Sua dedicação é inspiradora.</string>
+    <string name="milestone_reward">+%d moedas de bônus</string>
+
+    <!-- Zodiac Signs -->
+    <string name="profile_zodiac_not_set">Não definido</string>
+    <string name="coins_count">%d moedas</string>
+    <string name="element_water">Água</string>
+    <string name="element_earth">Terra</string>
+    <string name="element_air">Ar</string>
+    <string name="element_fire">Fogo</string>
+    <string name="zodiac_aries">Áries</string>
+    <string name="zodiac_taurus">Touro</string>
+    <string name="zodiac_gemini">Gêmeos</string>
+    <string name="zodiac_cancer">Câncer</string>
+    <string name="zodiac_leo">Leão</string>
+    <string name="zodiac_virgo">Virgem</string>
+    <string name="zodiac_libra">Libra</string>
+    <string name="zodiac_scorpio">Escorpião</string>
+    <string name="zodiac_sagittarius">Sagitário</string>
+    <string name="zodiac_capricorn">Capricórnio</string>
+    <string name="zodiac_aquarius">Aquário</string>
+    <string name="zodiac_pisces">Peixes</string>
+
+    <!-- HomeScreen Portal -->
+    <string name="home_celestial_active">PORTAL CELESTIAL ATIVO</string>
+    <string name="home_headline_1">As estrelas sussurram</string>
+    <string name="home_headline_2">seu destino hoje.</string>
+    <string name="home_welcome_body">Atravesse o véu entre os mundos. Cada carta tirada é um sussurro do universo, um fio do destino tecido especialmente para você.</string>
+    <string name="home_daily_drawing">TIRAGEM DIÁRIA</string>
+    <string name="home_consult_oracle">Consulte o Oráculo</string>
+    <string name="home_daily_desc">Receba sua mensagem diária do baralho místico. Uma carta, tirada ao amanhecer, guiará seus passos no caminho.</string>
+    <string name="home_awaiting">AGUARDANDO\nINVOCAÇÃO</string>
+    <string name="home_reflect">REFLETIR</string>
+    <string name="home_explore">EXPLORAR</string>
+    <string name="home_most_insightful">VISÃO MAIS PROFUNDA</string>
+    <string name="home_connection">Conexão</string>
+    <string name="home_connection_desc">Coração e alma</string>
+    <string name="home_lunar_phase">FASE LUNAR</string>
+    <string name="home_visibility">VISIBILIDADE</string>
+
+    <!-- ReadingHistoryScreen -->
+    <string name="history_sacred_archive">ARQUIVO SAGRADO</string>
+    <string name="history_grimoire_title">Grimório</string>
+    <string name="history_subtitle">Suas leituras sagradas, preservadas para a eternidade</string>
+    <string name="history_search_hint">Pesquisar no grimório…</string>
+    <string name="history_revisit">REVISITAR</string>
+    <string name="history_deepen_search">APROFUNDAR A BUSCA</string>
+
+    <!-- ReadingInterpretation errors -->
+    <string name="error_insufficient_coins_title">Moedas insuficientes</string>
+    <string name="error_insufficient_coins_desc">Você precisa de mais moedas para esta leitura. Reabasteça sua reserva e revele as mensagens que as cartas têm para você.</string>
+    <string name="coins_buy_now">COMPRAR MOEDAS</string>
+    <string name="ad_watch_for_coin">ASSISTIR ANÚNCIO (+1 MOEDA)</string>
+    <string name="ad_loading">Carregando anúncio…</string>
+    <string name="error_no_internet_title">Sem conexão</string>
+    <string name="error_no_internet_desc">Verifique sua conexão com a internet e tente novamente.</string>
+    <string name="error_timeout_title">Tempo esgotado</string>
+    <string name="error_timeout_desc">O servidor não está respondendo. Tente novamente, por favor.</string>
+    <string name="error_auth_title">Erro de login</string>
+    <string name="error_auth_desc">Seu login expirou. Saia e entre novamente.</string>
+    <string name="error_retry">TENTAR NOVAMENTE</string>
+
+    <!-- ReadingInterpretation -->
+    <string name="reading_oracle_insight">Visão do Oráculo</string>
+    <string name="reading_generated_by_ai">GERADO POR IA</string>
+
+    <!-- ReadingDetail -->
+    <string name="reading_cosmic_synthesis">SÍNTESE CÓSMICA</string>
+
+    <!-- Login -->
+    <string name="auth_subtitle">SEU GUIA MÍSTICO</string>
+
+    <!-- About -->
+    <string name="about_description">Seu leitor de tarô místico com IA.\nDescubra revelações por meio da antiga arte do tarô, potencializada pela IA moderna.\n\nO TAROTIQ combina séculos de sabedoria do tarô com tecnologia de ponta para leituras personalizadas e interativas.</string>
+
+    <!-- Rating Gate -->
+    <string name="rating_title">A leitura foi valiosa para você?</string>
+    <string name="rating_subtitle">Sua avaliação ajuda outros buscadores a encontrar o TarotIQ.</string>
+    <string name="rating_submit_positive">AVALIAR NO GOOGLE PLAY</string>
+    <string name="rating_submit_negative">ENVIAR FEEDBACK PARA NÓS</string>
+    <string name="rating_skip">Agora não</string>
+    <string name="rating_thanks">Obrigada!</string>
+    <string name="rating_thanks_desc">Seu apoio significa o mundo para nós. ✨</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="close">Fechar</string>
+    <string name="back">Voltar</string>
+    <string name="save">Salvar</string>
+    <string name="delete">Excluir</string>
+    <string name="share">Compartilhar</string>
+    <string name="share_text">Minha carta de tarô: %s 🎴 Tire suas cartas no Tarotiq!</string>
+    <string name="share_daily_card_label">Carta do Dia</string>
+    <string name="loading">Carregando…</string>
+    <string name="error_generic">Algo deu errado. Tente novamente.</string>
+    <string name="error_network">Verifique sua conexão com a internet.</string>
+    <string name="offline_banner">Você está offline</string>
+    <string name="delete_confirm_title">Excluir leitura?</string>
+    <string name="delete_confirm_message">Esta ação não pode ser desfeita.</string>
+    <string name="retry">Tentar novamente</string>
+    <string name="no_cards_found">Nenhuma carta encontrada</string>
+
+    <!-- Rewarded Ads -->
+    <string name="rewarded_ad_title">Assista a um anúncio e ganhe uma moeda</string>
+    <string name="rewarded_ad_subtitle">Restam %d esta semana</string>
+    <string name="rewarded_ad_success">+1 moeda adicionada!</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_language">Escolha o idioma</string>
+    <string name="onboarding_welcome">Bem-vindo ao TAROTIQ</string>
+    <string name="onboarding_welcome_desc">Descubra os mistérios do tarô com sua vidente pessoal de IA</string>
+    <string name="onboarding_zodiac">Seu signo</string>
+    <string name="onboarding_zodiac_desc">Escolha seu signo do zodíaco para leituras personalizadas</string>
+    <string name="onboarding_daily">Carta do Dia</string>
+    <string name="onboarding_daily_desc">Todo dia revelamos para você uma carta com uma mensagem</string>
+    <string name="onboarding_ready">Você está pronto</string>
+    <string name="onboarding_ready_desc">Você tem 3 leituras grátis. Comece sua jornada!</string>
+    <string name="onboarding_start">Começar</string>
+    <string name="onboarding_next">Avançar</string>
+    <string name="onboarding_skip">Pular</string>
+
+    <!-- Moon Phases -->
+    <string name="moon_new">Lua Nova</string>
+    <string name="moon_waxing_crescent">Crescente Côncava</string>
+    <string name="moon_first_quarter">Quarto Crescente</string>
+    <string name="moon_waxing_gibbous">Crescente Gibosa</string>
+    <string name="moon_full">Lua Cheia</string>
+    <string name="moon_waning_gibbous">Minguante Gibosa</string>
+    <string name="moon_last_quarter">Quarto Minguante</string>
+    <string name="moon_waning_crescent">Minguante Côncava</string>
+
+    <!-- Moon Phase Energy Descriptions -->
+    <string name="moon_energy_new">Tempo de novos começos. Semeie as intenções que deseja realizar neste ciclo.</string>
+    <string name="moon_energy_waxing_crescent">Suas intenções ganham força. Construa planos e dê os primeiros passos.</string>
+    <string name="moon_energy_first_quarter">Hora de ação e decisões. Supere os obstáculos com coragem.</string>
+    <string name="moon_energy_waxing_gibbous">Ajuste os detalhes. Seus projetos estão amadurecendo — a paciência dará frutos.</string>
+    <string name="moon_energy_full">Culminação e revelação. Colha os resultados e celebre o que você conquistou.</string>
+    <string name="moon_energy_waning_gibbous">Tempo de gratidão e partilha. Transmita a sabedoria que você adquiriu.</string>
+    <string name="moon_energy_last_quarter">Solte o que já não lhe serve. Libere velhos padrões e hábitos.</string>
+    <string name="moon_energy_waning_crescent">Silêncio e reflexão. Descanse e prepare-se para um novo ciclo.</string>
+
+    <!-- Moon Phase Activities -->
+    <string name="moon_activity_new">Meditação sobre intenções · Escrita de desejos · Planejamento</string>
+    <string name="moon_activity_waxing_crescent">Visualização · Primeiros passos · Criação de hábitos</string>
+    <string name="moon_activity_first_quarter">Tomada de decisões · Superação de medos · Passos de ação</string>
+    <string name="moon_activity_waxing_gibbous">Paciência · Ajuste de detalhes · Revisão de planos</string>
+    <string name="moon_activity_full">Celebração · Rituais de gratidão · Escuta da intuição</string>
+    <string name="moon_activity_waning_gibbous">Partilha de sabedoria · Perdão · Ensino aos outros</string>
+    <string name="moon_activity_last_quarter">Limpeza e desapego · Fechamento de capítulos · Detox</string>
+    <string name="moon_activity_waning_crescent">Descanso · Sonhos · Meditação · Silêncio</string>
+
+    <!-- Moon Phase Tarot Connection -->
+    <string name="moon_tarot_new">Sob a Lua Nova ressoa The Star — novas esperanças estão nascendo.</string>
+    <string name="moon_tarot_waxing_crescent">Sob a Crescente Côncava ressoa The Magician — crie a sua realidade.</string>
+    <string name="moon_tarot_first_quarter">Sob o Quarto Crescente ressoa The Chariot — a vontade o levará adiante.</string>
+    <string name="moon_tarot_waxing_gibbous">Sob a Crescente Gibosa ressoa Temperance — o equilíbrio é a chave.</string>
+    <string name="moon_tarot_full">Sob a Lua Cheia ressoa The High Priestess — a intuição está no auge.</string>
+    <string name="moon_tarot_waning_gibbous">Sob a Minguante Gibosa ressoa The Hermit — busque a sabedoria interior.</string>
+    <string name="moon_tarot_last_quarter">Sob o Quarto Minguante ressoa Death — a transformação traz nova vida.</string>
+    <string name="moon_tarot_waning_crescent">Sob a Minguante Côncava ressoa The Moon — ouça os seus sonhos.</string>
+
+    <!-- Lunar Section UI -->
+    <string name="moon_days_until_full">Lua Cheia em %d dias</string>
+    <string name="moon_days_until_new">Lua Nova em %d dias</string>
+    <string name="moon_recommended_spread">Leitura ideal para esta fase</string>
+    <string name="moon_try_spread">Experimentar o Ciclo Lunar</string>
+
+    <!-- Achievements -->
+    <string name="achievement_first_reading">Primeira leitura</string>
+    <string name="achievement_first_reading_desc">Conclua sua primeira leitura de tarô</string>
+    <string name="achievement_ten_readings">10 leituras</string>
+    <string name="achievement_ten_readings_desc">Conclua 10 leituras de tarô</string>
+    <string name="achievement_fifty_readings">50 leituras</string>
+    <string name="achievement_fifty_readings_desc">Conclua 50 leituras de tarô</string>
+    <string name="achievement_hundred_readings">100 leituras</string>
+    <string name="achievement_hundred_readings_desc">Conclua 100 leituras de tarô</string>
+    <string name="achievement_all_spreads">Todas as tiragens</string>
+    <string name="achievement_all_spreads_desc">Experimente cada tipo de tiragem</string>
+    <string name="achievement_week_streak">Sequência semanal</string>
+    <string name="achievement_week_streak_desc">Mantenha uma sequência de 7 dias seguidos</string>
+    <string name="achievement_month_streak">Sequência mensal</string>
+    <string name="achievement_month_streak_desc">Mantenha uma sequência de 30 dias seguidos</string>
+    <string name="achievement_major_arcana">Todos os Arcanos Maiores</string>
+    <string name="achievement_major_arcana_desc">Descubra todas as 22 cartas dos Arcanos Maiores</string>
+    <string name="achievement_first_daily">Primeira carta diária</string>
+    <string name="achievement_first_daily_desc">Tire sua primeira carta diária</string>
+    <string name="achievement_thirty_dailies">30 cartas diárias</string>
+    <string name="achievement_thirty_dailies_desc">Tire 30 cartas diárias</string>
+    <string name="achievement_night_owl">Coruja da noite</string>
+    <string name="achievement_night_owl_desc">Faça uma leitura depois das 23h</string>
+    <string name="achievement_early_bird">Madrugador</string>
+    <string name="achievement_early_bird_desc">Faça uma leitura antes das 7h</string>
+    <string name="achievement_unlocked">Conquista desbloqueada!</string>
+    <string name="achievement_coin_reward">+%d moedas</string>
+    <string name="achievements_title">Conquistas</string>
+
+    <!-- FAQ -->
+    <string name="faq_q1">Como funciona a leitura?</string>
+    <string name="faq_a1">Você escolhe um tema, faz uma pergunta opcional, seleciona a tiragem e revela as cartas ao tirá-las. Nossa vidente de IA, Madame Stella, então interpreta suas cartas no contexto da sua pergunta.</string>
+    <string name="faq_q2">As leituras são gratuitas?</string>
+    <string name="faq_a2">Você recebe 3 leituras totalmente grátis. Depois, pode comprar pacotes de moedas para novas leituras. A Carta do Dia é sempre gratuita.</string>
+    <string name="faq_q3">Como funcionam as moedas?</string>
+    <string name="faq_a3">Você usa moedas para pagar pelas leituras. Cada tiragem custa um número diferente de moedas: 1 carta = 1 moeda, 3 cartas = 2 moedas, Cruz Celta = 3 moedas.</string>
+    <string name="faq_q4">O tarô é preciso?</string>
+    <string name="faq_a4">O tarô é uma ferramenta de introspecção e desenvolvimento pessoal. As leituras são geradas por IA e servem como inspiração, não como previsões definitivas do futuro.</string>
+    <string name="faq_q5">Posso fazer perguntas complementares?</string>
+    <string name="faq_a5">Sim! Depois de cada leitura, você pode perguntar à Madame Stella qualquer outra coisa sobre suas cartas — sem custo adicional.</string>
+
+    <!-- Monthly Horoscope Spread -->
+    <string name="spread_monthly_horoscope">Horóscopo Mensal</string>
+    <string name="spread_monthly_horoscope_desc">12 cartas · Guia completo para o próximo mês</string>
+    <string name="position_month_theme">Tema principal do mês</string>
+    <string name="position_month_love">Amor e relacionamentos</string>
+    <string name="position_month_career">Carreira</string>
+    <string name="position_month_finances">Finanças</string>
+    <string name="position_month_health">Saúde e vitalidade</string>
+    <string name="position_month_spirituality">Crescimento espiritual</string>
+    <string name="position_month_family">Família e lar</string>
+    <string name="position_month_growth">Desenvolvimento pessoal</string>
+    <string name="position_month_challenges">Desafios e obstáculos</string>
+    <string name="position_month_opportunities">Oportunidades</string>
+    <string name="position_month_hidden">Influência oculta</string>
+    <string name="position_month_message">Mensagem do mês</string>
+
+    <!-- Mercury Retrograde -->
+    <string name="mercury_retrograde">MERCÚRIO RETRÓGRADO</string>
+    <string name="mercury_direct">Mercúrio direto</string>
+    <string name="mercury_retrograde_until">Retrógrado até %s</string>
+    <string name="mercury_direct_next">Próxima retrogradação: %s</string>
+    <string name="mercury_retrograde_warning">Atenção com comunicação, tecnologia e contratos. Evite decisões importantes.</string>
+    <string name="mercury_direct_desc">Momento favorável para uma comunicação clara e novos começos.</string>
+
+    <!-- Tarot Journal / Notes -->
+    <string name="journal_notes_label">Anotações pessoais</string>
+    <string name="journal_notes_hint">Registre seus sentimentos, impressões intuitivas ou sincronicidades…</string>
+    <string name="journal_notes_saved">Anotação salva</string>
+    <string name="journal_save_notes">SALVAR ANOTAÇÃO</string>
+
+    <!-- Share Reading -->
+    <string name="share_reading">COMPARTILHAR LEITURA</string>
+
+    <!-- Lifetime Premium -->
+    <string name="lifetime_title">Acesso vitalício</string>
+    <string name="lifetime_desc">Leituras ilimitadas para sempre. Sem moedas, sem limites.</string>
+    <string name="lifetime_feature_1">✦ Leituras ilimitadas em todas as 17 tiragens</string>
+    <string name="lifetime_feature_2">✦ Interpretações de IA prioritárias da Madame Stella</string>
+    <string name="lifetime_feature_3">✦ Acesso gratuito a todas as futuras tiragens</string>
+    <string name="lifetime_feature_4">✦ Status VIP exclusivo para sempre</string>
+    <string name="lifetime_feature_5">✦ Sem anúncios</string>
+    <string name="lifetime_buy">EU QUERO</string>
+    <string name="lifetime_price">4 499 Kč pagamento único</string>
+    <string name="lifetime_badge">MELHOR ESCOLHA</string>
+    <string name="lifetime_active">✓ Acesso vitalício ativo</string>
+    <string name="lifetime_active_desc">Aproveite leituras ilimitadas para sempre.</string>
+
+    <!-- Welcome Offer Dialog -->
+    <string name="welcome_offer_title">Iniciação Cósmica</string>
+    <string name="welcome_offer_subtitle">As cartas mostraram o caminho para você — vai entrar?</string>
+    <string name="welcome_offer_timer">A oferta expira em</string>
+    <string name="welcome_offer_skip">Agora não</string>
+    <string name="welcome_offer_tier1_title">Pacote Estelar</string>
+    <string name="welcome_offer_tier1_coins">15 moedas</string>
+    <string name="welcome_offer_tier1_badge">50% DE DESCONTO</string>
+    <string name="welcome_offer_tier2_title">Acesso vitalício</string>
+    <string name="welcome_offer_tier2_original">4 499 Kč</string>
+    <string name="welcome_offer_tier2_price">3 499 Kč</string>
+    <string name="welcome_offer_tier2_badge">OFERTA DE BOAS-VINDAS</string>
+    <string name="welcome_offer_tier2_desc">Ilimitado para sempre · Somente para novos usuários</string>
+    <string name="welcome_offer_recommended">RECOMENDADO</string>
+
+    <!-- Journal AI Analysis -->
+    <string name="journal_analyze_cta">ANALISAR COM IA</string>
+    <string name="journal_analyze_desc">Madame Stella conecta suas anotações à leitura</string>
+    <string name="journal_analyzing">Madame Stella está lendo suas anotações…</string>
+    <string name="journal_analysis_title">Reflexão de Madame Stella</string>
+    <string name="journal_analysis_error">Não foi possível concluir a análise. Tente novamente.</string>
+
+    <!-- Challenge Journeys -->
+    <string name="challenge_section_title">DESAFIO DE TARÔ</string>
+    <string name="challenge_browse">Explorar desafios</string>
+    <string name="challenge_active_day">Dia %1$d de %2$d</string>
+    <string name="challenge_today_intention">Intenção de hoje</string>
+    <string name="challenge_draw_card">TIRAR CARTA</string>
+    <string name="challenge_completed_today">Desafio de hoje concluído ✓</string>
+    <string name="challenge_completed_all">Desafio concluído! 🎉</string>
+    <string name="challenge_reward">Recompensa: +%d moedas</string>
+    <string name="challenge_start">INICIAR DESAFIO</string>
+    <string name="challenge_abandon">Abandonar desafio</string>
+    <string name="challenge_abandon_confirm">Tem certeza de que quer abandonar o desafio? Seu progresso será perdido.</string>
+    <string name="challenge_days_remaining">Restam %d dias</string>
+    <string name="challenge_list_title">Desafios de tarô</string>
+    <string name="challenge_list_subtitle">Jornadas estruturadas de crescimento pessoal por meio do tarô</string>
+    <string name="challenge_progress">%1$d/%2$d dias</string>
+
+    <!-- Challenge: 7 dní Osvícení -->
+    <string name="challenge_7_name">7 Dias de Iluminação</string>
+    <string name="challenge_7_desc">Uma exploração semanal da sua alma — a cada dia, uma área diferente da vida.</string>
+    <string name="challenge_7_d1">Passado — Que padrão você traz do seu passado?</string>
+    <string name="challenge_7_d2">Presente — O que o momento de hoje traz para você?</string>
+    <string name="challenge_7_d3">Sombras — O que em você ainda espera por aceitação e cura?</string>
+    <string name="challenge_7_d4">Relacionamentos — Como você se mostra às pessoas ao seu redor?</string>
+    <string name="challenge_7_d5">Abundância — Qual é a sua verdadeira relação com dinheiro e prosperidade?</string>
+    <string name="challenge_7_d6">Dons — Que dom único você carrega para o mundo?</string>
+    <string name="challenge_7_d7">Futuro — O que as estrelas preparam para você além do horizonte?</string>
+
+    <!-- Challenge: 21 dní Probuzení -->
+    <string name="challenge_21_name">21 Dias de Despertar</string>
+    <string name="challenge_21_desc">Três semanas de autoconhecimento profundo — das raízes aos horizontes.</string>
+    <string name="challenge_21_w1">Semana do autoconhecimento — Quem sou eu?</string>
+    <string name="challenge_21_w2">Semana dos relacionamentos — Como eu amo?</string>
+    <string name="challenge_21_w3">Semana da visão — Para onde estou indo?</string>
+
+    <!-- Challenge: 30 dní Transformace -->
+    <string name="challenge_30_name">30 Dias de Transformação</string>
+    <string name="challenge_30_desc">Um mês de mudança profunda — um trabalho completo com todos os planos do ser.</string>
+    <string name="challenge_30_w1">Raízes — Processamento do passado e dos padrões familiares</string>
+    <string name="challenge_30_w2">Coração — Amor, relacionamentos e inteligência emocional</string>
+    <string name="challenge_30_w3">Mente — Crenças, criatividade e novas possibilidades</string>
+    <string name="challenge_30_w4">Espírito — Sentido, propósito e sua missão cósmica</string>
+</resources>

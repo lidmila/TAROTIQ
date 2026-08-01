@@ -18,20 +18,24 @@ plugins {
 
 android {
     namespace = "com.tarotiq.app"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.tarotiq.app"
         minSdk = 26
-        targetSdk = 35
-        versionCode = 12
-        versionName = "1.8.2"
+        targetSdk = 36
+        versionCode = 13
+        versionName = "1.8.3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
-        resourceConfigurations.addAll(listOf("cs", "en", "de", "pl", "es", "it"))
+        // Jen jazyky s kompletním překladem – musí odpovídat LocaleUtils.supportedLanguages
+        // i res/xml/locales_config.xml. ro/hu/el zatím nejsou hotové.
+        resourceConfigurations.addAll(
+            listOf("cs", "en", "de", "es", "fr", "it", "nl", "pl", "pt", "ru", "tr", "uk")
+        )
     }
 
     signingConfigs {

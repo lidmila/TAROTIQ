@@ -97,6 +97,10 @@
     <string name="drawing_confirm_selection">Confirmer la sélection</string>
     <string name="drawing_scroll_hint">↓ Défilez pour voir plus de cartes ↓</string>
     <string name="spread_pick_cards">Choisissez %d cartes pour votre lecture</string>
+    <plurals name="spread_pick_cards">
+        <item quantity="one">Choisissez %d carte pour votre tirage</item>
+        <item quantity="other">Choisissez %d cartes pour votre tirage</item>
+    </plurals>
     <string name="drawing_focus_energy">Concentrez votre énergie sur votre intention.</string>
 
     <!-- Spread Positions -->

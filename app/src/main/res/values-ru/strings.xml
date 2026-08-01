@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TAROTIQ</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Портал</string>
+    <string name="nav_portal">Портал</string>
+    <string name="nav_library">Библиотека</string>
+    <string name="nav_new_reading">Оракул</string>
+    <string name="nav_oracle">Оракул</string>
+    <string name="nav_history">Записи</string>
+    <string name="nav_grimoire">Записи</string>
+    <string name="nav_profile">Профиль</string>
+
+    <!-- Auth -->
+    <string name="auth_login">Войти</string>
+    <string name="auth_register">Зарегистрироваться</string>
+    <string name="auth_email">Эл. почта</string>
+    <string name="auth_password">Пароль</string>
+    <string name="auth_passwordless">Войти по ссылке из письма</string>
+    <string name="auth_passwordless_desc">Мы отправим вам ссылку на эл. почту</string>
+    <string name="auth_enter_email_first">Сначала введите адрес эл. почты</string>
+    <string name="auth_forgot_password_title">Восстановление пароля</string>
+    <string name="auth_forgot_password_send">Отправить</string>
+    <string name="auth_google">Продолжить с Google</string>
+    <string name="auth_logout">Выйти</string>
+    <string name="auth_delete_account">Удалить аккаунт</string>
+    <string name="auth_profile">Профиль</string>
+    <string name="auth_email_sent">Ссылка отправлена на вашу эл. почту</string>
+    <string name="auth_forgot_password">Забыли пароль?</string>
+    <string name="auth_reset_sent">Письмо для восстановления пароля отправлено</string>
+
+    <!-- Home -->
+    <string name="home_daily_card">Карта дня</string>
+    <string name="home_daily_card_desc">Откройте свою карту дня</string>
+    <string name="home_quick_reading">Быстрый расклад</string>
+    <string name="home_new_reading">Новый расклад</string>
+    <string name="home_streak">Серия</string>
+    <string name="home_streak_days">%d дней подряд</string>
+
+    <!-- Reading Topics -->
+    <string name="topic_love">Любовь</string>
+    <string name="topic_career">Карьера</string>
+    <string name="topic_general">Общее</string>
+    <string name="topic_yes_no">Да / Нет</string>
+    <string name="topic_spiritual">Духовное</string>
+    <string name="topic_select">Выберите тему расклада</string>
+
+    <!-- Question -->
+    <string name="question_title">Ваш вопрос</string>
+    <string name="question_hint">Звёзды слушают…</string>
+    <string name="question_skip">Пропустить</string>
+    <string name="question_continue">Продолжить</string>
+
+    <!-- Spread -->
+    <string name="spread_select">Выберите расклад</string>
+    <string name="spread_single">Одна карта</string>
+    <string name="spread_single_desc">Быстрое прозрение</string>
+    <string name="spread_three_card">Три карты</string>
+    <string name="spread_three_card_desc">Прошлое · Настоящее · Будущее</string>
+    <string name="spread_celtic_cross">Кельтский крест</string>
+    <string name="spread_celtic_cross_desc">Глубокий расклад (10 карт)</string>
+    <string name="spread_relationship">Расклад на отношения</string>
+    <string name="spread_relationship_desc">Вы · Партнёр · Отношения · Испытания · Будущее</string>
+    <string name="spread_year_ahead">Год вперёд</string>
+    <string name="spread_year_ahead_desc">12 карт · Один месяц — одна карта</string>
+    <string name="spread_shadow_self">Теневое «я»</string>
+    <string name="spread_shadow_self_desc">Маска · Тень · Корень · Страх · Дар · Интеграция</string>
+    <string name="spread_crossroads">Перекрёсток судьбы</string>
+    <string name="spread_crossroads_desc">Два пути · Скрытый фактор · Совет</string>
+    <string name="spread_chakra">Расклад по чакрам</string>
+    <string name="spread_chakra_desc">7 чакр · Энергетическая диагностика</string>
+    <string name="spread_twin_flame">Родственная душа</string>
+    <string name="spread_twin_flame_desc">Кармическая связь · Уроки · Общая миссия</string>
+    <string name="spread_moon_cycle">Лунный цикл</string>
+    <string name="spread_moon_cycle_desc">8 фаз Луны · Что посеять, взрастить, собрать</string>
+    <string name="spread_career_compass">Карьерный компас</string>
+    <string name="spread_career_compass_desc">Таланты · Блок · Возможность · Финансы</string>
+    <string name="spread_inner_child">Внутренний ребёнок</string>
+    <string name="spread_inner_child_desc">Рана · Защита · Исцеление · Дар</string>
+    <string name="spread_tree_of_life">Древо жизни</string>
+    <string name="spread_tree_of_life_desc">10 сфирот · Каббалистический расклад</string>
+    <string name="spread_week_ahead">Неделя вперёд</string>
+    <string name="spread_week_ahead_desc">7 карт · По одной на каждый день</string>
+    <string name="spread_karmic">Кармический расклад</string>
+    <string name="spread_karmic_desc">Кармический долг · Уроки · Цель воплощения</string>
+    <string name="spread_self_love">Зеркало любви к себе</string>
+    <string name="spread_self_love_desc">Образ себя · Скрытая сила · Аффирмация</string>
+    <string name="spread_cost">%d монеты</string>
+    <string name="spread_cost_singular">%d монета</string>
+    <string name="spread_pick_cards">Выберите %d карт для своего расклада</string>
+
+    <!-- Card Drawing -->
+    <string name="drawing_tap_to_reveal">Коснитесь карты, чтобы открыть её</string>
+    <string name="drawing_card_revealed">Карта открыта!</string>
+    <string name="drawing_all_revealed">Все карты открыты</string>
+    <string name="drawing_get_reading">Получить толкование</string>
+    <string name="drawing_confirm_selection">Подтвердить выбор</string>
+    <string name="drawing_scroll_hint">↓ Прокрутите, чтобы увидеть больше карт ↓</string>
+    <plurals name="spread_pick_cards">
+        <item quantity="one">Выберите %d карту для своего расклада</item>
+        <item quantity="few">Выберите %d карты для своего расклада</item>
+        <item quantity="many">Выберите %d карт для своего расклада</item>
+        <item quantity="other">Выберите %d карты для своего расклада</item>
+    </plurals>
+    <string name="drawing_focus_energy">Сосредоточьте свою энергию на своём намерении.</string>
+    <string name="reading_extra_card_offer">Хотите узнать больше?\nДокупите ещё одну карту к раскладу.</string>
+    <string name="reading_buy_extra_card">Докупить карту за 1 монету</string>
+    <string name="extra_card_title">Выберите карту</string>
+    <string name="extra_card_confirm">Подтвердить выбор</string>
+
+    <!-- Spread Positions -->
+    <string name="position_insight">Прозрение</string>
+    <string name="position_past">Прошлое</string>
+    <string name="position_present">Настоящее</string>
+    <string name="position_future">Будущее</string>
+    <string name="position_you">Вы</string>
+    <string name="position_partner">Партнёр</string>
+    <string name="position_relationship">Отношения</string>
+    <string name="position_challenges">Испытания</string>
+    <string name="position_present_situation">Настоящее</string>
+    <string name="position_challenge">Испытание</string>
+    <string name="position_conscious">Сознание</string>
+    <string name="position_subconscious">Подсознание</string>
+    <string name="position_advice">Совет</string>
+    <string name="position_influences">Влияния</string>
+    <string name="position_hopes">Надежды и страхи</string>
+    <string name="position_outcome">Итог</string>
+    <string name="position_extra">Дополнительная карта</string>
+
+    <!-- Year Ahead positions -->
+    <string name="position_january">Январь</string>
+    <string name="position_february">Февраль</string>
+    <string name="position_march">Март</string>
+    <string name="position_april">Апрель</string>
+    <string name="position_may">Май</string>
+    <string name="position_june">Июнь</string>
+    <string name="position_july">Июль</string>
+    <string name="position_august">Август</string>
+    <string name="position_september">Сентябрь</string>
+    <string name="position_october">Октябрь</string>
+    <string name="position_november">Ноябрь</string>
+    <string name="position_december">Декабрь</string>
+
+    <!-- Shadow Self positions -->
+    <string name="position_mask">Маска</string>
+    <string name="position_shadow">Тень</string>
+    <string name="position_shadow_root">Корень тени</string>
+    <string name="position_fear">Страх</string>
+    <string name="position_shadow_gift">Дар тени</string>
+    <string name="position_integration">Интеграция</string>
+
+    <!-- Crossroads positions -->
+    <string name="position_current_situation">Текущая ситуация</string>
+    <string name="position_path_a_desc">Путь A</string>
+    <string name="position_path_a_outcome">Итог пути A</string>
+    <string name="position_path_b_desc">Путь B</string>
+    <string name="position_path_b_outcome">Итог пути B</string>
+    <string name="position_hidden_factor">Скрытый фактор</string>
+
+    <!-- Chakra positions -->
+    <string name="position_root_chakra">Корневая чакра</string>
+    <string name="position_sacral_chakra">Сакральная чакра</string>
+    <string name="position_solar_plexus">Солнечное сплетение</string>
+    <string name="position_heart_chakra">Сердечная чакра</string>
+    <string name="position_throat_chakra">Горловая чакра</string>
+    <string name="position_third_eye">Третий глаз</string>
+    <string name="position_crown_chakra">Коронная чакра</string>
+
+    <!-- Twin Flame positions -->
+    <string name="position_your_energy">Ваша энергия</string>
+    <string name="position_their_energy">Энергия второй души</string>
+    <string name="position_karmic_bond">Кармическая связь</string>
+    <string name="position_your_lesson">Ваш урок</string>
+    <string name="position_their_lesson">Урок партнёра</string>
+    <string name="position_shared_mission">Общая миссия</string>
+    <string name="position_obstacle">Препятствие</string>
+
+    <!-- Moon Cycle positions -->
+    <string name="position_new_moon">Новолуние — Что посеять</string>
+    <string name="position_waxing_crescent">Растущий серп — Что взращивать</string>
+    <string name="position_first_quarter">Первая четверть — Действие</string>
+    <string name="position_waxing_gibbous">Растущая луна — Что доработать</string>
+    <string name="position_full_moon">Полнолуние — Что собрать</string>
+    <string name="position_waning_gibbous">Убывающая луна — Благодарность</string>
+    <string name="position_last_quarter">Последняя четверть — Что отпустить</string>
+    <string name="position_dark_moon">Тёмная луна — Рефлексия</string>
+
+    <!-- Career Compass positions -->
+    <string name="position_hidden_talents">Скрытые таланты</string>
+    <string name="position_current_block">Текущий блок</string>
+    <string name="position_opportunity">Возможность на горизонте</string>
+    <string name="position_skill_to_develop">Навык для развития</string>
+    <string name="position_financial_energy">Финансовая энергия</string>
+    <string name="position_next_step">Следующий шаг</string>
+
+    <!-- Inner Child positions -->
+    <string name="position_inner_child">Внутренний ребёнок</string>
+    <string name="position_wound">Рана</string>
+    <string name="position_protective_pattern">Защитный паттерн</string>
+    <string name="position_healing">Исцеление</string>
+    <string name="position_inner_gift">Дар</string>
+
+    <!-- Tree of Life positions -->
+    <string name="position_keter">Кетер — Корона</string>
+    <string name="position_chokma">Хокма — Мудрость</string>
+    <string name="position_bina">Бина — Понимание</string>
+    <string name="position_chesed">Хесед — Милосердие</string>
+    <string name="position_gevura">Гевура — Сила</string>
+    <string name="position_tiferet">Тиферет — Красота</string>
+    <string name="position_netzach">Нецах — Победа</string>
+    <string name="position_hod">Ход — Слава</string>
+    <string name="position_yesod">Йесод — Основание</string>
+    <string name="position_malkhut">Малхут — Царство</string>
+
+    <!-- Week Ahead positions -->
+    <string name="position_monday">Понедельник</string>
+    <string name="position_tuesday">Вторник</string>
+    <string name="position_wednesday">Среда</string>
+    <string name="position_thursday">Четверг</string>
+    <string name="position_friday">Пятница</string>
+    <string name="position_saturday">Суббота</string>
+    <string name="position_sunday">Воскресенье</string>
+
+    <!-- Karmic positions -->
+    <string name="position_karmic_debt">Кармический долг</string>
+    <string name="position_karmic_gift">Кармический дар</string>
+    <string name="position_current_lesson">Текущий урок</string>
+    <string name="position_repeating_pattern">Повторяющийся паттерн</string>
+    <string name="position_what_to_break">Что прервать</string>
+    <string name="position_karmic_reward">Кармическая награда</string>
+    <string name="position_life_purpose">Цель воплощения</string>
+
+    <!-- Self-Love positions -->
+    <string name="position_how_i_see_myself">Как я вижу себя</string>
+    <string name="position_how_others_see_me">Как меня видят другие</string>
+    <string name="position_false_guilt">Незаслуженная вина</string>
+    <string name="position_hidden_strength">Скрытая сила</string>
+    <string name="position_what_i_need">Что мне нужно от себя</string>
+    <string name="position_affirmation">Аффирмация от карт</string>
+
+    <!-- Reading -->
+    <string name="reading_interpreting">Мадам Стелла читает ваши карты…</string>
+    <string name="reading_follow_up">Спросите ещё…</string>
+    <string name="reading_follow_up_hint">Хотите спросить о чём-то ещё?</string>
+    <string name="reading_save">Сохранить расклад</string>
+    <string name="reading_share">Поделиться</string>
+    <string name="reading_saved">Расклад сохранён</string>
+    <string name="reading_interpretation_title">Толкование</string>
+    <string name="reading_summary">Итог расклада</string>
+    <string name="reading_upright">Прямая</string>
+    <string name="reading_reversed">Перевёрнутая</string>
+
+    <!-- History -->
+    <string name="history_title">История раскладов</string>
+    <string name="history_empty">Пока нет раскладов</string>
+    <string name="history_filter_all">Все</string>
+
+    <!-- Card Library -->
+    <string name="library_title">Библиотека карт</string>
+    <string name="library_major_arcana">Старшие Арканы</string>
+    <string name="library_minor_arcana">Младшие Арканы</string>
+    <string name="library_cups">Кубки</string>
+    <string name="library_pentacles">Пентакли</string>
+    <string name="library_swords">Мечи</string>
+    <string name="library_wands">Жезлы</string>
+    <string name="library_all">Все</string>
+    <string name="library_search">Найти карту…</string>
+    <string name="library_upright_keywords">Ключевые слова (прямая)</string>
+    <string name="library_reversed_keywords">Ключевые слова (перевёрнутая)</string>
+    <string name="library_love">Любовь</string>
+    <string name="library_career">Карьера</string>
+    <string name="library_finances">Финансы</string>
+    <string name="library_feelings">Чувства</string>
+    <string name="library_actions">Советы</string>
+
+    <!-- Daily Card -->
+    <string name="daily_title">Карта дня</string>
+    <string name="daily_tap_reveal">Коснитесь, чтобы открыть свою карту дня</string>
+    <string name="daily_already_drawn">Сегодня вы уже открыли свою карту</string>
+    <string name="daily_view_details">Показать описание карты</string>
+
+    <!-- Coins -->
+    <string name="coins_balance">Ваши монеты</string>
+    <string name="coins_buy">Купить монеты</string>
+    <string name="coins_pack_5">5 монет</string>
+    <string name="coins_pack_15">15 монет</string>
+    <string name="coins_pack_50">50 монет</string>
+    <string name="coins_pack_300">300 монет</string>
+    <string name="coins_save">ЭКОНОМИЯ %d%%</string>
+    <string name="coins_most_popular">Самый популярный</string>
+    <string name="coins_best_value">Самый выгодный</string>
+    <string name="coins_not_enough">У вас недостаточно монет</string>
+    <string name="coins_free_readings">Осталось %d бесплатных раскладов</string>
+    <string name="coins_free_reading_used">Использован бесплатный расклад (%d/3)</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Профиль</string>
+    <string name="profile_zodiac">Знак зодиака</string>
+    <string name="profile_achievements">Достижения</string>
+    <string name="profile_statistics">Статистика</string>
+    <string name="profile_total_readings">Всего раскладов</string>
+    <string name="profile_favorite_card">Самая частая карта</string>
+    <string name="profile_longest_streak">Самая длинная серия</string>
+    <string name="profile_language">Язык</string>
+    <string name="profile_notifications">Уведомления</string>
+    <string name="profile_notification_time">Время напоминания</string>
+    <string name="profile_about">О приложении</string>
+    <string name="profile_legal">Правовая информация</string>
+    <string name="profile_other_apps">Попробуйте наши другие приложения</string>
+    <string name="app_kvitta_desc">Умное разделение расходов и расчёт долгов</string>
+    <string name="app_bettermingle_desc">Улучшите свои анкеты для знакомств с помощью ИИ</string>
+    <string name="app_bettershelf_desc">Организуйте свою библиотеку и открывайте новые книги</string>
+    <string name="app_dreamwitness_desc">Записывайте и толкуйте свои сны</string>
+
+    <!-- Info -->
+    <string name="faq_title">Частые вопросы</string>
+    <string name="about_title">О приложении TAROTIQ</string>
+    <string name="about_version">Версия %s</string>
+    <string name="contact_title">Связаться с поддержкой</string>
+    <string name="contact_send">Отправить</string>
+    <string name="contact_subject">Тема</string>
+    <string name="contact_message">Сообщение</string>
+    <string name="terms_title">Условия использования</string>
+    <string name="privacy_title">Политика конфиденциальности</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Карта дня</string>
+    <string name="notification_channel_description">Напоминание о ежедневной карте таро</string>
+    <string name="notification_daily_title">Ваша карта дня ждёт</string>
+    <string name="notification_daily_text">Узнайте, что звёзды приготовили для вас сегодня.</string>
+
+    <!-- Smart notification variants -->
+    <string name="notif_streak_title">Ваша серия из %d дней продолжается!</string>
+    <string name="notif_streak_text">Не разрывайте космическую нить. Карта дня ждёт.</string>
+    <string name="notif_streak_risk_title">Ваша серия под угрозой!</string>
+    <string name="notif_streak_risk_text">Вы ещё не вытянули карту. Ваша серия из %d дней угасает…</string>
+    <string name="notif_comeback_title">Звёзды ждут вас</string>
+    <string name="notif_comeback_text">Новая карта дня готова. Начните новую главу.</string>
+    <string name="notif_full_moon_title">Полнолуние сияет над вами</string>
+    <string name="notif_full_moon_text">Полнолуние раскрывает скрытые тайны. Что откроет ваша карта?</string>
+    <string name="notif_new_moon_title">Новолуние приносит новые начинания</string>
+    <string name="notif_new_moon_text">Идеальное время для самопознания. Вытяните свою карту дня.</string>
+    <string name="notif_milestone_title">Вы приближаетесь к рубежу!</string>
+    <string name="notif_milestone_week_text">Ещё %d дней до недельной серии! Не сдавайтесь.</string>
+    <string name="notif_milestone_month_text">Ещё %d дней до месячной серии! Вы великолепны.</string>
+    <string name="notif_general_1_title">Что шепчут вам звёзды?</string>
+    <string name="notif_general_1_text">Ваша карта дня хранит послание. Откройте его.</string>
+    <string name="notif_general_2_title">Новый день — новая карта</string>
+    <string name="notif_general_2_text">Какую энергию принесёт вам сегодняшний день? Узнайте.</string>
+    <string name="notif_general_3_title">У Вселенной есть послание для вас</string>
+    <string name="notif_general_3_text">Вытяните карту дня и прислушайтесь к звёздам.</string>
+
+    <!-- What's New -->
+    <string name="whats_new_title">Что нового?</string>
+    <string name="whats_new_version">Версия 1.6.0</string>
+    <string name="whats_new_1">⭐ Новые достижения — Собирайте 12 достижений за расклады, серии и карты дня. За каждое вы получите бонусные монеты!</string>
+    <string name="whats_new_2">❄️ Заморозка серии — Пропустили день? Серия не прервётся, если у вас есть заморозка. Вы получаете её за каждую недельную серию.</string>
+    <string name="whats_new_3">🔮 Ежедневное космическое послание — Персональный гороскоп по вашему знаку зодиака и фазе Луны, каждый день новый.</string>
+    <string name="whats_new_4">📲 Делитесь раскладами — Делитесь картой дня или раскладом в виде красивого изображения с друзьями.</string>
+    <string name="whats_new_5">🌟 Тема недели — Каждую неделю новая тематическая рекомендация расклада, вдохновляющая на более глубокое самопознание.</string>
+    <string name="whats_new_6">🌙 Умные напоминания — Уведомления подстраиваются под вашу серию, фазу Луны и то, как давно вы нас не посещали.</string>
+    <string name="whats_new_dismiss">Отлично, поехали!</string>
+
+    <!-- Evening Notification -->
+    <string name="notif_evening_title">Вечерняя рефлексия</string>
+    <string name="notif_evening_text">Как ваш день совпал с утренней картой? Остановитесь и поразмышляйте.</string>
+
+    <!-- Weekly Themes -->
+    <string name="weekly_focus_title">Тема этой недели</string>
+    <string name="weekly_focus_cta">Попробовать этот расклад</string>
+    <string name="theme_shadow_work">Работа с тенью</string>
+    <string name="theme_shadow_work_desc">Откройте скрытые части себя и примите их с любовью.</string>
+    <string name="theme_heart_opening">Открытие сердца</string>
+    <string name="theme_heart_opening_desc">Сосредоточьтесь на любви к себе и внутренней гармонии.</string>
+    <string name="theme_career_focus">Карьерный компас</string>
+    <string name="theme_career_focus_desc">Найдите направление на своём профессиональном пути.</string>
+    <string name="theme_inner_child">Внутренний ребёнок</string>
+    <string name="theme_inner_child_desc">Исцелите старые раны и заново откройте свою игривость.</string>
+    <string name="theme_cosmic_connection">Космическая связь</string>
+    <string name="theme_cosmic_connection_desc">Исследуйте глубокие душевные связи в своей жизни.</string>
+    <string name="theme_karmic_clearing">Кармическое очищение</string>
+    <string name="theme_karmic_clearing_desc">Поймите повторяющиеся паттерны и разорвите их.</string>
+    <string name="theme_lunar_wisdom">Лунная мудрость</string>
+    <string name="theme_lunar_wisdom_desc">Настройтесь на циклы Луны для более глубокого самопознания.</string>
+    <string name="theme_crossroads">На перекрёстке</string>
+    <string name="theme_crossroads_desc">Стоите перед выбором? Карты укажут вам путь.</string>
+    <string name="theme_energy_balance">Энергетический баланс</string>
+    <string name="theme_energy_balance_desc">Гармонизируйте свои семь чакр для внутреннего покоя.</string>
+    <string name="theme_deeper_knowledge">Глубокое познание</string>
+    <string name="theme_deeper_knowledge_desc">Погрузитесь в тайны Древа жизни.</string>
+    <string name="theme_week_planning">Планирование недели</string>
+    <string name="theme_week_planning_desc">Узнайте, что принесёт вам каждый день этой недели.</string>
+    <string name="theme_relationships">Отношения</string>
+    <string name="theme_relationships_desc">Исследуйте динамику своих самых близких отношений.</string>
+
+    <!-- Daily Horoscope -->
+    <string name="horoscope_title">Космическое послание дня</string>
+    <string name="horoscope_set_zodiac">Укажите знак зодиака для ежедневного гороскопа</string>
+
+    <!-- Streak Features -->
+    <string name="streak_freeze_used">Серия спасена!</string>
+    <string name="streak_freeze_used_desc">Вы использовали заморозку серии. Осталось: %d</string>
+    <string name="streak_freeze_count">Заморозки: %d</string>
+    <string name="streak_freeze_earned">Вы получили заморозку серии!</string>
+    <string name="comeback_title">С возвращением!</string>
+    <string name="comeback_text">Звёзды ждали вас. Вот небольшой подарок в честь возвращения.</string>
+    <string name="comeback_reward">+2 монеты бесплатно</string>
+    <string name="comeback_claim">Принять подарок</string>
+    <string name="milestone_title">Рубеж достигнут!</string>
+    <string name="milestone_text">%d дней подряд! Ваша преданность вдохновляет.</string>
+    <string name="milestone_reward">+%d монет в качестве бонуса</string>
+
+    <!-- Zodiac Signs -->
+    <string name="profile_zodiac_not_set">Не указано</string>
+    <string name="coins_count">%d монет</string>
+    <string name="element_water">Вода</string>
+    <string name="element_earth">Земля</string>
+    <string name="element_air">Воздух</string>
+    <string name="element_fire">Огонь</string>
+    <string name="zodiac_aries">Овен</string>
+    <string name="zodiac_taurus">Телец</string>
+    <string name="zodiac_gemini">Близнецы</string>
+    <string name="zodiac_cancer">Рак</string>
+    <string name="zodiac_leo">Лев</string>
+    <string name="zodiac_virgo">Дева</string>
+    <string name="zodiac_libra">Весы</string>
+    <string name="zodiac_scorpio">Скорпион</string>
+    <string name="zodiac_sagittarius">Стрелец</string>
+    <string name="zodiac_capricorn">Козерог</string>
+    <string name="zodiac_aquarius">Водолей</string>
+    <string name="zodiac_pisces">Рыбы</string>
+
+    <!-- HomeScreen Portal -->
+    <string name="home_celestial_active">НЕБЕСНЫЙ ПОРТАЛ АКТИВЕН</string>
+    <string name="home_headline_1">Звёзды шепчут</string>
+    <string name="home_headline_2">вашу судьбу сегодня.</string>
+    <string name="home_welcome_body">Пройдите сквозь завесу между мирами. Каждая вытянутая карта — шёпот Вселенной, нить судьбы, сотканная именно для вас.</string>
+    <string name="home_daily_drawing">ЕЖЕДНЕВНОЕ ГАДАНИЕ</string>
+    <string name="home_consult_oracle">Обратитесь к Оракулу</string>
+    <string name="home_daily_desc">Примите своё ежедневное послание из таинственной колоды. Одна карта, вытянутая на рассвете, направит вас в пути.</string>
+    <string name="home_awaiting">ОЖИДАЕТ\nПРИЗЫВА</string>
+    <string name="home_reflect">ВЗГЛЯНУТЬ</string>
+    <string name="home_explore">ИССЛЕДОВАТЬ</string>
+    <string name="home_most_insightful">САМЫЙ ГЛУБОКИЙ</string>
+    <string name="home_connection">Связь</string>
+    <string name="home_connection_desc">Сердце и душа</string>
+    <string name="home_lunar_phase">ФАЗА ЛУНЫ</string>
+    <string name="home_visibility">ВИДИМОСТЬ</string>
+
+    <!-- ReadingHistoryScreen -->
+    <string name="history_sacred_archive">СВЯЩЕННЫЙ АРХИВ</string>
+    <string name="history_grimoire_title">Гримуар</string>
+    <string name="history_subtitle">Ваши священные расклады, сохранённые навеки</string>
+    <string name="history_search_hint">Искать в гримуаре…</string>
+    <string name="history_revisit">ВЕРНУТЬСЯ К ТОЛКОВАНИЮ</string>
+    <string name="history_deepen_search">УГЛУБИТЬ ПОИСК</string>
+
+    <!-- ReadingInterpretation errors -->
+    <string name="error_insufficient_coins_title">Недостаточно монет</string>
+    <string name="error_insufficient_coins_desc">Для этого расклада вам нужно больше монет. Пополните запас и откройте послания, которые карты приготовили для вас.</string>
+    <string name="coins_buy_now">КУПИТЬ МОНЕТЫ</string>
+    <string name="ad_watch_for_coin">СМОТРЕТЬ РЕКЛАМУ (+1 МОНЕТА)</string>
+    <string name="ad_loading">Загрузка рекламы…</string>
+    <string name="error_no_internet_title">Нет подключения</string>
+    <string name="error_no_internet_desc">Проверьте подключение к интернету и попробуйте снова.</string>
+    <string name="error_timeout_title">Время ожидания истекло</string>
+    <string name="error_timeout_desc">Сервер не отвечает. Пожалуйста, попробуйте снова.</string>
+    <string name="error_auth_title">Ошибка входа</string>
+    <string name="error_auth_desc">Ваш сеанс истёк. Выйдите из аккаунта и войдите снова.</string>
+    <string name="error_retry">ПОПРОБОВАТЬ СНОВА</string>
+
+    <!-- ReadingInterpretation -->
+    <string name="reading_oracle_insight">Прозрение Оракула</string>
+    <string name="reading_generated_by_ai">СГЕНЕРИРОВАНО ИИ</string>
+
+    <!-- ReadingDetail -->
+    <string name="reading_cosmic_synthesis">КОСМИЧЕСКИЙ СИНТЕЗ</string>
+
+    <!-- Login -->
+    <string name="auth_subtitle">ВАШ МИСТИЧЕСКИЙ ПРОВОДНИК</string>
+
+    <!-- About -->
+    <string name="about_description">Ваш мистический ИИ-таролог.\nОткрывайте прозрения через древнее искусство таро, усиленное современным ИИ.\n\nTAROTIQ сочетает многовековую мудрость таро с новейшими технологиями для персональных интерактивных раскладов.</string>
+
+    <!-- Rating Gate -->
+    <string name="rating_title">Был ли расклад полезен для вас?</string>
+    <string name="rating_subtitle">Ваша оценка помогает другим искателям найти TarotIQ.</string>
+    <string name="rating_submit_positive">ОЦЕНИТЬ В GOOGLE PLAY</string>
+    <string name="rating_submit_negative">НАПИСАТЬ НАМ ОТЗЫВ</string>
+    <string name="rating_skip">Не сейчас</string>
+    <string name="rating_thanks">Спасибо!</string>
+    <string name="rating_thanks_desc">Ваша поддержка значит для нас целый мир. ✨</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+    <string name="close">Закрыть</string>
+    <string name="back">Назад</string>
+    <string name="save">Сохранить</string>
+    <string name="delete">Удалить</string>
+    <string name="share">Поделиться</string>
+    <string name="share_text">Моя карта таро: %s 🎴 Получите свой расклад в Tarotiq!</string>
+    <string name="share_daily_card_label">Карта дня</string>
+    <string name="loading">Загрузка…</string>
+    <string name="error_generic">Что-то пошло не так. Попробуйте снова.</string>
+    <string name="error_network">Проверьте подключение к интернету.</string>
+    <string name="offline_banner">Вы офлайн</string>
+    <string name="delete_confirm_title">Удалить расклад?</string>
+    <string name="delete_confirm_message">Это действие нельзя отменить.</string>
+    <string name="retry">Повторить</string>
+    <string name="no_cards_found">Карты не найдены</string>
+
+    <!-- Rewarded Ads -->
+    <string name="rewarded_ad_title">Посмотрите рекламу — получите монету</string>
+    <string name="rewarded_ad_subtitle">Осталось %d на этой неделе</string>
+    <string name="rewarded_ad_success">+1 монета зачислена!</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_language">Выберите язык</string>
+    <string name="onboarding_welcome">Добро пожаловать в TAROTIQ</string>
+    <string name="onboarding_welcome_desc">Откройте тайны таро с вашей личной ИИ-гадалкой</string>
+    <string name="onboarding_zodiac">Ваш знак</string>
+    <string name="onboarding_zodiac_desc">Выберите свой знак зодиака для персональных раскладов</string>
+    <string name="onboarding_daily">Карта дня</string>
+    <string name="onboarding_daily_desc">Каждый день мы открываем для вас карту с посланием</string>
+    <string name="onboarding_ready">Вы готовы</string>
+    <string name="onboarding_ready_desc">3 расклада вам даются бесплатно. Начните свой путь!</string>
+    <string name="onboarding_start">Начать</string>
+    <string name="onboarding_next">Далее</string>
+    <string name="onboarding_skip">Пропустить</string>
+
+    <!-- Moon Phases -->
+    <string name="moon_new">Новолуние</string>
+    <string name="moon_waxing_crescent">Растущий серп</string>
+    <string name="moon_first_quarter">Первая четверть</string>
+    <string name="moon_waxing_gibbous">Растущая луна</string>
+    <string name="moon_full">Полнолуние</string>
+    <string name="moon_waning_gibbous">Убывающая луна</string>
+    <string name="moon_last_quarter">Последняя четверть</string>
+    <string name="moon_waning_crescent">Убывающий серп</string>
+
+    <!-- Moon Phase Energy Descriptions -->
+    <string name="moon_energy_new">Время новых начинаний. Посейте намерения, которые хотите воплотить в этом цикле.</string>
+    <string name="moon_energy_waxing_crescent">Ваши намерения набирают силу. Стройте планы и делайте первые шаги.</string>
+    <string name="moon_energy_first_quarter">Время действий и решений. Преодолевайте препятствия с отвагой.</string>
+    <string name="moon_energy_waxing_gibbous">Доработайте детали. Ваши проекты созревают — терпение принесёт плоды.</string>
+    <string name="moon_energy_full">Кульминация и откровение. Пожинайте плоды и отпразднуйте то, чего вы достигли.</string>
+    <string name="moon_energy_waning_gibbous">Время благодарности и обмена. Передавайте мудрость, которую вы обрели.</string>
+    <string name="moon_energy_last_quarter">Отпустите то, что вам больше не служит. Освободитесь от старых паттернов и привычек.</string>
+    <string name="moon_energy_waning_crescent">Тишина и рефлексия. Отдыхайте и готовьтесь к новому циклу.</string>
+
+    <!-- Moon Phase Activities -->
+    <string name="moon_activity_new">Медитация на намерения · Запись желаний · Планирование</string>
+    <string name="moon_activity_waxing_crescent">Визуализация · Первые шаги · Формирование привычек</string>
+    <string name="moon_activity_first_quarter">Принятие решений · Преодоление страха · Активные шаги</string>
+    <string name="moon_activity_waxing_gibbous">Терпение · Доработка деталей · Пересмотр планов</string>
+    <string name="moon_activity_full">Праздник · Ритуалы благодарности · Слушание интуиции</string>
+    <string name="moon_activity_waning_gibbous">Обмен мудростью · Прощение · Обучение других</string>
+    <string name="moon_activity_last_quarter">Уборка и отпускание · Завершение глав · Детокс</string>
+    <string name="moon_activity_waning_crescent">Отдых · Мечты · Медитация · Тишина</string>
+
+    <!-- Moon Phase Tarot Connection -->
+    <string name="moon_tarot_new">Под новолунием резонирует The Star — рождаются новые надежды.</string>
+    <string name="moon_tarot_waxing_crescent">Под растущим серпом резонирует The Magician — творите свою реальность.</string>
+    <string name="moon_tarot_first_quarter">Под первой четвертью резонирует The Chariot — воля поведёт вас вперёд.</string>
+    <string name="moon_tarot_waxing_gibbous">Под растущей луной резонирует Temperance — ключ к успеху в равновесии.</string>
+    <string name="moon_tarot_full">Под полнолунием резонирует The High Priestess — интуиция сильнее всего.</string>
+    <string name="moon_tarot_waning_gibbous">Под убывающей луной резонирует The Hermit — ищите мудрость внутри.</string>
+    <string name="moon_tarot_last_quarter">Под последней четвертью резонирует Death — трансформация приносит новую жизнь.</string>
+    <string name="moon_tarot_waning_crescent">Под убывающим серпом резонирует The Moon — прислушивайтесь к своим снам.</string>
+
+    <!-- Lunar Section UI -->
+    <string name="moon_days_until_full">Полнолуние через %d дней</string>
+    <string name="moon_days_until_new">Новолуние через %d дней</string>
+    <string name="moon_recommended_spread">Идеальный расклад для этой фазы</string>
+    <string name="moon_try_spread">Попробовать Лунный цикл</string>
+
+    <!-- Achievements -->
+    <string name="achievement_first_reading">Первый расклад</string>
+    <string name="achievement_first_reading_desc">Завершите свой первый расклад таро</string>
+    <string name="achievement_ten_readings">10 раскладов</string>
+    <string name="achievement_ten_readings_desc">Завершите 10 раскладов таро</string>
+    <string name="achievement_fifty_readings">50 раскладов</string>
+    <string name="achievement_fifty_readings_desc">Завершите 50 раскладов таро</string>
+    <string name="achievement_hundred_readings">100 раскладов</string>
+    <string name="achievement_hundred_readings_desc">Завершите 100 раскладов таро</string>
+    <string name="achievement_all_spreads">Все расклады</string>
+    <string name="achievement_all_spreads_desc">Попробуйте каждый тип расклада</string>
+    <string name="achievement_week_streak">Недельная серия</string>
+    <string name="achievement_week_streak_desc">Поддерживайте серию 7 дней подряд</string>
+    <string name="achievement_month_streak">Месячная серия</string>
+    <string name="achievement_month_streak_desc">Поддерживайте серию 30 дней подряд</string>
+    <string name="achievement_major_arcana">Все Старшие Арканы</string>
+    <string name="achievement_major_arcana_desc">Откройте все 22 карты Старших Арканов</string>
+    <string name="achievement_first_daily">Первая карта дня</string>
+    <string name="achievement_first_daily_desc">Вытяните свою первую карту дня</string>
+    <string name="achievement_thirty_dailies">30 карт дня</string>
+    <string name="achievement_thirty_dailies_desc">Вытяните 30 карт дня</string>
+    <string name="achievement_night_owl">Ночная сова</string>
+    <string name="achievement_night_owl_desc">Сделайте расклад после 23:00</string>
+    <string name="achievement_early_bird">Ранняя пташка</string>
+    <string name="achievement_early_bird_desc">Сделайте расклад до 7:00</string>
+    <string name="achievement_unlocked">Достижение разблокировано!</string>
+    <string name="achievement_coin_reward">+%d монет</string>
+    <string name="achievements_title">Достижения</string>
+
+    <!-- FAQ -->
+    <string name="faq_q1">Как работает расклад?</string>
+    <string name="faq_a1">Вы выбираете тему, по желанию задаёте вопрос, выбираете расклад и открываете карты касанием. Затем наша ИИ-гадалка мадам Стелла толкует ваши карты в контексте вашего вопроса.</string>
+    <string name="faq_q2">Расклады бесплатны?</string>
+    <string name="faq_a2">Вы получаете 3 расклада совершенно бесплатно. Затем можно докупать наборы монет для новых раскладов. Карта дня всегда бесплатна.</string>
+    <string name="faq_q3">Как работают монеты?</string>
+    <string name="faq_a3">Монетами вы платите за расклады. Разные расклады стоят по-разному: 1 карта = 1 монета, 3 карты = 2 монеты, Кельтский крест = 3 монеты.</string>
+    <string name="faq_q4">Насколько точен таро?</string>
+    <string name="faq_a4">Таро — инструмент самопознания и личностного роста. Толкования генерируются ИИ и служат вдохновением, а не окончательными предсказаниями будущего.</string>
+    <string name="faq_q5">Могу ли я задавать дополнительные вопросы?</string>
+    <string name="faq_a5">Да! После каждого расклада вы можете спросить мадам Стеллу о чём угодно ещё касательно ваших карт — без дополнительной платы.</string>
+
+    <!-- Monthly Horoscope Spread -->
+    <string name="spread_monthly_horoscope">Месячный гороскоп</string>
+    <string name="spread_monthly_horoscope_desc">12 карт · Полный путеводитель по предстоящему месяцу</string>
+    <string name="position_month_theme">Главная тема месяца</string>
+    <string name="position_month_love">Любовь и отношения</string>
+    <string name="position_month_career">Карьера</string>
+    <string name="position_month_finances">Финансы</string>
+    <string name="position_month_health">Здоровье и жизненные силы</string>
+    <string name="position_month_spirituality">Духовный рост</string>
+    <string name="position_month_family">Семья и дом</string>
+    <string name="position_month_growth">Личностное развитие</string>
+    <string name="position_month_challenges">Испытания и препятствия</string>
+    <string name="position_month_opportunities">Возможности</string>
+    <string name="position_month_hidden">Скрытое влияние</string>
+    <string name="position_month_message">Послание месяца</string>
+
+    <!-- Mercury Retrograde -->
+    <string name="mercury_retrograde">МЕРКУРИЙ РЕТРОГРАДНЫЙ</string>
+    <string name="mercury_direct">Меркурий директный</string>
+    <string name="mercury_retrograde_until">Ретроградный до %s</string>
+    <string name="mercury_direct_next">Следующий ретроград: %s</string>
+    <string name="mercury_retrograde_warning">Будьте внимательны с общением, техникой и договорами. Избегайте важных решений.</string>
+    <string name="mercury_direct_desc">Благоприятное время для ясного общения и новых начинаний.</string>
+
+    <!-- Tarot Journal / Notes -->
+    <string name="journal_notes_label">Личные заметки</string>
+    <string name="journal_notes_hint">Запишите свои чувства, интуитивные впечатления или синхроничности…</string>
+    <string name="journal_notes_saved">Заметка сохранена</string>
+    <string name="journal_save_notes">СОХРАНИТЬ ЗАМЕТКУ</string>
+
+    <!-- Share Reading -->
+    <string name="share_reading">ПОДЕЛИТЬСЯ РАСКЛАДОМ</string>
+
+    <!-- Lifetime Premium -->
+    <string name="lifetime_title">Пожизненный доступ</string>
+    <string name="lifetime_desc">Безлимитные расклады навсегда. Никаких монет, никаких ограничений.</string>
+    <string name="lifetime_feature_1">✦ Безлимитные расклады всех 17 типов</string>
+    <string name="lifetime_feature_2">✦ Приоритетные ИИ-толкования от мадам Стеллы</string>
+    <string name="lifetime_feature_3">✦ Бесплатный доступ ко всем будущим раскладам</string>
+    <string name="lifetime_feature_4">✦ Эксклюзивный VIP-статус навсегда</string>
+    <string name="lifetime_feature_5">✦ Без рекламы</string>
+    <string name="lifetime_buy">ХОЧУ ЭТО</string>
+    <string name="lifetime_price">4 499 Kč единоразово</string>
+    <string name="lifetime_badge">ЛУЧШИЙ ВЫБОР</string>
+    <string name="lifetime_active">✓ Пожизненный доступ активен</string>
+    <string name="lifetime_active_desc">Наслаждайтесь безлимитными раскладами навсегда.</string>
+
+    <!-- Welcome Offer Dialog -->
+    <string name="welcome_offer_title">Космическая инициация</string>
+    <string name="welcome_offer_subtitle">Карты указали вам путь — войдёте ли вы?</string>
+    <string name="welcome_offer_timer">Предложение истекает через</string>
+    <string name="welcome_offer_skip">Не сейчас</string>
+    <string name="welcome_offer_tier1_title">Звёздный набор</string>
+    <string name="welcome_offer_tier1_coins">15 монет</string>
+    <string name="welcome_offer_tier1_badge">СКИДКА 50%</string>
+    <string name="welcome_offer_tier2_title">Пожизненный доступ</string>
+    <string name="welcome_offer_tier2_original">4 499 Kč</string>
+    <string name="welcome_offer_tier2_price">3 499 Kč</string>
+    <string name="welcome_offer_tier2_badge">ПРИВЕТСТВЕННОЕ ПРЕДЛОЖЕНИЕ</string>
+    <string name="welcome_offer_tier2_desc">Безлимит навсегда · Только для новых пользователей</string>
+    <string name="welcome_offer_recommended">РЕКОМЕНДУЕМ</string>
+
+    <!-- Journal AI Analysis -->
+    <string name="journal_analyze_cta">АНАЛИЗ С ИИ</string>
+    <string name="journal_analyze_desc">Мадам Стелла свяжет ваши заметки с раскладом</string>
+    <string name="journal_analyzing">Мадам Стелла читает ваши заметки…</string>
+    <string name="journal_analysis_title">Размышления мадам Стеллы</string>
+    <string name="journal_analysis_error">Не удалось завершить анализ. Попробуйте снова.</string>
+
+    <!-- Challenge Journeys -->
+    <string name="challenge_section_title">ТАРО-ВЫЗОВ</string>
+    <string name="challenge_browse">Смотреть вызовы</string>
+    <string name="challenge_active_day">День %1$d из %2$d</string>
+    <string name="challenge_today_intention">Намерение на сегодня</string>
+    <string name="challenge_draw_card">ВЫТЯНУТЬ КАРТУ</string>
+    <string name="challenge_completed_today">Сегодняшний вызов выполнен ✓</string>
+    <string name="challenge_completed_all">Вызов завершён! 🎉</string>
+    <string name="challenge_reward">Награда: +%d монет</string>
+    <string name="challenge_start">НАЧАТЬ ВЫЗОВ</string>
+    <string name="challenge_abandon">Покинуть вызов</string>
+    <string name="challenge_abandon_confirm">Вы действительно хотите покинуть вызов? Ваш прогресс будет потерян.</string>
+    <string name="challenge_days_remaining">Осталось %d дней</string>
+    <string name="challenge_list_title">Таро-вызовы</string>
+    <string name="challenge_list_subtitle">Структурированные пути личностного роста через таро</string>
+    <string name="challenge_progress">%1$d/%2$d дней</string>
+
+    <!-- Challenge: 7 dní Osvícení -->
+    <string name="challenge_7_name">7 дней Просветления</string>
+    <string name="challenge_7_desc">Недельное исследование вашей души — каждый день новая сфера жизни.</string>
+    <string name="challenge_7_d1">Прошлое — Какой паттерн вы несёте из своего прошлого?</string>
+    <string name="challenge_7_d2">Настоящее — Что приносит вам сегодняшний момент?</string>
+    <string name="challenge_7_d3">Тени — Что в вас ещё ждёт принятия и исцеления?</string>
+    <string name="challenge_7_d4">Отношения — Как вы проявляете себя с окружающими людьми?</string>
+    <string name="challenge_7_d5">Изобилие — Каковы ваши истинные отношения с деньгами и процветанием?</string>
+    <string name="challenge_7_d6">Дары — Какой уникальный дар вы несёте в мир?</string>
+    <string name="challenge_7_d7">Будущее — Что звёзды готовят вам за горизонтом?</string>
+
+    <!-- Challenge: 21 dní Probuzení -->
+    <string name="challenge_21_name">21 день Пробуждения</string>
+    <string name="challenge_21_desc">Три недели глубокого самопознания — от корней до горизонтов.</string>
+    <string name="challenge_21_w1">Неделя самопознания — Кто я?</string>
+    <string name="challenge_21_w2">Неделя отношений — Как я люблю?</string>
+    <string name="challenge_21_w3">Неделя видения — Куда я иду?</string>
+
+    <!-- Challenge: 30 dní Transformace -->
+    <string name="challenge_30_name">30 дней Трансформации</string>
+    <string name="challenge_30_desc">Месяц глубинных перемен — комплексная работа со всеми уровнями бытия.</string>
+    <string name="challenge_30_w1">Корни — Проработка прошлого и семейных паттернов</string>
+    <string name="challenge_30_w2">Сердце — Любовь, отношения и эмоциональный интеллект</string>
+    <string name="challenge_30_w3">Разум — Убеждения, творчество и новые возможности</string>
+    <string name="challenge_30_w4">Дух — Смысл, предназначение и ваша космическая миссия</string>
+</resources>

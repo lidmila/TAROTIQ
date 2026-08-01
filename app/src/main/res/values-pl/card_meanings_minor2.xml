@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== SWORDS (Meče) ===== -->
+
+    <!-- Card 50: Ace of Swords -->
+    <string name="card_50_love_up">Przełom w zrozumieniu w związku; jasna i szczera komunikacja otwiera nowe drzwi.</string>
+    <string name="card_50_love_rev">Nieporozumienia i zamęt w miłości; ostre słowa lub dezinformacja szkodzą związkowi.</string>
+    <string name="card_50_career_up">Świetny nowy pomysł lub mentalny przełom w pracy; jasność zamiaru napędza sukces.</string>
+    <string name="card_50_career_rev">Zamęt i zła komunikacja w pracy; błędny pomysł może prowadzić do zawodowych niepowodzeń.</string>
+    <string name="card_50_finances_up">Jasne finansowe myślenie prowadzi do mądrych decyzji; nowa strategia przecina zamęt.</string>
+    <string name="card_50_finances_rev">Finansowy zamęt lub dezinformacja; pochopne decyzje oparte na niepełnym zrozumieniu.</string>
+    <string name="card_50_feelings_up">Mentalna jasność i entuzjazm z przełomu; prawda przebija się przez mgłę.</string>
+    <string name="card_50_feelings_rev">Mentalny zamęt i przytłoczenie; próba jasnego myślenia pośród chaosu.</string>
+    <string name="card_50_actions_up">Wykorzystaj swoją mentalną jasność do pokonania przeszkód; mów prawdę i podążaj za nowymi pomysłami.</string>
+    <string name="card_50_actions_rev">Szukaj jasności, zanim zaczniesz działać; nie używaj swojego intelektu jako broni.</string>
+
+    <!-- Card 51: Two of Swords -->
+    <string name="card_51_love_up">Trudny romantyczny wybór, którego unikasz; emocjonalny pat blokuje postęp w miłości.</string>
+    <string name="card_51_love_rev">W końcu podejmujesz decyzję w sprawie związku; nadmiar emocji zmusza cię do działania.</string>
+    <string name="card_51_career_up">Decyzja zawodowa utknęła w martwym punkcie; odmowa wyboru między dwiema opcjami paraliżuje postęp.</string>
+    <string name="card_51_career_rev">Przełamywanie zawodowego niezdecydowania; przytłoczenie informacjami ustępuje jasności.</string>
+    <string name="card_51_finances_up">Finansowe niezdecydowanie blokuje twój postęp; rozważasz dwie opcje, nie decydując się na żadną.</string>
+    <string name="card_51_finances_rev">Finansowa decyzja w końcu zapada po okresie paraliżu; wyłania się jasność.</string>
+    <string name="card_51_feelings_up">Poczucie utknięcia między dwoma wyborami; blokujesz swoje emocje, by uniknąć trudnej decyzji.</string>
+    <string name="card_51_feelings_rev">Emocjonalna tama pęka; uczucia, które tłumiłeś, domagają się uznania.</string>
+    <string name="card_51_actions_up">Staw czoła trudnemu wyborowi, którego unikałeś; dalsze unikanie tylko odkłada nieuniknione.</string>
+    <string name="card_51_actions_rev">Decyzja została podjęta lub zostanie podjęta za ciebie; zaakceptuj wynik i idź dalej.</string>
+
+    <!-- Card 52: Three of Swords -->
+    <string name="card_52_love_up">Złamane serce i zdrada w miłości; bolesna prawda rozbija iluzję związku.</string>
+    <string name="card_52_love_rev">Uzdrawianie złamanego serca; zaczynasz wybaczać i uwalniać ból zdrady.</string>
+    <string name="card_52_career_up">Bolesna zawodowa zdrada lub druzgocąca wiadomość w karierze; smutek po utraconej okazji.</string>
+    <string name="card_52_career_rev">Dochodzenie do siebie po zawodowym niepowodzeniu; leczenie ran po ciosach w miejscu pracy i ruszanie dalej.</string>
+    <string name="card_52_finances_up">Finansowa strata, która przynosi emocjonalny ból; pieniężna zdrada rani głęboko.</string>
+    <string name="card_52_finances_rev">Dochodzenie do siebie po finansowej stracie; emocjonalny ból z powodu kłopotów pieniężnych zaczyna się goić.</string>
+    <string name="card_52_feelings_up">Głęboki smutek i ból serca; ból zdrady lub straty przeszywa twoje serce.</string>
+    <string name="card_52_feelings_rev">Ból ustępuje; wybaczenie i uzdrowienie stopniowo zastępują smutek.</string>
+    <string name="card_52_actions_up">Pozwól sobie w pełni przeżyć żałobę; uznaj ból, zamiast go tłumić.</string>
+    <string name="card_52_actions_rev">Rozpocznij proces uzdrawiania; wybacz, co możesz, i uwolnij ból, który cię powstrzymuje.</string>
+
+    <!-- Card 53: Four of Swords -->
+    <string name="card_53_love_up">Konieczna pauza w twoim życiu miłosnym; odpoczynek i refleksja wzmacniają twoje emocjonalne rezerwy.</string>
+    <string name="card_53_love_rev">Niepokój w miłości; odmowa potrzebnego emocjonalnego odpoczynku prowadzi do wypalenia.</string>
+    <string name="card_53_career_up">Zrób sobie przerwę od stresu w pracy; umysłowy odpoczynek i regeneracja są niezbędne dla przyszłej produktywności.</string>
+    <string name="card_53_career_rev">Wypalenie z powodu odmowy odpoczynku; przepychanie się przez wyczerpanie prowadzi do coraz słabszych rezultatów.</string>
+    <string name="card_53_finances_up">Okres finansowego spokoju; żadnych wielkich ruchów finansowych, tylko stabilne zachowywanie zasobów.</string>
+    <string name="card_53_finances_rev">Finansowy niepokój uniemożliwia odpoczynek; troski o pieniądze nie pozwalają ci spać w nocy.</string>
+    <string name="card_53_feelings_up">Poczucie potrzeby głębokiego odpoczynku i umysłowej regeneracji; spokój przychodzi przez samotność.</string>
+    <string name="card_53_feelings_rev">Wyczerpanie i niepokój; niezdolność do znalezienia spokoju, którego twój umysł i ciało rozpaczliwie potrzebują.</string>
+    <string name="card_53_actions_up">Cofnij się i odpocznij przed kolejnym krokiem; regeneracja teraz zapobiegnie późniejszemu załamaniu.</string>
+    <string name="card_53_actions_rev">Odpoczywałeś już wystarczająco albo odmawiasz odpoczynku; zajmij się podstawową przyczyną swojego wyczerpania.</string>
+
+    <!-- Card 54: Five of Swords -->
+    <string name="card_54_love_up">Bolesny konflikt w miłości; wygranie kłótni może oznaczać utratę związku.</string>
+    <string name="card_54_love_rev">Pojednanie po konflikcie; oboje partnerzy idą na kompromis i zaczynają naprawiać szkody.</string>
+    <string name="card_54_career_up">Konflikty i walki o władzę w miejscu pracy; puste zwycięstwo, które kosztuje cię szacunek.</string>
+    <string name="card_54_career_rev">Zawieranie pokoju z zawodowymi rywalami; wybór pojednania zamiast dalszej walki.</string>
+    <string name="card_54_finances_up">Finansowe spory lub nieuczciwe działania; zarabianie pieniędzy kosztem relacji.</string>
+    <string name="card_54_finances_rev">Rozwiązywanie finansowych sporów; akceptacja strat i odejście od pieniężnych konfliktów.</string>
+    <string name="card_54_feelings_up">Poczucie wojowniczości i postawy obronnej; ukłucie konfliktu lub porażki ciąży na twoim umyśle.</string>
+    <string name="card_54_feelings_rev">Uwalnianie wrogości i urazy; wybór pokoju zamiast trwającej wojny.</string>
+    <string name="card_54_actions_up">Mądrze wybieraj swoje bitwy; niektóre zwycięstwa nie są warte ceny, którą zapłacisz.</string>
+    <string name="card_54_actions_rev">Puść potrzebę wygrywania; szukaj naprawy i rozwiązania zamiast odwetu.</string>
+
+    <!-- Card 55: Six of Swords -->
+    <string name="card_55_love_up">Przejście od burzliwego romantycznego okresu ku spokojniejszym wodom; uzdrowienie poprzez zmianę.</string>
+    <string name="card_55_love_rev">Niezdolność do pozostawienia bolesnego związku za sobą; nierozwiązane emocjonalne sprawy cię powstrzymują.</string>
+    <string name="card_55_career_up">Zawodowe przejście z dala od stresującego środowiska; ruch ku lepszym możliwościom.</string>
+    <string name="card_55_career_rev">Utknięcie w toksycznym środowisku pracy; opór wobec zawodowej zmiany, którą musisz przeprowadzić.</string>
+    <string name="card_55_finances_up">Finansowe przejście ku stabilniejszym podstawom; pozostawianie problemów pieniężnych za sobą.</string>
+    <string name="card_55_finances_rev">Niezdolność do ucieczki od finansowych kłopotów; opór wobec przeprowadzenia koniecznych zmian pieniężnych.</string>
+    <string name="card_55_feelings_up">Poczucie mieszanki smutku i nadziei, gdy zostawiasz przeszłość za sobą i zmierzasz ku uzdrowieniu.</string>
+    <string name="card_55_feelings_rev">Poczucie uwięzienia w emocjonalnym zamęcie; niezdolność do znalezienia drogi naprzód.</string>
+    <string name="card_55_actions_up">Przyjmij przejście i idź naprzód; zostaw za sobą to, co bolesne, z gracją.</string>
+    <string name="card_55_actions_rev">Zajmij się tym, co trzyma cię w miejscu; rozwiąż niedokończone sprawy, abyś mógł wreszcie iść dalej.</string>
+
+    <!-- Card 56: Seven of Swords -->
+    <string name="card_56_love_up">Oszustwo lub zdrada w miłości; ktoś nie jest w związku całkowicie szczery.</string>
+    <string name="card_56_love_rev">W związku wychodzą na jaw sekrety; wyznanie oczyszcza atmosferę mimo początkowego bólu.</string>
+    <string name="card_56_career_up">Strategiczne manewrowanie w pracy; ktoś może działać podstępnie lub przywłaszczać sobie zasługi.</string>
+    <string name="card_56_career_rev">Oszustwo w miejscu pracy zostaje ujawnione; prawda o nieuczciwym zawodowym zachowaniu wychodzi na jaw.</string>
+    <string name="card_56_finances_up">Finansowe oszustwo lub kradzież; strzeż się nieuczciwych transakcji i chroń swoje zasoby.</string>
+    <string name="card_56_finances_rev">Finansowe oszustwo zostaje ujawnione; skradzione środki mogą zostać odzyskane lub nieuczciwość zostaje odkryta.</string>
+    <string name="card_56_feelings_up">Poczucie podejrzliwości lub przebiegłości; dręczące przeczucie, że dzieje się coś nieuczciwego.</string>
+    <string name="card_56_feelings_rev">Ulga z wyznania; wina rozpuszcza się, gdy przyznajesz się do dawnych oszustw.</string>
+    <string name="card_56_actions_up">Postępuj ze strategiczną ostrożnością; bądź świadomy podstępnych zachowań u siebie i u innych.</string>
+    <string name="card_56_actions_rev">Przyznaj się do wszelkich oszustw; prawda cię wyzwoli, nawet jeśli będzie to nieprzyjemne.</string>
+
+    <!-- Card 57: Eight of Swords -->
+    <string name="card_57_love_up">Poczucie uwięzienia w związku; własne mentalne bariery nie pozwalają ci dostrzec możliwości.</string>
+    <string name="card_57_love_rev">Wyrwanie się z krępującego związku lub z ograniczających przekonań, które więziły cię w miłości.</string>
+    <string name="card_57_career_up">Poczucie utknięcia i bezsilności w pracy; samoograniczające przekonania hamują twój zawodowy rozwój.</string>
+    <string name="card_57_career_rev">Wzmocnienie do przezwyciężenia zawodowych ograniczeń; odkrywanie nowych możliwości.</string>
+    <string name="card_57_finances_up">Poczucie uwięzienia przez zobowiązania finansowe; mentalne ograniczenia nie pozwalają ci dostrzec rozwiązań.</string>
+    <string name="card_57_finances_rev">Wyrwanie się z finansowych ograniczeń; nowe perspektywy ujawniają rozwiązania, których wcześniej nie widziałeś.</string>
+    <string name="card_57_feelings_up">Poczucie uwięzienia, bezsilności i niezdolności do znalezienia wyjścia z obecnej sytuacji.</string>
+    <string name="card_57_feelings_rev">Wyzwalająca zmiana perspektywy; uświadomienie sobie, że twoje więzienie było w dużej mierze twoim własnym dziełem.</string>
+    <string name="card_57_actions_up">Zbadaj przekonania, które trzymają cię w pułapce; bariery mogą być bardziej mentalne niż rzeczywiste.</string>
+    <string name="card_57_actions_rev">Zdejmij opaskę z oczu i spójrz na sytuację jasno; masz większą moc, niż ci się wydaje.</string>
+
+    <!-- Card 58: Nine of Swords -->
+    <string name="card_58_love_up">Lęk i bezsenne noce z powodu związku; obawy i troski pochłaniają twoje myśli.</string>
+    <string name="card_58_love_rev">Zaczynasz przezwyciężać lęk związany ze związkiem; szukanie wsparcia łagodzi twoje obawy.</string>
+    <string name="card_58_career_up">Zawodowy lęk nie pozwala ci spać w nocy; stres i troski rządzą twoim życiem zawodowym.</string>
+    <string name="card_58_career_rev">Zawodowe lęki zaczynają ustępować; szukanie pomocy i wsparcia zmniejsza stres w pracy.</string>
+    <string name="card_58_finances_up">Finansowy lęk i bezsenne noce; troski o pieniądze pochłaniają twój spokój ducha.</string>
+    <string name="card_58_finances_rev">Finansowe obawy zaczynają ustępować; szukanie pomocy przynosi ulgę i praktyczne rozwiązania.</string>
+    <string name="card_58_feelings_up">Przytłaczający lęk i przerażenie; twoje najgorsze obawy odtwarzają się w umyśle w kółko.</string>
+    <string name="card_58_feelings_rev">Najgorsze już za tobą; nadzieja zastępuje rozpacz, gdy zaczynasz radzić sobie ze swoim lękiem.</string>
+    <string name="card_58_actions_up">Poszukaj wsparcia dla swojego lęku; nie cierp samotnie ze swoimi strachami i obawami.</string>
+    <string name="card_58_actions_rev">Obawy ustępują; nadal szukaj pomocy i praktykuj współczucie wobec siebie.</string>
+
+    <!-- Card 59: Ten of Swords -->
+    <string name="card_59_love_up">Bolesny i ostateczny koniec związku; zdrada lub kryzys doprowadza sprawy do zakończenia.</string>
+    <string name="card_59_love_rev">Dochodzenie do siebie po druzgocącym rozstaniu; najgorsze już minęło i uzdrowienie się rozpoczęło.</string>
+    <string name="card_59_career_up">Dramatyczny koniec kariery lub zawodowy kryzys; osiągnięto absolutne dno.</string>
+    <string name="card_59_career_rev">Zawodowe ozdrowienie po sięgnięciu dna; powolna odbudowa po kryzysie w karierze.</string>
+    <string name="card_59_finances_up">Finansowe dno; druzgocąca strata pieniężna lub kryzys wymaga twojej pełnej uwagi.</string>
+    <string name="card_59_finances_rev">Finansowe ozdrowienie zaczyna się po druzgocącej stracie; najgorsze już minęło.</string>
+    <string name="card_59_feelings_up">Poczucie całkowitej porażki i wyczerpania; ciężar wielu kryzysów cię miażdży.</string>
+    <string name="card_59_feelings_rev">Słońce wschodzi po najciemniejszej nocy; wyczerpanie ustępuje stopniowemu ozdrowieniu.</string>
+    <string name="card_59_actions_up">Zaakceptuj, że ten rozdział się zakończył; z absolutnego dna można iść już tylko w górę.</string>
+    <string name="card_59_actions_rev">Zacznij odbudowywać z ruin; każdy koniec nosi w sobie zalążek nowego początku.</string>
+
+    <!-- Card 60: Page of Swords -->
+    <string name="card_60_love_up">Stymulujące intelektualne połączenie; otwarta i szczera komunikacja budzi romantyczne zainteresowanie.</string>
+    <string name="card_60_love_rev">Plotki lub raniące słowa szkodzą związkowi; komunikacja staje się ostra lub nieuczciwa.</string>
+    <string name="card_60_career_up">Świeże pomysły i intelektualna ciekawość napędzają postęp w karierze; bądź czujny na okazje.</string>
+    <string name="card_60_career_rev">Plotki w miejscu pracy lub pochopna komunikacja tworzą zawodowe problemy.</string>
+    <string name="card_60_finances_up">Badanie nowych finansowych możliwości z intelektualną ciekawością i umysłową czujnością.</string>
+    <string name="card_60_finances_rev">Pochopne finansowe decyzje oparte na niepełnych informacjach; nie wierz każdej finansowej wskazówce.</string>
+    <string name="card_60_feelings_up">Poczucie intelektualnej stymulacji i ciekawości; pragnienie uczenia się i odkrywania nowych prawd.</string>
+    <string name="card_60_feelings_rev">Poczucie cynizmu i podejrzliwości; ostre słowa maskują niepewność.</string>
+    <string name="card_60_actions_up">Pozostań ciekawy i komunikuj się jasno; badaj nowe pomysły z otwartym, ale ostrożnym umysłem.</string>
+    <string name="card_60_actions_rev">Pomyśl, zanim się odezwiesz; przestań plotkować i używaj swoich słów konstruktywnie.</string>
+
+    <!-- Card 61: Knight of Swords -->
+    <string name="card_61_love_up">Dążenie do miłości z intensywnością i determinacją; szybkie i namiętne romantyczne starania.</string>
+    <string name="card_61_love_rev">Agresywne lub lekkomyślne zachowanie w miłości; niecierpliwość zmusza cię do zbyt mocnego naciskania.</string>
+    <string name="card_61_career_up">Atak naprzód z ambitnymi celami zawodowymi; szybkie i zdecydowane zawodowe działanie.</string>
+    <string name="card_61_career_rev">Lekkomyślne ruchy w karierze bez odpowiedniego planowania; agresja zraża współpracowników.</string>
+    <string name="card_61_finances_up">Szybkie i zdecydowane finansowe działanie przynosi rezultaty; kuj żelazo, póki gorące.</string>
+    <string name="card_61_finances_rev">Impulsywne finansowe decyzje podejmowane w pośpiechu; lekkomyślne wydawanie lub inwestowanie.</string>
+    <string name="card_61_feelings_up">Poczucie napędzającej siły i umysłowej ostrości; pilność pcha cię naprzód.</string>
+    <string name="card_61_feelings_rev">Poczucie rozproszenia i agresji; niecierpliwość każe ci atakować innych.</string>
+    <string name="card_61_actions_up">Działaj szybko i zdecydowanie; twoja determinacja i ambicja przetną przeszkody.</string>
+    <string name="card_61_actions_rev">Zwolnij, zanim się rozbijesz; skieruj swoją intensywność w bardziej strategiczne planowanie.</string>
+
+    <!-- Card 62: Queen of Swords -->
+    <string name="card_62_love_up">Jasna i szczera komunikacja w miłości; niezależny partner, który ceni intelektualne połączenie.</string>
+    <string name="card_62_love_rev">Chłodne i krytyczne zachowanie w związku; gorycz dawnych ran sięga głęboko.</string>
+    <string name="card_62_career_up">Bystra spostrzegawczość i jasna komunikacja czynią cię skutecznym i szanowanym profesjonalistą.</string>
+    <string name="card_62_career_rev">Nadmiernie krytyczne zachowanie w pracy; intelektualny chłód izoluje cię od współpracowników.</string>
+    <string name="card_62_finances_up">Trzeźwe finansowe decyzje; przebijanie się przez emocjonalny szum do pieniężnej prawdy.</string>
+    <string name="card_62_finances_rev">Surowy finansowy osąd; nadmierny krytycyzm wobec siebie lub innych w kwestii pieniędzy.</string>
+    <string name="card_62_feelings_up">Poczucie mentalnej jasności i emocjonalnej niezależności; twój przenikliwy umysł dobrze ci służy.</string>
+    <string name="card_62_feelings_rev">Poczucie goryczy i krytycyzmu; dawne rany zatwardziły twoje serce i wyostrzyły twój język.</string>
+    <string name="card_62_actions_up">Komunikuj się z jasnością i szczerością; ustanawiaj mocne granice ze współczuciem.</string>
+    <string name="card_62_actions_rev">Złagodź swoje ostre krawędzie; mieć rację jest mniej ważne niż być życzliwym.</string>
+
+    <!-- Card 63: King of Swords -->
+    <string name="card_63_love_up">Związek prowadzony intelektualnym szacunkiem i etycznymi standardami; szczerość jest najważniejsza.</string>
+    <string name="card_63_love_rev">Partner, który wykorzystuje intelekt do manipulacji; chłodna racjonalność zastępuje emocjonalne ciepło.</string>
+    <string name="card_63_career_up">Intelektualny autorytet i etyczne przywództwo; twoje jasne myślenie wzbudza zawodowy szacunek.</string>
+    <string name="card_63_career_rev">Nadużywanie intelektualnej władzy w pracy; tyrańskie przywództwo poprzez chłodną racjonalność.</string>
+    <string name="card_63_finances_up">Logiczne i etyczne zarządzanie finansami; jasne myślenie prowadzi do rozsądnych decyzji pieniężnych.</string>
+    <string name="card_63_finances_rev">Wykorzystywanie wiedzy finansowej do manipulowania innymi; nieetyczne praktyki finansowe.</string>
+    <string name="card_63_feelings_up">Poczucie intelektualnego mistrzostwa i etycznego zakorzenienia; mentalna jasność przynosi pewność siebie.</string>
+    <string name="card_63_feelings_rev">Poczucie emocjonalnego dystansu i intelektualnej arogancji; logika bez serca.</string>
+    <string name="card_63_actions_up">Prowadź z intelektualną uczciwością i etyczną jasnością; pozwól prawdzie kierować twoimi decyzjami.</string>
+    <string name="card_63_actions_rev">Zastanów się, czy używasz swojego intelektu w służbie prawdy, czy do kontrolowania innych.</string>
+
+    <!-- ===== WANDS (Hole) ===== -->
+
+    <!-- Card 64: Ace of Wands -->
+    <string name="card_64_love_up">Namiętna nowa romantyczna iskra rozbłyska; ekscytujący potencjał ognistego miłosnego połączenia.</string>
+    <string name="card_64_love_rev">Romantyczna namiętność gaśnie; opóźnienia lub brak motywacji uniemożliwiają powstanie miłosnego połączenia.</string>
+    <string name="card_64_career_up">Inspirujące nowe przedsięwzięcie zawodowe lub twórczy projekt napełnia cię entuzjastyczną energią.</string>
+    <string name="card_64_career_rev">Twórcze blokady lub opóźnienia hamują obiecującą zawodową okazję; motywacja słabnie.</string>
+    <string name="card_64_finances_up">Nowa, ekscytująca finansowa okazja zgodna z twoimi pasjami i twórczą energią.</string>
+    <string name="card_64_finances_rev">Obiecująca finansowa okazja zostaje przegapiona lub opóźniona; brak inicjatywy cię hamuje.</string>
+    <string name="card_64_feelings_up">Poczucie namiętnej inspiracji i przepełnienia twórczym potencjałem oraz entuzjazmem.</string>
+    <string name="card_64_feelings_rev">Poczucie twórczej blokady i braku iskry inspiracji; energia jest niska.</string>
+    <string name="card_64_actions_up">Chwyć iskrę inspiracji i przekształć ją w namiętne twórcze działanie.</string>
+    <string name="card_64_actions_rev">Rozpal na nowo swoją pasję; znajdź to, co cię ekscytuje, i usuń blokady swojej twórczej energii.</string>
+
+    <!-- Card 65: Two of Wands -->
+    <string name="card_65_love_up">Planowanie wspólnej przyszłości z partnerem; wyobrażanie sobie, dokąd poprowadzi wasza historia miłosna.</string>
+    <string name="card_65_love_rev">Strach przed zobowiązaniem lub niechęć do planowania romantycznej przyszłości; tkwienie w strefie komfortu.</string>
+    <string name="card_65_career_up">Odważne planowanie twojej zawodowej przyszłości; świat zawodowych możliwości rozpościera się przed tobą.</string>
+    <string name="card_65_career_rev">Zawodowe granie na pewniaka; strach przed nieznanym uniemożliwia odkrywanie ścieżek kariery.</string>
+    <string name="card_65_finances_up">Finansowe planowanie i strategiczne myślenie o przyszłym bogactwie; rozważanie odważnych inwestycji.</string>
+    <string name="card_65_finances_rev">Strach uniemożliwia finansowe planowanie; tkwienie w bezpiecznej, ale ograniczającej pieniężnej strefie komfortu.</string>
+    <string name="card_65_feelings_up">Poczucie entuzjazmu wobec przyszłych możliwości; faza planowania dodaje ci energii.</string>
+    <string name="card_65_feelings_rev">Poczucie paraliżującego niezdecydowania co do przyszłości; strach przeważa nad ekscytacją.</string>
+    <string name="card_65_actions_up">Planuj odważnie przyszłość; spójrz poza swój obecny horyzont i podejmuj strategiczne decyzje.</string>
+    <string name="card_65_actions_rev">Przestań grać na pewniaka; strach przed nieznanym nie powinien powstrzymywać cię od planowania naprzód.</string>
+
+    <!-- Card 66: Three of Wands -->
+    <string name="card_66_love_up">Miłość rozszerza się poza granice; związek wrasta w nowe i ekscytujące terytorium.</string>
+    <string name="card_66_love_rev">Romantyczne plany napotykają opóźnienia lub przeszkody; ograniczona wizja hamuje rozwój miłości.</string>
+    <string name="card_66_career_up">Zawodowa ekspansja i zagraniczne możliwości; twoja zawodowa wizja sięga daleko i szeroko.</string>
+    <string name="card_66_career_rev">Zawodowa ekspansja jest opóźniona przez przeszkody; frustracja tempem zawodowego rozwoju.</string>
+    <string name="card_66_finances_up">Finansowa ekspansja poprzez międzynarodowe możliwości lub daleko sięgające inwestycje.</string>
+    <string name="card_66_finances_rev">Finansowy wzrost jest opóźniony; przeszkody uniemożliwiają poszerzenie twoich źródeł dochodu.</string>
+    <string name="card_66_feelings_up">Poczucie ekspansji i wypatrywania przyszłości; twoja wizja przyszłości napełnia cię optymizmem.</string>
+    <string name="card_66_feelings_rev">Frustracja powolnym postępem; poczucie, że przeszkody blokują twoją drogę do rozwoju.</string>
+    <string name="card_66_actions_up">Poszerz swoje horyzonty i podążaj za możliwościami poza granicami swojego najbliższego otoczenia.</string>
+    <string name="card_66_actions_rev">Przemyśl ponownie swoje plany, jeśli postęp stoi w miejscu; szukaj alternatywnych dróg ekspansji.</string>
+
+    <!-- Card 67: Four of Wands -->
+    <string name="card_67_love_up">Radosne romantyczne uroczystości, jak zaręczyny czy wspólne zamieszkanie; kamień milowy w związku.</string>
+    <string name="card_67_love_rev">Niestabilność związku zakłóca świętowanie; brak wsparcia od rodziny lub społeczności.</string>
+    <string name="card_67_career_up">Świętowanie kamienia milowego w karierze lub sukcesu zespołu; wspierająca zawodowa społeczność.</string>
+    <string name="card_67_career_rev">Niestabilność w miejscu pracy lub brak harmonii w zespole; zawodowe świętowanie wydaje się przedwczesne.</string>
+    <string name="card_67_finances_up">Finansowa stabilność godna świętowania; kamień milowy w budowaniu bogactwa lub posiadaniu nieruchomości.</string>
+    <string name="card_67_finances_rev">Finansowa niestabilność zagraża twojemu poczuciu domu i bezpieczeństwa; niespodziewane zmiany.</string>
+    <string name="card_67_feelings_up">Poczucie świętowania i wdzięczności; poczucie przynależności i wspólnej radości podnosi twojego ducha.</string>
+    <string name="card_67_feelings_rev">Poczucie braku wsparcia i niestabilności; wewnętrzny konflikt uniemożliwia ci pełne świętowanie.</string>
+    <string name="card_67_actions_up">Świętuj swoje sukcesy ze swoją społecznością; uczcij ten kamień milowy z wdzięcznością.</string>
+    <string name="card_67_actions_rev">Zajmij się podstawową niestabilnością, zanim zaczniesz świętować; upewnij się, że twoje fundamenty są naprawdę mocne.</string>
+
+    <!-- Card 68: Five of Wands -->
+    <string name="card_68_love_up">Rywalizacyjna energia lub nieporozumienia w miłości; konflikt, który może być konstruktywny, jeśli dobrze się nim pokieruje.</string>
+    <string name="card_68_love_rev">Unikanie koniecznych konfliktów w związku; wewnętrzny zamęt zastępuje zewnętrzne nieporozumienia.</string>
+    <string name="card_68_career_up">Zdrowa zawodowa rywalizacja zmusza cię do doskonalenia się; nieporozumienia w miejscu pracy pobudzają innowacje.</string>
+    <string name="card_68_career_rev">Unikanie konfliktów w pracy kosztem postępu; szukanie kompromisu zamiast rywalizacji.</string>
+    <string name="card_68_finances_up">Finansowa rywalizacja lub wojny licytacyjne; napięcie wokół decyzji pieniężnych pochłania energię.</string>
+    <string name="card_68_finances_rev">Rozwiązywanie finansowych sporów poprzez kompromis; odejście od rywalizacyjnego wydawania.</string>
+    <string name="card_68_feelings_up">Poczucie rozpalenia rywalizacją i wyzwaniem; adrenalina ze zdrowego konfliktu.</string>
+    <string name="card_68_feelings_rev">Wewnętrzny konflikt wyczerpuje twoją energię; unikanie zewnętrznych bitew tworzy wewnętrzne zmagania.</string>
+    <string name="card_68_actions_up">Zaangażuj się w zdrową rywalizację; wykorzystaj konflikt jako paliwo do rozwoju i doskonalenia.</string>
+    <string name="card_68_actions_rev">Szukaj rozwiązania i kompromisu; nie każda bitwa jest warta stoczenia.</string>
+
+    <!-- Card 69: Six of Wands -->
+    <string name="card_69_love_up">Romantyczny sukces i publiczne uznanie twojego związku; duma z waszego partnerstwa.</string>
+    <string name="card_69_love_rev">Starcia ego w związku; szukanie zewnętrznego potwierdzenia zamiast budowania prawdziwej więzi.</string>
+    <string name="card_69_career_up">Publiczne zawodowe uznanie i zwycięstwo w karierze; twoje sukcesy świętują współpracownicy.</string>
+    <string name="card_69_career_rev">Brak zawodowego uznania; upadek z wysokości lub porażka mimo twoich najlepszych starań.</string>
+    <string name="card_69_finances_up">Finansowy sukces, który zdobywa publiczne uznanie; twoja pomyślność jest widoczna i celebrowana.</string>
+    <string name="card_69_finances_rev">Finansowa porażka lub utrata wcześniej silnej pozycji finansowej; upokarzające niepowodzenie.</string>
+    <string name="card_69_feelings_up">Poczucie zwycięstwa i publicznego uznania; pewność siebie rośnie, gdy inni świętują twój sukces.</string>
+    <string name="card_69_feelings_rev">Poczucie braku uznania lub upokorzenia; deflacja ego po publicznym niepowodzeniu.</string>
+    <string name="card_69_actions_up">Przyjmij pochwały z gracją i pozwól swojemu sukcesowi inspirować innych; prowadź z pewnością siebie.</string>
+    <string name="card_69_actions_rev">Nie pozwól, by ego kierowało twoimi działaniami; prawdziwy sukces nie wymaga ciągłego zewnętrznego potwierdzania.</string>
+
+    <!-- Card 70: Seven of Wands -->
+    <string name="card_70_love_up">Obrona twojego związku przed zewnętrznymi wyzwaniami; mocne stanie przy swoich romantycznych przekonaniach.</string>
+    <string name="card_70_love_rev">Zbyt łatwe poddawanie się w związku; poczucie przytłoczenia romantycznymi wyzwaniami.</string>
+    <string name="card_70_career_up">Bronisz swojego stanowiska wobec zawodowych rywali; z odwagą stajesz w obronie swojej pozycji.</string>
+    <string name="card_70_career_rev">Przytłoczenie konkurencją w miejscu pracy; rozważanie porzucenia wymagającej ścieżki kariery.</string>
+    <string name="card_70_finances_up">Obrona twojej pozycji finansowej przed zagrożeniami; wytrwałość chroni twoje zasoby.</string>
+    <string name="card_70_finances_rev">Finansowe wyczerpanie ciągłymi walkami; rozważanie kapitulacji w pieniężnym sporze.</string>
+    <string name="card_70_feelings_up">Poczucie osaczenia, ale i determinacji; odwaga podtrzymuje cię mimo narastających wyzwań.</string>
+    <string name="card_70_feelings_rev">Poczucie wyczerpania i gotowości do poddania się; nieustanna walka wyczerpała twoje rezerwy.</string>
+    <string name="card_70_actions_up">Stój mocno i broń swojej pozycji; wytrwałość przeprowadzi cię przez te wyzwania.</string>
+    <string name="card_70_actions_rev">Oceń, czy ta bitwa wciąż jest tego warta; strategiczny odwrót to nie to samo co porażka.</string>
+
+    <!-- Card 71: Eight of Wands -->
+    <string name="card_71_love_up">Szybki romantyczny rozwój; związek nabiera tempa w ekscytującym rytmie i z impetem.</string>
+    <string name="card_71_love_rev">Romantyczny postęp się zatrzymuje; opóźnienia i frustracje spowalniają wcześniej szybko rozwijający się związek.</string>
+    <string name="card_71_career_up">Szybki postęp w karierze i błyskawiczny zawodowy rozwój; impet niesie cię naprzód.</string>
+    <string name="card_71_career_rev">Postęp w karierze napotyka niespodziewane opóźnienia; frustrujące przeszkody spowalniają twój zawodowy impet.</string>
+    <string name="card_71_finances_up">Błyskawiczny finansowy rozwój; pieniądze poruszają się szybko, a okazje wymagają szybkiego działania.</string>
+    <string name="card_71_finances_rev">Finansowe transakcje się opóźniają; oczekiwane pieniądze przychodzą powoli.</string>
+    <string name="card_71_feelings_up">Poczucie energii i porwania ekscytacją z szybkiego postępu i ruchu.</string>
+    <string name="card_71_feelings_rev">Frustracja opóźnieniami; poczucie niecierpliwości, gdy impet się zatrzymuje.</string>
+    <string name="card_71_actions_up">Działaj szybko i zdecydowanie; impet jest po twojej stronie, więc uderzaj, póki energia jest wysoka.</string>
+    <string name="card_71_actions_rev">Ćwicz cierpliwość podczas opóźnień; wykorzystaj spowolnienie na przygotowanie się do powrotu impetu.</string>
+
+    <!-- Card 72: Nine of Wands -->
+    <string name="card_72_love_up">Odporna miłość, która przetrwała wiele burz; ostatnia linia obrony chroniąca twój związek.</string>
+    <string name="card_72_love_rev">Emocjonalne wyczerpanie w miłości; dawne rany czynią cię podejrzliwym i defensywnym w związkach.</string>
+    <string name="card_72_career_up">Wytrwała determinacja mimo powtarzających się zawodowych wyzwań; jesteś blisko mety.</string>
+    <string name="card_72_career_rev">Zawodowe wypalenie i wyczerpanie; walka trwała zbyt długo, a rezerwy są wyczerpane.</string>
+    <string name="card_72_finances_up">Odporne gospodarowanie finansami mimo utrzymujących się wyzwań; trzymanie się mimo niepowodzeń.</string>
+    <string name="card_72_finances_rev">Finansowe wyczerpanie; przedłużająca się walka ze sprawami pieniężnymi cię zużywa.</string>
+    <string name="card_72_feelings_up">Poczucie naznaczenia walką, ale i determinacji; determinacja podtrzymuje cię mimo zmęczenia.</string>
+    <string name="card_72_feelings_rev">Poczucie całkowitego wyczerpania i gotowości do załamania; brzemię stało się zbyt ciężkie.</string>
+    <string name="card_72_actions_up">Pozostań odporny i idź dalej; jesteś bliżej sukcesu, niż zdajesz sobie sprawę.</string>
+    <string name="card_72_actions_rev">Rozpoznaj, kiedy wystarczy; odpoczynek i regeneracja nie są oznakami słabości.</string>
+
+    <!-- Card 73: Ten of Wands -->
+    <string name="card_73_love_up">Ciężar obowiązków w związku przytłacza; miłość staje się brzemieniem zamiast radością.</string>
+    <string name="card_73_love_rev">Uwalnianie brzemion związku; nauka dzielenia się obowiązkami i puszczania zbędnego balastu.</string>
+    <string name="card_73_career_up">Przytłoczenie zawodowymi obowiązkami; niesiesz cały ciężar pracy na swoich barkach.</string>
+    <string name="card_73_career_rev">Delegowanie obowiązków w pracy; uwolnienie się od potrzeby robienia wszystkiego samodzielnie.</string>
+    <string name="card_73_finances_up">Finansowe brzemiona ciążą mocno; stres z zarządzania zbyt wieloma zobowiązaniami jest przytłaczający.</string>
+    <string name="card_73_finances_rev">Uwalnianie finansowych brzemion poprzez delegowanie lub restrukturyzację; odciążenie pieniężnego balastu.</string>
+    <string name="card_73_feelings_up">Poczucie zmiażdżenia ciężarem zbyt wielu obowiązków; dominują wyczerpanie i stres.</string>
+    <string name="card_73_feelings_rev">Ulga, gdy brzemiona zostają uwolnione; ciężar się podnosi, gdy uczysz się puszczać.</string>
+    <string name="card_73_actions_up">Zbadaj, które brzemiona są naprawdę twoje; poproś o pomoc, zanim się załamiesz.</string>
+    <string name="card_73_actions_rev">Odłóż to, czego nie musisz nieść; deleguj i uwolnij zbędne obowiązki.</string>
+
+    <!-- Card 74: Page of Wands -->
+    <string name="card_74_love_up">Ekscytujący nowy flirt lub romantyczna przygoda; entuzjastyczna i figlarna energia w miłości.</string>
+    <string name="card_74_love_rev">Romantyczny niepokój i brak oddania; nuda lub pochopne romantyczne decyzje.</string>
+    <string name="card_74_career_up">Ekscytująca zawodowa okazja budzi twój entuzjazm; odkrywaj nowe zawodowe horyzonty.</string>
+    <string name="card_74_career_rev">Brak kierunku w karierze; odkładanie zawodowych celów lub pochopne decyzje.</string>
+    <string name="card_74_finances_up">Entuzjastyczne odkrywanie nowych finansowych przedsięwzięć; podchodzenie do pieniędzy z energią przygody.</string>
+    <string name="card_74_finances_rev">Pochopne finansowe decyzje bez odpowiedniego rozeznania; brak kierunku w sprawach pieniężnych.</string>
+    <string name="card_74_feelings_up">Poczucie przygody i entuzjazmu; energia wolnego ducha pcha cię do odkrywania.</string>
+    <string name="card_74_feelings_rev">Poczucie nudy i braku celu; niespokojna energia bez produktywnego ujścia.</string>
+    <string name="card_74_actions_up">Podążaj za swoim entuzjazmem i odkrywaj nowe przygody; pozwól swojemu wolnemu duchowi prowadzić.</string>
+    <string name="card_74_actions_rev">Skieruj swoją niespokojną energię produktywnie; znajdź kierunek, zanim wykonasz impulsywne kroki.</string>
+
+    <!-- Card 75: Knight of Wands -->
+    <string name="card_75_love_up">Namiętne i odważne romantyczne starania; ognisty i żądny przygód obiekt uczuć zwala cię z nóg.</string>
+    <string name="card_75_love_rev">Impulsywne romantyczne decyzje; partner, który jest nierzetelny, rozproszony lub unika zobowiązań.</string>
+    <string name="card_75_career_up">Odważne i pełne pasji ruchy w karierze; przejście do działania w sprawie ambitnych zawodowych marzeń.</string>
+    <string name="card_75_career_rev">Rozproszona zawodowa energia; rozpoczynanie wielu projektów, ale niekończenie żadnego z powodu niecierpliwości.</string>
+    <string name="card_75_finances_up">Odważne finansowe ruchy napędzane pasją i duchem przygody; skalkulowane podejmowanie ryzyka.</string>
+    <string name="card_75_finances_rev">Impulsywne finansowe decyzje; rozproszone wydawanie, które wyczerpuje zasoby bez kierunku.</string>
+    <string name="card_75_feelings_up">Poczucie odwagi, pasji i gotowości do działania; ogień przygody płonie w twoim wnętrzu.</string>
+    <string name="card_75_feelings_rev">Poczucie frustracji i rozproszenia; twoja namiętna energia nie ma skupionego ujścia.</string>
+    <string name="card_75_actions_up">Rusz naprzód z odważną pasją i działaj zgodnie z tym, co ekscytuje cię najbardziej.</string>
+    <string name="card_75_actions_rev">Skup swoją rozproszoną energię; pasja bez kierunku prowadzi do wypalenia i frustracji.</string>
+
+    <!-- Card 76: Queen of Wands -->
+    <string name="card_76_love_up">Pewna siebie i ciepła romantyczna energia; twoja charyzma i witalność przyciągają głęboką miłość.</string>
+    <string name="card_76_love_rev">Zazdrość lub niepewność w miłości; apodyktyczne zachowanie odpycha partnera.</string>
+    <string name="card_76_career_up">Charyzmatyczne przywództwo i pewna siebie zawodowa postawa; twoje ciepło inspiruje zespoły.</string>
+    <string name="card_76_career_rev">Zawodowa zazdrość lub samolubne zachowanie w pracy; niepewność podkopuje twoje przywództwo.</string>
+    <string name="card_76_finances_up">Pewne siebie gospodarowanie finansami; twoja charyzma i determinacja przyciągają bogactwo.</string>
+    <string name="card_76_finances_rev">Samolubne wydawanie lub zazdrość o bogactwo innych; finansowa niepewność prowadzi do złych decyzji.</string>
+    <string name="card_76_feelings_up">Poczucie promiennej pewności siebie i ciepła; twój wewnętrzny ogień jasno płonie i inspiruje innych.</string>
+    <string name="card_76_feelings_rev">Niepewność kryje się za fasadą pewności siebie; zazdrość podgryza twoje wewnętrzne ciepło.</string>
+    <string name="card_76_actions_up">Prowadź z ciepłem i pewnością siebie; pozwól swojej charyzmie i determinacji inspirować otoczenie.</string>
+    <string name="card_76_actions_rev">Zajmij się szczerze swoimi niepewnościami; zazdrość i egoizm tylko pomniejszają twoją prawdziwą siłę.</string>
+
+    <!-- Card 77: King of Wands -->
+    <string name="card_77_love_up">Odważny i wizjonerski partner; namiętny przywódca w miłości, który inspiruje oddanie i ekscytację.</string>
+    <string name="card_77_love_rev">Dominujący lub apodyktyczny partner; impulsywność i lekkomyślność szkodzą związkowi.</string>
+    <string name="card_77_career_up">Wizjonerskie przedsiębiorcze przywództwo; twoja odważna zawodowa wizja inspiruje innych, by za tobą podążali.</string>
+    <string name="card_77_career_rev">Tyrański styl przywództwa w pracy; impulsywne decyzje biznesowe podkopują twój autorytet.</string>
+    <string name="card_77_finances_up">Odważne i wizjonerskie finansowe przywództwo; przedsiębiorcze przedsięwzięcia przynoszą imponujące zyski.</string>
+    <string name="card_77_finances_rev">Impulsywne finansowe decyzje z pozycji władzy; lekkomyślna pogoń za bogactwem za wszelką cenę.</string>
+    <string name="card_77_feelings_up">Poczucie bycia naturalnym przywódcą z jasną i namiętną wizją; promieniuje z ciebie odważna pewność siebie.</string>
+    <string name="card_77_feelings_rev">Poczucie nadmiernej dominacji i utraty kontroli; władza bez mądrości prowadzi do wewnętrznego zamętu.</string>
+    <string name="card_77_actions_up">Prowadź odważnie z wizją i honorem; inspiruj innych swoim pełnym pasji przykładem.</string>
+    <string name="card_77_actions_rev">Złagodź swoją odwagę mądrością; prawdziwe przywództwo służy innym, zamiast ich kontrolować.</string>
+</resources>

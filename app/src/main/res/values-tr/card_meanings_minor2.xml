@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== SWORDS (Meče) ===== -->
+
+    <!-- Card 50: Ace of Swords -->
+    <string name="card_50_love_up">İlişkide anlayış açısından bir atılım; açık ve dürüst iletişim yeni kapılar açıyor.</string>
+    <string name="card_50_love_rev">Aşkta yanlış anlaşılma ve kafa karışıklığı; sert sözler veya yanlış bilgiler ilişkiye zarar veriyor.</string>
+    <string name="card_50_career_up">İşte parlak yeni bir fikir veya zihinsel atılım; amaç netliği başarıyı besliyor.</string>
+    <string name="card_50_career_rev">İşte kafa karışıklığı ve zayıf iletişim; kusurlu bir fikir profesyonel aksiliklere yol açabilir.</string>
+    <string name="card_50_finances_up">Net finansal düşünce akıllıca kararlara götürüyor; yeni bir strateji kafa karışıklığını kesip atıyor.</string>
+    <string name="card_50_finances_rev">Finansal kafa karışıklığı veya yanlış bilgi; eksik anlayışa dayanan aceleci kararlar.</string>
+    <string name="card_50_feelings_up">Zihinsel netlik ve bir atılımın coşkusu; hakikat sisi yarıp geçiyor.</string>
+    <string name="card_50_feelings_rev">Zihinsel karmaşa ve bunalmışlık; kaosun ortasında net düşünmeye çabalıyorsun.</string>
+    <string name="card_50_actions_up">Engelleri aşmak için zihinsel netliğini kullan; hakikati dile getir ve yeni fikirlerin peşinden git.</string>
+    <string name="card_50_actions_rev">Harekete geçmeden önce netlik ara; zekânı bir silah olarak kullanma.</string>
+
+    <!-- Card 51: Two of Swords -->
+    <string name="card_51_love_up">Kaçındığın zor bir romantik seçim; duygusal açmaz aşktaki ilerlemeyi engelliyor.</string>
+    <string name="card_51_love_rev">İlişki hakkında nihayet bir karar veriyorsun; taşan duygular seni harekete zorluyor.</string>
+    <string name="card_51_career_up">Kariyer kararı çıkmazda; iki seçenek arasında seçim yapmayı reddetmek ilerlemeyi felç ediyor.</string>
+    <string name="card_51_career_rev">Kariyer kararsızlığını aşıyorsun; bilgi bombardımanı yerini netliğe bırakıyor.</string>
+    <string name="card_51_finances_up">Finansal kararsızlık ilerlemeni engelliyor; hiçbirine bağlanmadan iki seçeneği tartıyorsun.</string>
+    <string name="card_51_finances_rev">Felç edici bir dönemin ardından finansal karar nihayet veriliyor; netlik beliriyor.</string>
+    <string name="card_51_feelings_up">İki seçenek arasında sıkışmışlık hissi; zor bir karardan kaçınmak için duygularını bastırıyorsun.</string>
+    <string name="card_51_feelings_rev">Duygusal baraj yıkılıyor; bastırdığın hisler kabul edilmeyi talep ediyor.</string>
+    <string name="card_51_actions_up">Kaçındığın zor seçimle yüzleş; kaçınmayı sürdürmek kaçınılmazı yalnızca erteler.</string>
+    <string name="card_51_actions_rev">Karar verildi ya da senin yerine verilecek; sonucu kabul et ve yoluna devam et.</string>
+
+    <!-- Card 52: Three of Swords -->
+    <string name="card_52_love_up">Aşkta kalp kırıklığı ve ihanet; acı bir gerçek ilişkinin yanılsamasını paramparça ediyor.</string>
+    <string name="card_52_love_rev">Kırık kalp iyileşiyor; affetmeye ve ihanetin acısını serbest bırakmaya başlıyorsun.</string>
+    <string name="card_52_career_up">Acı bir profesyonel ihanet veya yıkıcı bir kariyer haberi; kaçan fırsatın yası.</string>
+    <string name="card_52_career_rev">Profesyonel bir aksilikten toparlanıyorsun; iş yerindeki ihanetten iyileşip yoluna devam ediyorsun.</string>
+    <string name="card_52_finances_up">Duygusal acıya yol açan finansal kayıp; parasal ihanet derin yaralar açıyor.</string>
+    <string name="card_52_finances_rev">Finansal kayıptan toparlanma; para sıkıntılarının duygusal acısı iyileşmeye başlıyor.</string>
+    <string name="card_52_feelings_up">Derin keder ve yürek acısı; ihanetin veya kaybın sancısı kalbini deliyor.</string>
+    <string name="card_52_feelings_rev">Acı hafifliyor; affediş ve şifa, kederin yerini yavaş yavaş alıyor.</string>
+    <string name="card_52_actions_up">Kendine tam anlamıyla yas tutma izni ver; acıyı bastırmak yerine onu kabul et.</string>
+    <string name="card_52_actions_rev">İyileşme sürecini başlat; affedebildiğini affet ve seni geride tutan acıyı serbest bırak.</string>
+
+    <!-- Card 53: Four of Swords -->
+    <string name="card_53_love_up">Aşk hayatında gerekli bir mola; dinlenme ve iç gözlem duygusal rezervlerini güçlendiriyor.</string>
+    <string name="card_53_love_rev">Aşkta huzursuzluk; ihtiyaç duyduğun duygusal dinlenmeyi reddetmek tükenmişliğe yol açıyor.</string>
+    <string name="card_53_career_up">İş stresine ara ver; zihinsel dinlenme ve toparlanma gelecekteki verimliliğin için şart.</string>
+    <string name="card_53_career_rev">Dinlenmeyi reddetmekten doğan tükenmişlik; bitkinliğe rağmen kendini zorlamak giderek azalan sonuçlar getiriyor.</string>
+    <string name="card_53_finances_up">Finansal sükûnet dönemi; büyük finansal hamleler yok, sadece kaynakların istikrarlı biçimde korunması.</string>
+    <string name="card_53_finances_rev">Finansal kaygı dinlenmeni engelliyor; para endişesi geceleri seni uyanık tutuyor.</string>
+    <string name="card_53_feelings_up">Derin dinlenme ve zihinsel yenilenme ihtiyacı hissediyorsun; huzur yalnızlıkla geliyor.</string>
+    <string name="card_53_feelings_rev">Bitkin ve huzursuzsun; zihninin ve bedeninin çaresizce ihtiyaç duyduğu huzuru bulamıyorsun.</string>
+    <string name="card_53_actions_up">Bir sonraki hamlenden önce geri çekil ve dinlen; şimdi toparlanmak sonraki çöküşü önler.</string>
+    <string name="card_53_actions_rev">Ya yeterince dinlendin ya da dinlenmeyi reddediyorsun; bitkinliğinin kök nedenini ele al.</string>
+
+    <!-- Card 54: Five of Swords -->
+    <string name="card_54_love_up">Aşkta acı verici çatışma; tartışmayı kazanmak ilişkiyi kaybetmek anlamına gelebilir.</string>
+    <string name="card_54_love_rev">Çatışma sonrası uzlaşma; her iki partner de ödün veriyor ve yaraları sarmaya başlıyor.</string>
+    <string name="card_54_career_up">İş yerinde çatışmalar ve güç mücadeleleri; sana saygınlığına mal olan içi boş bir zafer.</string>
+    <string name="card_54_career_rev">Profesyonel rakiplerle barışıyorsun; süregelen savaş yerine uzlaşmayı seçiyorsun.</string>
+    <string name="card_54_finances_up">Finansal anlaşmazlıklar veya dürüst olmayan işler; ilişkiler pahasına para kazanmak.</string>
+    <string name="card_54_finances_rev">Finansal anlaşmazlıkları çözüyorsun; kayıpları kabul edip parasal çatışmaları geride bırakıyorsun.</string>
+    <string name="card_54_feelings_up">Savaşçı ve savunmacı hissediyorsun; çatışmanın ya da yenilginin acısı zihnine ağırlık yapıyor.</string>
+    <string name="card_54_feelings_rev">Düşmanlığı ve kırgınlığı bırakıyorsun; süregelen savaş yerine barışı seçiyorsun.</string>
+    <string name="card_54_actions_up">Savaşlarını akıllıca seç; bazı zaferler ödeyeceğin bedele değmez.</string>
+    <string name="card_54_actions_rev">Kazanma ihtiyacını bırak; misilleme yerine telafi ve çözüm ara.</string>
+
+    <!-- Card 55: Six of Swords -->
+    <string name="card_55_love_up">Fırtınalı bir romantik dönemden daha sakin sulara geçiş; değişim yoluyla şifa.</string>
+    <string name="card_55_love_rev">Acı veren bir ilişkiyi geride bırakamıyorsun; çözülmemiş duygusal meseleler seni geride tutuyor.</string>
+    <string name="card_55_career_up">Stresli bir ortamdan uzaklaşan bir kariyer geçişi; daha iyi fırsatlara doğru ilerliyorsun.</string>
+    <string name="card_55_career_rev">Toksik bir iş ortamında sıkışıp kaldın; yapman gereken kariyer değişikliğine direniyorsun.</string>
+    <string name="card_55_finances_up">Daha istikrarlı bir zemine doğru finansal geçiş; para sorunlarını geride bırakıyorsun.</string>
+    <string name="card_55_finances_rev">Finansal zorluklardan kaçamıyorsun; gerekli parasal değişiklikleri yapmaya direniyorsun.</string>
+    <string name="card_55_feelings_up">Geçmişi geride bırakıp şifaya yönelirken hüzün ve umut karışımı hissediyorsun.</string>
+    <string name="card_55_feelings_rev">Duygusal karmaşa içinde hapsolmuş hissediyorsun; ileriye giden yolu bulamıyorsun.</string>
+    <string name="card_55_actions_up">Geçişi kabul et ve ilerle; acı vereni zarafetle geride bırak.</string>
+    <string name="card_55_actions_rev">Seni yerinde tutan şeyi ele al; nihayet ilerleyebilmek için yarım kalmış işleri çöz.</string>
+
+    <!-- Card 56: Seven of Swords -->
+    <string name="card_56_love_up">Aşkta aldatma veya ihanet; biri ilişkide tamamen dürüst davranmıyor.</string>
+    <string name="card_56_love_rev">İlişkideki sırlar açığa çıkıyor; itiraf, başlangıçtaki acıya rağmen havayı temizliyor.</string>
+    <string name="card_56_career_up">İşte stratejik manevralar; biri hileli davranıyor veya başkasının emeğini sahipleniyor olabilir.</string>
+    <string name="card_56_career_rev">İş yerindeki aldatmaca açığa çıkıyor; dürüst olmayan profesyonel davranışlarla ilgili gerçek ortaya çıkıyor.</string>
+    <string name="card_56_finances_up">Finansal aldatma veya hırsızlık; dürüst olmayan anlaşmalara karşı tetikte ol ve kaynaklarını koru.</string>
+    <string name="card_56_finances_rev">Finansal dolandırıcılık ortaya çıkıyor; çalınan kaynaklar geri alınabilir ya da sahtekârlık ifşa olur.</string>
+    <string name="card_56_feelings_up">Kuşkulu ya da sinsi bir his; dürüst olmayan bir şeylerin döndüğüne dair içini kemiren bir sezgi.</string>
+    <string name="card_56_feelings_rev">İtirafın getirdiği rahatlama; geçmiş aldatmacaları itiraf ettikçe suçluluk çözülüyor.</string>
+    <string name="card_56_actions_up">Stratejik bir tedbirle ilerle; kendinden ya da başkalarından gelebilecek aldatıcı davranışların farkında ol.</string>
+    <string name="card_56_actions_rev">Her türlü aldatmacayı itiraf et; rahatsız edici olsa bile gerçek seni özgürleştirecek.</string>
+
+    <!-- Card 57: Eight of Swords -->
+    <string name="card_57_love_up">İlişkide kapana kısılmış hissediyorsun; kendi kurduğun zihinsel engeller seçenekleri görmeni önlüyor.</string>
+    <string name="card_57_love_rev">Seni kısıtlayan bir ilişkiden ya da aşkta seni hapseden sınırlayıcı inançlardan kurtuluyorsun.</string>
+    <string name="card_57_career_up">İşte sıkışmış ve güçsüz hissediyorsun; kendini sınırlayan inançlar profesyonel gelişimini kısıtlıyor.</string>
+    <string name="card_57_career_rev">Kariyer sınırlamalarını aşmak için kendini güçlendiriyorsun; yeni olasılıklar görüyorsun.</string>
+    <string name="card_57_finances_up">Finansal yükümlülüklerin kapanına kısılmış hissediyorsun; zihinsel kısıtlamalar çözümleri görmeni engelliyor.</string>
+    <string name="card_57_finances_rev">Finansal kısıtlamalardan kurtuluyorsun; yeni bakış açıları daha önce göremediğin çözümleri ortaya çıkarıyor.</string>
+    <string name="card_57_feelings_up">Kapana kısılmış, çaresiz hissediyorsun ve içinde bulunduğun durumdan bir çıkış yolu göremiyorsun.</string>
+    <string name="card_57_feelings_rev">Özgürleştirici bir bakış açısı değişimi; hapishanenin büyük ölçüde kendi elinle kurulduğunu fark ediyorsun.</string>
+    <string name="card_57_actions_up">Seni kapana kısan inançları incele; engeller gerçek olmaktan çok zihinsel olabilir.</string>
+    <string name="card_57_actions_rev">Göz bağını çıkar ve duruma net bak; sandığından daha fazla gücün var.</string>
+
+    <!-- Card 58: Nine of Swords -->
+    <string name="card_58_love_up">İlişki yüzünden kaygı ve uykusuz geceler; korkular ve endişeler düşüncelerini tüketiyor.</string>
+    <string name="card_58_love_rev">İlişki kaygısını aşmaya başlıyorsun; destek aramak korkularını hafifletiyor.</string>
+    <string name="card_58_career_up">İş kaygısı geceleri seni uyanık tutuyor; stres ve endişe profesyonel hayatına hâkim oluyor.</string>
+    <string name="card_58_career_rev">Kariyer kaygıları yatışmaya başlıyor; yardım ve destek aramak iş stresini azaltıyor.</string>
+    <string name="card_58_finances_up">Finansal kaygı ve uykusuz geceler; para endişesi iç huzurunu tüketiyor.</string>
+    <string name="card_58_finances_rev">Finansal korkular yatışmaya başlıyor; yardım istemek rahatlama ve pratik çözümler getiriyor.</string>
+    <string name="card_58_feelings_up">Bunaltıcı kaygı ve dehşet; en kötü korkuların zihninde tekrar tekrar dönüyor.</string>
+    <string name="card_58_feelings_rev">En kötüsü geride kaldı; kaygını yönetmeye başladıkça umut, umutsuzluğun yerini alıyor.</string>
+    <string name="card_58_actions_up">Kaygın için destek ara; korkularınla ve endişelerinle tek başına acı çekme.</string>
+    <string name="card_58_actions_rev">Korkular yatışıyor; yardım aramaya devam et ve kendine şefkat göstermeyi sürdür.</string>
+
+    <!-- Card 59: Ten of Swords -->
+    <string name="card_59_love_up">İlişkinin acı verici ve kesin sonu; ihanet ya da kriz her şeyi bir sona getiriyor.</string>
+    <string name="card_59_love_rev">Yıkıcı bir ayrılıktan toparlanıyorsun; en kötüsü geride kaldı ve iyileşme başladı.</string>
+    <string name="card_59_career_up">Dramatik bir kariyer sonu veya profesyonel kriz; dibe vuruldu.</string>
+    <string name="card_59_career_rev">Dibe vurduktan sonra profesyonel toparlanma; kariyer krizinin ardından yavaşça yeniden inşa ediyorsun.</string>
+    <string name="card_59_finances_up">Finansal olarak dip nokta; yıkıcı bir parasal kayıp veya kriz tüm dikkatini talep ediyor.</string>
+    <string name="card_59_finances_rev">Yıkıcı bir kaybın ardından finansal toparlanma başlıyor; en kötüsü geçti.</string>
+    <string name="card_59_feelings_up">Tamamen yenilmiş ve bitkin hissediyorsun; üst üste gelen krizlerin ağırlığı seni eziyor.</string>
+    <string name="card_59_feelings_rev">En karanlık gecenin ardından güneş doğuyor; bitkinlik yerini kademeli bir toparlanmaya bırakıyor.</string>
+    <string name="card_59_actions_up">Bu bölümün kapandığını kabul et; dipten sonra tek yön yukarıdır.</string>
+    <string name="card_59_actions_rev">Yıkıntılardan yeniden inşa etmeye başla; her son, yeni bir başlangıcın tohumunu taşır.</string>
+
+    <!-- Card 60: Page of Swords -->
+    <string name="card_60_love_up">Canlandırıcı bir entelektüel bağ; açık ve dürüst iletişim romantik ilgiyi ateşliyor.</string>
+    <string name="card_60_love_rev">Dedikodu ya da kırıcı sözler ilişkiye zarar veriyor; iletişim keskinleşiyor veya dürüstlüğünü yitiriyor.</string>
+    <string name="card_60_career_up">Taze fikirler ve entelektüel merak kariyer ilerlemesini besliyor; fırsatlara karşı tetikte ol.</string>
+    <string name="card_60_career_rev">İş yeri dedikoduları veya aceleci iletişim profesyonel sorunlar yaratıyor.</string>
+    <string name="card_60_finances_up">Entelektüel merak ve zihinsel çeviklikle yeni finansal fırsatları araştırıyorsun.</string>
+    <string name="card_60_finances_rev">Eksik bilgiye dayanan aceleci finansal kararlar; duyduğun her para tavsiyesine inanma.</string>
+    <string name="card_60_feelings_up">Entelektüel olarak uyarılmış ve meraklı hissediyorsun; öğrenmeye ve yeni gerçekler keşfetmeye heveslisin.</string>
+    <string name="card_60_feelings_rev">Alaycı ve kuşkucu hissediyorsun; keskin sözler güvensizliği maskeliyor.</string>
+    <string name="card_60_actions_up">Meraklı kal ve net iletişim kur; yeni fikirleri açık ama seçici bir zihinle araştır.</string>
+    <string name="card_60_actions_rev">Konuşmadan önce düşün; dedikoduyu bırak ve sözlerini yapıcı biçimde kullan.</string>
+
+    <!-- Card 61: Knight of Swords -->
+    <string name="card_61_love_up">Aşkın peşinden yoğunluk ve kararlılıkla gidiyorsun; hızlı ve tutkulu bir romantik takip.</string>
+    <string name="card_61_love_rev">Aşkta saldırgan veya pervasız davranış; sabırsızlık seni fazla bastırmaya itiyor.</string>
+    <string name="card_61_career_up">Hırslı kariyer hedeflerine doğru atılıyorsun; hızlı ve kararlı profesyonel eylem.</string>
+    <string name="card_61_career_rev">Düzgün planlama olmadan pervasız kariyer hamleleri; saldırganlık iş arkadaşlarını uzaklaştırıyor.</string>
+    <string name="card_61_finances_up">Hızlı ve kararlı finansal hamleler sonuç getiriyor; demir tavında dövülür.</string>
+    <string name="card_61_finances_rev">Aceleyle alınan dürtüsel finansal kararlar; pervasız harcama ya da yatırım.</string>
+    <string name="card_61_feelings_up">Kendini güdülenmiş ve zihinsel olarak keskin hissediyorsun; bir aciliyet duygusu seni ileri itiyor.</string>
+    <string name="card_61_feelings_rev">Dağınık ve saldırgan hissediyorsun; sabırsızlık başkalarına çatmana neden oluyor.</string>
+    <string name="card_61_actions_up">Hızlı ve kararlı davran; kararlılığın ve hırsın engelleri kesip geçecek.</string>
+    <string name="card_61_actions_rev">Çarpmadan önce yavaşla; yoğunluğunu daha stratejik bir planlamayla yönlendir.</string>
+
+    <!-- Card 62: Queen of Swords -->
+    <string name="card_62_love_up">Aşkta açık ve dürüst iletişim; entelektüel bağa değer veren bağımsız bir partner.</string>
+    <string name="card_62_love_rev">İlişkide soğuk ve eleştirel tavır; geçmiş yaraların acılığı derin izler bırakıyor.</string>
+    <string name="card_62_career_up">Keskin algı ve net iletişim seni etkili ve saygı gören bir profesyonel yapıyor.</string>
+    <string name="card_62_career_rev">İşte aşırı eleştirel tavır; entelektüel soğukluk seni iş arkadaşlarından yalıtıyor.</string>
+    <string name="card_62_finances_up">Aklıselim finansal kararlar; duygusal gürültüyü yarıp parasal gerçeğe ulaşıyorsun.</string>
+    <string name="card_62_finances_rev">Sert finansal yargı; para konusunda kendine ya da başkalarına karşı aşırı eleştirelsin.</string>
+    <string name="card_62_feelings_up">Zihinsel olarak berrak ve duygusal olarak bağımsız hissediyorsun; keskin zihnin sana iyi hizmet ediyor.</string>
+    <string name="card_62_feelings_rev">Kırgın ve eleştirel hissediyorsun; geçmiş yaralar kalbini katılaştırdı ve dilini keskinleştirdi.</string>
+    <string name="card_62_actions_up">Netlik ve dürüstlükle iletişim kur; şefkatle sağlam sınırlar koy.</string>
+    <string name="card_62_actions_rev">Keskin köşelerini yumuşat; haklı olmak, iyi kalpli olmaktan daha önemli değildir.</string>
+
+    <!-- Card 63: King of Swords -->
+    <string name="card_63_love_up">Entelektüel saygı ve etik değerlerle yönlendirilen bir ilişki; dürüstlük her şeyden önce gelir.</string>
+    <string name="card_63_love_rev">Zekâsını manipülasyon için kullanan bir partner; soğuk akılcılık duygusal sıcaklığın yerini alıyor.</string>
+    <string name="card_63_career_up">Entelektüel otorite ve etik liderlik; net düşüncen profesyonel saygı uyandırıyor.</string>
+    <string name="card_63_career_rev">İşte entelektüel gücün kötüye kullanımı; soğuk akılcılık yoluyla zorbaca liderlik.</string>
+    <string name="card_63_finances_up">Mantıklı ve etik finansal yönetim; net düşünce sağlam parasal kararlara rehberlik ediyor.</string>
+    <string name="card_63_finances_rev">Finansal bilgiyi başkalarını manipüle etmek için kullanmak; etik dışı finansal uygulamalar.</string>
+    <string name="card_63_feelings_up">Entelektüel ustalık ve etik sağlamlık hissi; zihinsel netlik özgüven getiriyor.</string>
+    <string name="card_63_feelings_rev">Duygusal kopukluk ve entelektüel kibir hissi; kalpsiz mantık.</string>
+    <string name="card_63_actions_up">Entelektüel dürüstlük ve etik netlikle liderlik et; kararlarına hakikat yön versin.</string>
+    <string name="card_63_actions_rev">Zekânı hakikate hizmet etmek için mi yoksa başkalarını kontrol etmek için mi kullandığını sorgula.</string>
+
+    <!-- ===== WANDS (Hole) ===== -->
+
+    <!-- Card 64: Ace of Wands -->
+    <string name="card_64_love_up">Tutkulu yeni bir romantik kıvılcım tutuşuyor; ateşli bir aşk bağı için heyecan verici bir potansiyel.</string>
+    <string name="card_64_love_rev">Romantik tutku sönüyor; gecikmeler veya motivasyon eksikliği aşk bağının oluşmasını engelliyor.</string>
+    <string name="card_64_career_up">İlham verici yeni bir kariyer girişimi veya yaratıcı proje seni coşkulu bir enerjiyle dolduruyor.</string>
+    <string name="card_64_career_rev">Yaratıcı tıkanıklıklar veya gecikmeler umut vadeden bir kariyer fırsatını durduruyor; motivasyon azalıyor.</string>
+    <string name="card_64_finances_up">Tutkularınla ve yaratıcı enerjinle uyumlu, yeni ve heyecan verici bir finansal fırsat.</string>
+    <string name="card_64_finances_rev">Umut vadeden bir finansal fırsat kaçırılıyor veya gecikiyor; inisiyatif eksikliği seni geride tutuyor.</string>
+    <string name="card_64_feelings_up">Tutkuyla ilham dolu hissediyorsun; yaratıcı potansiyel ve coşkuyla taşıyorsun.</string>
+    <string name="card_64_feelings_rev">Yaratıcılığın tıkanmış ve ilham kıvılcımından yoksun hissediyorsun; enerji düşük.</string>
+    <string name="card_64_actions_up">İlham kıvılcımını yakala ve onu tutkulu yaratıcı eyleme dönüştür.</string>
+    <string name="card_64_actions_rev">Tutkunu yeniden alevlendir; seni heyecanlandıranı bul ve yaratıcı enerjinin önündeki engelleri kaldır.</string>
+
+    <!-- Card 65: Two of Wands -->
+    <string name="card_65_love_up">Partnerinle ortak bir gelecek planlıyorsun; aşk hikâyenin nereye uzanacağını hayal ediyorsun.</string>
+    <string name="card_65_love_rev">Bağlanma korkusu veya romantik bir gelecek planlama isteksizliği; konfor alanında kalıyorsun.</string>
+    <string name="card_65_career_up">Kariyer geleceğini cesurca planlıyorsun; profesyonel olasılıklar dünyası önünde uzanıyor.</string>
+    <string name="card_65_career_rev">Profesyonel olarak garantici davranıyorsun; bilinmeyen korkusu kariyer keşfini engelliyor.</string>
+    <string name="card_65_finances_up">Gelecekteki zenginlik için finansal planlama ve stratejik düşünme; cesur yatırımları değerlendiriyorsun.</string>
+    <string name="card_65_finances_rev">Korku finansal planlamayı engelliyor; güvenli ama sınırlayıcı bir parasal konfor alanında kalıyorsun.</string>
+    <string name="card_65_feelings_up">Gelecekteki olasılıklar için heyecan duyuyorsun; planlama evresi sana enerji veriyor.</string>
+    <string name="card_65_feelings_rev">Gelecek konusunda felç edici bir kararsızlık hissediyorsun; korku heyecana ağır basıyor.</string>
+    <string name="card_65_actions_up">Geleceği cesurca planla; mevcut ufkunun ötesine bak ve stratejik kararlar al.</string>
+    <string name="card_65_actions_rev">Garantici oynamayı bırak; bilinmeyen korkusu ileriye dönük plan yapmanı engellememeli.</string>
+
+    <!-- Card 66: Three of Wands -->
+    <string name="card_66_love_up">Aşk sınırların ötesine genişliyor; ilişki yeni ve heyecan verici topraklara doğru büyüyor.</string>
+    <string name="card_66_love_rev">Romantik planlar gecikmelerle veya engellerle karşılaşıyor; dar görüş aşkın büyümesini kısıtlıyor.</string>
+    <string name="card_66_career_up">Kariyer genişlemesi ve yurt dışı fırsatlar; profesyonel vizyonun çok uzaklara uzanıyor.</string>
+    <string name="card_66_career_rev">Kariyer genişlemesi engellerle gecikiyor; profesyonel büyümenin temposu hayal kırıklığı yaratıyor.</string>
+    <string name="card_66_finances_up">Uluslararası fırsatlar veya geniş kapsamlı yatırımlar yoluyla finansal genişleme.</string>
+    <string name="card_66_finances_rev">Finansal büyüme gecikiyor; engeller gelir kaynaklarının genişlemesini önlüyor.</string>
+    <string name="card_66_feelings_up">Ufkun genişliyor ve ileriye bakıyorsun; gelecek vizyonun seni iyimserlikle dolduruyor.</string>
+    <string name="card_66_feelings_rev">Yavaş ilerleme hayal kırıklığı yaratıyor; engellerin büyüme yolunu tıkadığını hissediyorsun.</string>
+    <string name="card_66_actions_up">Ufkunu genişlet ve yakın çevrenin ötesindeki fırsatların peşinden git.</string>
+    <string name="card_66_actions_rev">İlerleme durduysa planlarını gözden geçir; genişleme için alternatif yollar ara.</string>
+
+    <!-- Card 67: Four of Wands -->
+    <string name="card_67_love_up">Nişan ya da birlikte yaşamaya başlamak gibi neşeli romantik kutlamalar; ilişkide bir dönüm noktası.</string>
+    <string name="card_67_love_rev">İlişkideki istikrarsızlık kutlamaları gölgeliyor; aileden veya çevreden destek eksikliği.</string>
+    <string name="card_67_career_up">Bir kariyer dönüm noktasını veya ekip başarısını kutluyorsun; destekleyici bir profesyonel topluluk.</string>
+    <string name="card_67_career_rev">İş yerinde istikrarsızlık veya ekip uyumu eksikliği; profesyonel kutlamalar erken görünüyor.</string>
+    <string name="card_67_finances_up">Kutlamaya değer finansal istikrar; servet biriktirmede ya da ev sahibi olmada bir dönüm noktası.</string>
+    <string name="card_67_finances_rev">Finansal istikrarsızlık yuva ve güvenlik duygunu tehdit ediyor; beklenmedik değişimler.</string>
+    <string name="card_67_feelings_up">Kutlama ve şükran duygusu içindesin; aidiyet hissi ve paylaşılan sevinç ruhunu yükseltiyor.</string>
+    <string name="card_67_feelings_rev">Desteksiz ve istikrarsız hissediyorsun; iç çatışma tam anlamıyla kutlamana engel oluyor.</string>
+    <string name="card_67_actions_up">Başarılarını çevrenle kutla; bu dönüm noktasını şükranla an.</string>
+    <string name="card_67_actions_rev">Kutlamadan önce altta yatan istikrarsızlığı ele al; temellerinin gerçekten sağlam olduğundan emin ol.</string>
+
+    <!-- Card 68: Five of Wands -->
+    <string name="card_68_love_up">Aşkta rekabetçi enerji veya anlaşmazlıklar; iyi yönetilirse yapıcı olabilecek bir çatışma.</string>
+    <string name="card_68_love_rev">Gerekli ilişki çatışmalarından kaçınıyorsun; dış anlaşmazlıkların yerini iç karmaşa alıyor.</string>
+    <string name="card_68_career_up">Sağlıklı profesyonel rekabet seni mükemmelleşmeye itiyor; iş yerindeki fikir ayrılıkları yeniliği ateşliyor.</string>
+    <string name="card_68_career_rev">İlerleme pahasına iş yeri çatışmasından kaçınıyorsun; rekabet yerine uzlaşma arıyorsun.</string>
+    <string name="card_68_finances_up">Finansal rekabet veya açık artırma savaşları; para kararları etrafındaki gerginlik enerji istiyor.</string>
+    <string name="card_68_finances_rev">Finansal anlaşmazlıkları uzlaşmayla çözüyorsun; rekabetçi harcamalardan geri adım atıyorsun.</string>
+    <string name="card_68_feelings_up">Rekabet ve meydan okumayla ateşlenmiş hissediyorsun; sağlıklı çatışmanın adrenalini.</string>
+    <string name="card_68_feelings_rev">İç çatışma enerjini tüketiyor; dış savaşlardan kaçınmak iç savaşlar yaratıyor.</string>
+    <string name="card_68_actions_up">Sağlıklı rekabete katıl; çatışmayı büyüme ve gelişim için yakıt olarak kullan.</string>
+    <string name="card_68_actions_rev">Çözüm ve uzlaşma ara; her savaş savaşmaya değmez.</string>
+
+    <!-- Card 69: Six of Wands -->
+    <string name="card_69_love_up">Romantik başarı ve ilişkinin herkesçe tanınması; birlikteliğinle gurur duyuyorsun.</string>
+    <string name="card_69_love_rev">İlişkide ego çatışmaları; gerçek bir bağ kurmak yerine dışarıdan onay arıyorsun.</string>
+    <string name="card_69_career_up">Herkesin gözü önünde profesyonel takdir ve kariyer zaferi; başarıların meslektaşlarınca kutlanıyor.</string>
+    <string name="card_69_career_rev">Profesyonel takdir eksikliği; en iyi çabalarına rağmen gözden düşme ya da başarısızlık.</string>
+    <string name="card_69_finances_up">Herkesin takdirini kazanan finansal başarı; refahın görünür ve kutlanıyor.</string>
+    <string name="card_69_finances_rev">Finansal başarısızlık ya da önceden güçlü olan finansal konumun kaybı; alçaltıcı bir aksilik.</string>
+    <string name="card_69_feelings_up">Muzaffer ve takdir edilmiş hissediyorsun; başkaları başarını kutladıkça özgüvenin yükseliyor.</string>
+    <string name="card_69_feelings_rev">Takdir görmemiş ya da küçük düşürülmüş hissediyorsun; herkesin önündeki bir aksilik sonrası egonun sönmesi.</string>
+    <string name="card_69_actions_up">Övgüyü zarafetle kabul et ve başarın başkalarına ilham versin; özgüvenle öncülük et.</string>
+    <string name="card_69_actions_rev">Egonun eylemlerini yönetmesine izin verme; gerçek başarı sürekli dış onay gerektirmez.</string>
+
+    <!-- Card 70: Seven of Wands -->
+    <string name="card_70_love_up">İlişkini dış zorluklara karşı savunuyorsun; romantik inançlarının arkasında dimdik duruyorsun.</string>
+    <string name="card_70_love_rev">İlişkiden fazla kolay vazgeçiyorsun; romantik zorluklar karşısında bunalmış hissediyorsun.</string>
+    <string name="card_70_career_up">Profesyonel rakiplere karşı duruşunu koruyorsun; konumunu cesaretle savunuyorsun.</string>
+    <string name="card_70_career_rev">İş yerindeki rekabet karşısında bunalmışsın; zorlu bir kariyer yolundan vazgeçmeyi düşünüyorsun.</string>
+    <string name="card_70_finances_up">Finansal konumunu tehditlere karşı savunuyorsun; azim kaynaklarını koruyor.</string>
+    <string name="card_70_finances_rev">Sürekli mücadelelerden doğan finansal tükenmişlik; bir para anlaşmazlığında teslim olmayı düşünüyorsun.</string>
+    <string name="card_70_feelings_up">Kuşatılmış ama kararlı hissediyorsun; artan zorluklara rağmen cesaret seni ayakta tutuyor.</string>
+    <string name="card_70_feelings_rev">Bitkin ve pes etmeye hazır hissediyorsun; sürekli mücadele rezervlerini tüketti.</string>
+    <string name="card_70_actions_up">Dimdik dur ve konumunu savun; azim seni bu zorluklardan geçirecek.</string>
+    <string name="card_70_actions_rev">Bu savaşın hâlâ savaşmaya değip değmediğini değerlendir; stratejik geri çekilme yenilgiyle aynı şey değildir.</string>
+
+    <!-- Card 71: Eight of Wands -->
+    <string name="card_71_love_up">Hızlı romantik gelişmeler; ilişki heyecan verici bir hız ve ivmeyle ilerliyor.</string>
+    <string name="card_71_love_rev">Romantik ilerleme duruyor; gecikmeler ve hayal kırıklığı, önceden hızla ilerleyen ilişkiyi yavaşlatıyor.</string>
+    <string name="card_71_career_up">Hızlı kariyer ilerlemesi ve yıldırım gibi profesyonel gelişmeler; ivme seni ileri taşıyor.</string>
+    <string name="card_71_career_rev">Kariyer ilerlemesi beklenmedik gecikmelere takılıyor; sinir bozucu engeller profesyonel ivmeni yavaşlatıyor.</string>
+    <string name="card_71_finances_up">Yıldırım hızında finansal gelişmeler; para hızla hareket ediyor ve fırsatlar çabuk davranmanı istiyor.</string>
+    <string name="card_71_finances_rev">Finansal işlemler gecikiyor; beklenen para yavaş geliyor.</string>
+    <string name="card_71_feelings_up">Enerjik hissediyorsun; hızlı ilerlemenin ve hareketin heyecanına kapılmışsın.</string>
+    <string name="card_71_feelings_rev">Gecikmeler hayal kırıklığı yaratıyor; ivme durunca sabırsızlanıyorsun.</string>
+    <string name="card_71_actions_up">Hızlı ve kararlı davran; ivme senden yana, o hâlde enerji yüksekken harekete geç.</string>
+    <string name="card_71_actions_rev">Gecikmeler sırasında sabırlı ol; yavaşlamayı, ivmenin geri dönüşüne hazırlanmak için kullan.</string>
+
+    <!-- Card 72: Nine of Wands -->
+    <string name="card_72_love_up">Nice fırtınayı atlatmış dayanıklı bir aşk; ilişkini korumak için son bir direniş.</string>
+    <string name="card_72_love_rev">Aşkta duygusal tükenmişlik; geçmiş yaralar seni ilişkilerde evhamlı ve savunmacı yapıyor.</string>
+    <string name="card_72_career_up">Tekrarlanan profesyonel zorluklara rağmen sebatkâr bir kararlılık; bitiş çizgisine çok yakınsın.</string>
+    <string name="card_72_career_rev">Kariyer tükenmişliği ve bitkinlik; mücadele fazla uzun sürdü ve rezervler tükendi.</string>
+    <string name="card_72_finances_up">Süregelen zorluklara rağmen dirençli finansal yönetim; aksiliklere rağmen ayakta kalıyorsun.</string>
+    <string name="card_72_finances_rev">Finansal tükenmişlik; para meseleleriyle uzayan mücadele seni yıpratıyor.</string>
+    <string name="card_72_feelings_up">Savaş yorgunu ama kararlı hissediyorsun; yorgunluğa rağmen azim seni ayakta tutuyor.</string>
+    <string name="card_72_feelings_rev">Tamamen tükenmiş ve çökmek üzere hissediyorsun; yük artık fazlasıyla ağırlaştı.</string>
+    <string name="card_72_actions_up">Dirençli kal ve devam et; başarıya sandığından daha yakınsın.</string>
+    <string name="card_72_actions_rev">Ne zaman yeter demek gerektiğini bil; dinlenme ve toparlanma zayıflık işareti değildir.</string>
+
+    <!-- Card 73: Ten of Wands -->
+    <string name="card_73_love_up">İlişki sorumluluklarının ağırlığı ezici geliyor; aşk bir sevinç değil, bir yük hâline geliyor.</string>
+    <string name="card_73_love_rev">İlişki yüklerini bırakıyorsun; sorumlulukları paylaşmayı ve gereksiz ağırlıkları bırakmayı öğreniyorsun.</string>
+    <string name="card_73_career_up">Profesyonel sorumluluklar altında ezilmişsin; tüm iş yükünü kendi omuzlarında taşıyorsun.</string>
+    <string name="card_73_career_rev">İşte sorumlulukları devrediyorsun; her şeyi tek başına yapma ihtiyacını bırakıyorsun.</string>
+    <string name="card_73_finances_up">Finansal yükler ağır basıyor; çok fazla yükümlülüğü yönetmenin stresi ezici.</string>
+    <string name="card_73_finances_rev">Devretme veya yeniden yapılandırma yoluyla finansal yüklerden kurtuluyorsun; parasal yükü hafifletiyorsun.</string>
+    <string name="card_73_feelings_up">Çok fazla sorumluluğun ağırlığı altında ezilmiş hissediyorsun; bitkinlik ve stres hâkim.</string>
+    <string name="card_73_feelings_rev">Yükler bırakıldıkça rahatlıyorsun; bırakmayı öğrendikçe ağırlık kalkıyor.</string>
+    <string name="card_73_actions_up">Hangi yüklerin gerçekten sana ait olduğunu incele; çökmeden önce yardım iste.</string>
+    <string name="card_73_actions_rev">Taşıman gerekmeyeni yere bırak; devret ve gereksiz sorumlulukları serbest bırak.</string>
+
+    <!-- Card 74: Page of Wands -->
+    <string name="card_74_love_up">Heyecan verici yeni bir flört veya romantik macera; aşkta coşkulu ve oyunbaz bir enerji.</string>
+    <string name="card_74_love_rev">Romantik huzursuzluk ve bağlılık eksikliği; can sıkıntısı ya da aceleci romantik kararlar.</string>
+    <string name="card_74_career_up">Heyecan verici bir kariyer fırsatı coşkunu ateşliyor; yeni profesyonel ufuklar keşfet.</string>
+    <string name="card_74_career_rev">Kariyer yönü eksikliği; profesyonel hedefleri erteliyor ya da aceleci kararlar alıyorsun.</string>
+    <string name="card_74_finances_up">Yeni finansal girişimleri coşkuyla keşfediyorsun; paraya maceracı bir enerjiyle yaklaşıyorsun.</string>
+    <string name="card_74_finances_rev">Yeterli araştırma yapılmadan alınan aceleci finansal kararlar; para konularında yön eksikliği.</string>
+    <string name="card_74_feelings_up">Maceracı ve coşkulu hissediyorsun; özgür ruhlu bir enerji seni keşfe itiyor.</string>
+    <string name="card_74_feelings_rev">Sıkılmış ve amaçsız hissediyorsun; verimli bir çıkışı olmayan huzursuz bir enerji.</string>
+    <string name="card_74_actions_up">Coşkunu takip et ve yeni maceraları keşfet; özgür ruhun yolu göstersin.</string>
+    <string name="card_74_actions_rev">Huzursuz enerjini verimli biçimde yönlendir; dürtüsel hamleler yapmadan önce yönünü bul.</string>
+
+    <!-- Card 75: Knight of Wands -->
+    <string name="card_75_love_up">Tutkulu ve cesur bir romantik takip; ateşli ve maceracı bir aşk ilgisi ayaklarını yerden kesiyor.</string>
+    <string name="card_75_love_rev">Dürtüsel romantik kararlar; güvenilmez, dağınık ya da bağlanmaktan kaçan bir partner.</string>
+    <string name="card_75_career_up">Cesur ve tutkulu kariyer hamleleri; hırslı profesyonel hayaller için harekete geçiyorsun.</string>
+    <string name="card_75_career_rev">Dağınık profesyonel enerji; sabırsızlık yüzünden birçok projeye başlayıp hiçbirini bitirmiyorsun.</string>
+    <string name="card_75_finances_up">Tutkunun ve macera ruhunun beslediği cesur finansal hamleler; hesaplanmış risk alma.</string>
+    <string name="card_75_finances_rev">Dürtüsel finansal kararlar; kaynakları yönsüzce tüketen dağınık harcamalar.</string>
+    <string name="card_75_feelings_up">Cesur, tutkulu ve harekete hazır hissediyorsun; içinde maceracı bir ateş yanıyor.</string>
+    <string name="card_75_feelings_rev">Hayal kırıklığına uğramış ve dağılmış hissediyorsun; tutkulu enerjinin odaklanmış bir çıkışı yok.</string>
+    <string name="card_75_actions_up">Cesur bir tutkuyla ileri atıl ve seni en çok heyecanlandıran şey için harekete geç.</string>
+    <string name="card_75_actions_rev">Dağınık enerjini odakla; yönsüz tutku, tükenmişliğe ve hayal kırıklığına götürür.</string>
+
+    <!-- Card 76: Queen of Wands -->
+    <string name="card_76_love_up">Özgüvenli ve sıcak bir romantik enerji; karizman ve canlılığın derin bir aşkı kendine çekiyor.</string>
+    <string name="card_76_love_rev">Aşkta kıskançlık ya da güvensizlik; buyurgan davranış partneri uzaklaştırıyor.</string>
+    <string name="card_76_career_up">Karizmatik liderlik ve özgüvenli bir profesyonel duruş; sıcaklığın ekiplere ilham veriyor.</string>
+    <string name="card_76_career_rev">İşte profesyonel kıskançlık ya da bencil davranış; güvensizlik liderliğini zayıflatıyor.</string>
+    <string name="card_76_finances_up">Özgüvenli finansal yönetim; karizman ve kararlılığın zenginliği kendine çekiyor.</string>
+    <string name="card_76_finances_rev">Bencil harcamalar ya da başkalarının servetini kıskanma; finansal güvensizlik kötü kararlara sürüklüyor.</string>
+    <string name="card_76_feelings_up">Işıltılı bir özgüven ve sıcaklık hissediyorsun; içindeki ateş parlak yanıyor ve başkalarına ilham veriyor.</string>
+    <string name="card_76_feelings_rev">Güvensizlik, özgüvenli bir maskenin ardına gizleniyor; kıskançlık içindeki sıcaklığı kemiriyor.</string>
+    <string name="card_76_actions_up">Sıcaklık ve özgüvenle öncülük et; karizman ve kararlılığın çevrendekilere ilham versin.</string>
+    <string name="card_76_actions_rev">Güvensizliklerini dürüstçe ele al; kıskançlık ve bencillik gerçek gücünü yalnızca küçültür.</string>
+
+    <!-- Card 77: King of Wands -->
+    <string name="card_77_love_up">Cesur ve vizyoner bir partner; aşkta bağlılık ve heyecan uyandıran tutkulu bir lider.</string>
+    <string name="card_77_love_rev">Baskıcı ya da despot bir partner; dürtüsellik ve acımasızlık ilişkiye zarar veriyor.</string>
+    <string name="card_77_career_up">Vizyoner girişimci liderlik; cesur profesyonel vizyonun başkalarını seni izlemeye teşvik ediyor.</string>
+    <string name="card_77_career_rev">İşte zorba bir liderlik tarzı; dürtüsel iş kararları otoriteni sarsıyor.</string>
+    <string name="card_77_finances_up">Cesur ve vizyoner finansal liderlik; girişimci atılımlar etkileyici getiriler sağlıyor.</string>
+    <string name="card_77_finances_rev">Güç konumundan alınan dürtüsel finansal kararlar; ne pahasına olursa olsun servetin acımasızca peşinde koşmak.</string>
+    <string name="card_77_feelings_up">Net ve tutkulu bir vizyona sahip doğal bir lider gibi hissediyorsun; cesur bir özgüven yayıyorsun.</string>
+    <string name="card_77_feelings_rev">Baskıcı ve kontrolden çıkmış hissediyorsun; bilgelikten yoksun güç iç karmaşaya götürür.</string>
+    <string name="card_77_actions_up">Vizyon ve onurla cesurca liderlik et; tutkulu örneğinle başkalarına ilham ver.</string>
+    <string name="card_77_actions_rev">Cesaretini bilgelikle dengele; gerçek liderlik başkalarına hükmetmek yerine onlara hizmet eder.</string>
+</resources>

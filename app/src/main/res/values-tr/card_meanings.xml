@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Card 0: The Fool -->
+    <string name="card_0_love_up">Aşkta yeni bir başlangıç; spontane ol ve beklenmedik romantik karşılaşmalara açık kal.</string>
+    <string name="card_0_love_rev">Düşüncesiz romantik seçimler; bir ilişkiye üzerine iyice düşünmeden atlıyorsun.</string>
+    <string name="card_0_career_up">Yeni kariyer fırsatları seni çağırıyor; heyecan verici bir yola doğru cesur bir adım at.</string>
+    <string name="card_0_career_rev">İşte kötü planlama; mesleki konumunu tehlikeye atabilecek dürtüsel kararlar.</string>
+    <string name="card_0_finances_up">Finansal yeni başlangıçlar; maceracı bir yatırım, bilgece yaklaşırsan meyvesini verebilir.</string>
+    <string name="card_0_finances_rev">Kayıtsızca para harcama ya da kayıplara yol açabilecek riskli finansal kumarlar.</string>
+    <string name="card_0_feelings_up">Heyecan ve kaygısızlık hissi; kalbini sınırsız olasılıkların duygusu dolduruyor.</string>
+    <string name="card_0_feelings_rev">Kaygısızlık maskesinin altında gizlenen endişe; bağlanmaktan ya da sonuçlardan korkma.</string>
+    <string name="card_0_actions_up">Her ayrıntıyı fazla düşünmeden yeni bir şeye atıl ve başla.</string>
+    <string name="card_0_actions_rev">Harekete geçmeden önce dur ve her şeyi planla; dürtüsel davranışlarını dizginle.</string>
+
+    <!-- Card 1: The Magician -->
+    <string name="card_1_love_up">Arzuladığın ilişkiyi yaratma gücüne sahipsin; çekicilik ve özgüven aşkı kendine çeker.</string>
+    <string name="card_1_love_rev">Romantizmde manipülasyona dikkat et; birisi gerçek niyetini göstermiyor olabilir.</string>
+    <string name="card_1_career_up">Başarı için gereken tüm becerilere sahipsin; yeteneklerini net bir niyetle odakla.</string>
+    <string name="card_1_career_rev">Yeteneklerin boşa harcanıyor ya da işte başkalarını kandırmak için kötüye kullanılıyor.</string>
+    <string name="card_1_finances_up">Beceriklilik finansal kazanç getirir; yeteneklerini yeni gelir kaynakları yaratmak için kullan.</string>
+    <string name="card_1_finances_rev">Finansal hileler ya da dürüst olmayan davranışlar sana geri döner; kestirme yollardan kaçın.</string>
+    <string name="card_1_feelings_up">Güç ve özgüven hissi; odaklandığın her şeyi başarabileceğini hissediyorsun.</string>
+    <string name="card_1_feelings_rev">Kendini bir sahtekâr gibi hissetme; öz şüphe doğal yeteneklerini baltalıyor.</string>
+    <string name="card_1_actions_up">Enerjini odakla ve hedeflerini gerçeğe dönüştürmek için kararlılıkla harekete geç.</string>
+    <string name="card_1_actions_rev">Sonuçları manipülasyonla kontrol etmeye çalışmayı bırak; bunun yerine özgün ol.</string>
+
+    <!-- Card 2: The High Priestess -->
+    <string name="card_2_love_up">Kalp meselelerinde sezgine güven; yüzeyin altında daha derin duygular gizli.</string>
+    <string name="card_2_love_rev">İlişkide sırlar ya da gizli niyetler; birisi önemli duygularını saklıyor.</string>
+    <string name="card_2_career_up">Kariyer kararlarında içgüdülerini dinle; cevap zaten senin içinde.</string>
+    <string name="card_2_career_rev">İşte önemli bilgileri görmezden gelme; ofis entrikaları ya da gizli amaçlar devrede.</string>
+    <string name="card_2_finances_up">Gizli finansal fırsatlar ortaya çıkabilir; yatırımlarda içgüdülerine güven.</string>
+    <string name="card_2_finances_rev">Finansal bilgiler senden saklanıyor; finansal bir karar vermeden önce daha derine bak.</string>
+    <string name="card_2_feelings_up">Derin bir içsel biliş duygusu; kendinden daha büyük bir şeyle bağ hissediyorsun.</string>
+    <string name="card_2_feelings_rev">İç sesinden kopmuş hissetme; kafa karışıklığı duygusal manzaranı örtüyor.</string>
+    <string name="card_2_actions_up">Herhangi bir karar vermeden önce sessizleş ve içindeki bilgeliği dinle.</string>
+    <string name="card_2_actions_rev">Sezgini görmezden gelmeyi bırak; derin düşünce yoluyla içinle yeniden bağ kur.</string>
+
+    <!-- Card 3: The Empress -->
+    <string name="card_3_love_up">Aşk sıcaklık ve şefkat içinde çiçek açıyor; derinden tensel ve doyurucu bir bağ.</string>
+    <string name="card_3_love_rev">Partnerini aşırı ilgiyle boğma; bağımlılık ilişkiyi zayıflatıyor.</string>
+    <string name="card_3_career_up">Yaratıcı projeler gelişip serpiliyor; fikirlerini besle ve güzel bir şeye dönüşmelerini izle.</string>
+    <string name="card_3_career_rev">Yaratıcı tıkanıklıklar ya da işte öz bakımı ihmal etme; aşırı vermekten doğan tükenmişlik.</string>
+    <string name="card_3_finances_up">Finansal bolluk doğal bir şekilde akıyor; konfora ve güzelliğe yapılan yatırımlar meyve veriyor.</string>
+    <string name="card_3_finances_rev">Lükse aşırı harcama; düşük öz değerden kaynaklanan finansal güvensizlik.</string>
+    <string name="card_3_feelings_up">Şefkat, bolluk ve yaşamın sevinçleriyle derin bir bağ hissi.</string>
+    <string name="card_3_feelings_rev">Duygusal boşluk ya da güvensizlik hissi; doyum bulmakta zorlanma.</string>
+    <string name="card_3_actions_up">Hem kendine hem başkalarına özen göster; güzelliğe, konfora ve yaratıcı ifadeye yatırım yap.</string>
+    <string name="card_3_actions_rev">Sağlıklı sınırlar koy; bağımlılık kalıplarını ele al ve kendi kendine yetmeyi geliştir.</string>
+
+    <!-- Card 4: The Emperor -->
+    <string name="card_4_love_up">Karşılıklı saygı ve net sınırlar üzerine kurulu istikrarlı ve güvenli bir birliktelik.</string>
+    <string name="card_4_love_rev">İlişkide kontrolcü davranışlar; bir partner baskın çıkarken diğeri acı çekiyor.</string>
+    <string name="card_4_career_up">Güçlü liderlik ve organizasyon becerileri mesleki başarı ve takdir getiriyor.</string>
+    <string name="card_4_career_rev">Zorba bir patron ya da katı bir iş yeri gelişimi bastırıyor; güç mücadeleleri baş gösteriyor.</string>
+    <string name="card_4_finances_up">Disiplinli para yönetimi uzun vadeli istikrara ve servetin büyümesine götürür.</string>
+    <string name="card_4_finances_rev">Finansları aşırı kontrol etme ya da gereksiz stres yaratan katı bütçeleme.</string>
+    <string name="card_4_feelings_up">Köklenmişlik, güç ve hayatının yönü üzerinde kontrol hissi.</string>
+    <string name="card_4_feelings_rev">Baskı altında ya da aşırı katılaşmış hissetme; her şeyi kontrol etme ihtiyacıyla boğuşma.</string>
+    <string name="card_4_actions_up">Yapı oluştur ve sakin bir otoriteyle durumunun kontrolünü eline al.</string>
+    <string name="card_4_actions_rev">Kontroldeki sıkı tutuşunu gevşet; kendine esneklik tanı ve başkalarının bakış açılarını göz önünde bulundur.</string>
+
+    <!-- Card 5: The Hierophant -->
+    <string name="card_5_love_up">Geleneksel, bağlılık dolu bir ilişki; evlilik ya da geleneksel birliktelik için uygun bir dönem.</string>
+    <string name="card_5_love_rev">İlişki normlarını sorgulama; alışılmadık bir birliktelik ya da geleneği reddetme.</string>
+    <string name="card_5_career_up">Kanıtlanmış yöntemleri izlemek başarı getirir; bir mentordan ya da kurumdan rehberlik iste.</string>
+    <string name="card_5_career_rev">İş yeri kurallarıyla kısıtlanmış hissetme; geleneksel kariyer yollarından kurtulma arzusu.</string>
+    <string name="card_5_finances_up">Temkinli finansal stratejiler meyvesini verir; denenmiş yatırım tavsiyelerine uy.</string>
+    <string name="card_5_finances_rev">Alışılmadık finansal yaklaşımlar; geleneksel para yönetiminden uzaklaşma.</string>
+    <string name="card_5_feelings_up">Bir toplulukta ya da manevi gelenekte aidiyet duygusu; yönlendirildiğini hissetme.</string>
+    <string name="card_5_feelings_rev">Kurallar ve beklentiler altında boğulma hissi; kendi manevi yolunu yaratma arzusu.</string>
+    <string name="card_5_actions_up">Köklü geleneklerde, mentorlarda ya da manevi uygulamalarda bilgelik ara.</string>
+    <string name="card_5_actions_rev">Kuralları sorgula ve kendi yolunu bul; gelenekleri körü körüne izleme.</string>
+
+    <!-- Card 6: The Lovers -->
+    <string name="card_6_love_up">Derin romantik bağ ve ruh eşi enerjisi; karşılıklı sevgi ve saygı üzerine kurulu bir ilişki.</string>
+    <string name="card_6_love_rev">İlişkide çatışmalar ve uyumsuz değerler; iki sevgili arasında zor bir seçim.</string>
+    <string name="card_6_career_up">Kariyer seçimlerin değerlerinle örtüşüyor; ortaklıklar ve iş birlikleri serpilip gelişiyor.</string>
+    <string name="card_6_career_rev">Kariyer kararları içsel çatışma yaratıyor; iş ortaklıkları dengesiz.</string>
+    <string name="card_6_finances_up">Değerlerinle uyumlu finansal kararlar kalıcı bir tatmin getirir.</string>
+    <string name="card_6_finances_rev">Partnerle finansal anlaşmazlıklar; ilkelerinle çelişen seçimler.</string>
+    <string name="card_6_feelings_up">Sevdiğin biriyle ya da bir şeyle derin bir bağ ve uyum hissi.</string>
+    <string name="card_6_feelings_rev">İki seçenek arasında bölünmüşlük; içsel çatışma huzur bulmayı zorlaştırıyor.</string>
+    <string name="card_6_actions_up">En derin değerlerinle uyum içinde, kalbinle karar ver.</string>
+    <string name="card_6_actions_rev">Önemli bir karar vermeden önce içsel çatışmaları çöz; değerlerinle yeniden hizalan.</string>
+
+    <!-- Card 7: The Chariot -->
+    <string name="card_7_love_up">Aşkın peşinden kararlılıkla gitme; istediğin kişiyle olmak için engelleri aşıyorsun.</string>
+    <string name="card_7_love_rev">İlişkiyi zorla ileri itme; romantik çabalarda yön eksikliği.</string>
+    <string name="card_7_career_up">Kariyer ivmen güçlü; kararlılığın ve azmin seni önemli başarılara taşıyor.</string>
+    <string name="card_7_career_rev">İşte yönünü kaybetmiş hissetme; engeller ve aksilikler mesleki ilerlemeni yavaşlatıyor.</string>
+    <string name="card_7_finances_up">Disiplinli çabayla gelen finansal zafer; finansal hedeflerine odaklanmayı sürdür.</string>
+    <string name="card_7_finances_rev">Kötü planlama ya da dağınık çabalar yüzünden finansal aksilikler; toparlan ve odaklan.</string>
+    <string name="card_7_feelings_up">Durdurulamaz ve kararlı hissetme; güçlü bir amaç duygusu seni ileri itiyor.</string>
+    <string name="card_7_feelings_rev">Kontrolü kaybetme ya da yenilgi hissi; ilerleme durdukça hayal kırıklığı büyüyor.</string>
+    <string name="card_7_actions_up">İrade gücünü kullan ve hedeflerine doğru güvenle ilerle.</string>
+    <string name="card_7_actions_rev">Yavaşla ve kontrolü yeniden ele al; yola devam etmeden önce yönünü gözden geçir.</string>
+
+    <!-- Card 8: Strength -->
+    <string name="card_8_love_up">Sabır ve şefkat üzerine kurulu aşk; yumuşak güç duygusal bağları derinleştirir.</string>
+    <string name="card_8_love_rev">Güvensizlik ve öz şüphe romantik bağlarını zayıflatıyor; kırılgan olmaktan korkma.</string>
+    <string name="card_8_career_up">Sessiz özgüven ve azim saygı kazandırır; zorla değil, şefkatle yol göster.</string>
+    <string name="card_8_career_rev">Öz şüphe seni mesleki olarak geride tutuyor; iş zorlukları karşısında bunalmış hissedebilirsin.</string>
+    <string name="card_8_finances_up">Sabırlı ve istikrarlı para yönetimi kalıcı sonuçlar getirir; dürtüsel kararlara diren.</string>
+    <string name="card_8_finances_rev">Finansal kaygı özgüvenini sarsıyor; duygusal harcamalar istikrarını bozuyor.</string>
+    <string name="card_8_feelings_up">Cesaret ve dayanıklılık hissi; içsel güç seni zor zamanlardan geçiriyor.</string>
+    <string name="card_8_feelings_rev">Kırılgan ve özgüvensiz hissetme; ham duygular seni içine çekmekle tehdit ediyor.</string>
+    <string name="card_8_actions_up">Zorluklara yumuşak bir kararlılık ve sarsılmaz bir içsel dayanıklılıkla yaklaş.</string>
+    <string name="card_8_actions_rev">Özgüvenini yeniden inşa et; güvensizlikler çabalarını baltalamadan önce onları ele al.</string>
+
+    <!-- Card 9: The Hermit -->
+    <string name="card_9_love_up">Aşkta gerçekten ne istediğin üzerine bir düşünme dönemi; yalnızlık netlik getirir.</string>
+    <string name="card_9_love_rev">Aşırı yalıtılmışlık yakınlarını uzaklaştırıyor; yalnızlık gönüllü bir sürgüne dönüşüyor.</string>
+    <string name="card_9_career_up">Geri çekil ve kariyer yolun üzerine düşün; içsel bilgelik bir sonraki mesleki adımına rehberlik ediyor.</string>
+    <string name="card_9_career_rev">İşte yalıtılmış hissetme; meslektaşlarından uzaklaşman kariyer gelişimini yavaşlatıyor.</string>
+    <string name="card_9_finances_up">Finansal kararlardan önce dikkatlice düşünmek bilgece yatırımlara götürür.</string>
+    <string name="card_9_finances_rev">Geri çekilerek finansal sorumluluklardan kaçınma; para meselelerini görmezden gelmek onları kötüleştirir.</string>
+    <string name="card_9_feelings_up">Derin bir yalnızlık ve tefekkür ihtiyacı; sessiz öz keşifte huzur bulma.</string>
+    <string name="card_9_feelings_rev">Acı verici bir yalnızlık ve kopukluk hissi; yalıtılmışlık içgörü yerine umutsuzluk doğuruyor.</string>
+    <string name="card_9_actions_up">Günlük yaşamın gürültüsünden uzaklaş ve içsel bilgelik ile netlik ara.</string>
+    <string name="card_9_actions_rev">Dünyaya geri dön; aşırı yalıtılmışlık artık ters etki yaratıyor.</string>
+
+    <!-- Card 10: Wheel of Fortune -->
+    <string name="card_10_love_up">Kaderin getirdiği romantik bir dönüm noktası; talih aşk hayatına önemli değişimler getiriyor.</string>
+    <string name="card_10_love_rev">İlişki aksilikleri kader gibi görünüyor; artık sana hizmet etmeyen bir döngüye tutunmaktan vazgeç.</string>
+    <string name="card_10_career_up">Şanslı bir kariyer dönüşü; beklenmedik mesleki fırsatları yakalamaya hazır ol.</string>
+    <string name="card_10_career_rev">Talihsiz kariyer gelişmeleri; dış güçler mesleki planlarını bozuyor.</string>
+    <string name="card_10_finances_up">Olumlu bir finansal dönüş yaklaşıyor; bolluk döngüleri lehine dönüyor.</string>
+    <string name="card_10_finances_rev">Finansal düşüş ya da beklenmedik masraflar; elverişsiz döngüyü sabırla atlat.</string>
+    <string name="card_10_feelings_up">Değişim konusunda iyimserlik hissi; kaderin olması gerektiği gibi açıldığı duygusu.</string>
+    <string name="card_10_feelings_rev">Kaderin insafına kalmış hissetme; kontrol edemediğin koşullardan doğan hayal kırıklığı.</string>
+    <string name="card_10_actions_up">Değişimi kucakla ve akışa bırak kendini; kaderin sunduğu fırsatları yakala.</string>
+    <string name="card_10_actions_rev">Olumsuz döngülerden kurtul; kaderi suçlamak yerine sorumluluğu üstlen.</string>
+
+    <!-- Card 11: Justice -->
+    <string name="card_11_love_up">Adalet ve dürüstlük ilişkini güçlendiriyor; karşılıklı hesap verebilirlik güven inşa eder.</string>
+    <string name="card_11_love_rev">İlişkide dürüst olmama ya da haksız muamele; çözülmemiş haksızlıklar kırgınlık doğuruyor.</string>
+    <string name="card_11_career_up">Mesleki konularda adil sonuçlar; hukuki kararlar ya da sözleşmeler lehine sonuçlanır.</string>
+    <string name="card_11_career_rev">İş yerinde adaletsizlik ya da haksız muamele; hukuki karmaşalar ortaya çıkabilir.</string>
+    <string name="card_11_finances_up">Finansal adalet üstün gelir; hukuki ya da sözleşmeyle ilgili meseleler olumlu şekilde çözülür.</string>
+    <string name="card_11_finances_rev">Haksız finansal sonuçlar; para anlaşmazlıkları ya da dürüst olmayan finansal işlemler.</string>
+    <string name="card_11_feelings_up">Güçlü bir ahlaki netlik hissi; gerçeğin ve adaletin kazanacağı duygusu.</string>
+    <string name="card_11_feelings_rev">Haksızlığa uğramış hissetme; doğru ve yanlış üzerine içsel bir çatışma.</string>
+    <string name="card_11_actions_up">Dürüstlükle hareket et ve kendine karşı hesap verebilir ol; her konuda gerçeği ara.</string>
+    <string name="card_11_actions_rev">Kendi ön yargılarını sorgula; davranışlarındaki her türlü dürüstsüzlüğü ya da adaletsizliği düzelt.</string>
+
+    <!-- Card 12: The Hanged Man -->
+    <string name="card_12_love_up">Aşkta kontrolü bırak ve ilişkine tamamen yeni bir bakış açısından bak.</string>
+    <string name="card_12_love_rev">Durgunlaşmış bir ilişkiyi bırakmayı reddetme; aşkta kendini kurban rolüne sokma.</string>
+    <string name="card_12_career_up">Kariyerinde verimli bir duraklama; bir adım geri çekilmek yeni mesleki içgörüler ortaya çıkarır.</string>
+    <string name="card_12_career_rev">Kararsızlıktan doğan kariyer durgunluğu; gerekli değişimlere direnmek seni geride tutuyor.</string>
+    <string name="card_12_finances_up">Geçici finansal fedakârlık daha büyük ödüllere götürür; sabır şart.</string>
+    <string name="card_12_finances_rev">Finansal durgunluk; değişen koşullara rağmen finansal stratejini uyarlamayı reddetme.</string>
+    <string name="card_12_feelings_up">Belirsizliği sükûnetle kabullenme; olana teslim olmakta huzur bulma.</string>
+    <string name="card_12_feelings_rev">Sıkışıp kalmış ve hayal kırıklığına uğramış hissetme; ne ileri gidebilme ne de bırakabilme.</string>
+    <string name="card_12_actions_up">Kontrolü bırak ve duruma farklı bir açıdan bakmana izin ver.</string>
+    <string name="card_12_actions_rev">Kararları ertelemeyi bırak; kurban olma ihtiyacından kurtul ve harekete geç.</string>
+
+    <!-- Card 13: Death -->
+    <string name="card_13_love_up">Aşk hayatında köklü bir dönüşüm; yeni bir şeyin başlayabilmesi için eski bir ilişki sona eriyor.</string>
+    <string name="card_13_love_rev">Korkudan, ölmekte olan bir ilişkiye tutunma; aşktaki kaçınılmaz değişimlere direnme.</string>
+    <string name="card_13_career_up">Önemli bir kariyer dönüşümü; bir kapı kapanırken daha iyisi açılıyor.</string>
+    <string name="card_13_career_rev">Gerekli kariyer değişimlerine direnç; korku yüzünden geleceği olmayan bir işte kalma.</string>
+    <string name="card_13_finances_up">Finansal dönüşüm; eski gelir kaynakları sona eriyor ama yenileri, daha iyileri beliriyor.</string>
+    <string name="card_13_finances_rev">Modası geçmiş finansal stratejilere tutunma; durgunluk finansal büyümeyi engelliyor.</string>
+    <string name="card_13_feelings_up">Sonların büyüme için gerekli olduğunu kabullenme; geçmişi bırakmanın getirdiği özgürlük hissi.</string>
+    <string name="card_13_feelings_rev">Değişimden duyulan derin korku; geçmişi bırakmayı reddetmekten doğan duygusal durgunluk.</string>
+    <string name="card_13_actions_up">Sonu kabul et ve dönüşümün yenilenme getireceğine güven.</string>
+    <string name="card_13_actions_rev">Değişime direnmeyi bırak; tutunduğun şey çoktan gitti.</string>
+
+    <!-- Card 14: Temperance -->
+    <string name="card_14_love_up">Uyumlu ve dengeli bir aşk; sabır ve uzlaşma derinden doyurucu bir ilişki yaratır.</string>
+    <string name="card_14_love_rev">İlişkide dengesizlik; bir partner çok fazla verirken diğeri aşırı alıyor.</string>
+    <string name="card_14_career_up">İşe dengeli yaklaşım istikrarlı bir ilerleme getirir; sabır mesleki ödüller kazandırır.</string>
+    <string name="card_14_career_rev">İş ve yaşam arasındaki dengesizlik tükenmişliğe yol açıyor; sabırsızlık uzun vadeli kariyer hedeflerini baltalıyor.</string>
+    <string name="card_14_finances_up">Dengeli para yönetimi ve ölçülü harcamalar kalıcı refaha götürür.</string>
+    <string name="card_14_finances_rev">Finansal aşırılıklar ya da aşırı tutumluluk sorun yaratıyor; altın orta yolu bul.</string>
+    <string name="card_14_feelings_up">İç huzur ve duygusal denge; merkezinde ve içsel uyum içinde hissetme.</string>
+    <string name="card_14_feelings_rev">Duygusal çalkantı ve içsel uyumsuzluk; denge bulmakta zorlanma.</string>
+    <string name="card_14_actions_up">Her şeyde denge ve ölçülülük ara; karşıt güçleri birleştirirken sabırlı olmayı öğren.</string>
+    <string name="card_14_actions_rev">Aşırıya kaçtığın alanları ele al; durum sürdürülemez hale gelmeden dengeyi yeniden kur.</string>
+
+    <!-- Card 15: The Devil -->
+    <string name="card_15_love_up">Yoğun ama potansiyel olarak toksik bir bağ; sağlıksız kalıplarla iç içe geçmiş tutku.</string>
+    <string name="card_15_love_rev">Toksik bir ilişkiden kurtulma; kendi gücünü ve bağımsızlığını geri kazanma.</string>
+    <string name="card_15_career_up">Ruhunu ezen bir işte kapana kısılmış hissetme; materyalizm ya da hırs seni tatminsizliğe zincirliyor.</string>
+    <string name="card_15_career_rev">Toksik bir iş yerinden özgürleşme; kariyere bağlı bağımlılıklardan kurtulma.</string>
+    <string name="card_15_finances_up">Materyalizm ve açgözlülük finansal kararları yönetiyor; borç ya da finansal kölelik tehlikesi var.</string>
+    <string name="card_15_finances_rev">Finansal yükten kurtulma; borçların ve sağlıksız para alışkanlıklarının kontrolünü ele alma.</string>
+    <string name="card_15_feelings_up">Arzuların ya da bağımlılıkların esiri olma hissi; kişiliğinin gölge yanları ilgi istiyor.</string>
+    <string name="card_15_feelings_rev">Güçlü bir özgürleşme hissi; kendi gölgelerinle yüzleşmek duygusal özgürlük getiriyor.</string>
+    <string name="card_15_actions_up">Seni esarette tutan şeyin ne olduğunu incele; farkındalık özgürlüğe giden ilk adımdır.</string>
+    <string name="card_15_actions_rev">Seni bağlayan zincirleri kopar; gücünü bağımlılıklardan ya da toksik kalıplardan geri al.</string>
+
+    <!-- Card 16: The Tower -->
+    <string name="card_16_love_up">Ani bir sarsıntı aşktaki yanılsamaları paramparça ediyor; acı verici ifşalar sonunda gerçeği getirir.</string>
+    <string name="card_16_love_rev">Gerekli bir ayrılıktan ya da yüzleşmeden kaçınma; gerçek eninde sonunda yine de ortaya çıkacak.</string>
+    <string name="card_16_career_up">İşten çıkarma ya da bir projenin çöküşü gibi ani bir kariyer sarsıntısı; enkazdan yeniden inşa et.</string>
+    <string name="card_16_career_rev">Yaklaşan kariyer felaketini sezme ama harekete geçmeyi reddetme; kaçınılmazı erteleme.</string>
+    <string name="card_16_finances_up">Ani finansal şok ya da kayıp; güvendiğin yapılar beklenmedik şekilde çöküyor.</string>
+    <string name="card_16_finances_rev">Finansal felaketi kıl payı atlatma; finansal temellerini sağlamlaştırman için bir uyarı.</string>
+    <string name="card_16_feelings_up">Şok ve yön kaybı; ayaklarının altındaki zemin kayıp gitti.</string>
+    <string name="card_16_feelings_rev">Yaklaşan sarsıntı korkusu; hissettiğin ama önleyemediğin felaketin kaygısı.</string>
+    <string name="card_16_actions_up">Yıkımı kabul et ve daha güçlü, daha dürüst bir temel üzerinde yeniden inşaya hazırlan.</string>
+    <string name="card_16_actions_rev">Tüm yapı çökmeden önce çatlakları onar; uyarı işaretlerini görmezden gelme.</string>
+
+    <!-- Card 17: The Star -->
+    <string name="card_17_love_up">Aşkta yenilenen umut ve ilham; huzurlu ve ruhsal olarak doyurucu bir bağ.</string>
+    <string name="card_17_love_rev">Aşka olan inancın kaybı; umutsuzluk ve çaresizlik romantik hayatındaki kıvılcımı söndürüyor.</string>
+    <string name="card_17_career_up">Kariyerin için ilham dolu bir vizyon; zorlu bir mesleki dönemin ardından yenilenen umut.</string>
+    <string name="card_17_career_rev">Kariyerde hayal kırıklığı; mesleki yoluna ya da yaratıcı vizyonuna olan inancını kaybetme.</string>
+    <string name="card_17_finances_up">Finansal toparlanma ve yenilenen iyimserlik; cömertlik ve inanç bolluğu kendine çeker.</string>
+    <string name="card_17_finances_rev">Finansal çaresizlik; finansal durumun konusunda umudu kaybetmek muhakemeni bulandırıyor.</string>
+    <string name="card_17_feelings_up">Derin bir umut ve huzur hissi; her şeyin yoluna gireceğine dair sessiz bir içsel biliş.</string>
+    <string name="card_17_feelings_rev">Umuttan kopmuş hissetme; bir zamanlar inancın yaşadığı yere umutsuzluk yerleşiyor.</string>
+    <string name="card_17_actions_up">Umuda tutun ve içindeki ışığın seni iyileşmeye ve yenilenmeye götürmesine izin ver.</string>
+    <string name="card_17_actions_rev">İlham kaynaklarınla yeniden bağ kur; umut duygunu yeniden inşa etmek için yardım iste.</string>
+
+    <!-- Card 18: The Moon -->
+    <string name="card_18_love_up">Kafa karışıklığı ve yanılsamalar aşk hayatını örtüyor; romantizmde işler göründüğü gibi değil.</string>
+    <string name="card_18_love_rev">Aşkta netlik beliriyor; aldatmacalar açığa çıkıyor ve korkular aşılıyor.</string>
+    <string name="card_18_career_up">İş yerinde kafa karışıklığı ve belirsizlik; aldatmacalara ya da belirsiz iletişime dikkat et.</string>
+    <string name="card_18_career_rev">Kariyerine netlik geri dönüyor; yanlış anlaşılmalar çözülüyor ve ileriye giden yol aydınlanıyor.</string>
+    <string name="card_18_finances_up">Finansal kafa karışıklığı ya da hileli işler; gerçek gibi görünen her şeye inanma.</string>
+    <string name="card_18_finances_rev">Bir karmaşa döneminin ardından finansal netlik; gizli bilgiler gün ışığına çıkıyor.</string>
+    <string name="card_18_feelings_up">Kaygı ve korku seni sarıyor; bilinçaltın gerçek bir temeli olmayabilecek korkular yansıtıyor.</string>
+    <string name="card_18_feelings_rev">Gerçek ortaya çıktıkça korkular dağılıyor; duygusal netlik kafa karışıklığının yerini alıyor.</string>
+    <string name="card_18_actions_up">Dikkatli ilerle; her şey göründüğü gibi değil, bu yüzden daha derindeki içgüdülerine güven.</string>
+    <string name="card_18_actions_rev">Korkularınla yüzleş; gerçek, hayal gücünün sana fısıldadığından daha az korkutucu.</string>
+
+    <!-- Card 19: The Sun -->
+    <string name="card_19_love_up">Aşkta ışıl ışıl bir sevinç ve mutluluk; ilişkin sıcaklık ve canlılıkla kutsanmış.</string>
+    <string name="card_19_love_rev">Geçici bulutlar ilişkindeki sevinci gölgeliyor; mutluluk elinin hemen ötesinde görünüyor.</string>
+    <string name="card_19_career_up">Kariyer başarısı ve takdir parlak bir şekilde ışıldıyor; yeteneklerin değer görüyor ve ödüllendiriliyor.</string>
+    <string name="card_19_career_rev">Kariyer aksilikleri hevesini kırıyor; başarı ertelendi ama esirgenmedi.</string>
+    <string name="card_19_finances_up">Finansal refah ve bolluk; finansal alanda başarı ve kutlama dönemi.</string>
+    <string name="card_19_finances_rev">Küçük finansal aksilikler; iyi zamanlardaki harcamalar sana pahalıya mal olabilir.</string>
+    <string name="card_19_feelings_up">Saf sevinç ve iyimserlik; ışıl ışıl bir canlılık ve yaşamın nimetleri için şükran duygusu.</string>
+    <string name="card_19_feelings_rev">Gerçek mutluluğu hissetmekte zorlanma; bir şey hayattan tam anlamıyla keyif almanı engelliyor.</string>
+    <string name="card_19_actions_up">Başarılarını kutla ve pozitif enerjinin çevrendekilere ilham vermesine izin ver.</string>
+    <string name="card_19_actions_rev">Sevincini neyin engellediğini araştır; geçici aksiliklerin dünyaya bakışını belirlemesine izin verme.</string>
+
+    <!-- Card 20: Judgement -->
+    <string name="card_20_love_up">Aşkta derin bir uyanış; geçmiş ilişkiler iyileşiyor ve sen daha yüksek bir çağrıya yanıt veriyorsun.</string>
+    <string name="card_20_love_rev">Sert öz yargılama kalbini açmanı engelliyor; işlenmemiş suçluluk duygusu aşkın peşini bırakmıyor.</string>
+    <string name="card_20_career_up">İçinde bir kariyer çağrısı uyanıyor; gerçek mesleki amacına yanıt verme zamanı geldi.</string>
+    <string name="card_20_career_rev">Mesleki çağrını dinlemeyi reddetme; öz şüphe kariyer dönüşümünü engelliyor.</string>
+    <string name="card_20_finances_up">Finansal hesaplaşma olumlu bir yeniden doğuşa götürüyor; geçmiş hatalar affediliyor ve düzeltiliyor.</string>
+    <string name="card_20_finances_rev">Geçmiş finansal hatalardan ders almayı reddetme; para konusunda sert öz yargılama.</string>
+    <string name="card_20_feelings_up">Derin bir uyanış ve amaç hissi; kendinin daha yüksek bir versiyonuna çağrıldığını hissetme.</string>
+    <string name="card_20_feelings_rev">Öz eleştiriyle felç olma; kendini affedip yoluna devam edememe.</string>
+    <string name="card_20_actions_up">Dönüşüm çağrısına yanıt ver; dürüstçe iç gözlem yap ve en yüksek potansiyeline doğru yüksel.</string>
+    <string name="card_20_actions_rev">Sert öz yargılamadan kurtul; geçmiş hataların için kendini affet ve kendine yeni bir başlangıç tanı.</string>
+
+    <!-- Card 21: The World -->
+    <string name="card_21_love_up">Derinden doyurucu ve eksiksiz bir aşk; ilişki güzel bir dönüm noktasına ulaşıyor.</string>
+    <string name="card_21_love_rev">Aşkta eksiklik hissi; ilişkide özlemini duyduğun bütünlük eksik.</string>
+    <string name="card_21_career_up">Önemli bir kariyer başarısı ve önemli bir projenin tamamlanması; hedefine ulaştın.</string>
+    <string name="card_21_career_rev">Proje yarım kalıyor; kestirme yollar gerçek mesleki tatmini engelliyor.</string>
+    <string name="card_21_finances_up">Finansal hedeflere ulaşıldı; bolluk döngüsü tatmin edici sonucuna ulaşıyor.</string>
+    <string name="card_21_finances_rev">Finansal hedefler elinin hemen ötesinde kalıyor; gecikmeler ve çözülmemiş meseleler tamamlanmayı engelliyor.</string>
+    <string name="card_21_feelings_up">Derin bir bütünlük ve doyum hissi; çevrendeki dünyayla birlik duygusu.</string>
+    <string name="card_21_feelings_rev">Başarılara rağmen eksiklik hissi; önemli bir şey hâlâ eksik.</string>
+    <string name="card_21_actions_up">Başarılarını kutla ve bir sonraki büyüme döngüsüne hazırlan.</string>
+    <string name="card_21_actions_rev">İlerlemeden önce yarım kalan işleri tamamla; tamamlanmaya giden yolda kestirmeye sapma.</string>
+</resources>

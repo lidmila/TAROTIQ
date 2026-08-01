@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TAROTIQ</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Portal</string>
+    <string name="nav_portal">Portal</string>
+    <string name="nav_library">Kütüphane</string>
+    <string name="nav_new_reading">Kahin</string>
+    <string name="nav_oracle">Kahin</string>
+    <string name="nav_history">Grimuar</string>
+    <string name="nav_grimoire">Grimuar</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Auth -->
+    <string name="auth_login">Giriş yap</string>
+    <string name="auth_register">Kayıt ol</string>
+    <string name="auth_email">E-posta</string>
+    <string name="auth_password">Şifre</string>
+    <string name="auth_passwordless">E-posta bağlantısıyla giriş yap</string>
+    <string name="auth_passwordless_desc">Sana e-postayla bir bağlantı göndereceğiz</string>
+    <string name="auth_enter_email_first">Önce e-posta adresini gir</string>
+    <string name="auth_forgot_password_title">Şifre sıfırlama</string>
+    <string name="auth_forgot_password_send">Gönder</string>
+    <string name="auth_google">Google ile devam et</string>
+    <string name="auth_logout">Çıkış yap</string>
+    <string name="auth_delete_account">Hesabı sil</string>
+    <string name="auth_profile">Profil</string>
+    <string name="auth_email_sent">Bağlantı e-postana gönderildi</string>
+    <string name="auth_forgot_password">Şifreni mi unuttun?</string>
+    <string name="auth_reset_sent">Şifre sıfırlama e-postası gönderildi</string>
+
+    <!-- Home -->
+    <string name="home_daily_card">Günün Kartı</string>
+    <string name="home_daily_card_desc">Günlük kartını aç</string>
+    <string name="home_quick_reading">Hızlı Okuma</string>
+    <string name="home_new_reading">Yeni Okuma</string>
+    <string name="home_streak">Seri</string>
+    <string name="home_streak_days">Üst üste %d gün</string>
+
+    <!-- Reading Topics -->
+    <string name="topic_love">Aşk</string>
+    <string name="topic_career">Kariyer</string>
+    <string name="topic_general">Genel</string>
+    <string name="topic_yes_no">Evet / Hayır</string>
+    <string name="topic_spiritual">Ruhsal</string>
+    <string name="topic_select">Okuma konusunu seç</string>
+
+    <!-- Question -->
+    <string name="question_title">Sorun</string>
+    <string name="question_hint">Yıldızlar seni dinliyor…</string>
+    <string name="question_skip">Atla</string>
+    <string name="question_continue">Devam et</string>
+
+    <!-- Spread -->
+    <string name="spread_select">Bir açılım seç</string>
+    <string name="spread_single">Tek Kart</string>
+    <string name="spread_single_desc">Hızlı içgörü</string>
+    <string name="spread_three_card">Üç Kart</string>
+    <string name="spread_three_card_desc">Geçmiş · Şimdi · Gelecek</string>
+    <string name="spread_celtic_cross">Kelt Haçı</string>
+    <string name="spread_celtic_cross_desc">Derin okuma (10 kart)</string>
+    <string name="spread_relationship">İlişki Açılımı</string>
+    <string name="spread_relationship_desc">Sen · Partnerin · İlişki · Zorluklar · Gelecek</string>
+    <string name="spread_year_ahead">Yıllık Bakış</string>
+    <string name="spread_year_ahead_desc">12 kart · Her aya bir kart</string>
+    <string name="spread_shadow_self">Gölge Benlik</string>
+    <string name="spread_shadow_self_desc">Maske · Gölge · Kök · Korku · Armağan · Bütünleşme</string>
+    <string name="spread_crossroads">Kader Kavşağı</string>
+    <string name="spread_crossroads_desc">İki yol · Gizli etken · Tavsiye</string>
+    <string name="spread_chakra">Çakra Okuması</string>
+    <string name="spread_chakra_desc">7 çakra · Enerji analizi</string>
+    <string name="spread_twin_flame">İkiz Alev</string>
+    <string name="spread_twin_flame_desc">Karmik bağ · Dersler · Ortak misyon</string>
+    <string name="spread_moon_cycle">Ay Döngüsü</string>
+    <string name="spread_moon_cycle_desc">Ay\'ın 8 evresi · Ekme, büyütme, hasat</string>
+    <string name="spread_career_compass">Kariyer Pusulası</string>
+    <string name="spread_career_compass_desc">Yetenekler · Engel · Fırsat · Finans</string>
+    <string name="spread_inner_child">İç Çocuk</string>
+    <string name="spread_inner_child_desc">Yara · Koruma · Şifa · Armağan</string>
+    <string name="spread_tree_of_life">Hayat Ağacı</string>
+    <string name="spread_tree_of_life_desc">10 Sefirot · Kabalistik okuma</string>
+    <string name="spread_week_ahead">Haftalık Rehber</string>
+    <string name="spread_week_ahead_desc">7 kart · Her güne bir kart</string>
+    <string name="spread_karmic">Karmik Okuma</string>
+    <string name="spread_karmic_desc">Karmik borç · Dersler · Yaşam amacı</string>
+    <string name="spread_self_love">Öz Sevgi Aynası</string>
+    <string name="spread_self_love_desc">Öz imaj · Gizli güç · Olumlama</string>
+    <string name="spread_cost">%d jeton</string>
+    <string name="spread_cost_singular">%d jeton</string>
+    <string name="spread_pick_cards">Okuman için %d kart seç</string>
+
+    <!-- Card Drawing -->
+    <string name="drawing_tap_to_reveal">Açmak için bir karta dokun</string>
+    <string name="drawing_card_revealed">Kart açıldı!</string>
+    <string name="drawing_all_revealed">Tüm kartlar açıldı</string>
+    <string name="drawing_get_reading">Okumayı al</string>
+    <string name="drawing_confirm_selection">Seçimi onayla</string>
+    <string name="drawing_scroll_hint">↓ Daha fazla kart görmek için kaydır ↓</string>
+    <plurals name="spread_pick_cards">
+        <item quantity="one">Okuman için %d kart seç</item>
+        <item quantity="other">Okuman için %d kart seç</item>
+    </plurals>
+    <string name="drawing_focus_energy">Enerjini niyetine odakla.</string>
+    <string name="reading_extra_card_offer">Daha fazlasını öğrenmek ister misin?\nOkumana ekstra bir kart ekle.</string>
+    <string name="reading_buy_extra_card">1 jetona ekstra kart al</string>
+    <string name="extra_card_title">Bir kart seç</string>
+    <string name="extra_card_confirm">Seçimi onayla</string>
+
+    <!-- Spread Positions -->
+    <string name="position_insight">İçgörü</string>
+    <string name="position_past">Geçmiş</string>
+    <string name="position_present">Şimdi</string>
+    <string name="position_future">Gelecek</string>
+    <string name="position_you">Sen</string>
+    <string name="position_partner">Partnerin</string>
+    <string name="position_relationship">İlişki</string>
+    <string name="position_challenges">Zorluklar</string>
+    <string name="position_present_situation">Şu Anki Durum</string>
+    <string name="position_challenge">Zorluk</string>
+    <string name="position_conscious">Bilinç</string>
+    <string name="position_subconscious">Bilinçaltı</string>
+    <string name="position_advice">Tavsiye</string>
+    <string name="position_influences">Dış Etkiler</string>
+    <string name="position_hopes">Umutlar ve Korkular</string>
+    <string name="position_outcome">Sonuç</string>
+    <string name="position_extra">Ekstra Kart</string>
+
+    <!-- Year Ahead positions -->
+    <string name="position_january">Ocak</string>
+    <string name="position_february">Şubat</string>
+    <string name="position_march">Mart</string>
+    <string name="position_april">Nisan</string>
+    <string name="position_may">Mayıs</string>
+    <string name="position_june">Haziran</string>
+    <string name="position_july">Temmuz</string>
+    <string name="position_august">Ağustos</string>
+    <string name="position_september">Eylül</string>
+    <string name="position_october">Ekim</string>
+    <string name="position_november">Kasım</string>
+    <string name="position_december">Aralık</string>
+
+    <!-- Shadow Self positions -->
+    <string name="position_mask">Maske</string>
+    <string name="position_shadow">Gölge</string>
+    <string name="position_shadow_root">Gölgenin Kökü</string>
+    <string name="position_fear">Korku</string>
+    <string name="position_shadow_gift">Gölgenin Armağanı</string>
+    <string name="position_integration">Bütünleşme</string>
+
+    <!-- Crossroads positions -->
+    <string name="position_current_situation">Mevcut Durum</string>
+    <string name="position_path_a_desc">A Yolu</string>
+    <string name="position_path_a_outcome">A Yolunun Sonucu</string>
+    <string name="position_path_b_desc">B Yolu</string>
+    <string name="position_path_b_outcome">B Yolunun Sonucu</string>
+    <string name="position_hidden_factor">Gizli Etken</string>
+
+    <!-- Chakra positions -->
+    <string name="position_root_chakra">Kök Çakra</string>
+    <string name="position_sacral_chakra">Sakral Çakra</string>
+    <string name="position_solar_plexus">Solar Pleksus</string>
+    <string name="position_heart_chakra">Kalp Çakrası</string>
+    <string name="position_throat_chakra">Boğaz Çakrası</string>
+    <string name="position_third_eye">Üçüncü Göz</string>
+    <string name="position_crown_chakra">Taç Çakra</string>
+
+    <!-- Twin Flame positions -->
+    <string name="position_your_energy">Senin Enerjin</string>
+    <string name="position_their_energy">Diğer Ruhun Enerjisi</string>
+    <string name="position_karmic_bond">Karmik Bağ</string>
+    <string name="position_your_lesson">Senin Dersin</string>
+    <string name="position_their_lesson">Partnerin Dersi</string>
+    <string name="position_shared_mission">Ortak Misyon</string>
+    <string name="position_obstacle">Engel</string>
+
+    <!-- Moon Cycle positions -->
+    <string name="position_new_moon">Yeni Ay — Ne ekmeli</string>
+    <string name="position_waxing_crescent">Büyüyen Hilal — Ne büyütmeli</string>
+    <string name="position_first_quarter">İlk Dördün — Eylem</string>
+    <string name="position_waxing_gibbous">Büyüyen Şişkin Ay — İnce ayar</string>
+    <string name="position_full_moon">Dolunay — Ne hasat etmeli</string>
+    <string name="position_waning_gibbous">Küçülen Şişkin Ay — Şükran</string>
+    <string name="position_last_quarter">Son Dördün — Neyi bırakmalı</string>
+    <string name="position_dark_moon">Karanlık Ay — İç Gözlem</string>
+
+    <!-- Career Compass positions -->
+    <string name="position_hidden_talents">Gizli Yetenekler</string>
+    <string name="position_current_block">Mevcut Engel</string>
+    <string name="position_opportunity">Ufuktaki Fırsat</string>
+    <string name="position_skill_to_develop">Geliştirilecek Beceri</string>
+    <string name="position_financial_energy">Finansal Enerji</string>
+    <string name="position_next_step">Sonraki Adım</string>
+
+    <!-- Inner Child positions -->
+    <string name="position_inner_child">İç Çocuk</string>
+    <string name="position_wound">Yara</string>
+    <string name="position_protective_pattern">Koruyucu Kalıp</string>
+    <string name="position_healing">Şifa</string>
+    <string name="position_inner_gift">Armağan</string>
+
+    <!-- Tree of Life positions -->
+    <string name="position_keter">Keter — Taç</string>
+    <string name="position_chokma">Chokma — Bilgelik</string>
+    <string name="position_bina">Bina — Anlayış</string>
+    <string name="position_chesed">Chesed — Merhamet</string>
+    <string name="position_gevura">Gevura — Güç</string>
+    <string name="position_tiferet">Tiferet — Güzellik</string>
+    <string name="position_netzach">Netzach — Zafer</string>
+    <string name="position_hod">Hod — İhtişam</string>
+    <string name="position_yesod">Yesod — Temel</string>
+    <string name="position_malkhut">Malkhut — Krallık</string>
+
+    <!-- Week Ahead positions -->
+    <string name="position_monday">Pazartesi</string>
+    <string name="position_tuesday">Salı</string>
+    <string name="position_wednesday">Çarşamba</string>
+    <string name="position_thursday">Perşembe</string>
+    <string name="position_friday">Cuma</string>
+    <string name="position_saturday">Cumartesi</string>
+    <string name="position_sunday">Pazar</string>
+
+    <!-- Karmic positions -->
+    <string name="position_karmic_debt">Karmik Borç</string>
+    <string name="position_karmic_gift">Karmik Armağan</string>
+    <string name="position_current_lesson">Mevcut Ders</string>
+    <string name="position_repeating_pattern">Tekrarlayan Kalıp</string>
+    <string name="position_what_to_break">Neyi Kırmalı</string>
+    <string name="position_karmic_reward">Karmik Ödül</string>
+    <string name="position_life_purpose">Yaşam Amacı</string>
+
+    <!-- Self-Love positions -->
+    <string name="position_how_i_see_myself">Kendimi Nasıl Görüyorum</string>
+    <string name="position_how_others_see_me">Başkaları Beni Nasıl Görüyor</string>
+    <string name="position_false_guilt">Hak Edilmemiş Suçluluk</string>
+    <string name="position_hidden_strength">Gizli Güç</string>
+    <string name="position_what_i_need">Kendimden Neye İhtiyacım Var</string>
+    <string name="position_affirmation">Kartlardan Olumlama</string>
+
+    <!-- Reading -->
+    <string name="reading_interpreting">Madame Stella kartlarını okuyor…</string>
+    <string name="reading_follow_up">Daha fazlasını sor…</string>
+    <string name="reading_follow_up_hint">Başka bir şey sormak ister misin?</string>
+    <string name="reading_save">Okumayı kaydet</string>
+    <string name="reading_share">Paylaş</string>
+    <string name="reading_saved">Okuma kaydedildi</string>
+    <string name="reading_interpretation_title">Okuman</string>
+    <string name="reading_summary">Okuma Özeti</string>
+    <string name="reading_upright">Düz</string>
+    <string name="reading_reversed">Ters</string>
+
+    <!-- History -->
+    <string name="history_title">Okuma Geçmişi</string>
+    <string name="history_empty">Henüz okuma yok</string>
+    <string name="history_filter_all">Tümü</string>
+
+    <!-- Card Library -->
+    <string name="library_title">Kart Kütüphanesi</string>
+    <string name="library_major_arcana">Büyük Arkana</string>
+    <string name="library_minor_arcana">Küçük Arkana</string>
+    <string name="library_cups">Kupalar</string>
+    <string name="library_pentacles">Tılsımlar</string>
+    <string name="library_swords">Kılıçlar</string>
+    <string name="library_wands">Değnekler</string>
+    <string name="library_all">Tümü</string>
+    <string name="library_search">Kart ara…</string>
+    <string name="library_upright_keywords">Anahtar kelimeler (düz)</string>
+    <string name="library_reversed_keywords">Anahtar kelimeler (ters)</string>
+    <string name="library_love">Aşk</string>
+    <string name="library_career">Kariyer</string>
+    <string name="library_finances">Finans</string>
+    <string name="library_feelings">Duygular</string>
+    <string name="library_actions">Tavsiyeler</string>
+
+    <!-- Daily Card -->
+    <string name="daily_title">Günün Kartı</string>
+    <string name="daily_tap_reveal">Günlük kartını açmak için dokun</string>
+    <string name="daily_already_drawn">Bugünkü kartını zaten açtın</string>
+    <string name="daily_view_details">Kart detayını gör</string>
+
+    <!-- Coins -->
+    <string name="coins_balance">Jetonların</string>
+    <string name="coins_buy">Jeton Al</string>
+    <string name="coins_pack_5">5 jeton</string>
+    <string name="coins_pack_15">15 jeton</string>
+    <string name="coins_pack_50">50 jeton</string>
+    <string name="coins_pack_300">300 jeton</string>
+    <string name="coins_save">%%%d TASARRUF</string>
+    <string name="coins_most_popular">En Popüler</string>
+    <string name="coins_best_value">En Avantajlı</string>
+    <string name="coins_not_enough">Yeterli jetonun yok</string>
+    <string name="coins_free_readings">%d ücretsiz okuma hakkın kaldı</string>
+    <string name="coins_free_reading_used">Ücretsiz okuma kullanıldı (%d/3)</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profil</string>
+    <string name="profile_zodiac">Burç</string>
+    <string name="profile_achievements">Başarılar</string>
+    <string name="profile_statistics">İstatistikler</string>
+    <string name="profile_total_readings">Toplam Okuma</string>
+    <string name="profile_favorite_card">En Sık Çıkan Kart</string>
+    <string name="profile_longest_streak">En Uzun Seri</string>
+    <string name="profile_language">Dil</string>
+    <string name="profile_notifications">Bildirimler</string>
+    <string name="profile_notification_time">Hatırlatma Saati</string>
+    <string name="profile_about">Uygulama Hakkında</string>
+    <string name="profile_legal">Yasal Bilgiler</string>
+    <string name="profile_other_apps">Diğer uygulamalarımızı dene</string>
+    <string name="app_kvitta_desc">Akıllı masraf paylaşımı ve borç kapatma</string>
+    <string name="app_bettermingle_desc">Flört profillerini yapay zekayla geliştir</string>
+    <string name="app_bettershelf_desc">Kitaplığını düzenle ve yeni kitaplar keşfet</string>
+    <string name="app_dreamwitness_desc">Rüyalarını kaydet ve yorumla</string>
+
+    <!-- Info -->
+    <string name="faq_title">Sık Sorulan Sorular</string>
+    <string name="about_title">TAROTIQ Hakkında</string>
+    <string name="about_version">Sürüm %s</string>
+    <string name="contact_title">Destekle İletişime Geç</string>
+    <string name="contact_send">Gönder</string>
+    <string name="contact_subject">Konu</string>
+    <string name="contact_message">Mesaj</string>
+    <string name="terms_title">Kullanım Koşulları</string>
+    <string name="privacy_title">Gizlilik Politikası</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Günün Kartı</string>
+    <string name="notification_channel_description">Günlük tarot kartı hatırlatması</string>
+    <string name="notification_daily_title">Günlük kartın seni bekliyor</string>
+    <string name="notification_daily_text">Yıldızların bugün senin için neler hazırladığını keşfet.</string>
+
+    <!-- Smart notification variants -->
+    <string name="notif_streak_title">%d günlük serin devam ediyor!</string>
+    <string name="notif_streak_text">Kozmik bağı koparma. Günlük kartın seni bekliyor.</string>
+    <string name="notif_streak_risk_title">Serin tehlikede!</string>
+    <string name="notif_streak_risk_text">Bugün henüz kart çekmedin. %d günlük serin sönüyor…</string>
+    <string name="notif_comeback_title">Yıldızlar seni bekliyor</string>
+    <string name="notif_comeback_text">Yeni bir günlük kart hazır. Yeni bir sayfa aç.</string>
+    <string name="notif_full_moon_title">Dolunay üzerinde parlıyor</string>
+    <string name="notif_full_moon_text">Dolunay gizli sırları açığa çıkarır. Senin kartın ne gösterecek?</string>
+    <string name="notif_new_moon_title">Yeni Ay yeni başlangıçlar getirir</string>
+    <string name="notif_new_moon_text">İç gözlem için ideal bir zaman. Günlük kartını çek.</string>
+    <string name="notif_milestone_title">Bir dönüm noktasına yaklaşıyorsun!</string>
+    <string name="notif_milestone_week_text">Haftalık seriye sadece %d gün kaldı! Pes etme.</string>
+    <string name="notif_milestone_month_text">Aylık seriye sadece %d gün kaldı! Harikasın.</string>
+    <string name="notif_general_1_title">Yıldızlar sana ne fısıldıyor?</string>
+    <string name="notif_general_1_text">Günlük kartında bir mesaj saklı. Ortaya çıkar.</string>
+    <string name="notif_general_2_title">Yeni gün, yeni kart</string>
+    <string name="notif_general_2_text">Bugün sana hangi enerjiyi getirecek? Öğren.</string>
+    <string name="notif_general_3_title">Evrenin sana bir mesajı var</string>
+    <string name="notif_general_3_text">Günlük kartını çek ve yıldızlara kulak ver.</string>
+
+    <!-- What's New -->
+    <string name="whats_new_title">Neler Yeni?</string>
+    <string name="whats_new_version">Sürüm 1.6.0</string>
+    <string name="whats_new_1">\u2B50 Yeni Başarılar — Okumalar, seriler ve günlük kartlar için 12 başarı topla. Her biri için bonus jeton kazan!</string>
+    <string name="whats_new_2">\u2744\uFE0F Seri Dondurma — Bir gün mü kaçırdın? Dondurman varsa serin bozulmaz. Her haftalık seride bir tane kazanırsın.</string>
+    <string name="whats_new_3">\uD83D\uDD2E Günlük Kozmik Mesaj — Burcuna ve Ay evresine göre kişiselleştirilmiş burç yorumu, her gün yepyeni.</string>
+    <string name="whats_new_4">\uD83D\uDCF2 Okuma Paylaşımı — Günlük kartını veya okumanı güzel bir görsel olarak arkadaşlarınla paylaş.</string>
+    <string name="whats_new_5">\uD83C\uDF1F Haftalık Tema — Her hafta seni daha derin keşiflere davet eden yeni bir tematik açılım önerisi.</string>
+    <string name="whats_new_6">\uD83C\uDF19 Daha Akıllı Hatırlatmalar — Bildirimler artık serine, Ay evresine ve ne kadar süredir uğramadığına göre uyarlanıyor.</string>
+    <string name="whats_new_dismiss">Harika, hadi başlayalım!</string>
+
+    <!-- Evening Notification -->
+    <string name="notif_evening_title">Akşam Değerlendirmesi</string>
+    <string name="notif_evening_text">Günün sabahki kartınla ne kadar örtüştü? Bir an dur ve üzerine düşün.</string>
+
+    <!-- Weekly Themes -->
+    <string name="weekly_focus_title">Bu Haftanın Teması</string>
+    <string name="weekly_focus_cta">Bu okumayı dene</string>
+    <string name="theme_shadow_work">Gölge Çalışması</string>
+    <string name="theme_shadow_work_desc">Kendinin gizli yanlarını keşfet ve onları sevgiyle kucakla.</string>
+    <string name="theme_heart_opening">Kalbini Aç</string>
+    <string name="theme_heart_opening_desc">Öz sevgiye ve iç uyuma odaklan.</string>
+    <string name="theme_career_focus">Kariyer Pusulası</string>
+    <string name="theme_career_focus_desc">Profesyonel yolculuğunda yönünü bul.</string>
+    <string name="theme_inner_child">İç Çocuk</string>
+    <string name="theme_inner_child_desc">Eski yaraları iyileştir ve oyunbazlığını yeniden keşfet.</string>
+    <string name="theme_cosmic_connection">Kozmik Bağlantı</string>
+    <string name="theme_cosmic_connection_desc">Hayatındaki derin ruh bağlarını keşfet.</string>
+    <string name="theme_karmic_clearing">Karmik Arınma</string>
+    <string name="theme_karmic_clearing_desc">Tekrarlayan kalıpları anla ve onları kır.</string>
+    <string name="theme_lunar_wisdom">Ay Bilgeliği</string>
+    <string name="theme_lunar_wisdom_desc">Daha derin iç gözlem için Ay\'ın döngülerine uyum sağla.</string>
+    <string name="theme_crossroads">Kavşakta</string>
+    <string name="theme_crossroads_desc">Bir karar mı vermelisin? Kartlar sana yolu gösterecek.</string>
+    <string name="theme_energy_balance">Enerji Dengesi</string>
+    <string name="theme_energy_balance_desc">İç huzur için yedi çakranı dengele.</string>
+    <string name="theme_deeper_knowledge">Daha Derin Bilgi</string>
+    <string name="theme_deeper_knowledge_desc">Hayat Ağacı\'nın gizemlerine dal.</string>
+    <string name="theme_week_planning">Hafta Planlaması</string>
+    <string name="theme_week_planning_desc">Bu haftanın her gününün sana ne getireceğini öğren.</string>
+    <string name="theme_relationships">İlişkiler</string>
+    <string name="theme_relationships_desc">En yakın ilişkilerinin dinamiklerini keşfet.</string>
+
+    <!-- Daily Horoscope -->
+    <string name="horoscope_title">Günün Kozmik Mesajı</string>
+    <string name="horoscope_set_zodiac">Günlük burç yorumu için burcunu ayarla</string>
+
+    <!-- Streak Features -->
+    <string name="streak_freeze_used">Seri kurtarıldı!</string>
+    <string name="streak_freeze_used_desc">Bir seri dondurma kullandın. Kalan: %d</string>
+    <string name="streak_freeze_count">Dondurma: %d</string>
+    <string name="streak_freeze_earned">Bir seri dondurma kazandın!</string>
+    <string name="comeback_title">Tekrar hoş geldin!</string>
+    <string name="comeback_text">Yıldızlar seni bekliyordu. İşte küçük bir hoş geldin hediyesi.</string>
+    <string name="comeback_reward">+2 ücretsiz jeton</string>
+    <string name="comeback_claim">Hediyeyi al</string>
+    <string name="milestone_title">Dönüm noktasına ulaşıldı!</string>
+    <string name="milestone_text">Üst üste %d gün! Bağlılığın ilham verici.</string>
+    <string name="milestone_reward">+%d bonus jeton</string>
+
+    <!-- Zodiac Signs -->
+    <string name="profile_zodiac_not_set">Ayarlanmadı</string>
+    <string name="coins_count">%d jeton</string>
+    <string name="element_water">Su</string>
+    <string name="element_earth">Toprak</string>
+    <string name="element_air">Hava</string>
+    <string name="element_fire">Ateş</string>
+    <string name="zodiac_aries">Koç</string>
+    <string name="zodiac_taurus">Boğa</string>
+    <string name="zodiac_gemini">İkizler</string>
+    <string name="zodiac_cancer">Yengeç</string>
+    <string name="zodiac_leo">Aslan</string>
+    <string name="zodiac_virgo">Başak</string>
+    <string name="zodiac_libra">Terazi</string>
+    <string name="zodiac_scorpio">Akrep</string>
+    <string name="zodiac_sagittarius">Yay</string>
+    <string name="zodiac_capricorn">Oğlak</string>
+    <string name="zodiac_aquarius">Kova</string>
+    <string name="zodiac_pisces">Balık</string>
+
+    <!-- HomeScreen Portal -->
+    <string name="home_celestial_active">GÖKSEL PORTAL AKTİF</string>
+    <string name="home_headline_1">Yıldızlar bugün</string>
+    <string name="home_headline_2">kaderini fısıldıyor.</string>
+    <string name="home_welcome_body">Dünyalar arasındaki perdeden geç. Çekilen her kart evrenden bir fısıltı, sadece senin için dokunmuş bir kader ipliğidir.</string>
+    <string name="home_daily_drawing">GÜNLÜK ÇEKİM</string>
+    <string name="home_consult_oracle">Kahin\'e Danış</string>
+    <string name="home_daily_desc">Gizemli desteden günlük mesajını al. Şafakta çekilen tek bir kart, yolunda sana rehberlik eder.</string>
+    <string name="home_awaiting">ÇAĞRIYI\nBEKLİYOR</string>
+    <string name="home_reflect">GÖZ AT</string>
+    <string name="home_explore">KEŞFET</string>
+    <string name="home_most_insightful">EN DERİN İÇGÖRÜ</string>
+    <string name="home_connection">Bağlantı</string>
+    <string name="home_connection_desc">Kalp ve Ruh</string>
+    <string name="home_lunar_phase">AY EVRESİ</string>
+    <string name="home_visibility">GÖRÜNÜRLÜK</string>
+
+    <!-- ReadingHistoryScreen -->
+    <string name="history_sacred_archive">KUTSAL ARŞİV</string>
+    <string name="history_grimoire_title">Grimuar</string>
+    <string name="history_subtitle">Kutsal okumaların, sonsuza dek saklı</string>
+    <string name="history_search_hint">Grimuarda ara…</string>
+    <string name="history_revisit">YENİDEN BAK</string>
+    <string name="history_deepen_search">ARAMAYI DERİNLEŞTİR</string>
+
+    <!-- ReadingInterpretation errors -->
+    <string name="error_insufficient_coins_title">Yetersiz jeton</string>
+    <string name="error_insufficient_coins_desc">Bu okuma için daha fazla jetona ihtiyacın var. Jetonlarını tamamla ve kartların senin için taşıdığı mesajları keşfet.</string>
+    <string name="coins_buy_now">JETON AL</string>
+    <string name="ad_watch_for_coin">REKLAM İZLE (+1 JETON)</string>
+    <string name="ad_loading">Reklam yükleniyor…</string>
+    <string name="error_no_internet_title">Bağlantı yok</string>
+    <string name="error_no_internet_desc">İnternet bağlantını kontrol et ve tekrar dene.</string>
+    <string name="error_timeout_title">Zaman aşımı</string>
+    <string name="error_timeout_desc">Sunucu yanıt vermiyor. Lütfen tekrar dene.</string>
+    <string name="error_auth_title">Giriş hatası</string>
+    <string name="error_auth_desc">Oturumun sona erdi. Çıkış yapıp tekrar giriş yap.</string>
+    <string name="error_retry">TEKRAR DENE</string>
+
+    <!-- ReadingInterpretation -->
+    <string name="reading_oracle_insight">Kahin\'in İçgörüsü</string>
+    <string name="reading_generated_by_ai">YAPAY ZEKA TARAFINDAN OLUŞTURULDU</string>
+
+    <!-- ReadingDetail -->
+    <string name="reading_cosmic_synthesis">KOZMİK SENTEZ</string>
+
+    <!-- Login -->
+    <string name="auth_subtitle">MİSTİK REHBERİN</string>
+
+    <!-- About -->
+    <string name="about_description">Mistik yapay zeka tarot okuyucun.\nModern yapay zekayla güçlendirilmiş kadim tarot sanatı aracılığıyla içgörüler keşfet.\n\nTAROTIQ, yüzyılların tarot bilgeliğini en yeni teknolojiyle birleştirerek kişiselleştirilmiş, etkileşimli okumalar sunar.</string>
+
+    <!-- Rating Gate -->
+    <string name="rating_title">Okuma senin için faydalı oldu mu?</string>
+    <string name="rating_subtitle">Değerlendirmen diğer arayışçıların TarotIQ\'yu bulmasına yardımcı olur.</string>
+    <string name="rating_submit_positive">GOOGLE PLAY\'DE DEĞERLENDİR</string>
+    <string name="rating_submit_negative">BİZE GERİ BİLDİRİM GÖNDER</string>
+    <string name="rating_skip">Şimdi değil</string>
+    <string name="rating_thanks">Teşekkürler!</string>
+    <string name="rating_thanks_desc">Desteğin bizim için çok değerli. ✨</string>
+
+    <!-- General -->
+    <string name="ok">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="close">Kapat</string>
+    <string name="back">Geri</string>
+    <string name="save">Kaydet</string>
+    <string name="delete">Sil</string>
+    <string name="share">Paylaş</string>
+    <string name="share_text">Tarot kartım: %s \uD83C\uDFB4 Sen de Tarotiq\'te kartlarını açtır!</string>
+    <string name="share_daily_card_label">Günün Kartı</string>
+    <string name="loading">Yükleniyor…</string>
+    <string name="error_generic">Bir şeyler ters gitti. Tekrar dene.</string>
+    <string name="error_network">İnternet bağlantını kontrol et.</string>
+    <string name="offline_banner">Çevrimdışısın</string>
+    <string name="delete_confirm_title">Okuma silinsin mi?</string>
+    <string name="delete_confirm_message">Bu işlem geri alınamaz.</string>
+    <string name="retry">Tekrar dene</string>
+    <string name="no_cards_found">Kart bulunamadı</string>
+
+    <!-- Rewarded Ads -->
+    <string name="rewarded_ad_title">Reklam izle, jeton kazan</string>
+    <string name="rewarded_ad_subtitle">Bu hafta %d hakkın kaldı</string>
+    <string name="rewarded_ad_success">+1 jeton eklendi!</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_language">Dilini seç</string>
+    <string name="onboarding_welcome">TAROTIQ\'e hoş geldin</string>
+    <string name="onboarding_welcome_desc">Kişisel yapay zeka falcınla tarotun sırlarını keşfet</string>
+    <string name="onboarding_zodiac">Burcun</string>
+    <string name="onboarding_zodiac_desc">Kişiselleştirilmiş okumalar için burcunu seç</string>
+    <string name="onboarding_daily">Günün Kartı</string>
+    <string name="onboarding_daily_desc">Her gün sana mesajı olan bir kart açıyoruz</string>
+    <string name="onboarding_ready">Hazırsın</string>
+    <string name="onboarding_ready_desc">3 okuma hakkın ücretsiz. Yolculuğuna başla!</string>
+    <string name="onboarding_start">Başla</string>
+    <string name="onboarding_next">İleri</string>
+    <string name="onboarding_skip">Atla</string>
+
+    <!-- Moon Phases -->
+    <string name="moon_new">Yeni Ay</string>
+    <string name="moon_waxing_crescent">Büyüyen Hilal</string>
+    <string name="moon_first_quarter">İlk Dördün</string>
+    <string name="moon_waxing_gibbous">Büyüyen Şişkin Ay</string>
+    <string name="moon_full">Dolunay</string>
+    <string name="moon_waning_gibbous">Küçülen Şişkin Ay</string>
+    <string name="moon_last_quarter">Son Dördün</string>
+    <string name="moon_waning_crescent">Küçülen Hilal</string>
+
+    <!-- Moon Phase Energy Descriptions -->
+    <string name="moon_energy_new">Yeni başlangıçlar zamanı. Bu döngüde gerçekleştirmek istediğin niyetlerin tohumlarını ek.</string>
+    <string name="moon_energy_waxing_crescent">Niyetlerin güç kazanıyor. Planlarını kur ve ilk adımları at.</string>
+    <string name="moon_energy_first_quarter">Eylem ve karar zamanı. Engelleri cesaretle aş.</string>
+    <string name="moon_energy_waxing_gibbous">Detayları incelt. Projelerin olgunlaşıyor — sabır meyvesini verecek.</string>
+    <string name="moon_energy_full">Doruk ve aydınlanma. Sonuçlarını topla ve başardıklarını kutla.</string>
+    <string name="moon_energy_waning_gibbous">Şükran ve paylaşma zamanı. Edindiğin bilgeliği aktar.</string>
+    <string name="moon_energy_last_quarter">Artık sana hizmet etmeyeni bırak. Eski kalıpları ve alışkanlıkları serbest bırak.</string>
+    <string name="moon_energy_waning_crescent">Sessizlik ve iç gözlem. Dinlen ve yeni döngüye hazırlan.</string>
+
+    <!-- Moon Phase Activities -->
+    <string name="moon_activity_new">Niyet meditasyonu · Dilek yazma · Planlama</string>
+    <string name="moon_activity_waxing_crescent">Görselleştirme · İlk adımlar · Alışkanlık kurma</string>
+    <string name="moon_activity_first_quarter">Karar verme · Korkuyu aşma · Eylem adımları</string>
+    <string name="moon_activity_waxing_gibbous">Sabır · İnce ayar · Planları gözden geçirme</string>
+    <string name="moon_activity_full">Kutlama · Şükran ritüelleri · Sezgiyi dinleme</string>
+    <string name="moon_activity_waning_gibbous">Bilgelik paylaşma · Affetme · Başkalarına öğretme</string>
+    <string name="moon_activity_last_quarter">Arınma ve bırakma · Bölümleri kapatma · Detoks</string>
+    <string name="moon_activity_waning_crescent">Dinlenme · Hayal kurma · Meditasyon · Sessizlik</string>
+
+    <!-- Moon Phase Tarot Connection -->
+    <string name="moon_tarot_new">Yeni Ay altında The Star rezonansa girer — yeni umutlar doğuyor.</string>
+    <string name="moon_tarot_waxing_crescent">Büyüyen Hilal altında The Magician rezonansa girer — gerçekliğini yarat.</string>
+    <string name="moon_tarot_first_quarter">İlk Dördün altında The Chariot rezonansa girer — irade seni ileri taşır.</string>
+    <string name="moon_tarot_waxing_gibbous">Büyüyen Şişkin Ay altında Temperance rezonansa girer — denge anahtardır.</string>
+    <string name="moon_tarot_full">Dolunay altında The High Priestess rezonansa girer — sezgi en güçlü halinde.</string>
+    <string name="moon_tarot_waning_gibbous">Küçülen Şişkin Ay altında The Hermit rezonansa girer — bilgeliği içinde ara.</string>
+    <string name="moon_tarot_last_quarter">Son Dördün altında Death rezonansa girer — dönüşüm yeni bir yaşam getirir.</string>
+    <string name="moon_tarot_waning_crescent">Küçülen Hilal altında The Moon rezonansa girer — rüyalarını dinle.</string>
+
+    <!-- Lunar Section UI -->
+    <string name="moon_days_until_full">Dolunaya %d gün kaldı</string>
+    <string name="moon_days_until_new">Yeni Ay\'a %d gün kaldı</string>
+    <string name="moon_recommended_spread">Bu evre için ideal açılım</string>
+    <string name="moon_try_spread">Ay Döngüsü okumasını dene</string>
+
+    <!-- Achievements -->
+    <string name="achievement_first_reading">İlk Okuma</string>
+    <string name="achievement_first_reading_desc">İlk tarot okumanı tamamla</string>
+    <string name="achievement_ten_readings">10 Okuma</string>
+    <string name="achievement_ten_readings_desc">10 tarot okuması tamamla</string>
+    <string name="achievement_fifty_readings">50 Okuma</string>
+    <string name="achievement_fifty_readings_desc">50 tarot okuması tamamla</string>
+    <string name="achievement_hundred_readings">100 Okuma</string>
+    <string name="achievement_hundred_readings_desc">100 tarot okuması tamamla</string>
+    <string name="achievement_all_spreads">Tüm Açılımlar</string>
+    <string name="achievement_all_spreads_desc">Her açılım türünü dene</string>
+    <string name="achievement_week_streak">Haftalık Seri</string>
+    <string name="achievement_week_streak_desc">Serini 7 gün boyunca sürdür</string>
+    <string name="achievement_month_streak">Aylık Seri</string>
+    <string name="achievement_month_streak_desc">Serini 30 gün boyunca sürdür</string>
+    <string name="achievement_major_arcana">Tüm Büyük Arkana</string>
+    <string name="achievement_major_arcana_desc">22 Büyük Arkana kartının tamamını keşfet</string>
+    <string name="achievement_first_daily">İlk Günlük Kart</string>
+    <string name="achievement_first_daily_desc">İlk günlük kartını çek</string>
+    <string name="achievement_thirty_dailies">30 Günlük Kart</string>
+    <string name="achievement_thirty_dailies_desc">30 günlük kart çek</string>
+    <string name="achievement_night_owl">Gece Kuşu</string>
+    <string name="achievement_night_owl_desc">Saat 23\'ten sonra bir okuma yap</string>
+    <string name="achievement_early_bird">Erkenci Kuş</string>
+    <string name="achievement_early_bird_desc">Saat 7\'den önce bir okuma yap</string>
+    <string name="achievement_unlocked">Başarı açıldı!</string>
+    <string name="achievement_coin_reward">+%d jeton</string>
+    <string name="achievements_title">Başarılar</string>
+
+    <!-- FAQ -->
+    <string name="faq_q1">Okuma nasıl çalışır?</string>
+    <string name="faq_a1">Bir konu seçersin, istersen bir soru sorarsın, kart açılımını belirlersin ve dokunarak kartlarını açarsın. Yapay zeka falcımız Madame Stella daha sonra kartlarını sorunun bağlamında yorumlar.</string>
+    <string name="faq_q2">Okumalar ücretsiz mi?</string>
+    <string name="faq_a2">3 okuma tamamen ücretsiz. Sonrasında ek okumalar için jeton paketleri satın alabilirsin. Günün kartı her zaman ücretsizdir.</string>
+    <string name="faq_q3">Jetonlar nasıl çalışır?</string>
+    <string name="faq_a3">Okumalar için jeton kullanırsın. Farklı açılımların bedeli farklıdır: 1 kart = 1 jeton, 3 kart = 2 jeton, Kelt Haçı = 3 jeton.</string>
+    <string name="faq_q4">Tarot doğru mu söyler?</string>
+    <string name="faq_a4">Tarot, iç gözlem ve kişisel gelişim için bir araçtır. Okumalar yapay zeka tarafından oluşturulur ve geleceğe dair kesin öngörüler değil, ilham kaynağı olarak hizmet eder.</string>
+    <string name="faq_q5">Ek sorular sorabilir miyim?</string>
+    <string name="faq_a5">Evet! Her okumadan sonra Madame Stella\'ya kartlarınla ilgili istediğin her şeyi sorabilirsin — ek ücret olmadan.</string>
+
+    <!-- Monthly Horoscope Spread -->
+    <string name="spread_monthly_horoscope">Aylık Burç Yorumu</string>
+    <string name="spread_monthly_horoscope_desc">12 kart · Önümüzdeki ayın eksiksiz rehberi</string>
+    <string name="position_month_theme">Ayın Ana Teması</string>
+    <string name="position_month_love">Aşk ve İlişkiler</string>
+    <string name="position_month_career">Kariyer</string>
+    <string name="position_month_finances">Finans</string>
+    <string name="position_month_health">Sağlık ve Canlılık</string>
+    <string name="position_month_spirituality">Ruhsal Gelişim</string>
+    <string name="position_month_family">Aile ve Yuva</string>
+    <string name="position_month_growth">Kişisel Gelişim</string>
+    <string name="position_month_challenges">Zorluklar ve Engeller</string>
+    <string name="position_month_opportunities">Fırsatlar</string>
+    <string name="position_month_hidden">Gizli Etki</string>
+    <string name="position_month_message">Ayın Mesajı</string>
+
+    <!-- Mercury Retrograde -->
+    <string name="mercury_retrograde">MERKÜR RETROSU</string>
+    <string name="mercury_direct">Merkür İleri Harekette</string>
+    <string name="mercury_retrograde_until">%s tarihine kadar retroda</string>
+    <string name="mercury_direct_next">Sonraki retro: %s</string>
+    <string name="mercury_retrograde_warning">İletişime, teknolojiye ve sözleşmelere dikkat. Önemli kararlardan kaçın.</string>
+    <string name="mercury_direct_desc">Net iletişim ve yeni başlangıçlar için uygun bir zaman.</string>
+
+    <!-- Tarot Journal / Notes -->
+    <string name="journal_notes_label">Kişisel Notlar</string>
+    <string name="journal_notes_hint">Duygularını, sezgisel izlenimlerini veya senkronisiteleri kaydet…</string>
+    <string name="journal_notes_saved">Not kaydedildi</string>
+    <string name="journal_save_notes">NOTU KAYDET</string>
+
+    <!-- Share Reading -->
+    <string name="share_reading">OKUMAYI PAYLAŞ</string>
+
+    <!-- Lifetime Premium -->
+    <string name="lifetime_title">Ömür Boyu Erişim</string>
+    <string name="lifetime_desc">Sonsuza dek sınırsız okuma. Jeton yok, sınır yok.</string>
+    <string name="lifetime_feature_1">✦ 17 açılımın tamamında sınırsız okuma</string>
+    <string name="lifetime_feature_2">✦ Madame Stella\'dan öncelikli yapay zeka yorumları</string>
+    <string name="lifetime_feature_3">✦ Gelecekteki tüm açılımlara ücretsiz erişim</string>
+    <string name="lifetime_feature_4">✦ Sonsuza dek özel VIP statüsü</string>
+    <string name="lifetime_feature_5">✦ Reklamsız</string>
+    <string name="lifetime_buy">BUNU İSTİYORUM</string>
+    <string name="lifetime_price">4 499 Kč tek seferlik</string>
+    <string name="lifetime_badge">EN İYİ SEÇİM</string>
+    <string name="lifetime_active">✓ Ömür boyu erişim aktif</string>
+    <string name="lifetime_active_desc">Sonsuza dek sınırsız okumanın keyfini çıkar.</string>
+
+    <!-- Welcome Offer Dialog -->
+    <string name="welcome_offer_title">Kozmik İnisiyasyon</string>
+    <string name="welcome_offer_subtitle">Kartlar sana yolu gösterdi — içeri adım atacak mısın?</string>
+    <string name="welcome_offer_timer">Teklifin bitmesine kalan</string>
+    <string name="welcome_offer_skip">Şimdi değil</string>
+    <string name="welcome_offer_tier1_title">Yıldız Paketi</string>
+    <string name="welcome_offer_tier1_coins">15 jeton</string>
+    <string name="welcome_offer_tier1_badge">%50 İNDİRİM</string>
+    <string name="welcome_offer_tier2_title">Ömür Boyu Erişim</string>
+    <string name="welcome_offer_tier2_original">4 499 Kč</string>
+    <string name="welcome_offer_tier2_price">3 499 Kč</string>
+    <string name="welcome_offer_tier2_badge">HOŞ GELDİN TEKLİFİ</string>
+    <string name="welcome_offer_tier2_desc">Sonsuza dek sınırsız · Sadece yeni kullanıcılar için</string>
+    <string name="welcome_offer_recommended">TAVSİYE EDİLEN</string>
+
+    <!-- Journal AI Analysis -->
+    <string name="journal_analyze_cta">YAPAY ZEKA İLE ANALİZ ET</string>
+    <string name="journal_analyze_desc">Madame Stella notlarını okumanla ilişkilendirecek</string>
+    <string name="journal_analyzing">Madame Stella notlarını okuyor…</string>
+    <string name="journal_analysis_title">Madame Stella\'nın Yansıması</string>
+    <string name="journal_analysis_error">Analiz tamamlanamadı. Tekrar dene.</string>
+
+    <!-- Challenge Journeys -->
+    <string name="challenge_section_title">TAROT MEYDAN OKUMASI</string>
+    <string name="challenge_browse">Meydan okumalara göz at</string>
+    <string name="challenge_active_day">Gün %1$d / %2$d</string>
+    <string name="challenge_today_intention">Bugünün niyeti</string>
+    <string name="challenge_draw_card">KART ÇEK</string>
+    <string name="challenge_completed_today">Bugünün görevi tamamlandı ✓</string>
+    <string name="challenge_completed_all">Meydan okuma tamamlandı! 🎉</string>
+    <string name="challenge_reward">Ödül: +%d jeton</string>
+    <string name="challenge_start">MEYDAN OKUMAYA BAŞLA</string>
+    <string name="challenge_abandon">Meydan okumayı bırak</string>
+    <string name="challenge_abandon_confirm">Meydan okumayı bırakmak istediğine emin misin? İlerlemen kaybolacak.</string>
+    <string name="challenge_days_remaining">%d gün kaldı</string>
+    <string name="challenge_list_title">Tarot Meydan Okumaları</string>
+    <string name="challenge_list_subtitle">Tarot aracılığıyla yapılandırılmış kişisel gelişim yolculukları</string>
+    <string name="challenge_progress">%1$d/%2$d gün</string>
+
+    <!-- Challenge: 7 dní Osvícení -->
+    <string name="challenge_7_name">7 Günlük Aydınlanma</string>
+    <string name="challenge_7_desc">Ruhunun bir haftalık keşfi — her gün hayatın farklı bir alanı.</string>
+    <string name="challenge_7_d1">Geçmiş — Geçmişinden hangi kalıbı taşıyorsun?</string>
+    <string name="challenge_7_d2">Şimdi — Bu an sana ne getiriyor?</string>
+    <string name="challenge_7_d3">Gölgeler — İçinde hâlâ kabul ve şifa bekleyen ne var?</string>
+    <string name="challenge_7_d4">İlişkiler — Çevrendeki insanlara nasıl davranıyorsun?</string>
+    <string name="challenge_7_d5">Bolluk — Para ve refahla gerçek ilişkin nasıl?</string>
+    <string name="challenge_7_d6">Armağanlar — Dünyaya taşıdığın eşsiz armağan ne?</string>
+    <string name="challenge_7_d7">Gelecek — Yıldızlar ufkun ötesinde senin için ne hazırlıyor?</string>
+
+    <!-- Challenge: 21 dní Probuzení -->
+    <string name="challenge_21_name">21 Günlük Uyanış</string>
+    <string name="challenge_21_desc">Üç hafta derin öz keşif — köklerinden ufuklarına.</string>
+    <string name="challenge_21_w1">Öz Keşif Haftası — Ben kimim?</string>
+    <string name="challenge_21_w2">İlişkiler Haftası — Nasıl seviyorum?</string>
+    <string name="challenge_21_w3">Vizyon Haftası — Nereye gidiyorum?</string>
+
+    <!-- Challenge: 30 dní Transformace -->
+    <string name="challenge_30_name">30 Günlük Dönüşüm</string>
+    <string name="challenge_30_desc">Köklü değişimin bir ayı — varoluşun her düzleminde derin çalışma.</string>
+    <string name="challenge_30_w1">Kökler — Geçmişi ve aile kalıplarını işleme</string>
+    <string name="challenge_30_w2">Kalp — Aşk, ilişkiler ve duygusal zeka</string>
+    <string name="challenge_30_w3">Zihin — İnançlar, yaratıcılık ve yeni olasılıklar</string>
+    <string name="challenge_30_w4">Ruh — Anlam, amaç ve kozmik misyonun</string>
+</resources>

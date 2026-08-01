@@ -227,6 +227,10 @@
     <string name="drawing_confirm_selection">Selectie bevestigen</string>
     <string name="drawing_scroll_hint">↓ Scroll om meer kaarten te zien ↓</string>
     <string name="spread_pick_cards">Kies %d kaarten voor uw lezing</string>
+    <plurals name="spread_pick_cards">
+        <item quantity="one">Kies %d kaart voor uw legging</item>
+        <item quantity="other">Kies %d kaarten voor uw legging</item>
+    </plurals>
     <string name="drawing_focus_energy">Richt uw energie op uw intentie.</string>
 
     <!-- Reading -->

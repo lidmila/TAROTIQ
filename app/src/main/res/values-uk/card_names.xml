@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Major Arcana -->
+    <string name="card_the_fool">Блазень</string>
+    <string name="card_the_magician">Маг</string>
+    <string name="card_the_high_priestess">Верховна Жриця</string>
+    <string name="card_the_empress">Імператриця</string>
+    <string name="card_the_emperor">Імператор</string>
+    <string name="card_the_hierophant">Ієрофант</string>
+    <string name="card_the_lovers">Закохані</string>
+    <string name="card_the_chariot">Колісниця</string>
+    <string name="card_strength">Сила</string>
+    <string name="card_the_hermit">Відлюдник</string>
+    <string name="card_wheel_of_fortune">Колесо Фортуни</string>
+    <string name="card_justice">Справедливість</string>
+    <string name="card_the_hanged_man">Повішений</string>
+    <string name="card_death">Смерть</string>
+    <string name="card_temperance">Помірність</string>
+    <string name="card_the_devil">Диявол</string>
+    <string name="card_the_tower">Вежа</string>
+    <string name="card_the_star">Зірка</string>
+    <string name="card_the_moon">Місяць</string>
+    <string name="card_the_sun">Сонце</string>
+    <string name="card_judgement">Суд</string>
+    <string name="card_the_world">Світ</string>
+
+    <!-- Cups -->
+    <string name="card_ace_of_cups">Туз Кубків</string>
+    <string name="card_two_of_cups">Двійка Кубків</string>
+    <string name="card_three_of_cups">Трійка Кубків</string>
+    <string name="card_four_of_cups">Четвірка Кубків</string>
+    <string name="card_five_of_cups">П\'ятірка Кубків</string>
+    <string name="card_six_of_cups">Шістка Кубків</string>
+    <string name="card_seven_of_cups">Сімка Кубків</string>
+    <string name="card_eight_of_cups">Вісімка Кубків</string>
+    <string name="card_nine_of_cups">Дев\'ятка Кубків</string>
+    <string name="card_ten_of_cups">Десятка Кубків</string>
+    <string name="card_page_of_cups">Паж Кубків</string>
+    <string name="card_knight_of_cups">Лицар Кубків</string>
+    <string name="card_queen_of_cups">Королева Кубків</string>
+    <string name="card_king_of_cups">Король Кубків</string>
+
+    <!-- Pentacles -->
+    <string name="card_ace_of_pentacles">Туз Пентаклів</string>
+    <string name="card_two_of_pentacles">Двійка Пентаклів</string>
+    <string name="card_three_of_pentacles">Трійка Пентаклів</string>
+    <string name="card_four_of_pentacles">Четвірка Пентаклів</string>
+    <string name="card_five_of_pentacles">П\'ятірка Пентаклів</string>
+    <string name="card_six_of_pentacles">Шістка Пентаклів</string>
+    <string name="card_seven_of_pentacles">Сімка Пентаклів</string>
+    <string name="card_eight_of_pentacles">Вісімка Пентаклів</string>
+    <string name="card_nine_of_pentacles">Дев\'ятка Пентаклів</string>
+    <string name="card_ten_of_pentacles">Десятка Пентаклів</string>
+    <string name="card_page_of_pentacles">Паж Пентаклів</string>
+    <string name="card_knight_of_pentacles">Лицар Пентаклів</string>
+    <string name="card_queen_of_pentacles">Королева Пентаклів</string>
+    <string name="card_king_of_pentacles">Король Пентаклів</string>
+
+    <!-- Swords -->
+    <string name="card_ace_of_swords">Туз Мечів</string>
+    <string name="card_two_of_swords">Двійка Мечів</string>
+    <string name="card_three_of_swords">Трійка Мечів</string>
+    <string name="card_four_of_swords">Четвірка Мечів</string>
+    <string name="card_five_of_swords">П\'ятірка Мечів</string>
+    <string name="card_six_of_swords">Шістка Мечів</string>
+    <string name="card_seven_of_swords">Сімка Мечів</string>
+    <string name="card_eight_of_swords">Вісімка Мечів</string>
+    <string name="card_nine_of_swords">Дев\'ятка Мечів</string>
+    <string name="card_ten_of_swords">Десятка Мечів</string>
+    <string name="card_page_of_swords">Паж Мечів</string>
+    <string name="card_knight_of_swords">Лицар Мечів</string>
+    <string name="card_queen_of_swords">Королева Мечів</string>
+    <string name="card_king_of_swords">Король Мечів</string>
+
+    <!-- Wands -->
+    <string name="card_ace_of_wands">Туз Жезлів</string>
+    <string name="card_two_of_wands">Двійка Жезлів</string>
+    <string name="card_three_of_wands">Трійка Жезлів</string>
+    <string name="card_four_of_wands">Четвірка Жезлів</string>
+    <string name="card_five_of_wands">П\'ятірка Жезлів</string>
+    <string name="card_six_of_wands">Шістка Жезлів</string>
+    <string name="card_seven_of_wands">Сімка Жезлів</string>
+    <string name="card_eight_of_wands">Вісімка Жезлів</string>
+    <string name="card_nine_of_wands">Дев\'ятка Жезлів</string>
+    <string name="card_ten_of_wands">Десятка Жезлів</string>
+    <string name="card_page_of_wands">Паж Жезлів</string>
+    <string name="card_knight_of_wands">Лицар Жезлів</string>
+    <string name="card_queen_of_wands">Королева Жезлів</string>
+    <string name="card_king_of_wands">Король Жезлів</string>
+</resources>

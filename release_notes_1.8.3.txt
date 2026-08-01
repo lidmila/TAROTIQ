@@ -1,0 +1,78 @@
+<cs-CZ>
+• Nové jazyky: portugalština, ruština, turečtina a ukrajinština – aplikace nyní mluví 12 jazyky
+• Francouzština a nizozemština jsou nově plně dostupné včetně všech významů karet
+• Jazyk aplikace lze přepnout i v systémovém nastavení Androidu
+• Podpora Androidu 16 a drobné opravy
+</cs-CZ>
+<en-US>
+• New languages: Portuguese, Russian, Turkish and Ukrainian – the app now speaks 12 languages
+• French and Dutch are now fully available, including every card meaning
+• You can switch the app language from Android system settings
+• Android 16 support and minor fixes
+</en-US>
+<de-DE>
+• Neue Sprachen: Portugiesisch, Russisch, Türkisch und Ukrainisch – die App spricht jetzt 12 Sprachen
+• Französisch und Niederländisch sind nun vollständig verfügbar, inklusive aller Kartenbedeutungen
+• Die App-Sprache lässt sich jetzt auch in den Android-Systemeinstellungen umstellen
+• Unterstützung für Android 16 und kleinere Fehlerbehebungen
+</de-DE>
+<es-ES>
+• Nuevos idiomas: portugués, ruso, turco y ucraniano: la aplicación ya habla 12 idiomas
+• El francés y el neerlandés están ahora disponibles por completo, con todos los significados de las cartas
+• Puedes cambiar el idioma de la aplicación desde los ajustes del sistema Android
+• Compatibilidad con Android 16 y correcciones menores
+</es-ES>
+<fr-FR>
+• Nouvelles langues : portugais, russe, turc et ukrainien – l'application parle désormais 12 langues
+• Le français et le néerlandais sont maintenant intégralement disponibles, avec toutes les significations des cartes
+• La langue de l'application peut être changée depuis les paramètres système Android
+• Prise en charge d'Android 16 et corrections mineures
+</fr-FR>
+<it-IT>
+• Nuove lingue: portoghese, russo, turco e ucraino – l'app ora parla 12 lingue
+• Francese e olandese sono ora completamente disponibili, inclusi tutti i significati delle carte
+• La lingua dell'app si può cambiare anche dalle impostazioni di sistema di Android
+• Supporto per Android 16 e correzioni minori
+</it-IT>
+<nl-NL>
+• Nieuwe talen: Portugees, Russisch, Turks en Oekraïens – de app spreekt nu 12 talen
+• Frans en Nederlands zijn nu volledig beschikbaar, inclusief alle kaartbetekenissen
+• De taal van de app kun je ook wijzigen in de systeeminstellingen van Android
+• Ondersteuning voor Android 16 en kleine verbeteringen
+</nl-NL>
+<pl-PL>
+• Nowe języki: portugalski, rosyjski, turecki i ukraiński – aplikacja mówi teraz w 12 językach
+• Francuski i niderlandzki są już w pełni dostępne, wraz ze wszystkimi znaczeniami kart
+• Język aplikacji można zmienić także w ustawieniach systemowych Androida
+• Obsługa Androida 16 i drobne poprawki
+</pl-PL>
+<pt-PT>
+• Novos idiomas: português, russo, turco e ucraniano – a aplicação fala agora 12 idiomas
+• O francês e o neerlandês estão agora totalmente disponíveis, incluindo todos os significados das cartas
+• Pode mudar o idioma da aplicação nas definições do sistema Android
+• Compatibilidade com o Android 16 e pequenas correções
+</pt-PT>
+<pt-BR>
+• Novos idiomas: português, russo, turco e ucraniano – o app agora fala 12 idiomas
+• Francês e holandês estão totalmente disponíveis, incluindo todos os significados das cartas
+• Você pode mudar o idioma do app nas configurações do sistema Android
+• Compatibilidade com o Android 16 e pequenas correções
+</pt-BR>
+<ru-RU>
+• Новые языки: португальский, русский, турецкий и украинский — приложение теперь говорит на 12 языках
+• Французский и нидерландский стали полностью доступны, включая все значения карт
+• Язык приложения можно изменить и в системных настройках Android
+• Поддержка Android 16 и мелкие исправления
+</ru-RU>
+<tr-TR>
+• Yeni diller: Portekizce, Rusça, Türkçe ve Ukraynaca – uygulama artık 12 dil konuşuyor
+• Fransızca ve Felemenkçe, tüm kart anlamlarıyla birlikte tam olarak kullanılabilir
+• Uygulama dilini Android sistem ayarlarından da değiştirebilirsiniz
+• Android 16 desteği ve küçük düzeltmeler
+</tr-TR>
+<uk-UA>
+• Нові мови: португальська, російська, турецька та українська — застосунок тепер говорить 12 мовами
+• Французька та нідерландська тепер доступні повністю, разом з усіма значеннями карт
+• Мову застосунку можна змінити й у системних налаштуваннях Android
+• Підтримка Android 16 та дрібні виправлення
+</uk-UA>

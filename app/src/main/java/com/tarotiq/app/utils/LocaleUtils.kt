@@ -17,7 +17,9 @@ object LocaleUtils {
     private const val PREFS_NAME = "language_prefs"
     private const val KEY_LANGUAGE = "app_language"
 
-    private val supportedLanguages = setOf("cs", "en", "fr", "de", "es", "it", "pl", "nl")
+    // Pouze jazyky se 100% přeloženými zdroji. Neúplné lokalizace (ro, hu, el)
+    // sem nepatří – chybějící stringy by spadly na český default.
+    private val supportedLanguages = setOf("cs", "en", "fr", "de", "es", "it", "pl", "nl", "pt", "tr", "uk", "ru")
 
     private val _languageFlow = MutableStateFlow("cs")
     val languageFlow: StateFlow<String> = _languageFlow.asStateFlow()
@@ -101,7 +103,11 @@ object LocaleUtils {
             "es" to "Español",
             "it" to "Italiano",
             "pl" to "Polski",
-            "nl" to "Nederlands"
+            "nl" to "Nederlands",
+            "pt" to "Português",
+            "tr" to "Türkçe",
+            "uk" to "Українська",
+            "ru" to "Русский"
         )
     }
 }

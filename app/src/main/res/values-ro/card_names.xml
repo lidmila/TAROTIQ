@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Major Arcana -->
+    <string name="card_the_fool">Nebunul</string>
+    <string name="card_the_magician">Magicianul</string>
+    <string name="card_the_high_priestess">Marea Preoteasă</string>
+    <string name="card_the_empress">Împărăteasa</string>
+    <string name="card_the_emperor">Împăratul</string>
+    <string name="card_the_hierophant">Marele Preot</string>
+    <string name="card_the_lovers">Îndrăgostiții</string>
+    <string name="card_the_chariot">Carul</string>
+    <string name="card_strength">Puterea</string>
+    <string name="card_the_hermit">Eremitul</string>
+    <string name="card_wheel_of_fortune">Roata Norocului</string>
+    <string name="card_justice">Dreptatea</string>
+    <string name="card_the_hanged_man">Spânzuratul</string>
+    <string name="card_death">Moartea</string>
+    <string name="card_temperance">Cumpătarea</string>
+    <string name="card_the_devil">Diavolul</string>
+    <string name="card_the_tower">Turnul</string>
+    <string name="card_the_star">Steaua</string>
+    <string name="card_the_moon">Luna</string>
+    <string name="card_the_sun">Soarele</string>
+    <string name="card_judgement">Judecata</string>
+    <string name="card_the_world">Lumea</string>
+
+    <!-- Cups -->
+    <string name="card_ace_of_cups">As de Cupe</string>
+    <string name="card_two_of_cups">Doi de Cupe</string>
+    <string name="card_three_of_cups">Trei de Cupe</string>
+    <string name="card_four_of_cups">Patru de Cupe</string>
+    <string name="card_five_of_cups">Cinci de Cupe</string>
+    <string name="card_six_of_cups">Șase de Cupe</string>
+    <string name="card_seven_of_cups">Șapte de Cupe</string>
+    <string name="card_eight_of_cups">Opt de Cupe</string>
+    <string name="card_nine_of_cups">Nouă de Cupe</string>
+    <string name="card_ten_of_cups">Zece de Cupe</string>
+    <string name="card_page_of_cups">Paj de Cupe</string>
+    <string name="card_knight_of_cups">Cavaler de Cupe</string>
+    <string name="card_queen_of_cups">Regină de Cupe</string>
+    <string name="card_king_of_cups">Rege de Cupe</string>
+
+    <!-- Pentacles -->
+    <string name="card_ace_of_pentacles">As de Pentacle</string>
+    <string name="card_two_of_pentacles">Doi de Pentacle</string>
+    <string name="card_three_of_pentacles">Trei de Pentacle</string>
+    <string name="card_four_of_pentacles">Patru de Pentacle</string>
+    <string name="card_five_of_pentacles">Cinci de Pentacle</string>
+    <string name="card_six_of_pentacles">Șase de Pentacle</string>
+    <string name="card_seven_of_pentacles">Șapte de Pentacle</string>
+    <string name="card_eight_of_pentacles">Opt de Pentacle</string>
+    <string name="card_nine_of_pentacles">Nouă de Pentacle</string>
+    <string name="card_ten_of_pentacles">Zece de Pentacle</string>
+    <string name="card_page_of_pentacles">Paj de Pentacle</string>
+    <string name="card_knight_of_pentacles">Cavaler de Pentacle</string>
+    <string name="card_queen_of_pentacles">Regină de Pentacle</string>
+    <string name="card_king_of_pentacles">Rege de Pentacle</string>
+
+    <!-- Swords -->
+    <string name="card_ace_of_swords">As de Săbii</string>
+    <string name="card_two_of_swords">Doi de Săbii</string>
+    <string name="card_three_of_swords">Trei de Săbii</string>
+    <string name="card_four_of_swords">Patru de Săbii</string>
+    <string name="card_five_of_swords">Cinci de Săbii</string>
+    <string name="card_six_of_swords">Șase de Săbii</string>
+    <string name="card_seven_of_swords">Șapte de Săbii</string>
+    <string name="card_eight_of_swords">Opt de Săbii</string>
+    <string name="card_nine_of_swords">Nouă de Săbii</string>
+    <string name="card_ten_of_swords">Zece de Săbii</string>
+    <string name="card_page_of_swords">Paj de Săbii</string>
+    <string name="card_knight_of_swords">Cavaler de Săbii</string>
+    <string name="card_queen_of_swords">Regină de Săbii</string>
+    <string name="card_king_of_swords">Rege de Săbii</string>
+
+    <!-- Wands -->
+    <string name="card_ace_of_wands">As de Bâte</string>
+    <string name="card_two_of_wands">Doi de Bâte</string>
+    <string name="card_three_of_wands">Trei de Bâte</string>
+    <string name="card_four_of_wands">Patru de Bâte</string>
+    <string name="card_five_of_wands">Cinci de Bâte</string>
+    <string name="card_six_of_wands">Șase de Bâte</string>
+    <string name="card_seven_of_wands">Șapte de Bâte</string>
+    <string name="card_eight_of_wands">Opt de Bâte</string>
+    <string name="card_nine_of_wands">Nouă de Bâte</string>
+    <string name="card_ten_of_wands">Zece de Bâte</string>
+    <string name="card_page_of_wands">Paj de Bâte</string>
+    <string name="card_knight_of_wands">Cavaler de Bâte</string>
+    <string name="card_queen_of_wands">Regină de Bâte</string>
+    <string name="card_king_of_wands">Rege de Bâte</string>
+</resources>

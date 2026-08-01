@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== SWORDS (Meče) ===== -->
+
+    <!-- Card 50: Ace of Swords -->
+    <string name="card_50_love_up">O descoperire în înțelegerea din relație; comunicarea clară și sinceră deschide uși noi.</string>
+    <string name="card_50_love_rev">Neînțelegeri și confuzie în dragoste; cuvintele dure sau dezinformarea rănesc relația.</string>
+    <string name="card_50_career_up">O idee nouă strălucită sau o revelație mentală la muncă; claritatea intenției alimentează succesul.</string>
+    <string name="card_50_career_rev">Confuzie și comunicare defectuoasă la muncă; o idee greșită poate duce la eșecuri profesionale.</string>
+    <string name="card_50_finances_up">Gândirea financiară limpede duce la decizii inteligente; o strategie nouă taie prin confuzie.</string>
+    <string name="card_50_finances_rev">Confuzie financiară sau dezinformare; decizii pripite bazate pe o înțelegere incompletă.</string>
+    <string name="card_50_feelings_up">Claritate mentală și entuziasmul unei revelații; adevărul străpunge ceața.</string>
+    <string name="card_50_feelings_rev">Confuzie mentală și copleșire; te străduiești să gândești limpede în mijlocul haosului.</string>
+    <string name="card_50_actions_up">Folosește-ți claritatea mentală pentru a depăși obstacolele; spune adevărul și urmează ideile noi.</string>
+    <string name="card_50_actions_rev">Caută claritatea înainte să acționezi; nu-ți folosi intelectul ca pe o armă.</string>
+
+    <!-- Card 51: Two of Swords -->
+    <string name="card_51_love_up">O alegere romantică dificilă pe care o eviți; impasul emoțional împiedică progresul în dragoste.</string>
+    <string name="card_51_love_rev">Iei în sfârșit o decizie privind relația; emoțiile copleșitoare te obligă să acționezi.</string>
+    <string name="card_51_career_up">O decizie de carieră aflată în punct mort; refuzul de a alege între două opțiuni paralizează progresul.</string>
+    <string name="card_51_career_rev">Depășești indecizia în carieră; avalanșa de informații lasă loc clarității.</string>
+    <string name="card_51_finances_up">Indecizia financiară îți blochează progresul; cântărești două opțiuni fără să te angajezi la niciuna.</string>
+    <string name="card_51_finances_rev">O decizie financiară este luată în sfârșit după o perioadă de paralizie; claritatea iese la iveală.</string>
+    <string name="card_51_feelings_up">Te simți blocat între două alegeri; îți blochezi emoțiile pentru a evita o decizie grea.</string>
+    <string name="card_51_feelings_rev">Barajul emoțional se rupe; sentimentele pe care le-ai reprimat cer să fie recunoscute.</string>
+    <string name="card_51_actions_up">Înfruntă alegerea dificilă pe care ai evitat-o; amânarea nu face decât să întârzie inevitabilul.</string>
+    <string name="card_51_actions_rev">Decizia a fost luată sau va fi luată în locul tău; acceptă rezultatul și mergi mai departe.</string>
+
+    <!-- Card 52: Three of Swords -->
+    <string name="card_52_love_up">Inimă frântă și trădare în dragoste; un adevăr dureros spulberă iluzia relației.</string>
+    <string name="card_52_love_rev">Vindecare după o inimă frântă; începi să ierți și să eliberezi durerea trădării.</string>
+    <string name="card_52_career_up">O trădare profesională dureroasă sau o veste devastatoare în carieră; doliu după o oportunitate pierdută.</string>
+    <string name="card_52_career_rev">Îți revii după un eșec profesional; te vindeci de trădările de la locul de muncă și mergi mai departe.</string>
+    <string name="card_52_finances_up">O pierdere financiară care provoacă durere emoțională; trădarea legată de bani lovește adânc.</string>
+    <string name="card_52_finances_rev">Îți revii după o pierdere financiară; durerea emoțională a necazurilor cu banii începe să se vindece.</string>
+    <string name="card_52_feelings_up">Tristețe profundă și inimă îndurerată; durerea trădării sau a pierderii îți străpunge inima.</string>
+    <string name="card_52_feelings_rev">Durerea se domolește; iertarea și vindecarea înlocuiesc treptat tristețea.</string>
+    <string name="card_52_actions_up">Permite-ți să jelești pe deplin; recunoaște durerea în loc să o reprimi.</string>
+    <string name="card_52_actions_rev">Începe procesul de vindecare; iartă ce poți ierta și eliberează durerea care te ține pe loc.</string>
+
+    <!-- Card 53: Four of Swords -->
+    <string name="card_53_love_up">O pauză necesară în viața ta amoroasă; odihna și reflecția îți întăresc rezervele emoționale.</string>
+    <string name="card_53_love_rev">Neliniște în dragoste; refuzul odihnei emoționale de care ai nevoie duce la epuizare.</string>
+    <string name="card_53_career_up">Ia o pauză de la stresul de la muncă; odihna mentală și refacerea sunt esențiale pentru productivitatea viitoare.</string>
+    <string name="card_53_career_rev">Epuizare din cauza refuzului de a te odihni; a forța prin oboseală duce la rezultate tot mai slabe.</string>
+    <string name="card_53_finances_up">O perioadă de liniște financiară; fără mișcări financiare majore, doar păstrarea stabilă a resurselor.</string>
+    <string name="card_53_finances_rev">Anxietatea financiară te împiedică să te odihnești; grijile legate de bani te țin treaz noaptea.</string>
+    <string name="card_53_feelings_up">Simți nevoia de odihnă profundă și de refacere mentală; pacea vine prin singurătate.</string>
+    <string name="card_53_feelings_rev">Epuizat și neliniștit; nu reușești să găsești pacea de care mintea și trupul tău au disperată nevoie.</string>
+    <string name="card_53_actions_up">Retrage-te și odihnește-te înainte de următorul pas; refacerea de acum previne prăbușirea de mai târziu.</string>
+    <string name="card_53_actions_rev">Te-ai odihnit destul sau refuzi să te odihnești; rezolvă cauza profundă a epuizării tale.</string>
+
+    <!-- Card 54: Five of Swords -->
+    <string name="card_54_love_up">Conflict dureros în dragoste; a câștiga o ceartă poate însemna a pierde relația.</string>
+    <string name="card_54_love_rev">Împăcare după conflict; ambii parteneri fac compromisuri și încep să repare rănile.</string>
+    <string name="card_54_career_up">Conflicte și lupte de putere la locul de muncă; o victorie goală care te costă respectul celorlalți.</string>
+    <string name="card_54_career_rev">Faci pace cu rivalii profesionali; alegi împăcarea în locul luptei continue.</string>
+    <string name="card_54_finances_up">Dispute financiare sau afaceri necinstite; câștigi bani cu prețul relațiilor.</string>
+    <string name="card_54_finances_rev">Rezolvarea disputelor financiare; accepți pierderile și lași în urmă conflictele legate de bani.</string>
+    <string name="card_54_feelings_up">Te simți combativ și în defensivă; înțepătura conflictului sau a înfrângerii îți apasă mintea.</string>
+    <string name="card_54_feelings_rev">Eliberezi ostilitatea și resentimentele; alegi pacea în locul războiului continuu.</string>
+    <string name="card_54_actions_up">Alege-ți bătăliile cu înțelepciune; unele victorii nu merită prețul pe care îl plătești.</string>
+    <string name="card_54_actions_rev">Renunță la nevoia de a câștiga; caută reparația și rezolvarea în locul răzbunării.</string>
+
+    <!-- Card 55: Six of Swords -->
+    <string name="card_55_love_up">Tranziție de la o perioadă romantică furtunoasă spre ape mai liniștite; vindecare prin schimbare.</string>
+    <string name="card_55_love_rev">Nu reușești să lași în urmă o relație dureroasă; treburile emoționale nerezolvate te țin pe loc.</string>
+    <string name="card_55_career_up">O tranziție de carieră departe de un mediu stresant; te îndrepți spre oportunități mai bune.</string>
+    <string name="card_55_career_rev">Ești blocat într-un mediu de lucru toxic; te împotrivești schimbării de carieră de care ai nevoie.</string>
+    <string name="card_55_finances_up">Tranziție financiară spre un teren mai stabil; lași în urmă problemele cu banii.</string>
+    <string name="card_55_finances_rev">Nu poți scăpa de dificultățile financiare; te împotrivești schimbărilor bănești necesare.</string>
+    <string name="card_55_feelings_up">Simți un amestec de tristețe și speranță în timp ce lași trecutul în urmă și te îndrepți spre vindecare.</string>
+    <string name="card_55_feelings_rev">Te simți prins în frământări emoționale; nu reușești să găsești drumul înainte.</string>
+    <string name="card_55_actions_up">Acceptă tranziția și mergi înainte; lasă în urmă ceea ce doare, cu grație.</string>
+    <string name="card_55_actions_rev">Rezolvă ceea ce te ține pe loc; încheie treburile neterminate ca să poți merge în sfârșit mai departe.</string>
+
+    <!-- Card 56: Seven of Swords -->
+    <string name="card_56_love_up">Înșelăciune sau trădare în dragoste; cineva nu este pe deplin sincer în relație.</string>
+    <string name="card_56_love_rev">Secretele ies la iveală în relație; o mărturisire limpezește atmosfera, în ciuda durerii inițiale.</string>
+    <string name="card_56_career_up">Manevre strategice la muncă; cineva poate acționa necinstit sau își poate însuși meritele altora.</string>
+    <string name="card_56_career_rev">Înșelăciunea de la locul de muncă este demascată; adevărul despre comportamentul profesional necinstit iese la lumină.</string>
+    <string name="card_56_finances_up">Înșelăciune financiară sau furt; ferește-te de afacerile necinstite și protejează-ți resursele.</string>
+    <string name="card_56_finances_rev">Frauda financiară este descoperită; resursele furate pot fi recuperate sau necinstea este dată în vileag.</string>
+    <string name="card_56_feelings_up">Te simți suspicios sau pus pe ascunzișuri; o presimțire sâcâitoare că se petrece ceva necinstit.</string>
+    <string name="card_56_feelings_rev">Ușurarea mărturisirii; vinovăția se dizolvă pe măsură ce recunoști înșelăciunile din trecut.</string>
+    <string name="card_56_actions_up">Înaintează cu prudență strategică; fii atent la comportamentul înșelător, al tău sau al altora.</string>
+    <string name="card_56_actions_rev">Mărturisește orice înșelăciune; adevărul te va elibera, chiar dacă va fi incomod.</string>
+
+    <!-- Card 57: Eight of Swords -->
+    <string name="card_57_love_up">Te simți prizonier în relație; barierele mentale pe care ți le-ai impus singur te împiedică să vezi opțiunile.</string>
+    <string name="card_57_love_rev">Te eliberezi dintr-o relație sufocantă sau de convingerile limitative care te-au ținut captiv în dragoste.</string>
+    <string name="card_57_career_up">Te simți blocat și neputincios la muncă; convingerile auto-limitative îți frânează creșterea profesională.</string>
+    <string name="card_57_career_rev">Îți iei puterea de a depăși limitările din carieră; descoperi posibilități noi.</string>
+    <string name="card_57_finances_up">Te simți prins în capcana obligațiilor financiare; limitările mentale te împiedică să vezi soluțiile.</string>
+    <string name="card_57_finances_rev">Te eliberezi de constrângerile financiare; perspectivele noi dezvăluie soluții pe care nu le vedeai înainte.</string>
+    <string name="card_57_feelings_up">Te simți captiv, neputincios și incapabil să găsești o ieșire din situația actuală.</string>
+    <string name="card_57_feelings_rev">O schimbare eliberatoare de perspectivă; realizezi că închisoarea ta era în mare parte creația ta.</string>
+    <string name="card_57_actions_up">Examinează convingerile care te țin captiv; barierele pot fi mai degrabă mentale decât reale.</string>
+    <string name="card_57_actions_rev">Dă-ți jos legătura de la ochi și privește situația limpede; ai mai multă putere decât crezi.</string>
+
+    <!-- Card 58: Nine of Swords -->
+    <string name="card_58_love_up">Anxietate și nopți nedormite din cauza relației; temerile și grijile îți mistuie gândurile.</string>
+    <string name="card_58_love_rev">Începi să depășești anxietatea din relație; căutarea sprijinului îți alină temerile.</string>
+    <string name="card_58_career_up">Anxietatea legată de muncă te ține treaz noaptea; stresul și grijile îți domină viața profesională.</string>
+    <string name="card_58_career_rev">Anxietățile din carieră încep să se domolească; căutarea ajutorului și a sprijinului reduce stresul de la muncă.</string>
+    <string name="card_58_finances_up">Anxietate financiară și nopți nedormite; grijile legate de bani îți mistuie liniștea sufletească.</string>
+    <string name="card_58_finances_rev">Temerile financiare încep să se retragă; căutarea ajutorului aduce alinare și soluții practice.</string>
+    <string name="card_58_feelings_up">Anxietate copleșitoare și spaimă; cele mai negre temeri ți se derulează în minte la nesfârșit.</string>
+    <string name="card_58_feelings_rev">Ce a fost mai rău a trecut; speranța înlocuiește disperarea pe măsură ce începi să-ți stăpânești anxietatea.</string>
+    <string name="card_58_actions_up">Caută sprijin pentru anxietatea ta; nu suferi singur cu fricile și grijile tale.</string>
+    <string name="card_58_actions_rev">Temerile se domolesc; continuă să ceri ajutor și practică blândețea față de tine însuți.</string>
+
+    <!-- Card 59: Ten of Swords -->
+    <string name="card_59_love_up">Un sfârșit dureros și definitiv al relației; trădarea sau criza aduce lucrurile la un deznodământ.</string>
+    <string name="card_59_love_rev">Îți revii după o despărțire devastatoare; ce a fost mai rău a trecut și vindecarea a început.</string>
+    <string name="card_59_career_up">Un final dramatic de carieră sau o criză profesională; ai atins fundul prăpastiei.</string>
+    <string name="card_59_career_rev">Refacere profesională după ce ai atins fundul; reconstrucție lentă după o criză de carieră.</string>
+    <string name="card_59_finances_up">Fundul prăpastiei financiare; o pierdere bănească devastatoare sau o criză îți cere toată atenția.</string>
+    <string name="card_59_finances_rev">Refacerea financiară începe după o pierdere devastatoare; ce a fost mai rău a trecut.</string>
+    <string name="card_59_feelings_up">Te simți complet înfrânt și epuizat; greutatea crizelor suprapuse te strivește.</string>
+    <string name="card_59_feelings_rev">Soarele răsare după cea mai întunecată noapte; epuizarea lasă loc unei refaceri treptate.</string>
+    <string name="card_59_actions_up">Acceptă că acest capitol s-a încheiat; de la fundul prăpastiei drumul duce doar în sus.</string>
+    <string name="card_59_actions_rev">Începe să reconstruiești din ruine; fiecare sfârșit poartă în sine sămânța unui nou început.</string>
+
+    <!-- Card 60: Page of Swords -->
+    <string name="card_60_love_up">O conexiune intelectuală stimulantă; comunicarea deschisă și sinceră aprinde interesul romantic.</string>
+    <string name="card_60_love_rev">Bârfele sau cuvintele rănitoare strică relația; comunicarea devine tăioasă sau necinstită.</string>
+    <string name="card_60_career_up">Ideile proaspete și curiozitatea intelectuală alimentează progresul în carieră; fii cu ochii pe oportunități.</string>
+    <string name="card_60_career_rev">Bârfele de la locul de muncă sau comunicarea pripită creează probleme profesionale.</string>
+    <string name="card_60_finances_up">Explorezi noi oportunități financiare cu curiozitate intelectuală și agerime mentală.</string>
+    <string name="card_60_finances_rev">Decizii financiare pripite bazate pe informații incomplete; nu crede orice pont financiar.</string>
+    <string name="card_60_feelings_up">Te simți stimulat intelectual și curios; dornic să înveți și să descoperi adevăruri noi.</string>
+    <string name="card_60_feelings_rev">Te simți cinic și suspicios; cuvintele tăioase maschează nesiguranța.</string>
+    <string name="card_60_actions_up">Rămâi curios și comunică limpede; cercetează ideile noi cu o minte deschisă, dar atentă.</string>
+    <string name="card_60_actions_rev">Gândește înainte să vorbești; încetează să bârfești și folosește-ți cuvintele constructiv.</string>
+
+    <!-- Card 61: Knight of Swords -->
+    <string name="card_61_love_up">Urmărești dragostea cu intensitate și hotărâre; o cucerire romantică rapidă și pasională.</string>
+    <string name="card_61_love_rev">Comportament agresiv sau nesăbuit în dragoste; nerăbdarea te face să forțezi prea mult.</string>
+    <string name="card_61_career_up">Avansezi în forță spre obiective ambițioase de carieră; acțiune profesională rapidă și hotărâtă.</string>
+    <string name="card_61_career_rev">Mișcări de carieră nesăbuite, fără o planificare potrivită; agresivitatea îi îndepărtează pe colegi.</string>
+    <string name="card_61_finances_up">Acțiunea financiară rapidă și hotărâtă aduce rezultate; bate fierul cât e cald.</string>
+    <string name="card_61_finances_rev">Decizii financiare impulsive luate în grabă; cheltuieli sau investiții nesăbuite.</string>
+    <string name="card_61_feelings_up">Te simți motivat și ager la minte; un sentiment de urgență te împinge înainte.</string>
+    <string name="card_61_feelings_rev">Te simți împrăștiat și agresiv; nerăbdarea te face să te repezi la ceilalți.</string>
+    <string name="card_61_actions_up">Acționează rapid și hotărât; determinarea și ambiția ta vor tăia prin obstacole.</string>
+    <string name="card_61_actions_rev">Încetinește înainte să te prăbușești; canalizează-ți intensitatea printr-o planificare mai strategică.</string>
+
+    <!-- Card 62: Queen of Swords -->
+    <string name="card_62_love_up">Comunicare clară și sinceră în dragoste; un partener independent care prețuiește conexiunea intelectuală.</string>
+    <string name="card_62_love_rev">Comportament rece și critic în relație; amărăciunea rănilor din trecut taie adânc.</string>
+    <string name="card_62_career_up">Percepția ascuțită și comunicarea clară fac din tine un profesionist eficient și respectat.</string>
+    <string name="card_62_career_rev">Comportament exagerat de critic la muncă; răceala intelectuală te izolează de colegi.</string>
+    <string name="card_62_finances_up">Decizii financiare lucide; tai prin zgomotul emoțional pentru a vedea adevărul despre bani.</string>
+    <string name="card_62_finances_rev">Judecată financiară aspră; ești exagerat de critic cu tine sau cu ceilalți în privința banilor.</string>
+    <string name="card_62_feelings_up">Te simți limpede la minte și independent emoțional; mintea ta pătrunzătoare te servește bine.</string>
+    <string name="card_62_feelings_rev">Te simți amar și critic; rănile trecutului ți-au împietrit inima și ți-au ascuțit limba.</string>
+    <string name="card_62_actions_up">Comunică cu claritate și sinceritate; stabilește granițe ferme cu compasiune.</string>
+    <string name="card_62_actions_rev">Îndulcește-ți marginile tăioase; a avea dreptate e mai puțin important decât a fi bun.</string>
+
+    <!-- Card 63: King of Swords -->
+    <string name="card_63_love_up">O relație ghidată de respect intelectual și standarde etice; sinceritatea este mai presus de orice.</string>
+    <string name="card_63_love_rev">Un partener care își folosește intelectul pentru a manipula; raționalitatea rece înlocuiește căldura emoțională.</string>
+    <string name="card_63_career_up">Autoritate intelectuală și conducere etică; gândirea ta limpede impune respect profesional.</string>
+    <string name="card_63_career_rev">Abuz de putere intelectuală la muncă; conducere tiranică prin raționalitate rece.</string>
+    <string name="card_63_finances_up">Gestionare financiară logică și etică; gândirea limpede duce la decizii bănești chibzuite.</string>
+    <string name="card_63_finances_rev">Folosirea cunoștințelor financiare pentru a-i manipula pe ceilalți; practici financiare lipsite de etică.</string>
+    <string name="card_63_feelings_up">Te simți stăpân pe intelect și ancorat etic; claritatea mentală aduce încredere în sine.</string>
+    <string name="card_63_feelings_rev">Te simți detașat emoțional și arogant intelectual; logică fără inimă.</string>
+    <string name="card_63_actions_up">Condu cu integritate intelectuală și claritate etică; lasă adevărul să-ți ghideze deciziile.</string>
+    <string name="card_63_actions_rev">Cercetează dacă îți folosești intelectul pentru a sluji adevărul sau pentru a-i controla pe ceilalți.</string>
+
+    <!-- ===== WANDS (Hole) ===== -->
+
+    <!-- Card 64: Ace of Wands -->
+    <string name="card_64_love_up">O scânteie romantică nouă și pasională se aprinde; potențial palpitant pentru o legătură de dragoste înflăcărată.</string>
+    <string name="card_64_love_rev">Pasiunea romantică se stinge; întârzierile sau lipsa de motivație împiedică formarea unei legături de dragoste.</string>
+    <string name="card_64_career_up">O nouă aventură profesională inspirată sau un proiect creativ te umple de energie entuziastă.</string>
+    <string name="card_64_career_rev">Blocajele creative sau întârzierile frânează o oportunitate promițătoare de carieră; motivația scade.</string>
+    <string name="card_64_finances_up">O oportunitate financiară nouă și palpitantă, în armonie cu pasiunile și energia ta creativă.</string>
+    <string name="card_64_finances_rev">O oportunitate financiară promițătoare este ratată sau întârziată; lipsa de inițiativă te ține pe loc.</string>
+    <string name="card_64_feelings_up">Te simți inspirat cu pasiune și debordând de potențial creativ și entuziasm.</string>
+    <string name="card_64_feelings_rev">Te simți blocat creativ și lipsit de scânteia inspirației; energia este scăzută.</string>
+    <string name="card_64_actions_up">Prinde scânteia inspirației și transform-o în acțiune creativă pasională.</string>
+    <string name="card_64_actions_rev">Reaprinde-ți pasiunea; găsește ceea ce te entuziasmează și înlătură blocajele energiei tale creative.</string>
+
+    <!-- Card 65: Two of Wands -->
+    <string name="card_65_love_up">Planifici un viitor comun cu partenerul; îți imaginezi unde va duce povestea voastră de dragoste.</string>
+    <string name="card_65_love_rev">Frică de angajament sau refuzul de a plănui un viitor romantic; rămâi în zona de confort.</string>
+    <string name="card_65_career_up">Îți planifici cu îndrăzneală viitorul carierei; lumea posibilităților profesionale se întinde înaintea ta.</string>
+    <string name="card_65_career_rev">Joci la sigur pe plan profesional; frica de necunoscut împiedică explorarea carierei.</string>
+    <string name="card_65_finances_up">Planificare financiară și gândire strategică despre bogăția viitoare; iei în calcul investiții îndrăznețe.</string>
+    <string name="card_65_finances_rev">Frica împiedică planificarea financiară; rămâi într-o zonă de confort bănească sigură, dar limitativă.</string>
+    <string name="card_65_feelings_up">Te simți entuziasmat de posibilitățile viitoare; faza de planificare te energizează.</string>
+    <string name="card_65_feelings_rev">Te simți paralizat de indecizie în privința viitorului; frica întrece entuziasmul.</string>
+    <string name="card_65_actions_up">Planifică viitorul cu îndrăzneală; privește dincolo de orizontul actual și ia decizii strategice.</string>
+    <string name="card_65_actions_rev">Nu mai juca la sigur; frica de necunoscut nu ar trebui să te împiedice să-ți faci planuri.</string>
+
+    <!-- Card 66: Three of Wands -->
+    <string name="card_66_love_up">Dragostea se extinde dincolo de granițe; relația crește spre un teritoriu nou și palpitant.</string>
+    <string name="card_66_love_rev">Planurile romantice se lovesc de întârzieri sau obstacole; viziunea limitată frânează creșterea iubirii.</string>
+    <string name="card_66_career_up">Expansiune în carieră și oportunități peste hotare; viziunea ta profesională ajunge departe.</string>
+    <string name="card_66_career_rev">Expansiunea carierei este întârziată de obstacole; frustrare față de ritmul creșterii profesionale.</string>
+    <string name="card_66_finances_up">Expansiune financiară prin oportunități internaționale sau investiții cu bătaie lungă.</string>
+    <string name="card_66_finances_rev">Creșterea financiară este întârziată; obstacolele împiedică extinderea surselor tale de venit.</string>
+    <string name="card_66_feelings_up">Te simți expansiv și cu privirea spre viitor; viziunea ta asupra viitorului te umple de optimism.</string>
+    <string name="card_66_feelings_rev">Frustrare din cauza progresului lent; simți că obstacolele îți blochează drumul spre creștere.</string>
+    <string name="card_66_actions_up">Lărgește-ți orizonturile și urmărește oportunitățile de dincolo de împrejurimile tale imediate.</string>
+    <string name="card_66_actions_rev">Regândește-ți planurile dacă progresul stagnează; caută căi alternative de expansiune.</string>
+
+    <!-- Card 67: Four of Wands -->
+    <string name="card_67_love_up">Sărbători romantice pline de bucurie, precum logodna sau mutatul împreună; o piatră de hotar în relație.</string>
+    <string name="card_67_love_rev">Instabilitatea relației tulbură sărbătorile; lipsă de sprijin din partea familiei sau a comunității.</string>
+    <string name="card_67_career_up">Sărbătorești o piatră de hotar în carieră sau o reușită de echipă; o comunitate profesională care te susține.</string>
+    <string name="card_67_career_rev">Instabilitate la locul de muncă sau lipsă de armonie în echipă; sărbătorile profesionale par premature.</string>
+    <string name="card_67_finances_up">Stabilitate financiară demnă de sărbătorit; o piatră de hotar în clădirea bogăției sau în dobândirea unei locuințe.</string>
+    <string name="card_67_finances_rev">Instabilitatea financiară îți amenință sentimentul de cămin și siguranță; schimbări neașteptate.</string>
+    <string name="card_67_feelings_up">Te simți sărbătoresc și recunoscător; sentimentul de apartenență și bucuria împărtășită îți înalță spiritul.</string>
+    <string name="card_67_feelings_rev">Te simți nesusținut și instabil; conflictul interior te împiedică să sărbătorești pe deplin.</string>
+    <string name="card_67_actions_up">Sărbătorește-ți reușitele alături de comunitatea ta; marchează această piatră de hotar cu recunoștință.</string>
+    <string name="card_67_actions_rev">Rezolvă instabilitatea de fond înainte să sărbătorești; asigură-te că temeliile tale sunt cu adevărat solide.</string>
+
+    <!-- Card 68: Five of Wands -->
+    <string name="card_68_love_up">Energie competitivă sau neînțelegeri în dragoste; un conflict care poate fi constructiv dacă e gestionat bine.</string>
+    <string name="card_68_love_rev">Eviți conflictele necesare din relație; frământarea interioară ia locul neînțelegerilor exterioare.</string>
+    <string name="card_68_career_up">Competiția profesională sănătoasă te împinge să excelezi; neînțelegerile de la muncă stârnesc inovația.</string>
+    <string name="card_68_career_rev">Eviți conflictele de la muncă cu prețul progresului; cauți compromisul în locul competiției.</string>
+    <string name="card_68_finances_up">Competiție financiară sau licitații aprinse; tensiunea din jurul deciziilor bănești cere energie.</string>
+    <string name="card_68_finances_rev">Rezolvarea disputelor financiare prin compromis; te retragi din cheltuielile competitive.</string>
+    <string name="card_68_feelings_up">Te simți aprins de competiție și provocare; adrenalina unui conflict sănătos.</string>
+    <string name="card_68_feelings_rev">Conflictul interior îți secătuiește energia; evitarea bătăliilor exterioare creează lupte interioare.</string>
+    <string name="card_68_actions_up">Implică-te în competiție sănătoasă; folosește conflictul drept combustibil pentru creștere și îmbunătățire.</string>
+    <string name="card_68_actions_rev">Caută rezolvarea și compromisul; nu orice bătălie merită dusă.</string>
+
+    <!-- Card 69: Six of Wands -->
+    <string name="card_69_love_up">Succes romantic și recunoaștere publică a relației tale; mândrie față de parteneriatul vostru.</string>
+    <string name="card_69_love_rev">Ciocniri de orgolii în relație; cauți validare exterioară în loc să clădești o legătură autentică.</string>
+    <string name="card_69_career_up">Recunoaștere profesională publică și victorie în carieră; reușitele tale sunt sărbătorite de colegi.</string>
+    <string name="card_69_career_rev">Lipsă de recunoaștere profesională; o cădere de pe culmi sau un eșec în ciuda strădaniilor tale.</string>
+    <string name="card_69_finances_up">Succes financiar care câștigă recunoaștere publică; prosperitatea ta este vizibilă și sărbătorită.</string>
+    <string name="card_69_finances_rev">Eșec financiar sau pierderea unei poziții financiare odinioară puternice; un eșec care te smerește.</string>
+    <string name="card_69_feelings_up">Te simți victorios și recunoscut public; încrederea în sine crește pe măsură ce ceilalți îți sărbătoresc succesul.</string>
+    <string name="card_69_feelings_rev">Te simți nerecunoscut sau umilit; dezumflarea orgoliului după un eșec public.</string>
+    <string name="card_69_actions_up">Primește laudele cu grație și lasă-ți succesul să-i inspire pe alții; condu cu încredere.</string>
+    <string name="card_69_actions_rev">Nu lăsa orgoliul să-ți conducă faptele; succesul adevărat nu cere validare exterioară neîncetată.</string>
+
+    <!-- Card 70: Seven of Wands -->
+    <string name="card_70_love_up">Îți aperi relația împotriva provocărilor din afară; stai neclintit în convingerile tale romantice.</string>
+    <string name="card_70_love_rev">Renunți prea ușor la relație; te simți copleșit de provocările romantice.</string>
+    <string name="card_70_career_up">Îți susții poziția în fața rivalilor profesionali; îți aperi locul cu curaj.</string>
+    <string name="card_70_career_rev">Copleșit de competiția de la locul de muncă; te gândești să renunți la un drum de carieră solicitant.</string>
+    <string name="card_70_finances_up">Îți aperi poziția financiară împotriva amenințărilor; perseverența îți protejează resursele.</string>
+    <string name="card_70_finances_rev">Epuizare financiară din cauza luptelor neîncetate; te gândești să capitulezi într-o dispută bănească.</string>
+    <string name="card_70_feelings_up">Te simți asediat, dar hotărât; curajul te susține în ciuda provocărilor tot mai mari.</string>
+    <string name="card_70_feelings_rev">Te simți epuizat și gata să renunți; lupta continuă ți-a secătuit rezervele.</string>
+    <string name="card_70_actions_up">Stai neclintit și apără-ți poziția; perseverența te va purta prin aceste încercări.</string>
+    <string name="card_70_actions_rev">Cântărește dacă această bătălie mai merită dusă; retragerea strategică nu este totuna cu înfrângerea.</string>
+
+    <!-- Card 71: Eight of Wands -->
+    <string name="card_71_love_up">Evoluții romantice rapide; relația prinde viteză cu un elan și un ritm palpitant.</string>
+    <string name="card_71_love_rev">Progresul romantic se oprește; întârzierile și frustrarea încetinesc o relație care avansa rapid.</string>
+    <string name="card_71_career_up">Progres rapid în carieră și evoluții profesionale fulgerătoare; elanul te poartă înainte.</string>
+    <string name="card_71_career_rev">Progresul în carieră se lovește de întârzieri neașteptate; obstacole frustrante îți încetinesc elanul profesional.</string>
+    <string name="card_71_finances_up">Evoluții financiare fulgerătoare; banii se mișcă repede, iar oportunitățile cer acțiune promptă.</string>
+    <string name="card_71_finances_rev">Tranzacțiile financiare întârzie; banii așteptați sosesc încet.</string>
+    <string name="card_71_feelings_up">Te simți plin de energie și purtat de entuziasmul progresului și al mișcării rapide.</string>
+    <string name="card_71_feelings_rev">Frustrare din cauza întârzierilor; te simți nerăbdător când elanul se oprește.</string>
+    <string name="card_71_actions_up">Acționează repede și hotărât; elanul e de partea ta, așa că lovește cât energia e la înălțime.</string>
+    <string name="card_71_actions_rev">Ai răbdare în timpul întârzierilor; folosește încetinirea ca să te pregătești pentru revenirea elanului.</string>
+
+    <!-- Card 72: Nine of Wands -->
+    <string name="card_72_love_up">O iubire rezistentă care a înfruntat multe furtuni; o ultimă linie de apărare pentru a-ți proteja relația.</string>
+    <string name="card_72_love_rev">Epuizare emoțională în dragoste; rănile din trecut te fac bănuitor și defensiv în relații.</string>
+    <string name="card_72_career_up">Hotărâre perseverentă în ciuda provocărilor profesionale repetate; ești aproape de linia de sosire.</string>
+    <string name="card_72_career_rev">Epuizare și istovire în carieră; lupta a durat prea mult, iar rezervele sunt secătuite.</string>
+    <string name="card_72_finances_up">Gestionare financiară rezistentă în ciuda provocărilor persistente; te menții în ciuda eșecurilor.</string>
+    <string name="card_72_finances_rev">Epuizare financiară; lupta îndelungată cu problemele bănești te macină.</string>
+    <string name="card_72_feelings_up">Te simți marcat de luptă, dar neclintit; hotărârea te ține în picioare în ciuda oboselii.</string>
+    <string name="card_72_feelings_rev">Te simți complet epuizat și gata să te prăbușești; povara a devenit prea grea.</string>
+    <string name="card_72_actions_up">Rămâi rezistent și mergi mai departe; ești mai aproape de succes decât îți dai seama.</string>
+    <string name="card_72_actions_rev">Recunoaște când e destul; odihna și refacerea nu sunt semne de slăbiciune.</string>
+
+    <!-- Card 73: Ten of Wands -->
+    <string name="card_73_love_up">Povara responsabilităților din relație pare strivitoare; dragostea devine o povară în loc de bucurie.</string>
+    <string name="card_73_love_rev">Eliberezi poverile relației; înveți să împarți responsabilitățile și să lași greutatea inutilă.</string>
+    <string name="card_73_career_up">Copleșit de responsabilitățile profesionale; duci toată povara muncii pe umerii tăi.</string>
+    <string name="card_73_career_rev">Delegi responsabilități la muncă; renunți la nevoia de a face totul singur.</string>
+    <string name="card_73_finances_up">Poverile financiare apasă greu; stresul gestionării prea multor obligații este copleșitor.</string>
+    <string name="card_73_finances_rev">Eliberezi poverile financiare prin delegare sau restructurare; ușurezi încărcătura bănească.</string>
+    <string name="card_73_feelings_up">Te simți strivit sub greutatea prea multor responsabilități; epuizarea și stresul domină.</string>
+    <string name="card_73_feelings_rev">Ușurare când poverile sunt lăsate jos; greutatea se ridică pe măsură ce înveți să dai drumul.</string>
+    <string name="card_73_actions_up">Cercetează care poveri sunt cu adevărat ale tale; cere ajutor înainte să te prăbușești.</string>
+    <string name="card_73_actions_rev">Lasă jos ceea ce nu trebuie să duci; deleagă și eliberează-te de responsabilitățile inutile.</string>
+
+    <!-- Card 74: Page of Wands -->
+    <string name="card_74_love_up">Un flirt nou și palpitant sau o aventură romantică; energie entuziastă și jucăușă în dragoste.</string>
+    <string name="card_74_love_rev">Neliniște romantică și lipsă de devotament; plictiseală sau decizii romantice pripite.</string>
+    <string name="card_74_career_up">O oportunitate de carieră palpitantă îți aprinde entuziasmul; explorează noi orizonturi profesionale.</string>
+    <string name="card_74_career_rev">Lipsă de direcție în carieră; amâni obiectivele profesionale sau iei decizii pripite.</string>
+    <string name="card_74_finances_up">Explorezi cu entuziasm noi inițiative financiare; abordezi banii cu o energie aventuroasă.</string>
+    <string name="card_74_finances_rev">Decizii financiare pripite, fără o cercetare potrivită; lipsă de direcție în chestiunile bănești.</string>
+    <string name="card_74_feelings_up">Te simți aventuros și entuziast; o energie de spirit liber te împinge spre descoperire.</string>
+    <string name="card_74_feelings_rev">Te simți plictisit și fără țintă; energie neliniștită fără o ieșire productivă.</string>
+    <string name="card_74_actions_up">Urmează-ți entuziasmul și explorează aventuri noi; lasă-ți spiritul liber să deschidă drumul.</string>
+    <string name="card_74_actions_rev">Canalizează-ți energia neliniștită în mod productiv; găsește o direcție înainte să faci pași impulsivi.</string>
+
+    <!-- Card 75: Knight of Wands -->
+    <string name="card_75_love_up">O cucerire romantică pasională și îndrăzneață; o iubire înflăcărată și aventuroasă te ia pe sus.</string>
+    <string name="card_75_love_rev">Decizii romantice impulsive; un partener nestatornic, împrăștiat sau care fuge de angajament.</string>
+    <string name="card_75_career_up">Mișcări de carieră îndrăznețe și pasionale; treci la fapte în privința viselor profesionale ambițioase.</string>
+    <string name="card_75_career_rev">Energie profesională împrăștiată; începi multe proiecte, dar nu termini niciunul din cauza nerăbdării.</string>
+    <string name="card_75_finances_up">Mișcări financiare îndrăznețe, alimentate de pasiune și spirit de aventură; riscuri calculate.</string>
+    <string name="card_75_finances_rev">Decizii financiare impulsive; cheltuieli împrăștiate care secătuiesc resursele fără direcție.</string>
+    <string name="card_75_feelings_up">Te simți îndrăzneț, pasional și gata de acțiune; un foc aventuros arde înlăuntrul tău.</string>
+    <string name="card_75_feelings_rev">Te simți frustrat și împrăștiat; energia ta pasională nu are o ieșire concentrată.</string>
+    <string name="card_75_actions_up">Avântă-te înainte cu pasiune îndrăzneață și acționează pentru ceea ce te entuziasmează cel mai mult.</string>
+    <string name="card_75_actions_rev">Concentrează-ți energia împrăștiată; pasiunea fără direcție duce la epuizare și frustrare.</string>
+
+    <!-- Card 76: Queen of Wands -->
+    <string name="card_76_love_up">O energie romantică sigură pe sine și caldă; carisma și vitalitatea ta atrag o dragoste profundă.</string>
+    <string name="card_76_love_rev">Gelozie sau nesiguranță în dragoste; comportamentul autoritar îl îndepărtează pe partener.</string>
+    <string name="card_76_career_up">Conducere carismatică și prezență profesională plină de încredere; căldura ta inspiră echipele.</string>
+    <string name="card_76_career_rev">Gelozie profesională sau comportament egoist la muncă; nesiguranța îți subminează autoritatea de lider.</string>
+    <string name="card_76_finances_up">Gestionare financiară plină de încredere; carisma și hotărârea ta atrag bogăția.</string>
+    <string name="card_76_finances_rev">Cheltuieli egoiste sau invidie pe bogăția altora; nesiguranța financiară duce la decizii proaste.</string>
+    <string name="card_76_feelings_up">Te simți radiant de încrezător și cald; focul tău lăuntric arde strălucitor și îi inspiră pe ceilalți.</string>
+    <string name="card_76_feelings_rev">Nesiguranța se ascunde în spatele unei fațade încrezătoare; gelozia îți roade căldura interioară.</string>
+    <string name="card_76_actions_up">Condu cu căldură și încredere; lasă-ți carisma și hotărârea să-i inspire pe cei din jur.</string>
+    <string name="card_76_actions_rev">Înfruntă-ți nesiguranțele cu sinceritate; gelozia și egoismul nu fac decât să-ți micșoreze adevărata putere.</string>
+
+    <!-- Card 77: King of Wands -->
+    <string name="card_77_love_up">Un partener îndrăzneț și vizionar; un lider pasional în dragoste, care inspiră devotament și entuziasm.</string>
+    <string name="card_77_love_rev">Un partener dominator sau autoritar; impulsivitatea și lipsa de scrupule rănesc relația.</string>
+    <string name="card_77_career_up">Conducere antreprenorială vizionară; viziunea ta profesională îndrăzneață îi inspiră pe ceilalți să te urmeze.</string>
+    <string name="card_77_career_rev">Stil de conducere tiranic la muncă; deciziile de afaceri impulsive îți subminează autoritatea.</string>
+    <string name="card_77_finances_up">Conducere financiară îndrăzneață și vizionară; inițiativele antreprenoriale aduc câștiguri impresionante.</string>
+    <string name="card_77_finances_rev">Decizii financiare impulsive dintr-o poziție de putere; goană nemiloasă după bogăție cu orice preț.</string>
+    <string name="card_77_feelings_up">Te simți un lider înnăscut, cu o viziune clară și pasională; încrederea îndrăzneață radiază din tine.</string>
+    <string name="card_77_feelings_rev">Te simți dominator și scăpat de sub control; puterea fără înțelepciune duce la frământare lăuntrică.</string>
+    <string name="card_77_actions_up">Condu cu îndrăzneală, viziune și onoare; inspiră-i pe ceilalți prin exemplul tău pasional.</string>
+    <string name="card_77_actions_rev">Temperează-ți îndrăzneala cu înțelepciune; adevărata conducere îi slujește pe ceilalți în loc să-i domine.</string>
+</resources>

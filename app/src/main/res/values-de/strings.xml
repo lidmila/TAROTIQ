@@ -97,6 +97,10 @@
     <string name="drawing_confirm_selection">Auswahl bestätigen</string>
     <string name="drawing_scroll_hint">↓ Scrollen Sie für weitere Karten ↓</string>
     <string name="spread_pick_cards">Wählen Sie %d Karten für Ihre Legung</string>
+    <plurals name="spread_pick_cards">
+        <item quantity="one">Wählen Sie %d Karte für Ihre Legung</item>
+        <item quantity="other">Wählen Sie %d Karten für Ihre Legung</item>
+    </plurals>
     <string name="drawing_focus_energy">Konzentrieren Sie Ihre Energie auf Ihre Absicht.</string>
 
     <!-- Spread Positions -->

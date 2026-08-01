@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TAROTIQ</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Portal</string>
+    <string name="nav_portal">Portal</string>
+    <string name="nav_library">Bibliotecă</string>
+    <string name="nav_new_reading">Oracol</string>
+    <string name="nav_oracle">Oracol</string>
+    <string name="nav_history">Arhivă</string>
+    <string name="nav_grimoire">Arhivă</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Auth -->
+    <string name="auth_login">Conectează-te</string>
+    <string name="auth_register">Înregistrează-te</string>
+    <string name="auth_email">E-mail</string>
+    <string name="auth_password">Parolă</string>
+    <string name="auth_passwordless">Conectare prin link pe e-mail</string>
+    <string name="auth_passwordless_desc">Îți trimitem un link pe e-mail</string>
+    <string name="auth_enter_email_first">Introdu mai întâi adresa de e-mail</string>
+    <string name="auth_forgot_password_title">Resetarea parolei</string>
+    <string name="auth_forgot_password_send">Trimite</string>
+    <string name="auth_google">Continuă cu Google</string>
+    <string name="auth_logout">Deconectează-te</string>
+    <string name="auth_delete_account">Șterge contul</string>
+    <string name="auth_profile">Profil</string>
+    <string name="auth_email_sent">Link trimis pe e-mailul tău</string>
+    <string name="auth_forgot_password">Ai uitat parola?</string>
+    <string name="auth_reset_sent">E-mailul de resetare a parolei a fost trimis</string>
+
+    <!-- Home -->
+    <string name="home_daily_card">Cartea zilei</string>
+    <string name="home_daily_card_desc">Dezvăluie-ți cartea zilnică</string>
+    <string name="home_quick_reading">Citire rapidă</string>
+    <string name="home_new_reading">Citire nouă</string>
+    <string name="home_streak">Serie</string>
+    <string name="home_streak_days">%d zile la rând</string>
+
+    <!-- Reading Topics -->
+    <string name="topic_love">Iubire</string>
+    <string name="topic_career">Carieră</string>
+    <string name="topic_general">General</string>
+    <string name="topic_yes_no">Da / Nu</string>
+    <string name="topic_spiritual">Spiritual</string>
+    <string name="topic_select">Alege tema citirii</string>
+
+    <!-- Question -->
+    <string name="question_title">Întrebarea ta</string>
+    <string name="question_hint">Stelele ascultă…</string>
+    <string name="question_skip">Sari peste</string>
+    <string name="question_continue">Continuă</string>
+
+    <!-- Spread -->
+    <string name="spread_select">Alege etalarea</string>
+    <string name="spread_single">O carte</string>
+    <string name="spread_single_desc">O privire rapidă</string>
+    <string name="spread_three_card">Trei cărți</string>
+    <string name="spread_three_card_desc">Trecut · Prezent · Viitor</string>
+    <string name="spread_celtic_cross">Crucea Celtică</string>
+    <string name="spread_celtic_cross_desc">Citire profundă (10 cărți)</string>
+    <string name="spread_relationship">Citire de relație</string>
+    <string name="spread_relationship_desc">Tu · Partenerul · Relația · Provocări · Viitor</string>
+    <string name="spread_year_ahead">Perspectiva anului</string>
+    <string name="spread_year_ahead_desc">12 cărți · O lună, o carte</string>
+    <string name="spread_shadow_self">Eul din umbră</string>
+    <string name="spread_shadow_self_desc">Masca · Umbra · Rădăcina · Frica · Darul · Integrarea</string>
+    <string name="spread_crossroads">Răscrucea destinului</string>
+    <string name="spread_crossroads_desc">Două căi · Factorul ascuns · Sfat</string>
+    <string name="spread_chakra">Citirea chakrelor</string>
+    <string name="spread_chakra_desc">7 chakre · Diagnostic energetic</string>
+    <string name="spread_twin_flame">Suflete pereche</string>
+    <string name="spread_twin_flame_desc">Legătură karmică · Lecții · Misiune comună</string>
+    <string name="spread_moon_cycle">Ciclul lunar</string>
+    <string name="spread_moon_cycle_desc">8 faze ale Lunii · Ce să semeni, să cultivi, să culegi</string>
+    <string name="spread_career_compass">Busola carierei</string>
+    <string name="spread_career_compass_desc">Talente · Blocaj · Oportunitate · Finanțe</string>
+    <string name="spread_inner_child">Copilul interior</string>
+    <string name="spread_inner_child_desc">Rană · Protecție · Vindecare · Dar</string>
+    <string name="spread_tree_of_life">Arborele Vieții</string>
+    <string name="spread_tree_of_life_desc">10 sefirot · Citire cabalistică</string>
+    <string name="spread_week_ahead">Ghidul săptămânii</string>
+    <string name="spread_week_ahead_desc">7 cărți · Una pentru fiecare zi</string>
+    <string name="spread_karmic">Citire karmică</string>
+    <string name="spread_karmic_desc">Datorie karmică · Lecții · Scopul încarnării</string>
+    <string name="spread_self_love">Oglinda iubirii de sine</string>
+    <string name="spread_self_love_desc">Imaginea de sine · Puterea ascunsă · Afirmație</string>
+    <string name="spread_cost">%d monede</string>
+    <string name="spread_cost_singular">%d monedă</string>
+    <string name="spread_pick_cards">Alege %d cărți pentru citirea ta</string>
+
+    <!-- Card Drawing -->
+    <string name="drawing_tap_to_reveal">Atinge cartea pentru a o dezvălui</string>
+    <string name="drawing_card_revealed">Carte dezvăluită!</string>
+    <string name="drawing_all_revealed">Toate cărțile au fost dezvăluite</string>
+    <string name="drawing_get_reading">Primește citirea</string>
+    <string name="drawing_confirm_selection">Confirmă selecția</string>
+    <string name="drawing_scroll_hint">↓ Derulează pentru a vedea mai multe cărți ↓</string>
+    <plurals name="spread_pick_cards">
+        <item quantity="one">Alege %d carte pentru citirea ta</item>
+        <item quantity="few">Alege %d cărți pentru citirea ta</item>
+        <item quantity="other">Alege %d de cărți pentru citirea ta</item>
+    </plurals>
+    <string name="drawing_focus_energy">Concentrează-ți energia asupra intenției tale.</string>
+    <string name="reading_extra_card_offer">Vrei să afli mai multe?\nAdaugă încă o carte la citirea ta.</string>
+    <string name="reading_buy_extra_card">Cumpără o carte în plus pentru 1 monedă</string>
+    <string name="extra_card_title">Alege o carte</string>
+    <string name="extra_card_confirm">Confirmă selecția</string>
+
+    <!-- Spread Positions -->
+    <string name="position_insight">Perspectivă</string>
+    <string name="position_past">Trecut</string>
+    <string name="position_present">Prezent</string>
+    <string name="position_future">Viitor</string>
+    <string name="position_you">Tu</string>
+    <string name="position_partner">Partenerul</string>
+    <string name="position_relationship">Relația</string>
+    <string name="position_challenges">Provocări</string>
+    <string name="position_present_situation">Prezent</string>
+    <string name="position_challenge">Provocare</string>
+    <string name="position_conscious">Conștient</string>
+    <string name="position_subconscious">Subconștient</string>
+    <string name="position_advice">Sfat</string>
+    <string name="position_influences">Influențe</string>
+    <string name="position_hopes">Speranțe și temeri</string>
+    <string name="position_outcome">Rezultat</string>
+    <string name="position_extra">Carte suplimentară</string>
+
+    <!-- Year Ahead positions -->
+    <string name="position_january">Ianuarie</string>
+    <string name="position_february">Februarie</string>
+    <string name="position_march">Martie</string>
+    <string name="position_april">Aprilie</string>
+    <string name="position_may">Mai</string>
+    <string name="position_june">Iunie</string>
+    <string name="position_july">Iulie</string>
+    <string name="position_august">August</string>
+    <string name="position_september">Septembrie</string>
+    <string name="position_october">Octombrie</string>
+    <string name="position_november">Noiembrie</string>
+    <string name="position_december">Decembrie</string>
+
+    <!-- Shadow Self positions -->
+    <string name="position_mask">Masca</string>
+    <string name="position_shadow">Umbra</string>
+    <string name="position_shadow_root">Rădăcina umbrei</string>
+    <string name="position_fear">Frica</string>
+    <string name="position_shadow_gift">Darul umbrei</string>
+    <string name="position_integration">Integrarea</string>
+
+    <!-- Crossroads positions -->
+    <string name="position_current_situation">Situația actuală</string>
+    <string name="position_path_a_desc">Calea A</string>
+    <string name="position_path_a_outcome">Rezultatul căii A</string>
+    <string name="position_path_b_desc">Calea B</string>
+    <string name="position_path_b_outcome">Rezultatul căii B</string>
+    <string name="position_hidden_factor">Factorul ascuns</string>
+
+    <!-- Chakra positions -->
+    <string name="position_root_chakra">Chakra rădăcinii</string>
+    <string name="position_sacral_chakra">Chakra sacrală</string>
+    <string name="position_solar_plexus">Plexul solar</string>
+    <string name="position_heart_chakra">Chakra inimii</string>
+    <string name="position_throat_chakra">Chakra gâtului</string>
+    <string name="position_third_eye">Al treilea ochi</string>
+    <string name="position_crown_chakra">Chakra coroanei</string>
+
+    <!-- Twin Flame positions -->
+    <string name="position_your_energy">Energia ta</string>
+    <string name="position_their_energy">Energia celuilalt suflet</string>
+    <string name="position_karmic_bond">Legătura karmică</string>
+    <string name="position_your_lesson">Lecția ta</string>
+    <string name="position_their_lesson">Lecția partenerului</string>
+    <string name="position_shared_mission">Misiunea comună</string>
+    <string name="position_obstacle">Obstacolul</string>
+
+    <!-- Moon Cycle positions -->
+    <string name="position_new_moon">Lună Nouă — Ce să semeni</string>
+    <string name="position_waxing_crescent">Semilună crescătoare — Ce să cultivi</string>
+    <string name="position_first_quarter">Primul pătrar — Acțiune</string>
+    <string name="position_waxing_gibbous">Lună crescătoare — Ce să ajustezi</string>
+    <string name="position_full_moon">Lună Plină — Ce să culegi</string>
+    <string name="position_waning_gibbous">Lună descrescătoare — Recunoștință</string>
+    <string name="position_last_quarter">Ultimul pătrar — Ce să lași să plece</string>
+    <string name="position_dark_moon">Lună întunecată — Reflecție</string>
+
+    <!-- Career Compass positions -->
+    <string name="position_hidden_talents">Talente ascunse</string>
+    <string name="position_current_block">Blocajul actual</string>
+    <string name="position_opportunity">Oportunitate la orizont</string>
+    <string name="position_skill_to_develop">Abilitate de dezvoltat</string>
+    <string name="position_financial_energy">Energie financiară</string>
+    <string name="position_next_step">Următorul pas</string>
+
+    <!-- Inner Child positions -->
+    <string name="position_inner_child">Copilul interior</string>
+    <string name="position_wound">Rana</string>
+    <string name="position_protective_pattern">Tiparul protector</string>
+    <string name="position_healing">Vindecarea</string>
+    <string name="position_inner_gift">Darul</string>
+
+    <!-- Tree of Life positions -->
+    <string name="position_keter">Keter — Coroana</string>
+    <string name="position_chokma">Chokmah — Înțelepciunea</string>
+    <string name="position_bina">Binah — Înțelegerea</string>
+    <string name="position_chesed">Chesed — Îndurarea</string>
+    <string name="position_gevura">Gevurah — Puterea</string>
+    <string name="position_tiferet">Tiferet — Frumusețea</string>
+    <string name="position_netzach">Netzach — Victoria</string>
+    <string name="position_hod">Hod — Gloria</string>
+    <string name="position_yesod">Yesod — Temelia</string>
+    <string name="position_malkhut">Malkuth — Regatul</string>
+
+    <!-- Week Ahead positions -->
+    <string name="position_monday">Luni</string>
+    <string name="position_tuesday">Marți</string>
+    <string name="position_wednesday">Miercuri</string>
+    <string name="position_thursday">Joi</string>
+    <string name="position_friday">Vineri</string>
+    <string name="position_saturday">Sâmbătă</string>
+    <string name="position_sunday">Duminică</string>
+
+    <!-- Karmic positions -->
+    <string name="position_karmic_debt">Datoria karmică</string>
+    <string name="position_karmic_gift">Darul karmic</string>
+    <string name="position_current_lesson">Lecția actuală</string>
+    <string name="position_repeating_pattern">Tiparul care se repetă</string>
+    <string name="position_what_to_break">Ce să întrerupi</string>
+    <string name="position_karmic_reward">Răsplata karmică</string>
+    <string name="position_life_purpose">Scopul încarnării</string>
+
+    <!-- Self-Love positions -->
+    <string name="position_how_i_see_myself">Cum mă văd pe mine</string>
+    <string name="position_how_others_see_me">Cum mă văd ceilalți</string>
+    <string name="position_false_guilt">Vină nemeritată</string>
+    <string name="position_hidden_strength">Puterea ascunsă</string>
+    <string name="position_what_i_need">De ce am nevoie de la mine</string>
+    <string name="position_affirmation">Afirmația cărților</string>
+
+    <!-- Reading -->
+    <string name="reading_interpreting">Madame Stella îți citește cărțile…</string>
+    <string name="reading_follow_up">Întreabă mai multe…</string>
+    <string name="reading_follow_up_hint">Vrei să mai întrebi ceva?</string>
+    <string name="reading_save">Salvează citirea</string>
+    <string name="reading_share">Distribuie</string>
+    <string name="reading_saved">Citire salvată</string>
+    <string name="reading_interpretation_title">Interpretare</string>
+    <string name="reading_summary">Rezumatul citirii</string>
+    <string name="reading_upright">În poziție dreaptă</string>
+    <string name="reading_reversed">Inversată</string>
+
+    <!-- History -->
+    <string name="history_title">Istoricul citirilor</string>
+    <string name="history_empty">Nicio citire încă</string>
+    <string name="history_filter_all">Toate</string>
+
+    <!-- Card Library -->
+    <string name="library_title">Biblioteca de cărți</string>
+    <string name="library_major_arcana">Arcana Majoră</string>
+    <string name="library_minor_arcana">Arcana Minoră</string>
+    <string name="library_cups">Cupe</string>
+    <string name="library_pentacles">Pentacle</string>
+    <string name="library_swords">Spade</string>
+    <string name="library_wands">Bastoane</string>
+    <string name="library_all">Toate</string>
+    <string name="library_search">Caută o carte…</string>
+    <string name="library_upright_keywords">Cuvinte-cheie (poziție dreaptă)</string>
+    <string name="library_reversed_keywords">Cuvinte-cheie (inversată)</string>
+    <string name="library_love">Iubire</string>
+    <string name="library_career">Carieră</string>
+    <string name="library_finances">Finanțe</string>
+    <string name="library_feelings">Sentimente</string>
+    <string name="library_actions">Sfaturi</string>
+
+    <!-- Daily Card -->
+    <string name="daily_title">Cartea zilei</string>
+    <string name="daily_tap_reveal">Atinge pentru a-ți dezvălui cartea zilnică</string>
+    <string name="daily_already_drawn">Ți-ai dezvăluit deja cartea de azi</string>
+    <string name="daily_view_details">Vezi detaliile cărții</string>
+
+    <!-- Coins -->
+    <string name="coins_balance">Monedele tale</string>
+    <string name="coins_buy">Cumpără monede</string>
+    <string name="coins_pack_5">5 monede</string>
+    <string name="coins_pack_15">15 monede</string>
+    <string name="coins_pack_50">50 de monede</string>
+    <string name="coins_pack_300">300 de monede</string>
+    <string name="coins_save">ECONOMISEȘTI %d%%</string>
+    <string name="coins_most_popular">Cel mai popular</string>
+    <string name="coins_best_value">Cea mai bună valoare</string>
+    <string name="coins_not_enough">Nu ai destule monede</string>
+    <string name="coins_free_readings">Mai ai %d citiri gratuite</string>
+    <string name="coins_free_reading_used">Citire gratuită folosită (%d/3)</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Profil</string>
+    <string name="profile_zodiac">Semn zodiacal</string>
+    <string name="profile_achievements">Realizări</string>
+    <string name="profile_statistics">Statistici</string>
+    <string name="profile_total_readings">Total citiri</string>
+    <string name="profile_favorite_card">Cea mai frecventă carte</string>
+    <string name="profile_longest_streak">Cea mai lungă serie</string>
+    <string name="profile_language">Limbă</string>
+    <string name="profile_notifications">Notificări</string>
+    <string name="profile_notification_time">Ora de reamintire</string>
+    <string name="profile_about">Despre aplicație</string>
+    <string name="profile_legal">Informații legale</string>
+    <string name="profile_other_apps">Încearcă și celelalte aplicații ale noastre</string>
+    <string name="app_kvitta_desc">Împărțire inteligentă a cheltuielilor și stingerea datoriilor</string>
+    <string name="app_bettermingle_desc">Îmbunătățește-ți profilurile de dating cu ajutorul AI</string>
+    <string name="app_bettershelf_desc">Organizează-ți biblioteca și descoperă cărți noi</string>
+    <string name="app_dreamwitness_desc">Înregistrează-ți și interpretează-ți visele</string>
+
+    <!-- Info -->
+    <string name="faq_title">Întrebări frecvente</string>
+    <string name="about_title">Despre TAROTIQ</string>
+    <string name="about_version">Versiunea %s</string>
+    <string name="contact_title">Contactează asistența</string>
+    <string name="contact_send">Trimite</string>
+    <string name="contact_subject">Subiect</string>
+    <string name="contact_message">Mesaj</string>
+    <string name="terms_title">Termeni și condiții</string>
+    <string name="privacy_title">Politica de confidențialitate</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Cartea zilei</string>
+    <string name="notification_channel_description">Memento pentru cartea de tarot zilnică</string>
+    <string name="notification_daily_title">Cartea ta zilnică te așteaptă</string>
+    <string name="notification_daily_text">Descoperă ce ți-au pregătit stelele astăzi.</string>
+
+    <!-- Smart notification variants -->
+    <string name="notif_streak_title">Seria ta de %d zile continuă!</string>
+    <string name="notif_streak_text">Nu rupe firul cosmic. Cartea zilei te așteaptă.</string>
+    <string name="notif_streak_risk_title">Seria ta este în pericol!</string>
+    <string name="notif_streak_risk_text">Nu ți-ai tras încă o carte azi. Seria ta de %d zile slăbește…</string>
+    <string name="notif_comeback_title">Stelele te așteaptă</string>
+    <string name="notif_comeback_text">O nouă carte zilnică este pregătită. Începe un nou capitol.</string>
+    <string name="notif_full_moon_title">Luna Plină strălucește deasupra ta</string>
+    <string name="notif_full_moon_text">Luna Plină dezvăluie secrete ascunse. Ce va dezvălui cartea ta?</string>
+    <string name="notif_new_moon_title">Luna Nouă aduce noi începuturi</string>
+    <string name="notif_new_moon_text">Momentul ideal pentru introspecție. Trage-ți cartea zilei.</string>
+    <string name="notif_milestone_title">Te apropii de un prag important!</string>
+    <string name="notif_milestone_week_text">Încă %d zile până la seria săptămânală! Nu renunța.</string>
+    <string name="notif_milestone_month_text">Încă %d zile până la seria lunară! Ești minunat.</string>
+    <string name="notif_general_1_title">Ce îți șoptesc stelele?</string>
+    <string name="notif_general_1_text">Cartea ta zilnică ascunde un mesaj. Dezvăluie-l.</string>
+    <string name="notif_general_2_title">O zi nouă, o carte nouă</string>
+    <string name="notif_general_2_text">Ce energie îți aduce ziua de azi? Află.</string>
+    <string name="notif_general_3_title">Universul are un mesaj pentru tine</string>
+    <string name="notif_general_3_text">Trage-ți cartea zilei și ascultă stelele.</string>
+
+    <!-- What's New -->
+    <string name="whats_new_title">Ce este nou?</string>
+    <string name="whats_new_version">Versiunea 1.6.0</string>
+    <string name="whats_new_1">⭐ Realizări noi — Colecționează 12 realizări pentru citiri, serii și cărți zilnice. Pentru fiecare primești monede bonus!</string>
+    <string name="whats_new_2">❄️ Înghețarea seriei — Ai sărit o zi? Seria nu se rupe dacă ai o înghețare. Primești una pentru fiecare serie săptămânală.</string>
+    <string name="whats_new_3">🔮 Mesajul cosmic zilnic — Horoscop personalizat după semnul tău zodiacal și faza Lunii, nou în fiecare zi.</string>
+    <string name="whats_new_4">📲 Distribuirea citirilor — Împărtășește-ți cartea zilei sau citirea ca o imagine frumoasă cu prietenii.</string>
+    <string name="whats_new_5">🌟 Tema săptămânii — În fiecare săptămână o nouă recomandare tematică de etalare, care te inspiră spre o cunoaștere mai profundă.</string>
+    <string name="whats_new_6">🌙 Memento-uri mai inteligente — Notificările se adaptează la seria ta, la faza Lunii și la cât timp a trecut de la ultima ta vizită.</string>
+    <string name="whats_new_dismiss">Super, hai să începem!</string>
+
+    <!-- Evening Notification -->
+    <string name="notif_evening_title">Reflecția de seară</string>
+    <string name="notif_evening_text">Cum s-a potrivit ziua ta cu cartea de dimineață? Oprește-te și reflectează.</string>
+
+    <!-- Weekly Themes -->
+    <string name="weekly_focus_title">Tema acestei săptămâni</string>
+    <string name="weekly_focus_cta">Încearcă această citire</string>
+    <string name="theme_shadow_work">Lucrul cu umbra</string>
+    <string name="theme_shadow_work_desc">Descoperă părțile ascunse ale sinelui tău și acceptă-le cu iubire.</string>
+    <string name="theme_heart_opening">Deschiderea inimii</string>
+    <string name="theme_heart_opening_desc">Concentrează-te pe iubirea de sine și armonia interioară.</string>
+    <string name="theme_career_focus">Busola carierei</string>
+    <string name="theme_career_focus_desc">Găsește-ți direcția pe drumul tău profesional.</string>
+    <string name="theme_inner_child">Copilul interior</string>
+    <string name="theme_inner_child_desc">Vindecă rănile vechi și redescoperă-ți latura jucăușă.</string>
+    <string name="theme_cosmic_connection">Conexiune cosmică</string>
+    <string name="theme_cosmic_connection_desc">Explorează legăturile sufletești profunde din viața ta.</string>
+    <string name="theme_karmic_clearing">Curățare karmică</string>
+    <string name="theme_karmic_clearing_desc">Înțelege tiparele care se repetă și rupe-le.</string>
+    <string name="theme_lunar_wisdom">Înțelepciune lunară</string>
+    <string name="theme_lunar_wisdom_desc">Acordează-te la ciclurile Lunii pentru o introspecție mai profundă.</string>
+    <string name="theme_crossroads">La răscruce</string>
+    <string name="theme_crossroads_desc">Stai în fața unei decizii? Cărțile îți vor arăta calea.</string>
+    <string name="theme_energy_balance">Echilibru energetic</string>
+    <string name="theme_energy_balance_desc">Armonizează-ți cele șapte chakre pentru liniște interioară.</string>
+    <string name="theme_deeper_knowledge">Cunoaștere mai profundă</string>
+    <string name="theme_deeper_knowledge_desc">Scufundă-te în misterele Arborelui Vieții.</string>
+    <string name="theme_week_planning">Planificarea săptămânii</string>
+    <string name="theme_week_planning_desc">Află ce îți aduce fiecare zi a acestei săptămâni.</string>
+    <string name="theme_relationships">Relații</string>
+    <string name="theme_relationships_desc">Explorează dinamica celor mai apropiate relații ale tale.</string>
+
+    <!-- Daily Horoscope -->
+    <string name="horoscope_title">Mesajul cosmic al zilei</string>
+    <string name="horoscope_set_zodiac">Setează-ți semnul zodiacal pentru horoscopul zilnic</string>
+
+    <!-- Streak Features -->
+    <string name="streak_freeze_used">Serie salvată!</string>
+    <string name="streak_freeze_used_desc">Ai folosit o înghețare a seriei. Rămase: %d</string>
+    <string name="streak_freeze_count">Înghețări: %d</string>
+    <string name="streak_freeze_earned">Ai primit o înghețare a seriei!</string>
+    <string name="comeback_title">Bine ai revenit!</string>
+    <string name="comeback_text">Stelele te-au așteptat. Iată un mic dar de bun venit.</string>
+    <string name="comeback_reward">+2 monede gratuite</string>
+    <string name="comeback_claim">Primește darul</string>
+    <string name="milestone_title">Prag atins!</string>
+    <string name="milestone_text">%d zile la rând! Devotamentul tău este o inspirație.</string>
+    <string name="milestone_reward">+%d monede bonus</string>
+
+    <!-- Zodiac Signs -->
+    <string name="profile_zodiac_not_set">Nesetat</string>
+    <string name="coins_count">%d monede</string>
+    <string name="element_water">Apă</string>
+    <string name="element_earth">Pământ</string>
+    <string name="element_air">Aer</string>
+    <string name="element_fire">Foc</string>
+    <string name="zodiac_aries">Berbec</string>
+    <string name="zodiac_taurus">Taur</string>
+    <string name="zodiac_gemini">Gemeni</string>
+    <string name="zodiac_cancer">Rac</string>
+    <string name="zodiac_leo">Leu</string>
+    <string name="zodiac_virgo">Fecioară</string>
+    <string name="zodiac_libra">Balanță</string>
+    <string name="zodiac_scorpio">Scorpion</string>
+    <string name="zodiac_sagittarius">Săgetător</string>
+    <string name="zodiac_capricorn">Capricorn</string>
+    <string name="zodiac_aquarius">Vărsător</string>
+    <string name="zodiac_pisces">Pești</string>
+
+    <!-- HomeScreen Portal -->
+    <string name="home_celestial_active">PORTAL CELEST ACTIV</string>
+    <string name="home_headline_1">Stelele îți șoptesc</string>
+    <string name="home_headline_2">destinul astăzi.</string>
+    <string name="home_welcome_body">Treci prin vălul dintre lumi. Fiecare carte trasă este o șoaptă din univers, un fir al destinului țesut anume pentru tine.</string>
+    <string name="home_daily_drawing">TRAGEREA ZILNICĂ</string>
+    <string name="home_consult_oracle">Consultă Oracolul</string>
+    <string name="home_daily_desc">Primește-ți mesajul zilnic din pachetul misterios. O carte, trasă în zori, te va călăuzi pe drumul tău.</string>
+    <string name="home_awaiting">AȘTEAPTĂ\nINVOCAREA</string>
+    <string name="home_reflect">REFLECTEAZĂ</string>
+    <string name="home_explore">EXPLOREAZĂ</string>
+    <string name="home_most_insightful">CEA MAI PROFUNDĂ PERSPECTIVĂ</string>
+    <string name="home_connection">Conexiune</string>
+    <string name="home_connection_desc">Inimă și suflet</string>
+    <string name="home_lunar_phase">FAZA LUNARĂ</string>
+    <string name="home_visibility">VIZIBILITATE</string>
+
+    <!-- ReadingHistoryScreen -->
+    <string name="history_sacred_archive">ARHIVA SACRĂ</string>
+    <string name="history_grimoire_title">Grimoar</string>
+    <string name="history_subtitle">Citirile tale sacre, păstrate pentru eternitate</string>
+    <string name="history_search_hint">Caută în grimoar…</string>
+    <string name="history_revisit">REVIZITEAZĂ</string>
+    <string name="history_deepen_search">APROFUNDEAZĂ CĂUTAREA</string>
+
+    <!-- ReadingInterpretation errors -->
+    <string name="error_insufficient_coins_title">Monede insuficiente</string>
+    <string name="error_insufficient_coins_desc">Pentru această citire ai nevoie de mai multe monede. Completează-ți rezerva și descoperă mesajele pe care cărțile le au pentru tine.</string>
+    <string name="coins_buy_now">CUMPĂRĂ MONEDE</string>
+    <string name="ad_watch_for_coin">VEZI O RECLAMĂ (+1 MONEDĂ)</string>
+    <string name="ad_loading">Se încarcă reclama…</string>
+    <string name="error_no_internet_title">Fără conexiune</string>
+    <string name="error_no_internet_desc">Verifică-ți conexiunea la internet și încearcă din nou.</string>
+    <string name="error_timeout_title">Timpul de așteptare a expirat</string>
+    <string name="error_timeout_desc">Serverul nu răspunde. Te rugăm să încerci din nou.</string>
+    <string name="error_auth_title">Eroare de conectare</string>
+    <string name="error_auth_desc">Sesiunea ta a expirat. Deconectează-te și conectează-te din nou.</string>
+    <string name="error_retry">ÎNCEARCĂ DIN NOU</string>
+
+    <!-- ReadingInterpretation -->
+    <string name="reading_oracle_insight">Perspectiva Oracolului</string>
+    <string name="reading_generated_by_ai">GENERAT DE AI</string>
+
+    <!-- ReadingDetail -->
+    <string name="reading_cosmic_synthesis">SINTEZĂ COSMICĂ</string>
+
+    <!-- Login -->
+    <string name="auth_subtitle">GHIDUL TĂU MISTIC</string>
+
+    <!-- About -->
+    <string name="about_description">Cititorul tău mistic de tarot cu AI.\nDescoperă perspective prin arta străveche a tarotului, susținută de AI modern.\n\nTAROTIQ combină secole de înțelepciune a tarotului cu tehnologie de ultimă generație pentru citiri personalizate și interactive.</string>
+
+    <!-- Rating Gate -->
+    <string name="rating_title">Ți-a fost citirea de folos?</string>
+    <string name="rating_subtitle">Evaluarea ta îi ajută pe alți căutători să găsească TarotIQ.</string>
+    <string name="rating_submit_positive">EVALUEAZĂ PE GOOGLE PLAY</string>
+    <string name="rating_submit_negative">SCRIE-NE PĂREREA TA</string>
+    <string name="rating_skip">Nu acum</string>
+    <string name="rating_thanks">Mulțumim!</string>
+    <string name="rating_thanks_desc">Sprijinul tău înseamnă enorm pentru noi. ✨</string>
+
+    <!-- General -->
+    <string name="ok">OK</string>
+    <string name="cancel">Anulează</string>
+    <string name="close">Închide</string>
+    <string name="back">Înapoi</string>
+    <string name="save">Salvează</string>
+    <string name="delete">Șterge</string>
+    <string name="share">Distribuie</string>
+    <string name="share_text">Cartea mea de tarot: %s 🎴 Primește-ți citirea pe Tarotiq!</string>
+    <string name="share_daily_card_label">Cartea zilei</string>
+    <string name="loading">Se încarcă…</string>
+    <string name="error_generic">Ceva nu a mers bine. Încearcă din nou.</string>
+    <string name="error_network">Verifică-ți conexiunea la internet.</string>
+    <string name="offline_banner">Ești offline</string>
+    <string name="delete_confirm_title">Ștergi citirea?</string>
+    <string name="delete_confirm_message">Această acțiune nu poate fi anulată.</string>
+    <string name="retry">Încearcă din nou</string>
+    <string name="no_cards_found">Nicio carte găsită</string>
+
+    <!-- Rewarded Ads -->
+    <string name="rewarded_ad_title">Vezi o reclamă, primește o monedă</string>
+    <string name="rewarded_ad_subtitle">Mai ai %d săptămâna aceasta</string>
+    <string name="rewarded_ad_success">+1 monedă adăugată!</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_language">Alege limba</string>
+    <string name="onboarding_welcome">Bine ai venit la TAROTIQ</string>
+    <string name="onboarding_welcome_desc">Descoperă misterele tarotului cu ghicitoarea ta personală cu AI</string>
+    <string name="onboarding_zodiac">Semnul tău</string>
+    <string name="onboarding_zodiac_desc">Alege-ți semnul zodiacal pentru citiri personalizate</string>
+    <string name="onboarding_daily">Cartea zilei</string>
+    <string name="onboarding_daily_desc">În fiecare zi îți dezvăluim o carte cu un mesaj</string>
+    <string name="onboarding_ready">Ești pregătit</string>
+    <string name="onboarding_ready_desc">Ai 3 citiri gratuite. Începe-ți călătoria!</string>
+    <string name="onboarding_start">Începe</string>
+    <string name="onboarding_next">Următorul</string>
+    <string name="onboarding_skip">Sari peste</string>
+
+    <!-- Moon Phases -->
+    <string name="moon_new">Lună Nouă</string>
+    <string name="moon_waxing_crescent">Semilună crescătoare</string>
+    <string name="moon_first_quarter">Primul pătrar</string>
+    <string name="moon_waxing_gibbous">Lună crescătoare</string>
+    <string name="moon_full">Lună Plină</string>
+    <string name="moon_waning_gibbous">Lună descrescătoare</string>
+    <string name="moon_last_quarter">Ultimul pătrar</string>
+    <string name="moon_waning_crescent">Semilună descrescătoare</string>
+
+    <!-- Moon Phase Energy Descriptions -->
+    <string name="moon_energy_new">Vremea noilor începuturi. Seamănă intențiile pe care vrei să le împlinești în acest ciclu.</string>
+    <string name="moon_energy_waxing_crescent">Intențiile tale prind putere. Construiește planuri și fă primii pași.</string>
+    <string name="moon_energy_first_quarter">Timp de acțiune și decizii. Depășește obstacolele cu curaj.</string>
+    <string name="moon_energy_waxing_gibbous">Rafinează detaliile. Proiectele tale se coc — răbdarea va aduce roade.</string>
+    <string name="moon_energy_full">Culminație și revelație. Culege rezultatele și sărbătorește ce ai realizat.</string>
+    <string name="moon_energy_waning_gibbous">Timp de recunoștință și împărtășire. Transmite mai departe înțelepciunea dobândită.</string>
+    <string name="moon_energy_last_quarter">Lasă să plece ce nu îți mai servește. Eliberează tiparele și obiceiurile vechi.</string>
+    <string name="moon_energy_waning_crescent">Liniște și reflecție. Odihnește-te și pregătește-te pentru un nou ciclu.</string>
+
+    <!-- Moon Phase Activities -->
+    <string name="moon_activity_new">Meditație asupra intențiilor · Scrierea dorințelor · Planificare</string>
+    <string name="moon_activity_waxing_crescent">Vizualizare · Primii pași · Construirea obiceiurilor</string>
+    <string name="moon_activity_first_quarter">Luarea deciziilor · Depășirea fricii · Pași de acțiune</string>
+    <string name="moon_activity_waxing_gibbous">Răbdare · Rafinarea detaliilor · Revizuirea planurilor</string>
+    <string name="moon_activity_full">Sărbătoare · Ritualuri de recunoștință · Ascultarea intuiției</string>
+    <string name="moon_activity_waning_gibbous">Împărtășirea înțelepciunii · Iertare · Îndrumarea altora</string>
+    <string name="moon_activity_last_quarter">Curățenie și eliberare · Închiderea capitolelor · Detox</string>
+    <string name="moon_activity_waning_crescent">Odihnă · Visare · Meditație · Liniște</string>
+
+    <!-- Moon Phase Tarot Connection -->
+    <string name="moon_tarot_new">Sub Luna Nouă rezonează The Star — noi speranțe se nasc.</string>
+    <string name="moon_tarot_waxing_crescent">Sub semiluna crescătoare rezonează The Magician — creează-ți realitatea.</string>
+    <string name="moon_tarot_first_quarter">Sub primul pătrar rezonează The Chariot — voința te va purta înainte.</string>
+    <string name="moon_tarot_waxing_gibbous">Sub luna crescătoare rezonează Temperance — echilibrul este cheia.</string>
+    <string name="moon_tarot_full">Sub Luna Plină rezonează The High Priestess — intuiția este la apogeu.</string>
+    <string name="moon_tarot_waning_gibbous">Sub luna descrescătoare rezonează The Hermit — caută înțelepciunea înăuntrul tău.</string>
+    <string name="moon_tarot_last_quarter">Sub ultimul pătrar rezonează Death — transformarea aduce viață nouă.</string>
+    <string name="moon_tarot_waning_crescent">Sub semiluna descrescătoare rezonează The Moon — ascultă-ți visele.</string>
+
+    <!-- Lunar Section UI -->
+    <string name="moon_days_until_full">Lună Plină în %d zile</string>
+    <string name="moon_days_until_new">Lună Nouă în %d zile</string>
+    <string name="moon_recommended_spread">Citirea ideală pentru această fază</string>
+    <string name="moon_try_spread">Încearcă Ciclul lunar</string>
+
+    <!-- Achievements -->
+    <string name="achievement_first_reading">Prima citire</string>
+    <string name="achievement_first_reading_desc">Finalizează prima ta citire de tarot</string>
+    <string name="achievement_ten_readings">10 citiri</string>
+    <string name="achievement_ten_readings_desc">Finalizează 10 citiri de tarot</string>
+    <string name="achievement_fifty_readings">50 de citiri</string>
+    <string name="achievement_fifty_readings_desc">Finalizează 50 de citiri de tarot</string>
+    <string name="achievement_hundred_readings">100 de citiri</string>
+    <string name="achievement_hundred_readings_desc">Finalizează 100 de citiri de tarot</string>
+    <string name="achievement_all_spreads">Toate etalările</string>
+    <string name="achievement_all_spreads_desc">Încearcă fiecare tip de etalare</string>
+    <string name="achievement_week_streak">Serie săptămânală</string>
+    <string name="achievement_week_streak_desc">Menține o serie de 7 zile la rând</string>
+    <string name="achievement_month_streak">Serie lunară</string>
+    <string name="achievement_month_streak_desc">Menține o serie de 30 de zile la rând</string>
+    <string name="achievement_major_arcana">Toată Arcana Majoră</string>
+    <string name="achievement_major_arcana_desc">Descoperă toate cele 22 de cărți ale Arcanei Majore</string>
+    <string name="achievement_first_daily">Prima carte zilnică</string>
+    <string name="achievement_first_daily_desc">Trage-ți prima carte zilnică</string>
+    <string name="achievement_thirty_dailies">30 de cărți zilnice</string>
+    <string name="achievement_thirty_dailies_desc">Trage 30 de cărți zilnice</string>
+    <string name="achievement_night_owl">Bufniță de noapte</string>
+    <string name="achievement_night_owl_desc">Fă o citire după ora 23</string>
+    <string name="achievement_early_bird">Pasăre matinală</string>
+    <string name="achievement_early_bird_desc">Fă o citire înainte de ora 7</string>
+    <string name="achievement_unlocked">Realizare deblocată!</string>
+    <string name="achievement_coin_reward">+%d monede</string>
+    <string name="achievements_title">Realizări</string>
+
+    <!-- FAQ -->
+    <string name="faq_q1">Cum funcționează o citire?</string>
+    <string name="faq_a1">Alegi o temă, pui opțional o întrebare, alegi etalarea cărților și dezvălui cărțile trăgându-le. Ghicitoarea noastră AI, Madame Stella, îți interpretează apoi cărțile în contextul întrebării tale.</string>
+    <string name="faq_q2">Citirile sunt gratuite?</string>
+    <string name="faq_a2">Primești 3 citiri complet gratuite. Apoi poți cumpăra pachete de monede pentru alte citiri. Cartea zilei este întotdeauna gratuită.</string>
+    <string name="faq_q3">Cum funcționează monedele?</string>
+    <string name="faq_a3">Folosești monedele pentru a plăti citirile. Etalările diferite costă un număr diferit de monede: 1 carte = 1 monedă, 3 cărți = 2 monede, Crucea Celtică = 3 monede.</string>
+    <string name="faq_q4">Este tarotul precis?</string>
+    <string name="faq_a4">Tarotul este un instrument de introspecție și dezvoltare personală. Citirile sunt generate de AI și servesc drept inspirație, nu ca predicții definitive ale viitorului.</string>
+    <string name="faq_q5">Pot pune întrebări suplimentare?</string>
+    <string name="faq_a5">Da! După fiecare citire o poți întreba pe Madame Stella orice altceva despre cărțile tale — fără costuri suplimentare.</string>
+
+    <!-- Monthly Horoscope Spread -->
+    <string name="spread_monthly_horoscope">Horoscop lunar</string>
+    <string name="spread_monthly_horoscope_desc">12 cărți · Ghid complet pentru luna care vine</string>
+    <string name="position_month_theme">Tema principală a lunii</string>
+    <string name="position_month_love">Iubire și relații</string>
+    <string name="position_month_career">Carieră</string>
+    <string name="position_month_finances">Finanțe</string>
+    <string name="position_month_health">Sănătate și vitalitate</string>
+    <string name="position_month_spirituality">Creștere spirituală</string>
+    <string name="position_month_family">Familie și cămin</string>
+    <string name="position_month_growth">Dezvoltare personală</string>
+    <string name="position_month_challenges">Provocări și obstacole</string>
+    <string name="position_month_opportunities">Oportunități</string>
+    <string name="position_month_hidden">Influența ascunsă</string>
+    <string name="position_month_message">Mesajul lunii</string>
+
+    <!-- Mercury Retrograde -->
+    <string name="mercury_retrograde">MERCUR RETROGRAD</string>
+    <string name="mercury_direct">Mercur direct</string>
+    <string name="mercury_retrograde_until">Retrograd până la %s</string>
+    <string name="mercury_direct_next">Următoarea retrogradare: %s</string>
+    <string name="mercury_retrograde_warning">Atenție la comunicare, tehnologie și contracte. Evită deciziile importante.</string>
+    <string name="mercury_direct_desc">Moment potrivit pentru comunicare clară și noi începuturi.</string>
+
+    <!-- Tarot Journal / Notes -->
+    <string name="journal_notes_label">Notițe personale</string>
+    <string name="journal_notes_hint">Notează-ți sentimentele, impresiile intuitive sau sincronicitățile…</string>
+    <string name="journal_notes_saved">Notiță salvată</string>
+    <string name="journal_save_notes">SALVEAZĂ NOTIȚA</string>
+
+    <!-- Share Reading -->
+    <string name="share_reading">DISTRIBUIE CITIREA</string>
+
+    <!-- Lifetime Premium -->
+    <string name="lifetime_title">Acces pe viață</string>
+    <string name="lifetime_desc">Citiri nelimitate pentru totdeauna. Fără monede, fără limite.</string>
+    <string name="lifetime_feature_1">✦ Citiri nelimitate cu toate cele 17 etalări</string>
+    <string name="lifetime_feature_2">✦ Interpretări AI prioritare de la Madame Stella</string>
+    <string name="lifetime_feature_3">✦ Acces gratuit la toate etalările viitoare</string>
+    <string name="lifetime_feature_4">✦ Statut VIP exclusiv pentru totdeauna</string>
+    <string name="lifetime_feature_5">✦ Fără reclame</string>
+    <string name="lifetime_buy">ÎL VREAU</string>
+    <string name="lifetime_price">4 499 Kč plată unică</string>
+    <string name="lifetime_badge">CEA MAI BUNĂ ALEGERE</string>
+    <string name="lifetime_active">✓ Acces pe viață activ</string>
+    <string name="lifetime_active_desc">Bucură-te de citiri nelimitate pentru totdeauna.</string>
+
+    <!-- Welcome Offer Dialog -->
+    <string name="welcome_offer_title">Inițiere cosmică</string>
+    <string name="welcome_offer_subtitle">Cărțile ți-au arătat calea — pășești mai departe?</string>
+    <string name="welcome_offer_timer">Oferta expiră în</string>
+    <string name="welcome_offer_skip">Nu acum</string>
+    <string name="welcome_offer_tier1_title">Pachetul stelar</string>
+    <string name="welcome_offer_tier1_coins">15 monede</string>
+    <string name="welcome_offer_tier1_badge">50% REDUCERE</string>
+    <string name="welcome_offer_tier2_title">Acces pe viață</string>
+    <string name="welcome_offer_tier2_original">4 499 Kč</string>
+    <string name="welcome_offer_tier2_price">3 499 Kč</string>
+    <string name="welcome_offer_tier2_badge">OFERTĂ DE BUN VENIT</string>
+    <string name="welcome_offer_tier2_desc">Nelimitat pentru totdeauna · Doar pentru utilizatorii noi</string>
+    <string name="welcome_offer_recommended">RECOMANDAT</string>
+
+    <!-- Journal AI Analysis -->
+    <string name="journal_analyze_cta">ANALIZEAZĂ CU AI</string>
+    <string name="journal_analyze_desc">Madame Stella îți leagă notițele de citire</string>
+    <string name="journal_analyzing">Madame Stella îți citește notițele…</string>
+    <string name="journal_analysis_title">Reflecția lui Madame Stella</string>
+    <string name="journal_analysis_error">Analiza nu a putut fi finalizată. Încearcă din nou.</string>
+
+    <!-- Challenge Journeys -->
+    <string name="challenge_section_title">PROVOCARE DE TAROT</string>
+    <string name="challenge_browse">Răsfoiește provocările</string>
+    <string name="challenge_active_day">Ziua %1$d din %2$d</string>
+    <string name="challenge_today_intention">Intenția de azi</string>
+    <string name="challenge_draw_card">TRAGE O CARTE</string>
+    <string name="challenge_completed_today">Provocarea de azi îndeplinită ✓</string>
+    <string name="challenge_completed_all">Provocare finalizată! 🎉</string>
+    <string name="challenge_reward">Recompensă: +%d monede</string>
+    <string name="challenge_start">ÎNCEPE PROVOCAREA</string>
+    <string name="challenge_abandon">Abandonează provocarea</string>
+    <string name="challenge_abandon_confirm">Chiar vrei să abandonezi provocarea? Progresul tău se va pierde.</string>
+    <string name="challenge_days_remaining">Mai sunt %d zile</string>
+    <string name="challenge_list_title">Provocări de tarot</string>
+    <string name="challenge_list_subtitle">Călătorii structurate de creștere personală prin tarot</string>
+    <string name="challenge_progress">%1$d/%2$d zile</string>
+
+    <!-- Challenge: 7 dní Osvícení -->
+    <string name="challenge_7_name">7 zile de Iluminare</string>
+    <string name="challenge_7_desc">O explorare de o săptămână a sufletului tău — în fiecare zi o altă zonă a vieții.</string>
+    <string name="challenge_7_d1">Trecutul — Ce tipar aduci cu tine din trecut?</string>
+    <string name="challenge_7_d2">Prezentul — Ce îți aduce momentul de azi?</string>
+    <string name="challenge_7_d3">Umbrele — Ce mai așteaptă în tine acceptare și vindecare?</string>
+    <string name="challenge_7_d4">Relațiile — Cum te arăți față de oamenii din jurul tău?</string>
+    <string name="challenge_7_d5">Abundența — Care este relația ta reală cu banii și prosperitatea?</string>
+    <string name="challenge_7_d6">Darurile — Ce dar unic porți în tine pentru lume?</string>
+    <string name="challenge_7_d7">Viitorul — Ce îți pregătesc stelele dincolo de orizont?</string>
+
+    <!-- Challenge: 21 dní Probuzení -->
+    <string name="challenge_21_name">21 de zile de Trezire</string>
+    <string name="challenge_21_desc">Trei săptămâni de autocunoaștere profundă — de la rădăcini la orizonturi.</string>
+    <string name="challenge_21_w1">Săptămâna autocunoașterii — Cine sunt?</string>
+    <string name="challenge_21_w2">Săptămâna relațiilor — Cum iubesc?</string>
+    <string name="challenge_21_w3">Săptămâna viziunii — Încotro mă îndrept?</string>
+
+    <!-- Challenge: 30 dní Transformace -->
+    <string name="challenge_30_name">30 de zile de Transformare</string>
+    <string name="challenge_30_desc">O lună de schimbare profundă — muncă amplă pe toate planurile ființei.</string>
+    <string name="challenge_30_w1">Rădăcinile — Procesarea trecutului și a tiparelor familiale</string>
+    <string name="challenge_30_w2">Inima — Iubire, relații și inteligență emoțională</string>
+    <string name="challenge_30_w3">Mintea — Convingeri, creativitate și noi posibilități</string>
+    <string name="challenge_30_w4">Spiritul — Sens, scop și misiunea ta cosmică</string>
+</resources>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ===== SWORDS (Meče) ===== -->
+
+    <!-- Card 50: Ace of Swords -->
+    <string name="card_50_love_up">Een doorbraak in wederzijds begrip binnen de relatie; heldere en eerlijke communicatie opent nieuwe deuren.</string>
+    <string name="card_50_love_rev">Misverstanden en verwarring in de liefde; harde woorden of misinformatie beschadigen de relatie.</string>
+    <string name="card_50_career_up">Een briljant nieuw idee of mentale doorbraak op het werk; helderheid van intentie drijft succes aan.</string>
+    <string name="card_50_career_rev">Verwarring en slechte communicatie op het werk; een verkeerd idee kan tot professionele tegenslagen leiden.</string>
+    <string name="card_50_finances_up">Helder financieel denken leidt tot slimme beslissingen; een nieuwe strategie snijdt door de verwarring heen.</string>
+    <string name="card_50_finances_rev">Financiële verwarring of misinformatie; overhaaste beslissingen gebaseerd op onvolledig begrip.</string>
+    <string name="card_50_feelings_up">Mentale helderheid en de opwinding van een doorbraak; de waarheid dringt door de mist heen.</string>
+    <string name="card_50_feelings_rev">Mentale verwarring en overweldiging; worstelen om helder te denken te midden van de chaos.</string>
+    <string name="card_50_actions_up">Gebruik je mentale helderheid om obstakels te overwinnen; spreek de waarheid en volg nieuwe ideeën.</string>
+    <string name="card_50_actions_rev">Zoek helderheid voordat je gaat handelen; gebruik je intellect niet als wapen.</string>
+
+    <!-- Card 51: Two of Swords -->
+    <string name="card_51_love_up">Een moeilijke romantische keuze die je vermijdt; een emotionele patstelling belemmert vooruitgang in de liefde.</string>
+    <string name="card_51_love_rev">Je neemt eindelijk een beslissing over de relatie; een overvloed aan emoties dwingt je tot handelen.</string>
+    <string name="card_51_career_up">Een carrièrebeslissing zit muurvast; het weigeren te kiezen tussen twee opties verlamt de vooruitgang.</string>
+    <string name="card_51_career_rev">Het doorbreken van carrièrebesluiteloosheid; de overdaad aan informatie maakt plaats voor helderheid.</string>
+    <string name="card_51_finances_up">Financiële besluiteloosheid blokkeert je vooruitgang; je weegt twee opties af zonder je aan één te verbinden.</string>
+    <string name="card_51_finances_rev">Een financiële beslissing wordt eindelijk genomen na een periode van verlamming; helderheid dient zich aan.</string>
+    <string name="card_51_feelings_up">Het gevoel vast te zitten tussen twee keuzes; je blokkeert je emoties om een moeilijke beslissing te vermijden.</string>
+    <string name="card_51_feelings_rev">De emotionele dam breekt door; gevoelens die je hebt onderdrukt, eisen erkenning.</string>
+    <string name="card_51_actions_up">Ga de moeilijke keuze aan die je hebt vermeden; verder uitstellen vertraagt slechts het onvermijdelijke.</string>
+    <string name="card_51_actions_rev">De beslissing is genomen of wordt voor je genomen; aanvaard de uitkomst en ga verder.</string>
+
+    <!-- Card 52: Three of Swords -->
+    <string name="card_52_love_up">Een gebroken hart en verraad in de liefde; een pijnlijke waarheid verbrijzelt de illusie van de relatie.</string>
+    <string name="card_52_love_rev">Genezen van een gebroken hart; je begint te vergeven en de pijn van het verraad los te laten.</string>
+    <string name="card_52_career_up">Pijnlijk professioneel verraad of verpletterend carrièrenieuws; verdriet om een verloren kans.</string>
+    <string name="card_52_career_rev">Herstellen van een professionele tegenslag; genezen van streken op de werkvloer en verdergaan.</string>
+    <string name="card_52_finances_up">Financieel verlies dat emotionele pijn veroorzaakt; verraad rond geld raakt diep.</string>
+    <string name="card_52_finances_rev">Herstellen van financieel verlies; de emotionele pijn van geldproblemen begint te helen.</string>
+    <string name="card_52_feelings_up">Diep verdriet en hartzeer; de pijn van verraad of verlies doorboort je hart.</string>
+    <string name="card_52_feelings_rev">De pijn neemt af; vergeving en genezing vervangen geleidelijk het verdriet.</string>
+    <string name="card_52_actions_up">Sta jezelf toe volledig te rouwen; erken de pijn in plaats van haar te onderdrukken.</string>
+    <string name="card_52_actions_rev">Begin het genezingsproces; vergeef wat je kunt en laat de pijn los die je tegenhoudt.</string>
+
+    <!-- Card 53: Four of Swords -->
+    <string name="card_53_love_up">Een noodzakelijke pauze in je liefdesleven; rust en reflectie versterken je emotionele reserves.</string>
+    <string name="card_53_love_rev">Rusteloosheid in de liefde; het weigeren van broodnodige emotionele rust leidt tot een burn-out.</string>
+    <string name="card_53_career_up">Neem afstand van de werkstress; mentale rust en herstel zijn essentieel voor toekomstige productiviteit.</string>
+    <string name="card_53_career_rev">Burn-out door het weigeren van rust; jezelf door uitputting heen duwen leidt tot afnemende resultaten.</string>
+    <string name="card_53_finances_up">Een periode van financiële rust; geen grote financiële stappen, alleen het stabiel behouden van je middelen.</string>
+    <string name="card_53_finances_rev">Financiële angst verhindert rust; zorgen om geld houden je \'s nachts wakker.</string>
+    <string name="card_53_feelings_up">Het gevoel diepe rust en mentaal herstel nodig te hebben; vrede komt door afzondering.</string>
+    <string name="card_53_feelings_rev">Uitputting en rusteloosheid; niet in staat de rust te vinden die je geest en lichaam wanhopig nodig hebben.</string>
+    <string name="card_53_actions_up">Trek je terug en rust uit voor de volgende stap; herstel nu voorkomt een instorting later.</string>
+    <string name="card_53_actions_rev">Je hebt genoeg gerust of weigert te rusten; pak de onderliggende oorzaak van je uitputting aan.</string>
+
+    <!-- Card 54: Five of Swords -->
+    <string name="card_54_love_up">Een pijnlijk conflict in de liefde; een ruzie winnen kan betekenen dat je de relatie verliest.</string>
+    <string name="card_54_love_rev">Verzoening na een conflict; beide partners sluiten compromissen en beginnen de schade te herstellen.</string>
+    <string name="card_54_career_up">Conflicten en machtsstrijd op de werkvloer; een holle overwinning die je respect kost.</string>
+    <string name="card_54_career_rev">Vrede sluiten met professionele rivalen; kiezen voor verzoening boven voortdurende strijd.</string>
+    <string name="card_54_finances_up">Financiële geschillen of oneerlijke praktijken; geld verdienen ten koste van relaties.</string>
+    <string name="card_54_finances_rev">Het oplossen van financiële geschillen; verliezen aanvaarden en verdergaan na geldconflicten.</string>
+    <string name="card_54_feelings_up">Je strijdlustig en defensief voelen; de steek van conflict of nederlaag drukt zwaar op je geest.</string>
+    <string name="card_54_feelings_rev">Het loslaten van vijandigheid en wrok; kiezen voor vrede boven een voortdurende oorlog.</string>
+    <string name="card_54_actions_up">Kies je gevechten met wijsheid; sommige overwinningen zijn de prijs die je betaalt niet waard.</string>
+    <string name="card_54_actions_rev">Laat de behoefte om te winnen los; zoek herstel en oplossingen in plaats van vergelding.</string>
+
+    <!-- Card 55: Six of Swords -->
+    <string name="card_55_love_up">De overgang van een stormachtige romantische periode naar kalmere wateren; genezing door verandering.</string>
+    <string name="card_55_love_rev">Niet in staat een pijnlijke relatie achter je te laten; onopgeloste emotionele kwesties houden je tegen.</string>
+    <string name="card_55_career_up">Een carrièreovergang weg uit een stressvolle omgeving; op weg naar betere kansen.</string>
+    <string name="card_55_career_rev">Vastzitten in een toxische werkomgeving; weerstand tegen de carrièreverandering die je moet maken.</string>
+    <string name="card_55_finances_up">Een financiële overgang naar een stabieler fundament; geldproblemen achter je laten.</string>
+    <string name="card_55_finances_rev">Niet in staat te ontsnappen aan financiële moeilijkheden; weerstand tegen noodzakelijke geldveranderingen.</string>
+    <string name="card_55_feelings_up">Een mengeling van verdriet en hoop terwijl je het verleden achterlaat en op genezing afkoerst.</string>
+    <string name="card_55_feelings_rev">Je gevangen voelen in emotionele onrust; niet in staat een weg vooruit te vinden.</string>
+    <string name="card_55_actions_up">Omarm de overgang en ga voorwaarts; laat het pijnlijke met gratie achter je.</string>
+    <string name="card_55_actions_rev">Pak aan wat je op je plaats houdt; los onafgemaakte zaken op zodat je eindelijk verder kunt.</string>
+
+    <!-- Card 56: Seven of Swords -->
+    <string name="card_56_love_up">Bedrog of verraad in de liefde; iemand is niet volledig eerlijk in de relatie.</string>
+    <string name="card_56_love_rev">Geheimen komen aan het licht in de relatie; een bekentenis klaart de lucht ondanks de aanvankelijke pijn.</string>
+    <string name="card_56_career_up">Strategisch manoeuvreren op het werk; iemand handelt mogelijk bedrieglijk of gaat met de eer strijken.</string>
+    <string name="card_56_career_rev">Bedrog op de werkvloer wordt ontmaskerd; de waarheid over oneerlijk professioneel gedrag komt naar buiten.</string>
+    <string name="card_56_finances_up">Financieel bedrog of diefstal; wees op je hoede voor oneerlijke deals en bescherm je middelen.</string>
+    <string name="card_56_finances_rev">Financieel bedrog wordt onthuld; gestolen middelen kunnen worden teruggewonnen of de oneerlijkheid wordt blootgelegd.</string>
+    <string name="card_56_feelings_up">Een gevoel van achterdocht of sluwheid; het knagende vermoeden dat er iets oneerlijks gaande is.</string>
+    <string name="card_56_feelings_rev">De opluchting van een bekentenis; schuld lost op wanneer je eerlijk bent over eerdere misleidingen.</string>
+    <string name="card_56_actions_up">Ga te werk met strategische voorzichtigheid; wees alert op bedrieglijk gedrag bij jezelf en anderen.</string>
+    <string name="card_56_actions_rev">Beken eventueel bedrog; de waarheid zal je bevrijden, ook al is het ongemakkelijk.</string>
+
+    <!-- Card 57: Eight of Swords -->
+    <string name="card_57_love_up">Je gevangen voelen in de relatie; je eigen mentale barrières verhinderen je de mogelijkheden te zien.</string>
+    <string name="card_57_love_rev">Losbreken uit een verstikkende relatie of uit beperkende overtuigingen die je in de liefde gevangen hielden.</string>
+    <string name="card_57_career_up">Je vast en machteloos voelen op het werk; zelfbeperkende overtuigingen remmen je professionele groei.</string>
+    <string name="card_57_career_rev">De kracht vinden om carrièrebeperkingen te overwinnen; nieuwe mogelijkheden ontdekken.</string>
+    <string name="card_57_finances_up">Je gevangen voelen door financiële verplichtingen; mentale beperkingen verhinderen je oplossingen te zien.</string>
+    <string name="card_57_finances_rev">Losbreken uit financiële beperkingen; nieuwe perspectieven onthullen oplossingen die je eerder niet zag.</string>
+    <string name="card_57_feelings_up">Je gevangen en machteloos voelen, niet in staat een uitweg te vinden uit de huidige situatie.</string>
+    <string name="card_57_feelings_rev">Een bevrijdende verschuiving van perspectief; het besef dat je gevangenis grotendeels je eigen maaksel was.</string>
+    <string name="card_57_actions_up">Onderzoek de overtuigingen die je gevangen houden; de barrières kunnen eerder mentaal dan echt zijn.</string>
+    <string name="card_57_actions_rev">Doe de blinddoek af en bekijk de situatie helder; je hebt meer macht dan je denkt.</string>
+
+    <!-- Card 58: Nine of Swords -->
+    <string name="card_58_love_up">Angst en slapeloze nachten vanwege een relatie; zorgen en gepieker verteren je gedachten.</string>
+    <string name="card_58_love_rev">Je begint relatieangst te overwinnen; het zoeken van steun verlicht je zorgen.</string>
+    <string name="card_58_career_up">Werkangst houdt je \'s nachts wakker; stress en zorgen beheersen je professionele leven.</string>
+    <string name="card_58_career_rev">Carrièreangsten beginnen af te nemen; hulp en steun zoeken vermindert de werkstress.</string>
+    <string name="card_58_finances_up">Financiële angst en slapeloze nachten; geldzorgen verteren je gemoedsrust.</string>
+    <string name="card_58_finances_rev">Financiële zorgen beginnen te wijken; hulp zoeken brengt opluchting en praktische oplossingen.</string>
+    <string name="card_58_feelings_up">Overweldigende angst en vrees; je ergste zorgen herhalen zich eindeloos in je hoofd.</string>
+    <string name="card_58_feelings_rev">Het ergste is voorbij; hoop vervangt wanhoop terwijl je je angst leert beheersen.</string>
+    <string name="card_58_actions_up">Zoek steun voor je angst; lijd niet in je eentje onder je angsten en zorgen.</string>
+    <string name="card_58_actions_rev">De zorgen nemen af; blijf hulp zoeken en oefen mededogen met jezelf.</string>
+
+    <!-- Card 59: Ten of Swords -->
+    <string name="card_59_love_up">Een pijnlijk en definitief einde van een relatie; verraad of een crisis brengt de zaken tot een slot.</string>
+    <string name="card_59_love_rev">Herstellen van een verwoestende breuk; het ergste is voorbij en de genezing is begonnen.</string>
+    <string name="card_59_career_up">Een dramatisch carrière-einde of professionele crisis; het absolute dieptepunt is bereikt.</string>
+    <string name="card_59_career_rev">Professioneel herstel na het bereiken van het dieptepunt; langzame wederopbouw na een carrièrecrisis.</string>
+    <string name="card_59_finances_up">Een financieel dieptepunt; een verpletterend geldverlies of crisis vraagt je volledige aandacht.</string>
+    <string name="card_59_finances_rev">Financieel herstel begint na een verwoestend verlies; het ergste is al voorbij.</string>
+    <string name="card_59_feelings_up">Een gevoel van totale nederlaag en uitputting; het gewicht van meerdere crises verplettert je.</string>
+    <string name="card_59_feelings_rev">De zon komt op na de donkerste nacht; uitputting maakt plaats voor geleidelijk herstel.</string>
+    <string name="card_59_actions_up">Aanvaard dat dit hoofdstuk is afgesloten; vanaf het dieptepunt kan het alleen maar omhoog.</string>
+    <string name="card_59_actions_rev">Begin opnieuw op te bouwen uit de puinhopen; elk einde draagt het zaad van een nieuw begin in zich.</string>
+
+    <!-- Card 60: Page of Swords -->
+    <string name="card_60_love_up">Een stimulerende intellectuele verbinding; open en eerlijke communicatie wekt romantische interesse.</string>
+    <string name="card_60_love_rev">Roddels of kwetsende woorden beschadigen de relatie; de communicatie wordt scherp of oneerlijk.</string>
+    <string name="card_60_career_up">Frisse ideeën en intellectuele nieuwsgierigheid stuwen je carrière vooruit; blijf alert op kansen.</string>
+    <string name="card_60_career_rev">Roddels op de werkvloer of overhaaste communicatie veroorzaken professionele problemen.</string>
+    <string name="card_60_finances_up">Het verkennen van nieuwe financiële kansen met intellectuele nieuwsgierigheid en mentale scherpte.</string>
+    <string name="card_60_finances_rev">Overhaaste financiële beslissingen gebaseerd op onvolledige informatie; vertrouw niet elke geldtip.</string>
+    <string name="card_60_feelings_up">Een gevoel van intellectuele prikkeling en nieuwsgierigheid; het verlangen om te leren en nieuwe waarheden te ontdekken.</string>
+    <string name="card_60_feelings_rev">Een gevoel van cynisme en achterdocht; scherpe woorden maskeren onzekerheid.</string>
+    <string name="card_60_actions_up">Blijf nieuwsgierig en communiceer helder; verken nieuwe ideeën met een open maar waakzame geest.</string>
+    <string name="card_60_actions_rev">Denk na voordat je spreekt; stop met roddelen en gebruik je woorden constructief.</string>
+
+    <!-- Card 61: Knight of Swords -->
+    <string name="card_61_love_up">De liefde najagen met intensiteit en vastberadenheid; een snel en gepassioneerd romantisch streven.</string>
+    <string name="card_61_love_rev">Agressief of roekeloos gedrag in de liefde; ongeduld drijft je ertoe te hard te duwen.</string>
+    <string name="card_61_career_up">Voorwaarts stormen met ambitieuze carrièredoelen; snel en doortastend professioneel handelen.</string>
+    <string name="card_61_career_rev">Roekeloze carrièrestappen zonder degelijke planning; agressiviteit vervreemdt collega\'s van je.</string>
+    <string name="card_61_finances_up">Snel en doortastend financieel handelen levert resultaten op; smeed het ijzer nu het heet is.</string>
+    <string name="card_61_finances_rev">Impulsieve financiële beslissingen genomen in haast; roekeloos uitgeven of investeren.</string>
+    <string name="card_61_feelings_up">Een gevoel van stuwende kracht en mentale scherpte; urgentie drijft je voorwaarts.</string>
+    <string name="card_61_feelings_rev">Je verstrooid en agressief voelen; ongeduld drijft je ertoe naar anderen uit te halen.</string>
+    <string name="card_61_actions_up">Handel snel en doortastend; je vastberadenheid en ambitie snijden door de obstakels heen.</string>
+    <string name="card_61_actions_rev">Vertraag voordat je verongelukt; kanaliseer je intensiteit met een strategischere planning.</string>
+
+    <!-- Card 62: Queen of Swords -->
+    <string name="card_62_love_up">Heldere en eerlijke communicatie in de liefde; een onafhankelijke partner die intellectuele verbinding waardeert.</string>
+    <string name="card_62_love_rev">Koud en kritisch gedrag in de relatie; bitterheid uit oude wonden raakt diep.</string>
+    <string name="card_62_career_up">Scherpe waarneming en heldere communicatie maken je een effectieve en gerespecteerde professional.</string>
+    <string name="card_62_career_rev">Overdreven kritisch gedrag op het werk; intellectuele kilte isoleert je van je collega\'s.</string>
+    <string name="card_62_finances_up">Nuchtere financiële beslissingen; door de emotionele ruis heen dringen tot de financiële waarheid.</string>
+    <string name="card_62_finances_rev">Een streng financieel oordeel; overdreven kritisch zijn op jezelf of anderen als het om geld gaat.</string>
+    <string name="card_62_feelings_up">Een gevoel van mentale helderheid en emotionele onafhankelijkheid; je scherpzinnige geest dient je goed.</string>
+    <string name="card_62_feelings_rev">Een gevoel van bitterheid en kritiek; oude wonden hebben je hart verhard en je tong gescherpt.</string>
+    <string name="card_62_actions_up">Communiceer met helderheid en eerlijkheid; stel duidelijke grenzen met mededogen.</string>
+    <string name="card_62_actions_rev">Verzacht je scherpe kantjes; gelijk hebben is minder belangrijk dan vriendelijk zijn.</string>
+
+    <!-- Card 63: King of Swords -->
+    <string name="card_63_love_up">Een relatie geleid door intellectueel respect en ethische normen; eerlijkheid staat voorop.</string>
+    <string name="card_63_love_rev">Een partner die het intellect gebruikt om te manipuleren; koude rationaliteit vervangt emotionele warmte.</string>
+    <string name="card_63_career_up">Intellectuele autoriteit en ethisch leiderschap; je heldere denken dwingt professioneel respect af.</string>
+    <string name="card_63_career_rev">Misbruik van intellectuele macht op het werk; tiranniek leiderschap door koude rationaliteit.</string>
+    <string name="card_63_finances_up">Logisch en ethisch financieel beheer; helder denken leidt tot verstandige geldbeslissingen.</string>
+    <string name="card_63_finances_rev">Financiële kennis gebruiken om anderen te manipuleren; onethische financiële praktijken.</string>
+    <string name="card_63_feelings_up">Een gevoel van intellectueel meesterschap en ethische verankering; mentale helderheid brengt zelfvertrouwen.</string>
+    <string name="card_63_feelings_rev">Een gevoel van emotionele afstandelijkheid en intellectuele arrogantie; logica zonder hart.</string>
+    <string name="card_63_actions_up">Leid met intellectuele integriteit en ethische helderheid; laat de waarheid je beslissingen sturen.</string>
+    <string name="card_63_actions_rev">Onderzoek of je je intellect gebruikt om de waarheid te dienen of om anderen te beheersen.</string>
+
+    <!-- ===== WANDS (Hole) ===== -->
+
+    <!-- Card 64: Ace of Wands -->
+    <string name="card_64_love_up">Een gepassioneerde nieuwe romantische vonk ontvlamt; opwindend potentieel voor een vurige liefdesverbinding.</string>
+    <string name="card_64_love_rev">De romantische passie dooft uit; vertragingen of een gebrek aan motivatie verhinderen het ontstaan van een liefdesverbinding.</string>
+    <string name="card_64_career_up">Een inspirerende nieuwe carrièreonderneming of creatief project vervult je met enthousiaste energie.</string>
+    <string name="card_64_career_rev">Creatieve blokkades of vertragingen remmen een veelbelovende carrièrekans; de motivatie verzwakt.</string>
+    <string name="card_64_finances_up">Een nieuwe en opwindende financiële kans in lijn met je passies en creatieve energie.</string>
+    <string name="card_64_finances_rev">Een veelbelovende financiële kans wordt gemist of vertraagd; gebrek aan initiatief houdt je tegen.</string>
+    <string name="card_64_feelings_up">Je gepassioneerd geïnspireerd voelen en overlopen van creatief potentieel en enthousiasme.</string>
+    <string name="card_64_feelings_rev">Een gevoel van creatieve blokkade en een ontbrekende vonk van inspiratie; de energie is laag.</string>
+    <string name="card_64_actions_up">Grijp de vonk van inspiratie en zet haar om in gepassioneerde creatieve actie.</string>
+    <string name="card_64_actions_rev">Ontsteek je passie opnieuw; ontdek wat je opwindt en verwijder de blokkades van je creatieve energie.</string>
+
+    <!-- Card 65: Two of Wands -->
+    <string name="card_65_love_up">Een gezamenlijke toekomst plannen met je partner; je voorstellen waar jullie liefdesverhaal naartoe leidt.</string>
+    <string name="card_65_love_rev">Bindingsangst of onwil om een romantische toekomst te plannen; blijven hangen in de comfortzone.</string>
+    <string name="card_65_career_up">Moedig je carrièretoekomst plannen; een wereld van professionele mogelijkheden strekt zich voor je uit.</string>
+    <string name="card_65_career_rev">Professioneel op safe spelen; angst voor het onbekende belemmert het verkennen van je carrière.</string>
+    <string name="card_65_finances_up">Financiële planning en strategisch nadenken over toekomstige rijkdom; gedurfde investeringen overwegen.</string>
+    <string name="card_65_finances_rev">Angst belemmert de financiële planning; blijven hangen in een veilige maar beperkende financiële comfortzone.</string>
+    <string name="card_65_feelings_up">Enthousiasme over toekomstige mogelijkheden; de planningsfase geeft je energie.</string>
+    <string name="card_65_feelings_rev">Een verlammende besluiteloosheid over de toekomst; angst weegt zwaarder dan opwinding.</string>
+    <string name="card_65_actions_up">Plan de toekomst met durf; kijk voorbij je huidige horizon en neem strategische beslissingen.</string>
+    <string name="card_65_actions_rev">Stop met op safe spelen; angst voor het onbekende mag je niet weerhouden van vooruitplannen.</string>
+
+    <!-- Card 66: Three of Wands -->
+    <string name="card_66_love_up">De liefde breidt zich uit over grenzen heen; de relatie groeit naar nieuw en opwindend terrein.</string>
+    <string name="card_66_love_rev">Romantische plannen stuiten op vertragingen of obstakels; een beperkte visie remt de groei van de liefde.</string>
+    <string name="card_66_career_up">Carrière-expansie en kansen in het buitenland; je professionele visie reikt ver en wijd.</string>
+    <string name="card_66_career_rev">De carrière-expansie wordt vertraagd door obstakels; frustratie over het tempo van professionele groei.</string>
+    <string name="card_66_finances_up">Financiële expansie via internationale kansen of verreikende investeringen.</string>
+    <string name="card_66_finances_rev">Financiële groei loopt vertraging op; obstakels verhinderen het uitbreiden van je inkomstenstromen.</string>
+    <string name="card_66_feelings_up">Een gevoel van ruimte en vooruitkijken; je visie op de toekomst vervult je met optimisme.</string>
+    <string name="card_66_feelings_rev">Frustratie over trage vooruitgang; het gevoel dat obstakels je pad naar groei blokkeren.</string>
+    <string name="card_66_actions_up">Verbreed je horizon en volg kansen buiten je directe omgeving.</string>
+    <string name="card_66_actions_rev">Herzie je plannen als de vooruitgang stagneert; zoek alternatieve wegen naar expansie.</string>
+
+    <!-- Card 67: Four of Wands -->
+    <string name="card_67_love_up">Vreugdevolle romantische vieringen zoals een verloving of samenwonen; een mijlpaal in de relatie.</string>
+    <string name="card_67_love_rev">Instabiliteit in de relatie verstoort de feestvreugde; gebrek aan steun van familie of gemeenschap.</string>
+    <string name="card_67_career_up">Het vieren van een carrièremijlpaal of teamsucces; een ondersteunende professionele gemeenschap.</string>
+    <string name="card_67_career_rev">Instabiliteit op de werkvloer of gebrek aan teamharmonie; professionele vieringen voelen voorbarig.</string>
+    <string name="card_67_finances_up">Financiële stabiliteit die het vieren waard is; een mijlpaal in vermogensopbouw of het bezit van een eigen huis.</string>
+    <string name="card_67_finances_rev">Financiële instabiliteit bedreigt je gevoel van thuis en zekerheid; onverwachte veranderingen.</string>
+    <string name="card_67_feelings_up">Een gevoel van feest en dankbaarheid; verbondenheid en gedeelde vreugde tillen je geest op.</string>
+    <string name="card_67_feelings_rev">Je niet gesteund en onstabiel voelen; een innerlijk conflict verhindert je om voluit te vieren.</string>
+    <string name="card_67_actions_up">Vier je successen met je gemeenschap; sta met dankbaarheid stil bij deze mijlpaal.</string>
+    <string name="card_67_actions_rev">Pak de onderliggende instabiliteit aan voordat je gaat vieren; zorg dat je fundamenten werkelijk stevig zijn.</string>
+
+    <!-- Card 68: Five of Wands -->
+    <string name="card_68_love_up">Competitieve energie of onenigheid in de liefde; een conflict dat constructief kan zijn als het goed wordt gehanteerd.</string>
+    <string name="card_68_love_rev">Het vermijden van noodzakelijke relatieconflicten; innerlijke onrust vervangt uiterlijke onenigheid.</string>
+    <string name="card_68_career_up">Gezonde professionele competitie daagt je uit om uit te blinken; onenigheid op de werkvloer wakkert innovatie aan.</string>
+    <string name="card_68_career_rev">Werkconflicten vermijden ten koste van vooruitgang; een compromis zoeken in plaats van te wedijveren.</string>
+    <string name="card_68_finances_up">Financiële competitie of biedingsoorlogen; spanning rond geldbeslissingen vraagt energie.</string>
+    <string name="card_68_finances_rev">Financiële geschillen oplossen via compromis; afstand nemen van competitief uitgeven.</string>
+    <string name="card_68_feelings_up">Opgewonden raken van competitie en uitdaging; de adrenaline van een gezond conflict.</string>
+    <string name="card_68_feelings_rev">Innerlijk conflict put je energie uit; het vermijden van uiterlijke gevechten creëert innerlijke strijd.</string>
+    <string name="card_68_actions_up">Ga de gezonde competitie aan; gebruik conflict als brandstof voor groei en verbetering.</string>
+    <string name="card_68_actions_rev">Zoek oplossingen en compromissen; niet elke strijd is het waard om gestreden te worden.</string>
+
+    <!-- Card 69: Six of Wands -->
+    <string name="card_69_love_up">Romantisch succes en publieke erkenning van je relatie; trots op jullie partnerschap.</string>
+    <string name="card_69_love_rev">Ego-botsingen in de relatie; externe bevestiging zoeken in plaats van echte verbinding op te bouwen.</string>
+    <string name="card_69_career_up">Publieke professionele erkenning en een carrièreoverwinning; collega\'s vieren je successen.</string>
+    <string name="card_69_career_rev">Gebrek aan professionele erkenning; een val van grote hoogte of mislukking ondanks je beste inspanningen.</string>
+    <string name="card_69_finances_up">Financieel succes dat publieke erkenning oplevert; je welvaart is zichtbaar en wordt gevierd.</string>
+    <string name="card_69_finances_rev">Financiële mislukking of het verlies van een eerder sterke financiële positie; een vernederende tegenslag.</string>
+    <string name="card_69_feelings_up">Een gevoel van overwinning en publieke erkenning; het zelfvertrouwen stijgt terwijl anderen je succes vieren.</string>
+    <string name="card_69_feelings_rev">Je niet erkend of vernederd voelen; een leeggelopen ego na een publieke tegenslag.</string>
+    <string name="card_69_actions_up">Aanvaard de lof met gratie en laat je succes anderen inspireren; leid met zelfvertrouwen.</string>
+    <string name="card_69_actions_rev">Laat je ego niet je daden sturen; echt succes vereist geen voortdurende externe bevestiging.</string>
+
+    <!-- Card 70: Seven of Wands -->
+    <string name="card_70_love_up">Je relatie verdedigen tegen uitdagingen van buitenaf; standvastig blijven in je romantische overtuigingen.</string>
+    <string name="card_70_love_rev">De relatie te gemakkelijk opgeven; je overweldigd voelen door romantische uitdagingen.</string>
+    <string name="card_70_career_up">Standhouden tegenover professionele uitdagers; je verdedigt je positie met moed.</string>
+    <string name="card_70_career_rev">Overweldigd door concurrentie op de werkvloer; overwegen een veeleisend carrièrepad op te geven.</string>
+    <string name="card_70_finances_up">Je financiële positie verdedigen tegen bedreigingen; volharding beschermt je middelen.</string>
+    <string name="card_70_finances_rev">Financiële uitputting door voortdurende strijd; overwegen te capituleren in een geldgeschil.</string>
+    <string name="card_70_feelings_up">Je belaagd maar vastberaden voelen; moed houdt je overeind ondanks toenemende uitdagingen.</string>
+    <string name="card_70_feelings_rev">Je uitgeput voelen en klaar om op te geven; de constante strijd heeft je reserves uitgeput.</string>
+    <string name="card_70_actions_up">Sta stevig en verdedig je positie; volharding leidt je door deze uitdagingen heen.</string>
+    <string name="card_70_actions_rev">Beoordeel of deze strijd nog steeds de moeite waard is; een strategische terugtocht is niet hetzelfde als een nederlaag.</string>
+
+    <!-- Card 71: Eight of Wands -->
+    <string name="card_71_love_up">Snelle romantische ontwikkelingen; de relatie versnelt met een opwindend tempo en momentum.</string>
+    <string name="card_71_love_rev">De romantische vooruitgang komt tot stilstand; vertragingen en frustratie remmen een eerder snel bloeiende relatie.</string>
+    <string name="card_71_career_up">Snelle carrièrevooruitgang en bliksemsnelle professionele ontwikkelingen; het momentum draagt je voorwaarts.</string>
+    <string name="card_71_career_rev">De carrièrevooruitgang stuit op onverwachte vertragingen; frustrerende obstakels vertragen je professionele momentum.</string>
+    <string name="card_71_finances_up">Bliksemsnelle financiële ontwikkelingen; geld beweegt snel en kansen vragen om snel handelen.</string>
+    <string name="card_71_finances_rev">Financiële transacties lopen vertraging op; verwacht geld komt traag binnen.</string>
+    <string name="card_71_feelings_up">Je energiek en meegesleept voelen door de opwinding van snelle vooruitgang en beweging.</string>
+    <string name="card_71_feelings_rev">Frustratie over vertragingen; een gevoel van ongeduld wanneer het momentum stilvalt.</string>
+    <string name="card_71_actions_up">Handel snel en doortastend; het momentum is aan jouw kant, dus sla toe nu de energie hoog is.</string>
+    <string name="card_71_actions_rev">Oefen geduld tijdens vertragingen; gebruik de vertraging om je voor te bereiden op de terugkeer van het momentum.</string>
+
+    <!-- Card 72: Nine of Wands -->
+    <string name="card_72_love_up">Een veerkrachtige liefde die vele stormen heeft doorstaan; een laatste verdediging om je relatie te beschermen.</string>
+    <string name="card_72_love_rev">Emotionele uitputting in de liefde; oude wonden maken je paranoïde en defensief in relaties.</string>
+    <string name="card_72_career_up">Volhardende vastberadenheid ondanks herhaalde professionele uitdagingen; je bent dicht bij de finish.</string>
+    <string name="card_72_career_rev">Carrière-burn-out en uitputting; de strijd heeft te lang geduurd en je reserves zijn opgebruikt.</string>
+    <string name="card_72_finances_up">Veerkrachtig financieel beheer ondanks aanhoudende uitdagingen; standhouden ondanks tegenslagen.</string>
+    <string name="card_72_finances_rev">Financiële uitputting; de langdurige strijd met geldzaken sloopt je.</string>
+    <string name="card_72_feelings_up">Je getekend door de strijd maar vastberaden voelen; vastberadenheid houdt je overeind ondanks vermoeidheid.</string>
+    <string name="card_72_feelings_rev">Je volkomen uitgeput voelen en op instorten staan; de last is te zwaar geworden.</string>
+    <string name="card_72_actions_up">Blijf veerkrachtig en ga door; je bent dichter bij succes dan je beseft.</string>
+    <string name="card_72_actions_rev">Herken wanneer het genoeg is; rust en herstel zijn geen tekenen van zwakte.</string>
+
+    <!-- Card 73: Ten of Wands -->
+    <string name="card_73_love_up">Het gewicht van relatieverplichtingen voelt verpletterend; de liefde wordt een last in plaats van een vreugde.</string>
+    <string name="card_73_love_rev">Relatielasten loslaten; leren verantwoordelijkheden te delen en onnodige ballast los te laten.</string>
+    <string name="card_73_career_up">Overweldigd door professionele verplichtingen; je draagt de volledige werklast op je schouders.</string>
+    <string name="card_73_career_rev">Taken delegeren op het werk; de behoefte loslaten om alles zelf te doen.</string>
+    <string name="card_73_finances_up">Financiële lasten drukken zwaar; de stress van het beheren van te veel verplichtingen is verpletterend.</string>
+    <string name="card_73_finances_rev">Financiële lasten verlichten door te delegeren of te herstructureren; de gelddruk neemt af.</string>
+    <string name="card_73_feelings_up">Het gevoel verpletterd te worden onder het gewicht van te veel verplichtingen; uitputting en stress overheersen.</string>
+    <string name="card_73_feelings_rev">Opluchting wanneer lasten worden losgelaten; het gewicht wordt lichter naarmate je leert loslaten.</string>
+    <string name="card_73_actions_up">Onderzoek welke lasten werkelijk van jou zijn; vraag om hulp voordat je bezwijkt.</string>
+    <string name="card_73_actions_rev">Leg neer wat je niet hoeft te dragen; delegeer en laat onnodige verplichtingen los.</string>
+
+    <!-- Card 74: Page of Wands -->
+    <string name="card_74_love_up">Een opwindende nieuwe flirt of romantisch avontuur; enthousiaste en speelse energie in de liefde.</string>
+    <string name="card_74_love_rev">Romantische rusteloosheid en gebrek aan toewijding; verveling of overhaaste romantische beslissingen.</string>
+    <string name="card_74_career_up">Een opwindende carrièrekans wekt je enthousiasme; verken nieuwe professionele horizonten.</string>
+    <string name="card_74_career_rev">Gebrek aan richting in je carrière; professionele doelen uitstellen of overhaaste beslissingen nemen.</string>
+    <string name="card_74_finances_up">Enthousiast nieuwe financiële ondernemingen verkennen; geldzaken benaderen met avontuurlijke energie.</string>
+    <string name="card_74_finances_rev">Overhaaste financiële beslissingen zonder gedegen onderzoek; een gebrek aan richting in geldzaken.</string>
+    <string name="card_74_feelings_up">Een gevoel van avontuur en enthousiasme; een vrijgevochten energie drijft je tot ontdekken.</string>
+    <string name="card_74_feelings_rev">Verveling en doelloosheid; rusteloze energie zonder productieve uitlaatklep.</string>
+    <string name="card_74_actions_up">Volg je enthousiasme en verken nieuwe avonturen; laat je vrije geest de weg wijzen.</string>
+    <string name="card_74_actions_rev">Kanaliseer je rusteloze energie productief; vind richting voordat je impulsieve stappen zet.</string>
+
+    <!-- Card 75: Knight of Wands -->
+    <string name="card_75_love_up">Een gepassioneerd en gedurfd romantisch streven; een vurige en avontuurlijke aanbidder veegt je van je voeten.</string>
+    <string name="card_75_love_rev">Impulsieve romantische beslissingen; een partner die onbetrouwbaar of verstrooid is of verbintenissen uit de weg gaat.</string>
+    <string name="card_75_career_up">Gedurfde en gepassioneerde carrièrestappen; in actie komen voor ambitieuze professionele dromen.</string>
+    <string name="card_75_career_rev">Versnipperde professionele energie; veel projecten starten maar er geen enkel afronden door ongeduld.</string>
+    <string name="card_75_finances_up">Gedurfde financiële stappen gedreven door passie en een avontuurlijke geest; berekende risico\'s nemen.</string>
+    <string name="card_75_finances_rev">Impulsieve financiële beslissingen; versnipperd uitgeven dat je middelen uitput zonder richting.</string>
+    <string name="card_75_feelings_up">Je moedig, gepassioneerd en klaar voor actie voelen; een avontuurlijk vuur brandt vanbinnen.</string>
+    <string name="card_75_feelings_rev">Frustratie en versnippering; je gepassioneerde energie heeft geen gerichte uitlaatklep.</string>
+    <string name="card_75_actions_up">Ga voorwaarts met gedurfde passie en handel naar wat je het meest opwindt.</string>
+    <string name="card_75_actions_rev">Bundel je versnipperde energie; passie zonder richting leidt tot burn-out en frustratie.</string>
+
+    <!-- Card 76: Queen of Wands -->
+    <string name="card_76_love_up">Zelfverzekerde en warme romantische energie; je charisma en vitaliteit trekken diepe liefde aan.</string>
+    <string name="card_76_love_rev">Jaloezie of onzekerheid in de liefde; bazig gedrag stoot je partner af.</string>
+    <string name="card_76_career_up">Charismatisch leiderschap en een zelfverzekerde professionele uitstraling; je warmte inspireert teams.</string>
+    <string name="card_76_career_rev">Professionele jaloezie of egoïstisch gedrag op het werk; onzekerheid ondermijnt je leiderschap.</string>
+    <string name="card_76_finances_up">Zelfverzekerd financieel beheer; je charisma en vastberadenheid trekken rijkdom aan.</string>
+    <string name="card_76_finances_rev">Egoïstisch uitgeven of jaloezie op andermans rijkdom; financiële onzekerheid leidt tot slechte beslissingen.</string>
+    <string name="card_76_feelings_up">Een gevoel van stralend zelfvertrouwen en warmte; je innerlijke vuur brandt helder en inspireert anderen.</string>
+    <string name="card_76_feelings_rev">Onzekerheid verschuilt zich achter een zelfverzekerde façade; jaloezie vreet aan je innerlijke warmte.</string>
+    <string name="card_76_actions_up">Leid met warmte en zelfvertrouwen; laat je charisma en vastberadenheid je omgeving inspireren.</string>
+    <string name="card_76_actions_rev">Pak je onzekerheden eerlijk aan; jaloezie en egoïsme verkleinen alleen maar je ware kracht.</string>
+
+    <!-- Card 77: King of Wands -->
+    <string name="card_77_love_up">Een moedige en visionaire partner; een gepassioneerde leider in de liefde die toewijding en opwinding inspireert.</string>
+    <string name="card_77_love_rev">Een dominante of bazige partner; impulsiviteit en roekeloosheid beschadigen de relatie.</string>
+    <string name="card_77_career_up">Visionair ondernemersleiderschap; je gedurfde professionele visie inspireert anderen om je te volgen.</string>
+    <string name="card_77_career_rev">Een tirannieke leiderschapsstijl op het werk; impulsieve zakelijke beslissingen ondermijnen je autoriteit.</string>
+    <string name="card_77_finances_up">Moedig en visionair financieel leiderschap; ondernemende initiatieven leveren indrukwekkende rendementen op.</string>
+    <string name="card_77_finances_rev">Impulsieve financiële beslissingen vanuit een machtspositie; roekeloos rijkdom najagen tegen elke prijs.</string>
+    <string name="card_77_feelings_up">Je een geboren leider voelen met een heldere en gepassioneerde visie; gedurfd zelfvertrouwen straalt van je af.</string>
+    <string name="card_77_feelings_rev">Een gevoel van overheersing en verlies van controle; macht zonder wijsheid leidt tot innerlijke verwarring.</string>
+    <string name="card_77_actions_up">Leid moedig met visie en eer; inspireer anderen met je gepassioneerde voorbeeld.</string>
+    <string name="card_77_actions_rev">Temper je durf met wijsheid; waar leiderschap dient anderen in plaats van hen te overheersen.</string>
+</resources>

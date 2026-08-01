@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Major Arcana -->
+    <string name="card_the_fool">Deli</string>
+    <string name="card_the_magician">Büyücü</string>
+    <string name="card_the_high_priestess">Azize</string>
+    <string name="card_the_empress">İmparatoriçe</string>
+    <string name="card_the_emperor">İmparator</string>
+    <string name="card_the_hierophant">Aziz</string>
+    <string name="card_the_lovers">Aşıklar</string>
+    <string name="card_the_chariot">Savaş Arabası</string>
+    <string name="card_strength">Güç</string>
+    <string name="card_the_hermit">Ermiş</string>
+    <string name="card_wheel_of_fortune">Kader Çarkı</string>
+    <string name="card_justice">Adalet</string>
+    <string name="card_the_hanged_man">Asılan Adam</string>
+    <string name="card_death">Ölüm</string>
+    <string name="card_temperance">Denge</string>
+    <string name="card_the_devil">Şeytan</string>
+    <string name="card_the_tower">Kule</string>
+    <string name="card_the_star">Yıldız</string>
+    <string name="card_the_moon">Ay</string>
+    <string name="card_the_sun">Güneş</string>
+    <string name="card_judgement">Mahkeme</string>
+    <string name="card_the_world">Dünya</string>
+
+    <!-- Cups -->
+    <string name="card_ace_of_cups">Kupa Ası</string>
+    <string name="card_two_of_cups">Kupa İkilisi</string>
+    <string name="card_three_of_cups">Kupa Üçlüsü</string>
+    <string name="card_four_of_cups">Kupa Dörtlüsü</string>
+    <string name="card_five_of_cups">Kupa Beşlisi</string>
+    <string name="card_six_of_cups">Kupa Altılısı</string>
+    <string name="card_seven_of_cups">Kupa Yedilisi</string>
+    <string name="card_eight_of_cups">Kupa Sekizlisi</string>
+    <string name="card_nine_of_cups">Kupa Dokuzlusu</string>
+    <string name="card_ten_of_cups">Kupa Onlusu</string>
+    <string name="card_page_of_cups">Kupa Uşağı</string>
+    <string name="card_knight_of_cups">Kupa Şövalyesi</string>
+    <string name="card_queen_of_cups">Kupa Kraliçesi</string>
+    <string name="card_king_of_cups">Kupa Kralı</string>
+
+    <!-- Pentacles -->
+    <string name="card_ace_of_pentacles">Tılsım Ası</string>
+    <string name="card_two_of_pentacles">Tılsım İkilisi</string>
+    <string name="card_three_of_pentacles">Tılsım Üçlüsü</string>
+    <string name="card_four_of_pentacles">Tılsım Dörtlüsü</string>
+    <string name="card_five_of_pentacles">Tılsım Beşlisi</string>
+    <string name="card_six_of_pentacles">Tılsım Altılısı</string>
+    <string name="card_seven_of_pentacles">Tılsım Yedilisi</string>
+    <string name="card_eight_of_pentacles">Tılsım Sekizlisi</string>
+    <string name="card_nine_of_pentacles">Tılsım Dokuzlusu</string>
+    <string name="card_ten_of_pentacles">Tılsım Onlusu</string>
+    <string name="card_page_of_pentacles">Tılsım Uşağı</string>
+    <string name="card_knight_of_pentacles">Tılsım Şövalyesi</string>
+    <string name="card_queen_of_pentacles">Tılsım Kraliçesi</string>
+    <string name="card_king_of_pentacles">Tılsım Kralı</string>
+
+    <!-- Swords -->
+    <string name="card_ace_of_swords">Kılıç Ası</string>
+    <string name="card_two_of_swords">Kılıç İkilisi</string>
+    <string name="card_three_of_swords">Kılıç Üçlüsü</string>
+    <string name="card_four_of_swords">Kılıç Dörtlüsü</string>
+    <string name="card_five_of_swords">Kılıç Beşlisi</string>
+    <string name="card_six_of_swords">Kılıç Altılısı</string>
+    <string name="card_seven_of_swords">Kılıç Yedilisi</string>
+    <string name="card_eight_of_swords">Kılıç Sekizlisi</string>
+    <string name="card_nine_of_swords">Kılıç Dokuzlusu</string>
+    <string name="card_ten_of_swords">Kılıç Onlusu</string>
+    <string name="card_page_of_swords">Kılıç Uşağı</string>
+    <string name="card_knight_of_swords">Kılıç Şövalyesi</string>
+    <string name="card_queen_of_swords">Kılıç Kraliçesi</string>
+    <string name="card_king_of_swords">Kılıç Kralı</string>
+
+    <!-- Wands -->
+    <string name="card_ace_of_wands">Değnek Ası</string>
+    <string name="card_two_of_wands">Değnek İkilisi</string>
+    <string name="card_three_of_wands">Değnek Üçlüsü</string>
+    <string name="card_four_of_wands">Değnek Dörtlüsü</string>
+    <string name="card_five_of_wands">Değnek Beşlisi</string>
+    <string name="card_six_of_wands">Değnek Altılısı</string>
+    <string name="card_seven_of_wands">Değnek Yedilisi</string>
+    <string name="card_eight_of_wands">Değnek Sekizlisi</string>
+    <string name="card_nine_of_wands">Değnek Dokuzlusu</string>
+    <string name="card_ten_of_wands">Değnek Onlusu</string>
+    <string name="card_page_of_wands">Değnek Uşağı</string>
+    <string name="card_knight_of_wands">Değnek Şövalyesi</string>
+    <string name="card_queen_of_wands">Değnek Kraliçesi</string>
+    <string name="card_king_of_wands">Değnek Kralı</string>
+</resources>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================= -->
+    <!-- Cups (Poháry) — id 22–35, živel Voda                         -->
+    <!-- ============================================================= -->
+
+    <!-- Card 22: Ace of Cups (Eso pohárů) -->
+    <string name="card_22_love_up">Un nou început emoțional minunat; începutul unei conexiuni de dragoste profunde și pline de suflet.</string>
+    <string name="card_22_love_rev">Blocajele emoționale împiedică intrarea unei noi iubiri; poate îți reprimi adevăratele sentimente.</string>
+    <string name="card_22_career_up">Inspirația creativă curge; un nou proiect te umple de satisfacție emoțională.</string>
+    <string name="card_22_career_rev">Blocajele creative îți sufocă munca; nemulțumire emoțională față de calea ta profesională.</string>
+    <string name="card_22_finances_up">Împlinirea emoțională contează acum mai mult decât banii; generozitatea atrage abundența.</string>
+    <string name="card_22_finances_rev">Te simți gol pe plan emoțional în ciuda stabilității financiare; banii nu pot umple acest gol.</string>
+    <string name="card_22_feelings_up">Inima ta se revarsă de iubire, compasiune și deschidere emoțională.</string>
+    <string name="card_22_feelings_rev">Te simți epuizat emoțional sau amorțit; dificultate în a te conecta cu propriile sentimente.</string>
+    <string name="card_22_actions_up">Deschide-ți inima și primește iubirea și hrana emoțională din toate sursele.</string>
+    <string name="card_22_actions_rev">Deblochează emoțiile reprimate; permite-ți să simți și să-ți exprimi adevăratele sentimente.</string>
+
+    <!-- Card 23: Two of Cups (Dvojka pohárů) -->
+    <string name="card_23_love_up">O atracție reciprocă puternică și o legătură care se adâncește; două inimi se unesc într-o armonie minunată.</string>
+    <string name="card_23_love_rev">Relația își pierde echilibrul; înstrăinarea și neîncrederea creează distanță.</string>
+    <string name="card_23_career_up">Se formează un parteneriat de afaceri productiv; respectul reciproc alimentează succesul comun.</string>
+    <string name="card_23_career_rev">Parteneriatele profesionale se destramă; lipsa de încredere subminează munca în echipă.</string>
+    <string name="card_23_finances_up">Parteneriatele financiare sau resursele comune aduc beneficii reciproce.</string>
+    <string name="card_23_finances_rev">Neînțelegeri financiare cu partenerul; investițiile comune devin surse de conflict.</string>
+    <string name="card_23_feelings_up">Sentimentul unei conexiuni profunde cu cineva; afecțiune reciprocă și rezonanță emoțională.</string>
+    <string name="card_23_feelings_rev">Te simți înstrăinat de cineva la care ții; distanța emoțională crește.</string>
+    <string name="card_23_actions_up">Îngrijește-ți conexiunile pline de sens; investește în relații reciproce.</string>
+    <string name="card_23_actions_rev">Abordează cu sinceritate dezechilibrele din relație; reclădește încrederea sau desparte-te cu grație.</string>
+
+    <!-- Card 24: Three of Cups (Trojka pohárů) -->
+    <string name="card_24_love_up">Sărbători pline de bucurie alături de cei dragi; prieteniile îți îmbogățesc relațiile de dragoste.</string>
+    <string name="card_24_love_rev">Amestecul unei terțe persoane în relație; excese sociale sau gelozie între prieteni.</string>
+    <string name="card_24_career_up">Sărbători în echipă și succes comun; proiectele creative înfloresc în grup.</string>
+    <string name="card_24_career_rev">Bârfele sau găștile de la locul de muncă creează probleme; exces la evenimentele firmei.</string>
+    <string name="card_24_finances_up">Sărbători financiare împărtășite; investiții de grup sau prosperitate colectivă.</string>
+    <string name="card_24_finances_rev">Cheltuieli excesive pentru evenimente sociale; presiunea anturajului duce la excese financiare.</string>
+    <string name="card_24_feelings_up">Fericire și recunoștință care se revarsă; te simți înălțat de comunitate și prietenie.</string>
+    <string name="card_24_feelings_rev">Sentimentul de a fi exclus din grup; singurătate, deși ești înconjurat de oameni.</string>
+    <string name="card_24_actions_up">Sărbătorește cu comunitatea ta; împărtășește-ți bucuria și recunoștința cu ceilalți.</string>
+    <string name="card_24_actions_rev">Redu activitățile sociale excesive; abordează bârfele sau dinamica nesănătoasă a grupului.</string>
+
+    <!-- Card 25: Four of Cups (Čtyřka pohárů) -->
+    <string name="card_25_love_up">Plictiseală sau nemulțumire emoțională în dragoste; îți iei partenerul drept ceva de la sine înțeles.</string>
+    <string name="card_25_love_rev">Apreciere reînnoită pentru partenerul tău; îți vezi relația cu ochi noi.</string>
+    <string name="card_25_career_up">Te simți dezinteresat și demotivat la muncă; te întrebi dacă să rămâi sau să pleci.</string>
+    <string name="card_25_career_rev">Entuziasm reînnoit pentru carieră; o nouă oportunitate îți atrage atenția.</string>
+    <string name="card_25_finances_up">Nemulțumire față de situația financiară, deși ai suficient; treci cu vederea oportunitățile disponibile.</string>
+    <string name="card_25_finances_rev">Recunoști și valorifici o oportunitate financiară pe care înainte o treceai cu vederea.</string>
+    <string name="card_25_feelings_up">Apatie emoțională și retragere; nimic nu pare să te entuziasmeze sau să te mulțumească.</string>
+    <string name="card_25_feelings_rev">Ieși din retragerea emoțională cu interes și recunoștință reînnoite.</string>
+    <string name="card_25_actions_up">Acordă-ți timp să meditezi la ce contează cu adevărat înainte de a accepta sau respinge oportunități.</string>
+    <string name="card_25_actions_rev">Deschide-ți ochii la binecuvântările din jurul tău; acceptă ceea ce ți se oferă.</string>
+
+    <!-- Card 26: Five of Cups (Pětka pohárů) -->
+    <string name="card_26_love_up">Jelești o pierdere sau o dezamăgire în dragoste; te concentrezi pe ce a mers prost în loc de ce a rămas.</string>
+    <string name="card_26_love_rev">Începi să te vindeci după o inimă frântă; accepți pierderea și găsești speranță pentru o nouă iubire.</string>
+    <string name="card_26_career_up">Dezamăgire după un eșec în carieră; stărui asupra unei oportunități ratate sau a unui nereușite.</string>
+    <string name="card_26_career_rev">Depășești dezamăgirile profesionale; găsești un nou sens după o pierdere în carieră.</string>
+    <string name="card_26_finances_up">O pierdere financiară provoacă durere; regretul pentru decizii bănești greșite apasă greu.</string>
+    <string name="card_26_finances_rev">Te refaci după o pierdere financiară; accepți ce s-a întâmplat și reconstruiești cu înțelepciune.</string>
+    <string name="card_26_feelings_up">Tristețe profundă și regret; te concentrezi pe ce s-a pierdut în loc de ce a rămas.</string>
+    <string name="card_26_feelings_rev">Găsești pacea după durere; procesul de vindecare începe pe măsură ce îți schimbi perspectiva.</string>
+    <string name="card_26_actions_up">Permite-ți să jelești, dar amintește-ți să privești spre ceea ce încă ai.</string>
+    <string name="card_26_actions_rev">Întoarce-te de la regret și privește înainte; iartă-te și îmbrățișează ceea ce a rămas.</string>
+
+    <!-- Card 27: Six of Cups (Šestka pohárů) -->
+    <string name="card_27_love_up">Conexiuni romantice nostalgice și tandre; o iubire din trecut poate reveni sau amintirile vechi reaprind căldura.</string>
+    <string name="card_27_love_rev">Trăitul în trecut împiedică o nouă iubire; idealizarea unei foste relații blochează creșterea.</string>
+    <string name="card_27_career_up">Reluarea legăturii cu un fost coleg sau revenirea la o cale profesională de altădată aduce bucurie.</string>
+    <string name="card_27_career_rev">Blocat în metode de lucru învechite; nostalgia împiedică evoluția profesională.</string>
+    <string name="card_27_finances_up">Daruri financiare sau moșteniri din partea familiei; generozitate înrădăcinată într-o istorie comună.</string>
+    <string name="card_27_finances_rev">Așteptări financiare nerealiste bazate pe trecut; obiceiuri bănești învechite te țin pe loc.</string>
+    <string name="card_27_feelings_up">Nostalgie caldă și bucurie inocentă; amintirile fericite îți aduc alinare.</string>
+    <string name="card_27_feelings_rev">Blocat emoțional în trecut; incapabil să te implici pe deplin în momentul prezent.</string>
+    <string name="card_27_actions_up">Reconectează-te cu rădăcinile tale și cu oamenii care te-au format; împărtășește cu generozitate.</string>
+    <string name="card_27_actions_rev">Eliberează trecutul și trăiește în prezent; nu mai idealiza ceea ce a fost cândva.</string>
+
+    <!-- Card 28: Seven of Cups (Sedmička pohárů) -->
+    <string name="card_28_love_up">Fantezii romantice și viziuni idealizate despre iubire; prea multe opțiuni îți tulbură judecata.</string>
+    <string name="card_28_love_rev">Claritate asupra a ceea ce vrei cu adevărat în dragoste; fanteziile lasă loc alegerilor realiste.</string>
+    <string name="card_28_career_up">Prea multe opțiuni de carieră duc la paralizia analizei; visarea cu ochii deschiși înlocuiește acțiunea.</string>
+    <string name="card_28_career_rev">Îți restrângi focusul profesional; te dedici unei singure căi după ce ai eliminat distragerile.</string>
+    <string name="card_28_finances_up">Fanteziile financiare sau schemele de îmbogățire rapidă te ademenesc; rămâi cu picioarele pe pământ.</string>
+    <string name="card_28_finances_rev">Privești finanțele cu luciditate; te angajezi la planuri financiare practice, nu fanteziste.</string>
+    <string name="card_28_feelings_up">Pierdut în visare și iluzii; copleșit de posibilități, dar incapabil să alegi.</string>
+    <string name="card_28_feelings_rev">Claritatea mentală străpunge confuzia; știi în sfârșit ce îți dorești cu adevărat.</string>
+    <string name="card_28_actions_up">Evaluează-ți opțiunile cu grijă; fă distincția între obiective realiste și simple fantezii.</string>
+    <string name="card_28_actions_rev">Nu mai visa și dedică-te unui singur obiectiv realizabil, cu hotărâre deplină.</string>
+
+    <!-- Card 29: Eight of Cups (Osmička pohárů) -->
+    <string name="card_29_love_up">Pleci dintr-o relație neîmplinită emoțional pentru a căuta ceva mai profund.</string>
+    <string name="card_29_love_rev">Rămâi într-o relație fără iubire din frică; ți-e teamă să părăsești ceea ce nu îți mai servește.</string>
+    <string name="card_29_career_up">Părăsești o carieră care nu te mai mulțumește; cauți o muncă mai plină de sens.</string>
+    <string name="card_29_career_rev">Frica de a părăsi un loc de muncă nesatisfăcător; te agăți de siguranță în locul împlinirii.</string>
+    <string name="card_29_finances_up">Te îndepărtezi de o situație financiară care nu îți mai servește creșterea.</string>
+    <string name="card_29_finances_rev">Rămâi într-un aranjament financiar dezavantajos de frica necunoscutului.</string>
+    <string name="card_29_feelings_up">O cunoaștere interioară profundă că trebuie să mergi mai departe, chiar dacă plecarea doare.</string>
+    <string name="card_29_feelings_rev">Frica de abandon sau de schimbare te ține blocat emoțional în ceea ce îți este familiar.</string>
+    <string name="card_29_actions_up">Ai curajul să pleci de la ceea ce nu te mai împlinește; caută țeluri mai înalte.</string>
+    <string name="card_29_actions_rev">Cercetează de ce ți-e teamă să pleci; disconfortul de a rămâne poate depăși riscul plecării.</string>
+
+    <!-- Card 30: Nine of Cups (Devítka pohárů) -->
+    <string name="card_30_love_up">Dorințele tale romantice se împlinesc; satisfacție emoțională profundă și mulțumire în dragoste.</string>
+    <string name="card_30_love_rev">Satisfacție superficială în dragoste; dorești mai mult în ciuda unei relații bune.</string>
+    <string name="card_30_career_up">Dorințele profesionale se împlinesc; atingi un reper de carieră care aduce satisfacție profundă.</string>
+    <string name="card_30_career_rev">Realizările profesionale par goale; succesul fără sens te lasă dorind mai mult.</string>
+    <string name="card_30_finances_up">Dorințele financiare se materializează; abundența și prosperitatea aduc mulțumire profundă.</string>
+    <string name="card_30_finances_rev">Lăcomia sau materialismul diminuează bucuria succesului financiar; a dori mai mult nu ajunge niciodată.</string>
+    <string name="card_30_feelings_up">Mulțumire profundă și împlinire emoțională; recunoștință pentru tot ceea ce ai.</string>
+    <string name="card_30_feelings_rev">Nemulțumire, deși ai de toate; un gol sâcâitor pe care bunurile nu îl pot umple.</string>
+    <string name="card_30_actions_up">Numără-ți binecuvântările și bucură-te cu recunoștință de împlinirea dorințelor tale.</string>
+    <string name="card_30_actions_rev">Cercetează ce îți aduce cu adevărat bucurie; excesul material nu poate înlocui împlinirea interioară.</string>
+
+    <!-- Card 31: Ten of Cups (Desítka pohárů) -->
+    <string name="card_31_love_up">Fericire supremă în dragoste și familie; o relație armonioasă, profund împlinitoare.</string>
+    <string name="card_31_love_rev">Neînțelegeri în familie sau disfuncții în relație; imaginea ideală a iubirii pare spulberată.</string>
+    <string name="card_31_career_up">Găsești o carieră care aduce împlinire emoțională și armonie întregii tale vieți.</string>
+    <string name="card_31_career_rev">Dezechilibrul dintre muncă și viață tulbură armonia familiei; succesul în carieră vine cu prețul fericirii personale.</string>
+    <string name="card_31_finances_up">Stabilitatea financiară susține un cămin fericit; prosperitate împărtășită cu cei dragi.</string>
+    <string name="card_31_finances_rev">Stresul financiar tulbură armonia familiei; problemele bănești apasă asupra relațiilor personale.</string>
+    <string name="card_31_feelings_up">Împlinire emoțională desăvârșită; te simți profund fericit și împăcat cu viața ta.</string>
+    <string name="card_31_feelings_rev">Sentimentul că ceva este rupt în viața ta personală sau de familie; tânjești după armonie.</string>
+    <string name="card_31_actions_up">Investește în familie și în relațiile apropiate; creează viața armonioasă pe care ți-o imaginezi.</string>
+    <string name="card_31_actions_rev">Abordează cu sinceritate disfuncțiile familiei; lucrează la repararea relațiilor rănite și la refacerea armoniei.</string>
+
+    <!-- Card 32: Page of Cups (Páže pohárů) -->
+    <string name="card_32_love_up">Sosește un mesaj sau o ofertă romantică dulce și tandră; energie tinerească de primă iubire.</string>
+    <string name="card_32_love_rev">Imaturitate emoțională în dragoste; așteptări romantice nerealiste sau fantezii de evadare.</string>
+    <string name="card_32_career_up">Apare o oportunitate creativă sau o idee inspirată; abordează munca cu curiozitate și deschidere.</string>
+    <string name="card_32_career_rev">Blocaje creative sau comportament imatur la muncă; dificultăți în a duce ideile la bun sfârșit.</string>
+    <string name="card_32_finances_up">O oportunitate financiară mică, dar promițătoare; abordează chestiunile bănești cu o curiozitate proaspătă.</string>
+    <string name="card_32_finances_rev">Naivitate financiară sau gestionare imatură a banilor; obiceiuri de cheltuit ca formă de evadare.</string>
+    <string name="card_32_feelings_up">Curiozitate și deschidere emoțională; o uimire copilărească îți umple inima.</string>
+    <string name="card_32_feelings_rev">Nesiguranță emoțională mascată de visare; dificultate în a procesa sentimente de adult.</string>
+    <string name="card_32_actions_up">Rămâi deschis la mesajele emoționale și creative ale universului; urmează-ți intuiția.</string>
+    <string name="card_32_actions_rev">Ancorează-ți emoțiile în realitate; lucrează cu nesiguranțele tale în loc să fugi de ele.</string>
+
+    <!-- Card 33: Knight of Cups (Rytíř pohárů) -->
+    <string name="card_33_love_up">O cerere romantică sau un gest măreț; un pretendent fermecător apare cu intenții sincere.</string>
+    <string name="card_33_love_rev">Toanele și gelozia tulbură romantismul; așteptările nerealiste duc la dezamăgire.</string>
+    <string name="card_33_career_up">Îți urmezi inima în chestiuni de carieră; o propunere creativă sau un proiect plin de imaginație prinde contur.</string>
+    <string name="card_33_career_rev">Obiective de carieră nerealiste sau comportament capricios la muncă; numai farmec, dar nimic dus la capăt.</string>
+    <string name="card_33_finances_up">Urmându-ți inima, ajungi la inițiative creative profitabile financiar.</string>
+    <string name="card_33_finances_rev">Cheltuieli emoționale sau așteptări financiare nerealiste; decizii bănești dictate de stări de moment.</string>
+    <string name="card_33_feelings_up">Te simți inspirat romantic și generos emoțional; inima ta arată calea.</string>
+    <string name="card_33_feelings_rev">Capricios și instabil emoțional; gelozia sau idealismul nerealist provoacă frământări interioare.</string>
+    <string name="card_33_actions_up">Urmează-ți inima cu curaj; fă un gest romantic sau creativ cu sinceritate.</string>
+    <string name="card_33_actions_rev">Ancorează-ți emoțiile; nu lăsa toanele sau gelozia să îți conducă acțiunile.</string>
+
+    <!-- Card 34: Queen of Cups (Královna pohárů) -->
+    <string name="card_34_love_up">Inteligența emoțională profundă îți îmbogățește viața amoroasă; un parteneriat grijuliu și intuitiv.</string>
+    <string name="card_34_love_rev">Codependență sau manipulare emoțională în dragoste; te sacrifici pentru aprobarea partenerului.</string>
+    <string name="card_34_career_up">Inteligența emoțională te face un lider plin de compasiune; ai încredere în abordarea ta intuitivă a muncii.</string>
+    <string name="card_34_career_rev">Preiei poverile emoționale ale altora la muncă; te simți epuizat de problemele colegilor.</string>
+    <string name="card_34_finances_up">Deciziile financiare intuitive se dovedesc înțelepte; generozitatea și compasiunea îți ghidează cheltuielile.</string>
+    <string name="card_34_finances_rev">Dăruiești prea mult pe plan financiar; deciziile emoționale despre bani înving înțelepciunea practică.</string>
+    <string name="card_34_feelings_up">Profund empatic și acordat emoțional; empatia ta este un dar pentru cei din jur.</string>
+    <string name="card_34_feelings_rev">Copleșit emoțional de absorbția sentimentelor altora; te pierzi pe tine în grija pentru ceilalți.</string>
+    <string name="card_34_actions_up">Condu cu compasiune și inteligență emoțională; ai încredere în cunoașterea ta intuitivă profundă.</string>
+    <string name="card_34_actions_rev">Stabilește granițe emoționale; nu mai absorbi durerea tuturor în detrimentul propriei tale bunăstări.</string>
+
+    <!-- Card 35: King of Cups (Král pohárů) -->
+    <string name="card_35_love_up">Iubire matură emoțional și echilibrată; un partener înțelept, calm și profund susținător.</string>
+    <string name="card_35_love_rev">Răceală emoțională sau instabilitate în relație; un partener care își reprimă sentimentele sau le folosește ca armă.</string>
+    <string name="card_35_career_up">Conducere înțeleaptă și diplomatică; gestionezi echipe cu inteligență emoțională și autoritate calmă.</string>
+    <string name="card_35_career_rev">Conducere capricioasă sau manipulatoare; folosirea pârghiilor emoționale pentru a-i controla pe ceilalți la muncă.</string>
+    <string name="card_35_finances_up">Gestionare financiară echilibrată și înțeleaptă; maturitatea emoțională duce la decizii bănești sănătoase.</string>
+    <string name="card_35_finances_rev">Instabilitatea emoțională tulbură stabilitatea financiară; decizii bănești impulsive în momente de tulburare.</string>
+    <string name="card_35_feelings_up">Echilibru emoțional și înțelepciune; stăpânire calmă asupra lumii tale interioare de sentimente.</string>
+    <string name="card_35_feelings_rev">Reprimarea emoțiilor creează frământări interioare; pari calm, în timp ce totul clocotește înăuntru.</string>
+    <string name="card_35_actions_up">Condu cu înțelepciune emoțională și diplomație; echilibrează inima și rațiunea în toate deciziile.</string>
+    <string name="card_35_actions_rev">Nu-ți mai reprima emoțiile; abordează instabilitatea ascunsă sub aparența ta calmă.</string>
+
+    <!-- ============================================================= -->
+    <!-- Pentacles (Pentakly) — id 36–49, živel Země                   -->
+    <!-- ============================================================= -->
+
+    <!-- Card 36: Ace of Pentacles (Eso pentaklů) -->
+    <string name="card_36_love_up">Un nou început solid în dragoste; o relație care oferă siguranță și stabilitate durabilă.</string>
+    <string name="card_36_love_rev">O oportunitate romantică promițătoare este ratată sau irosită din cauza nesiguranței.</string>
+    <string name="card_36_career_up">Sosește o nouă oportunitate de carieră profitabilă; o temelie solidă pentru succesul profesional.</string>
+    <string name="card_36_career_rev">O oportunitate de carieră îți scapă din cauza planificării slabe sau a ezitării.</string>
+    <string name="card_36_finances_up">O nouă sursă de venit sau un câștig financiar neașteptat; sămânța prosperității viitoare este plantată.</string>
+    <string name="card_36_finances_rev">O oportunitate financiară ratată; planificarea slabă subminează abundența potențială.</string>
+    <string name="card_36_feelings_up">Te simți ancorat și optimist în privința unui nou început material sau practic.</string>
+    <string name="card_36_feelings_rev">Anxietate legată de siguranța financiară; te simți instabil sau îngrijorat pentru viitor.</string>
+    <string name="card_36_actions_up">Valorifică noua oportunitate cu planificare practică și hotărâre bine ancorată.</string>
+    <string name="card_36_actions_rev">Nu lăsa frica să te lipsească de o oportunitate solidă; planifică mai bine și acționează hotărât.</string>
+
+    <!-- Card 37: Two of Pentacles (Dvojka pentaklů) -->
+    <string name="card_37_love_up">Echilibrezi iubirea cu celelalte responsabilități; flexibilitatea menține relația puternică.</string>
+    <string name="card_37_love_rev">Dificultăți în a echilibra dragostea și viața; relația suferă din cauza neglijării.</string>
+    <string name="card_37_career_up">Jonglezi cu succes cu mai multe proiecte sau roluri; adaptabilitatea este cel mai mare atu al tău.</string>
+    <string name="card_37_career_rev">Copleșit de prea multe responsabilități; pierzi controlul asupra sarcinilor de lucru.</string>
+    <string name="card_37_finances_up">Gestionezi cu îndemânare finanțele fluctuante; îți adaptezi bugetul la circumstanțele în schimbare.</string>
+    <string name="card_37_finances_rev">Haos financiar din cauza organizării slabe; cheltuielile excesive într-o zonă golesc alta.</string>
+    <string name="card_37_feelings_up">Te simți ocupat, dar capabil să faci față; prosperi în provocarea de a menține multe lucruri în mișcare.</string>
+    <string name="card_37_feelings_rev">Te simți copleșit și împrăștiat în prea multe direcții; jongleria a devenit nesustenabilă.</string>
+    <string name="card_37_actions_up">Rămâi flexibil și adaptabil; prioritizează ce contează cel mai mult și păstrează echilibrul.</string>
+    <string name="card_37_actions_rev">Simplifică-ți angajamentele; nu poți face totul bine, așa că axează-te pe esențial.</string>
+
+    <!-- Card 38: Three of Pentacles (Trojka pentaklů) -->
+    <string name="card_38_love_up">Construirea relației prin efort comun; munca în echipă vă întărește legătura.</string>
+    <string name="card_38_love_rev">Lipsă de lucru în echipă în relație; partenerii nu reușesc să colaboreze la obiective comune.</string>
+    <string name="card_38_career_up">Succes obținut prin muncă de echipă pricepută; expertiza ta este recunoscută și apreciată.</string>
+    <string name="card_38_career_rev">Conflictele de la locul de muncă subminează echipa; colaborarea slabă duce la rezultate mediocre.</string>
+    <string name="card_38_finances_up">Câștiguri financiare prin muncă pricepută și colaborare profesională.</string>
+    <string name="card_38_finances_rev">Planificare financiară slabă din lipsa sfaturilor de specialitate; economiile făcute unde nu trebuie costă mai mult.</string>
+    <string name="card_38_feelings_up">Mândrie pentru meșteșugul tău și realizările comune; te simți apreciat pentru contribuțiile tale.</string>
+    <string name="card_38_feelings_rev">Frustrare față de oamenii necooperanți; te simți subapreciat sau nepriceput.</string>
+    <string name="card_38_actions_up">Colaborează cu oameni pricepuți; investește în învățare și în șlefuirea meșteșugului tău.</string>
+    <string name="card_38_actions_rev">Îmbunătățește-ți abilitățile și comunicarea; rezolvă conflictele din echipă înainte să submineze munca.</string>
+
+    <!-- Card 39: Four of Pentacles (Čtyřka pentaklů) -->
+    <string name="card_39_love_up">Te agăți crispat de relație de frica pierderii; posesivitate în dragoste.</string>
+    <string name="card_39_love_rev">Renunți la posesivitate în dragoste; îți deschizi inima după o perioadă de apărare emoțională.</string>
+    <string name="card_39_career_up">Siguranță cu orice preț în carieră; te ții de o poziție stabilă chiar dacă nu te împlinește.</string>
+    <string name="card_39_career_rev">Renunți la rigiditatea profesională; îți asumi un risc profesional după o perioadă în care ai jucat la sigur.</string>
+    <string name="card_39_finances_up">Te agăți crispat de bani; gestionarea financiară conservatoare oferă siguranță, dar limitează creșterea.</string>
+    <string name="card_39_finances_rev">Slăbești controlul financiar; cheltuiești mai liber sau faci donații generoase.</string>
+    <string name="card_39_feelings_up">Te simți în siguranță, dar constrâns; ți-e teamă să dai drumul la ceea ce ai acumulat.</string>
+    <string name="card_39_feelings_rev">Ușurare după ce ai slăbit strânsoarea; te simți mai ușor după ce ai renunțat la controlul excesiv.</string>
+    <string name="card_39_actions_up">Protejează ceea ce ai, dar cercetează dacă nu cumva controlul excesiv îți limitează viața.</string>
+    <string name="card_39_actions_rev">Slăbește strânsoarea; generozitatea și deschiderea vor aduce mai multă abundență decât acumularea.</string>
+
+    <!-- Card 40: Five of Pentacles (Pětka pentaklů) -->
+    <string name="card_40_love_up">Sentimentul de excludere emoțională; greutățile pun la încercare tăria relației tale.</string>
+    <string name="card_40_love_rev">Refacere după o perioadă dificilă în dragoste; găsești căldură și sprijin după ce te-ai simțit părăsit.</string>
+    <string name="card_40_career_up">Greutăți în carieră, precum pierderea locului de muncă sau eșecuri profesionale; te simți lăsat pe dinafară.</string>
+    <string name="card_40_career_rev">Refacerea profesională începe; noi perspective de muncă apar după o perioadă dificilă.</string>
+    <string name="card_40_finances_up">Greutăți și griji financiare; te lupți să te descurci cu banii într-o perioadă grea.</string>
+    <string name="card_40_finances_rev">Refacerea financiară este pe drum; ce a fost mai rău a trecut, iar îmbunătățirea se întrezărește.</string>
+    <string name="card_40_feelings_up">Te simți sărăcit și singur; grijile și teama pentru siguranța materială te copleșesc.</string>
+    <string name="card_40_feelings_rev">Speranța revine după o perioadă întunecată; sentimentul că ajutorul și refacerea sunt aproape.</string>
+    <string name="card_40_actions_up">Caută ajutor și sprijin; nu trebuie să înduri singur aceste greutăți.</string>
+    <string name="card_40_actions_rev">Acceptă ajutorul care ți se oferă; procesul de refacere a început deja.</string>
+
+    <!-- Card 41: Six of Pentacles (Šestka pentaklů) -->
+    <string name="card_41_love_up">O relație generoasă și echilibrată de dăruire și primire în dragoste; împărtășirea resurselor și a sprijinului emoțional.</string>
+    <string name="card_41_love_rev">Dezechilibru de putere în relație; generozitatea condiționată naște resentimente.</string>
+    <string name="card_41_career_up">Îi mentorezi pe alții sau primești îndrumare; împărtășirea cunoștințelor și resurselor la locul de muncă.</string>
+    <string name="card_41_career_rev">Inegalitate la locul de muncă; favoruri oferite cu așteptări sau împărțire nedreaptă a resurselor.</string>
+    <string name="card_41_finances_up">Generozitatea financiară dă roade; îți împarți abundența sau primești ajutorul financiar de care ai nevoie.</string>
+    <string name="card_41_finances_rev">Datorii cu condiții atașate; generozitatea financiară folosită ca instrument de control.</string>
+    <string name="card_41_feelings_up">Te simți generos și îndestulat; bucuria de a dărui și recunoștința de a primi.</string>
+    <string name="card_41_feelings_rev">Te simți îndatorat sau controlat de generozitatea cuiva; resentimente din cauza inegalității.</string>
+    <string name="card_41_actions_up">Dăruiește cu generozitate când poți și primește cu grație când ai nevoie; păstrează echilibrul.</string>
+    <string name="card_41_actions_rev">Cercetează dinamica de putere din relațiile tale; nu accepta daruri cu condiții ascunse.</string>
+
+    <!-- Card 42: Seven of Pentacles (Sedmička pentaklů) -->
+    <string name="card_42_love_up">Cultivi relația cu răbdare; semințele pe care le-ai plantat în dragoste cresc constant.</string>
+    <string name="card_42_love_rev">Nerăbdare față de progresul relației; te îndoiești dacă investiția ta în dragoste merită.</string>
+    <string name="card_42_career_up">Investițiile de carieră pe termen lung încep să dea rezultate; răbdarea și perseverența sunt răsplătite.</string>
+    <string name="card_42_career_rev">Frustrare din cauza avansării lente în carieră; te îndoiești că munca ta grea se va răsplăti vreodată.</string>
+    <string name="card_42_finances_up">Investițiile financiare pe termen lung cresc constant; răbdarea cu portofoliul tău dă roade.</string>
+    <string name="card_42_finances_rev">Randamente slabe din investițiile financiare; frustrare din cauza creșterii lente sau inexistente.</string>
+    <string name="card_42_feelings_up">Răbdare, dar și reflecție; evaluezi dacă eforturile tale aduc roadele în care ai sperat.</string>
+    <string name="card_42_feelings_rev">Frustrare și nerăbdare; sentimentul că munca ta grea a fost în zadar.</string>
+    <string name="card_42_actions_up">Continuă să investești timp și energie cu răbdare; recolta va veni la momentul potrivit.</string>
+    <string name="card_42_actions_rev">Regândește-ți strategia; dacă eforturile tale nu aduc rezultate, ia în calcul o altă abordare.</string>
+
+    <!-- Card 43: Eight of Pentacles (Osmička pentaklů) -->
+    <string name="card_43_love_up">Muncești cu sârguință la relația ta; investești efort pentru a vă întări legătura emoțională.</string>
+    <string name="card_43_love_rev">Neglijezi relația din cauza obsesiei pentru muncă; perfecționismul creează distanță în dragoste.</string>
+    <string name="card_43_career_up">Dezvoltarea dedicată a abilităților duce la măiestrie; munca asiduă și atenția la detalii aduc succes.</string>
+    <string name="card_43_career_rev">Iei scurtături la muncă; lipsa de dedicare duce la rezultate profesionale mediocre.</string>
+    <string name="card_43_finances_up">Gestionare financiară atentă și venit constant din muncă pricepută.</string>
+    <string name="card_43_finances_rev">Scurtăturile financiare nu dau roade; rabatul la calitate îți scade potențialul de câștig.</string>
+    <string name="card_43_feelings_up">Te simți concentrat și harnic; satisfacție profundă din stăpânirea meșteșugului tău.</string>
+    <string name="card_43_feelings_rev">Te simți lipsit de inspirație sau plictisit de sarcinile repetitive; perfecționismul îți secătuiește energia.</string>
+    <string name="card_43_actions_up">Dedică-te măiestriei meșteșugului tău prin practică sârguincioasă și îmbunătățire continuă.</string>
+    <string name="card_43_actions_rev">Nu mai lua scurtături; reinvestește în muncă de calitate și evită capcana perfecționismului.</string>
+
+    <!-- Card 44: Nine of Pentacles (Devítka pentaklů) -->
+    <string name="card_44_love_up">Independent și încrezător în dragoste; atragi un partener fiind împlinit prin tine însuți.</string>
+    <string name="card_44_love_rev">Dependență financiară de partener; sacrifici independența pentru confort material.</string>
+    <string name="card_44_career_up">Te bucuri de roadele muncii tale profesionale; succesul obținut prin forțe proprii aduce satisfacție profundă.</string>
+    <string name="card_44_career_rev">Muncești peste măsură pentru a păstra imaginea succesului; epuizarea profesională îți amenință realizările.</string>
+    <string name="card_44_finances_up">Independență financiară și lux dobândite prin efort propriu; te bucuri de abundență.</string>
+    <string name="card_44_finances_rev">Trăiești peste posibilitățile tale; eșecurile financiare amenință stilul de viață pe care ți l-ai construit.</string>
+    <string name="card_44_feelings_up">Sentiment de belșug și autonomie; mândrie pentru tot ce ai construit singur.</string>
+    <string name="card_44_feelings_rev">Sentimentul că independența ta este o iluzie; teamă că vei pierde ceea ce ai.</string>
+    <string name="card_44_actions_up">Bucură-te de abundența pe care ai creat-o; sărbătorește-ți independența și succesul câștigat cu greu.</string>
+    <string name="card_44_actions_rev">Regândește dacă stilul tău de viață este sustenabil; adevărata abundență este mai mult decât luxul material.</string>
+
+    <!-- Card 45: Ten of Pentacles (Desítka pentaklů) -->
+    <string name="card_45_love_up">O relație durabilă care construiește o moștenire de familie; angajament înrădăcinat în valori comune și stabilitate.</string>
+    <string name="card_45_love_rev">Disputele de familie apasă asupra relației; neînțelegerile despre bani sau moștenire provoacă conflicte.</string>
+    <string name="card_45_career_up">Construiești o moștenire profesională durabilă; succes de carieră pe termen lung, care aduce beneficii generațiilor viitoare.</string>
+    <string name="card_45_career_rev">Conflicte în afacerea de familie sau prăbușirea unei întreprinderi profesionale de lungă durată.</string>
+    <string name="card_45_finances_up">Avere transmisă peste generații și moștenire financiară; investiții pe termen lung care aduc beneficii familiei tale.</string>
+    <string name="card_45_finances_rev">Dispute de moștenire sau pierderea averii familiei; instabilitatea financiară îți amenință moștenirea.</string>
+    <string name="card_45_feelings_up">Te simți adânc înrădăcinat și în siguranță; mândrie pentru moștenirea pe care o construiești pentru generațiile viitoare.</string>
+    <string name="card_45_feelings_rev">Griji pentru siguranța financiară a familiei; sentimentul că moștenirea ta se destramă.</string>
+    <string name="card_45_actions_up">Construiește pentru viitorul îndepărtat; investește în familie, tradiții și instituții durabile.</string>
+    <string name="card_45_actions_rev">Rezolvă disputele de familie înainte să distrugă ceea ce a fost construit de-a lungul generațiilor.</string>
+
+    <!-- Card 46: Page of Pentacles (Páže pentaklů) -->
+    <string name="card_46_love_up">O abordare statornică și practică a unei noi iubiri; construiești relația pe temelii solide.</string>
+    <string name="card_46_love_rev">Amâni angajamentul; lene sau lipsă de efort în urmărirea obiectivelor romantice.</string>
+    <string name="card_46_career_up">O nouă oportunitate de învățare entuziasmantă; o inițiativă practică de carieră cu mare potențial.</string>
+    <string name="card_46_career_rev">Lipsa de concentrare sau lenea frânează avansarea în carieră; nu îți duci planurile profesionale la capăt.</string>
+    <string name="card_46_finances_up">O nouă oportunitate financiară promițătoare; abordeaz-o cu sârguință și dorință de a învăța.</string>
+    <string name="card_46_finances_rev">Amâni planificarea financiară; gestionarea neatentă a banilor aduce rezultate slabe.</string>
+    <string name="card_46_feelings_up">Te simți ambițios și dornic să înveți; entuziasm pentru un nou început practic.</string>
+    <string name="card_46_feelings_rev">Te simți nemotivat și blocat; îți lipsește hotărârea de a-ți urmări ambițiile.</string>
+    <string name="card_46_actions_up">Urmărește-ți noua inițiativă cu sârguință și cu dorința de a învăța de la zero.</string>
+    <string name="card_46_actions_rev">Nu mai amâna și fă pași practici spre obiectivele tale; este nevoie de disciplină.</string>
+
+    <!-- Card 47: Knight of Pentacles (Rytíř pentaklů) -->
+    <string name="card_47_love_up">Un partener loial și de încredere; progres lent, dar constant, spre o relație devotată.</string>
+    <string name="card_47_love_rev">Relația a devenit plictisitoare și de rutină; încăpățânarea împiedică creșterea emoțională.</string>
+    <string name="card_47_career_up">O etică de muncă statornică și de nădejde aduce rezultate constante; temeinicia câștigă încredere.</string>
+    <string name="card_47_career_rev">Stagnare profesională din frica de schimbare; agățare încăpățânată de metodele vechi.</string>
+    <string name="card_47_finances_up">Gestionare financiară responsabilă și metodică; acumulare lentă și constantă de avere.</string>
+    <string name="card_47_finances_rev">Stagnare financiară din prudență excesivă; ratezi oportunități fiind prea conservator.</string>
+    <string name="card_47_feelings_up">Te simți statornic și responsabil; o hotărâre liniștită îți alimentează eforturile practice.</string>
+    <string name="card_47_feelings_rev">Te simți blocat în același făgaș; plictisit de rutină, dar prea încăpățânat să schimbi direcția.</string>
+    <string name="card_47_actions_up">Ține-ți cursul cu efort disciplinat; seriozitatea și consecvența vor da roade.</string>
+    <string name="card_47_actions_rev">Zdruncină-ți rutina; nu lăsa încăpățânarea sau frica de schimbare să te țină pe loc.</string>
+
+    <!-- Card 48: Queen of Pentacles (Královna pentaklů) -->
+    <string name="card_48_love_up">O iubire grijulie și generoasă; creezi un cămin cald și îmbelșugat împreună cu partenerul tău.</string>
+    <string name="card_48_love_rev">Îți neglijezi propriile nevoi în timp ce ai grijă de alții; îți copleșești partenerul cu daruri materiale.</string>
+    <string name="card_48_career_up">Conducere practică și grijulie; creezi un mediu de lucru îmbelșugat și susținător.</string>
+    <string name="card_48_career_rev">Dezechilibrul dintre muncă și viață te face să îți neglijezi nevoile personale; investești prea mult în carieră în detrimentul căminului.</string>
+    <string name="card_48_finances_up">Gestionare financiară practică și generoasă; creezi abundență prin administrare înțeleaptă.</string>
+    <string name="card_48_finances_rev">Suprasolicitare financiară din generozitate excesivă; materialismul înlocuiește grija autentică.</string>
+    <string name="card_48_feelings_up">Te simți ancorat, generos și profund mulțumit de abundența din viața ta.</string>
+    <string name="card_48_feelings_rev">Te simți secătuit de prea multă dăruire; te pierzi pe tine îngrijind nevoile materiale ale altora.</string>
+    <string name="card_48_actions_up">Creează abundență având grijă în mod practic de ceilalți; fii generos, dar nu uita de grija față de tine.</string>
+    <string name="card_48_actions_rev">Pune-ți propriile nevoi pe primul loc; nu mai dărui altora în detrimentul propriei tale bunăstări.</string>
+
+    <!-- Card 49: King of Pentacles (Král pentaklů) -->
+    <string name="card_49_love_up">Un partener stabil și sigur financiar; iubire exprimată prin oferirea de siguranță și confort.</string>
+    <string name="card_49_love_rev">Un partener care pune banii înaintea conexiunii emoționale; abordare materialistă a iubirii.</string>
+    <string name="card_49_career_up">Măiestrie în afaceri și conducere financiară; disciplina și clarviziunea ta aduc succes profesional.</string>
+    <string name="card_49_career_rev">Lăcomia sau gestionarea slabă îți subminează afacerea; încăpățânarea împiedică adaptarea.</string>
+    <string name="card_49_finances_up">Apogeul succesului financiar și al administrării averii; conducere disciplinată a imperiului tău financiar.</string>
+    <string name="card_49_finances_rev">Gestionare financiară proastă din lăcomie sau automulțumire; avere acumulată cu prețul integrității.</string>
+    <string name="card_49_feelings_up">Sentiment de siguranță financiară și măiestrie; încredere în capacitatea ta de a construi și păstra averea.</string>
+    <string name="card_49_feelings_rev">Sentimentul că statutul financiar te definește; gol interior în ciuda belșugului material.</string>
+    <string name="card_49_actions_up">Condu cu înțelepciune de afaceri și gestionare financiară disciplinată; construiește avere durabilă.</string>
+    <string name="card_49_actions_rev">Cercetează dacă lăcomia nu ți-a corupt valorile; averea fără integritate este goală.</string>
+
+</resources>

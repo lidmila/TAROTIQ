@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================= -->
+    <!-- Cups (Poháry) — id 22–35, živel Voda                         -->
+    <!-- ============================================================= -->
+
+    <!-- Card 22: Ace of Cups (Eso pohárů) -->
+    <string name="card_22_love_up">Muhteşem yeni bir duygusal başlangıç; derin ve ruhani bir aşk bağının doğuşu.</string>
+    <string name="card_22_love_rev">Duygusal tıkanıklıklar yeni aşkın girmesini engelliyor; gerçek duygularını bastırıyor olabilirsin.</string>
+    <string name="card_22_career_up">Yaratıcı ilham akıyor; yeni bir proje seni duygusal tatminle dolduruyor.</string>
+    <string name="card_22_career_rev">Yaratıcı tıkanıklıklar işini boğuyor; kariyer yolunla ilgili duygusal tatminsizlik.</string>
+    <string name="card_22_finances_up">Duygusal doyum şu an paradan daha önemli; cömertlik bolluğu kendine çeker.</string>
+    <string name="card_22_finances_rev">Finansal istikrara rağmen duygusal boşluk hissi; para bu uçurumu dolduramaz.</string>
+    <string name="card_22_feelings_up">Kalbin sevgi, şefkat ve duygusal açıklıkla taşıyor.</string>
+    <string name="card_22_feelings_rev">Duygusal olarak tükenmiş veya hissizleşmiş hissediyorsun; kendi duygularınla bağ kurmakta zorlanıyorsun.</string>
+    <string name="card_22_actions_up">Kalbini aç ve her kaynaktan gelen sevgiyi ve duygusal beslenmeyi kabul et.</string>
+    <string name="card_22_actions_rev">Bastırılmış duygularının önünü aç; gerçek hislerini duymana ve ifade etmene izin ver.</string>
+
+    <!-- Card 23: Two of Cups (Dvojka pohárů) -->
+    <string name="card_23_love_up">Güçlü karşılıklı bir çekim ve derinleşen bir bağ; iki kalp güzel bir uyum içinde birleşiyor.</string>
+    <string name="card_23_love_rev">İlişki dengesini yitiriyor; kopukluk ve güvensizlik mesafe yaratıyor.</string>
+    <string name="card_23_career_up">Verimli bir iş ortaklığı doğuyor; karşılıklı saygı ortak başarıyı besliyor.</string>
+    <string name="card_23_career_rev">Profesyonel ortaklıklar dağılıyor; güven eksikliği ekip çalışmasını baltalıyor.</string>
+    <string name="card_23_finances_up">Finansal ortaklıklar veya paylaşılan kaynaklar karşılıklı fayda getiriyor.</string>
+    <string name="card_23_finances_rev">Partnerle finansal anlaşmazlıklar; ortak yatırımlar çatışma kaynağına dönüşüyor.</string>
+    <string name="card_23_feelings_up">Biriyle derin bir bağ hissediyorsun; karşılıklı sevgi ve duygusal uyum.</string>
+    <string name="card_23_feelings_rev">Değer verdiğin birinden kopmuş hissediyorsun; duygusal mesafe büyüyor.</string>
+    <string name="card_23_actions_up">Anlamlı bağlarını besle; karşılıklı ilişkilere yatırım yap.</string>
+    <string name="card_23_actions_rev">İlişkideki dengesizliği dürüstçe ele al; güveni yeniden kur ya da zarafetle vedalaş.</string>
+
+    <!-- Card 24: Three of Cups (Trojka pohárů) -->
+    <string name="card_24_love_up">Sevdiklerinle neşeli kutlamalar; dostluklar aşk ilişkilerini zenginleştiriyor.</string>
+    <string name="card_24_love_rev">İlişkiye üçüncü kişilerin müdahalesi; sosyal aşırılıklar veya arkadaşlar arasında kıskançlık.</string>
+    <string name="card_24_career_up">Ekip kutlamaları ve ortak başarı; grup içindeki yaratıcı projeler serpiliyor.</string>
+    <string name="card_24_career_rev">İş yerindeki dedikodu veya klikler sorun yaratıyor; şirket etkinliklerinde aşırıya kaçma.</string>
+    <string name="card_24_finances_up">Paylaşılan finansal kutlamalar; grup yatırımları veya kolektif refah.</string>
+    <string name="card_24_finances_rev">Sosyal etkinliklere aşırı harcama; çevre baskısı finansal aşırılıklara yol açıyor.</string>
+    <string name="card_24_feelings_up">Taşan mutluluk ve şükran; topluluk ve dostluk sayesinde yükselmiş hissediyorsun.</string>
+    <string name="card_24_feelings_rev">Gruptan dışlanmış hissetme; insanlarla çevrili olmana rağmen yalnızlık.</string>
+    <string name="card_24_actions_up">Topluluğunla birlikte kutla; sevincini ve şükranını başkalarıyla paylaş.</string>
+    <string name="card_24_actions_rev">Aşırı sosyal etkinlikleri azalt; dedikoduyu veya sağlıksız grup dinamiklerini ele al.</string>
+
+    <!-- Card 25: Four of Cups (Čtyřka pohárů) -->
+    <string name="card_25_love_up">Aşkta duygusal can sıkıntısı veya tatminsizlik; partnerinin kıymetini görmez olmuşsun.</string>
+    <string name="card_25_love_rev">Partnerine duyduğun takdir yenileniyor; ilişkini taze gözlerle görüyorsun.</string>
+    <string name="card_25_career_up">İşte ilgisiz ve motivasyonsuz hissediyorsun; kalmak mı gitmek mi diye düşünüyorsun.</string>
+    <string name="card_25_career_rev">Kariyerin için yenilenen coşku; yeni bir fırsat dikkatini çekiyor.</string>
+    <string name="card_25_finances_up">Yeterince sahip olmana rağmen finansal durumundan hoşnutsuzluk; önündeki fırsatları gözden kaçırıyorsun.</string>
+    <string name="card_25_finances_rev">Daha önce gözden kaçırdığın bir finansal fırsatı fark edip değerlendiriyorsun.</string>
+    <string name="card_25_feelings_up">Duygusal kayıtsızlık ve içe kapanma; hiçbir şey seni heyecanlandırmıyor ya da tatmin etmiyor gibi.</string>
+    <string name="card_25_feelings_rev">Yenilenmiş ilgi ve şükranla duygusal kapanıklıktan çıkıyorsun.</string>
+    <string name="card_25_actions_up">Fırsatları kabul veya reddetmeden önce gerçekten neyin önemli olduğu üzerine derin düşünmeye zaman ayır.</string>
+    <string name="card_25_actions_rev">Gözlerini çevrendeki nimetlere aç; sana sunulanı kabul et.</string>
+
+    <!-- Card 26: Five of Cups (Pětka pohárů) -->
+    <string name="card_26_love_up">Bir aşk kaybının veya hayal kırıklığının yasını tutuyorsun; kalanlara değil, ters gidenlere odaklanıyorsun.</string>
+    <string name="card_26_love_rev">Kırık kalbini iyileştirmeye başlıyorsun; kaybı kabullenip yeni bir aşk için umut buluyorsun.</string>
+    <string name="card_26_career_up">Kariyer aksiliğinin verdiği hayal kırıklığı; kaçırılmış bir fırsata veya başarısızlığa takılıp kalma.</string>
+    <string name="card_26_career_rev">Profesyonel hayal kırıklıklarını aşıyorsun; kariyer kaybının ardından yeni bir amaç buluyorsun.</string>
+    <string name="card_26_finances_up">Finansal kayıp keder veriyor; kötü para kararlarının pişmanlığı ağır basıyor.</string>
+    <string name="card_26_finances_rev">Finansal kayıptan toparlanıyorsun; olanı kabullenip bilgece yeniden inşa ediyorsun.</string>
+    <string name="card_26_feelings_up">Derin üzüntü ve pişmanlık; kalana değil, kaybedilene odaklanma.</string>
+    <string name="card_26_feelings_rev">Kederin ardından huzur buluyorsun; bakış açını değiştirdikçe iyileşme süreci başlıyor.</string>
+    <string name="card_26_actions_up">Yas tutmana izin ver, ama hâlâ sahip olduklarına bakmayı da unutma.</string>
+    <string name="card_26_actions_rev">Pişmanlıktan yüzünü çevir ve ileriye bak; kendini affet ve kalanı kucakla.</string>
+
+    <!-- Card 27: Six of Cups (Šestka pohárů) -->
+    <string name="card_27_love_up">Nostaljik ve tatlı aşk bağları; eski bir aşk geri dönebilir ya da eski anılar kalbini yeniden ısıtabilir.</string>
+    <string name="card_27_love_rev">Geçmişte yaşamak yeni aşkı engelliyor; eski bir ilişkiyi idealleştirmek büyümeyi tıkıyor.</string>
+    <string name="card_27_career_up">Eski bir meslektaşla yeniden bağ kurmak veya önceki kariyer yoluna dönmek sevinç getiriyor.</string>
+    <string name="card_27_career_rev">Modası geçmiş çalışma yöntemlerine saplanıp kalma; nostalji profesyonel gelişimi engelliyor.</string>
+    <string name="card_27_finances_up">Aileden gelen finansal hediyeler veya miras; ortak geçmişe kök salmış cömertlik.</string>
+    <string name="card_27_finances_rev">Geçmişe dayalı gerçekçi olmayan finansal beklentiler; eski para alışkanlıkları seni geride tutuyor.</string>
+    <string name="card_27_feelings_up">Sıcak bir nostalji ve masum sevinç; mutlu anılardan teselli buluyorsun.</string>
+    <string name="card_27_feelings_rev">Duygusal olarak geçmişte takılı kalma; şimdiki ana tam anlamıyla katılamama.</string>
+    <string name="card_27_actions_up">Köklerinle ve seni şekillendiren insanlarla yeniden bağ kur; cömertçe paylaş.</string>
+    <string name="card_27_actions_rev">Geçmişi bırak ve şimdide yaşa; bir zamanlar olanı idealleştirmeyi bırak.</string>
+
+    <!-- Card 28: Seven of Cups (Sedmička pohárů) -->
+    <string name="card_28_love_up">Romantik fanteziler ve aşka dair idealize edilmiş hayaller; çok fazla seçenek yargını bulandırıyor.</string>
+    <string name="card_28_love_rev">Aşkta gerçekten ne istediğine dair netlik; fanteziler yerini gerçekçi seçimlere bırakıyor.</string>
+    <string name="card_28_career_up">Çok fazla kariyer seçeneği analiz felcine yol açıyor; hayal kurmak eylemin yerini alıyor.</string>
+    <string name="card_28_career_rev">Kariyer odağını daraltıyorsun; dikkat dağıtıcıları eledikten sonra tek bir yola adanıyorsun.</string>
+    <string name="card_28_finances_up">Finansal fanteziler veya hızlı zenginleşme planları seni cezbediyor; ayakların yere bassın.</string>
+    <string name="card_28_finances_rev">Finans konusunda ayılma; hayali değil, pratik para planlarına bağlanma.</string>
+    <string name="card_28_feelings_up">Hayallerde ve boş temennilerde kaybolmuşsun; olasılıkların bolluğunda boğulmuş ama seçemiyorsun.</string>
+    <string name="card_28_feelings_rev">Zihinsel netlik karmaşayı yarıp geçiyor; sonunda gerçekten ne istediğini biliyorsun.</string>
+    <string name="card_28_actions_up">Seçeneklerini dikkatle değerlendir; gerçekçi hedeflerle salt fantezileri birbirinden ayır.</string>
+    <string name="card_28_actions_rev">Hayal kurmayı bırak ve tam bir kararlılıkla ulaşılabilir tek bir hedefe adan.</string>
+
+    <!-- Card 29: Eight of Cups (Osmička pohárů) -->
+    <string name="card_29_love_up">Daha derin bir şey aramak için duygusal olarak doyurmayan bir ilişkiden uzaklaşıyorsun.</string>
+    <string name="card_29_love_rev">Korkudan sevgisiz bir ilişkide kalma; artık sana hizmet etmeyeni terk etmekten korkuyorsun.</string>
+    <string name="card_29_career_up">Seni artık tatmin etmeyen bir kariyeri geride bırakıyorsun; daha anlamlı bir iş arıyorsun.</string>
+    <string name="card_29_career_rev">Tatmin etmeyen bir işi bırakma korkusu; doyum yerine güvenceye tutunma.</string>
+    <string name="card_29_finances_up">Büyümene artık hizmet etmeyen bir finansal durumdan uzaklaşıyorsun.</string>
+    <string name="card_29_finances_rev">Bilinmeyenin korkusuyla elverişsiz bir finansal düzende kalma.</string>
+    <string name="card_29_feelings_up">Ayrılmak acı verse de yola devam etmen gerektiğine dair derin bir iç biliş.</string>
+    <string name="card_29_feelings_rev">Terk edilme veya değişim korkusu seni duygusal olarak tanıdık olana hapsediyor.</string>
+    <string name="card_29_actions_up">Seni artık doyurmayandan uzaklaşma cesaretini göster; daha yüksek hedefler ara.</string>
+    <string name="card_29_actions_rev">Gitmekten neden korktuğunu incele; kalmanın rahatsızlığı gitmenin riskini aşabilir.</string>
+
+    <!-- Card 30: Nine of Cups (Devítka pohárů) -->
+    <string name="card_30_love_up">Romantik dileklerin gerçekleşiyor; aşkta derin duygusal tatmin ve hoşnutluk.</string>
+    <string name="card_30_love_rev">Aşkta yüzeysel tatmin; iyi bir ilişkiye rağmen daha fazlasını arzulama.</string>
+    <string name="card_30_career_up">Profesyonel dilekler gerçekleşiyor; derin tatmin getiren bir kariyer dönüm noktasına ulaşıyorsun.</string>
+    <string name="card_30_career_rev">Kariyer başarıları boş geliyor; anlamdan yoksun başarı seni hep daha fazlasına aç bırakıyor.</string>
+    <string name="card_30_finances_up">Finansal dilekler somutlaşıyor; bolluk ve refah derin bir hoşnutluk getiriyor.</string>
+    <string name="card_30_finances_rev">Açgözlülük veya materyalizm finansal başarının sevincini gölgeliyor; daha fazlasını istemek asla yetmez.</string>
+    <string name="card_30_feelings_up">Derin hoşnutluk ve duygusal doyum; sahip olduğun her şey için şükran duyuyorsun.</string>
+    <string name="card_30_feelings_rev">Her şeye sahip olmana rağmen tatminsizlik; eşyaların dolduramayacağı kemirici bir boşluk.</string>
+    <string name="card_30_actions_up">Nimetlerini say ve dileklerinin gerçekleşmesinin tadını şükranla çıkar.</string>
+    <string name="card_30_actions_rev">Sana gerçekten neyin sevinç verdiğini incele; maddi bolluk içsel doyumun yerini tutamaz.</string>
+
+    <!-- Card 31: Ten of Cups (Desítka pohárů) -->
+    <string name="card_31_love_up">Aşkta ve ailede en yüksek mutluluk; derinden doyuran, uyumlu bir ilişki.</string>
+    <string name="card_31_love_rev">Aile içi anlaşmazlıklar veya ilişkide işlev bozukluğu; ideal aşk tablosu kırılmış görünüyor.</string>
+    <string name="card_31_career_up">Tüm hayatına duygusal doyum ve uyum getiren bir kariyer bulma.</string>
+    <string name="card_31_career_rev">İş-yaşam dengesizliği aile uyumunu bozuyor; kişisel mutluluk pahasına kariyer başarısı.</string>
+    <string name="card_31_finances_up">Finansal istikrar mutlu bir yuvayı destekliyor; sevdiklerinle paylaşılan refah.</string>
+    <string name="card_31_finances_rev">Finansal stres aile uyumunu bozuyor; para sorunları kişisel ilişkileri zorluyor.</string>
+    <string name="card_31_feelings_up">Mutluluk dolu duygusal doyum; hayatınla derin bir mutluluk ve huzur içindesin.</string>
+    <string name="card_31_feelings_rev">Kişisel veya aile hayatında bir şeylerin kırık olduğu hissi; uyuma duyulan özlem.</string>
+    <string name="card_31_actions_up">Aileye ve yakın ilişkilere yatırım yap; hayalini kurduğun uyumlu hayatı yarat.</string>
+    <string name="card_31_actions_rev">Aile içi sorunları dürüstçe ele al; kırılan ilişkileri onarmak ve uyumu yeniden kurmak için çabala.</string>
+
+    <!-- Card 32: Page of Cups (Páže pohárů) -->
+    <string name="card_32_love_up">Tatlı ve şefkatli bir romantik mesaj veya teklif yolda; ilk aşkların gençlik dolu enerjisi.</string>
+    <string name="card_32_love_rev">Aşkta duygusal toyluk; gerçekçi olmayan romantik beklentiler veya kaçış fantezileri.</string>
+    <string name="card_32_career_up">Yaratıcı bir fırsat veya ilham dolu bir fikir beliriyor; işe merak ve açıklıkla yaklaş.</string>
+    <string name="card_32_career_rev">İşte yaratıcı tıkanıklıklar veya olgunlaşmamış davranışlar; fikirleri sonuca ulaştırmakta zorlanma.</string>
+    <string name="card_32_finances_up">Küçük ama umut vadeden bir finansal fırsat; para işlerine taze bir merakla yaklaş.</string>
+    <string name="card_32_finances_rev">Finansal saflık veya olgunlaşmamış para yönetimi; kaçış amaçlı harcama alışkanlıkları.</string>
+    <string name="card_32_feelings_up">Duygusal merak ve açıklık hissi; çocuksu bir hayret kalbini dolduruyor.</string>
+    <string name="card_32_feelings_rev">Hayal kurmayla maskelenen duygusal güvensizlik; yetişkin duygularını işlemekte zorlanma.</string>
+    <string name="card_32_actions_up">Evrenden gelen duygusal ve yaratıcı mesajlara açık kal; sezgini takip et.</string>
+    <string name="card_32_actions_rev">Duygularını gerçekliğe demirle; güvensizliklerinden kaçmak yerine üzerlerinde çalış.</string>
+
+    <!-- Card 33: Knight of Cups (Rytíř pohárů) -->
+    <string name="card_33_love_up">Romantik bir teklif veya büyük bir jest; içten niyetler taşıyan çekici bir talip beliriyor.</string>
+    <string name="card_33_love_rev">Değişken ruh halleri ve kıskançlık romantizmi bozuyor; gerçekçi olmayan beklentiler hayal kırıklığına götürüyor.</string>
+    <string name="card_33_career_up">Kariyer konularında kalbin peşinden gitme; yaratıcı bir öneri veya hayal gücü dolu bir proje şekilleniyor.</string>
+    <string name="card_33_career_rev">Gerçekçi olmayan kariyer hedefleri veya işte dengesiz davranışlar; bol cazibe ama süreklilik yok.</string>
+    <string name="card_33_finances_up">Kalbinin peşinden gitmek finansal açıdan kazançlı yaratıcı girişimlere götürüyor.</string>
+    <string name="card_33_finances_rev">Duygusal harcamalar veya gerçekçi olmayan finansal beklentiler; ruh haline göre alınan para kararları.</string>
+    <string name="card_33_feelings_up">Romantik ilham ve duygusal cömertlik hissi; kalbin yolu gösteriyor.</string>
+    <string name="card_33_feelings_rev">Değişken ve duygusal olarak dengesiz; kıskançlık veya gerçekçi olmayan idealizm içinde karmaşa yaratıyor.</string>
+    <string name="card_33_actions_up">Kalbini cesaretle takip et; içtenlikle romantik veya yaratıcı bir jest yap.</string>
+    <string name="card_33_actions_rev">Duygularını yere bastır; değişken ruh hallerinin veya kıskançlığın eylemlerini yönetmesine izin verme.</string>
+
+    <!-- Card 34: Queen of Cups (Královna pohárů) -->
+    <string name="card_34_love_up">Derin duygusal zekâ aşk hayatını zenginleştiriyor; besleyici ve sezgisel bir birliktelik.</string>
+    <string name="card_34_love_rev">Aşkta duygusal bağımlılık veya manipülasyon; partnerinin onayı için kendini feda etme.</string>
+    <string name="card_34_career_up">Duygusal zekâ seni şefkatli bir lider yapıyor; işe sezgisel yaklaşımına güven.</string>
+    <string name="card_34_career_rev">İşte başkalarının duygusal yüklerini üstlenme; iş arkadaşlarının sorunlarından tükenmiş hissetme.</string>
+    <string name="card_34_finances_up">Sezgisel finansal kararlar bilgece çıkıyor; harcamalarına cömertlik ve şefkat yön veriyor.</string>
+    <string name="card_34_finances_rev">Finansal olarak fazlasıyla dağıtma; para hakkındaki duygusal kararlar pratik bilgeliğe baskın çıkıyor.</string>
+    <string name="card_34_feelings_up">Derinden şefkatli ve duygusal olarak uyanık; empatin çevrendekilere bir armağan.</string>
+    <string name="card_34_feelings_rev">Başkalarının duygularını emerek duygusal olarak bunalma; başkalarına bakarken kendini kaybetme.</string>
+    <string name="card_34_actions_up">Şefkat ve duygusal zekâyla yol al; derin sezgisel bilişine güven.</string>
+    <string name="card_34_actions_rev">Duygusal sınırlar koy; kendi esenliğin pahasına herkesin acısını emmeyi bırak.</string>
+
+    <!-- Card 35: King of Cups (Král pohárů) -->
+    <string name="card_35_love_up">Duygusal olarak olgun ve dengeli bir aşk; bilge, sakin ve derinden destekleyici bir partner.</string>
+    <string name="card_35_love_rev">İlişkide duygusal soğukluk veya dengesizlik; duyguları bastıran ya da silah gibi kullanan bir partner.</string>
+    <string name="card_35_career_up">Bilge ve diplomatik liderlik; ekipleri duygusal zekâ ve sakin bir otoriteyle yönetme.</string>
+    <string name="card_35_career_rev">Dengesiz veya manipülatif liderlik; işte başkalarını kontrol etmek için duygusal koz kullanma.</string>
+    <string name="card_35_finances_up">Dengeli ve bilge finansal yönetim; duygusal olgunluk sağlam para kararlarına götürüyor.</string>
+    <string name="card_35_finances_rev">Duygusal dalgalanmalar finansal istikrarı bozuyor; üzgün anlarda alınan dürtüsel para kararları.</string>
+    <string name="card_35_feelings_up">Duygusal denge ve bilgelik hissi; içindeki duygu dünyası üzerinde sakin bir ustalık.</string>
+    <string name="card_35_feelings_rev">Duyguları bastırmak iç karmaşa yaratıyor; içinde fırtınalar koparken dışarıya sakin görünüyorsun.</string>
+    <string name="card_35_actions_up">Duygusal bilgelik ve diplomasiyle yol göster; tüm kararlarında kalp ile aklı dengele.</string>
+    <string name="card_35_actions_rev">Duygularını bastırmayı bırak; sakin dış görünüşünün altında saklanan dalgalanmayı ele al.</string>
+
+    <!-- ============================================================= -->
+    <!-- Pentacles (Pentakly) — id 36–49, živel Země                   -->
+    <!-- ============================================================= -->
+
+    <!-- Card 36: Ace of Pentacles (Eso pentaklů) -->
+    <string name="card_36_love_up">Aşkta sağlam yeni bir başlangıç; güvence ve kalıcı istikrar sunan bir ilişki.</string>
+    <string name="card_36_love_rev">Umut vadeden bir romantik fırsat güvensizlik yüzünden kaçırılıyor ya da heba ediliyor.</string>
+    <string name="card_36_career_up">Kazançlı yeni bir kariyer fırsatı geliyor; profesyonel başarı için sağlam bir temel.</string>
+    <string name="card_36_career_rev">Kötü planlama veya tereddüt yüzünden bir kariyer fırsatı elden kaçıyor.</string>
+    <string name="card_36_finances_up">Yeni bir gelir kaynağı veya beklenmedik bir finansal kazanç; gelecekteki refahın tohumu ekildi.</string>
+    <string name="card_36_finances_rev">Kaçırılmış bir finansal fırsat; kötü planlama potansiyel bolluğu baltalıyor.</string>
+    <string name="card_36_feelings_up">Yeni bir maddi veya pratik başlangıç konusunda kendini sağlam ve iyimser hissediyorsun.</string>
+    <string name="card_36_feelings_rev">Finansal güvence kaygısı; kendini istikrarsız hissetme veya gelecek için endişelenme.</string>
+    <string name="card_36_actions_up">Yeni fırsatı pratik planlama ve sağlam bir kararlılıkla yakala.</string>
+    <string name="card_36_actions_rev">Korkunun sağlam bir fırsatı elinden almasına izin verme; daha iyi planla ve kararlılıkla harekete geç.</string>
+
+    <!-- Card 37: Two of Pentacles (Dvojka pentaklů) -->
+    <string name="card_37_love_up">Aşkı diğer sorumluluklarla dengeleme; esneklik ilişkiyi güçlü tutuyor.</string>
+    <string name="card_37_love_rev">Aşk ile hayatı dengelemekte zorlanma; ilişki ihmalden zarar görüyor.</string>
+    <string name="card_37_career_up">Birden fazla projeyi veya rolü başarıyla idare ediyorsun; uyum yeteneğin en büyük varlığın.</string>
+    <string name="card_37_career_rev">Çok fazla sorumlulukla bunalma; iş görevlerinin kontrolünü kaybediyorsun.</string>
+    <string name="card_37_finances_up">Dalgalanan finansları ustaca yönetme; bütçeni değişen koşullara uyarlama.</string>
+    <string name="card_37_finances_rev">Kötü organizasyondan doğan finansal kaos; bir alandaki aşırı harcama diğerini tüketiyor.</string>
+    <string name="card_37_feelings_up">Meşgul ama her şeyin üstesinden gelebilir hissediyorsun; pek çok işi aynı anda döndürme meydan okumasında serpiliyorsun.</string>
+    <string name="card_37_feelings_rev">Bunalmış ve fazlasıyla dağılmış hissetme; bu cambazlık sürdürülemez.</string>
+    <string name="card_37_actions_up">Esnek ve uyumlu kal; en önemli olana öncelik ver ve dengeyi koru.</string>
+    <string name="card_37_actions_rev">Taahhütlerini sadeleştir; her şeyi iyi yapamazsın, o yüzden asıl önemli olana odaklan.</string>
+
+    <!-- Card 38: Three of Pentacles (Trojka pentaklů) -->
+    <string name="card_38_love_up">İlişkiyi ortak çabayla inşa etme; ekip çalışması bağınızı güçlendiriyor.</string>
+    <string name="card_38_love_rev">İlişkide ekip çalışması eksikliği; partnerler ortak hedeflerde iş birliği yapamıyor.</string>
+    <string name="card_38_career_up">Usta ekip çalışmasıyla gelen ortak başarı; uzmanlığın tanınıyor ve değer görüyor.</string>
+    <string name="card_38_career_rev">İş yeri çatışmaları ekibi baltalıyor; zayıf iş birliği vasat sonuçlara yol açıyor.</string>
+    <string name="card_38_finances_up">Usta işçilik ve profesyonel iş birliği sayesinde finansal kazançlar.</string>
+    <string name="card_38_finances_rev">Uzman tavsiyesi eksikliğinden kaynaklanan kötü finansal planlama; yanlış yerden kısmak daha pahalıya patlar.</string>
+    <string name="card_38_feelings_up">Zanaatınla ve ortak başarılarınla gurur duyma; katkıların için değer gördüğünü hissediyorsun.</string>
+    <string name="card_38_feelings_rev">İş birliği yapmayan insanlara duyulan öfke; kendini değersiz veya yetersiz hissetme.</string>
+    <string name="card_38_actions_up">Yetenekli insanlarla iş birliği yap; öğrenmeye ve zanaatını inceltmeye yatırım yap.</string>
+    <string name="card_38_actions_rev">Becerilerini ve iletişimini geliştir; ekip çatışmalarını işi baltalamadan önce çöz.</string>
+
+    <!-- Card 39: Four of Pentacles (Čtyřka pentaklů) -->
+    <string name="card_39_love_up">Kaybetme korkusuyla ilişkiye sımsıkı tutunma; aşkta sahiplenmecilik.</string>
+    <string name="card_39_love_rev">Aşkta sahiplenmeciliği bırakma; duygusal savunma döneminin ardından kalbini açma.</string>
+    <string name="card_39_career_up">Kariyerde ne pahasına olursa olsun güvence; seni doyurmasa bile istikrarlı bir pozisyona tutunma.</string>
+    <string name="card_39_career_rev">Kariyer katılığını bırakma; hep garantiye oynadığın bir dönemin ardından profesyonel bir risk alma.</string>
+    <string name="card_39_finances_up">Paraya sımsıkı tutunma; muhafazakâr finansal yönetim güvence sağlıyor ama büyümeyi sınırlıyor.</string>
+    <string name="card_39_finances_rev">Finansal kontrolü gevşetme; daha rahat harcama veya cömert bağışlar.</string>
+    <string name="card_39_feelings_up">Güvende ama kısıtlanmış hissetme; biriktirdiklerini bırakmaktan korkuyorsun.</string>
+    <string name="card_39_feelings_rev">Sıkı tutuşu bırakmanın verdiği rahatlama; aşırı kontrolü terk ettikten sonra hafiflemiş hissediyorsun.</string>
+    <string name="card_39_actions_up">Sahip olduklarını koru, ama aşırı kontrolün hayatını sınırlayıp sınırlamadığını incele.</string>
+    <string name="card_39_actions_rev">Tutuşunu gevşet; cömertlik ve açıklık, biriktirip saklamaktan daha çok bolluk getirecek.</string>
+
+    <!-- Card 40: Five of Pentacles (Pětka pentaklů) -->
+    <string name="card_40_love_up">Duygusal olarak dışlanmış hissetme; zorluklar ilişkinin gücünü sınıyor.</string>
+    <string name="card_40_love_rev">Aşkta zorlu bir dönemden toparlanma; terk edilmiş hissettikten sonra sıcaklık ve destek bulma.</string>
+    <string name="card_40_career_up">İş kaybı veya profesyonel aksilikler gibi kariyer sıkıntıları; oyunun dışında kalmış hissetme.</string>
+    <string name="card_40_career_rev">Profesyonel toparlanma başlıyor; zorlu bir dönemin ardından yeni iş olanakları beliriyor.</string>
+    <string name="card_40_finances_up">Finansal sıkıntı ve endişe; zor bir dönemde geçinmekte zorlanma.</string>
+    <string name="card_40_finances_rev">Finansal toparlanma yolda; en kötüsü geride kaldı ve iyileşme ufukta.</string>
+    <string name="card_40_feelings_up">Yoksullaşmış ve yalnız hissetme; maddi güvenceye dair endişe ve korku seni tüketiyor.</string>
+    <string name="card_40_feelings_rev">Karanlık bir dönemin ardından umut geri dönüyor; yardımın ve toparlanmanın yakın olduğu hissi.</string>
+    <string name="card_40_actions_up">Yardım ve destek ara; bu sıkıntıya tek başına katlanmak zorunda değilsin.</string>
+    <string name="card_40_actions_rev">Sunulan yardımı kabul et; toparlanma süreci çoktan başladı.</string>
+
+    <!-- Card 41: Six of Pentacles (Šestka pentaklů) -->
+    <string name="card_41_love_up">Aşkta cömert ve dengeli bir alışveriş; kaynakları ve duygusal desteği paylaşma.</string>
+    <string name="card_41_love_rev">İlişkide güç dengesizliği; şarta bağlı cömertlik kırgınlık yaratıyor.</string>
+    <string name="card_41_career_up">Başkalarına akıl hocalığı yapma veya rehberlik alma; iş yerinde bilgi ve kaynak paylaşımı.</string>
+    <string name="card_41_career_rev">İş yerinde eşitsizlik; beklentiyle yapılan iyilikler veya kaynakların adaletsiz dağıtımı.</string>
+    <string name="card_41_finances_up">Finansal cömertlik karşılığını veriyor; bolluğunu paylaşma ya da ihtiyaç duyduğun finansal yardımı alma.</string>
+    <string name="card_41_finances_rev">Şarta bağlı borçlar; kontrol aracı olarak kullanılan finansal cömertlik.</string>
+    <string name="card_41_feelings_up">Cömertlik ve bolluk hissi; vermenin sevinci ve almanın şükranı.</string>
+    <string name="card_41_feelings_rev">Borçlu hissetme ya da birinin cömertliğiyle kontrol edilme; eşitsizlik yüzünden kırgınlık.</string>
+    <string name="card_41_actions_up">Verebildiğinde cömertçe ver, ihtiyaç duyduğunda zarafetle al; dengeyi koru.</string>
+    <string name="card_41_actions_rev">İlişkilerindeki güç dinamiklerini incele; gizli şartlar taşıyan hediyeleri kabul etme.</string>
+
+    <!-- Card 42: Seven of Pentacles (Sedmička pentaklů) -->
+    <string name="card_42_love_up">İlişkiyi sabırla besleme; aşkta ektiğin tohumlar istikrarla büyüyor.</string>
+    <string name="card_42_love_rev">İlişkinin ilerleyişine karşı sabırsızlık; aşka yaptığın yatırımın buna değip değmediğini sorgulama.</string>
+    <string name="card_42_career_up">Uzun vadeli kariyer yatırımları sonuç vermeye başlıyor; sabır ve azim ödüllendiriliyor.</string>
+    <string name="card_42_career_rev">Yavaş kariyer ilerlemesinin verdiği hayal kırıklığı; sıkı çalışmanın bir gün karşılığını verip vermeyeceğini sorgulama.</string>
+    <string name="card_42_finances_up">Uzun vadeli finansal yatırımlar istikrarla büyüyor; portföyüne gösterdiğin sabır meyvesini veriyor.</string>
+    <string name="card_42_finances_rev">Finansal yatırımlardan zayıf getiriler; yavaş büyümenin ya da hiç büyümemenin verdiği hayal kırıklığı.</string>
+    <string name="card_42_feelings_up">Sabırlı ama düşünceli; çabalarının umduğun meyveyi verip vermediğini değerlendiriyorsun.</string>
+    <string name="card_42_feelings_rev">Hayal kırıklığı ve sabırsızlık; sıkı çalışmanın boşa gittiği hissi.</string>
+    <string name="card_42_actions_up">Zamanını ve enerjini sabırla yatırmaya devam et; hasat, vakti geldiğinde gelecek.</string>
+    <string name="card_42_actions_rev">Stratejini yeniden değerlendir; çabaların sonuç vermiyorsa farklı bir yaklaşım düşün.</string>
+
+    <!-- Card 43: Eight of Pentacles (Osmička pentaklů) -->
+    <string name="card_43_love_up">İlişkin üzerinde özenle çalışma; duygusal bağını güçlendirmek için çaba harcama.</string>
+    <string name="card_43_love_rev">İş saplantısı yüzünden ilişkiyi ihmal etme; mükemmeliyetçilik aşkta mesafe yaratıyor.</string>
+    <string name="card_43_career_up">Adanmış beceri geliştirme ustalığa götürüyor; sıkı çalışma ve detaylara özen başarı getiriyor.</string>
+    <string name="card_43_career_rev">İşte kestirme yollara sapma; adanmışlık eksikliği vasat profesyonel sonuçlara yol açıyor.</string>
+    <string name="card_43_finances_up">Titiz finansal yönetim ve usta işçilikten gelen istikrarlı gelir.</string>
+    <string name="card_43_finances_rev">Finansal kestirmeler geri tepiyor; kaliteden kısmak kazanç potansiyelini düşürüyor.</string>
+    <string name="card_43_feelings_up">Odaklanmış ve çalışkan hissetme; zanaatında ustalaşmaktan gelen derin bir tatmin.</string>
+    <string name="card_43_feelings_rev">Tekrarlayan görevlerden ilhamsız veya sıkılmış hissetme; mükemmeliyetçilik enerjini tüketiyor.</string>
+    <string name="card_43_actions_up">Özenli pratik ve sürekli gelişimle zanaatında ustalaşmaya adan.</string>
+    <string name="card_43_actions_rev">Kestirme yollara sapmayı bırak; kaliteli işe yeniden yatırım yap ve mükemmeliyetçilik tuzağından kaçın.</string>
+
+    <!-- Card 44: Nine of Pentacles (Devítka pentaklů) -->
+    <string name="card_44_love_up">Aşkta kendine yeten ve özgüvenli; kendi başına bütün olarak bir partner çekiyorsun.</string>
+    <string name="card_44_love_rev">Partnere finansal bağımlılık; maddi konfor uğruna bağımsızlığı feda etme.</string>
+    <string name="card_44_career_up">Profesyonel emeğinin meyvelerinin tadını çıkarma; kendi çabanla ulaştığın başarı derin bir tatmin veriyor.</string>
+    <string name="card_44_career_rev">Başarı imajını korumak için kendini fazla çalıştırma; profesyonel tükenmişlik başarılarını tehdit ediyor.</string>
+    <string name="card_44_finances_up">Kendi çabanla kazanılmış finansal bağımsızlık ve lüks; bolluğun tadını çıkarma.</string>
+    <string name="card_44_finances_rev">İmkânlarının ötesinde yaşama; finansal aksilikler kurduğun yaşam tarzını tehdit ediyor.</string>
+    <string name="card_44_feelings_up">Bolluk içinde kendine yeterlilik hissi ve tek başına inşa ettiklerinle gurur duyma.</string>
+    <string name="card_44_feelings_rev">Bağımsızlığının bir yanılsama olduğu hissi; sahip olduklarını kaybetme endişesi.</string>
+    <string name="card_44_actions_up">Yarattığın bolluğun tadını çıkar; bağımsızlığını ve zorlu mücadeleyle kazandığın başarıyı kutla.</string>
+    <string name="card_44_actions_rev">Yaşam tarzının sürdürülebilir olup olmadığını yeniden değerlendir; gerçek bolluk maddi lüksten fazlasıdır.</string>
+
+    <!-- Card 45: Ten of Pentacles (Desítka pentaklů) -->
+    <string name="card_45_love_up">Aile mirası inşa eden kalıcı bir ilişki; ortak değerlere ve istikrara kök salmış bağlılık.</string>
+    <string name="card_45_love_rev">Aile anlaşmazlıkları ilişkiyi zorluyor; para veya miras konusundaki fikir ayrılıkları çatışma yaratıyor.</string>
+    <string name="card_45_career_up">Kalıcı bir profesyonel miras inşa etme; gelecek nesillere fayda sağlayan uzun vadeli kariyer başarısı.</string>
+    <string name="card_45_career_rev">Aile şirketinde çatışmalar ya da köklü bir profesyonel girişimin çöküşü.</string>
+    <string name="card_45_finances_up">Nesiller arası zenginlik ve finansal miras; ailene fayda sağlayan uzun vadeli yatırımlar.</string>
+    <string name="card_45_finances_rev">Miras anlaşmazlıkları veya aile servetinin kaybı; finansal istikrarsızlık mirasını tehdit ediyor.</string>
+    <string name="card_45_feelings_up">Derin bir köklülük ve güvence hissi; gelecek nesiller için inşa ettiğin mirasla gurur duyuyorsun.</string>
+    <string name="card_45_feelings_rev">Ailenin finansal güvenliğine dair endişe; mirasının ufalandığı hissi.</string>
+    <string name="card_45_actions_up">Uzun vadeli gelecek için inşa et; aileye, geleneklere ve kalıcı kurumlara yatırım yap.</string>
+    <string name="card_45_actions_rev">Nesillerin inşa ettiğini yok etmeden önce aile anlaşmazlıklarını çöz.</string>
+
+    <!-- Card 46: Page of Pentacles (Páže pentaklů) -->
+    <string name="card_46_love_up">Yeni aşka istikrarlı ve pratik bir yaklaşım; ilişkiyi sağlam temeller üzerine kurma.</string>
+    <string name="card_46_love_rev">Bağlanmayı erteleme; romantik hedeflerin peşinde tembellik veya çaba eksikliği.</string>
+    <string name="card_46_career_up">Heyecan verici yeni bir öğrenme fırsatı; büyük umut vadeden pratik bir kariyer girişimi.</string>
+    <string name="card_46_career_rev">Odak eksikliği veya tembellik kariyer ilerlemesini durduruyor; profesyonel planları sonuca ulaştıramama.</string>
+    <string name="card_46_finances_up">Umut vadeden yeni bir finansal fırsat; ona özenle ve öğrenme isteğiyle yaklaş.</string>
+    <string name="card_46_finances_rev">Finansal planlamayı erteleme; odaksız para yönetimi kötü sonuçlar doğuruyor.</string>
+    <string name="card_46_feelings_up">Hırslı ve öğrenmeye istekli hissediyorsun; pratik yeni bir başlangıcın heyecanını taşıyorsun.</string>
+    <string name="card_46_feelings_rev">Motivasyonsuz ve takılıp kalmış hissetme; hedeflerinin peşinden gitme azmin eksik.</string>
+    <string name="card_46_actions_up">Yeni girişimini özenle ve en baştan öğrenme isteğiyle sürdür.</string>
+    <string name="card_46_actions_rev">Ertelemeyi bırak ve hedeflerine doğru pratik adımlar at; disiplin gerekiyor.</string>
+
+    <!-- Card 47: Knight of Pentacles (Rytíř pentaklů) -->
+    <string name="card_47_love_up">Sadık ve güvenilir bir partner; bağlılık dolu bir ilişkiye doğru yavaş ama istikrarlı ilerleme.</string>
+    <string name="card_47_love_rev">İlişki sıkıcı ve rutin hale geldi; inatçılık duygusal büyümeyi engelliyor.</string>
+    <string name="card_47_career_up">İstikrarlı ve güvenilir çalışma ahlakı tutarlı sonuçlar getiriyor; titizlik güven kazandırıyor.</string>
+    <string name="card_47_career_rev">Değişim korkusundan doğan profesyonel durgunluk; eski yöntemlere inatla tutunma.</string>
+    <string name="card_47_finances_up">Sorumlu ve yöntemli finansal yönetim; yavaş ve istikrarlı servet birikimi.</string>
+    <string name="card_47_finances_rev">Aşırı temkinlilikten doğan finansal durgunluk; fazla muhafazakâr davranarak fırsatları kaçırma.</string>
+    <string name="card_47_feelings_up">İstikrar ve sorumluluk hissi; sessiz bir kararlılık pratik çabalarını besliyor.</string>
+    <string name="card_47_feelings_rev">Kısır döngüde takılı kalmış hissetme; rutinden sıkılmış ama rota değiştiremeyecek kadar inatçısın.</string>
+    <string name="card_47_actions_up">Disiplinli çabayla rotanda kal; güvenilirlik ve tutarlılık karşılığını verecek.</string>
+    <string name="card_47_actions_rev">Rutinini sars; inatçılığın veya değişim korkusunun seni geride tutmasına izin verme.</string>
+
+    <!-- Card 48: Queen of Pentacles (Královna pentaklů) -->
+    <string name="card_48_love_up">Besleyici ve cömert bir aşk; partnerinle sıcak ve bereketli bir yuva kurma.</string>
+    <string name="card_48_love_rev">Başkalarına bakarken kendi ihtiyaçlarını ihmal etme; partnerini maddi hediyelere boğma.</string>
+    <string name="card_48_career_up">Pratik ve besleyici liderlik; bereketli ve destekleyici bir çalışma ortamı yaratma.</string>
+    <string name="card_48_career_rev">İş-yaşam dengesizliği kişisel ihtiyaçlarını ihmal etmene neden oluyor; yuva pahasına kariyere aşırı yatırım.</string>
+    <string name="card_48_finances_up">Pratik ve cömert finansal yönetim; bilgece bir idareyle bolluk yaratma.</string>
+    <string name="card_48_finances_rev">Aşırı cömertlikten doğan finansal zorlanma; materyalizm gerçek ilginin yerini alıyor.</string>
+    <string name="card_48_feelings_up">Kendini sağlam, cömert ve hayatındaki bolluktan derinden hoşnut hissediyorsun.</string>
+    <string name="card_48_feelings_rev">Fazla vermekten tükenmiş hissetme; başkalarının maddi ihtiyaçlarına bakarken kendini kaybetme.</string>
+    <string name="card_48_actions_up">Başkalarına pratik şekilde bakarak bolluk yarat; cömert ol ama kendine özen göstermeyi de sürdür.</string>
+    <string name="card_48_actions_rev">Kendi ihtiyaçlarına öncelik ver; kendi esenliğin pahasına başkalarına vermeyi bırak.</string>
+
+    <!-- Card 49: King of Pentacles (Král pentaklů) -->
+    <string name="card_49_love_up">İstikrarlı ve finansal olarak güvenceli bir partner; güvence ve konfor sağlayarak ifade edilen sevgi.</string>
+    <string name="card_49_love_rev">Parayı duygusal bağın önüne koyan bir partner; aşka materyalist bir yaklaşım.</string>
+    <string name="card_49_career_up">İş dünyasında ustalık ve finansal liderlik; disiplinin ve öngörün profesyonel başarı getiriyor.</string>
+    <string name="card_49_career_rev">Açgözlülük veya kötü yönetim işini baltalıyor; inatçılık uyum sağlamayı engelliyor.</string>
+    <string name="card_49_finances_up">Finansal başarının ve servet yönetiminin zirvesi; finansal imparatorluğunun disiplinli yönetimi.</string>
+    <string name="card_49_finances_rev">Açgözlülükten veya rehavetten doğan finansal kötü yönetim; dürüstlük pahasına biriktirilen servet.</string>
+    <string name="card_49_feelings_up">Finansal güvence ve ustalık hissi; servet kurma ve koruma yeteneğine güveniyorsun.</string>
+    <string name="card_49_feelings_rev">Finansal statünle tanımlanmış hissetme; maddi bolluğa rağmen boşluk.</string>
+    <string name="card_49_actions_up">Ticari bilgelik ve disiplinli finansal yönetimle yol göster; kalıcı servet inşa et.</string>
+    <string name="card_49_actions_rev">Açgözlülüğün değerlerini bozup bozmadığını incele; dürüstlükten yoksun servet boştur.</string>
+
+</resources>
