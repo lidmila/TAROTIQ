@@ -405,8 +405,8 @@
 
     <!-- HomeScreen Portal -->
     <string name="home_celestial_active">HEMELS PORTAAL ACTIEF</string>
-    <string name="home_headline_1">De sterren fluisteren</string>
-    <string name="home_headline_2">uw lot vandaag.</string>
+    <string name="home_headline_1">Wat zeggen de</string>
+    <string name="home_headline_2">sterren vandaag?</string>
     <string name="home_welcome_body">Stap door de sluier tussen de werelden. Elke getrokken kaart is een fluistering van de kosmos, een draad van het lot geweven alleen voor u.</string>
     <string name="home_daily_drawing">DAGELIJKSE TREKKING</string>
     <string name="home_consult_oracle">Raadpleeg het Orakel</string>

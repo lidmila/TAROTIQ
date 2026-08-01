@@ -64,12 +64,12 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
     val dailyHoroscope: StateFlow<String?> = _dailyHoroscope.asStateFlow()
 
     init {
+        observeDailyCard()
         viewModelScope.launch {
             coinRepo.initializeCoinDocument()
             coinRepo.startListening()
             val result = gamificationRepo.updateStreak()
             handleStreakResult(result)
-            checkDailyCard()
             loadDailyHoroscope()
         }
     }
@@ -116,11 +116,20 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         _streakMilestone.value = null
     }
 
-    private suspend fun checkDailyCard() {
-        val existing = gamificationRepo.getTodaysDailyCard()
-        if (existing != null) {
-            _dailyCard.value = existing
-            _dailyCardRevealed.value = true
+    /**
+     * Portál zůstává na back stacku, když se karta táhne na DailyCardScreen, takže se tenhle
+     * ViewModel mezitím nezničí. Jednorázová kontrola v init by proto stav nikdy nezaktualizovala
+     * a Portál by po návratu dál hlásil "čeká na vyvolání" – proto se na dnešní kartu díváme
+     * přes Room Flow, který se ozve v momentě zápisu.
+     */
+    private fun observeDailyCard() {
+        viewModelScope.launch {
+            gamificationRepo.observeTodaysDailyCard().collect { card ->
+                if (card != null) {
+                    _dailyCard.value = card
+                    _dailyCardRevealed.value = true
+                }
+            }
         }
     }
 

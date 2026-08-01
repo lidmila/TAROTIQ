@@ -432,8 +432,8 @@
 
     <!-- HomeScreen Portal -->
     <string name="home_celestial_active">NEBESKÝ PORTÁL AKTIVNÍ</string>
-    <string name="home_headline_1">Hvězdy šeptají</string>
-    <string name="home_headline_2">tvůj osud dnes.</string>
+    <string name="home_headline_1">Co dnes</string>
+    <string name="home_headline_2">říkají hvězdy?</string>
     <string name="home_welcome_body">Projděte závojem mezi světy. Každá vytažená karta je šepot z vesmíru, nit osudu utkaná právě pro vás.</string>
     <string name="home_daily_drawing">DENNÍ TAŽENÍ</string>
     <string name="home_consult_oracle">Poraďte se s Orákulem</string>

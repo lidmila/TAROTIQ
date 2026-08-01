@@ -407,8 +407,8 @@
 
     <!-- HomeScreen Portal -->
     <string name="home_celestial_active">Portal NIEBIAŃSKI AKTYWNY</string>
-    <string name="home_headline_1">Gwiazdy szepczą</string>
-    <string name="home_headline_2">Twój los dzisiaj.</string>
+    <string name="home_headline_1">Co dziś mówią</string>
+    <string name="home_headline_2">gwiazdy?</string>
     <string name="home_welcome_body">Przekrocz zasłonę między światami. Każda wyciągnięta karta to szept kosmosu, nić przeznaczenia utkana specjalnie dla Ciebie.</string>
     <string name="home_daily_drawing">CODZIENNE LOSOWANIE</string>
     <string name="home_consult_oracle">Zapytaj Oracle</string>

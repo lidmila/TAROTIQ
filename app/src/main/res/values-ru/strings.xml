@@ -433,8 +433,8 @@
 
     <!-- HomeScreen Portal -->
     <string name="home_celestial_active">НЕБЕСНЫЙ ПОРТАЛ АКТИВЕН</string>
-    <string name="home_headline_1">Звёзды шепчут</string>
-    <string name="home_headline_2">вашу судьбу сегодня.</string>
+    <string name="home_headline_1">Что говорят</string>
+    <string name="home_headline_2">звёзды сегодня?</string>
     <string name="home_welcome_body">Пройдите сквозь завесу между мирами. Каждая вытянутая карта — шёпот Вселенной, нить судьбы, сотканная именно для вас.</string>
     <string name="home_daily_drawing">ЕЖЕДНЕВНОЕ ГАДАНИЕ</string>
     <string name="home_consult_oracle">Обратитесь к Оракулу</string>

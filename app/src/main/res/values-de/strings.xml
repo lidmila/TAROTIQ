@@ -405,8 +405,8 @@
 
     <!-- HomeScreen Portal -->
     <string name="home_celestial_active">HIMMLISCHES PORTAL AKTIV</string>
-    <string name="home_headline_1">Die Sterne flüstern</string>
-    <string name="home_headline_2">Ihr Schicksal heute.</string>
+    <string name="home_headline_1">Was sagen</string>
+    <string name="home_headline_2">die Sterne heute?</string>
     <string name="home_welcome_body">Treten Sie durch den Schleier zwischen den Welten. Jede gezogene Karte ist ein Flüstern des Kosmos, ein Schicksalsfaden, nur für Sie gewoben.</string>
     <string name="home_daily_drawing">TÄGLICHE ZIEHUNG</string>
     <string name="home_consult_oracle">Das Orakel befragen</string>

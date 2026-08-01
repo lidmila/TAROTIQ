@@ -60,6 +60,16 @@ class GamificationRepository(
         return dailyCardDao.getDailyCard(userId, today)
     }
 
+    /**
+     * Dnešní karta jako Flow – emituje znovu, jakmile ji kdokoli uloží.
+     * Portál díky tomu nemusí čekat na znovuvytvoření ViewModelu.
+     */
+    fun observeTodaysDailyCard(): Flow<DailyCard?> {
+        val userId = auth.currentUser?.uid ?: return kotlinx.coroutines.flow.flowOf(null)
+        val today = LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE)
+        return dailyCardDao.observeDailyCard(userId, today)
+    }
+
     suspend fun saveDailyCard(dailyCard: DailyCard) {
         dailyCardDao.insertDailyCard(dailyCard)
         // Sync to Firestore

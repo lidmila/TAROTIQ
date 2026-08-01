@@ -432,8 +432,8 @@
 
     <!-- HomeScreen Portal -->
     <string name="home_celestial_active">PORTAL CELEST ACTIV</string>
-    <string name="home_headline_1">Stelele îți șoptesc</string>
-    <string name="home_headline_2">destinul astăzi.</string>
+    <string name="home_headline_1">Ce spun</string>
+    <string name="home_headline_2">stelele astăzi?</string>
     <string name="home_welcome_body">Treci prin vălul dintre lumi. Fiecare carte trasă este o șoaptă din univers, un fir al destinului țesut anume pentru tine.</string>
     <string name="home_daily_drawing">TRAGEREA ZILNICĂ</string>
     <string name="home_consult_oracle">Consultă Oracolul</string>

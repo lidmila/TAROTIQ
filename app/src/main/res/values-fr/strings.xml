@@ -405,8 +405,8 @@
 
     <!-- HomeScreen Portal -->
     <string name="home_celestial_active">PORTAIL CÉLESTE ACTIF</string>
-    <string name="home_headline_1">Les étoiles murmurent</string>
-    <string name="home_headline_2">votre destin aujourd\'hui.</string>
+    <string name="home_headline_1">Que disent</string>
+    <string name="home_headline_2">les étoiles ?</string>
     <string name="home_welcome_body">Franchissez le voile entre les mondes. Chaque carte tirée est un murmure du cosmos, un fil du destin tissé rien que pour vous.</string>
     <string name="home_daily_drawing">TIRAGE QUOTIDIEN</string>
     <string name="home_consult_oracle">Consulter l\'Oracle</string>

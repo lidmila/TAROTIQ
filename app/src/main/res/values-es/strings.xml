@@ -405,8 +405,8 @@
 
     <!-- HomeScreen Portal -->
     <string name="home_celestial_active">Portal CELESTIAL ACTIVO</string>
-    <string name="home_headline_1">Las estrellas susurran</string>
-    <string name="home_headline_2">tu destino hoy.</string>
+    <string name="home_headline_1">¿Qué dicen hoy</string>
+    <string name="home_headline_2">las estrellas?</string>
     <string name="home_welcome_body">Atraviesa el velo entre mundos. Cada carta es un susurro del cosmos, un hilo del destino tejido solo para ti.</string>
     <string name="home_daily_drawing">TIRADA DIARIA</string>
     <string name="home_consult_oracle">Consultar al Oracle</string>

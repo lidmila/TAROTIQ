@@ -432,7 +432,7 @@
     <!-- HomeScreen Portal -->
     <string name="home_celestial_active">GÖKSEL PORTAL AKTİF</string>
     <string name="home_headline_1">Yıldızlar bugün</string>
-    <string name="home_headline_2">kaderini fısıldıyor.</string>
+    <string name="home_headline_2">ne söylüyor?</string>
     <string name="home_welcome_body">Dünyalar arasındaki perdeden geç. Çekilen her kart evrenden bir fısıltı, sadece senin için dokunmuş bir kader ipliğidir.</string>
     <string name="home_daily_drawing">GÜNLÜK ÇEKİM</string>
     <string name="home_consult_oracle">Kahin\'e Danış</string>

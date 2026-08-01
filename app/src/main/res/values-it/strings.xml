@@ -275,8 +275,8 @@
 
     <!-- HomeScreen Portal -->
     <string name="home_celestial_active">Portal CELESTE ATTIVO</string>
-    <string name="home_headline_1">Le stelle sussurrano</string>
-    <string name="home_headline_2">il tuo destino oggi.</string>
+    <string name="home_headline_1">Cosa dicono</string>
+    <string name="home_headline_2">le stelle oggi?</string>
     <string name="home_welcome_body">Attraversa il velo tra i mondi. Ogni carta è un sussurro del cosmo, un filo del destino intrecciato solo per te.</string>
     <string name="home_daily_drawing">ESTRAZIONE GIORNALIERA</string>
     <string name="home_consult_oracle">Consulta l\'Oracle</string>

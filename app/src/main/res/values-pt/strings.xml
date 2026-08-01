@@ -431,8 +431,8 @@
 
     <!-- HomeScreen Portal -->
     <string name="home_celestial_active">PORTAL CELESTIAL ATIVO</string>
-    <string name="home_headline_1">As estrelas sussurram</string>
-    <string name="home_headline_2">seu destino hoje.</string>
+    <string name="home_headline_1">O que dizem</string>
+    <string name="home_headline_2">hoje as estrelas?</string>
     <string name="home_welcome_body">Atravesse o véu entre os mundos. Cada carta tirada é um sussurro do universo, um fio do destino tecido especialmente para você.</string>
     <string name="home_daily_drawing">TIRAGEM DIÁRIA</string>
     <string name="home_consult_oracle">Consulte o Oráculo</string>

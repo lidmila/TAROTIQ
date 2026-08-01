@@ -9,6 +9,9 @@ interface DailyCardDao {
     @Query("SELECT * FROM daily_cards WHERE userId = :userId AND date = :date LIMIT 1")
     suspend fun getDailyCard(userId: String, date: String): DailyCard?
 
+    @Query("SELECT * FROM daily_cards WHERE userId = :userId AND date = :date LIMIT 1")
+    fun observeDailyCard(userId: String, date: String): Flow<DailyCard?>
+
     @Query("SELECT * FROM daily_cards WHERE userId = :userId ORDER BY timestamp DESC")
     fun getAllDailyCards(userId: String): Flow<List<DailyCard>>
 
