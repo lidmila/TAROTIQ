@@ -3,9 +3,12 @@ package com.tarotiq.app.ui.components
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.viewinterop.AndroidView
 import com.tarotiq.app.BuildConfig
+import com.tarotiq.app.TarotIQApp
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
@@ -28,11 +31,18 @@ object AdUnitIds {
     val REWARDED: String get() = if (BuildConfig.DEBUG) TEST_REWARDED else PROD_REWARDED
 }
 
+/**
+ * Banner se vykreslí až po inicializaci Mobile Ads SDK, která proběhne po získání
+ * GDPR souhlasu — dřív by šla reklama v EHP bez souhlasu uživatele.
+ */
 @SuppressLint("MissingPermission")
 @Composable
 fun BannerAdComposable(
     modifier: Modifier = Modifier
 ) {
+    val isSdkInitialized by TarotIQApp.isAdSdkInitialized.collectAsState()
+    if (!isSdkInitialized) return
+
     AndroidView(
         modifier = modifier.fillMaxWidth(),
         factory = { context ->

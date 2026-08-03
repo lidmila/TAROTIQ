@@ -695,4 +695,7 @@
     <string name="challenge_30_w2">Hart — Liefde, relaties en emotionele intelligentie</string>
     <string name="challenge_30_w3">Verstand — Overtuigingen, creativiteit en nieuwe mogelijkheden</string>
     <string name="challenge_30_w4">Geest — Zin, doel en uw kosmische missie</string>
+
+    <!-- GDPR consent (UMP) -->
+    <string name="ad_privacy_title">Privacy-instellingen voor advertenties</string>
 </resources>

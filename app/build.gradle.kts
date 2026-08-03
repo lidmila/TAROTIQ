@@ -24,8 +24,8 @@ android {
         applicationId = "com.tarotiq.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 13
-        versionName = "1.8.3"
+        versionCode = 14
+        versionName = "1.8.4"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -162,6 +162,10 @@ dependencies {
 
     // AdMob
     implementation("com.google.android.gms:play-services-ads:23.6.0")
+
+    // User Messaging Platform — GDPR souhlas pro EHP/UK/Švýcarsko.
+    // Bez něj Google v těchto regionech reklamy neservíruje (požadavek od ledna 2024).
+    implementation("com.google.android.ump:user-messaging-platform:3.1.0")
 
     // WorkManager for notifications
     implementation("androidx.work:work-runtime-ktx:2.9.0")

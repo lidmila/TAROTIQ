@@ -1,0 +1,65 @@
+<cs-CZ>
+• Nové nastavení soukromí reklam – souhlas se zpracováním dat můžeš kdykoli změnit v profilu
+• Reklamy se načítají až po tvém rozhodnutí
+• Drobné opravy a vylepšení stability
+</cs-CZ>
+<en-US>
+• New ad privacy settings – you can change your data processing consent any time in your profile
+• Ads now load only after you've made your choice
+• Minor fixes and stability improvements
+</en-US>
+<de-DE>
+• Neue Datenschutzeinstellungen für Werbung – die Einwilligung zur Datenverarbeitung lässt sich jederzeit im Profil ändern
+• Anzeigen werden erst nach deiner Entscheidung geladen
+• Kleinere Fehlerbehebungen und Stabilitätsverbesserungen
+</de-DE>
+<es-ES>
+• Nueva configuración de privacidad de anuncios: puedes cambiar el consentimiento de tratamiento de datos cuando quieras desde tu perfil
+• Los anuncios solo se cargan después de tu decisión
+• Correcciones menores y mejoras de estabilidad
+</es-ES>
+<fr-FR>
+• Nouveaux paramètres de confidentialité des annonces – vous pouvez modifier votre consentement au traitement des données à tout moment dans votre profil
+• Les annonces ne se chargent qu'après votre choix
+• Corrections mineures et améliorations de la stabilité
+</fr-FR>
+<it-IT>
+• Nuove impostazioni privacy degli annunci: puoi modificare il consenso al trattamento dei dati in qualsiasi momento dal profilo
+• Gli annunci vengono caricati solo dopo la tua scelta
+• Correzioni minori e miglioramenti della stabilità
+</it-IT>
+<nl-NL>
+• Nieuwe privacy-instellingen voor advertenties – je kunt je toestemming voor gegevensverwerking altijd wijzigen in je profiel
+• Advertenties worden pas geladen nadat je een keuze hebt gemaakt
+• Kleine verbeteringen en stabiliteitsverbeteringen
+</nl-NL>
+<pl-PL>
+• Nowe ustawienia prywatności reklam – zgodę na przetwarzanie danych zmienisz w każdej chwili w profilu
+• Reklamy wczytują się dopiero po Twojej decyzji
+• Drobne poprawki i ulepszenia stabilności
+</pl-PL>
+<pt-PT>
+• Novas definições de privacidade dos anúncios – pode alterar o consentimento de tratamento de dados a qualquer momento no perfil
+• Os anúncios só são carregados depois da sua decisão
+• Pequenas correções e melhorias de estabilidade
+</pt-PT>
+<pt-BR>
+• Novas configurações de privacidade dos anúncios – você pode alterar o consentimento de tratamento de dados a qualquer momento no perfil
+• Os anúncios só são carregados depois da sua decisão
+• Pequenas correções e melhorias de estabilidade
+</pt-BR>
+<ru-RU>
+• Новые настройки конфиденциальности рекламы — согласие на обработку данных можно изменить в любой момент в профиле
+• Реклама загружается только после вашего решения
+• Мелкие исправления и улучшения стабильности
+</ru-RU>
+<tr-TR>
+• Yeni reklam gizlilik ayarları – veri işleme izninizi profilinizden istediğiniz zaman değiştirebilirsiniz
+• Reklamlar yalnızca siz karar verdikten sonra yükleniyor
+• Küçük düzeltmeler ve kararlılık iyileştirmeleri
+</tr-TR>
+<uk-UA>
+• Нові налаштування конфіденційності реклами — згоду на обробку даних можна змінити будь-коли у профілі
+• Реклама завантажується лише після вашого рішення
+• Дрібні виправлення та покращення стабільності
+</uk-UA>

@@ -727,4 +727,7 @@
     <string name="challenge_30_w2">Srdce — Láska, vztahy a emocionální inteligence</string>
     <string name="challenge_30_w3">Mysl — Přesvědčení, kreativita a nové možnosti</string>
     <string name="challenge_30_w4">Duch — Smysl, účel a vaše kosmická mise</string>
+
+    <!-- GDPR consent (UMP) -->
+    <string name="ad_privacy_title">Nastavení soukromí reklam</string>
 </resources>

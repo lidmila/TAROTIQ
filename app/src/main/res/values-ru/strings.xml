@@ -728,4 +728,7 @@
     <string name="challenge_30_w2">Сердце — Любовь, отношения и эмоциональный интеллект</string>
     <string name="challenge_30_w3">Разум — Убеждения, творчество и новые возможности</string>
     <string name="challenge_30_w4">Дух — Смысл, предназначение и ваша космическая миссия</string>
+
+    <!-- GDPR consent (UMP) -->
+    <string name="ad_privacy_title">Настройки конфиденциальности рекламы</string>
 </resources>

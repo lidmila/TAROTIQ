@@ -702,4 +702,7 @@
     <string name="challenge_30_w2">Heart — Love, relationships, and emotional intelligence</string>
     <string name="challenge_30_w3">Mind — Beliefs, creativity, and new possibilities</string>
     <string name="challenge_30_w4">Spirit — Meaning, purpose, and your cosmic mission</string>
+
+    <!-- GDPR consent (UMP) -->
+    <string name="ad_privacy_title">Ad privacy settings</string>
 </resources>

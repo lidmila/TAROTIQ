@@ -11,6 +11,7 @@ import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
+import com.tarotiq.app.TarotIQApp
 
 class InterstitialAdManager(private val context: Context) {
 
@@ -19,26 +20,37 @@ class InterstitialAdManager(private val context: Context) {
     }
 
     private var interstitialAd: InterstitialAd? = null
+    private var isLoading = false
 
+    /**
+     * Načítá se až po inicializaci SDK, která proběhne po získání GDPR souhlasu —
+     * dřív by šla reklama v EHP bez souhlasu. `whenAdSdkReady` počká, když je
+     * uživatel zrovna ve formuláři souhlasu.
+     */
     fun preload() {
-        if (interstitialAd != null) return
+        if (interstitialAd != null || isLoading) return
+        isLoading = true
 
-        InterstitialAd.load(
-            context,
-            AdUnitIds.INTERSTITIAL,
-            AdRequest.Builder().build(),
-            object : InterstitialAdLoadCallback() {
-                override fun onAdLoaded(ad: InterstitialAd) {
-                    interstitialAd = ad
-                    Log.d(TAG, "Interstitial ad loaded")
-                }
+        TarotIQApp.whenAdSdkReady {
+            InterstitialAd.load(
+                context,
+                AdUnitIds.INTERSTITIAL,
+                AdRequest.Builder().build(),
+                object : InterstitialAdLoadCallback() {
+                    override fun onAdLoaded(ad: InterstitialAd) {
+                        interstitialAd = ad
+                        isLoading = false
+                        Log.d(TAG, "Interstitial ad loaded")
+                    }
 
-                override fun onAdFailedToLoad(error: LoadAdError) {
-                    interstitialAd = null
-                    Log.d(TAG, "Interstitial ad failed to load: ${error.message}")
+                    override fun onAdFailedToLoad(error: LoadAdError) {
+                        interstitialAd = null
+                        isLoading = false
+                        Log.d(TAG, "Interstitial ad failed to load: ${error.message}")
+                    }
                 }
-            }
-        )
+            )
+        }
     }
 
     fun showIfReady(activity: Activity, onDismissed: () -> Unit = {}) {

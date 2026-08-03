@@ -37,6 +37,32 @@ class TarotIQApp : Application() {
 
         private val _isAdSdkInitialized = MutableStateFlow(false)
         val isAdSdkInitialized: StateFlow<Boolean> = _isAdSdkInitialized.asStateFlow()
+
+        /**
+         * Nastartuje Mobile Ads SDK. Volá MainActivity až po získání GDPR souhlasu —
+         * dřív se to nesmí, protože v EHP by reklamy šly bez souhlasu uživatele.
+         */
+        fun initializeAdSdk(context: Context) {
+            if (_isAdSdkInitialized.value) return
+            MobileAds.initialize(context) {
+                _isAdSdkInitialized.value = true
+            }
+        }
+
+        /**
+         * Spustí [block], jakmile je Mobile Ads SDK inicializované — hned, nebo až
+         * uživatel projde formulářem souhlasu. Reklamy se nesmí načítat dřív.
+         */
+        fun whenAdSdkReady(block: () -> Unit) {
+            if (_isAdSdkInitialized.value) {
+                block()
+                return
+            }
+            instance.applicationScope.launch {
+                _isAdSdkInitialized.first { it }
+                block()
+            }
+        }
     }
 
     private val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
@@ -69,10 +95,8 @@ class TarotIQApp : Application() {
             setCustomKey("app_version_code", BuildConfig.VERSION_CODE)
         }
 
-        // Initialize AdMob
-        MobileAds.initialize(this) {
-            _isAdSdkInitialized.value = true
-        }
+        // AdMob se startuje až v MainActivity — UMP potřebuje Activity, aby mohlo
+        // zobrazit formulář souhlasu, a SDK se smí inicializovat až po něm.
 
         // Create notification channel
         createNotificationChannel()

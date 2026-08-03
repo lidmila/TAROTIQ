@@ -727,4 +727,7 @@
     <string name="challenge_30_w2">Inima — Iubire, relații și inteligență emoțională</string>
     <string name="challenge_30_w3">Mintea — Convingeri, creativitate și noi posibilități</string>
     <string name="challenge_30_w4">Spiritul — Sens, scop și misiunea ta cosmică</string>
+
+    <!-- GDPR consent (UMP) -->
+    <string name="ad_privacy_title">Setări de confidențialitate pentru anunțuri</string>
 </resources>

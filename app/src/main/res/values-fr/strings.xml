@@ -694,4 +694,7 @@
     <string name="challenge_30_w2">Cœur — Amour, relations et intelligence émotionnelle</string>
     <string name="challenge_30_w3">Mental — Croyances, créativité et nouvelles possibilités</string>
     <string name="challenge_30_w4">Esprit — Sens, but et votre mission cosmique</string>
+
+    <!-- GDPR consent (UMP) -->
+    <string name="ad_privacy_title">Paramètres de confidentialité des annonces</string>
 </resources>

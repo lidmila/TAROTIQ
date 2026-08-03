@@ -697,4 +697,7 @@
     <string name="challenge_30_w2">Serce — Miłość, relacje i inteligencja emocjonalna</string>
     <string name="challenge_30_w3">Umysł — Przekonania, kreatywność i nowe możliwości</string>
     <string name="challenge_30_w4">Duch — Sens, cel i Twoja kosmiczna misja</string>
+
+    <!-- GDPR consent (UMP) -->
+    <string name="ad_privacy_title">Ustawienia prywatności reklam</string>
 </resources>

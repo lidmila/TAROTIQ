@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.FlowRow
+import com.tarotiq.app.ads.ConsentManager
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.ChevronRight
@@ -291,7 +292,11 @@ fun ProfileScreen(
                     Column(modifier = Modifier.padding(18.dp)) {
                         Text(stringResource(R.string.profile_legal), style = MaterialTheme.typography.headlineSmall.copy(fontSize = 18.sp), color = CelestialGold)
                         Spacer(modifier = Modifier.height(8.dp))
-                        listOf(
+                        // Změna souhlasu s reklamami — jen v EHP, kde to Google
+                        // vyžaduje. Jinde formulář neexistuje a položka se nezobrazuje.
+                        val adPrivacyRequired by ConsentManager.privacyOptionsRequired.collectAsState()
+
+                        listOfNotNull(
                             Triple(R.string.faq_title, Icons.Outlined.QuestionAnswer, { onNavigateToFAQ() }),
                             Triple(R.string.about_title, Icons.Outlined.Info, { onNavigateToAbout() }),
                             Triple(R.string.contact_title, Icons.Outlined.Email, { onNavigateToContact() }),
@@ -300,7 +305,15 @@ fun ProfileScreen(
                             }),
                             Triple(R.string.privacy_title, Icons.Outlined.Shield, {
                                 context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.codewhiskers.app/zasady-ochrany-osobnich-udaju")))
-                            })
+                            }),
+                            if (adPrivacyRequired) {
+                                Triple(R.string.ad_privacy_title, Icons.Outlined.PrivacyTip, {
+                                    (context as? android.app.Activity)?.let {
+                                        ConsentManager.showPrivacyOptionsForm(it)
+                                    }
+                                    Unit
+                                })
+                            } else null
                         ).forEach { (labelRes, icon, action) ->
                             TextButton(onClick = { action() }, modifier = Modifier.fillMaxWidth()) {
                                 Icon(icon, null, tint = MoonSilver, modifier = Modifier.size(20.dp))

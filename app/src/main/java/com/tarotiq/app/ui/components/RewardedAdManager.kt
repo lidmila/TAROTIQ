@@ -8,6 +8,7 @@ import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
+import com.tarotiq.app.TarotIQApp
 
 class RewardedAdManager(private val context: Context) {
 
@@ -18,28 +19,35 @@ class RewardedAdManager(private val context: Context) {
     private var rewardedAd: RewardedAd? = null
     private var isLoading = false
 
+    /**
+     * Načítá se až po inicializaci SDK, která proběhne po získání GDPR souhlasu —
+     * dřív by šla reklama v EHP bez souhlasu. `whenAdSdkReady` počká, když je
+     * uživatel zrovna ve formuláři souhlasu.
+     */
     fun preload() {
         if (rewardedAd != null || isLoading) return
         isLoading = true
 
-        RewardedAd.load(
-            context,
-            AdUnitIds.REWARDED,
-            AdRequest.Builder().build(),
-            object : RewardedAdLoadCallback() {
-                override fun onAdLoaded(ad: RewardedAd) {
-                    rewardedAd = ad
-                    isLoading = false
-                    Log.d(TAG, "Rewarded ad loaded")
-                }
+        TarotIQApp.whenAdSdkReady {
+            RewardedAd.load(
+                context,
+                AdUnitIds.REWARDED,
+                AdRequest.Builder().build(),
+                object : RewardedAdLoadCallback() {
+                    override fun onAdLoaded(ad: RewardedAd) {
+                        rewardedAd = ad
+                        isLoading = false
+                        Log.d(TAG, "Rewarded ad loaded")
+                    }
 
-                override fun onAdFailedToLoad(error: LoadAdError) {
-                    rewardedAd = null
-                    isLoading = false
-                    Log.d(TAG, "Rewarded ad failed to load: ${error.message}")
+                    override fun onAdFailedToLoad(error: LoadAdError) {
+                        rewardedAd = null
+                        isLoading = false
+                        Log.d(TAG, "Rewarded ad failed to load: ${error.message}")
+                    }
                 }
-            }
-        )
+            )
+        }
     }
 
     fun isReady(): Boolean = rewardedAd != null
